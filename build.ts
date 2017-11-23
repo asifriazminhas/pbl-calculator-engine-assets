@@ -31,10 +31,13 @@ async function build() {
 
   algorithms
     .map(algorithm => {
-      return algorithm.getModel();
+      return algorithm.getModelJson();
     })
     .map((algorithmJson, index) => {
-      return fs.writeFileSync(`model.json`, JSON.stringify(algorithmJson));
+      return fs.writeFileSync(
+        `${algorithmDirectoryPaths[index]}/model.json`,
+        JSON.stringify(algorithmJson)
+      );
     });
 
   const causeEffectRefJsons = algorithmDirectoryPaths.map(
