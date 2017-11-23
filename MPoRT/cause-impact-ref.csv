@@ -1,0 +1,29 @@
+Algorithm,RiskFactor,Sex,PredictorName,EngineRef,CanadaUsaRef
+MPoRT,Smoking,Both,QSLightCont_df,0,NA
+MPoRT,Smoking,Both,QSHeavy_df,0,NA
+MPoRT,Smoking,Both,TypeOfSmoker,NA,0
+MPoRT,Diet,Both,DietScore_cont,10,10
+MPoRT,PhysicalActivity,Both,PhysicalActivity_cont,3,3
+MPoRT,Alcohol,Both,AlcoholMod_cat,0,NA
+MPoRT,Alcohol,Both,AlcoholHeavy_cat,0,NA
+MPoRT,Alcohol,Both,AlcoholType,NA,0
+MPoRT,Education,Both,EduHSGrad_cat,0,NA
+MPoRT,Education,Both,EduNoGrad_cat,0,NA
+MPoRT,Education,Both,Edu1,NA,0
+MPoRT,BMI,Both,BMI_cont,24,24
+"CVDPoRTReduced, SPoRT",Smoking,Both,SmokeFormer5Plus_cat,0,NA
+"CVDPoRTReduced, SPoRT",Smoking,Both,SmokeFormer0to5_cat,0,NA
+"CVDPoRTReduced, SPoRT",Smoking,Both,SmokeCurrent_cat,0,NA
+"CVDPoRTReduced, SPoRT",Smoking,Both,PackYears_cont,0,0
+"CVDPoRTReduced, SPoRT",Smoking,Both,SmokeSimple,NA,0
+"CVDPoRTReduced, SPoRT",Diet,Both,FruitVeg_cont,5,5
+"CVDPoRTReduced, SPoRT",Diet,Both,Juice_cont,0,0
+"CVDPoRTReduced, SPoRT",Diet,Both,Potato_cont,0,0
+"CVDPoRTReduced, SPoRT",PhysicalActivity,Both,PhysicalActivity_cont,20,20
+"CVDPoRTReduced, SPoRT",Alcohol,Both,DrinksLastWeek_cont,0,0
+"CVDPoRTReduced, SPoRT",Alcohol,Female,FormerDrinker_cat,0,0
+"CVDPoRTReduced, SPoRT",BMI,Both,BMI_cont,24,24
+"CVDPoRTReduced, SPoRT",Education,Both,EduHSGrad2_cat,0,NA
+"CVDPoRTReduced, SPoRT",Education,Both,EduSomePS2_cat,0,NA
+"CVDPoRTReduced, SPoRT",Education,Both,EduPSGrad2_cat,0,NA
+"CVDPoRTReduced, SPoRT",Education,Both,Edu2,NA,0

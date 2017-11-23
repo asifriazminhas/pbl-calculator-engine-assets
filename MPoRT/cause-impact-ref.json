@@ -1,0 +1,18 @@
+{
+  "male": {
+    "Smoking": { "QSLightCont_df": "0", "QSHeavy_df": "0" },
+    "Diet": { "DietScore_cont": "10" },
+    "PhysicalActivity": { "PhysicalActivity_cont": "3" },
+    "Alcohol": { "AlcoholMod_cat": "0", "AlcoholHeavy_cat": "0" },
+    "Education": { "EduHSGrad_cat": "0", "EduNoGrad_cat": "0" },
+    "BMI": { "BMI_cont": "24" }
+  },
+  "female": {
+    "Smoking": { "QSLightCont_df": "0", "QSHeavy_df": "0" },
+    "Diet": { "DietScore_cont": "10" },
+    "PhysicalActivity": { "PhysicalActivity_cont": "3" },
+    "Alcohol": { "AlcoholMod_cat": "0", "AlcoholHeavy_cat": "0" },
+    "Education": { "EduHSGrad_cat": "0", "EduNoGrad_cat": "0" },
+    "BMI": { "BMI_cont": "24" }
+  }
+}

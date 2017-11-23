@@ -1,4 +1,4 @@
-<PMML 
+<PMML version="4.2" 
   xmlns="http://www.dmg.org/PMML-4_2" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_2 http://www.dmg.org/v4-2/pmml-4-2.xsd">
   <Header copyright="Copyright (c) 2016 The Ottawa Hospital" description="MPoRT Male V1.2.5">
@@ -13,55 +13,55 @@
     <DataField name="survival" optype="continuous" dataType="double"/>
     <DataField name="Age_cont" optype="continuous" dataType="double"/>
     <DataField name="Age_spline" optype="continuous" dataType="double"/>
-    <DataField name="QSLight_df" optype="continuous" dataType="double"/>
-    <DataField name="QSHeavy_df" optype="continuous" dataType="double"/>
+    <DataField name="QSLightCont_df" optype="continuous" dataType="double"/>
+    <DataField name="QSHeavyCont_df" optype="continuous" dataType="double"/>
     <DataField name="PhysicalActivity_cont" optype="continuous" dataType="double"/>
-    <DataField name="DietScore" optype="continuous" dataType="double"/>
+    <DataField name="DietScore_cont" optype="continuous" dataType="double"/>
     <DataField name="AlcoholHeavy_cat" optype="categorical" dataType="string"/>
     <DataField name="AlcoholMod_cat" optype="categorical" dataType="string"/>
     <DataField name="DepIndMod_cat" optype="categorical" dataType="string"/>
     <DataField name="DepIndHigh_cat" optype="categorical" dataType="string"/>
     <DataField name="EduNoGrad_cat" optype="categorical" dataType="string"/>
     <DataField name="EduHSGrad_cat" optype="categorical" dataType="string"/>
-    <DataField name="ImEth0To15_cat" optype="categorical" dataType="string"/>
-    <DataField name="ImEth16To30_cat" optype="categorical" dataType="string"/>
-    <DataField name="ImEth31To45_cat" optype="categorical" dataType="string"/>
+    <DataField name="Immig0To15_cat" optype="categorical" dataType="string"/>
+    <DataField name="Immig16To30_cat" optype="categorical" dataType="string"/>
+    <DataField name="Immig31To45_cat" optype="categorical" dataType="string"/>
     <DataField name="HeartDis_cat" optype="categorical" dataType="string"/>
     <DataField name="Stroke_cat" optype="categorical" dataType="string"/>
     <DataField name="Cancer_cat" optype="categorical" dataType="string"/>
     <DataField name="Diabetes_cat" optype="categorical" dataType="string"/>
     <DataField name="BMI_spline" optype="continuous" dataType="double"/>
-    <DataField name="CancerAge_Int" optype="continuous" dataType="double"/>
-    <DataField name="DiabetesAge_Int" optype="continuous" dataType="double"/>
+    <DataField name="AgeXCancer_int" optype="continuous" dataType="double"/>
+    <DataField name="AgeXDiabetes_int" optype="continuous" dataType="double"/>
     <DataField name="start" optype="continuous" dataType="double"/>
     <DataField name="stop" optype="continuous" dataType="double"/>
     <DataField name="EventDeath" optype="continuous" dataType="double"/>
   </DataDictionary>
-  <GeneralRegressionModel modelType="CoxRegression" modelName="MPoRT_MaleModel" functionName="regression" algorithmName="coxph" startTimeVariable="start" endTimeVariable="stop" statusVariable="EventDeath" baselineHazard="0.0000372903">
+  <GeneralRegressionModel modelType="CoxRegression" modelName="MPoRT_MaleModel" functionName="regression" algorithmName="coxph" startTimeVariable="start" endTimeVariable="stop" statusVariable="EventDeath">
     <MiningSchema>
       <MiningField name="survival" usageType="predicted"/>
       <MiningField name="Age_cont" usageType="active"/>
       <MiningField name="Age_spline" usageType="active"/>
-      <MiningField name="QSLight_df" usageType="active"/>
-      <MiningField name="QSHeavy_df" usageType="active"/>
+      <MiningField name="QSLightCont_df" usageType="active"/>
+      <MiningField name="QSHeavyCont_df" usageType="active"/>
       <MiningField name="PhysicalActivity_cont" usageType="active"/>
-      <MiningField name="DietScore" usageType="active"/>
+      <MiningField name="DietScore_cont" usageType="active"/>
       <MiningField name="AlcoholHeavy_cat" usageType="active"/>
       <MiningField name="AlcoholMod_cat" usageType="active"/>
       <MiningField name="DepIndMod_cat" usageType="active"/>
       <MiningField name="DepIndHigh_cat" usageType="active"/>
       <MiningField name="EduNoGrad_cat" usageType="active"/>
       <MiningField name="EduHSGrad_cat" usageType="active"/>
-      <MiningField name="ImEth0To15_cat" usageType="active"/>
-      <MiningField name="ImEth16To30_cat" usageType="active"/>
-      <MiningField name="ImEth31To45_cat" usageType="active"/>
+      <MiningField name="Immig0To15_cat" usageType="active"/>
+      <MiningField name="Immig16To30_cat" usageType="active"/>
+      <MiningField name="Immig31To45_cat" usageType="active"/>
       <MiningField name="HeartDis_cat" usageType="active"/>
       <MiningField name="Stroke_cat" usageType="active"/>
       <MiningField name="Cancer_cat" usageType="active"/>
       <MiningField name="Diabetes_cat" usageType="active"/>
       <MiningField name="BMI_spline" usageType="active"/>
-      <MiningField name="CancerAge_Int" usageType="active"/>
-      <MiningField name="DiabetesAge_Int" usageType="active"/>
+      <MiningField name="AgeXCancer_int" usageType="active"/>
+      <MiningField name="AgeXDiabetes_int" usageType="active"/>
       <MiningField name="start" usageType="active"/>
       <MiningField name="stop" usageType="active"/>
       <MiningField name="EventDeath" usageType="active"/>
@@ -80,47 +80,61 @@
     <ParameterList>
       <Parameter name="p0" label="Age_cont" referencePoint="51.9855867845952"/>
       <Parameter name="p1" label="Age_spline" referencePoint="2.23085276362985"/>
-      <Parameter name="p2" label="QSLight_df" referencePoint="0.215339125424739"/>
-      <Parameter name="p3" label="QSHeavy_df" referencePoint="0.169791058200741"/>
+      <Parameter name="p2" label="QSLightCont_df" referencePoint="0.215339125424739"/>
+      <Parameter name="p3" label="QSHeavyCont_df" referencePoint="0.169791058200741"/>
       <Parameter name="p4" label="PhysicalActivity_cont" referencePoint="0.423291673033803"/>
-      <Parameter name="p5" label="DietScore" referencePoint="4.45588356813016"/>
+      <Parameter name="p5" label="DietScore_cont" referencePoint="4.45588356813016"/>
       <Parameter name="p6" label="AlcoholHeavy_cat" referencePoint="0.214680858065295"/>
       <Parameter name="p7" label="AlcoholMod_cat" referencePoint="0.237017319990201"/>
       <Parameter name="p8" label="DepIndMod_cat" referencePoint="0.635300311884138"/>
       <Parameter name="p9" label="DepIndHigh_cat" referencePoint="0.157419222739388"/>
       <Parameter name="p10" label="EduNoGrad_cat" referencePoint="0.171463149773857"/>
       <Parameter name="p11" label="EduHSGrad_cat" referencePoint="0.249920475029159"/>
-      <Parameter name="p12" label="ImEth0To15_cat" referencePoint="0.0394443855370586"/>
-      <Parameter name="p13" label="ImEth16To30_cat" referencePoint="0.0481756788873085"/>
-      <Parameter name="p14" label="ImEth31To45_cat" referencePoint="0.0583804693984256"/>
+      <Parameter name="p12" label="Immig0To15_cat" referencePoint="0.0394443855370586"/>
+      <Parameter name="p13" label="Immig16To30_cat" referencePoint="0.0481756788873085"/>
+      <Parameter name="p14" label="Immig31To45_cat" referencePoint="0.0583804693984256"/>
       <Parameter name="p15" label="HeartDis_cat" referencePoint="0.0782160081024062"/>
       <Parameter name="p16" label="Stroke_cat" referencePoint="0.0133748203832555"/>
       <Parameter name="p17" label="Cancer_cat" referencePoint="0.0234370143949338"/>
       <Parameter name="p18" label="Diabetes_cat" referencePoint="0.0720953275880351"/>
       <Parameter name="p19" label="BMI_spline" referencePoint="0.185952928529901"/>
-      <Parameter name="p20" label="CancerAge_Int" referencePoint="1.62081762638986"/>
-      <Parameter name="p21" label="DiabetesAge_Int" referencePoint="4.6754430546364"/>
+      <Parameter name="p20" label="AgeXCancer_int" referencePoint="1.62081762638986"/>
+      <Parameter name="p21" label="AgeXDiabetes_int" referencePoint="4.6754430546364"/>
     </ParameterList>
-    <FactorList />
-    <CovariateList>
-      <Predictor name="Age_cont"/>
-      <Predictor name="Age_spline"/>
-      <Predictor name="QSLight_df"/>
-      <Predictor name="QSHeavy_df"/>
-      <Predictor name="PhysicalActivity_cont"/>
-      <Predictor name="DietScore"/>
-      <Predictor name="BMI_spline"/>
-      <Predictor name="CancerAge_Int"/>
-      <Predictor name="DiabetesAge_Int"/>
+    <FactorList>
       <Predictor name="AlcoholHeavy_cat"/>
       <Predictor name="AlcoholMod_cat"/>
       <Predictor name="DepIndMod_cat"/>
       <Predictor name="DepIndHigh_cat"/>
       <Predictor name="EduNoGrad_cat"/>
       <Predictor name="EduHSGrad_cat"/>
-      <Predictor name="ImEth0To15_cat"/>
-      <Predictor name="ImEth16To30_cat"/>
-      <Predictor name="ImEth31To45_cat"/>
+      <Predictor name="Immig0To15_cat"/>
+      <Predictor name="Immig16To30_cat"/>
+      <Predictor name="Immig31To45_cat"/>
+      <Predictor name="HeartDis_cat"/>
+      <Predictor name="Stroke_cat"/>
+      <Predictor name="Cancer_cat"/>
+      <Predictor name="Diabetes_cat"/>
+    </FactorList>
+    <CovariateList>
+      <Predictor name="AlcoholHeavy_cat"/>
+      <Predictor name="AlcoholMod_cat"/>
+      <Predictor name="Age_cont"/>
+      <Predictor name="Age_spline"/>
+      <Predictor name="QSLightCont_df"/>
+      <Predictor name="QSHeavyCont_df"/>
+      <Predictor name="PhysicalActivity_cont"/>
+      <Predictor name="DietScore_cont"/>
+      <Predictor name="BMI_spline"/>
+      <Predictor name="AgeXCancer_int"/>
+      <Predictor name="AgeXDiabetes_int"/>
+      <Predictor name="Immig0To15_cat"/>
+      <Predictor name="DepIndMod_cat"/>
+      <Predictor name="DepIndHigh_cat"/>
+      <Predictor name="Immig16To30_cat"/>
+      <Predictor name="Immig31To45_cat"/>
+      <Predictor name="EduNoGrad_cat"/>
+      <Predictor name="EduHSGrad_cat"/>
       <Predictor name="HeartDis_cat"/>
       <Predictor name="Stroke_cat"/>
       <Predictor name="Cancer_cat"/>
@@ -129,26 +143,26 @@
     <PPMatrix>
       <PPCell value="1" predictorName="Age_cont" parameterName="p0"/>
       <PPCell value="1" predictorName="Age_spline" parameterName="p1"/>
-      <PPCell value="1" predictorName="QSLight_df" parameterName="p2"/>
-      <PPCell value="1" predictorName="QSHeavy_df" parameterName="p3"/>
+      <PPCell value="1" predictorName="QSLightCont_df" parameterName="p2"/>
+      <PPCell value="1" predictorName="QSHeavyCont_df" parameterName="p3"/>
       <PPCell value="1" predictorName="PhysicalActivity_cont" parameterName="p4"/>
-      <PPCell value="1" predictorName="DietScore" parameterName="p5"/>
+      <PPCell value="1" predictorName="DietScore_cont" parameterName="p5"/>
       <PPCell value="1" predictorName="AlcoholHeavy_cat" parameterName="p6"/>
       <PPCell value="1" predictorName="AlcoholMod_cat" parameterName="p7"/>
       <PPCell value="1" predictorName="DepIndMod_cat" parameterName="p8"/>
       <PPCell value="1" predictorName="DepIndHigh_cat" parameterName="p9"/>
       <PPCell value="1" predictorName="EduNoGrad_cat" parameterName="p10"/>
       <PPCell value="1" predictorName="EduHSGrad_cat" parameterName="p11"/>
-      <PPCell value="1" predictorName="ImEth0To15_cat" parameterName="p12"/>
-      <PPCell value="1" predictorName="ImEth16To30_cat" parameterName="p13"/>
-      <PPCell value="1" predictorName="ImEth31To45_cat" parameterName="p14"/>
+      <PPCell value="1" predictorName="Immig0To15_cat" parameterName="p12"/>
+      <PPCell value="1" predictorName="Immig16To30_cat" parameterName="p13"/>
+      <PPCell value="1" predictorName="Immig31To45_cat" parameterName="p14"/>
       <PPCell value="1" predictorName="HeartDis_cat" parameterName="p15"/>
       <PPCell value="1" predictorName="Stroke_cat" parameterName="p16"/>
       <PPCell value="1" predictorName="Cancer_cat" parameterName="p17"/>
       <PPCell value="1" predictorName="Diabetes_cat" parameterName="p18"/>
       <PPCell value="1" predictorName="BMI_spline" parameterName="p19"/>
-      <PPCell value="1" predictorName="CancerAge_Int" parameterName="p20"/>
-      <PPCell value="1" predictorName="DiabetesAge_Int" parameterName="p21"/>
+      <PPCell value="1" predictorName="AgeXCancer_int" parameterName="p20"/>
+      <PPCell value="1" predictorName="AgeXDiabetes_int" parameterName="p21"/>
     </PPMatrix>
     <ParamMatrix>
       <PCell parameterName="p0" df="1" beta="0.0831368085304069"/>
@@ -188,5 +202,4 @@
       <BaselineCell time="11" cumHazard="0.0285749622160038"/>
     </BaseCumHazardTables>
   </GeneralRegressionModel>
-  <CustomPMML></CustomPMML>
 </PMML>
