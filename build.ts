@@ -42,21 +42,21 @@ async function build() {
       );
     });
 
-  const causeImpactRefJsons = algorithmDirectoryPaths.map(
+  const causeEffectRefJsons = algorithmDirectoryPaths.map(
     (algorithmDirectoryPath, index) => {
       return convertCauseEffectCsvToGenderCauseEffectRefForAlgorithm(
         algorithmDirectoryNames[index],
         fs.readFileSync(
-          `${algorithmDirectoryPath}/cause-impact-ref.csv`,
+          `${algorithmDirectoryPath}/cause-effect-ref.csv`,
           "utf8"
         )
       );
     }
   );
-  causeImpactRefJsons.forEach((causeImpactRefJson, index) => {
+  causeEffectRefJsons.forEach((causeEffectRefJson, index) => {
     fs.writeFileSync(
-      `${algorithmDirectoryPaths[index]}/cause-impact-ref.json`,
-      JSON.stringify(causeImpactRefJson)
+      `${algorithmDirectoryPaths[index]}/cause-effect-ref.json`,
+      JSON.stringify(causeEffectRefJson)
     );
   });
 }
