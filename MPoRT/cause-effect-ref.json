@@ -1,1 +1,40 @@
-{"male":{"Smoking":[{"name":"QSLightCont_df","coefficent":"0"},{"name":"QSHeavy_df","coefficent":"0"}],"Diet":[{"name":"DietScore_cont","coefficent":"10"}],"PhysicalActivity":[{"name":"PhysicalActivity_cont","coefficent":"3"}],"Alcohol":[{"name":"AlcoholMod_cat","coefficent":"0"},{"name":"AlcoholHeavy_cat","coefficent":"0"}],"Education":[{"name":"EduHSGrad_cat","coefficent":"0"},{"name":"EduNoGrad_cat","coefficent":"0"}],"BMI":[{"name":"BMI_cont","coefficent":"24"}]},"female":{"Smoking":[{"name":"QSLightCont_df","coefficent":"0"},{"name":"QSHeavy_df","coefficent":"0"}],"Diet":[{"name":"DietScore_cont","coefficent":"10"}],"PhysicalActivity":[{"name":"PhysicalActivity_cont","coefficent":"3"}],"Alcohol":[{"name":"AlcoholMod_cat","coefficent":"0"},{"name":"AlcoholHeavy_cat","coefficent":"0"}],"Education":[{"name":"EduHSGrad_cat","coefficent":"0"},{"name":"EduNoGrad_cat","coefficent":"0"}],"BMI":[{"name":"BMI_cont","coefficent":"24"}]}}
+{
+  "male": {
+    "Smoking": [
+      { "name": "QSLightCont_df", "coefficent": "0" },
+      { "name": "QSHeavyCont_df", "coefficent": "0" }
+    ],
+    "Diet": [{ "name": "DietScore_cont", "coefficent": "10" }],
+    "PhysicalActivity": [
+      { "name": "PhysicalActivity_cont", "coefficent": "3" }
+    ],
+    "Alcohol": [
+      { "name": "AlcoholMod_cat", "coefficent": "0" },
+      { "name": "AlcoholHeavy_cat", "coefficent": "0" }
+    ],
+    "Education": [
+      { "name": "EduHSGrad_cat", "coefficent": "0" },
+      { "name": "EduNoGrad_cat", "coefficent": "0" }
+    ],
+    "BMI": [{ "name": "BMI_cont", "coefficent": "24" }]
+  },
+  "female": {
+    "Smoking": [
+      { "name": "QSLightCont_df", "coefficent": "0" },
+      { "name": "QSHeavyCont_df", "coefficent": "0" }
+    ],
+    "Diet": [{ "name": "DietScore_cont", "coefficent": "10" }],
+    "PhysicalActivity": [
+      { "name": "PhysicalActivity_cont", "coefficent": "3" }
+    ],
+    "Alcohol": [
+      { "name": "AlcoholMod_cat", "coefficent": "0" },
+      { "name": "AlcoholHeavy_cat", "coefficent": "0" }
+    ],
+    "Education": [
+      { "name": "EduHSGrad_cat", "coefficent": "0" },
+      { "name": "EduNoGrad_cat", "coefficent": "0" }
+    ],
+    "BMI": [{ "name": "BMI_cont", "coefficent": "24" }]
+  }
+}
