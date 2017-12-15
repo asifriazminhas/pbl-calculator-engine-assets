@@ -3,7 +3,7 @@ MPoRT,Smoking,Both,QSLightCont_df,0,NA
 MPoRT,Smoking,Both,QSHeavy_df,0,NA
 MPoRT,Smoking,Both,TypeOfSmoker,NA,0
 MPoRT,Diet,Both,DietScore_cont,10,10
-MPoRT,PhysicalActivity,Both,PhysicalActivity_cont,3,3
+MPoRT,PhysicalActivity,Both,PhysicalActivity,3,3
 MPoRT,Alcohol,Both,AlcoholMod_cat,0,NA
 MPoRT,Alcohol,Both,AlcoholHeavy_cat,0,NA
 MPoRT,Alcohol,Both,AlcoholType,NA,0
