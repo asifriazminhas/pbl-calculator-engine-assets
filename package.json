@@ -1,6 +1,6 @@
 {
   "name": "@ottawamhealth/pbl-calculator-engine-assets",
-  "version": "1.4.1-beta.5",
+  "version": "1.4.1",
   "description": "",
   "main": "index.js",
   "scripts": {
