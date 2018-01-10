@@ -1,0 +1,17 @@
+Algorithm,RiskFactor,Sex,PredictorName,EngineRef,CanadaUsaRef
+SPoRT,Smoking,Both,SmokeFormer5Plus_cat,0,NA
+SPoRT,Smoking,Both,SmokeFormer0to5_cat,0,NA
+SPoRT,Smoking,Both,SmokeCurrent_cat,0,NA
+SPoRT,Smoking,Both,PackYears_cont,0,0
+SPoRT,Smoking,Both,SmokeSimple,NA,0
+SPoRT,Diet,Both,FruitVeg_cont,5,5
+SPoRT,Diet,Both,Juice_cont,0,0
+SPoRT,Diet,Both,Potato_cont,0,0
+SPoRT,PhysicalActivity,Both,PhysicalActivity_cont,20,20
+SPoRT,Alcohol,Both,DrinksLastWeek_cont,0,0
+SPoRT,Alcohol,Female,FormerDrinker_cat,0,0
+SPoRT,BMI,Both,BMI_cont,24,24
+SPoRT,Education,Both,EduHSGrad2_cat,0,NA
+SPoRT,Education,Both,EduSomePS2_cat,0,NA
+SPoRT,Education,Both,EduPSGrad2_cat,0,NA
+SPoRT,Education,Both,Edu2,NA,0
