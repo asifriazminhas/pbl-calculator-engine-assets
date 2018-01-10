@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ts-node ./build.ts"
+    "build": "ts-node ./build.ts",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
