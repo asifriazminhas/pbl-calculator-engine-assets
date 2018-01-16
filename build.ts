@@ -2,6 +2,7 @@ import { SurvivalModelBuilder } from "@ottawamhealth/pbl-calculator-engine";
 import { convertCauseEffectCsvToGenderCauseEffectRefForAlgorithm } from "@ottawamhealth/pbl-calculator-engine/lib/scripts/cause-effect-csv-to-json";
 import * as fs from "fs";
 import * as path from "path";
+import { MultipleAlgorithmModelJson } from "@ottawamhealth/pbl-calculator-engine/lib/engine/multiple-algorithm-model/multiple-algorithm-model-json";
 
 async function build() {
   const ExcludedAlgorithms = "sport";
@@ -29,20 +30,21 @@ async function build() {
     })
   );
 
-  algorithms
-    .map(algorithm => {
-      return algorithm.getModelJson();
-    })
-    .map((algorithmJson, index) => {
-      return fs.writeFileSync(
-        `${algorithmDirectoryPaths[index]}/model.json`,
-        JSON.stringify(algorithmJson)
-      );
-    });
+  const modelJsons = algorithms.map(algorithm => {
+    return algorithm.getModelJson();
+  });
+
+  modelJsons.forEach((algorithmJson, index) => {
+    return fs.writeFileSync(
+      `${algorithmDirectoryPaths[index]}/model.json`,
+      JSON.stringify(algorithmJson)
+    );
+  });
 
   const causeEffectRefJsons = algorithmDirectoryPaths.map(
     (algorithmDirectoryPath, index) => {
       return convertCauseEffectCsvToGenderCauseEffectRefForAlgorithm(
+        modelJsons[index] as MultipleAlgorithmModelJson,
         algorithmDirectoryNames[index],
         fs.readFileSync(
           `${algorithmDirectoryPath}/cause-effect-ref.csv`,
