@@ -101,42 +101,42 @@
             </OutputField>
         </Output>
         <ParameterList>
-            <Parameter name="p0" label="AgeC_rcs1" referencePoint="1.71963561403978e-12"/>
-            <Parameter name="p1" label="AgeC_rcs2" referencePoint="13.2972177048351"/>
-            <Parameter name="p2" label="AgeC_rcs3" referencePoint="4.2153030856009"/>
-            <Parameter name="p3" label="AgeC_rcs4" referencePoint="1.04054222617804"/>
-            <Parameter name="p4" label="PackYearsC_rcs1" referencePoint="-5.86564960939333e-14"/>
-            <Parameter name="p5" label="PackYearsC_rcs2" referencePoint="0.00379615801788254"/>
-            <Parameter name="p6" label="SmokeFormer5PlusC_cat" referencePoint="1.35637902559968e-15"/>
-            <Parameter name="p7" label="SmokeFormer0to5C_cat" referencePoint="1.49139534275971e-15"/>
-            <Parameter name="p8" label="SmokeCurrentC_cat" referencePoint="-9.53287761281852e-15"/>
-            <Parameter name="p9" label="AgeCXPackYearsC_int" referencePoint="46.5894173249377"/>
-            <Parameter name="p10" label="AgeCXSmokeFormer5PlusC_int" referencePoint="1.13728103959131"/>
-            <Parameter name="p11" label="AgeCXSmokeFormer0to5C_int" referencePoint="-0.392463087154288"/>
-            <Parameter name="p12" label="AgeCXSmokeCurrentC_int" referencePoint="-1.24777733643107"/>
-            <Parameter name="p13" label="DrinksLastWeekC_rcs1" referencePoint="2.05751410870595e-14"/>
-            <Parameter name="p14" label="FormerDrinkerC_cat" referencePoint="8.0225760794388e-15"/>
-            <Parameter name="p15" label="AgeCXDrinksLastWeekC_int" referencePoint="-5.28675741119826"/>
-            <Parameter name="p16" label="AgeCXFormerDrinkerC_int" referencePoint="1.04038603514813"/>
-            <Parameter name="p17" label="FruitVegC_rcs1" referencePoint="2.43885757956698e-14"/>
-            <Parameter name="p18" label="FruitVegC_rcs2" referencePoint="1.06387301050483"/>
-            <Parameter name="p19" label="AgeCXFruitVegC_int" referencePoint="2.38054504059647"/>
-            <Parameter name="p20" label="PhysicalActivityC_rcs1" referencePoint="-8.70895208918434e-15"/>
-            <Parameter name="p21" label="PhysicalActivityC_rcs2" referencePoint="0.747239508064208"/>
-            <Parameter name="p22" label="AgeCXPhysicalActivityC_int" referencePoint="-5.00241657389303"/>
-            <Parameter name="p23" label="BMIC_rcs1" referencePoint="7.19813232444157e-15"/>
-            <Parameter name="p24" label="BMIC_rcs2" referencePoint="2.51030901388423"/>
-            <Parameter name="p25" label="AgeCXBMIC_int" referencePoint="8.14882592681368"/>
-            <Parameter name="p26" label="EduHSGrad2C_cat" referencePoint="-3.47142441373369e-15"/>
-            <Parameter name="p27" label="EduSomePS2C_cat" referencePoint="3.59041988105824e-15"/>
-            <Parameter name="p28" label="EduPSGrad2C_cat" referencePoint="4.51864238886447e-15"/>
-            <Parameter name="p29" label="DiabetesC_cat" referencePoint="-1.18772686285582e-14"/>
-            <Parameter name="p30" label="AgeCXDiabetesC_int" referencePoint="0.643808189499578"/>
-            <Parameter name="p31" label="HypertensionC_cat" referencePoint="-2.48063891168225e-14"/>
-            <Parameter name="p32" label="AgeCXHypertensionC_int" referencePoint="2.86420265067633"/>
-            <Parameter name="p33" label="SurveyCycle2C_cat" referencePoint="-7.12815453040444e-15"/>
-            <Parameter name="p34" label="SurveyCycle3C_cat" referencePoint="-4.61887174389609e-14"/>
-            <Parameter name="p35" label="SurveyCycle4C_cat" referencePoint="-8.31750661357251e-14"/>
+            <Parameter name="p0" label="AgeC_rcs1"/>
+            <Parameter name="p1" label="AgeC_rcs2" />
+            <Parameter name="p2" label="AgeC_rcs3"/>
+            <Parameter name="p3" label="AgeC_rcs4"/>
+            <Parameter name="p4" label="PackYearsC_rcs1"/>
+            <Parameter name="p5" label="PackYearsC_rcs2"/>
+            <Parameter name="p6" label="SmokeFormer5PlusC_cat"/>
+            <Parameter name="p7" label="SmokeFormer0to5C_cat"/>
+            <Parameter name="p8" label="SmokeCurrentC_cat"/>
+            <Parameter name="p9" label="AgeCXPackYearsC_int"/>
+            <Parameter name="p10" label="AgeCXSmokeFormer5PlusC_int"/>
+            <Parameter name="p11" label="AgeCXSmokeFormer0to5C_int"/>
+            <Parameter name="p12" label="AgeCXSmokeCurrentC_int"/>
+            <Parameter name="p13" label="DrinksLastWeekC_rcs1"/>
+            <Parameter name="p14" label="FormerDrinkerC_cat"/>
+            <Parameter name="p15" label="AgeCXDrinksLastWeekC_int"/>
+            <Parameter name="p16" label="AgeCXFormerDrinkerC_int"/>
+            <Parameter name="p17" label="FruitVegC_rcs1"/>
+            <Parameter name="p18" label="FruitVegC_rcs2"/>
+            <Parameter name="p19" label="AgeCXFruitVegC_int"/>
+            <Parameter name="p20" label="PhysicalActivityC_rcs1"/>
+            <Parameter name="p21" label="PhysicalActivityC_rcs2"/>
+            <Parameter name="p22" label="AgeCXPhysicalActivityC_int"/>
+            <Parameter name="p23" label="BMIC_rcs1"/>
+            <Parameter name="p24" label="BMIC_rcs2"/>
+            <Parameter name="p25" label="AgeCXBMIC_int"/>
+            <Parameter name="p26" label="EduHSGrad2C_cat" />
+            <Parameter name="p27" label="EduSomePS2C_cat" />
+            <Parameter name="p28" label="EduPSGrad2C_cat" />
+            <Parameter name="p29" label="DiabetesC_cat" />
+            <Parameter name="p30" label="AgeCXDiabetesC_int" />
+            <Parameter name="p31" label="HypertensionC_cat" />
+            <Parameter name="p32" label="AgeCXHypertensionC_int" />
+            <Parameter name="p33" label="SurveyCycle2C_cat"/>
+            <Parameter name="p34" label="SurveyCycle3C_cat"/>
+            <Parameter name="p35" label="SurveyCycle4C_cat" />
         </ParameterList>
         <FactorList/>
         <CovariateList>
