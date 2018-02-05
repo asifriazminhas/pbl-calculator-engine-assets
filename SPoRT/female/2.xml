@@ -554,30 +554,6 @@
                 <MissingValueTreatment>NA</MissingValueTreatment>
             </row>
             <row>
-                <index>DrinksLastWeekC_rcs1</index>
-                <X>25</X>
-                <Name>DrinksLastWeekC_rcs1</Name>
-                <DisplayName>Drinks Last Week</DisplayName>
-                <NameDetails>Drinks consumed last week RCS1, centered on mean</NameDetails>
-                <Type>ALCOHOL</Type>
-                <order>NA</order>
-                <Final>1</Final>
-                <Mean_male>NA</Mean_male>
-                <Mean_female>NA</Mean_female>
-                <UserMin_male>NA</UserMin_male>
-                <UserMin_female>NA</UserMin_female>
-                <UserMax_male>NA</UserMax_male>
-                <UserMax_female>NA</UserMax_female>
-                <PctlLow>NA</PctlLow>
-                <PctlUpp>NA</PctlUpp>
-                <s>NA</s>
-                <HighValue>NA</HighValue>
-                <OutlierTreatmentMethod>NA</OutlierTreatmentMethod>
-                <InvalidValueTreatment>NA</InvalidValueTreatment>
-                <MissingValueReplacement>NA</MissingValueReplacement>
-                <MissingValueTreatment>NA</MissingValueTreatment>
-            </row>
-            <row>
                 <index>FormerDrinkerNo</index>
                 <X>26</X>
                 <Name>FormerDrinkerNo</Name>
@@ -3213,9 +3189,6 @@
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
-        </DerivedField>
-        <DerivedField name="DrinksLastWeekC_rcs1" optype="continuous">
-            <FieldRef field="DrinksLastWeekC_cont"/>
         </DerivedField>
         <DerivedField name="FormerDrinker_cat" optype="continuous">
             <Apply function="ifelse2">

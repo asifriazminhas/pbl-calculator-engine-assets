@@ -262,12 +262,12 @@
     </GeneralRegressionModel>
     <CustomPMML>
         <RestrictedCubicSpline>
-            <PCell parameterName="p1, p2, p3" knotLocations="-24.98064912, -11.98064912, -1.980649122, 11.01935088, 29.01935088"/>
-            <PCell parameterName="p5" knotLocations="-13.18715513, -10.18715513, 26.81284487"/>
-            <PCell parameterName="p14" knotLocations="-5.766836745, -3.766836745, 10.23316325"/>
-            <PCell parameterName="p17" knotLocations="-2.005140474, -0.405140474, 2.394859526"/>
-            <PCell parameterName="p19" knotLocations="-0.3127051, -0.1127051, 0.5872949"/>
-            <PCell parameterName="p25" knotLocations="-4.773158473, -0.438600162, 5.335843968"/>
+            <PCell parameterName="p1, p2, p3" knotLocations="-27.2790673, -12.2790673, -0.2790673, 11.7209327, 28.7209327"/>
+            <PCell parameterName="p5" knotLocations="-14.170332, -9.420332, 27.829668"/>
+            <PCell parameterName="p14" knotLocations="-5.686588, -3.686588, 10.313412"/>
+            <PCell parameterName="p17" knotLocations="-2.0414531, -0.3414531, 2.3585469"/>
+            <PCell parameterName="p19" knotLocations="-0.3108156, -0.1108156, 0.5891844"/>
+            <PCell parameterName="p25" knotLocations="-4.9016174, -0.5539917, 5.5983826"/>
         </RestrictedCubicSpline>
     </CustomPMML>
 </PMML>

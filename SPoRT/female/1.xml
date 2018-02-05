@@ -21,7 +21,7 @@
         <DataField name="AgeCXSmokeFormer5PlusC_int" optype="continuous" dataType="double"/>
         <DataField name="AgeCXSmokeFormer0to5C_int" optype="continuous" dataType="double"/>
         <DataField name="AgeCXSmokeCurrentC_int" optype="continuous" dataType="double"/>
-        <DataField name="DrinksLastWeekC_rcs1" optype="continuous" dataType="double"/>
+        <DataField name="DrinksLastWeelC_cont" optype="continuous" dataType="double"/>
         <DataField name="FormerDrinkerC_cat" optype="continuous" dataType="double"/>
         <DataField name="AgeCXDrinksLastWeekC_int" optype="continuous" dataType="double"/>
         <DataField name="AgeCXFormerDrinkerC_int" optype="continuous" dataType="double"/>
@@ -63,7 +63,7 @@
             <MiningField name="AgeCXSmokeFormer5PlusC_int" usageType="active"/>
             <MiningField name="AgeCXSmokeFormer0to5C_int" usageType="active"/>
             <MiningField name="AgeCXSmokeCurrentC_int" usageType="active"/>
-            <MiningField name="DrinksLastWeekC_rcs1" usageType="active"/>
+            <MiningField name="DrinksLastWeelC_cont" usageType="active"/>
             <MiningField name="FormerDrinkerC_cat" usageType="active"/>
             <MiningField name="AgeCXDrinksLastWeekC_int" usageType="active"/>
             <MiningField name="AgeCXFormerDrinkerC_int" usageType="active"/>
@@ -114,7 +114,7 @@
             <Parameter name="p10" label="AgeCXSmokeFormer5PlusC_int"/>
             <Parameter name="p11" label="AgeCXSmokeFormer0to5C_int"/>
             <Parameter name="p12" label="AgeCXSmokeCurrentC_int"/>
-            <Parameter name="p13" label="DrinksLastWeekC_rcs1"/>
+            <Parameter name="p13" label="DrinksLastWeelC_cont"/>
             <Parameter name="p14" label="FormerDrinkerC_cat"/>
             <Parameter name="p15" label="AgeCXDrinksLastWeekC_int"/>
             <Parameter name="p16" label="AgeCXFormerDrinkerC_int"/>
@@ -153,7 +153,7 @@
             <Predictor name="AgeCXSmokeFormer5PlusC_int"/>
             <Predictor name="AgeCXSmokeFormer0to5C_int"/>
             <Predictor name="AgeCXSmokeCurrentC_int"/>
-            <Predictor name="DrinksLastWeekC_rcs1"/>
+            <Predictor name="DrinksLastWeelC_cont"/>
             <Predictor name="FormerDrinkerC_cat"/>
             <Predictor name="AgeCXDrinksLastWeekC_int" />
             <Predictor name="AgeCXFormerDrinkerC_int"/>
@@ -191,7 +191,7 @@
             <PPCell value="1" predictorName="AgeCXSmokeFormer5PlusC_int" parameterName="p10"/>
             <PPCell value="1" predictorName="AgeCXSmokeFormer0to5C_int" parameterName="p11"/>
             <PPCell value="1" predictorName="AgeCXSmokeCurrentC_int" parameterName="p12"/>
-            <PPCell value="1" predictorName="DrinksLastWeekC_rcs1" parameterName="p13"/>
+            <PPCell value="1" predictorName="DrinksLastWeelC_cont" parameterName="p13"/>
             <PPCell value="1" predictorName="FormerDrinkerC_cat" parameterName="p14"/>
             <PPCell value="1" predictorName="AgeCXDrinksLastWeekC_int" parameterName="p15"/>
             <PPCell value="1" predictorName="AgeCXFormerDrinkerC_int" parameterName="p16"/>
@@ -256,11 +256,11 @@
     </GeneralRegressionModel>
     <CustomPMML>
         <RestrictedCubicSpline>
-            <PCell parameterName="p1, p2, p3" knotLocations="-27.0556276980311, -13.0556277, -1.055627698, 11.9443723, 29.9443723"/>
-            <PCell parameterName="p5" knotLocations="-8.168189355, -8.161189355, 20.33181065"/>
-            <PCell parameterName="p18" knotLocations="-2.468725652, -0.468725652, 3.031274348"/>
-            <PCell parameterName="p21" knotLocations="-1.767511319, -0.167511319, 2.632488681"/>
-            <PCell parameterName="p24" knotLocations="-5.68421137, -0.949302364, 6.940697636"/>
+            <PCell parameterName="p1, p2, p3" knotLocations="-28.2137592, -13.2137592, -0.2137592, 12.7862408, 29.7862408"/>
+            <PCell parameterName="p5" knotLocations="-8.540405, -6.040405, 20.209595"/>
+            <PCell parameterName="p18" knotLocations="-2.4314041, -0.3314041, 3.0685959"/>
+            <PCell parameterName="p21" knotLocations="-1.7806361, -0.1806361, 2.7193639"/>
+            <PCell parameterName="p24" knotLocations="-5.862548, -1.052548, 7.077452"/>
         </RestrictedCubicSpline>
     </CustomPMML>
 </PMML>
