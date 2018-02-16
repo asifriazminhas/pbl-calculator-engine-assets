@@ -3,6 +3,8 @@ import { convertCauseEffectCsvToGenderCauseEffectRefForAlgorithm } from "@ottawa
 import * as fs from "fs";
 import * as path from "path";
 import { MultipleAlgorithmModelJson } from "@ottawamhealth/pbl-calculator-engine/lib/engine/multiple-algorithm-model/multiple-algorithm-model-json";
+import { transformPhiatDictionaryToPmml } from "@ottawamhealth/pbl-calculator-engine/lib/engine/pmml-transformers/web-specifications";
+const csvParse = require("csv-parse/lib/sync");
 
 async function build() {
   const ExcludedAlgorithms = "sport";
@@ -24,6 +26,53 @@ async function build() {
     return `${__dirname}/${directoryName}`;
   });
 
+  algorithmDirectoryPaths.forEach(algorithmDirectoryPath => {
+    const filesInCurrentAlgorithmDirectory = fs.readdirSync(
+      algorithmDirectoryPath
+    );
+
+    const currentAlgorithmInfo = csvParse(
+      fs.readFileSync(`${algorithmDirectoryPath}/algorithm_info.csv`, "utf8"),
+      {
+        columns: true
+      }
+    ).find(
+      (algorithmInfoRow: { AlgorithmName: string }) =>
+        algorithmInfoRow["AlgorithmName"] ===
+        algorithmDirectoryPath.split("/").reverse()[0]
+    );
+    if (!currentAlgorithmInfo) {
+      throw new Error();
+    }
+
+    if (currentAlgorithmInfo["GenderSpecific"] === "false") {
+      filesInCurrentAlgorithmDirectory.forEach(currentAlgorithmFileName => {
+        if (
+          currentAlgorithmFileName.indexOf(".csv") > -1 &&
+          !isNaN(Number(currentAlgorithmFileName.split(".csv")[0]))
+        ) {
+          fs.writeFileSync(
+            `${algorithmDirectoryPath}/${
+              currentAlgorithmFileName.split(".csv")[0]
+            }.xml`,
+            transformPhiatDictionaryToPmml(
+              currentAlgorithmInfo["AlgorithmName"],
+              fs.readFileSync(
+                `${algorithmDirectoryPath}/${currentAlgorithmFileName}`,
+                "utf8"
+              ),
+              "",
+              currentAlgorithmInfo,
+              "both",
+              false,
+              true
+            )
+          );
+        }
+      });
+    }
+  });
+
   const algorithms = await Promise.all(
     algorithmDirectoryPaths.map(algorithmDirectoryPath => {
       return SurvivalModelBuilder.buildFromAssetsFolder(algorithmDirectoryPath);
@@ -41,8 +90,11 @@ async function build() {
     );
   });
 
-  const causeEffectRefJsons = algorithmDirectoryPaths.map(
-    (algorithmDirectoryPath, index) => {
+  const causeEffectRefJsons = algorithmDirectoryPaths
+    .filter(algorithmDirectoryPath => {
+      return fs.existsSync(`${algorithmDirectoryPath}/cause-effect-ref.csv`);
+    })
+    .map((algorithmDirectoryPath, index) => {
       return convertCauseEffectCsvToGenderCauseEffectRefForAlgorithm(
         modelJsons[index] as MultipleAlgorithmModelJson,
         algorithmDirectoryNames[index],
@@ -51,8 +103,7 @@ async function build() {
           "utf8"
         )
       );
-    }
-  );
+    });
   causeEffectRefJsons.forEach((causeEffectRefJson, index) => {
     fs.writeFileSync(
       `${algorithmDirectoryPaths[index]}/cause-effect-ref.json`,
