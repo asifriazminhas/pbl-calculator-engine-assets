@@ -4,24 +4,84 @@ import * as fs from "fs";
 import * as path from "path";
 import { MultipleAlgorithmModelJson } from "@ottawamhealth/pbl-calculator-engine/lib/engine/multiple-algorithm-model/multiple-algorithm-model-json";
 import { transformPhiatDictionaryToPmml } from "@ottawamhealth/pbl-calculator-engine/lib/engine/pmml-transformers/web-specifications";
+import { getRefPopJsonsFromRefPopCsv } from "./build/ref-pop";
+import { getCalibrationJsonsFromCalibrationCsvString } from "./build/calibration";
 const csvParse = require("csv-parse/lib/sync");
 
+function buildReferenceJsonFiles(
+  algorithmDirectoryPaths: string[],
+  referenceFilesRootFolderName: string,
+  outputJsonFilesRootFolderName: string,
+  builderMethod: (
+    csvFiles: {
+      male: string;
+      female: string;
+    }
+  ) => Array<{ fileName: string; jsonObject: object }>
+) {
+  algorithmDirectoryPaths
+    .map(algorithmDirectoryPath => {
+      const referenceFilesRootFolderPath = `${algorithmDirectoryPath}/${referenceFilesRootFolderName}`;
+
+      if (fs.existsSync(referenceFilesRootFolderPath)) {
+        const nameOfCsvFile = fs
+          .readdirSync(`${referenceFilesRootFolderPath}/male`)
+          .find(fileName => {
+            return fileName.includes(".csv");
+          });
+        if (!nameOfCsvFile) {
+          throw new Error(
+            `No csv reference file found in ${referenceFilesRootFolderPath}`
+          );
+        }
+
+        return builderMethod({
+          male: fs.readFileSync(
+            `${referenceFilesRootFolderPath}/male/${nameOfCsvFile}`,
+            "utf8"
+          ),
+          female: fs.readFileSync(
+            `${referenceFilesRootFolderPath}/female/${nameOfCsvFile}`,
+            "utf8"
+          )
+        });
+      } else {
+        return undefined;
+      }
+    })
+    .map((referenceJsonObjects, index) => {
+      if (referenceJsonObjects) {
+        const outputJsonReferenceFilesFolderPath = `${
+          algorithmDirectoryPaths[index]
+        }/${outputJsonFilesRootFolderName}`;
+
+        if (!fs.existsSync(outputJsonReferenceFilesFolderPath)) {
+          fs.mkdirSync(outputJsonReferenceFilesFolderPath);
+        }
+
+        referenceJsonObjects.forEach(referenceJsonObject => {
+          fs.writeFileSync(
+            `${outputJsonReferenceFilesFolderPath}/${
+              referenceJsonObject.fileName
+            }.json`,
+            JSON.stringify(referenceJsonObject.jsonObject)
+          );
+        });
+      }
+    });
+}
+
 async function build() {
-  const ExcludedAlgorithms = "sport";
+  const IncludeAlgorithms = ["MPoRT", "SPoRT"];
 
   const algorithmDirectoryNames = fs
     .readdirSync(__dirname)
     .filter(fileOrDirectoryName => {
-      return (
-        fileOrDirectoryName !== ".git" &&
-        fileOrDirectoryName !== "node_modules" &&
-        ExcludedAlgorithms.indexOf(fileOrDirectoryName) < 0
-      );
+      return IncludeAlgorithms.indexOf(fileOrDirectoryName) > -1;
     })
     .filter(fileOrDirectoryName => {
       return fs.statSync(`${__dirname}/${fileOrDirectoryName}`).isDirectory();
     });
-
   const algorithmDirectoryPaths = algorithmDirectoryNames.map(directoryName => {
     return `${__dirname}/${directoryName}`;
   });
@@ -110,6 +170,38 @@ async function build() {
       JSON.stringify(causeEffectRefJson)
     );
   });
+
+  buildReferenceJsonFiles(
+    algorithmDirectoryPaths,
+    "ref-pop-references",
+    "ref-pops",
+    csvReferenceFiles => {
+      return getRefPopJsonsFromRefPopCsv(csvReferenceFiles).map(
+        ({ refPop, popName }) => {
+          return {
+            fileName: popName,
+            jsonObject: refPop
+          };
+        }
+      );
+    }
+  );
+
+  buildReferenceJsonFiles(
+    algorithmDirectoryPaths,
+    "calibration-references",
+    "calibration",
+    csvReferenceFiles => {
+      return getCalibrationJsonsFromCalibrationCsvString(csvReferenceFiles).map(
+        ({ calibrationJson, popName }) => {
+          return {
+            fileName: popName,
+            jsonObject: calibrationJson
+          };
+        }
+      );
+    }
+  );
 }
 
 build()
