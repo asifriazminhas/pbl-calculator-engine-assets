@@ -10,12 +10,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/csv-parse": "^1.1.11",
     "@types/node": "8.0.27",
     "ts-node": "3.3.0",
     "tslib": "1.7.1",
     "typescript": "2.6.1"
   },
   "dependencies": {
-    "@ottawamhealth/pbl-calculator-engine": "^1.4.1"
+    "@ottawamhealth/pbl-calculator-engine": "^1.5.0",
+    "csv-parse": "^2.0.4"
   }
 }
