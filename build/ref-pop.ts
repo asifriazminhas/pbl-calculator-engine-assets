@@ -1,8 +1,9 @@
-const csvParse = require("csv-parse/lib/sync");
 import {
   ReferencePopulation,
   RefPopsWithPredicate
-} from "@ottawamhealth/pbl-calculator-engine";
+} from "@ottawamhealth/pbl-calculator-engine/lib/engine/ref-pop/reference-population";
+
+const csvParse = require("csv-parse/lib/sync");
 
 interface RefPopCsvRow {
   age: string;
