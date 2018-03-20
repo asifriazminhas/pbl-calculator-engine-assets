@@ -2,7 +2,7 @@
   xmlns="http://www.dmg.org/PMML-4_2" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_2 http://www.dmg.org/v4-2/pmml-4-2.xsd">
   <Header copyright="Copyright (c) 2016 The Ottawa Hospital" description="MPoRT Female V1.2.5">
-    <Annotation>Mortality (all-cause) Population Risk Tool (MPoRT)                                      
+    <Annotation>Mortality (all-cause) Population Risk Tool (MPoRT)                                            
       <Extension name="author">Doug Manuel</Extension>
     </Annotation>
     <Extension name="user" value="theottawahospital" extender="COXPH"/>
@@ -37,7 +37,7 @@
     <DataField name="stop" optype="continuous" dataType="double"/>
     <DataField name="EventDeath" optype="continuous" dataType="double"/>
   </DataDictionary>
-  <GeneralRegressionModel modelType="CoxRegression" modelName="MPoRT_FemaleModel" functionName="regression" algorithmName="coxph" startTimeVariable="start" endTimeVariable="stop" statusVariable="EventDeath" baselineHazard="0.0000238108">
+  <GeneralRegressionModel modelType="CoxRegression" modelName="MPoRT_FemaleModel" functionName="regression" algorithmName="coxph" startTimeVariable="start" endTimeVariable="stop" statusVariable="EventDeath" baselineHazard="0.0000148553">
     <MiningSchema>
       <MiningField name="survival" usageType="predicted"/>
       <MiningField name="Age_cont" usageType="active"/>
