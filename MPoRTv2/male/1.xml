@@ -1,0 +1,916 @@
+<PMML>
+    <Taxonomy name="means">
+        <InlineTable>
+            <row>
+                <index>1</index>
+                <Name>AgeC_cont</Name>
+                <Minimum>20</Minimum>
+                <Maximum>102</Maximum>
+                <Means>50.630622</Means>
+                <Std.Dev>18.3327804</Std.Dev>
+                <Median>52</Median>
+                <Q1>37</Q1>
+                <Q3>67</Q3>
+                <Knot1>-28.1712945</Knot1>
+                <Knot2>-14.1712945</Knot2>
+                <Knot3>-0.1712945</Knot3>
+                <Knot4>12.8287055</Knot4>
+                <Knot5>29.8287055</Knot5>
+            </row>
+            <row>
+                <index>2</index>
+                <Name>SmokeCurrentC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2577804</Means>
+                <Std.Dev>0.4077518</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>3</index>
+                <Name>SmokeFormer0to5C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1137479</Means>
+                <Std.Dev>0.2931261</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>4</index>
+                <Name>SmokeFormer5PlusC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.3740262</Means>
+                <Std.Dev>0.4577404</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>5</index>
+                <Name>PackYearsC_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>78</Maximum>
+                <Means>14.4032829</Means>
+                <Std.Dev>14.6897018</Std.Dev>
+                <Median>2.5</Median>
+                <Q1>0</Q1>
+                <Q3>10</Q3>
+                <Knot1>-8.552258</Knot1>
+                <Knot2>-6.052258</Knot2>
+                <Knot3>20.197742</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>6</index>
+                <Name>FormerDrinkerC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.115705</Means>
+                <Std.Dev>0.3635354</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>7</index>
+                <Name>DrinksLastWeekC_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>24</Maximum>
+                <Means>5.5459356</Means>
+                <Std.Dev>3.9369174</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>3</Q3>
+                <Knot1>-2.1419706</Knot1>
+                <Knot2>-1.1419706</Knot2>
+                <Knot3>-0.1419706</Knot3>
+                <Knot4>4.8580294</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>8</index>
+                <Name>DietScore2C_cont</Name>
+                <Minimum>-18.8680064</Minimum>
+                <Maximum>20.6964115</Maximum>
+                <Means>9.18E-13</Means>
+                <Std.Dev>2.9528452</Std.Dev>
+                <Median>-0.2196557</Median>
+                <Q1>-1.9428973</Q1>
+                <Q3>1.7520618</Q3>
+                <Knot1>-3.3821214</Knot1>
+                <Knot2>-0.2196557</Knot2>
+                <Knot3>3.7547511</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>9</index>
+                <Name>PhysicalActivityC_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>12.354</Maximum>
+                <Means>2.2393318</Means>
+                <Std.Dev>1.9071799</Std.Dev>
+                <Median>1.3</Median>
+                <Q1>0.5</Q1>
+                <Q3>2.7</Q3>
+                <Knot1>-1.7600395</Knot1>
+                <Knot2>-0.1600395</Knot2>
+                <Knot3>2.6399605</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>10</index>
+                <Name>BMIC_cont</Name>
+                <Minimum>8.89</Minimum>
+                <Maximum>47.152205</Maximum>
+                <Means>26.9017723</Means>
+                <Std.Dev>5.410167</Std.Dev>
+                <Median>24.89</Median>
+                <Q1>22.1</Q1>
+                <Q3>28.8594039</Q3>
+                <Knot1>-5.852673</Knot1>
+                <Knot2>-1.042673</Knot2>
+                <Knot3>7.085145</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>11</index>
+                <Name>EduNoHSGradC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.3896038</Means>
+                <Std.Dev>0.3932604</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>12</index>
+                <Name>EduHSGradC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.3850313</Means>
+                <Std.Dev>0.3983264</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>13</index>
+                <Name>EduSomePS2C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2488061</Means>
+                <Std.Dev>0.2447942</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>14</index>
+                <Name>DepIndHighC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.3629257</Means>
+                <Std.Dev>0.3721145</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>15</index>
+                <Name>DepIndModC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.4794901</Means>
+                <Std.Dev>0.4785891</Std.Dev>
+                <Median>1</Median>
+                <Q1>0</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>16</index>
+                <Name>EthnBlackC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1132405</Means>
+                <Std.Dev>0.117749</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>17</index>
+                <Name>EthnChineseC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.125396</Means>
+                <Std.Dev>0.1176622</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>18</index>
+                <Name>EthnJapanC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1105487</Means>
+                <Std.Dev>0.1156014</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>19</index>
+                <Name>EthnAsianC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1690231</Means>
+                <Std.Dev>0.1564805</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>20</index>
+                <Name>EthnOtherC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1998879</Means>
+                <Std.Dev>0.1998877</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>21</index>
+                <Name>DiabetesC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.285654</Means>
+                <Std.Dev>0.2594019</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>22</index>
+                <Name>HypertensionC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.4164164</Means>
+                <Std.Dev>0.4291777</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>23</index>
+                <Name>HeartDisC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2902599</Means>
+                <Std.Dev>0.2627178</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>24</index>
+                <Name>StrokeC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1376278</Means>
+                <Std.Dev>0.130861</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>25</index>
+                <Name>COPDC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2230266</Means>
+                <Std.Dev>0.2555323</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>26</index>
+                <Name>MoodC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2428077</Means>
+                <Std.Dev>0.3046622</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>27</index>
+                <Name>ActiveCancerC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1751009</Means>
+                <Std.Dev>0.1702318</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>28</index>
+                <Name>DementiaC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0817861</Means>
+                <Std.Dev>0.0702841</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+        </InlineTable>
+    </Taxonomy>
+    <LocalTransformations>
+        <DefineFunction name="Interact1.fun">
+            <ParameterField name="var1" dataType="double"/>
+            <ParameterField name="var2" dataType="double"/>
+            <Apply function="ifelse2">
+                <Apply function="and">
+                    <Apply function="not">
+                        <Apply function="is.na">
+                            <FieldRef field="var1"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="not">
+                        <Apply function="is.na">
+                            <FieldRef field="var2"/>
+                        </Apply>
+                    </Apply>
+                </Apply>
+                <Apply function="*">
+                    <FieldRef field="var1"/>
+                    <FieldRef field="var2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="Interact.fun">
+            <ParameterField name="var1" dataType="double"/>
+            <ParameterField name="var2" dataType="double"/>
+            <Apply function="ifelse2">
+                <Apply function="and">
+                    <Apply function="not">
+                        <Apply function="is.na">
+                            <FieldRef field="var1"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="not">
+                        <Apply function="is.na">
+                            <FieldRef field="var2"/>
+                        </Apply>
+                    </Apply>
+                </Apply>
+                <Apply function="*">
+                    <FieldRef field="var1"/>
+                    <FieldRef field="var2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+            </Apply>
+        </DefineFunction>
+        <DerivedField name="AgeC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Age_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AgeC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PackYearsC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="PackYears_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="PackYearsC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeFormer5PlusC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SmokeFormer5Plus_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SmokeFormer5PlusC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeFormer0to5C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SmokeFormer0to5_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SmokeFormer0to5C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeCurrentC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SmokeCurrent_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SmokeCurrentC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DrinksLastWeekC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DrinksLastWeek_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DrinksLastWeekC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="FormerDrinkerC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="FormerDrinker_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="FormerDrinkerC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DietScore2C_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DietScore2_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DietScore2C_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PhysicalActivityC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="PhysicalActivity_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="PhysicalActivityC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="BMIC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="BMI_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="BMIC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DepIndModC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DepIndMod_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DepIndModC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DepIndHighC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DepIndHigh_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DepIndHighC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduHSGrad2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduHSGrad2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduHSGrad2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduSomePS2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduSomePS2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduSomePS2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduPSGrad2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduPSGrad2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduPSGrad2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ActiveCancerC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ActiveCancer_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ActiveCancerC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DiabetesC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Diabetes_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DiabetesC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="HeartDisC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="HeartDis_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="HeartDisC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="StrokeC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Stroke_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="StrokeC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="HypertensionC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Hypertension_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="HypertensionC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="MoodC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Mood_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="MoodC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DementiaC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Dementia_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DementiaC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="COPDC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="COPD_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="COPDC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EpilepsyC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Epilepsy_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EpilepsyC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnBlackC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnBlack_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnBlackC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnChineseC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnChinese_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnChineseC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnOtherC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnOther_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnOtherC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnSAsianC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnSAsian_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnSAsianC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXSmokeCurrentC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="SmokeCurrentC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXSmokeFormer5PlusC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="SmokeFormer5PlusC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXSmokeFormer0to5C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="SmokeFormer0to5C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXPackYearsC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="PackYearsC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXFormerDrinkerC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="FormerDrinkerC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDrinksLastWeekC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DrinksLastWeekC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDietScore2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DietScore2C_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDepIndHighC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DepIndHighC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDepIndModC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DepIndModC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEduHSGrad2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EduHSGrad2C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEduNoHSGrad2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EduNoHSGrad2C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEduSomePS2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EduSomePS2C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXPhysicalActivityC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="PhysicalActivityC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXBMIC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="BMIC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDiabetesC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DiabetesC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEpilepsyC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EpilepsyC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXHypertensionC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="HypertensionC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXCOPDC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="COPDC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXMoodC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="MoodC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXActiveCancerC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="ActiveCancerC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDementiaC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DementiaC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXHeartDisC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="HeartDisC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXStrokeC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="StrokeC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduNoHSGrad2CXAgeC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="EduNoHSGrad2C"/>
+                <FieldRef field="AgeC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeC_rcs1" optype="continuous">
+            <FieldRef field="AgeC_cont"/>
+        </DerivedField>
+        <DerivedField name="PackYearsC_rcs1" optype="continuous">
+            <FieldRef field="PackYearsC_cont"/>
+        </DerivedField>
+        <DerivedField name="DrinksLastWeekC_rcs1" optype="continuous">
+            <FieldRef field="DrinksLastWeekC_cont"/>
+        </DerivedField>
+        <DerivedField name="DietScore2C_rcs1" optype="continuous">
+            <FieldRef field="DietScore2C_cont"/>
+        </DerivedField>
+        <DerivedField name="PhysicalActivityC_rcs1" optype="continuous">
+            <FieldRef field="PhysicalActivityC_cont"/>
+        </DerivedField>
+        <DerivedField name="BMIC_rcs1" optype="continuous">
+            <FieldRef field="BMIC_cont"/>
+        </DerivedField>
+    </LocalTransformations>
+</PMML>
