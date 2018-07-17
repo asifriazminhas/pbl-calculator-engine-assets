@@ -560,9 +560,9 @@
                         <Apply function="is.na">
                             <FieldRef field="x"/>
                         </Apply>
-                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="boolean">true</Constant>
                     </Apply>
-                    <Constant dataType="NA">NA</Constant>
+                    <Constant dataType="boolean">false</Constant>
                     <Apply function="substr">
                         <FieldRef field="x"/>
                         <Apply function="nchar">
@@ -774,9 +774,9 @@
                         <Apply function="is.na">
                             <FieldRef field="x"/>
                         </Apply>
-                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="boolean">true</Constant>
                     </Apply>
-                    <Constant dataType="NA">NA</Constant>
+                    <Constant dataType="boolean">false</Constant>
                     <Apply function="substr">
                         <FieldRef field="x"/>
                         <Apply function="nchar">
@@ -998,17 +998,62 @@
                 <Constant dataType="double">7</Constant>
             </Apply>
         </DerivedField>
-        <DerivedField name="FruitVeg_cont" optype="continuous">
-            <Apply function="+">
-                <Apply function="+">
-                    <FieldRef field="fruit_day"/>
-                    <FieldRef field="potato_day"/>
+        <DerivedField name="FruitVeg_cont">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="is.na">
+                        <FieldRef field="fruit_day"/>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="otherveg_day"/>
+                    </Apply>
                 </Apply>
-                <FieldRef field="otherveg_day"/>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="and">
+                        <Apply function="equal">
+                            <Apply function="is.na">
+                                <FieldRef field="fruit_day"/>
+                            </Apply>
+                            <Constant dataType="boolean">false</Constant>
+                        </Apply>
+                        <Apply function="equal">
+                            <Apply function="is.na">
+                                <FieldRef field="otherveg_day"/>
+                            </Apply>
+                            <Constant dataType="boolean">true</Constant>
+                        </Apply>
+                    </Apply>
+                    <FieldRef field="fruit_day"/>
+                    <Apply function="if">
+                        <Apply function="and">
+                            <Apply function="equal">
+                                <Apply function="is.na">
+                                    <FieldRef field="fruit_day"/>
+                                </Apply>
+                                <Constant dataType="boolean">true</Constant>
+                            </Apply>
+                            <Apply function="equal">
+                                <Apply function="is.na">
+                                    <FieldRef field="otherveg_day"/>
+                                </Apply>
+                                <Constant dataType="boolean">false</Constant>
+                            </Apply>
+                        </Apply>
+                        <FieldRef field="otherveg_day"/>
+                        <Apply function="+">
+                            <FieldRef field="fruit_day"/>
+                            <FieldRef field="otherveg_day"/>
+                        </Apply>
+                    </Apply>
+                </Apply>
             </Apply>
         </DerivedField>
+        <DerivedField name="Potato_cont" optype="continuous">
+            <FieldRef field="potato_day"/>
+        </DerivedField>
         <DerivedField name="weight" optype="continuous">
-            <FieldRef field="kg"/>
+            <FieldRef field="kgs"/>
         </DerivedField>
         <DerivedField name="height" optype="continuous">
             <FieldRef field="cm"/>
@@ -1016,8 +1061,10 @@
         <DerivedField name="BMI_cont" optype="continuous">
             <Apply function="/">
                 <FieldRef field="weight"/>
-                <FieldRef field="height"/>
-                <Constant dataType="double">2</Constant>
+                <Apply function="*">
+                    <FieldRef field="height"/>
+                    <FieldRef field="height"/>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Diabetes_cat">
@@ -1059,7 +1106,7 @@
                     <FieldRef field="edu"/>
                     <Constant dataType="string">C4</Constant>
                 </Apply>
-                <Constant dataType="double">0</Constant>
+                <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
             </Apply>
         </DerivedField>
