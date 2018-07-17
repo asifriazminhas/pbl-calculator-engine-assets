@@ -526,9 +526,7 @@
     <LocalTransformations>
         <DefineFunction name="Center.fun">
             <ParameterField name="uncentered" dataType="double"/>
-
             <ParameterField name="mean" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="not">
                     <Apply function="is.na">
@@ -537,7 +535,6 @@
                 </Apply>
                 <Apply function="-">
                     <FieldRef field="uncentered"/>
-
                     <FieldRef field="mean"/>
                 </Apply>
                 <Constant dataType="NA">NA</Constant>
@@ -545,9 +542,7 @@
         </DefineFunction>
         <DefineFunction name="Interact.fun">
             <ParameterField name="var1" dataType="double"/>
-
             <ParameterField name="var2" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="not">
@@ -563,7 +558,6 @@
                 </Apply>
                 <Apply function="*">
                     <FieldRef field="var1"/>
-
                     <FieldRef field="var2"/>
                 </Apply>
                 <Constant dataType="NA">NA</Constant>
@@ -571,23 +565,18 @@
         </DefineFunction>
         <DefineFunction name="Max.fun">
             <ParameterField name="var1" dataType="double"/>
-
             <ParameterField name="max" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="greaterThan">
                     <FieldRef field="var1"/>
-
                     <FieldRef field="max"/>
                 </Apply>
                 <FieldRef field="max"/>
-
                 <FieldRef field="var1"/>
             </Apply>
         </DefineFunction>
         <DefineFunction name="NA0.fun">
             <ParameterField name="var1" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="is.na">
                     <FieldRef field="var1"/>
@@ -598,11 +587,9 @@
         </DefineFunction>
         <DefineFunction name="CCHS_NA1.fun">
             <ParameterField name="x" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="isIn">
                     <FieldRef field="x"/>
-
                     <Constant dataType="double">6</Constant>
                     <Constant dataType="double">7</Constant>
                     <Constant dataType="double">8</Constant>
@@ -614,11 +601,9 @@
         </DefineFunction>
         <DefineFunction name="CCHS_NA2.fun">
             <ParameterField name="x" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="isIn">
                     <FieldRef field="x"/>
-
                     <Constant dataType="double">96</Constant>
                     <Constant dataType="double">97</Constant>
                     <Constant dataType="double">98</Constant>
@@ -630,11 +615,9 @@
         </DefineFunction>
         <DefineFunction name="CCHS_NA3.fun">
             <ParameterField name="x" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="isIn">
                     <FieldRef field="x"/>
-
                     <Constant dataType="double">996</Constant>
                     <Constant dataType="double">997</Constant>
                     <Constant dataType="double">998</Constant>
@@ -646,11 +629,9 @@
         </DefineFunction>
         <DefineFunction name="CCHS_NA4.fun">
             <ParameterField name="x" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="isIn">
                     <FieldRef field="x"/>
-
                     <Constant dataType="double">9996</Constant>
                     <Constant dataType="double">9997</Constant>
                     <Constant dataType="double">9998</Constant>
@@ -662,7 +643,6 @@
         </DefineFunction>
         <DefineFunction name="falseifNA">
             <ParameterField name="x" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="x"/>
@@ -673,41 +653,32 @@
         </DefineFunction>
         <DefineFunction name="ifelse2">
             <ParameterField name="x" dataType="double"/>
-
             <ParameterField name="a" dataType="double"/>
-
             <ParameterField name="b" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="falseifNA">
                     <FieldRef field="x"/>
                 </Apply>
                 <FieldRef field="a"/>
-
                 <FieldRef field="b"/>
             </Apply>
         </DefineFunction>
         <DefineFunction name="Age_spline.fun(Age_spline)">
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="point" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="lessOrEqual">
                     <FieldRef field="Age_cont"/>
-
                     <FieldRef field="point"/>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="greaterThan">
                         <FieldRef field="Age_cont"/>
-
                         <FieldRef field="point"/>
                     </Apply>
                     <Apply function="-">
                         <FieldRef field="Age_cont"/>
-
                         <FieldRef field="point"/>
                     </Apply>
                     <Constant dataType="NA">NA</Constant>
@@ -716,12 +687,9 @@
         </DefineFunction>
         <DefineFunction name="Age_spline.fun">
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="point" dataType="double"/>
-
             <Apply function="Age_spline.fun(Age_spline)">
                 <FieldRef field="Age_cont"/>
-
                 <FieldRef field="point"/>
             </Apply>
         </DefineFunction>
@@ -731,10 +699,8 @@
         <DerivedField name="AgeC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="Age_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="Age_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -744,38 +710,31 @@
         </DerivedField>
         <DefineFunction name="QuitTime.fun">
             <ParameterField name="stpn" dataType="double"/>
-
             <ParameterField name="stpny" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="stpn"/>
-
                     <Constant dataType="string">stpn1</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="stpn"/>
-
                         <Constant dataType="string">stpn2</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
                     <Apply function="ifelse2">
                         <Apply function="equal">
                             <FieldRef field="stpn"/>
-
                             <Constant dataType="string">stpn3</Constant>
                         </Apply>
                         <Constant dataType="double">2</Constant>
                         <Apply function="ifelse2">
                             <Apply function="equal">
                                 <FieldRef field="stpn"/>
-
                                 <Constant dataType="string">stpn4</Constant>
                             </Apply>
                             <FieldRef field="stpny"/>
-
                             <Constant dataType="NA">NA</Constant>
                         </Apply>
                     </Apply>
@@ -784,32 +743,24 @@
         </DefineFunction>
         <DefineFunction name="TypeOfSmoker.fun">
             <ParameterField name="smk" dataType="double"/>
-
             <ParameterField name="evd" dataType="double"/>
-
             <ParameterField name="s100" dataType="double"/>
-
             <ParameterField name="cigdayf" dataType="double"/>
-
             <ParameterField name="cigdayd" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="and">
                         <Apply function="equal">
                             <FieldRef field="smk"/>
-
                             <Constant dataType="string">smk3</Constant>
                         </Apply>
                         <Apply function="equal">
                             <FieldRef field="evd"/>
-
                             <Constant dataType="string">evd2</Constant>
                         </Apply>
                     </Apply>
                     <Apply function="equal">
                         <FieldRef field="s100"/>
-
                         <Constant dataType="string">s1002</Constant>
                     </Apply>
                 </Apply>
@@ -820,18 +771,15 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="smk"/>
-
                                     <Constant dataType="string">smk3</Constant>
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="evd"/>
-
                                     <Constant dataType="string">evd1</Constant>
                                 </Apply>
                             </Apply>
                             <Apply function="lessThan">
                                 <FieldRef field="cigdayf"/>
-
                                 <Constant dataType="double">20</Constant>
                             </Apply>
                         </Apply>
@@ -839,18 +787,15 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="smk"/>
-
                                     <Constant dataType="string">smk3</Constant>
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="evd"/>
-
                                     <Constant dataType="string">evd2</Constant>
                                 </Apply>
                             </Apply>
                             <Apply function="equal">
                                 <FieldRef field="s100"/>
-
                                 <Constant dataType="string">s1001</Constant>
                             </Apply>
                         </Apply>
@@ -861,18 +806,15 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="smk"/>
-
                                     <Constant dataType="string">smk3</Constant>
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="evd"/>
-
                                     <Constant dataType="string">evd1</Constant>
                                 </Apply>
                             </Apply>
                             <Apply function="greaterOrEqual">
                                 <FieldRef field="cigdayf"/>
-
                                 <Constant dataType="double">20</Constant>
                             </Apply>
                         </Apply>
@@ -882,18 +824,15 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="smk"/>
-
                                         <Constant dataType="string">smk1</Constant>
                                     </Apply>
                                     <Apply function="lessThan">
                                         <FieldRef field="cigdayd"/>
-
                                         <Constant dataType="double">20</Constant>
                                     </Apply>
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="smk"/>
-
                                     <Constant dataType="string">smk2</Constant>
                                 </Apply>
                             </Apply>
@@ -902,12 +841,10 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="smk"/>
-
                                         <Constant dataType="string">smk1</Constant>
                                     </Apply>
                                     <Apply function="greaterOrEqual">
                                         <FieldRef field="cigdayd"/>
-
                                         <Constant dataType="double">20</Constant>
                                     </Apply>
                                 </Apply>
@@ -921,15 +858,11 @@
         </DefineFunction>
         <DefineFunction name="QSLightCont_df1.fun">
             <ParameterField name="TypeOfSmoker" dataType="double"/>
-
             <ParameterField name="QuitTime" dataType="double"/>
-
             <ParameterField name="sigma" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="isIn">
                     <FieldRef field="TypeOfSmoker"/>
-
                     <Constant dataType="double">0</Constant>
                     <Constant dataType="double">2</Constant>
                     <Constant dataType="double">4</Constant>
@@ -938,7 +871,6 @@
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="TypeOfSmoker"/>
-
                         <Constant dataType="double">1</Constant>
                     </Apply>
                     <Apply function="exp">
@@ -952,7 +884,6 @@
                     <Apply function="ifelse2">
                         <Apply function="equal">
                             <FieldRef field="TypeOfSmoker"/>
-
                             <Constant dataType="double">3</Constant>
                         </Apply>
                         <Constant dataType="double">1</Constant>
@@ -963,19 +894,13 @@
         </DefineFunction>
         <DefineFunction name="QSLightCont_df2.fun">
             <ParameterField name="SmokeDaily" dataType="double"/>
-
             <ParameterField name="DailyCig" dataType="double"/>
-
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="AgeDailyQuit" dataType="double"/>
-
             <ParameterField name="sigma" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="SmokeDaily"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
@@ -983,12 +908,10 @@
                     <Apply function="and">
                         <Apply function="equal">
                             <FieldRef field="SmokeDaily"/>
-
                             <Constant dataType="double">1</Constant>
                         </Apply>
                         <Apply function="lessThan">
                             <FieldRef field="DailyCig"/>
-
                             <Constant dataType="double">20</Constant>
                         </Apply>
                     </Apply>
@@ -997,12 +920,10 @@
                         <Apply function="and">
                             <Apply function="equal">
                                 <FieldRef field="SmokeDaily"/>
-
                                 <Constant dataType="double">2</Constant>
                             </Apply>
                             <Apply function="lessThan">
                                 <FieldRef field="DailyCig"/>
-
                                 <Constant dataType="double">20</Constant>
                             </Apply>
                         </Apply>
@@ -1011,7 +932,6 @@
                                 <Apply function="-">
                                     <Apply function="-">
                                         <FieldRef field="Age_cont"/>
-
                                         <FieldRef field="AgeDailyQuit"/>
                                     </Apply>
                                 </Apply>
@@ -1022,13 +942,11 @@
                             <Apply function="and">
                                 <Apply function="isIn">
                                     <FieldRef field="SmokeDaily"/>
-
                                     <Constant dataType="double">1</Constant>
                                     <Constant dataType="double">2</Constant>
                                 </Apply>
                                 <Apply function="greaterOrEqual">
                                     <FieldRef field="DailyCig"/>
-
                                     <Constant dataType="double">20</Constant>
                                 </Apply>
                             </Apply>
@@ -1041,15 +959,11 @@
         </DefineFunction>
         <DefineFunction name="QSHeavyCont_df1.fun">
             <ParameterField name="TypeOfSmoker" dataType="double"/>
-
             <ParameterField name="QuitTime" dataType="double"/>
-
             <ParameterField name="sigma" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="isIn">
                     <FieldRef field="TypeOfSmoker"/>
-
                     <Constant dataType="double">0</Constant>
                     <Constant dataType="double">1</Constant>
                     <Constant dataType="double">3</Constant>
@@ -1058,7 +972,6 @@
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="TypeOfSmoker"/>
-
                         <Constant dataType="double">2</Constant>
                     </Apply>
                     <Apply function="exp">
@@ -1072,7 +985,6 @@
                     <Apply function="ifelse2">
                         <Apply function="equal">
                             <FieldRef field="TypeOfSmoker"/>
-
                             <Constant dataType="double">4</Constant>
                         </Apply>
                         <Constant dataType="double">1</Constant>
@@ -1083,19 +995,13 @@
         </DefineFunction>
         <DefineFunction name="QSHeavyCont_df2.fun">
             <ParameterField name="SmokeDaily" dataType="double"/>
-
             <ParameterField name="DailyCig" dataType="double"/>
-
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="AgeDailyQuit" dataType="double"/>
-
             <ParameterField name="sigma" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="SmokeDaily"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
@@ -1103,12 +1009,10 @@
                     <Apply function="and">
                         <Apply function="equal">
                             <FieldRef field="SmokeDaily"/>
-
                             <Constant dataType="double">1</Constant>
                         </Apply>
                         <Apply function="greaterOrEqual">
                             <FieldRef field="DailyCig"/>
-
                             <Constant dataType="double">20</Constant>
                         </Apply>
                     </Apply>
@@ -1117,12 +1021,10 @@
                         <Apply function="and">
                             <Apply function="equal">
                                 <FieldRef field="SmokeDaily"/>
-
                                 <Constant dataType="double">2</Constant>
                             </Apply>
                             <Apply function="greaterOrEqual">
                                 <FieldRef field="DailyCig"/>
-
                                 <Constant dataType="double">20</Constant>
                             </Apply>
                         </Apply>
@@ -1131,7 +1033,6 @@
                                 <Apply function="-">
                                     <Apply function="-">
                                         <FieldRef field="Age_cont"/>
-
                                         <FieldRef field="AgeDailyQuit"/>
                                     </Apply>
                                 </Apply>
@@ -1142,13 +1043,11 @@
                             <Apply function="and">
                                 <Apply function="isIn">
                                     <FieldRef field="SmokeDaily"/>
-
                                     <Constant dataType="double">1</Constant>
                                     <Constant dataType="double">2</Constant>
                                 </Apply>
                                 <Apply function="lessThan">
                                     <FieldRef field="DailyCig"/>
-
                                     <Constant dataType="double">20</Constant>
                                 </Apply>
                             </Apply>
@@ -1161,24 +1060,18 @@
         </DefineFunction>
         <DefineFunction name="TypeOfSmoker2.fun">
             <ParameterField name="smk" dataType="double"/>
-
             <ParameterField name="evd" dataType="double"/>
-
             <ParameterField name="s100" dataType="double"/>
-
             <ParameterField name="wcig" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="wcig"/>
-
                     <Constant dataType="string">wcig2</Constant>
                 </Apply>
                 <Constant dataType="double">6</Constant>
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="smk"/>
-
                         <Constant dataType="string">smk1</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
@@ -1186,12 +1079,10 @@
                         <Apply function="and">
                             <Apply function="equal">
                                 <FieldRef field="smk"/>
-
                                 <Constant dataType="string">smk2</Constant>
                             </Apply>
                             <Apply function="equal">
                                 <FieldRef field="evd"/>
-
                                 <Constant dataType="string">evd1</Constant>
                             </Apply>
                         </Apply>
@@ -1200,12 +1091,10 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="smk"/>
-
                                     <Constant dataType="string">smk2</Constant>
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="evd"/>
-
                                     <Constant dataType="string">evd2</Constant>
                                 </Apply>
                             </Apply>
@@ -1214,12 +1103,10 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="smk"/>
-
                                         <Constant dataType="string">smk3</Constant>
                                     </Apply>
                                     <Apply function="equal">
                                         <FieldRef field="evd"/>
-
                                         <Constant dataType="string">evd1</Constant>
                                     </Apply>
                                 </Apply>
@@ -1229,18 +1116,15 @@
                                         <Apply function="and">
                                             <Apply function="equal">
                                                 <FieldRef field="smk"/>
-
                                                 <Constant dataType="string">smk3</Constant>
                                             </Apply>
                                             <Apply function="equal">
                                                 <FieldRef field="evd"/>
-
                                                 <Constant dataType="string">evd2</Constant>
                                             </Apply>
                                         </Apply>
                                         <Apply function="equal">
                                             <FieldRef field="s100"/>
-
                                             <Constant dataType="string">s1001</Constant>
                                         </Apply>
                                     </Apply>
@@ -1250,18 +1134,15 @@
                                             <Apply function="and">
                                                 <Apply function="equal">
                                                     <FieldRef field="smk"/>
-
                                                     <Constant dataType="string">smk3</Constant>
                                                 </Apply>
                                                 <Apply function="equal">
                                                     <FieldRef field="evd"/>
-
                                                     <Constant dataType="string">evd2</Constant>
                                                 </Apply>
                                             </Apply>
                                             <Apply function="equal">
                                                 <FieldRef field="s100"/>
-
                                                 <Constant dataType="string">s1002</Constant>
                                             </Apply>
                                         </Apply>
@@ -1277,38 +1158,31 @@
         </DefineFunction>
         <DefineFunction name="tsq_ds.fun">
             <ParameterField name="stpo" dataType="double"/>
-
             <ParameterField name="stpoy" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="stpo"/>
-
                     <Constant dataType="string">stpo1</Constant>
                 </Apply>
                 <Constant dataType="double">0.5</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="stpo"/>
-
                         <Constant dataType="string">stpo2</Constant>
                     </Apply>
                     <Constant dataType="double">1.5</Constant>
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="stpo"/>
-
                             <Constant dataType="string">stpo3</Constant>
                         </Apply>
                         <Constant dataType="double">2.5</Constant>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="stpo"/>
-
                                 <Constant dataType="string">stpo4</Constant>
                             </Apply>
                             <FieldRef field="stpoy"/>
-
                             <Constant dataType="NA">NA</Constant>
                         </Apply>
                     </Apply>
@@ -1317,41 +1191,28 @@
         </DefineFunction>
         <DefineFunction name="PackYears1.fun">
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="agecigd" dataType="double"/>
-
             <ParameterField name="cigdayd" dataType="double"/>
-
             <ParameterField name="tsq_ds" dataType="double"/>
-
             <ParameterField name="cigdayf" dataType="double"/>
-
             <ParameterField name="cigdayo" dataType="double"/>
-
             <ParameterField name="dayocc" dataType="double"/>
-
             <ParameterField name="agec1" dataType="double"/>
-
             <ParameterField name="s100" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="TypeOfSmoker2"/>
-
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Apply function="pmax">
                     <Apply function="*">
                         <Apply function="-">
                             <FieldRef field="Age_cont"/>
-
                             <FieldRef field="agecigd"/>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="cigdayd"/>
-
                             <Constant dataType="double">20</Constant>
                         </Apply>
                     </Apply>
@@ -1360,7 +1221,6 @@
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="TypeOfSmoker2"/>
-
                         <Constant dataType="double">2</Constant>
                     </Apply>
                     <Apply function="+">
@@ -1369,14 +1229,12 @@
                                 <Apply function="-">
                                     <Apply function="-">
                                         <FieldRef field="Age_cont"/>
-
                                         <FieldRef field="agecigd"/>
                                     </Apply>
                                     <FieldRef field="tsq_ds"/>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="cigdayf"/>
-
                                     <Constant dataType="double">20</Constant>
                                 </Apply>
                             </Apply>
@@ -1387,7 +1245,6 @@
                                 <Apply function="/">
                                     <Apply function="*">
                                         <FieldRef field="cigdayo"/>
-
                                         <FieldRef field="dayocc"/>
                                     </Apply>
                                     <Constant dataType="double">30</Constant>
@@ -1400,7 +1257,6 @@
                     <Apply function="ifelse2">
                         <Apply function="equal">
                             <FieldRef field="TypeOfSmoker2"/>
-
                             <Constant dataType="double">3</Constant>
                         </Apply>
                         <Apply function="*">
@@ -1409,7 +1265,6 @@
                                     <Apply function="/">
                                         <Apply function="*">
                                             <FieldRef field="cigdayo"/>
-
                                             <FieldRef field="dayocc"/>
                                         </Apply>
                                         <Constant dataType="double">30</Constant>
@@ -1420,14 +1275,12 @@
                             </Apply>
                             <Apply function="-">
                                 <FieldRef field="Age_cont"/>
-
                                 <FieldRef field="agec1"/>
                             </Apply>
                         </Apply>
                         <Apply function="ifelse2">
                             <Apply function="equal">
                                 <FieldRef field="TypeOfSmoker2"/>
-
                                 <Constant dataType="double">4</Constant>
                             </Apply>
                             <Apply function="pmax">
@@ -1435,14 +1288,12 @@
                                     <Apply function="-">
                                         <Apply function="-">
                                             <FieldRef field="Age_cont"/>
-
                                             <FieldRef field="agecigd"/>
                                         </Apply>
                                         <FieldRef field="tsq_ds"/>
                                     </Apply>
                                     <Apply function="/">
                                         <FieldRef field="cigdayf"/>
-
                                         <Constant dataType="double">20</Constant>
                                     </Apply>
                                 </Apply>
@@ -1452,12 +1303,10 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="TypeOfSmoker2"/>
-
                                         <Constant dataType="double">5</Constant>
                                     </Apply>
                                     <Apply function="equal">
                                         <FieldRef field="s100"/>
-
                                         <Constant dataType="string">s1001</Constant>
                                     </Apply>
                                 </Apply>
@@ -1466,12 +1315,10 @@
                                     <Apply function="and">
                                         <Apply function="equal">
                                             <FieldRef field="TypeOfSmoker2"/>
-
                                             <Constant dataType="double">5</Constant>
                                         </Apply>
                                         <Apply function="equal">
                                             <FieldRef field="s100"/>
-
                                             <Constant dataType="string">s1002</Constant>
                                         </Apply>
                                     </Apply>
@@ -1479,7 +1326,6 @@
                                     <Apply function="ifelse2">
                                         <Apply function="equal">
                                             <FieldRef field="TypeOfSmoker2"/>
-
                                             <Constant dataType="double">6</Constant>
                                         </Apply>
                                         <Constant dataType="double">0</Constant>
@@ -1494,55 +1340,43 @@
         </DefineFunction>
         <DefineFunction name="PackYears2.fun">
             <ParameterField name="SmokeDaily" dataType="double"/>
-
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="AgeDailyStart" dataType="double"/>
-
             <ParameterField name="DailyCig" dataType="double"/>
-
             <ParameterField name="AgeDailyQuit" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="SmokeDaily"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="SmokeDaily"/>
-
                         <Constant dataType="double">1</Constant>
                     </Apply>
                     <Apply function="*">
                         <Apply function="-">
                             <FieldRef field="Age_cont"/>
-
                             <FieldRef field="AgeDailyStart"/>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="DailyCig"/>
-
                             <Constant dataType="double">20</Constant>
                         </Apply>
                     </Apply>
                     <Apply function="ifelse2">
                         <Apply function="equal">
                             <FieldRef field="SmokeDaily"/>
-
                             <Constant dataType="double">2</Constant>
                         </Apply>
                         <Apply function="*">
                             <Apply function="-">
                                 <FieldRef field="AgeDailyQuit"/>
-
                                 <FieldRef field="AgeDailyStart"/>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="DailyCig"/>
-
                                 <Constant dataType="double">20</Constant>
                             </Apply>
                         </Apply>
@@ -1553,11 +1387,9 @@
         </DefineFunction>
         <DefineFunction name="smoker.fun(smoker)">
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="isIn">
                     <FieldRef field="TypeOfSmoker2"/>
-
                     <Constant dataType="double">1</Constant>
                     <Constant dataType="double">2</Constant>
                     <Constant dataType="double">3</Constant>
@@ -1566,7 +1398,6 @@
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="TypeOfSmoker2"/>
-
                         <Constant dataType="double">4</Constant>
                         <Constant dataType="double">5</Constant>
                         <Constant dataType="double">6</Constant>
@@ -1578,18 +1409,15 @@
         </DefineFunction>
         <DefineFunction name="smoker.fun">
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <Apply function="smoker.fun(smoker)">
                 <FieldRef field="TypeOfSmoker2"/>
             </Apply>
         </DefineFunction>
         <DefineFunction name="eversmoker.fun(eversmoker)">
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="isIn">
                     <FieldRef field="TypeOfSmoker2"/>
-
                     <Constant dataType="double">1</Constant>
                     <Constant dataType="double">2</Constant>
                     <Constant dataType="double">3</Constant>
@@ -1600,7 +1428,6 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="TypeOfSmoker2"/>
-
                         <Constant dataType="double">6</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -1610,30 +1437,23 @@
         </DefineFunction>
         <DefineFunction name="eversmoker.fun">
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <Apply function="eversmoker.fun(eversmoker)">
                 <FieldRef field="TypeOfSmoker2"/>
             </Apply>
         </DefineFunction>
         <DefineFunction name="SmokeSimple1.fun(SmokeSimple)">
             <ParameterField name="smoker" dataType="double"/>
-
             <ParameterField name="eversmoker" dataType="double"/>
-
             <ParameterField name="tsq_ds" dataType="double"/>
-
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="equal">
                         <FieldRef field="smoker"/>
-
                         <Constant dataType="double">0</Constant>
                     </Apply>
                     <Apply function="equal">
                         <FieldRef field="eversmoker"/>
-
                         <Constant dataType="double">0</Constant>
                     </Apply>
                 </Apply>
@@ -1642,12 +1462,10 @@
                     <Apply function="and">
                         <Apply function="equal">
                             <FieldRef field="smoker"/>
-
                             <Constant dataType="double">1</Constant>
                         </Apply>
                         <Apply function="equal">
                             <FieldRef field="eversmoker"/>
-
                             <Constant dataType="double">1</Constant>
                         </Apply>
                     </Apply>
@@ -1658,24 +1476,20 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="smoker"/>
-
                                         <Constant dataType="double">0</Constant>
                                     </Apply>
                                     <Apply function="equal">
                                         <FieldRef field="eversmoker"/>
-
                                         <Constant dataType="double">1</Constant>
                                     </Apply>
                                 </Apply>
                                 <Apply function="lessThan">
                                     <FieldRef field="tsq_ds"/>
-
                                     <Constant dataType="double">5</Constant>
                                 </Apply>
                             </Apply>
                             <Apply function="equal">
                                 <FieldRef field="TypeOfSmoker2"/>
-
                                 <Constant dataType="double">5</Constant>
                             </Apply>
                         </Apply>
@@ -1685,18 +1499,15 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="smoker"/>
-
                                         <Constant dataType="double">0</Constant>
                                     </Apply>
                                     <Apply function="equal">
                                         <FieldRef field="eversmoker"/>
-
                                         <Constant dataType="double">1</Constant>
                                     </Apply>
                                 </Apply>
                                 <Apply function="greaterOrEqual">
                                     <FieldRef field="tsq_ds"/>
-
                                     <Constant dataType="double">5</Constant>
                                 </Apply>
                             </Apply>
@@ -1709,41 +1520,29 @@
         </DefineFunction>
         <DefineFunction name="SmokeSimple1.fun">
             <ParameterField name="smoker" dataType="double"/>
-
             <ParameterField name="eversmoker" dataType="double"/>
-
             <ParameterField name="tsq_ds" dataType="double"/>
-
             <ParameterField name="TypeOfSmoker2" dataType="double"/>
-
             <Apply function="SmokeSimple1.fun(SmokeSimple)">
                 <FieldRef field="smoker"/>
-
                 <FieldRef field="eversmoker"/>
-
                 <FieldRef field="tsq_ds"/>
-
                 <FieldRef field="TypeOfSmoker2"/>
             </Apply>
         </DefineFunction>
         <DefineFunction name="SmokeSimple2.fun(SmokeSimple)">
             <ParameterField name="SmokeDaily" dataType="double"/>
-
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="AgeDailyQuit" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="SmokeDaily"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="SmokeDaily"/>
-
                         <Constant dataType="double">1</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
@@ -1751,15 +1550,12 @@
                         <Apply function="and">
                             <Apply function="equal">
                                 <FieldRef field="SmokeDaily"/>
-
                                 <Constant dataType="double">2</Constant>
                             </Apply>
                             <Apply function="lessThan">
                                 <FieldRef field="Age_cont"/>
-
                                 <Apply function="+">
                                     <FieldRef field="AgeDailyQuit"/>
-
                                     <Constant dataType="double">5</Constant>
                                 </Apply>
                             </Apply>
@@ -1769,15 +1565,12 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="SmokeDaily"/>
-
                                     <Constant dataType="double">2</Constant>
                                 </Apply>
                                 <Apply function="greaterThan">
                                     <FieldRef field="Age_cont"/>
-
                                     <Apply function="+">
                                         <FieldRef field="AgeDailyQuit"/>
-
                                         <Constant dataType="double">5</Constant>
                                     </Apply>
                                 </Apply>
@@ -1791,34 +1584,25 @@
         </DefineFunction>
         <DefineFunction name="SmokeSimple2.fun">
             <ParameterField name="SmokeDaily" dataType="double"/>
-
             <ParameterField name="Age_cont" dataType="double"/>
-
             <ParameterField name="AgeDailyQuit" dataType="double"/>
-
             <Apply function="SmokeSimple2.fun(SmokeSimple)">
                 <FieldRef field="SmokeDaily"/>
-
                 <FieldRef field="Age_cont"/>
-
                 <FieldRef field="AgeDailyQuit"/>
             </Apply>
         </DefineFunction>
         <DerivedField name="TypeOfSmoker2" optype="continuous">
             <Apply function="TypeOfSmoker2.fun">
                 <FieldRef field="smk"/>
-
                 <FieldRef field="evd"/>
-
                 <FieldRef field="s100"/>
-
                 <FieldRef field="wcig"/>
             </Apply>
         </DerivedField>
         <DerivedField name="tsq_ds" optype="continuous">
             <Apply function="tsq_ds.fun">
                 <FieldRef field="stpo"/>
-
                 <FieldRef field="stpoy"/>
             </Apply>
         </DerivedField>
@@ -1836,23 +1620,14 @@
                 </Apply>
                 <Apply function="PackYears1.fun">
                     <FieldRef field="TypeOfSmoker2"/>
-
                     <FieldRef field="Age_cont"/>
-
                     <FieldRef field="agecigd"/>
-
                     <FieldRef field="cigdayd"/>
-
                     <FieldRef field="tsq_ds"/>
-
                     <FieldRef field="cigdayf"/>
-
                     <FieldRef field="cigdayo"/>
-
                     <FieldRef field="dayocc"/>
-
                     <FieldRef field="agec1"/>
-
                     <FieldRef field="s100"/>
                 </Apply>
                 <Apply function="if">
@@ -1868,13 +1643,9 @@
                     </Apply>
                     <Apply function="PackYears2.fun">
                         <FieldRef field="SmokeDaily"/>
-
                         <FieldRef field="Age_cont"/>
-
                         <FieldRef field="AgeDailyStart"/>
-
                         <FieldRef field="DailyCig"/>
-
                         <FieldRef field="AgeDailyQuit"/>
                     </Apply>
                     <Constant dataType="NA">NA</Constant>
@@ -1884,10 +1655,8 @@
         <DerivedField name="PackYears_cont" optype="continuous">
             <Apply function="Max.fun">
                 <FieldRef field="PackYears"/>
-
                 <MapValues outputColumn="UserMax_male">
                     <FieldColumnPair column="index" constant="PackYears_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -1895,10 +1664,8 @@
         <DerivedField name="PackYearsC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="PackYears_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="PackYears_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -1930,11 +1697,8 @@
                 </Apply>
                 <Apply function="SmokeSimple1.fun">
                     <FieldRef field="smoker"/>
-
                     <FieldRef field="eversmoker"/>
-
                     <FieldRef field="tsq_ds"/>
-
                     <FieldRef field="TypeOfSmoker2"/>
                 </Apply>
                 <Apply function="if">
@@ -1956,9 +1720,7 @@
                         </Apply>
                         <Apply function="SmokeSimple2.fun">
                             <FieldRef field="SmokeDaily"/>
-
                             <FieldRef field="Age_cont"/>
-
                             <FieldRef field="AgeDailyQuit"/>
                         </Apply>
                     </Apply>
@@ -1975,7 +1737,6 @@
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="SmokeSimple"/>
-
                         <Constant dataType="double">1</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
@@ -1992,7 +1753,6 @@
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="SmokeSimple"/>
-
                         <Constant dataType="double">2</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
@@ -2009,7 +1769,6 @@
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="SmokeSimple"/>
-
                         <Constant dataType="double">3</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
@@ -2020,10 +1779,8 @@
         <DerivedField name="SmokeFormer5PlusC_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="SmokeFormer5Plus_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="SmokeFormer5Plus_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -2031,10 +1788,8 @@
         <DerivedField name="SmokeFormer0to5C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="SmokeFormer0to5_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="SmokeFormer0to5_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -2042,10 +1797,8 @@
         <DerivedField name="SmokeCurrentC_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="SmokeCurrent_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="SmokeCurrent_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -2053,59 +1806,45 @@
         <DerivedField name="AgeCXPackYearsC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="PackYearsC_cont"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXSmokeFormer5PlusC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="SmokeFormer5PlusC_cat"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXSmokeFormer0to5C_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="SmokeFormer0to5C_cat"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXSmokeCurrentC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="SmokeCurrentC_cat"/>
             </Apply>
         </DerivedField>
         <DefineFunction name="DrinksLastWeek.fun">
             <ParameterField name="drk_drkm2" dataType="double"/>
-
             <ParameterField name="drk_drkt2" dataType="double"/>
-
             <ParameterField name="drk_drkw2" dataType="double"/>
-
             <ParameterField name="drk_drkr2" dataType="double"/>
-
             <ParameterField name="drk_drkf2" dataType="double"/>
-
             <ParameterField name="drk_drksa2" dataType="double"/>
-
             <ParameterField name="drk_drksu2" dataType="double"/>
-
             <ParameterField name="dany" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="dany"/>
-
                     <Constant dataType="string">dany2</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="dany"/>
-
                         <Constant dataType="string">dany1</Constant>
                     </Apply>
                     <Apply function="+">
@@ -2115,7 +1854,6 @@
                                     <Apply function="+">
                                         <Apply function="+">
                                             <FieldRef field="drk_drkm2"/>
-
                                             <FieldRef field="drk_drkt2"/>
                                         </Apply>
                                         <FieldRef field="drk_drkw2"/>
@@ -2134,23 +1872,14 @@
         </DefineFunction>
         <DefineFunction name="Binge.fun">
             <ParameterField name="db" dataType="double"/>
-
             <ParameterField name="dany" dataType="double"/>
-
             <ParameterField name="drk_drkm2" dataType="double"/>
-
             <ParameterField name="drk_drkt2" dataType="double"/>
-
             <ParameterField name="drk_drkw2" dataType="double"/>
-
             <ParameterField name="drk_drkr2" dataType="double"/>
-
             <ParameterField name="drk_drkf2" dataType="double"/>
-
             <ParameterField name="drk_drksa2" dataType="double"/>
-
             <ParameterField name="drk_drksu2" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="or">
                     <Apply function="or">
@@ -2161,49 +1890,41 @@
                                         <Apply function="or">
                                             <Apply function="isIn">
                                                 <FieldRef field="db"/>
-
                                                 <Constant dataType="string">db5</Constant>
                                                 <Constant dataType="string">db6</Constant>
                                             </Apply>
                                             <Apply function="greaterOrEqual">
                                                 <FieldRef field="drk_drkm2"/>
-
                                                 <Constant dataType="double">5</Constant>
                                             </Apply>
                                         </Apply>
                                         <Apply function="greaterOrEqual">
                                             <FieldRef field="drk_drkt2"/>
-
                                             <Constant dataType="double">5</Constant>
                                         </Apply>
                                     </Apply>
                                     <Apply function="greaterOrEqual">
                                         <FieldRef field="drk_drkw2"/>
-
                                         <Constant dataType="double">5</Constant>
                                     </Apply>
                                 </Apply>
                                 <Apply function="greaterOrEqual">
                                     <FieldRef field="drk_drkr2"/>
-
                                     <Constant dataType="double">5</Constant>
                                 </Apply>
                             </Apply>
                             <Apply function="greaterOrEqual">
                                 <FieldRef field="drk_drkf2"/>
-
                                 <Constant dataType="double">5</Constant>
                             </Apply>
                         </Apply>
                         <Apply function="greaterOrEqual">
                             <FieldRef field="drk_drksa2"/>
-
                             <Constant dataType="double">5</Constant>
                         </Apply>
                     </Apply>
                     <Apply function="greaterOrEqual">
                         <FieldRef field="drk_drksu2"/>
-
                         <Constant dataType="double">5</Constant>
                     </Apply>
                 </Apply>
@@ -2213,7 +1934,6 @@
                         <Apply function="and">
                             <Apply function="isIn">
                                 <FieldRef field="db"/>
-
                                 <Constant dataType="string">db1</Constant>
                                 <Constant dataType="string">db2</Constant>
                                 <Constant dataType="string">db3</Constant>
@@ -2221,7 +1941,6 @@
                             </Apply>
                             <Apply function="equal">
                                 <FieldRef field="dany"/>
-
                                 <Constant dataType="string">dany2</Constant>
                             </Apply>
                         </Apply>
@@ -2229,7 +1948,6 @@
                             <Apply function="and">
                                 <Apply function="isIn">
                                     <FieldRef field="db"/>
-
                                     <Constant dataType="string">db1</Constant>
                                     <Constant dataType="string">db2</Constant>
                                     <Constant dataType="string">db3</Constant>
@@ -2237,7 +1955,6 @@
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="dany"/>
-
                                     <Constant dataType="string">dany1</Constant>
                                 </Apply>
                             </Apply>
@@ -2249,42 +1966,35 @@
                                                 <Apply function="and">
                                                     <Apply function="lessThan">
                                                         <FieldRef field="drk_drkm2"/>
-
                                                         <Constant dataType="double">5</Constant>
                                                     </Apply>
                                                     <Apply function="lessThan">
                                                         <FieldRef field="drk_drkt2"/>
-
                                                         <Constant dataType="double">5</Constant>
                                                     </Apply>
                                                 </Apply>
                                                 <Apply function="lessThan">
                                                     <FieldRef field="drk_drkw2"/>
-
                                                     <Constant dataType="double">5</Constant>
                                                 </Apply>
                                             </Apply>
                                             <Apply function="lessThan">
                                                 <FieldRef field="drk_drkr2"/>
-
                                                 <Constant dataType="double">5</Constant>
                                             </Apply>
                                         </Apply>
                                         <Apply function="lessThan">
                                             <FieldRef field="drk_drkf2"/>
-
                                             <Constant dataType="double">5</Constant>
                                         </Apply>
                                     </Apply>
                                     <Apply function="lessThan">
                                         <FieldRef field="drk_drksa2"/>
-
                                         <Constant dataType="double">5</Constant>
                                     </Apply>
                                 </Apply>
                                 <Apply function="lessThan">
                                     <FieldRef field="drk_drksu2"/>
-
                                     <Constant dataType="double">5</Constant>
                                 </Apply>
                             </Apply>
@@ -2297,19 +2007,13 @@
         </DefineFunction>
         <DefineFunction name="AlcoholType.fun">
             <ParameterField name="Binge" dataType="double"/>
-
             <ParameterField name="dany" dataType="double"/>
-
             <ParameterField name="DrinksLastWeek_cont" dataType="double"/>
-
             <ParameterField name="cut1" dataType="double"/>
-
             <ParameterField name="cut2" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="Binge"/>
-
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">2</Constant>
@@ -2317,18 +2021,15 @@
                     <Apply function="or">
                         <Apply function="equal">
                             <FieldRef field="dany"/>
-
                             <Constant dataType="string">dany2</Constant>
                         </Apply>
                         <Apply function="and">
                             <Apply function="equal">
                                 <FieldRef field="dany"/>
-
                                 <Constant dataType="string">dany1</Constant>
                             </Apply>
                             <Apply function="lessOrEqual">
                                 <FieldRef field="DrinksLastWeek_cont"/>
-
                                 <FieldRef field="cut1"/>
                             </Apply>
                         </Apply>
@@ -2339,18 +2040,15 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="dany"/>
-
                                     <Constant dataType="string">dany1</Constant>
                                 </Apply>
                                 <Apply function="greaterThan">
                                     <FieldRef field="DrinksLastWeek_cont"/>
-
                                     <FieldRef field="cut1"/>
                                 </Apply>
                             </Apply>
                             <Apply function="lessOrEqual">
                                 <FieldRef field="DrinksLastWeek_cont"/>
-
                                 <FieldRef field="cut2"/>
                             </Apply>
                         </Apply>
@@ -2359,12 +2057,10 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="dany"/>
-
                                     <Constant dataType="string">dany1</Constant>
                                 </Apply>
                                 <Apply function="greaterThan">
                                     <FieldRef field="DrinksLastWeek_cont"/>
-
                                     <FieldRef field="cut2"/>
                                 </Apply>
                             </Apply>
@@ -2377,18 +2073,15 @@
         </DefineFunction>
         <DefineFunction name="AlcoholMod_cat.fun">
             <ParameterField name="AlcoholType" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="AlcoholType"/>
-
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="AlcoholType"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">2</Constant>
                     </Apply>
@@ -2399,18 +2092,15 @@
         </DefineFunction>
         <DefineFunction name="AlcoholHeavy_cat.fun">
             <ParameterField name="AlcoholType" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="AlcoholType"/>
-
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="AlcoholType"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">1</Constant>
                     </Apply>
@@ -2457,29 +2147,20 @@
         <DerivedField name="DrinksLastWeek" optype="continuous">
             <Apply function="DrinksLastWeek.fun">
                 <FieldRef field="drk_drkm2"/>
-
                 <FieldRef field="drk_drkt2"/>
-
                 <FieldRef field="drk_drkw2"/>
-
                 <FieldRef field="drk_drkr2"/>
-
                 <FieldRef field="drk_drkf2"/>
-
                 <FieldRef field="drk_drksa2"/>
-
                 <FieldRef field="drk_drksu2"/>
-
                 <FieldRef field="dany"/>
             </Apply>
         </DerivedField>
         <DerivedField name="DrinksLastWeek_cont" optype="continuous">
             <Apply function="Max.fun">
                 <FieldRef field="DrinksLastWeek"/>
-
                 <MapValues outputColumn="UserMax_male">
                     <FieldColumnPair column="index" constant="DrinksLastWeek_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -2487,10 +2168,8 @@
         <DerivedField name="DrinksLastWeekC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="DrinksLastWeek_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="DrinksLastWeek_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -2501,15 +2180,12 @@
         <DerivedField name="AgeCXDrinksLastWeekC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="DrinksLastWeekC_cont"/>
             </Apply>
         </DerivedField>
         <DefineFunction name="dfruit.fun">
             <ParameterField name="frt" dataType="double"/>
-
             <ParameterField name="frtu" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="frt"/>
@@ -2518,42 +2194,34 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="frtu"/>
-
                         <Constant dataType="string">frtd</Constant>
                     </Apply>
                     <FieldRef field="frt"/>
-
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="frtu"/>
-
                             <Constant dataType="string">frtw</Constant>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="frt"/>
-
                             <Constant dataType="double">7</Constant>
                         </Apply>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="frtu"/>
-
                                 <Constant dataType="string">frtm</Constant>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="frt"/>
-
                                 <Constant dataType="double">30</Constant>
                             </Apply>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="frtu"/>
-
                                     <Constant dataType="string">frty</Constant>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="frt"/>
-
                                     <Constant dataType="double">365</Constant>
                                 </Apply>
                                 <Constant dataType="NA">NA</Constant>
@@ -2565,9 +2233,7 @@
         </DefineFunction>
         <DefineFunction name="dsalad.fun">
             <ParameterField name="sal" dataType="double"/>
-
             <ParameterField name="salu" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="sal"/>
@@ -2576,42 +2242,34 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="salu"/>
-
                         <Constant dataType="string">sald</Constant>
                     </Apply>
                     <FieldRef field="sal"/>
-
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="salu"/>
-
                             <Constant dataType="string">salw</Constant>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="sal"/>
-
                             <Constant dataType="double">7</Constant>
                         </Apply>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="salu"/>
-
                                 <Constant dataType="string">salm</Constant>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="sal"/>
-
                                 <Constant dataType="double">30</Constant>
                             </Apply>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="salu"/>
-
                                     <Constant dataType="string">saly</Constant>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="sal"/>
-
                                     <Constant dataType="double">365</Constant>
                                 </Apply>
                                 <Constant dataType="NA">NA</Constant>
@@ -2623,9 +2281,7 @@
         </DefineFunction>
         <DefineFunction name="dpotato.fun">
             <ParameterField name="pot" dataType="double"/>
-
             <ParameterField name="potu" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="pot"/>
@@ -2634,42 +2290,34 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="potu"/>
-
                         <Constant dataType="string">potd</Constant>
                     </Apply>
                     <FieldRef field="pot"/>
-
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="potu"/>
-
                             <Constant dataType="string">potw</Constant>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="pot"/>
-
                             <Constant dataType="double">7</Constant>
                         </Apply>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="potu"/>
-
                                 <Constant dataType="string">potm</Constant>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="pot"/>
-
                                 <Constant dataType="double">30</Constant>
                             </Apply>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="potu"/>
-
                                     <Constant dataType="string">poty</Constant>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="pot"/>
-
                                     <Constant dataType="double">365</Constant>
                                 </Apply>
                                 <Constant dataType="NA">NA</Constant>
@@ -2681,9 +2329,7 @@
         </DefineFunction>
         <DefineFunction name="dcarrot.fun">
             <ParameterField name="car" dataType="double"/>
-
             <ParameterField name="caru" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="car"/>
@@ -2692,42 +2338,34 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="caru"/>
-
                         <Constant dataType="string">card</Constant>
                     </Apply>
                     <FieldRef field="car"/>
-
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="caru"/>
-
                             <Constant dataType="string">carw</Constant>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="car"/>
-
                             <Constant dataType="double">7</Constant>
                         </Apply>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="caru"/>
-
                                 <Constant dataType="string">carm</Constant>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="car"/>
-
                                 <Constant dataType="double">30</Constant>
                             </Apply>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="caru"/>
-
                                     <Constant dataType="string">cary</Constant>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="car"/>
-
                                     <Constant dataType="double">365</Constant>
                                 </Apply>
                                 <Constant dataType="NA">NA</Constant>
@@ -2739,9 +2377,7 @@
         </DefineFunction>
         <DefineFunction name="dveg.fun">
             <ParameterField name="veg" dataType="double"/>
-
             <ParameterField name="vegu" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="veg"/>
@@ -2750,42 +2386,34 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="vegu"/>
-
                         <Constant dataType="string">vegd</Constant>
                     </Apply>
                     <FieldRef field="veg"/>
-
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="vegu"/>
-
                             <Constant dataType="string">vegw</Constant>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="veg"/>
-
                             <Constant dataType="double">7</Constant>
                         </Apply>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="vegu"/>
-
                                 <Constant dataType="string">vegm</Constant>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="veg"/>
-
                                 <Constant dataType="double">30</Constant>
                             </Apply>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="vegu"/>
-
                                     <Constant dataType="string">vegy</Constant>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="veg"/>
-
                                     <Constant dataType="double">365</Constant>
                                 </Apply>
                                 <Constant dataType="NA">NA</Constant>
@@ -2797,9 +2425,7 @@
         </DefineFunction>
         <DefineFunction name="djuice.fun">
             <ParameterField name="jui" dataType="double"/>
-
             <ParameterField name="juiu" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="is.na">
                     <FieldRef field="jui"/>
@@ -2808,42 +2434,34 @@
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="juiu"/>
-
                         <Constant dataType="string">juid</Constant>
                     </Apply>
                     <FieldRef field="jui"/>
-
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="juiu"/>
-
                             <Constant dataType="string">juiw</Constant>
                         </Apply>
                         <Apply function="/">
                             <FieldRef field="jui"/>
-
                             <Constant dataType="double">7</Constant>
                         </Apply>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="juiu"/>
-
                                 <Constant dataType="string">juim</Constant>
                             </Apply>
                             <Apply function="/">
                                 <FieldRef field="jui"/>
-
                                 <Constant dataType="double">30</Constant>
                             </Apply>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="juiu"/>
-
                                     <Constant dataType="string">juiy</Constant>
                                 </Apply>
                                 <Apply function="/">
                                     <FieldRef field="jui"/>
-
                                     <Constant dataType="double">365</Constant>
                                 </Apply>
                                 <Constant dataType="NA">NA</Constant>
@@ -2855,15 +2473,10 @@
         </DefineFunction>
         <DefineFunction name="FruitVeg.fun">
             <ParameterField name="dfruit" dataType="double"/>
-
             <ParameterField name="dsalad" dataType="double"/>
-
             <ParameterField name="dpotato" dataType="double"/>
-
             <ParameterField name="dcarrot" dataType="double"/>
-
             <ParameterField name="dveg" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="and">
@@ -2903,7 +2516,6 @@
                         <Apply function="+">
                             <Apply function="+">
                                 <FieldRef field="dfruit"/>
-
                                 <FieldRef field="dsalad"/>
                             </Apply>
                             <FieldRef field="dpotato"/>
@@ -2917,11 +2529,9 @@
         </DefineFunction>
         <DefineFunction name="FruitVeg8Max.fun">
             <ParameterField name="FruitVeg" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="greaterThan">
                     <FieldRef field="FruitVeg"/>
-
                     <Constant dataType="double">8</Constant>
                 </Apply>
                 <Constant dataType="double">8</Constant>
@@ -2932,18 +2542,15 @@
                         </Apply>
                     </Apply>
                     <FieldRef field="FruitVeg"/>
-
                     <Constant dataType="NA">NA</Constant>
                 </Apply>
             </Apply>
         </DefineFunction>
         <DefineFunction name="HighPotatoFlag.fun">
             <ParameterField name="dpotato" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="greaterOrEqual">
                     <FieldRef field="dpotato"/>
-
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -2960,11 +2567,9 @@
         </DefineFunction>
         <DefineFunction name="NoCarrotFlag.fun">
             <ParameterField name="dcarrot" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="dcarrot"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -2981,18 +2586,15 @@
         </DefineFunction>
         <DefineFunction name="HighJuice.fun">
             <ParameterField name="djuice" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="lessOrEqual">
                     <FieldRef field="djuice"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="equal">
                         <FieldRef field="djuice"/>
-
                         <Constant dataType="double">1</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -3004,7 +2606,6 @@
                         </Apply>
                         <Apply function="-">
                             <FieldRef field="djuice"/>
-
                             <Constant dataType="double">1</Constant>
                         </Apply>
                         <Constant dataType="NA">NA</Constant>
@@ -3014,13 +2615,9 @@
         </DefineFunction>
         <DefineFunction name="DietScore.fun">
             <ParameterField name="FruitVeg8Max" dataType="double"/>
-
             <ParameterField name="HighPotatoFlag" dataType="double"/>
-
             <ParameterField name="NoCarrotFlag" dataType="double"/>
-
             <ParameterField name="HighJuice" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="and">
@@ -3075,18 +2672,15 @@
         </DefineFunction>
         <DefineFunction name="DietScore_cont.fun">
             <ParameterField name="DietScore" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="lessThan">
                     <FieldRef field="DietScore"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse2">
                     <Apply function="greaterThan">
                         <FieldRef field="DietScore"/>
-
                         <Constant dataType="double">10</Constant>
                     </Apply>
                     <Constant dataType="double">10</Constant>
@@ -3097,7 +2691,6 @@
                             </Apply>
                         </Apply>
                         <FieldRef field="DietScore"/>
-
                         <Constant dataType="NA">NA</Constant>
                     </Apply>
                 </Apply>
@@ -3105,13 +2698,9 @@
         </DefineFunction>
         <DefineFunction name="diet_num.fun">
             <ParameterField name="day" dataType="double"/>
-
             <ParameterField name="week" dataType="double"/>
-
             <ParameterField name="month" dataType="double"/>
-
             <ParameterField name="year" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="not">
                     <Apply function="is.na">
@@ -3119,7 +2708,6 @@
                     </Apply>
                 </Apply>
                 <FieldRef field="day"/>
-
                 <Apply function="ifelse2">
                     <Apply function="not">
                         <Apply function="is.na">
@@ -3127,7 +2715,6 @@
                         </Apply>
                     </Apply>
                     <FieldRef field="week"/>
-
                     <Apply function="ifelse2">
                         <Apply function="not">
                             <Apply function="is.na">
@@ -3135,7 +2722,6 @@
                             </Apply>
                         </Apply>
                         <FieldRef field="month"/>
-
                         <Apply function="ifelse2">
                             <Apply function="not">
                                 <Apply function="is.na">
@@ -3143,7 +2729,6 @@
                                 </Apply>
                             </Apply>
                             <FieldRef field="year"/>
-
                             <Constant dataType="double">0</Constant>
                         </Apply>
                     </Apply>
@@ -3153,72 +2738,59 @@
         <DerivedField name="dfruit" optype="continuous">
             <Apply function="dfruit.fun">
                 <FieldRef field="frt"/>
-
                 <FieldRef field="frtu"/>
             </Apply>
         </DerivedField>
         <DerivedField name="dsalad" optype="continuous">
             <Apply function="dsalad.fun">
                 <FieldRef field="sal"/>
-
                 <FieldRef field="salu"/>
             </Apply>
         </DerivedField>
         <DerivedField name="dpotato" optype="continuous">
             <Apply function="dpotato.fun">
                 <FieldRef field="pot"/>
-
                 <FieldRef field="potu"/>
             </Apply>
         </DerivedField>
         <DerivedField name="dcarrot" optype="continuous">
             <Apply function="dcarrot.fun">
                 <FieldRef field="car"/>
-
                 <FieldRef field="caru"/>
             </Apply>
         </DerivedField>
         <DerivedField name="dveg" optype="continuous">
             <Apply function="dveg.fun">
                 <FieldRef field="veg"/>
-
                 <FieldRef field="vegu"/>
             </Apply>
         </DerivedField>
         <DerivedField name="djuice" optype="continuous">
             <Apply function="djuice.fun">
                 <FieldRef field="jui"/>
-
                 <FieldRef field="juiu"/>
             </Apply>
         </DerivedField>
         <DerivedField name="FruitVeg" optype="continuous">
             <Apply function="FruitVeg.fun">
                 <FieldRef field="dfruit"/>
-
                 <FieldRef field="dsalad"/>
-
                 <FieldRef field="dpotato"/>
-
                 <FieldRef field="dcarrot"/>
-
                 <FieldRef field="dveg"/>
             </Apply>
         </DerivedField>
         <DerivedField name="FruitVeg_cont" optype="continuous">
             <Apply function="Max.fun">
                 <FieldRef field="FruitVeg"/>
-
                 <Constant dataType="double">12</Constant>
             </Apply>
         </DerivedField>
         <DerivedField name="FruitVegC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="FruitVeg_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="FruitVeg_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3229,24 +2801,20 @@
         <DerivedField name="AgeCXFruitVegC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="FruitVegC_cont"/>
             </Apply>
         </DerivedField>
         <DerivedField name="Juice_cont" optype="continuous">
             <Apply function="Max.fun">
                 <FieldRef field="djuice"/>
-
                 <Constant dataType="double">6</Constant>
             </Apply>
         </DerivedField>
         <DerivedField name="JuiceC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="Juice_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="Juice_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3254,24 +2822,20 @@
         <DerivedField name="AgeCXJuiceC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="JuiceC_cont"/>
             </Apply>
         </DerivedField>
         <DerivedField name="Potato_cont" optype="continuous">
             <Apply function="Max.fun">
                 <FieldRef field="dpotato"/>
-
                 <Constant dataType="double">2</Constant>
             </Apply>
         </DerivedField>
         <DerivedField name="PotatoC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="Potato_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="Potato_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3282,17 +2846,13 @@
         <DerivedField name="AgeCXPotatoC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="PotatoC_cont"/>
             </Apply>
         </DerivedField>
         <DefineFunction name="BMI_cont.fun(weightkg)">
             <ParameterField name="weightlb" dataType="double"/>
-
             <ParameterField name="heightin_hft" dataType="double"/>
-
             <ParameterField name="heightin_hin" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="not">
                     <Apply function="is.na">
@@ -3301,7 +2861,6 @@
                 </Apply>
                 <Apply function="/">
                     <FieldRef field="weightlb"/>
-
                     <Constant dataType="double">2.2046226218</Constant>
                 </Apply>
                 <Constant dataType="NA">NA</Constant>
@@ -3309,11 +2868,8 @@
         </DefineFunction>
         <DefineFunction name="BMI_cont.fun(heightm)">
             <ParameterField name="weightlb" dataType="double"/>
-
             <ParameterField name="heightin_hft" dataType="double"/>
-
             <ParameterField name="heightin_hin" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="not">
@@ -3331,7 +2887,6 @@
                     <Apply function="+">
                         <Apply function="*">
                             <FieldRef field="heightin_hft"/>
-
                             <Constant dataType="double">12</Constant>
                         </Apply>
                         <FieldRef field="heightin_hin"/>
@@ -3343,20 +2898,15 @@
         </DefineFunction>
         <DefineFunction name="BMI_cont.fun">
             <ParameterField name="weightlb" dataType="double"/>
-
             <ParameterField name="heightin_hft" dataType="double"/>
-
             <ParameterField name="heightin_hin" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="and">
                     <Apply function="not">
                         <Apply function="is.na">
                             <Apply function="BMI_cont.fun(weightkg)">
                                 <FieldRef field="weightlb"/>
-
                                 <FieldRef field="heightin_hft"/>
-
                                 <FieldRef field="heightin_hin"/>
                             </Apply>
                         </Apply>
@@ -3365,9 +2915,7 @@
                         <Apply function="is.na">
                             <Apply function="BMI_cont.fun(heightm)">
                                 <FieldRef field="weightlb"/>
-
                                 <FieldRef field="heightin_hft"/>
-
                                 <FieldRef field="heightin_hin"/>
                             </Apply>
                         </Apply>
@@ -3376,24 +2924,18 @@
                 <Apply function="/">
                     <Apply function="BMI_cont.fun(weightkg)">
                         <FieldRef field="weightlb"/>
-
                         <FieldRef field="heightin_hft"/>
-
                         <FieldRef field="heightin_hin"/>
                     </Apply>
                     <Apply function="*">
                         <Apply function="BMI_cont.fun(heightm)">
                             <FieldRef field="weightlb"/>
-
                             <FieldRef field="heightin_hft"/>
-
                             <FieldRef field="heightin_hin"/>
                         </Apply>
                         <Apply function="BMI_cont.fun(heightm)">
                             <FieldRef field="weightlb"/>
-
                             <FieldRef field="heightin_hft"/>
-
                             <FieldRef field="heightin_hin"/>
                         </Apply>
                     </Apply>
@@ -3403,26 +2945,22 @@
         </DefineFunction>
         <DefineFunction name="BMI_spline.fun">
             <ParameterField name="BMI_cont" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="greaterThan">
                     <Apply function="-">
                         <FieldRef field="BMI_cont"/>
-
                         <Constant dataType="double">35</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Apply function="-">
                     <FieldRef field="BMI_cont"/>
-
                     <Constant dataType="double">35</Constant>
                 </Apply>
                 <Apply function="ifelse2">
                     <Apply function="lessOrEqual">
                         <Apply function="-">
                             <FieldRef field="BMI_cont"/>
-
                             <Constant dataType="double">35</Constant>
                         </Apply>
                         <Constant dataType="double">0</Constant>
@@ -3435,7 +2973,6 @@
         <DerivedField name="weightlb" optype="continuous">
             <Apply function="/">
                 <FieldRef field="weightkg"/>
-
                 <Constant dataType="double">2.20462</Constant>
             </Apply>
         </DerivedField>
@@ -3444,7 +2981,6 @@
                 <Apply function="/">
                     <Apply function="*">
                         <FieldRef field="heightm"/>
-
                         <Constant dataType="double">39.3701</Constant>
                     </Apply>
                     <Constant dataType="double">12</Constant>
@@ -3457,7 +2993,6 @@
                     <Apply function="/">
                         <Apply function="*">
                             <FieldRef field="heightm"/>
-
                             <Constant dataType="double">39.3701</Constant>
                         </Apply>
                         <Constant dataType="double">12</Constant>
@@ -3466,7 +3001,6 @@
                         <Apply function="/">
                             <Apply function="*">
                                 <FieldRef field="heightm"/>
-
                                 <Constant dataType="double">39.3701</Constant>
                             </Apply>
                             <Constant dataType="double">12</Constant>
@@ -3479,19 +3013,15 @@
         <DerivedField name="BMI_cont" optype="continuous">
             <Apply function="BMI_cont.fun">
                 <FieldRef field="weightlb"/>
-
                 <FieldRef field="heightin_hft"/>
-
                 <FieldRef field="heightin_hin"/>
             </Apply>
         </DerivedField>
         <DerivedField name="BMIC_cont" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="BMI_cont"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="BMI_cont"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3502,21 +3032,16 @@
         <DerivedField name="AgeCXBMIC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="BMIC_rcs1"/>
             </Apply>
         </DerivedField>
         <DefineFunction name="Edu2.fun">
             <ParameterField name="hs" dataType="double"/>
-
             <ParameterField name="ed" dataType="double"/>
-
             <ParameterField name="hdg" dataType="double"/>
-
             <Apply function="ifelse2">
                 <Apply function="equal">
                     <FieldRef field="hs"/>
-
                     <Constant dataType="string">hs2</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
@@ -3524,12 +3049,10 @@
                     <Apply function="and">
                         <Apply function="equal">
                             <FieldRef field="hs"/>
-
                             <Constant dataType="string">hs1</Constant>
                         </Apply>
                         <Apply function="equal">
                             <FieldRef field="ed"/>
-
                             <Constant dataType="string">ed2</Constant>
                         </Apply>
                     </Apply>
@@ -3539,18 +3062,15 @@
                             <Apply function="and">
                                 <Apply function="equal">
                                     <FieldRef field="hs"/>
-
                                     <Constant dataType="string">hs1</Constant>
                                 </Apply>
                                 <Apply function="equal">
                                     <FieldRef field="ed"/>
-
                                     <Constant dataType="string">ed1</Constant>
                                 </Apply>
                             </Apply>
                             <Apply function="equal">
                                 <FieldRef field="hdg"/>
-
                                 <Constant dataType="string">hdg1</Constant>
                             </Apply>
                         </Apply>
@@ -3560,18 +3080,15 @@
                                 <Apply function="and">
                                     <Apply function="equal">
                                         <FieldRef field="hs"/>
-
                                         <Constant dataType="string">hs1</Constant>
                                     </Apply>
                                     <Apply function="equal">
                                         <FieldRef field="ed"/>
-
                                         <Constant dataType="string">ed1</Constant>
                                     </Apply>
                                 </Apply>
                                 <Apply function="isIn">
                                     <FieldRef field="hdg"/>
-
                                     <Constant dataType="string">hdg2</Constant>
                                     <Constant dataType="string">hdg3</Constant>
                                     <Constant dataType="string">hdg4</Constant>
@@ -3588,18 +3105,15 @@
         </DefineFunction>
         <DefineFunction name="EduHSGrad2_cat.fun">
             <ParameterField name="Edu2" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="Edu2"/>
-
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="Edu2"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">2</Constant>
                         <Constant dataType="double">3</Constant>
@@ -3611,18 +3125,15 @@
         </DefineFunction>
         <DefineFunction name="EduSomePS2_cat.fun">
             <ParameterField name="Edu2" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="Edu2"/>
-
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="Edu2"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">1</Constant>
                         <Constant dataType="double">3</Constant>
@@ -3634,18 +3145,15 @@
         </DefineFunction>
         <DefineFunction name="EduPSGrad2_cat.fun">
             <ParameterField name="Edu2" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="Edu2"/>
-
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="Edu2"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">1</Constant>
                         <Constant dataType="double">2</Constant>
@@ -3657,25 +3165,21 @@
         </DefineFunction>
         <DefineFunction name="Edu1.fun">
             <ParameterField name="Edu2" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="Edu2"/>
-
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">2</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="Edu2"/>
-
                         <Constant dataType="double">1</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
                     <Apply function="ifelse">
                         <Apply function="isIn">
                             <FieldRef field="Edu2"/>
-
                             <Constant dataType="double">2</Constant>
                             <Constant dataType="double">3</Constant>
                         </Apply>
@@ -3687,18 +3191,15 @@
         </DefineFunction>
         <DefineFunction name="EduHSGrad_cat.fun">
             <ParameterField name="Edu1" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="Edu1"/>
-
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="Edu1"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">2</Constant>
                     </Apply>
@@ -3709,18 +3210,15 @@
         </DefineFunction>
         <DefineFunction name="EduNoGrad_cat.fun">
             <ParameterField name="Edu1" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="Edu1"/>
-
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="Edu1"/>
-
                         <Constant dataType="double">0</Constant>
                         <Constant dataType="double">1</Constant>
                     </Apply>
@@ -3732,9 +3230,7 @@
         <DerivedField name="Edu2" optype="continuous">
             <Apply function="Edu2.fun">
                 <FieldRef field="hs"/>
-
                 <FieldRef field="ed"/>
-
                 <FieldRef field="hdg"/>
             </Apply>
         </DerivedField>
@@ -3756,10 +3252,8 @@
         <DerivedField name="EduHSGrad2C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="EduHSGrad2_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="EduHSGrad2_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3767,10 +3261,8 @@
         <DerivedField name="EduSomePS2C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="EduSomePS2_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="EduSomePS2_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3778,28 +3270,23 @@
         <DerivedField name="EduPSGrad2C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="EduPSGrad2_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="EduPSGrad2_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
         </DerivedField>
         <DefineFunction name="HeartDis_cat.fun">
             <ParameterField name="hd" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="hd"/>
-
                     <Constant dataType="string">hd1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="hd"/>
-
                         <Constant dataType="string">hd2</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -3809,18 +3296,15 @@
         </DefineFunction>
         <DefineFunction name="Stroke_cat.fun">
             <ParameterField name="stk" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="stk"/>
-
                     <Constant dataType="string">stk1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="stk"/>
-
                         <Constant dataType="string">stk2</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -3830,18 +3314,15 @@
         </DefineFunction>
         <DefineFunction name="Cancer_cat.fun">
             <ParameterField name="can" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="can"/>
-
                     <Constant dataType="string">can1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="can"/>
-
                         <Constant dataType="string">can2</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -3851,18 +3332,15 @@
         </DefineFunction>
         <DefineFunction name="Diabetes_cat.fun">
             <ParameterField name="diab" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="diab"/>
-
                     <Constant dataType="string">diab1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="diab"/>
-
                         <Constant dataType="string">diab2</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -3872,18 +3350,15 @@
         </DefineFunction>
         <DefineFunction name="Hypertension_cat.fun">
             <ParameterField name="bp" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="bp"/>
-
                     <Constant dataType="string">bp1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="bp"/>
-
                         <Constant dataType="string">bp2</Constant>
                     </Apply>
                     <Constant dataType="double">0</Constant>
@@ -3899,10 +3374,8 @@
         <DerivedField name="DiabetesC_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="Diabetes_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="Diabetes_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3910,7 +3383,6 @@
         <DerivedField name="AgeCXDiabetesC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-
                 <FieldRef field="DiabetesC_cat"/>
             </Apply>
         </DerivedField>
@@ -3922,10 +3394,8 @@
         <DerivedField name="HypertensionC_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="Hypertension_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="Hypertension_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -3933,24 +3403,20 @@
         <DerivedField name="AgeCXHypertensionC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="HypertensionC_cat"/>
-
                 <FieldRef field="AgeC_cont"/>
             </Apply>
         </DerivedField>
         <DefineFunction name="SurveyCycle2_cat.fun">
             <ParameterField name="SurveyCycle" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="SurveyCycle"/>
-
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="SurveyCycle"/>
-
                         <Constant dataType="double">1</Constant>
                         <Constant dataType="double">3</Constant>
                         <Constant dataType="double">4</Constant>
@@ -3962,18 +3428,15 @@
         </DefineFunction>
         <DefineFunction name="SurveyCycle3_cat.fun">
             <ParameterField name="SurveyCycle" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="SurveyCycle"/>
-
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="SurveyCycle"/>
-
                         <Constant dataType="double">1</Constant>
                         <Constant dataType="double">2</Constant>
                         <Constant dataType="double">4</Constant>
@@ -3985,18 +3448,15 @@
         </DefineFunction>
         <DefineFunction name="SurveyCycle4_cat.fun">
             <ParameterField name="SurveyCycle" dataType="double"/>
-
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="SurveyCycle"/>
-
                     <Constant dataType="double">4</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Apply function="ifelse">
                     <Apply function="isIn">
                         <FieldRef field="SurveyCycle"/>
-
                         <Constant dataType="double">1</Constant>
                         <Constant dataType="double">2</Constant>
                         <Constant dataType="double">3</Constant>
@@ -4024,10 +3484,8 @@
         <DerivedField name="SurveyCycle2C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="SurveyCycle2_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="SurveyCycle2_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -4035,10 +3493,8 @@
         <DerivedField name="SurveyCycle3C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="SurveyCycle3_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="SurveyCycle3_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
@@ -4046,10 +3502,8 @@
         <DerivedField name="SurveyCycle4C_cat" optype="continuous">
             <Apply function="Center.fun">
                 <FieldRef field="SurveyCycle4_cat"/>
-
                 <MapValues outputColumn="Mean_male">
                     <FieldColumnPair column="index" constant="SurveyCycle4_cat"/>
-
                     <TableLocator location="taxonomy" name="CRSpec_Mutated_4"/>
                 </MapValues>
             </Apply>
