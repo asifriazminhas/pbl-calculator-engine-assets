@@ -22,6 +22,440 @@
           },
           {
             "fieldType": 1,
+            "name": "PackYears_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 1 ? userFunctions['PackYears.fun'](obj['smokingstat'], obj['age'], obj['dailyage'], obj['dailycig'], undefined, userFunctions, func) : userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 2 ? func['ifelse'](obj['lessdaily'] == 'yless', userFunctions['PackYears.fun'](obj['smokingstat'], undefined, obj['dailyage2'], obj['dailycig3'], obj['stopdaily'], userFunctions, func), func['ifelse'](obj['lessdaily'] == 'nless', 0, undefined)) : userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 3 ? func['ifelse'](obj['pastsmoke'] == 'dal', userFunctions['PackYears.fun'](obj['smokingstat'], undefined, obj['dailyage3'], obj['dailycig4'], obj['stopdaily2'], userFunctions, func), func['ifelse'](obj['pastsmoke'] == 'dal2', 0, undefined)) : userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 4 ? 0 : undefined;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "age",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailyage",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailycig",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "undefined",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "lessdaily",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailyage2",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailycig3",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "pastsmoke",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailyage3",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailycig4",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily2",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SmokeCurrent_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['smokingstat'] == 'A2' || obj['smokingstat'] == 'A1', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SmokeFormer0to5_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['smokingstat'] == 'A3' && obj['Age'] < obj['stopdailyt2'] + 5, 1, func['ifelse'](obj['smokingstat'] == 'A2' && obj['Age'] < obj['stopdaily2'] + 5, 1, 0));\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "Age",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdailyt2",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily2",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SmokeFormer5Plus_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['smokingstat'] == 'A3' && obj['Age'] > obj['stopdaily2'] + 5, 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "Age",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily2",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "fruit_day",
+            "equation":
+              "(async function () {\n    return obj['fv_fruit1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_fruit1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "potato_day",
+            "equation":
+              "(async function () {\n    return obj['fv_pot1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_pot1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "otherveg_day",
+            "equation":
+              "(async function () {\n    return obj['fv_veg1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_veg1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FruitVeg_cont",
+            "equation":
+              "(async function () {\n    return obj['fruit_day'] + obj['potato_day'] + obj['otherveg_day'];\n}());",
+            "derivedFrom": ["fruit_day", "potato_day", "otherveg_day"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "weight",
+            "equation": "(async function () {\n    return obj['kg'];\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "kg",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "height",
+            "equation": "(async function () {\n    return obj['cm'];\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "cm",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "BMI_cont",
+            "equation":
+              "(async function () {\n    return obj['weight'] / obj['height'];\n}());",
+            "derivedFrom": ["weight", "height"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "Diabetes_cat",
+            "equation":
+              "(async function () {\n    return obj['cond_SQ010'] == 'Yes' ? 0 : userFunctions['disease.fun'](obj['cond_SQ001'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "cond_SQ010",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "cond_SQ001",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "Hypertension_cat",
+            "equation":
+              "(async function () {\n    return obj['cond_SQ010'] == 'Yes' ? 0 : userFunctions['disease.fun'](obj['cond_SQ004'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "cond_SQ010",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "cond_SQ004",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle2_cat",
+            "equation": "(async function () {\n    return 1;\n}());",
+            "derivedFrom": [],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle3_cat",
+            "equation": "(async function () {\n    return 1;\n}());",
+            "derivedFrom": [],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle4_cat",
+            "equation": "(async function () {\n    return 1;\n}());",
+            "derivedFrom": [],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduPSGrad2_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['edu'] == 'C4', 0, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "edu",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduHSGrad2_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['edu'] == 'C2', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "edu",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduSomePs2_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['edu'] == 'C3', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "edu",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "DrinkLastWeek_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['last.fun'](obj['alc'], userFunctions, func) == 1 || userFunctions['last.fun'](obj['alc'], userFunctions, func) == 2 ? obj['drk'] : 0;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "alc",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "drk",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "juice_day",
+            "equation":
+              "(async function () {\n    return obj['fv_juice1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_juice1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "Potato_cont",
+            "equation":
+              "(async function () {\n    return obj['potato_day'];\n}());",
+            "derivedFrom": ["potato_day"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "Juice_cont",
+            "equation":
+              "(async function () {\n    return obj['juice_day'];\n}());",
+            "derivedFrom": ["juice_day"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
             "name": "AgeC_cont",
             "equation":
               "(async function () {\n    return userFunctions['Center.fun'](obj['Age_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Age_cont' }), userFunctions, func);\n}());",
@@ -35,156 +469,6 @@
             "equation":
               "(async function () {\n    return obj['AgeC_cont'];\n}());",
             "derivedFrom": ["AgeC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "TypeOfSmoker2",
-            "equation":
-              "(async function () {\n    return userFunctions['TypeOfSmoker2.fun'](obj['smk'], obj['evd'], obj['s100'], obj['wcig'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "smk",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "evd",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "s100",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "wcig",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "tsq_ds",
-            "equation":
-              "(async function () {\n    return userFunctions['tsq_ds.fun'](obj['stpo'], obj['stpoy'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "stpo",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "stpoy",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PackYears",
-            "equation":
-              "(async function () {\n    return func['exists'](obj['TypeOfSmoker2']) && func['not'](func['is.na']('TypeOfSmoker2')) ? userFunctions['PackYears1.fun'](obj['TypeOfSmoker2'], obj['Age_cont'], obj['agecigd'], obj['cigdayd'], obj['tsq_ds'], obj['cigdayf'], obj['cigdayo'], obj['dayocc'], obj['agec1'], obj['s100'], userFunctions, func) : func['exists'](obj['SmokeDaily']) && func['not'](func['is.na']('SmokeDaily')) ? userFunctions['PackYears2.fun'](obj['SmokeDaily'], obj['Age_cont'], obj['AgeDailyStart'], obj['DailyCig'], obj['AgeDailyQuit'], userFunctions, func) : undefined;\n}());",
-            "derivedFrom": [
-              "TypeOfSmoker2",
-              "Age_cont",
-              {
-                "fieldType": 0,
-                "name": "agecigd",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "cigdayd",
-                "displayName": "",
-                "extensions": {}
-              },
-              "tsq_ds",
-              {
-                "fieldType": 0,
-                "name": "cigdayf",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "cigdayo",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "dayocc",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "agec1",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "s100",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "SmokeDaily",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "AgeDailyStart",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "DailyCig",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "AgeDailyQuit",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PackYears_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['PackYears'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'UserMax_male', { 'index': 'PackYears_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["PackYears"],
             "displayName": "",
             "extensions": {}
           },
@@ -208,48 +492,13 @@
           },
           {
             "fieldType": 1,
-            "name": "smoker",
+            "name": "DrinksLastWeekC_cont",
             "equation":
-              "(async function () {\n    return userFunctions['smoker.fun'](obj['TypeOfSmoker2'], userFunctions, func);\n}());",
-            "derivedFrom": ["TypeOfSmoker2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "eversmoker",
-            "equation":
-              "(async function () {\n    return userFunctions['eversmoker.fun'](obj['TypeOfSmoker2'], userFunctions, func);\n}());",
-            "derivedFrom": ["TypeOfSmoker2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SmokeSimple",
-            "equation":
-              "(async function () {\n    return func['exists'](obj['TypeOfSmoker2']) && func['not'](func['is.na']('TypeOfSmoker2')) ? userFunctions['SmokeSimple1.fun'](obj['smoker'], obj['eversmoker'], obj['tsq_ds'], obj['TypeOfSmoker2'], userFunctions, func) : func['exists'](obj['SmokeDaily']) && func['not'](func['is.na']('SmokeDaily')) ? func['ifelse2'](func['not'](func['is.na'](obj['SmokeDaily'])), userFunctions['SmokeSimple2.fun'](obj['SmokeDaily'], obj['Age_cont'], obj['AgeDailyQuit'], userFunctions, func)) : undefined;\n}());",
+              "(async function () {\n    return userFunctions['Center.fun'](obj['DrinksLastWeek_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'DrinksLastWeek_cont' }), userFunctions, func);\n}());",
             "derivedFrom": [
-              "TypeOfSmoker2",
-              "smoker",
-              "eversmoker",
-              "tsq_ds",
               {
                 "fieldType": 0,
-                "name": "SmokeDaily",
-                "displayName": "",
-                "extensions": {}
-              },
-              "Age_cont",
-              {
-                "fieldType": 0,
-                "name": "AgeDailyQuit",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "undefined",
+                "name": "DrinksLastWeek_cont",
                 "displayName": "",
                 "extensions": {}
               }
@@ -259,14 +508,112 @@
           },
           {
             "fieldType": 1,
-            "name": "SmokeFormer5Plus_cat",
+            "name": "DrinksLastWeekC_rcs1",
             "equation":
-              "(async function () {\n    return func['ifelse2'](func['is.na'](obj['SmokeSimple']), undefined, func['ifelse2'](obj['SmokeSimple'] == 1, 1, 0));\n}());",
+              "(async function () {\n    return obj['DrinksLastWeekC_cont'];\n}());",
+            "derivedFrom": ["DrinksLastWeekC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FruitVegC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['FruitVeg_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'FruitVeg_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["FruitVeg_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FruitVegC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['FruitVegC_cont'];\n}());",
+            "derivedFrom": ["FruitVegC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "JuiceC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Juice_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Juice_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Juice_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "PotatoC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Potato_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Potato_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Potato_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "PotatoC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['PotatoC_cont'];\n}());",
+            "derivedFrom": ["PotatoC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "BMIC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['BMI_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'BMI_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["BMI_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "BMIC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['BMIC_cont'];\n}());",
+            "derivedFrom": ["BMIC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "HypertensionC_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Hypertension_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Hypertension_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Hypertension_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "DiabetesC_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Diabetes_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Diabetes_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Diabetes_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduHSGrad2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['EduHSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'EduHSGrad2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["EduHSGrad2_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduSomePS2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['EduSomePS2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'EduSomePS2_cat' }), userFunctions, func);\n}());",
             "derivedFrom": [
-              "SmokeSimple",
               {
                 "fieldType": 0,
-                "name": "undefined",
+                "name": "EduSomePS2_cat",
                 "displayName": "",
                 "extensions": {}
               }
@@ -276,35 +623,10 @@
           },
           {
             "fieldType": 1,
-            "name": "SmokeFormer0to5_cat",
+            "name": "EduPSGrad2C_cat",
             "equation":
-              "(async function () {\n    return func['ifelse2'](func['is.na'](obj['SmokeSimple']), undefined, func['ifelse2'](obj['SmokeSimple'] == 2, 1, 0));\n}());",
-            "derivedFrom": [
-              "SmokeSimple",
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SmokeCurrent_cat",
-            "equation":
-              "(async function () {\n    return func['ifelse2'](func['is.na'](obj['SmokeSimple']), undefined, func['ifelse2'](obj['SmokeSimple'] == 3, 1, 0));\n}());",
-            "derivedFrom": [
-              "SmokeSimple",
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
+              "(async function () {\n    return userFunctions['Center.fun'](obj['EduPSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'EduPSGrad2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["EduPSGrad2_cat"],
             "displayName": "",
             "extensions": {}
           },
@@ -332,6 +654,33 @@
             "equation":
               "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeCurrent_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SmokeCurrent_cat' }), userFunctions, func);\n}());",
             "derivedFrom": ["SmokeCurrent_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SurveyCycle2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["SurveyCycle2_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle3C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle3_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SurveyCycle3_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["SurveyCycle3_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle4C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle4_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SurveyCycle4_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["SurveyCycle4_cat"],
             "displayName": "",
             "extensions": {}
           },
@@ -373,340 +722,10 @@
           },
           {
             "fieldType": 1,
-            "name": "drk_drkm2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkm'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkm",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkt2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkt'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkt",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkw2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkw'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkw",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkr2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkr'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkr",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkf2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkf'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkf",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drksa2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drksa'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drksa",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drksu2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drksu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drksu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeek",
-            "equation":
-              "(async function () {\n    return userFunctions['DrinksLastWeek.fun'](obj['drk_drkm2'], obj['drk_drkt2'], obj['drk_drkw2'], obj['drk_drkr2'], obj['drk_drkf2'], obj['drk_drksa2'], obj['drk_drksu2'], obj['dany'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              "drk_drkm2",
-              "drk_drkt2",
-              "drk_drkw2",
-              "drk_drkr2",
-              "drk_drkf2",
-              "drk_drksa2",
-              "drk_drksu2",
-              {
-                "fieldType": 0,
-                "name": "dany",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeek_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['DrinksLastWeek'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'UserMax_male', { 'index': 'DrinksLastWeek_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["DrinksLastWeek"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeekC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['DrinksLastWeek_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'DrinksLastWeek_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["DrinksLastWeek_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeekC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['DrinksLastWeekC_cont'];\n}());",
-            "derivedFrom": ["DrinksLastWeekC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "AgeCXDrinksLastWeekC_int",
             "equation":
               "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['DrinksLastWeekC_cont'], userFunctions, func);\n}());",
             "derivedFrom": ["AgeC_cont", "DrinksLastWeekC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dfruit",
-            "equation":
-              "(async function () {\n    return userFunctions['dfruit.fun'](obj['frt'], obj['frtu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "frt",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "frtu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dsalad",
-            "equation":
-              "(async function () {\n    return userFunctions['dsalad.fun'](obj['sal'], obj['salu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "sal",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "salu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dpotato",
-            "equation":
-              "(async function () {\n    return userFunctions['dpotato.fun'](obj['pot'], obj['potu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "pot",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "potu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dcarrot",
-            "equation":
-              "(async function () {\n    return userFunctions['dcarrot.fun'](obj['car'], obj['caru'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "car",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "caru",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dveg",
-            "equation":
-              "(async function () {\n    return userFunctions['dveg.fun'](obj['veg'], obj['vegu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "veg",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "vegu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "djuice",
-            "equation":
-              "(async function () {\n    return userFunctions['djuice.fun'](obj['jui'], obj['juiu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "jui",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "juiu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVeg",
-            "equation":
-              "(async function () {\n    return userFunctions['FruitVeg.fun'](obj['dfruit'], obj['dsalad'], obj['dpotato'], obj['dcarrot'], obj['dveg'], userFunctions, func);\n}());",
-            "derivedFrom": ["dfruit", "dsalad", "dpotato", "dcarrot", "dveg"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVeg_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['FruitVeg'], 12, userFunctions, func);\n}());",
-            "derivedFrom": ["FruitVeg"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVegC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['FruitVeg_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'FruitVeg_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["FruitVeg_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVegC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['FruitVegC_cont'];\n}());",
-            "derivedFrom": ["FruitVegC_cont"],
             "displayName": "",
             "extensions": {}
           },
@@ -721,255 +740,10 @@
           },
           {
             "fieldType": 1,
-            "name": "Juice_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['djuice'], 6, userFunctions, func);\n}());",
-            "derivedFrom": ["djuice"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "JuiceC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Juice_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Juice_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Juice_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "AgeCXJuiceC_int",
             "equation":
               "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['JuiceC_cont'], userFunctions, func);\n}());",
             "derivedFrom": ["AgeC_cont", "JuiceC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "Potato_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['dpotato'], 2, userFunctions, func);\n}());",
-            "derivedFrom": ["dpotato"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PotatoC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Potato_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Potato_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Potato_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PotatoC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['PotatoC_cont'];\n}());",
-            "derivedFrom": ["PotatoC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "AgeCXPotatoC_int",
-            "equation":
-              "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['PotatoC_cont'], userFunctions, func);\n}());",
-            "derivedFrom": ["AgeC_cont", "PotatoC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "weightlb",
-            "equation":
-              "(async function () {\n    return obj['weightkg'] / 2.20462;\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "weightkg",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "heightin_hft",
-            "equation":
-              "(async function () {\n    return func['floor'](obj['heightm'] * 39.3701 / 12);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "heightm",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "heightin_hin",
-            "equation":
-              "(async function () {\n    return (obj['heightm'] * 39.3701 / 12 - func['floor'](obj['heightm'] * 39.3701 / 12)) * 12;\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "heightm",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "BMI_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['BMI_cont.fun'](obj['weightlb'], obj['heightin_hft'], obj['heightin_hin'], userFunctions, func);\n}());",
-            "derivedFrom": ["weightlb", "heightin_hft", "heightin_hin"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "BMIC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['BMI_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'BMI_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["BMI_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "BMIC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['BMIC_cont'];\n}());",
-            "derivedFrom": ["BMIC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "AgeCXBMIC_int",
-            "equation":
-              "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['BMIC_rcs1'], userFunctions, func);\n}());",
-            "derivedFrom": ["AgeC_cont", "BMIC_rcs1"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "Edu2",
-            "equation":
-              "(async function () {\n    return userFunctions['Edu2.fun'](obj['hs'], obj['ed'], obj['hdg'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "hs",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "ed",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "hdg",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduHSGrad2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['EduHSGrad2_cat.fun'](obj['Edu2'], userFunctions, func);\n}());",
-            "derivedFrom": ["Edu2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduSomePS2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['EduSomePS2_cat.fun'](obj['Edu2'], userFunctions, func);\n}());",
-            "derivedFrom": ["Edu2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduPSGrad2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['EduPSGrad2_cat.fun'](obj['Edu2'], userFunctions, func);\n}());",
-            "derivedFrom": ["Edu2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduHSGrad2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['EduHSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'EduHSGrad2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["EduHSGrad2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduSomePS2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['EduSomePS2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'EduSomePS2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["EduSomePS2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduPSGrad2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['EduPSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'EduPSGrad2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["EduPSGrad2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "Diabetes_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Diabetes_cat.fun'](obj['diab'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "diab",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DiabetesC_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Diabetes_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Diabetes_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Diabetes_cat"],
             "displayName": "",
             "extensions": {}
           },
@@ -984,26 +758,19 @@
           },
           {
             "fieldType": 1,
-            "name": "Hypertension_cat",
+            "name": "AgeCXPotatoC_int",
             "equation":
-              "(async function () {\n    return userFunctions['Hypertension_cat.fun'](obj['bp'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "bp",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
+              "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['PotatoC_cont'], userFunctions, func);\n}());",
+            "derivedFrom": ["AgeC_cont", "PotatoC_cont"],
             "displayName": "",
             "extensions": {}
           },
           {
             "fieldType": 1,
-            "name": "HypertensionC_cat",
+            "name": "AgeCXBMIC_int",
             "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Hypertension_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'Hypertension_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Hypertension_cat"],
+              "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['BMIC_rcs1'], userFunctions, func);\n}());",
+            "derivedFrom": ["AgeC_cont", "BMIC_rcs1"],
             "displayName": "",
             "extensions": {}
           },
@@ -1015,81 +782,6 @@
             "derivedFrom": ["HypertensionC_cat", "AgeC_cont"],
             "displayName": "",
             "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['SurveyCycle2_cat.fun'](obj['SurveyCycle'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "SurveyCycle",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle3_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['SurveyCycle3_cat.fun'](obj['SurveyCycle'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "SurveyCycle",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle4_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['SurveyCycle4_cat.fun'](obj['SurveyCycle'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "SurveyCycle",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SurveyCycle2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["SurveyCycle2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle3C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle3_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SurveyCycle3_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["SurveyCycle3_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle4C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle4_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_male', { 'index': 'SurveyCycle4_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["SurveyCycle4_cat"],
-            "displayName": "",
-            "extensions": {}
           }
         ],
         "userFunctions": {
@@ -1097,78 +789,14 @@
             "\n        userFunctions[\"Center.fun\"] = (function (uncentered, mean, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](uncentered)), uncentered - mean, undefined);\n})\n    ",
           "Interact.fun":
             "\n        userFunctions[\"Interact.fun\"] = (function (var1, var2, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](var1)) && func['not'](func['is.na'](var2)), var1 * var2, undefined);\n})\n    ",
-          "Max.fun":
-            "\n        userFunctions[\"Max.fun\"] = (function (var1, max, userFunctions, func) {\n    return func['ifelse2'](var1 > max, max, var1);\n})\n    ",
-          "NA0.fun":
-            "\n        userFunctions[\"NA0.fun\"] = (function (var1, userFunctions, func) {\n    return func['ifelse2'](func['is.na'](var1), 0, var1);\n})\n    ",
-          "falseifNA":
-            "\n        userFunctions[\"falseifNA\"] = (function (x, userFunctions, func) {\n    return func['ifelse'](func['is.na'](x), false, x);\n})\n    ",
-          "Age_spline.fun(Age_spline)":
-            "\n        userFunctions[\"Age_spline.fun(Age_spline)\"] = (function (Age_cont, point, userFunctions, func) {\n    return func['ifelse2'](Age_cont <= point, 0, func['ifelse2'](Age_cont > point, Age_cont - point, undefined));\n})\n    ",
-          "TypeOfSmoker2.fun":
-            "\n        userFunctions[\"TypeOfSmoker2.fun\"] = (function (smk, evd, s100, wcig, userFunctions, func) {\n    return func['ifelse2'](wcig == 'wcig2', 6, func['ifelse2'](smk == 'smk1', 1, func['ifelse2'](smk == 'smk2' && evd == 'evd1', 2, func['ifelse2'](smk == 'smk2' && evd == 'evd2', 3, func['ifelse2'](smk == 'smk3' && evd == 'evd1', 4, func['ifelse2'](smk == 'smk3' && evd == 'evd2' && s100 == 's1001', 5, func['ifelse2'](smk == 'smk3' && evd == 'evd2' && s100 == 's1002', 6, undefined)))))));\n})\n    ",
-          "tsq_ds.fun":
-            "\n        userFunctions[\"tsq_ds.fun\"] = (function (stpo, stpoy, userFunctions, func) {\n    return func['ifelse'](stpo == 'stpo1', 0.5, func['ifelse'](stpo == 'stpo2', 1.5, func['ifelse'](stpo == 'stpo3', 2.5, func['ifelse'](stpo == 'stpo4', stpoy, undefined))));\n})\n    ",
-          "PackYears1.fun":
-            "\n        userFunctions[\"PackYears1.fun\"] = (function (TypeOfSmoker2, Age_cont, agecigd, cigdayd, tsq_ds, cigdayf, cigdayo, dayocc, agec1, s100, userFunctions, func) {\n    return func['ifelse2'](TypeOfSmoker2 == 1, func['pmax']((Age_cont - agecigd) * (cigdayd / 20), 0.0137), func['ifelse2'](TypeOfSmoker2 == 2, func['pmax']((Age_cont - agecigd - tsq_ds) * (cigdayf / 20), 0.0137) + func['pmax'](cigdayo * dayocc / 30, 1) * tsq_ds, func['ifelse2'](TypeOfSmoker2 == 3, func['pmax'](cigdayo * dayocc / 30, 1) / 20 * (Age_cont - agec1), func['ifelse2'](TypeOfSmoker2 == 4, func['pmax']((Age_cont - agecigd - tsq_ds) * (cigdayf / 20), 0.0137), func['ifelse2'](TypeOfSmoker2 == 5 && s100 == 's1001', 0.0137, func['ifelse2'](TypeOfSmoker2 == 5 && s100 == 's1002', 0.007, func['ifelse2'](TypeOfSmoker2 == 6, 0, undefined)))))));\n})\n    ",
-          "PackYears2.fun":
-            "\n        userFunctions[\"PackYears2.fun\"] = (function (SmokeDaily, Age_cont, AgeDailyStart, DailyCig, AgeDailyQuit, userFunctions, func) {\n    return func['ifelse2'](SmokeDaily == 0, 0, func['ifelse2'](SmokeDaily == 1, (Age_cont - AgeDailyStart) * (DailyCig / 20), func['ifelse2'](SmokeDaily == 2, (AgeDailyQuit - AgeDailyStart) * (DailyCig / 20), undefined)));\n})\n    ",
-          "smoker.fun(smoker)":
-            "\n        userFunctions[\"smoker.fun(smoker)\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return func['ifelse'](func['isIn'](TypeOfSmoker2, 1, 2, 3), 1, func['ifelse'](func['isIn'](TypeOfSmoker2, 4, 5, 6), 0, undefined));\n})\n    ",
-          "smoker.fun":
-            "\n        userFunctions[\"smoker.fun\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return userFunctions['smoker.fun(smoker)'](TypeOfSmoker2, userFunctions, func);\n})\n    ",
-          "eversmoker.fun(eversmoker)":
-            "\n        userFunctions[\"eversmoker.fun(eversmoker)\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return func['ifelse'](func['isIn'](TypeOfSmoker2, 1, 2, 3, 4, 5), 1, func['ifelse'](TypeOfSmoker2 == 6, 0, undefined));\n})\n    ",
-          "eversmoker.fun":
-            "\n        userFunctions[\"eversmoker.fun\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return userFunctions['eversmoker.fun(eversmoker)'](TypeOfSmoker2, userFunctions, func);\n})\n    ",
-          "SmokeSimple1.fun(SmokeSimple)":
-            "\n        userFunctions[\"SmokeSimple1.fun(SmokeSimple)\"] = (function (smoker, eversmoker, tsq_ds, TypeOfSmoker2, userFunctions, func) {\n    return func['ifelse2'](smoker == 0 && eversmoker == 0, 0, func['ifelse2'](smoker == 1 && eversmoker == 1, 1, func['ifelse2'](smoker == 0 && eversmoker == 1 && tsq_ds < 5 || TypeOfSmoker2 == 5, 2, func['ifelse2'](smoker == 0 && eversmoker == 1 && tsq_ds >= 5, 3, undefined))));\n})\n    ",
-          "SmokeSimple1.fun":
-            "\n        userFunctions[\"SmokeSimple1.fun\"] = (function (smoker, eversmoker, tsq_ds, TypeOfSmoker2, userFunctions, func) {\n    return userFunctions['SmokeSimple1.fun(SmokeSimple)'](smoker, eversmoker, tsq_ds, TypeOfSmoker2, userFunctions, func);\n})\n    ",
-          "SmokeSimple2.fun(SmokeSimple)":
-            "\n        userFunctions[\"SmokeSimple2.fun(SmokeSimple)\"] = (function (SmokeDaily, Age_cont, AgeDailyQuit, userFunctions, func) {\n    return func['ifelse2'](SmokeDaily == 0, 0, func['ifelse2'](SmokeDaily == 1, 1, func['ifelse2'](SmokeDaily == 2 && Age_cont < AgeDailyQuit + 5, 2, func['ifelse2'](SmokeDaily == 2 && Age_cont > AgeDailyQuit + 5, 3, undefined))));\n})\n    ",
-          "SmokeSimple2.fun":
-            "\n        userFunctions[\"SmokeSimple2.fun\"] = (function (SmokeDaily, Age_cont, AgeDailyQuit, userFunctions, func) {\n    return userFunctions['SmokeSimple2.fun(SmokeSimple)'](SmokeDaily, Age_cont, AgeDailyQuit, userFunctions, func);\n})\n    ",
-          "DrinksLastWeek.fun":
-            "\n        userFunctions[\"DrinksLastWeek.fun\"] = (function (drk_drkm2, drk_drkt2, drk_drkw2, drk_drkr2, drk_drkf2, drk_drksa2, drk_drksu2, dany, userFunctions, func) {\n    return func['ifelse2'](dany == 'dany2', 0, func['ifelse2'](dany == 'dany1', drk_drkm2 + drk_drkt2 + drk_drkw2 + drk_drkr2 + drk_drkf2 + drk_drksa2 + drk_drksu2, undefined));\n})\n    ",
-          "dfruit.fun":
-            "\n        userFunctions[\"dfruit.fun\"] = (function (frt, frtu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](frt), undefined, func['ifelse'](frtu == 'frtd', frt, func['ifelse'](frtu == 'frtw', frt / 7, func['ifelse'](frtu == 'frtm', frt / 30, func['ifelse'](frtu == 'frty', frt / 365, undefined)))));\n})\n    ",
-          "dsalad.fun":
-            "\n        userFunctions[\"dsalad.fun\"] = (function (sal, salu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](sal), undefined, func['ifelse'](salu == 'sald', sal, func['ifelse'](salu == 'salw', sal / 7, func['ifelse'](salu == 'salm', sal / 30, func['ifelse'](salu == 'saly', sal / 365, undefined)))));\n})\n    ",
-          "dpotato.fun":
-            "\n        userFunctions[\"dpotato.fun\"] = (function (pot, potu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](pot), undefined, func['ifelse'](potu == 'potd', pot, func['ifelse'](potu == 'potw', pot / 7, func['ifelse'](potu == 'potm', pot / 30, func['ifelse'](potu == 'poty', pot / 365, undefined)))));\n})\n    ",
-          "dcarrot.fun":
-            "\n        userFunctions[\"dcarrot.fun\"] = (function (car, caru, userFunctions, func) {\n    return func['ifelse'](func['is.na'](car), undefined, func['ifelse'](caru == 'card', car, func['ifelse'](caru == 'carw', car / 7, func['ifelse'](caru == 'carm', car / 30, func['ifelse'](caru == 'cary', car / 365, undefined)))));\n})\n    ",
-          "dveg.fun":
-            "\n        userFunctions[\"dveg.fun\"] = (function (veg, vegu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](veg), undefined, func['ifelse'](vegu == 'vegd', veg, func['ifelse'](vegu == 'vegw', veg / 7, func['ifelse'](vegu == 'vegm', veg / 30, func['ifelse'](vegu == 'vegy', veg / 365, undefined)))));\n})\n    ",
-          "djuice.fun":
-            "\n        userFunctions[\"djuice.fun\"] = (function (jui, juiu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](jui), undefined, func['ifelse'](juiu == 'juid', jui, func['ifelse'](juiu == 'juiw', jui / 7, func['ifelse'](juiu == 'juim', jui / 30, func['ifelse'](juiu == 'juiy', jui / 365, undefined)))));\n})\n    ",
-          "FruitVeg.fun":
-            "\n        userFunctions[\"FruitVeg.fun\"] = (function (dfruit, dsalad, dpotato, dcarrot, dveg, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](dfruit)) && func['not'](func['is.na'](dsalad)) && func['not'](func['is.na'](dpotato)) && func['not'](func['is.na'](dcarrot)) && func['not'](func['is.na'](dveg)), dfruit + dsalad + dpotato + dcarrot + dveg, undefined);\n})\n    ",
-          "BMI_cont.fun(weightkg)":
-            "\n        userFunctions[\"BMI_cont.fun(weightkg)\"] = (function (weightlb, heightin_hft, heightin_hin, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](weightlb)), weightlb / 2.2046226218, undefined);\n})\n    ",
-          "BMI_cont.fun(heightm)":
-            "\n        userFunctions[\"BMI_cont.fun(heightm)\"] = (function (weightlb, heightin_hft, heightin_hin, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](heightin_hft)) && func['not'](func['is.na'](heightin_hin)), (heightin_hft * 12 + heightin_hin) / 39.3701, undefined);\n})\n    ",
-          "BMI_cont.fun":
-            "\n        userFunctions[\"BMI_cont.fun\"] = (function (weightlb, heightin_hft, heightin_hin, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](userFunctions['BMI_cont.fun(weightkg)'](weightlb, heightin_hft, heightin_hin, userFunctions, func))) && func['not'](func['is.na'](userFunctions['BMI_cont.fun(heightm)'](weightlb, heightin_hft, heightin_hin, userFunctions, func))), userFunctions['BMI_cont.fun(weightkg)'](weightlb, heightin_hft, heightin_hin, userFunctions, func) / (userFunctions['BMI_cont.fun(heightm)'](weightlb, heightin_hft, heightin_hin, userFunctions, func) * userFunctions['BMI_cont.fun(heightm)'](weightlb, heightin_hft, heightin_hin, userFunctions, func)), undefined);\n})\n    ",
-          "Edu2.fun":
-            "\n        userFunctions[\"Edu2.fun\"] = (function (hs, ed, hdg, userFunctions, func) {\n    return func['ifelse2'](hs == 'hs2', 0, func['ifelse2'](hs == 'hs1' && ed == 'ed2', 1, func['ifelse2'](hs == 'hs1' && ed == 'ed1' && hdg == 'hdg1', 2, func['ifelse2'](hs == 'hs1' && ed == 'ed1' && func['isIn'](hdg, 'hdg2', 'hdg3', 'hdg4', 'hdg5', 'hdg6'), 3, undefined))));\n})\n    ",
-          "EduHSGrad2_cat.fun":
-            "\n        userFunctions[\"EduHSGrad2_cat.fun\"] = (function (Edu2, userFunctions, func) {\n    return func['ifelse'](Edu2 == 1, 1, func['ifelse'](func['isIn'](Edu2, 0, 2, 3), 0, undefined));\n})\n    ",
-          "EduSomePS2_cat.fun":
-            "\n        userFunctions[\"EduSomePS2_cat.fun\"] = (function (Edu2, userFunctions, func) {\n    return func['ifelse'](Edu2 == 2, 1, func['ifelse'](func['isIn'](Edu2, 0, 1, 3), 0, undefined));\n})\n    ",
-          "EduPSGrad2_cat.fun":
-            "\n        userFunctions[\"EduPSGrad2_cat.fun\"] = (function (Edu2, userFunctions, func) {\n    return func['ifelse'](Edu2 == 3, 1, func['ifelse'](func['isIn'](Edu2, 0, 1, 2), 0, undefined));\n})\n    ",
-          "Diabetes_cat.fun":
-            "\n        userFunctions[\"Diabetes_cat.fun\"] = (function (diab, userFunctions, func) {\n    return func['ifelse'](diab == 'diab1', 1, func['ifelse'](diab == 'diab2', 0, undefined));\n})\n    ",
-          "Hypertension_cat.fun":
-            "\n        userFunctions[\"Hypertension_cat.fun\"] = (function (bp, userFunctions, func) {\n    return func['ifelse'](bp == 'bp1', 1, func['ifelse'](bp == 'bp2', 0, undefined));\n})\n    ",
-          "SurveyCycle2_cat.fun":
-            "\n        userFunctions[\"SurveyCycle2_cat.fun\"] = (function (SurveyCycle, userFunctions, func) {\n    return func['ifelse'](SurveyCycle == 2, 1, func['ifelse'](func['isIn'](SurveyCycle, 1, 3, 4), 0, undefined));\n})\n    ",
-          "SurveyCycle3_cat.fun":
-            "\n        userFunctions[\"SurveyCycle3_cat.fun\"] = (function (SurveyCycle, userFunctions, func) {\n    return func['ifelse'](SurveyCycle == 3, 1, func['ifelse'](func['isIn'](SurveyCycle, 1, 2, 4), 0, undefined));\n})\n    ",
-          "SurveyCycle4_cat.fun":
-            "\n        userFunctions[\"SurveyCycle4_cat.fun\"] = (function (SurveyCycle, userFunctions, func) {\n    return func['ifelse'](SurveyCycle == 4, 1, func['ifelse'](func['isIn'](SurveyCycle, 1, 2, 3), 0, undefined));\n})\n    "
+          "PackYears.fun":
+            "\n        userFunctions[\"PackYears.fun\"] = (function (smokestat, age, AgeDailyStart, DailyCig, AgeDailyQuit, userFunctions, func) {\n    return func['ifelse'](smokestat == 'A1', (age - AgeDailyStart) * (DailyCig / 20), func['ifelse'](smokestat == 'A3' || smokestat == 'A2', (AgeDailyQuit - AgeDailyStart) * (DailyCig / 20), func['ifelse'](smokestat == 'A4', 0, undefined)));\n})\n    ",
+          "last.fun":
+            "\n        userFunctions[\"last.fun\"] = (function (x, userFunctions, func) {\n    return func['as.numeric'](func['ifelse'](func['is.na'](x) == 1, undefined, func['substr'](x, func['nchar'](x), func['nchar'](x))));\n})\n    ",
+          "default(dis)":
+            "\n        userFunctions[\"default(dis)\"] = (function (dis, userFunctions, func) {\n    return dis == undefined ? 0 : dis;\n})\n    ",
+          "disease.fun":
+            "\n        userFunctions[\"disease.fun\"] = (function (dis, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func) == 'Yes', 1, func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func) == 'No', 0, undefined));\n})\n    "
         },
         "tables": {
           "CRSpec": [
@@ -1252,96 +880,24 @@
             {}
           ],
           "CRSpec_Mutated_4": [
-            {
-              "index": "Age_cont",
-              "Mean_male": "47.98064912",
-              "UserMax_male": "47.98064912"
-            },
-            {
-              "index": "PackYears_cont",
-              "Mean_male": "13.18715513",
-              "UserMax_male": "13.18715513"
-            },
-            {
-              "index": "SmokeFormer5Plus_cat",
-              "Mean_male": "0.363051257",
-              "UserMax_male": "0.363051257"
-            },
-            {
-              "index": "SmokeFormer0to5_cat",
-              "Mean_male": "0.10479961",
-              "UserMax_male": "0.10479961"
-            },
-            {
-              "index": "SmokeCurrent_cat",
-              "Mean_male": "0.278576419",
-              "UserMax_male": "0.278576419"
-            },
-            {
-              "index": "DrinksLastWeek_cont",
-              "Mean_male": "5.766836745",
-              "UserMax_male": "5.766836745"
-            },
-            {
-              "index": "FruitVeg_cont",
-              "Mean_male": "3.005140474",
-              "UserMax_male": "3.005140474"
-            },
-            {
-              "index": "Potato_cont",
-              "Mean_male": "0.4127051",
-              "UserMax_male": "0.4127051"
-            },
-            {
-              "index": "Juice_cont",
-              "Mean_male": "0.918177969",
-              "UserMax_male": "0.918177969"
-            },
-            {
-              "index": "BMI_cont",
-              "Mean_male": "26.73860016",
-              "UserMax_male": "26.73860016"
-            },
-            {
-              "index": "EduHSGrad2C_cat",
-              "Mean_male": "0.182393665",
-              "UserMax_male": "0.182393665"
-            },
-            {
-              "index": "EduSomePS2C_cat",
-              "Mean_male": "0.073761988",
-              "UserMax_male": "0.073761988"
-            },
-            {
-              "index": "EduPSGrad2C_cat",
-              "Mean_male": "0.556454174",
-              "UserMax_male": "0.556454174"
-            },
-            {
-              "index": "Diabetes_cat",
-              "Mean_male": "0.063387886",
-              "UserMax_male": "0.063387886"
-            },
-            {
-              "index": "Hypertension_cat",
-              "Mean_male": "0.1725489",
-              "UserMax_male": "0.1725489"
-            },
-            {
-              "index": "SurveyCycle2_cat",
-              "Mean_male": "0.2473906",
-              "UserMax_male": "0.2473906"
-            },
-            {
-              "index": "SurveyCycle3_cat",
-              "Mean_male": "0.248491521",
-              "UserMax_male": "0.248491521"
-            },
-            {
-              "index": "SurveyCycle4_cat",
-              "Mean_male": "0.257595325",
-              "UserMax_male": "0.257595325"
-            }
+            { "index": "Age_cont", "Mean_male": "47.98064912" },
+            { "index": "PackYears_cont", "Mean_male": "13.18715513" },
+            { "index": "SmokeFormer5Plus_cat", "Mean_male": "0.363051257" },
+            { "index": "SmokeFormer0to5_cat", "Mean_male": "0.10479961" },
+            { "index": "SmokeCurrent_cat", "Mean_male": "0.278576419" },
+            { "index": "DrinksLastWeek_cont", "Mean_male": "5.766836745" },
+            { "index": "FruitVeg_cont", "Mean_male": "3.005140474" },
+            { "index": "Potato_cont", "Mean_male": "0.4127051" },
+            { "index": "Juice_cont", "Mean_male": "0.918177969" },
+            { "index": "BMI_cont", "Mean_male": "26.73860016" },
+            { "index": "EduHSGrad2C_cat", "Mean_male": "0.182393665" },
+            { "index": "EduSomePS2C_cat", "Mean_male": "0.073761988" },
+            { "index": "EduPSGrad2C_cat", "Mean_male": "0.556454174" },
+            { "index": "Diabetes_cat", "Mean_male": "0.063387886" },
+            { "index": "Hypertension_cat", "Mean_male": "0.1725489" },
+            { "index": "SurveyCycle2_cat", "Mean_male": "0.2473906" },
+            { "index": "SurveyCycle3_cat", "Mean_male": "0.248491521" },
+            { "index": "SurveyCycle4_cat", "Mean_male": "0.257595325" }
           ]
         },
         "baseline": 0.056921892,
@@ -1675,150 +1231,31 @@
           },
           {
             "fieldType": 1,
-            "name": "AgeC_cont",
+            "name": "PackYears_cont",
             "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Age_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'Age_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Age_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "AgeC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['AgeC_cont'];\n}());",
-            "derivedFrom": ["AgeC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "TypeOfSmoker2",
-            "equation":
-              "(async function () {\n    return userFunctions['TypeOfSmoker2.fun'](obj['smk'], obj['evd'], obj['s100'], obj['wcig'], userFunctions, func);\n}());",
+              "(async function () {\n    return userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 1 ? userFunctions['PackYears.fun'](obj['smokingstat'], obj['age'], obj['dailyage'], obj['dailycig'], undefined, userFunctions, func) : userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 2 ? func['ifelse'](obj['lessdaily'] == 'yless', userFunctions['PackYears.fun'](obj['smokingstat'], undefined, obj['dailyage2'], obj['dailycig3'], obj['stopdaily'], userFunctions, func), func['ifelse'](obj['lessdaily'] == 'nless', 0, undefined)) : userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 3 ? func['ifelse'](obj['pastsmoke'] == 'dal', userFunctions['PackYears.fun'](obj['smokingstat'], undefined, obj['dailyage3'], obj['dailycig4'], obj['stopdaily2'], userFunctions, func), func['ifelse'](obj['pastsmoke'] == 'dal2', 0, undefined)) : userFunctions['last.fun'](obj['smokingstat'], userFunctions, func) == 4 ? 0 : undefined;\n}());",
             "derivedFrom": [
               {
                 "fieldType": 0,
-                "name": "smk",
+                "name": "smokingstat",
                 "displayName": "",
                 "extensions": {}
               },
               {
                 "fieldType": 0,
-                "name": "evd",
+                "name": "age",
                 "displayName": "",
                 "extensions": {}
               },
               {
                 "fieldType": 0,
-                "name": "s100",
+                "name": "dailyage",
                 "displayName": "",
                 "extensions": {}
               },
               {
                 "fieldType": 0,
-                "name": "wcig",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "tsq_ds",
-            "equation":
-              "(async function () {\n    return userFunctions['tsq_ds.fun'](obj['stpo'], obj['stpoy'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "stpo",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "stpoy",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PackYears",
-            "equation":
-              "(async function () {\n    return func['exists'](obj['TypeOfSmoker2']) && func['not'](func['is.na']('TypeOfSmoker2')) ? userFunctions['PackYears1.fun'](obj['TypeOfSmoker2'], obj['Age_cont'], obj['agecigd'], obj['cigdayd'], obj['tsq_ds'], obj['cigdayf'], obj['cigdayo'], obj['dayocc'], obj['agec1'], obj['s100'], userFunctions, func) : func['exists'](obj['SmokeDaily']) && func['not'](func['is.na']('SmokeDaily')) ? userFunctions['PackYears2.fun'](obj['SmokeDaily'], obj['Age_cont'], obj['AgeDailyStart'], obj['DailyCig'], obj['AgeDailyQuit'], userFunctions, func) : undefined;\n}());",
-            "derivedFrom": [
-              "TypeOfSmoker2",
-              "Age_cont",
-              {
-                "fieldType": 0,
-                "name": "agecigd",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "cigdayd",
-                "displayName": "",
-                "extensions": {}
-              },
-              "tsq_ds",
-              {
-                "fieldType": 0,
-                "name": "cigdayf",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "cigdayo",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "dayocc",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "agec1",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "s100",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "SmokeDaily",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "AgeDailyStart",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "DailyCig",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "AgeDailyQuit",
+                "name": "dailycig",
                 "displayName": "",
                 "extensions": {}
               },
@@ -1827,6 +1264,54 @@
                 "name": "undefined",
                 "displayName": "",
                 "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "lessdaily",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailyage2",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailycig3",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "pastsmoke",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailyage3",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "dailycig4",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily2",
+                "displayName": "",
+                "extensions": {}
               }
             ],
             "displayName": "",
@@ -1834,10 +1319,401 @@
           },
           {
             "fieldType": 1,
-            "name": "PackYears_cont",
+            "name": "SmokeCurrent_cat",
             "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['PackYears'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'UserMax_female', { 'index': 'PackYears_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["PackYears"],
+              "(async function () {\n    return func['ifelse'](obj['smokingstat'] == 'A2' || obj['smokingstat'] == 'A1', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SmokeFormer0to5_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['smokingstat'] == 'A3' && obj['Age'] < obj['stopdailyt2'] + 5, 1, func['ifelse'](obj['smokingstat'] == 'A2' && obj['Age'] < obj['stopdaily2'] + 5, 1, 0));\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "Age",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdailyt2",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily2",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SmokeFormer5Plus_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['smokingstat'] == 'A3' && obj['Age'] > obj['stopdaily2'] + 5, 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "smokingstat",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "Age",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "stopdaily2",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "fruit_day",
+            "equation":
+              "(async function () {\n    return obj['fv_fruit1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_fruit1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "potato_day",
+            "equation":
+              "(async function () {\n    return obj['fv_pot1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_pot1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "otherveg_day",
+            "equation":
+              "(async function () {\n    return obj['fv_veg1'] / 7;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "fv_veg1",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FruitVeg_cont",
+            "equation":
+              "(async function () {\n    return obj['fruit_day'] + obj['potato_day'] + obj['otherveg_day'];\n}());",
+            "derivedFrom": ["fruit_day", "potato_day", "otherveg_day"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "weight",
+            "equation": "(async function () {\n    return obj['kg'];\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "kg",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "height",
+            "equation": "(async function () {\n    return obj['cm'];\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "cm",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "BMI_cont",
+            "equation":
+              "(async function () {\n    return obj['weight'] / obj['height'];\n}());",
+            "derivedFrom": ["weight", "height"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "Diabetes_cat",
+            "equation":
+              "(async function () {\n    return obj['cond_SQ010'] == 'Yes' ? 0 : userFunctions['disease.fun'](obj['cond_SQ001'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "cond_SQ010",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "cond_SQ001",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "Hypertension_cat",
+            "equation":
+              "(async function () {\n    return obj['cond_SQ010'] == 'Yes' ? 0 : userFunctions['disease.fun'](obj['cond_SQ004'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "cond_SQ010",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "cond_SQ004",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle2_cat",
+            "equation": "(async function () {\n    return 1;\n}());",
+            "derivedFrom": [],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle3_cat",
+            "equation": "(async function () {\n    return 1;\n}());",
+            "derivedFrom": [],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle4_cat",
+            "equation": "(async function () {\n    return 1;\n}());",
+            "derivedFrom": [],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduPSGrad2_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['edu'] == 'C4', 0, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "edu",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduHSGrad2_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['edu'] == 'C2', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "edu",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduSomePs2_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['edu'] == 'C3', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "edu",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FormerDrinker_cat",
+            "equation":
+              "(async function () {\n    return func['ifelse'](obj['alc'] == 'alc3' && obj['evdk'] == 'evdk1', 1, 0);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "alc",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "evdk",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "vpa",
+            "equation":
+              "(async function () {\n    return userFunctions['vpa.fun'](obj['vigact'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "vigact",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "mpa",
+            "equation":
+              "(async function () {\n    return userFunctions['mpa.fun'](obj['modact'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "modact",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "lpa",
+            "equation":
+              "(async function () {\n    return userFunctions['lpa.fun'](obj['ligact'], userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "ligact",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "PhysicalActivity_rcs1",
+            "equation":
+              "(async function () {\n    return obj['vpa'] + obj['mpa'] + obj['lpa'];\n}());",
+            "derivedFrom": ["vpa", "mpa", "lpa"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "DrinksLastWeek_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['last.fun'](obj['alc'], userFunctions, func) == 1 || userFunctions['last.fun'](obj['alc'], userFunctions, func) == 2 ? obj['drk'] : 0;\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "alc",
+                "displayName": "",
+                "extensions": {}
+              },
+              {
+                "fieldType": 0,
+                "name": "drk",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "AgeC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Age_cont'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'Age_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Age_cont"],
             "displayName": "",
             "extensions": {}
           },
@@ -1845,7 +1721,7 @@
             "fieldType": 1,
             "name": "PackYearsC_cont",
             "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['PackYears_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'PackYears_cont' }), userFunctions, func);\n}());",
+              "(async function () {\n    return userFunctions['Center.fun'](obj['PackYears_cont'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'PackYears_cont' }), userFunctions, func);\n}());",
             "derivedFrom": ["PackYears_cont"],
             "displayName": "",
             "extensions": {}
@@ -1861,111 +1737,9 @@
           },
           {
             "fieldType": 1,
-            "name": "smoker",
-            "equation":
-              "(async function () {\n    return userFunctions['smoker.fun'](obj['TypeOfSmoker2'], userFunctions, func);\n}());",
-            "derivedFrom": ["TypeOfSmoker2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "eversmoker",
-            "equation":
-              "(async function () {\n    return userFunctions['eversmoker.fun'](obj['TypeOfSmoker2'], userFunctions, func);\n}());",
-            "derivedFrom": ["TypeOfSmoker2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SmokeSimple",
-            "equation":
-              "(async function () {\n    return func['exists'](obj['TypeOfSmoker2']) && func['not'](func['is.na']('TypeOfSmoker2')) ? userFunctions['SmokeSimple1.fun'](obj['smoker'], obj['eversmoker'], obj['tsq_ds'], obj['TypeOfSmoker2'], userFunctions, func) : func['exists'](obj['SmokeDaily']) && func['not'](func['is.na']('SmokeDaily')) ? func['ifelse2'](func['not'](func['is.na'](obj['SmokeDaily'])), userFunctions['SmokeSimple2.fun'](obj['SmokeDaily'], obj['Age_cont'], obj['AgeDailyQuit'], userFunctions, func)) : undefined;\n}());",
-            "derivedFrom": [
-              "TypeOfSmoker2",
-              "smoker",
-              "eversmoker",
-              "tsq_ds",
-              {
-                "fieldType": 0,
-                "name": "SmokeDaily",
-                "displayName": "",
-                "extensions": {}
-              },
-              "Age_cont",
-              {
-                "fieldType": 0,
-                "name": "AgeDailyQuit",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SmokeFormer5Plus_cat",
-            "equation":
-              "(async function () {\n    return func['ifelse2'](func['is.na'](obj['SmokeSimple']), undefined, func['ifelse2'](obj['SmokeSimple'] == 1, 1, 0));\n}());",
-            "derivedFrom": [
-              "SmokeSimple",
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SmokeFormer0to5_cat",
-            "equation":
-              "(async function () {\n    return func['ifelse2'](func['is.na'](obj['SmokeSimple']), undefined, func['ifelse2'](obj['SmokeSimple'] == 2, 1, 0));\n}());",
-            "derivedFrom": [
-              "SmokeSimple",
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SmokeCurrent_cat",
-            "equation":
-              "(async function () {\n    return func['ifelse2'](func['is.na'](obj['SmokeSimple']), undefined, func['ifelse2'](obj['SmokeSimple'] == 3, 1, 0));\n}());",
-            "derivedFrom": [
-              "SmokeSimple",
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "SmokeFormer5PlusC_cat",
             "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeFormer5Plus_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'SmokeFormer5Plus_cat' }), userFunctions, func);\n}());",
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeFormer5Plus_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'SmokeFormer5Plus_cat' }), userFunctions, func);\n}());",
             "derivedFrom": ["SmokeFormer5Plus_cat"],
             "displayName": "",
             "extensions": {}
@@ -1974,7 +1748,7 @@
             "fieldType": 1,
             "name": "SmokeFormer0to5C_cat",
             "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeFormer0to5_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'SmokeFormer0to5_cat' }), userFunctions, func);\n}());",
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeFormer0to5_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'SmokeFormer0to5_cat' }), userFunctions, func);\n}());",
             "derivedFrom": ["SmokeFormer0to5_cat"],
             "displayName": "",
             "extensions": {}
@@ -1983,8 +1757,175 @@
             "fieldType": 1,
             "name": "SmokeCurrentC_cat",
             "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeCurrent_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'SmokeCurrent_cat' }), userFunctions, func);\n}());",
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SmokeCurrent_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'SmokeCurrent_cat' }), userFunctions, func);\n}());",
             "derivedFrom": ["SmokeCurrent_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "DrinksLastWeekC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['DrinksLastWeek_cont'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'DrinksLastWeek_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["DrinksLastWeek_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "DrinksLastWeekC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['DrinksLastWeekC_cont'];\n}());",
+            "derivedFrom": ["DrinksLastWeekC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FormerDrinkerC_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['FormerDrinker_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'FormerDrinker_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["FormerDrinker_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FruitVegC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['FruitVeg_cont'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'FruitVeg_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["FruitVeg_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "FruitVegC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['FruitVegC_cont'];\n}());",
+            "derivedFrom": ["FruitVegC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "PhysicalActivityC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['PhysicalActivity_cont'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'PhysicalActivity_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "PhysicalActivity_cont",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "PhysicalActivityC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['PhysicalActivityC_cont'];\n}());",
+            "derivedFrom": ["PhysicalActivityC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "BMIC_cont",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['BMI_cont'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'BMI_cont' }), userFunctions, func);\n}());",
+            "derivedFrom": ["BMI_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "BMIC_rcs1",
+            "equation":
+              "(async function () {\n    return obj['BMIC_cont'];\n}());",
+            "derivedFrom": ["BMIC_cont"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduHSGrad2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['EduHSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'EduHSGrad2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["EduHSGrad2_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduSomePS2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['EduSomePS2_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'EduSomePS2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": [
+              {
+                "fieldType": 0,
+                "name": "EduSomePS2_cat",
+                "displayName": "",
+                "extensions": {}
+              }
+            ],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "EduPSGrad2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['EduPSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'EduPSGrad2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["EduPSGrad2_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "DiabetesC_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Diabetes_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'Diabetes_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Diabetes_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "HypertensionC_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['Hypertension_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'Hypertension_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["Hypertension_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle2C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle2_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'SurveyCycle2_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["SurveyCycle2_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle3C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle3_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'SurveyCycle3_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["SurveyCycle3_cat"],
+            "displayName": "",
+            "extensions": {}
+          },
+          {
+            "fieldType": 1,
+            "name": "SurveyCycle4C_cat",
+            "equation":
+              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle4_cat'], await getValueFromTable(tables['CRSpec_Mutated_3'], 'Mean_female', { 'index': 'SurveyCycle4_cat' }), userFunctions, func);\n}());",
+            "derivedFrom": ["SurveyCycle4_cat"],
             "displayName": "",
             "extensions": {}
           },
@@ -2026,211 +1967,6 @@
           },
           {
             "fieldType": 1,
-            "name": "drk_drkm2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkm'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkm",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkt2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkt'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkt",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkw2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkw'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkw",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkr2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkr'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkr",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drkf2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drkf'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drkf",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drksa2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drksa'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drksa",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "drk_drksu2",
-            "equation":
-              "(async function () {\n    return userFunctions['NA0.fun'](obj['drk_drksu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "drk_drksu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeek",
-            "equation":
-              "(async function () {\n    return userFunctions['DrinksLastWeek.fun'](obj['drk_drkm2'], obj['drk_drkt2'], obj['drk_drkw2'], obj['drk_drkr2'], obj['drk_drkf2'], obj['drk_drksa2'], obj['drk_drksu2'], obj['dany'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              "drk_drkm2",
-              "drk_drkt2",
-              "drk_drkw2",
-              "drk_drkr2",
-              "drk_drkf2",
-              "drk_drksa2",
-              "drk_drksu2",
-              {
-                "fieldType": 0,
-                "name": "dany",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeek_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['DrinksLastWeek'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'UserMax_female', { 'index': 'DrinksLastWeek_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["DrinksLastWeek"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeekC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['DrinksLastWeek_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'DrinksLastWeek_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["DrinksLastWeek_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DrinksLastWeekC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['DrinksLastWeekC_cont'];\n}());",
-            "derivedFrom": ["DrinksLastWeekC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FormerDrinker_cat",
-            "equation":
-              "(async function () {\n    return func['ifelse2'](obj['dany'] == 'dany2' && obj['d12'] == 'd122' && obj['evdk'] == 'evdk1', 1, func['ifelse2'](obj['dany'] == 'dany1' || obj['d12'] == 'd121' || obj['evdk'] == 'evd2', 0, undefined));\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "dany",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "d12",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "evdk",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "undefined",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FormerDrinkerC_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['FormerDrinker_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'FormerDrinker_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["FormerDrinker_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "AgeCXFormerDrinkerC_int",
             "equation":
               "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['FormerDrinkerC_cat'], userFunctions, func);\n}());",
@@ -2249,837 +1985,10 @@
           },
           {
             "fieldType": 1,
-            "name": "dfruit",
-            "equation":
-              "(async function () {\n    return userFunctions['dfruit.fun'](obj['frt'], obj['frtu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "frt",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "frtu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dsalad",
-            "equation":
-              "(async function () {\n    return userFunctions['dsalad.fun'](obj['sal'], obj['salu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "sal",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "salu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dpotato",
-            "equation":
-              "(async function () {\n    return userFunctions['dpotato.fun'](obj['pot'], obj['potu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "pot",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "potu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dcarrot",
-            "equation":
-              "(async function () {\n    return userFunctions['dcarrot.fun'](obj['car'], obj['caru'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "car",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "caru",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dveg",
-            "equation":
-              "(async function () {\n    return userFunctions['dveg.fun'](obj['veg'], obj['vegu'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "veg",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "vegu",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVeg",
-            "equation":
-              "(async function () {\n    return userFunctions['FruitVeg.fun'](obj['dfruit'], obj['dsalad'], obj['dpotato'], obj['dcarrot'], obj['dveg'], userFunctions, func);\n}());",
-            "derivedFrom": ["dfruit", "dsalad", "dpotato", "dcarrot", "dveg"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVeg_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['FruitVeg'], 12, userFunctions, func);\n}());",
-            "derivedFrom": ["FruitVeg"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVegC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['FruitVeg_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'FruitVeg_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["FruitVeg_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "FruitVegC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['FruitVegC_cont'];\n}());",
-            "derivedFrom": ["FruitVegC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "AgeCXFruitVegC_int",
             "equation":
               "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['FruitVegC_cont'], userFunctions, func);\n}());",
             "derivedFrom": ["AgeC_cont", "FruitVegC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "walk",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa1'], obj['lpam_lpa1'], obj['lpat_lpa1'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa1",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa1",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa1",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "garden",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa2'], obj['lpam_lpa2'], obj['lpat_lpa2'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa2",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa2",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa2",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "swim",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa3'], obj['lpam_lpa3'], obj['lpat_lpa3'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa3",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa3",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa3",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "bike",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa4'], obj['lpam_lpa4'], obj['lpat_lpa4'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa4",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa4",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa4",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "dance",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa5'], obj['lpam_lpa5'], obj['lpat_lpa5'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa5",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa5",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa5",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "hexercises",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa6'], obj['lpam_lpa6'], obj['lpat_lpa6'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa6",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa6",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa6",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "hockey",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa7'], obj['lpam_lpa7'], obj['lpat_lpa7'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa7",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa7",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa7",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "skate",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa8'], obj['lpam_lpa8'], obj['lpat_lpa8'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa8",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa8",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa8",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "inline",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa9'], obj['lpam_lpa9'], obj['lpat_lpa9'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa9",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa9",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa9",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "jogrun",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa10'], obj['lpam_lpa10'], obj['lpat_lpa10'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa10",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa10",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa10",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "golf",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa11'], obj['lpam_lpa11'], obj['lpat_lpa11'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa11",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa11",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa11",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "aerobics",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa12'], obj['lpam_lpa12'], obj['lpat_lpa12'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa12",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa12",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa12",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "ski",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa13'], obj['lpam_lpa13'], obj['lpat_lpa13'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa13",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa13",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa13",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "bowl",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa14'], obj['lpam_lpa14'], obj['lpat_lpa14'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa14",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa14",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa14",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "baseball",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa15'], obj['lpam_lpa15'], obj['lpat_lpa15'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa15",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa15",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa15",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "tennis",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa16'], obj['lpam_lpa16'], obj['lpat_lpa16'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa16",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa16",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa16",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "weights",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa17'], obj['lpam_lpa17'], obj['lpat_lpa17'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa17",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa17",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa17",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "fishing",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa18'], obj['lpam_lpa18'], obj['lpat_lpa18'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa18",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa18",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa18",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "volleyball",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa19'], obj['lpam_lpa19'], obj['lpat_lpa19'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa19",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa19",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa19",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "basketball",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa20'], obj['lpam_lpa20'], obj['lpat_lpa20'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa20",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa20",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa20",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "soccer",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa21'], obj['lpam_lpa21'], obj['lpat_lpa21'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa21",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa21",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa21",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "other",
-            "equation":
-              "(async function () {\n    return userFunctions['Activity.fun'](obj['lpa_lpa22'], obj['lpam_lpa22'], obj['lpat_lpa22'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa22",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpam_lpa22",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "lpat_lpa22",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PhysicalActivity",
-            "equation":
-              "(async function () {\n    return userFunctions['PhysicalActivity.fun'](obj['lpa_lpa0'], obj['walk'], obj['garden'], obj['swim'], obj['bike'], obj['dance'], obj['hexercises'], obj['hockey'], obj['skate'], obj['inline'], obj['jogrun'], obj['golf'], obj['aerobics'], obj['ski'], obj['bowl'], obj['baseball'], obj['tennis'], obj['weights'], obj['fishing'], obj['volleyball'], obj['basketball'], obj['soccer'], obj['other'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "lpa_lpa0",
-                "displayName": "",
-                "extensions": {}
-              },
-              "walk",
-              "garden",
-              "swim",
-              "bike",
-              "dance",
-              "hexercises",
-              "hockey",
-              "skate",
-              "inline",
-              "jogrun",
-              "golf",
-              "aerobics",
-              "ski",
-              "bowl",
-              "baseball",
-              "tennis",
-              "weights",
-              "fishing",
-              "volleyball",
-              "basketball",
-              "soccer",
-              "other"
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PhysicalActivity_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Max.fun'](obj['PhysicalActivity'], 99.5, userFunctions, func);\n}());",
-            "derivedFrom": ["PhysicalActivity"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PhysicalActivityC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['PhysicalActivity_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'PhysicalActivity_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["PhysicalActivity_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "PhysicalActivityC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['PhysicalActivityC_cont'];\n}());",
-            "derivedFrom": ["PhysicalActivityC_cont"],
             "displayName": "",
             "extensions": {}
           },
@@ -3094,192 +2003,10 @@
           },
           {
             "fieldType": 1,
-            "name": "weightlb",
-            "equation":
-              "(async function () {\n    return obj['weightkg'] / 2.20462;\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "weightkg",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "heightin_hft",
-            "equation":
-              "(async function () {\n    return func['floor'](obj['heightm'] * 39.3701 / 12);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "heightm",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "heightin_hin",
-            "equation":
-              "(async function () {\n    return (obj['heightm'] * 39.3701 / 12 - func['floor'](obj['heightm'] * 39.3701 / 12)) * 12;\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "heightm",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "BMI_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['BMI_cont.fun'](obj['weightlb'], obj['heightin_hft'], obj['heightin_hin'], userFunctions, func);\n}());",
-            "derivedFrom": ["weightlb", "heightin_hft", "heightin_hin"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "BMIC_cont",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['BMI_cont'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'BMI_cont' }), userFunctions, func);\n}());",
-            "derivedFrom": ["BMI_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "BMIC_rcs1",
-            "equation":
-              "(async function () {\n    return obj['BMIC_cont'];\n}());",
-            "derivedFrom": ["BMIC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "AgeCXBMIC_int",
             "equation":
               "(async function () {\n    return userFunctions['Interact.fun'](obj['AgeC_cont'], obj['BMIC_rcs1'], userFunctions, func);\n}());",
             "derivedFrom": ["AgeC_cont", "BMIC_rcs1"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "Edu2",
-            "equation":
-              "(async function () {\n    return userFunctions['Edu2.fun'](obj['hs'], obj['ed'], obj['hdg'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "hs",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "ed",
-                "displayName": "",
-                "extensions": {}
-              },
-              {
-                "fieldType": 0,
-                "name": "hdg",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduHSGrad2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['EduHSGrad2_cat.fun'](obj['Edu2'], userFunctions, func);\n}());",
-            "derivedFrom": ["Edu2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduSomePS2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['EduSomePS2_cat.fun'](obj['Edu2'], userFunctions, func);\n}());",
-            "derivedFrom": ["Edu2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduPSGrad2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['EduPSGrad2_cat.fun'](obj['Edu2'], userFunctions, func);\n}());",
-            "derivedFrom": ["Edu2"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduHSGrad2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['EduHSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'EduHSGrad2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["EduHSGrad2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduSomePS2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['EduSomePS2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'EduSomePS2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["EduSomePS2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "EduPSGrad2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['EduPSGrad2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'EduPSGrad2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["EduPSGrad2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "Diabetes_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Diabetes_cat.fun'](obj['diab'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "diab",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "DiabetesC_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Diabetes_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'Diabetes_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Diabetes_cat"],
             "displayName": "",
             "extensions": {}
           },
@@ -3294,110 +2021,10 @@
           },
           {
             "fieldType": 1,
-            "name": "Hypertension_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Hypertension_cat.fun'](obj['bp'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "bp",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "HypertensionC_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['Hypertension_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'Hypertension_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["Hypertension_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
             "name": "AgeCXHypertensionC_int",
             "equation":
               "(async function () {\n    return userFunctions['Interact.fun'](obj['HypertensionC_cat'], obj['AgeC_cont'], userFunctions, func);\n}());",
             "derivedFrom": ["HypertensionC_cat", "AgeC_cont"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle2_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['SurveyCycle2_cat.fun'](obj['SurveyCycle'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "SurveyCycle",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle3_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['SurveyCycle3_cat.fun'](obj['SurveyCycle'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "SurveyCycle",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle4_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['SurveyCycle4_cat.fun'](obj['SurveyCycle'], userFunctions, func);\n}());",
-            "derivedFrom": [
-              {
-                "fieldType": 0,
-                "name": "SurveyCycle",
-                "displayName": "",
-                "extensions": {}
-              }
-            ],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle2C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle2_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'SurveyCycle2_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["SurveyCycle2_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle3C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle3_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'SurveyCycle3_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["SurveyCycle3_cat"],
-            "displayName": "",
-            "extensions": {}
-          },
-          {
-            "fieldType": 1,
-            "name": "SurveyCycle4C_cat",
-            "equation":
-              "(async function () {\n    return userFunctions['Center.fun'](obj['SurveyCycle4_cat'], await getValueFromTable(tables['CRSpec_Mutated_4'], 'Mean_female', { 'index': 'SurveyCycle4_cat' }), userFunctions, func);\n}());",
-            "derivedFrom": ["SurveyCycle4_cat"],
             "displayName": "",
             "extensions": {}
           }
@@ -3407,86 +2034,20 @@
             "\n        userFunctions[\"Center.fun\"] = (function (uncentered, mean, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](uncentered)), uncentered - mean, undefined);\n})\n    ",
           "Interact.fun":
             "\n        userFunctions[\"Interact.fun\"] = (function (var1, var2, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](var1)) && func['not'](func['is.na'](var2)), var1 * var2, undefined);\n})\n    ",
-          "Max.fun":
-            "\n        userFunctions[\"Max.fun\"] = (function (var1, max, userFunctions, func) {\n    return func['ifelse2'](var1 > max, max, var1);\n})\n    ",
-          "NA0.fun":
-            "\n        userFunctions[\"NA0.fun\"] = (function (var1, userFunctions, func) {\n    return func['ifelse2'](func['is.na'](var1), 0, var1);\n})\n    ",
-          "falseifNA":
-            "\n        userFunctions[\"falseifNA\"] = (function (x, userFunctions, func) {\n    return func['ifelse'](func['is.na'](x), false, x);\n})\n    ",
-          "Age_spline.fun(Age_spline)":
-            "\n        userFunctions[\"Age_spline.fun(Age_spline)\"] = (function (Age_cont, point, userFunctions, func) {\n    return func['ifelse2'](Age_cont <= point, 0, func['ifelse2'](Age_cont > point, Age_cont - point, undefined));\n})\n    ",
-          "TypeOfSmoker2.fun":
-            "\n        userFunctions[\"TypeOfSmoker2.fun\"] = (function (smk, evd, s100, wcig, userFunctions, func) {\n    return func['ifelse2'](wcig == 'wcig2', 6, func['ifelse2'](smk == 'smk1', 1, func['ifelse2'](smk == 'smk2' && evd == 'evd1', 2, func['ifelse2'](smk == 'smk2' && evd == 'evd2', 3, func['ifelse2'](smk == 'smk3' && evd == 'evd1', 4, func['ifelse2'](smk == 'smk3' && evd == 'evd2' && s100 == 's1001', 5, func['ifelse2'](smk == 'smk3' && evd == 'evd2' && s100 == 's1002', 6, undefined)))))));\n})\n    ",
-          "tsq_ds.fun":
-            "\n        userFunctions[\"tsq_ds.fun\"] = (function (stpo, stpoy, userFunctions, func) {\n    return func['ifelse'](stpo == 'stpo1', 0.5, func['ifelse'](stpo == 'stpo2', 1.5, func['ifelse'](stpo == 'stpo3', 2.5, func['ifelse'](stpo == 'stpo4', stpoy, undefined))));\n})\n    ",
-          "PackYears1.fun":
-            "\n        userFunctions[\"PackYears1.fun\"] = (function (TypeOfSmoker2, Age_cont, agecigd, cigdayd, tsq_ds, cigdayf, cigdayo, dayocc, agec1, s100, userFunctions, func) {\n    return func['ifelse2'](TypeOfSmoker2 == 1, func['pmax']((Age_cont - agecigd) * (cigdayd / 20), 0.0137), func['ifelse2'](TypeOfSmoker2 == 2, func['pmax']((Age_cont - agecigd - tsq_ds) * (cigdayf / 20), 0.0137) + func['pmax'](cigdayo * dayocc / 30, 1) * tsq_ds, func['ifelse2'](TypeOfSmoker2 == 3, func['pmax'](cigdayo * dayocc / 30, 1) / 20 * (Age_cont - agec1), func['ifelse2'](TypeOfSmoker2 == 4, func['pmax']((Age_cont - agecigd - tsq_ds) * (cigdayf / 20), 0.0137), func['ifelse2'](TypeOfSmoker2 == 5 && s100 == 's1001', 0.0137, func['ifelse2'](TypeOfSmoker2 == 5 && s100 == 's1002', 0.007, func['ifelse2'](TypeOfSmoker2 == 6, 0, undefined)))))));\n})\n    ",
-          "PackYears2.fun":
-            "\n        userFunctions[\"PackYears2.fun\"] = (function (SmokeDaily, Age_cont, AgeDailyStart, DailyCig, AgeDailyQuit, userFunctions, func) {\n    return func['ifelse2'](SmokeDaily == 0, 0, func['ifelse2'](SmokeDaily == 1, (Age_cont - AgeDailyStart) * (DailyCig / 20), func['ifelse2'](SmokeDaily == 2, (AgeDailyQuit - AgeDailyStart) * (DailyCig / 20), undefined)));\n})\n    ",
-          "smoker.fun(smoker)":
-            "\n        userFunctions[\"smoker.fun(smoker)\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return func['ifelse'](func['isIn'](TypeOfSmoker2, 1, 2, 3), 1, func['ifelse'](func['isIn'](TypeOfSmoker2, 4, 5, 6), 0, undefined));\n})\n    ",
-          "smoker.fun":
-            "\n        userFunctions[\"smoker.fun\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return userFunctions['smoker.fun(smoker)'](TypeOfSmoker2, userFunctions, func);\n})\n    ",
-          "eversmoker.fun(eversmoker)":
-            "\n        userFunctions[\"eversmoker.fun(eversmoker)\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return func['ifelse'](func['isIn'](TypeOfSmoker2, 1, 2, 3, 4, 5), 1, func['ifelse'](TypeOfSmoker2 == 6, 0, undefined));\n})\n    ",
-          "eversmoker.fun":
-            "\n        userFunctions[\"eversmoker.fun\"] = (function (TypeOfSmoker2, userFunctions, func) {\n    return userFunctions['eversmoker.fun(eversmoker)'](TypeOfSmoker2, userFunctions, func);\n})\n    ",
-          "SmokeSimple1.fun(SmokeSimple)":
-            "\n        userFunctions[\"SmokeSimple1.fun(SmokeSimple)\"] = (function (smoker, eversmoker, tsq_ds, TypeOfSmoker2, userFunctions, func) {\n    return func['ifelse2'](smoker == 0 && eversmoker == 0, 0, func['ifelse2'](smoker == 1 && eversmoker == 1, 1, func['ifelse2'](smoker == 0 && eversmoker == 1 && tsq_ds < 5 || TypeOfSmoker2 == 5, 2, func['ifelse2'](smoker == 0 && eversmoker == 1 && tsq_ds >= 5, 3, undefined))));\n})\n    ",
-          "SmokeSimple1.fun":
-            "\n        userFunctions[\"SmokeSimple1.fun\"] = (function (smoker, eversmoker, tsq_ds, TypeOfSmoker2, userFunctions, func) {\n    return userFunctions['SmokeSimple1.fun(SmokeSimple)'](smoker, eversmoker, tsq_ds, TypeOfSmoker2, userFunctions, func);\n})\n    ",
-          "SmokeSimple2.fun(SmokeSimple)":
-            "\n        userFunctions[\"SmokeSimple2.fun(SmokeSimple)\"] = (function (SmokeDaily, Age_cont, AgeDailyQuit, userFunctions, func) {\n    return func['ifelse2'](SmokeDaily == 0, 0, func['ifelse2'](SmokeDaily == 1, 1, func['ifelse2'](SmokeDaily == 2 && Age_cont < AgeDailyQuit + 5, 2, func['ifelse2'](SmokeDaily == 2 && Age_cont > AgeDailyQuit + 5, 3, undefined))));\n})\n    ",
-          "SmokeSimple2.fun":
-            "\n        userFunctions[\"SmokeSimple2.fun\"] = (function (SmokeDaily, Age_cont, AgeDailyQuit, userFunctions, func) {\n    return userFunctions['SmokeSimple2.fun(SmokeSimple)'](SmokeDaily, Age_cont, AgeDailyQuit, userFunctions, func);\n})\n    ",
-          "DrinksLastWeek.fun":
-            "\n        userFunctions[\"DrinksLastWeek.fun\"] = (function (drk_drkm2, drk_drkt2, drk_drkw2, drk_drkr2, drk_drkf2, drk_drksa2, drk_drksu2, dany, userFunctions, func) {\n    return func['ifelse2'](dany == 'dany2', 0, func['ifelse2'](dany == 'dany1', drk_drkm2 + drk_drkt2 + drk_drkw2 + drk_drkr2 + drk_drkf2 + drk_drksa2 + drk_drksu2, undefined));\n})\n    ",
-          "dfruit.fun":
-            "\n        userFunctions[\"dfruit.fun\"] = (function (frt, frtu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](frt), undefined, func['ifelse'](frtu == 'frtd', frt, func['ifelse'](frtu == 'frtw', frt / 7, func['ifelse'](frtu == 'frtm', frt / 30, func['ifelse'](frtu == 'frty', frt / 365, undefined)))));\n})\n    ",
-          "dsalad.fun":
-            "\n        userFunctions[\"dsalad.fun\"] = (function (sal, salu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](sal), undefined, func['ifelse'](salu == 'sald', sal, func['ifelse'](salu == 'salw', sal / 7, func['ifelse'](salu == 'salm', sal / 30, func['ifelse'](salu == 'saly', sal / 365, undefined)))));\n})\n    ",
-          "dpotato.fun":
-            "\n        userFunctions[\"dpotato.fun\"] = (function (pot, potu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](pot), undefined, func['ifelse'](potu == 'potd', pot, func['ifelse'](potu == 'potw', pot / 7, func['ifelse'](potu == 'potm', pot / 30, func['ifelse'](potu == 'poty', pot / 365, undefined)))));\n})\n    ",
-          "dcarrot.fun":
-            "\n        userFunctions[\"dcarrot.fun\"] = (function (car, caru, userFunctions, func) {\n    return func['ifelse'](func['is.na'](car), undefined, func['ifelse'](caru == 'card', car, func['ifelse'](caru == 'carw', car / 7, func['ifelse'](caru == 'carm', car / 30, func['ifelse'](caru == 'cary', car / 365, undefined)))));\n})\n    ",
-          "dveg.fun":
-            "\n        userFunctions[\"dveg.fun\"] = (function (veg, vegu, userFunctions, func) {\n    return func['ifelse'](func['is.na'](veg), undefined, func['ifelse'](vegu == 'vegd', veg, func['ifelse'](vegu == 'vegw', veg / 7, func['ifelse'](vegu == 'vegm', veg / 30, func['ifelse'](vegu == 'vegy', veg / 365, undefined)))));\n})\n    ",
-          "FruitVeg.fun":
-            "\n        userFunctions[\"FruitVeg.fun\"] = (function (dfruit, dsalad, dpotato, dcarrot, dveg, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](dfruit)) && func['not'](func['is.na'](dsalad)) && func['not'](func['is.na'](dpotato)) && func['not'](func['is.na'](dcarrot)) && func['not'](func['is.na'](dveg)), dfruit + dsalad + dpotato + dcarrot + dveg, undefined);\n})\n    ",
-          "Activity.fun":
-            "\n        userFunctions[\"Activity.fun\"] = (function (lpa, lpam, lpat, userFunctions, func) {\n    return func['ifelse2'](lpa == 'Yes' && lpam == 'lpa15', lpat * 0.2167 / 3, func['ifelse2'](lpa == 'Yes' && lpam == 'lpa30', lpat * 0.3833 / 3, func['ifelse2'](lpa == 'Yes' && lpam == 'lpa60', lpat * 0.75 / 3, func['ifelse2'](lpa == 'Yes' && lpam == 'lpa61', lpat * 1 / 3, 0))));\n})\n    ",
-          "PhysicalActivity.fun(noactivity)":
-            "\n        userFunctions[\"PhysicalActivity.fun(noactivity)\"] = (function (lpa_lpa0, walk, garden, swim, bike, dance, hexercises, hockey, skate, inline, jogrun, golf, aerobics, ski, bowl, baseball, tennis, weights, fishing, volleyball, basketball, soccer, other, userFunctions, func) {\n    return func['ifelse2'](lpa_lpa0 == 'Yes' && walk == 0 && garden == 0 && swim == 0 && bike == 0 && dance == 0 && hexercises == 0 && hockey == 0 && skate == 0 && inline == 0 && jogrun == 0 && golf == 0 && aerobics == 0 && ski == 0 && bowl == 0 && baseball == 0 && tennis == 0 && weights == 0 && fishing == 0 && volleyball == 0 && basketball == 0 && soccer == 0 && other == 0, 1, func['ifelse2'](func['is.na'](lpa_lpa0) && walk == 0 && garden == 0 && swim == 0 && bike == 0 && dance == 0 && hexercises == 0 && hockey == 0 && skate == 0 && inline == 0 && jogrun == 0 && golf == 0 && aerobics == 0 && ski == 0 && bowl == 0 && baseball == 0 && tennis == 0 && weights == 0 && fishing == 0 && volleyball == 0 && basketball == 0 && soccer == 0 && other == 0, undefined, 0));\n})\n    ",
-          "PhysicalActivity.fun(PhysicalActivity)":
-            "\n        userFunctions[\"PhysicalActivity.fun(PhysicalActivity)\"] = (function (lpa_lpa0, walk, garden, swim, bike, dance, hexercises, hockey, skate, inline, jogrun, golf, aerobics, ski, bowl, baseball, tennis, weights, fishing, volleyball, basketball, soccer, other, userFunctions, func) {\n    return func['ifelse2'](func['is.na'](userFunctions['PhysicalActivity.fun(noactivity)'](lpa_lpa0, walk, garden, swim, bike, dance, hexercises, hockey, skate, inline, jogrun, golf, aerobics, ski, bowl, baseball, tennis, weights, fishing, volleyball, basketball, soccer, other, userFunctions, func)), undefined, func['ifelse2'](userFunctions['PhysicalActivity.fun(noactivity)'](lpa_lpa0, walk, garden, swim, bike, dance, hexercises, hockey, skate, inline, jogrun, golf, aerobics, ski, bowl, baseball, tennis, weights, fishing, volleyball, basketball, soccer, other, userFunctions, func) == 1, 0, func['ifelse2'](3 * walk / 30 + 3 * garden / 30 + 3 * swim / 30 + 4 * bike / 30 + 3 * dance / 30 + 3 * hexercises / 30 + 6 * hockey / 30 + 4 * skate / 30 + 5 * inline / 30 + 9.5 * jogrun / 30 + 4 * golf / 30 + 4 * aerobics / 30 + 4 * ski / 30 + 2 * bowl / 30 + 3 * baseball / 30 + 4 * tennis / 30 + 3 * weights / 30 + 3 * fishing / 30 + 5 * volleyball / 30 + 6 * basketball / 30 + 5 * soccer / 30 + 4 * other / 30 > 10, 10, 3 * walk / 30 + 3 * garden / 30 + 3 * swim / 30 + 4 * bike / 30 + 3 * dance / 30 + 3 * hexercises / 30 + 6 * hockey / 30 + 4 * skate / 30 + 5 * inline / 30 + 9.5 * jogrun / 30 + 4 * golf / 30 + 4 * aerobics / 30 + 4 * ski / 30 + 2 * bowl / 30 + 3 * baseball / 30 + 4 * tennis / 30 + 3 * weights / 30 + 3 * fishing / 30 + 5 * volleyball / 30 + 6 * basketball / 30 + 5 * soccer / 30 + 4 * other / 30)));\n})\n    ",
-          "PhysicalActivity.fun":
-            "\n        userFunctions[\"PhysicalActivity.fun\"] = (function (lpa_lpa0, walk, garden, swim, bike, dance, hexercises, hockey, skate, inline, jogrun, golf, aerobics, ski, bowl, baseball, tennis, weights, fishing, volleyball, basketball, soccer, other, userFunctions, func) {\n    return userFunctions['PhysicalActivity.fun(PhysicalActivity)'](lpa_lpa0, walk, garden, swim, bike, dance, hexercises, hockey, skate, inline, jogrun, golf, aerobics, ski, bowl, baseball, tennis, weights, fishing, volleyball, basketball, soccer, other, userFunctions, func);\n})\n    ",
-          "PhysicalActivityLog_cont.fun(PhysicalActivity_cont)":
-            "\n        userFunctions[\"PhysicalActivityLog_cont.fun(PhysicalActivity_cont)\"] = (function (PhysicalActivity, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](PhysicalActivity)), func['log'](1 + PhysicalActivity) / func['log'](10), undefined);\n})\n    ",
-          "BMI_cont.fun(weightkg)":
-            "\n        userFunctions[\"BMI_cont.fun(weightkg)\"] = (function (weightlb, heightin_hft, heightin_hin, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](weightlb)), weightlb / 2.2046226218, undefined);\n})\n    ",
-          "BMI_cont.fun(heightm)":
-            "\n        userFunctions[\"BMI_cont.fun(heightm)\"] = (function (weightlb, heightin_hft, heightin_hin, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](heightin_hft)) && func['not'](func['is.na'](heightin_hin)), (heightin_hft * 12 + heightin_hin) / 39.3701, undefined);\n})\n    ",
-          "BMI_cont.fun":
-            "\n        userFunctions[\"BMI_cont.fun\"] = (function (weightlb, heightin_hft, heightin_hin, userFunctions, func) {\n    return func['ifelse2'](func['not'](func['is.na'](userFunctions['BMI_cont.fun(weightkg)'](weightlb, heightin_hft, heightin_hin, userFunctions, func))) && func['not'](func['is.na'](userFunctions['BMI_cont.fun(heightm)'](weightlb, heightin_hft, heightin_hin, userFunctions, func))), userFunctions['BMI_cont.fun(weightkg)'](weightlb, heightin_hft, heightin_hin, userFunctions, func) / (userFunctions['BMI_cont.fun(heightm)'](weightlb, heightin_hft, heightin_hin, userFunctions, func) * userFunctions['BMI_cont.fun(heightm)'](weightlb, heightin_hft, heightin_hin, userFunctions, func)), undefined);\n})\n    ",
-          "Edu2.fun":
-            "\n        userFunctions[\"Edu2.fun\"] = (function (hs, ed, hdg, userFunctions, func) {\n    return func['ifelse2'](hs == 'hs2', 0, func['ifelse2'](hs == 'hs1' && ed == 'ed2', 1, func['ifelse2'](hs == 'hs1' && ed == 'ed1' && hdg == 'hdg1', 2, func['ifelse2'](hs == 'hs1' && ed == 'ed1' && func['isIn'](hdg, 'hdg2', 'hdg3', 'hdg4', 'hdg5', 'hdg6'), 3, undefined))));\n})\n    ",
-          "EduHSGrad2_cat.fun":
-            "\n        userFunctions[\"EduHSGrad2_cat.fun\"] = (function (Edu2, userFunctions, func) {\n    return func['ifelse'](Edu2 == 1, 1, func['ifelse'](func['isIn'](Edu2, 0, 2, 3), 0, undefined));\n})\n    ",
-          "EduSomePS2_cat.fun":
-            "\n        userFunctions[\"EduSomePS2_cat.fun\"] = (function (Edu2, userFunctions, func) {\n    return func['ifelse'](Edu2 == 2, 1, func['ifelse'](func['isIn'](Edu2, 0, 1, 3), 0, undefined));\n})\n    ",
-          "EduPSGrad2_cat.fun":
-            "\n        userFunctions[\"EduPSGrad2_cat.fun\"] = (function (Edu2, userFunctions, func) {\n    return func['ifelse'](Edu2 == 3, 1, func['ifelse'](func['isIn'](Edu2, 0, 1, 2), 0, undefined));\n})\n    ",
-          "Diabetes_cat.fun":
-            "\n        userFunctions[\"Diabetes_cat.fun\"] = (function (diab, userFunctions, func) {\n    return func['ifelse'](diab == 'diab1', 1, func['ifelse'](diab == 'diab2', 0, undefined));\n})\n    ",
-          "Hypertension_cat.fun":
-            "\n        userFunctions[\"Hypertension_cat.fun\"] = (function (bp, userFunctions, func) {\n    return func['ifelse'](bp == 'bp1', 1, func['ifelse'](bp == 'bp2', 0, undefined));\n})\n    ",
-          "SurveyCycle2_cat.fun":
-            "\n        userFunctions[\"SurveyCycle2_cat.fun\"] = (function (SurveyCycle, userFunctions, func) {\n    return func['ifelse'](SurveyCycle == 2, 1, func['ifelse'](func['isIn'](SurveyCycle, 1, 3, 4), 0, undefined));\n})\n    ",
-          "SurveyCycle3_cat.fun":
-            "\n        userFunctions[\"SurveyCycle3_cat.fun\"] = (function (SurveyCycle, userFunctions, func) {\n    return func['ifelse'](SurveyCycle == 3, 1, func['ifelse'](func['isIn'](SurveyCycle, 1, 2, 4), 0, undefined));\n})\n    ",
-          "SurveyCycle4_cat.fun":
-            "\n        userFunctions[\"SurveyCycle4_cat.fun\"] = (function (SurveyCycle, userFunctions, func) {\n    return func['ifelse'](SurveyCycle == 4, 1, func['ifelse'](func['isIn'](SurveyCycle, 1, 2, 3), 0, undefined));\n})\n    "
+          "PackYears.fun":
+            "\n        userFunctions[\"PackYears.fun\"] = (function (smokestat, age, AgeDailyStart, DailyCig, AgeDailyQuit, userFunctions, func) {\n    return func['ifelse'](smokestat == 'A1', (age - AgeDailyStart) * (DailyCig / 20), func['ifelse'](smokestat == 'A3' || smokestat == 'A2', (AgeDailyQuit - AgeDailyStart) * (DailyCig / 20), func['ifelse'](smokestat == 'A4', 0, undefined)));\n})\n    ",
+          "vpa.fun":
+            "\n        userFunctions[\"vpa.fun\"] = (function (vpa, userFunctions, func) {\n    return func['ifelse'](func['not'](func['is.na'](vpa)), vpa * 9.5 / 7, 0);\n})\n    ",
+          "mpa.fun":
+            "\n        userFunctions[\"mpa.fun\"] = (function (mpa, userFunctions, func) {\n    return func['ifelse'](func['not'](func['is.na'](mpa)), mpa * 5.5 / 7, 0);\n})\n    ",
+          "lpa.fun":
+            "\n        userFunctions[\"lpa.fun\"] = (function (lpa, userFunctions, func) {\n    return func['ifelse'](func['not'](func['is.na'](lpa)), lpa * 3.5 / 7, 0);\n})\n    ",
+          "last.fun":
+            "\n        userFunctions[\"last.fun\"] = (function (x, userFunctions, func) {\n    return func['as.numeric'](func['ifelse'](func['is.na'](x) == 1, undefined, func['substr'](x, func['nchar'](x), func['nchar'](x))));\n})\n    ",
+          "default(dis)":
+            "\n        userFunctions[\"default(dis)\"] = (function (dis, userFunctions, func) {\n    return dis == undefined ? 0 : dis;\n})\n    ",
+          "disease.fun":
+            "\n        userFunctions[\"disease.fun\"] = (function (dis, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func) == 'Yes', 1, func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func) == 'No', 0, undefined));\n})\n    "
         },
         "tables": {
           "CRSpec": [
@@ -3550,116 +2111,24 @@
             {}
           ],
           "CRSpec_Mutated_3": [
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {}
-          ],
-          "CRSpec_Mutated_4": [
-            {
-              "index": "Age_cont",
-              "Mean_female": "50.0556277",
-              "UserMax_female": "50.0556277"
-            },
-            {
-              "index": "PackYears_cont",
-              "Mean_female": "8.168189355",
-              "UserMax_female": "8.168189355"
-            },
-            {
-              "index": "SmokeFormer5Plus_cat",
-              "Mean_female": "0.3142",
-              "UserMax_female": "0.3142"
-            },
-            {
-              "index": "SmokeFormer0to5_cat",
-              "Mean_female": "0.0706",
-              "UserMax_female": "0.0706"
-            },
-            {
-              "index": "SmokeCurrent_cat",
-              "Mean_female": "0.231179588",
-              "UserMax_female": "0.231179588"
-            },
-            {
-              "index": "DrinksLastWeek_cont",
-              "Mean_female": "2.2172",
-              "UserMax_female": "2.2172"
-            },
-            {
-              "index": "FormerDrinker_cat",
-              "Mean_female": "0.163584038",
-              "UserMax_female": "0.163584038"
-            },
-            {
-              "index": "FruitVeg_cont",
-              "Mean_female": "3.968725652",
-              "UserMax_female": "3.968725652"
-            },
-            {
-              "index": "PhysicalActivity_cont",
-              "Mean_female": "1.867511319",
-              "UserMax_female": "1.867511319"
-            },
-            {
-              "index": "BMI_cont",
-              "Mean_female": "25.70930236",
-              "UserMax_female": "25.70930236"
-            },
-            {
-              "index": "EduHSGrad2_cat",
-              "Mean_female": "0.2019",
-              "UserMax_female": "0.2019"
-            },
-            {
-              "index": "EduSomePS2_cat",
-              "Mean_female": "0.0708",
-              "UserMax_female": "0.0708"
-            },
-            {
-              "index": "EduPSGrad2_cat",
-              "Mean_female": "0.533",
-              "UserMax_female": "0.533"
-            },
-            {
-              "index": "Diabetes_cat",
-              "Mean_female": "0.0546",
-              "UserMax_female": "0.0546"
-            },
-            {
-              "index": "Hypertension_cat",
-              "Mean_female": "0.200803706",
-              "UserMax_female": "0.200803706"
-            },
-            {
-              "index": "SurveyCycle2_cat",
-              "Mean_female": "0.24731",
-              "UserMax_female": "0.24731"
-            },
-            {
-              "index": "SurveyCycle3_cat",
-              "Mean_female": "0.24848",
-              "UserMax_female": "0.24848"
-            },
-            {
-              "index": "SurveyCycle4_cat",
-              "Mean_female": "0.25973",
-              "UserMax_female": "0.25973"
-            }
+            { "index": "Age_cont", "Mean_female": "50.0556277" },
+            { "index": "PackYears_cont", "Mean_female": "8.168189355" },
+            { "index": "SmokeFormer5Plus_cat", "Mean_female": "0.3142" },
+            { "index": "SmokeFormer0to5_cat", "Mean_female": "0.0706" },
+            { "index": "SmokeCurrent_cat", "Mean_female": "0.231179588" },
+            { "index": "DrinksLastWeek_cont", "Mean_female": "2.2172" },
+            { "index": "FormerDrinker_cat", "Mean_female": "0.163584038" },
+            { "index": "FruitVeg_cont", "Mean_female": "3.968725652" },
+            { "index": "PhysicalActivity_cont", "Mean_female": "1.867511319" },
+            { "index": "BMI_cont", "Mean_female": "25.70930236" },
+            { "index": "EduHSGrad2_cat", "Mean_female": "0.2019" },
+            { "index": "EduSomePS2_cat", "Mean_female": "0.0708" },
+            { "index": "EduPSGrad2_cat", "Mean_female": "0.533" },
+            { "index": "Diabetes_cat", "Mean_female": "0.0546" },
+            { "index": "Hypertension_cat", "Mean_female": "0.200803706" },
+            { "index": "SurveyCycle2_cat", "Mean_female": "0.24731" },
+            { "index": "SurveyCycle3_cat", "Mean_female": "0.24848" },
+            { "index": "SurveyCycle4_cat", "Mean_female": "0.25973" }
           ]
         },
         "baseline": 0.007322191,
