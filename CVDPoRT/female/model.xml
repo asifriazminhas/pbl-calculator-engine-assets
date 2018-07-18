@@ -725,6 +725,26 @@
     <DerivedField name="SurveyCycle4_cat" optype="continuous">
       <Constant dataType="double">1</Constant>
     </DerivedField>
+    <DerivedField name="DrinksLastWeek_cont">
+      <Apply function="if">
+        <Apply function="or">
+          <Apply function="equal">
+            <Apply function="last.fun">
+              <FieldRef field="alc"/>
+            </Apply>
+            <Constant dataType="double">1</Constant>
+          </Apply>
+          <Apply function="equal">
+            <Apply function="last.fun">
+              <FieldRef field="alc"/>
+            </Apply>
+            <Constant dataType="double">2</Constant>
+          </Apply>
+        </Apply>
+        <FieldRef field="drk"/>
+        <Constant dataType="double">0</Constant>
+      </Apply>
+    </DerivedField>
     <DerivedField name="EduPSGrad2_cat" optype="continuous">
       <Apply function="ifelse">
         <Apply function="equal">
@@ -793,26 +813,6 @@
           <FieldRef field="mpa"/>
         </Apply>
         <FieldRef field="lpa"/>
-      </Apply>
-    </DerivedField>
-    <DerivedField name="DrinksLastWeek_cont">
-      <Apply function="if">
-        <Apply function="or">
-          <Apply function="equal">
-            <Apply function="last.fun">
-              <FieldRef field="alc"/>
-            </Apply>
-            <Constant dataType="double">1</Constant>
-          </Apply>
-          <Apply function="equal">
-            <Apply function="last.fun">
-              <FieldRef field="alc"/>
-            </Apply>
-            <Constant dataType="double">2</Constant>
-          </Apply>
-        </Apply>
-        <FieldRef field="drk"/>
-        <Constant dataType="double">0</Constant>
       </Apply>
     </DerivedField>
     <DerivedField name="AgeC_cont" optype="continuous">
@@ -1681,11 +1681,11 @@
   </GeneralRegressionModel>
   <CustomPMML>
     <RestrictedCubicSpline>
-      <PCell parameterName="p1, p2, p3" knotLocations="-27.0556277, -13.0556277, -1.055627698, 11.9443723"/>
-      <PCell parameterName="p5" knotLocations="-8.168189355, -8.161189355"/>
-      <PCell parameterName="p18" knotLocations="-2.468725652, -0.468725652"/>
-      <PCell parameterName="p21" knotLocations="-1.767511319, -0.167511319"/>
-      <PCell parameterName="p24" knotLocations="-5.68421137, -0.949302364"/>
+      <PCell parameterName="p1, p2, p3" knotLocations="-27.0556277, -13.0556277, -1.055627698, 11.9443723, 29.9443723"/>
+      <PCell parameterName="p5" knotLocations="-8.168189355, -8.161189355, 20.33181065"/>
+      <PCell parameterName="p18" knotLocations="-2.468725652, -0.468725652, 3.031274348"/>
+      <PCell parameterName="p21" knotLocations="-1.767511319, -0.167511319, 2.632488681"/>
+      <PCell parameterName="p24" knotLocations="-5.68421137, -0.949302364, 6.940697636"/>
     </RestrictedCubicSpline>
   </CustomPMML>
 </PMML>

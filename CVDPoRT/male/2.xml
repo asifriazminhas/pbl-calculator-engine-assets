@@ -1230,6 +1230,26 @@
         <DerivedField name="SurveyCycle4_cat" optype="continuous">
             <Constant dataType="double">1</Constant>
         </DerivedField>
+        <DerivedField name="DrinksLastWeek_cont">
+            <Apply function="if">
+                <Apply function="or">
+                    <Apply function="equal">
+                        <Apply function="last.fun">
+                            <FieldRef field="alc"/>
+                        </Apply>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Apply function="equal">
+                        <Apply function="last.fun">
+                            <FieldRef field="alc"/>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                </Apply>
+                <FieldRef field="drk"/>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
         <DerivedField name="EduPSGrad2_cat" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
