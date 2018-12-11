@@ -1,0 +1,40 @@
+{
+    "male": {
+        "SMOKING": [
+            { "name": "PackYears_cont", "coefficent": 0 },
+            { "name": "SmokeFormer5Plus_cat", "coefficent": 0 },
+            { "name": "SmokeFormer0to5_cat", "coefficent": 0 },
+            { "name": "SmokeCurrent_cat", "coefficent": 0 }
+        ],
+        "DIET": [
+            { "name": "fruit_cont", "coefficent": 3.5 },
+            { "name": "juice_cont", "coefficent": 0 },
+            { "name": "potato_cont", "coefficent": 3.5 },
+            { "name": "otherveg_cont", "coefficent": 3.5 }
+        ],
+        "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }],
+        "ALCOHOL": [
+            { "name": "FormerDrinker_cat", "coefficent": 0 },
+            { "name": "DrinksLastWeek_cont", "coefficent": 2 }
+        ]
+    },
+    "female": {
+        "SMOKING": [
+            { "name": "PackYears_cont", "coefficent": 0 },
+            { "name": "SmokeFormer5Plus_cat", "coefficent": 0 },
+            { "name": "SmokeFormer0to5_cat", "coefficent": 0 },
+            { "name": "SmokeCurrent_cat", "coefficent": 0 }
+        ],
+        "DIET": [
+            { "name": "fruit_cont", "coefficent": 3.5 },
+            { "name": "juice_cont", "coefficent": 0 },
+            { "name": "potato_cont", "coefficent": 3.5 },
+            { "name": "otherveg_cont", "coefficent": 3.5 }
+        ],
+        "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }],
+        "ALCOHOL": [
+            { "name": "FormerDrinker_cat", "coefficent": 0 },
+            { "name": "DrinksLastWeek_cont", "coefficent": 2 }
+        ]
+    }
+}

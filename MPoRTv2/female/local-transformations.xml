@@ -1,0 +1,2456 @@
+<PMML>
+    <Taxonomy name="Spec">
+        <InlineTable>
+            <row>
+                <index>1</index>
+                <Variable>fruit_cont</Variable>
+                <Mean>1.5109891</Mean>
+                <Std.Dev>1.1644858</Std.Dev>
+            </row>
+            <row>
+                <index>2</index>
+                <Variable>juice_cont</Variable>
+                <Mean>0.76</Mean>
+                <Std.Dev>0.8218263</Std.Dev>
+            </row>
+            <row>
+                <index>3</index>
+                <Variable>carrot_cont</Variable>
+                <Mean>0.372664</Mean>
+                <Std.Dev>0.3596374</Std.Dev>
+            </row>
+            <row>
+                <index>4</index>
+                <Variable>potato_cont</Variable>
+                <Mean>0.3678037</Mean>
+                <Std.Dev>0.325642</Std.Dev>
+            </row>
+            <row>
+                <index>5</index>
+                <Variable>otherveg_cont</Variable>
+                <Mean>1.4486937</Mean>
+                <Std.Dev>1.0905973</Std.Dev>
+            </row>
+            <row>
+                <index>6</index>
+                <Variable>salad_cont</Variable>
+                <Mean>0.5987021</Mean>
+                <Std.Dev>0.4762747</Std.Dev>
+            </row>
+            <row>
+                <index>7</index>
+                <Variable>POTATOTOADD</Variable>
+                <Mean>0.3617127</Mean>
+                <Std.Dev>0.3037303</Std.Dev>
+            </row>
+            <row>
+                <index>8</index>
+                <Variable>POTATOMINUS</Variable>
+                <Mean>0.0060909</Mean>
+                <Std.Dev>0.0775569</Std.Dev>
+            </row>
+        </InlineTable>
+    </Taxonomy>
+    <Taxonomy name="Spec_Mutated_1">
+        <InlineTable>
+            <row>
+                <index>fruit_cont</index>
+                <Variable>fruit_cont</Variable>
+                <Mean>1.5109891</Mean>
+                <Std.Dev>1.1644858</Std.Dev>
+            </row>
+            <row>
+                <index>juice_cont</index>
+                <Variable>juice_cont</Variable>
+                <Mean>0.76</Mean>
+                <Std.Dev>0.8218263</Std.Dev>
+            </row>
+            <row>
+                <index>carrot_cont</index>
+                <Variable>carrot_cont</Variable>
+                <Mean>0.372664</Mean>
+                <Std.Dev>0.3596374</Std.Dev>
+            </row>
+            <row>
+                <index>potato_cont</index>
+                <Variable>potato_cont</Variable>
+                <Mean>0.3678037</Mean>
+                <Std.Dev>0.325642</Std.Dev>
+            </row>
+            <row>
+                <index>otherveg_cont</index>
+                <Variable>otherveg_cont</Variable>
+                <Mean>1.4486937</Mean>
+                <Std.Dev>1.0905973</Std.Dev>
+            </row>
+            <row>
+                <index>salad_cont</index>
+                <Variable>salad_cont</Variable>
+                <Mean>0.5987021</Mean>
+                <Std.Dev>0.4762747</Std.Dev>
+            </row>
+            <row>
+                <index>POTATOTOADD</index>
+                <Variable>POTATOTOADD</Variable>
+                <Mean>0.3617127</Mean>
+                <Std.Dev>0.3037303</Std.Dev>
+            </row>
+            <row>
+                <index>POTATOMINUS</index>
+                <Variable>POTATOMINUS</Variable>
+                <Mean>0.0060909</Mean>
+                <Std.Dev>0.0775569</Std.Dev>
+            </row>
+        </InlineTable>
+    </Taxonomy>
+    <Taxonomy name="means">
+        <InlineTable>
+            <row>
+                <index>1</index>
+                <Name>AgeC_cont</Name>
+                <Minimum>20</Minimum>
+                <Maximum>102</Maximum>
+                <Means>52.1712945</Means>
+                <Std.Dev>18.3327804</Std.Dev>
+                <Median>52</Median>
+                <Q1>37</Q1>
+                <Q3>67</Q3>
+                <Knot1>-28.1712945</Knot1>
+                <Knot2>-14.1712945</Knot2>
+                <Knot3>-0.1712945</Knot3>
+                <Knot4>12.8287055</Knot4>
+                <Knot5>29.8287055</Knot5>
+            </row>
+            <row>
+                <index>2</index>
+                <Name>SmokeCurrentC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.210621</Means>
+                <Std.Dev>0.4077518</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>3</index>
+                <Name>SmokeFormer0to5C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0949346</Means>
+                <Std.Dev>0.2931261</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>4</index>
+                <Name>SmokeFormer5PlusC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2988136</Means>
+                <Std.Dev>0.4577404</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>5</index>
+                <Name>PackYearsC_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>78</Maximum>
+                <Means>8.5522579</Means>
+                <Std.Dev>14.6897018</Std.Dev>
+                <Median>2.5</Median>
+                <Q1>0</Q1>
+                <Q3>10</Q3>
+                <Knot1>-8.552258</Knot1>
+                <Knot2>-6.052258</Knot2>
+                <Knot3>20.197742</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>6</index>
+                <Name>FormerDrinkerC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1567167</Means>
+                <Std.Dev>0.3635354</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>7</index>
+                <Name>DrinksLastWeekC_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>24</Maximum>
+                <Means>2.1419706</Means>
+                <Std.Dev>3.9369174</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>3</Q3>
+                <Knot1>-2.1419706</Knot1>
+                <Knot2>-1.1419706</Knot2>
+                <Knot3>-0.1419706</Knot3>
+                <Knot4>4.8580294</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>8</index>
+                <Name>DietScore2C_cont</Name>
+                <Minimum>-18.8680064</Minimum>
+                <Maximum>20.6964115</Maximum>
+                <Means>9.12e-13</Means>
+                <Std.Dev>2.9528452</Std.Dev>
+                <Median>-0.2196557</Median>
+                <Q1>-1.9428973</Q1>
+                <Q3>1.7520618</Q3>
+                <Knot1>-3.3821214</Knot1>
+                <Knot2>-0.2196557</Knot2>
+                <Knot3>3.7547511</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>9</index>
+                <Name>fruit_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>6</Maximum>
+                <Means>1.5109891</Means>
+                <Std.Dev>1.1644858</Std.Dev>
+                <Median>1</Median>
+                <Q1>0.7</Q1>
+                <Q3>2</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>10</index>
+                <Name>salad_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>3</Maximum>
+                <Means>0.5987021</Means>
+                <Std.Dev>0.4762747</Std.Dev>
+                <Median>0.4</Median>
+                <Q1>0.3</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>11</index>
+                <Name>carrot_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>2</Maximum>
+                <Means>0.372664</Means>
+                <Std.Dev>0.3596374</Std.Dev>
+                <Median>0.3</Median>
+                <Q1>0.1</Q1>
+                <Q3>0.4</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>12</index>
+                <Name>otherveg_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>6</Maximum>
+                <Means>1.4486937</Means>
+                <Std.Dev>1.0905973</Std.Dev>
+                <Median>1</Median>
+                <Q1>0.9</Q1>
+                <Q3>2</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>13</index>
+                <Name>juice_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>5</Maximum>
+                <Means>0.7572805</Means>
+                <Std.Dev>0.8218263</Std.Dev>
+                <Median>0.6</Median>
+                <Q1>0.1</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>14</index>
+                <Name>potato_cont_i_imp1</Name>
+                <Minimum>0</Minimum>
+                <Maximum>2</Maximum>
+                <Means>0.3678037</Means>
+                <Std.Dev>0.325642</Std.Dev>
+                <Median>0.3</Median>
+                <Q1>0.1</Q1>
+                <Q3>0.6</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>15</index>
+                <Name>POSITPART</Name>
+                <Minimum>-4.9191814</Minimum>
+                <Maximum>17.5949225</Maximum>
+                <Means>3.31e-13</Means>
+                <Std.Dev>2.6075525</Std.Dev>
+                <Median>-0.3326736</Median>
+                <Q1>-1.9197531</Q1>
+                <Q3>1.5602965</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>16</index>
+                <Name>POTATOMINUS</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0060909</Means>
+                <Std.Dev>0.0775569</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>17</index>
+                <Name>POTATOTOADD</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.3617127</Means>
+                <Std.Dev>0.3037303</Std.Dev>
+                <Median>0.3</Median>
+                <Q1>0.1</Q1>
+                <Q3>0.6</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>18</index>
+                <Name>PhysicalActivityC_cont</Name>
+                <Minimum>0</Minimum>
+                <Maximum>12.354</Maximum>
+                <Means>1.8600395</Means>
+                <Std.Dev>1.9071799</Std.Dev>
+                <Median>1.3</Median>
+                <Q1>0.5</Q1>
+                <Q3>2.7</Q3>
+                <Knot1>-1.7600395</Knot1>
+                <Knot2>-0.1600395</Knot2>
+                <Knot3>2.6399605</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>19</index>
+                <Name>BMIC_cont</Name>
+                <Minimum>8.89</Minimum>
+                <Maximum>47.152205</Maximum>
+                <Means>25.9326726</Means>
+                <Std.Dev>5.410167</Std.Dev>
+                <Median>24.89</Median>
+                <Q1>22.1</Q1>
+                <Q3>28.8594039</Q3>
+                <Knot1>-5.852673</Knot1>
+                <Knot2>-1.042673</Knot2>
+                <Knot3>7.085145</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>20</index>
+                <Name>EduNoHSGrad2C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1912154</Means>
+                <Std.Dev>0.3932604</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>21</index>
+                <Name>EduHSGrad2C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1977786</Means>
+                <Std.Dev>0.3983264</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>22</index>
+                <Name>EduSomePS2C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0640225</Means>
+                <Std.Dev>0.2447942</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>23</index>
+                <Name>EduPSGrad2C_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.5469835</Means>
+                <Std.Dev>0.4977903</Std.Dev>
+                <Median>1</Median>
+                <Q1>0</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>24</index>
+                <Name>DepIndHighC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1660356</Means>
+                <Std.Dev>0.3721145</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>25</index>
+                <Name>DepIndModC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.6447579</Means>
+                <Std.Dev>0.4785891</Std.Dev>
+                <Median>1</Median>
+                <Q1>0</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>26</index>
+                <Name>DepIndLowC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1892065</Means>
+                <Std.Dev>0.3916747</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>27</index>
+                <Name>Immigrant</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2078758</Means>
+                <Std.Dev>0.4057896</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>28</index>
+                <Name>EthnWhite</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.8915394</Means>
+                <Std.Dev>0.3109629</Std.Dev>
+                <Median>1</Median>
+                <Q1>1</Q1>
+                <Q3>1</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>29</index>
+                <Name>EthnBlackC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0140624</Means>
+                <Std.Dev>0.117749</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>30</index>
+                <Name>EthnChineseC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0140414</Means>
+                <Std.Dev>0.1176622</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>31</index>
+                <Name>EthnJapanC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0135471</Means>
+                <Std.Dev>0.1156014</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>32</index>
+                <Name>EthnSAsianC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0251167</Means>
+                <Std.Dev>0.1564805</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>33</index>
+                <Name>EthnOtherC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.041693</Means>
+                <Std.Dev>0.1998877</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>34</index>
+                <Name>DiabetesC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0725525</Means>
+                <Std.Dev>0.2594019</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>35</index>
+                <Name>HypertensionC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.2434684</Means>
+                <Std.Dev>0.4291777</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>36</index>
+                <Name>HeartDisC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0745824</Means>
+                <Std.Dev>0.2627178</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>37</index>
+                <Name>StrokeC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0174282</Means>
+                <Std.Dev>0.130861</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>38</index>
+                <Name>COPDC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.070228</Means>
+                <Std.Dev>0.2555323</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>39</index>
+                <Name>MoodC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.1035382</Means>
+                <Std.Dev>0.3046622</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>40</index>
+                <Name>ActiveCancerC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0298708</Means>
+                <Std.Dev>0.1702318</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>41</index>
+                <Name>DementiaC_cat</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.0049644</Means>
+                <Std.Dev>0.0702841</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>42</index>
+                <Name>Epilepsy</Name>
+                <Minimum>0</Minimum>
+                <Maximum>1</Maximum>
+                <Means>0.006763</Means>
+                <Std.Dev>0.0819594</Std.Dev>
+                <Median>0</Median>
+                <Q1>0</Q1>
+                <Q3>0</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+        </InlineTable>
+    </Taxonomy>
+    <LocalTransformations>
+        <DefineFunction name="Center.fun">
+            <ParameterField name="uncentered" dataType="double"/>
+            <ParameterField name="mean" dataType="double"/>
+            <Apply function="ifelse2">
+                <Apply function="not">
+                    <Apply function="is.na">
+                        <FieldRef field="uncentered"/>
+                    </Apply>
+                </Apply>
+                <Apply function="-">
+                    <FieldRef field="uncentered"/>
+                    <FieldRef field="mean"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="Interact.fun">
+            <ParameterField name="var1" dataType="double"/>
+            <ParameterField name="var2" dataType="double"/>
+            <Apply function="ifelse2">
+                <Apply function="and">
+                    <Apply function="not">
+                        <Apply function="is.na">
+                            <FieldRef field="var1"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="not">
+                        <Apply function="is.na">
+                            <FieldRef field="var2"/>
+                        </Apply>
+                    </Apply>
+                </Apply>
+                <Apply function="*">
+                    <FieldRef field="var1"/>
+                    <FieldRef field="var2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="PackYears.fun">
+            <ParameterField name="smokestat" dataType="double"/>
+            <ParameterField name="age" dataType="double"/>
+            <ParameterField name="AgeDailyStart" dataType="double"/>
+            <ParameterField name="DailyCig" dataType="double"/>
+            <ParameterField name="AgeDailyQuit" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="smokestat"/>
+                    <Constant dataType="string">A1</Constant>
+                </Apply>
+                <Apply function="*">
+                    <Apply function="-">
+                        <FieldRef field="age"/>
+                        <FieldRef field="AgeDailyStart"/>
+                    </Apply>
+                    <Apply function="/">
+                        <FieldRef field="DailyCig"/>
+                        <Constant dataType="double">20</Constant>
+                    </Apply>
+                </Apply>
+                <Apply function="ifelse">
+                    <Apply function="or">
+                        <Apply function="equal">
+                            <FieldRef field="smokestat"/>
+                            <Constant dataType="string">A3</Constant>
+                        </Apply>
+                        <Apply function="equal">
+                            <FieldRef field="smokestat"/>
+                            <Constant dataType="string">A2</Constant>
+                        </Apply>
+                    </Apply>
+                    <Apply function="*">
+                        <Apply function="-">
+                            <FieldRef field="AgeDailyQuit"/>
+                            <FieldRef field="AgeDailyStart"/>
+                        </Apply>
+                        <Apply function="/">
+                            <FieldRef field="DailyCig"/>
+                            <Constant dataType="double">20</Constant>
+                        </Apply>
+                    </Apply>
+                    <Apply function="ifelse">
+                        <Apply function="equal">
+                            <FieldRef field="smokestat"/>
+                            <Constant dataType="string">A4</Constant>
+                        </Apply>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="NA">NA</Constant>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="standard.fun">
+            <ParameterField name="input" dataType="double"/>
+            <ParameterField name="mean" dataType="double"/>
+            <ParameterField name="sd" dataType="double"/>
+            <Apply function="/">
+                <Apply function="-">
+                    <FieldRef field="input"/>
+                    <FieldRef field="mean"/>
+                </Apply>
+                <FieldRef field="sd"/>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="vpa.fun">
+            <ParameterField name="vpa" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="not">
+                    <Apply function="is.na">
+                        <FieldRef field="vpa"/>
+                    </Apply>
+                </Apply>
+                <Apply function="/">
+                    <Apply function="*">
+                        <FieldRef field="vpa"/>
+                        <Constant dataType="double">9.5</Constant>
+                    </Apply>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="mpa.fun">
+            <ParameterField name="mpa" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="not">
+                    <Apply function="is.na">
+                        <FieldRef field="mpa"/>
+                    </Apply>
+                </Apply>
+                <Apply function="/">
+                    <Apply function="*">
+                        <FieldRef field="mpa"/>
+                        <Constant dataType="double">5.5</Constant>
+                    </Apply>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="lpa.fun">
+            <ParameterField name="lpa" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="not">
+                    <Apply function="is.na">
+                        <FieldRef field="lpa"/>
+                    </Apply>
+                </Apply>
+                <Apply function="/">
+                    <Apply function="*">
+                        <FieldRef field="lpa"/>
+                        <Constant dataType="double">3.5</Constant>
+                    </Apply>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="last.fun">
+            <ParameterField name="x" dataType="double"/>
+            <Apply function="as.numeric">
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <Apply function="is.na">
+                            <FieldRef field="x"/>
+                        </Apply>
+                        <Constant dataType="boolean">true</Constant>
+                    </Apply>
+                    <Constant dataType="boolean">false</Constant>
+                    <Apply function="substr">
+                        <FieldRef field="x"/>
+                        <Apply function="nchar">
+                            <FieldRef field="x"/>
+                        </Apply>
+                        <Apply function="nchar">
+                            <FieldRef field="x"/>
+                        </Apply>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="disease.fun">
+            <ParameterField name="dis" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="dis"/>
+                    <Constant dataType="string">Yes</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="dis"/>
+                        <Constant dataType="string">No</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
+            </Apply>
+        </DefineFunction>
+        <DerivedField name="Age_cont" optype="continuous">
+            <FieldRef field="age"/>
+        </DerivedField>
+        <DerivedField name="SmokeCurrent_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="smokingstat"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="or">
+                        <Apply function="equal">
+                            <FieldRef field="smokingstat"/>
+                            <Constant dataType="string">A2</Constant>
+                        </Apply>
+                        <Apply function="equal">
+                            <FieldRef field="smokingstat"/>
+                            <Constant dataType="string">A1</Constant>
+                        </Apply>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeFormer0to5_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="smokingstat"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="and">
+                        <Apply function="equal">
+                            <FieldRef field="smokingstat"/>
+                            <Constant dataType="string">A3</Constant>
+                        </Apply>
+                        <Apply function="lessThan">
+                            <FieldRef field="age"/>
+                            <Apply function="+">
+                                <FieldRef field="stopdaily2"/>
+                                <Constant dataType="double">5</Constant>
+                            </Apply>
+                        </Apply>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeFormer5Plus_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="smokingstat"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="and">
+                        <Apply function="equal">
+                            <FieldRef field="smokingstat"/>
+                            <Constant dataType="string">A3</Constant>
+                        </Apply>
+                        <Apply function="greaterThan">
+                            <FieldRef field="age"/>
+                            <Apply function="+">
+                                <FieldRef field="stopdaily2"/>
+                                <Constant dataType="double">5</Constant>
+                            </Apply>
+                        </Apply>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PackYears_cont">
+            <Apply function="if">
+                <Apply function="equal">
+                    <Apply function="last.fun">
+                        <FieldRef field="smokingstat"/>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Apply function="PackYears.fun">
+                    <FieldRef field="smokingstat"/>
+                    <FieldRef field="age"/>
+                    <FieldRef field="dailyage"/>
+                    <FieldRef field="dailycig"/>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <Apply function="last.fun">
+                            <FieldRef field="smokingstat"/>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Apply function="ifelse">
+                        <Apply function="equal">
+                            <FieldRef field="lessdaily"/>
+                            <Constant dataType="string">yless</Constant>
+                        </Apply>
+                        <Apply function="PackYears.fun">
+                            <FieldRef field="smokingstat"/>
+                            <Constant dataType="NA">NA</Constant>
+                            <FieldRef field="dailyage2"/>
+                            <FieldRef field="dailycig3"/>
+                            <FieldRef field="stopdaily"/>
+                        </Apply>
+                        <Apply function="ifelse">
+                            <Apply function="equal">
+                                <FieldRef field="lessdaily"/>
+                                <Constant dataType="string">nless</Constant>
+                            </Apply>
+                            <Constant dataType="double">0</Constant>
+                            <Constant dataType="NA">NA</Constant>
+                        </Apply>
+                    </Apply>
+                    <Apply function="if">
+                        <Apply function="equal">
+                            <Apply function="last.fun">
+                                <FieldRef field="smokingstat"/>
+                            </Apply>
+                            <Constant dataType="double">3</Constant>
+                        </Apply>
+                        <Apply function="ifelse">
+                            <Apply function="equal">
+                                <FieldRef field="pastsmoke"/>
+                                <Constant dataType="string">dal</Constant>
+                            </Apply>
+                            <Apply function="PackYears.fun">
+                                <FieldRef field="smokingstat"/>
+                                <Constant dataType="NA">NA</Constant>
+                                <FieldRef field="dailyage3"/>
+                                <FieldRef field="dailycig4"/>
+                                <FieldRef field="stopdaily2"/>
+                            </Apply>
+                            <Apply function="ifelse">
+                                <Apply function="equal">
+                                    <FieldRef field="pastsmoke"/>
+                                    <Constant dataType="string">dal2</Constant>
+                                </Apply>
+                                <Constant dataType="double">0</Constant>
+                                <Constant dataType="NA">NA</Constant>
+                            </Apply>
+                        </Apply>
+                        <Apply function="if">
+                            <Apply function="equal">
+                                <Apply function="last.fun">
+                                    <FieldRef field="smokingstat"/>
+                                </Apply>
+                                <Constant dataType="double">4</Constant>
+                            </Apply>
+                            <Constant dataType="double">0</Constant>
+                            <Constant dataType="NA">NA</Constant>
+                        </Apply>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DrinksLastWeek_cont">
+            <Apply function="if">
+                <Apply function="is.na">
+                    <FieldRef field="alc"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="or">
+                        <Apply function="equal">
+                            <Apply function="last.fun">
+                                <FieldRef field="alc"/>
+                            </Apply>
+                            <Constant dataType="double">1</Constant>
+                        </Apply>
+                        <Apply function="equal">
+                            <Apply function="last.fun">
+                                <FieldRef field="alc"/>
+                            </Apply>
+                            <Constant dataType="double">2</Constant>
+                        </Apply>
+                    </Apply>
+                    <FieldRef field="drk"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="FormerDrinker_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="alc"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="and">
+                        <Apply function="equal">
+                            <FieldRef field="alc"/>
+                            <Constant dataType="string">alc3</Constant>
+                        </Apply>
+                        <Apply function="equal">
+                            <FieldRef field="evdk"/>
+                            <Constant dataType="string">evdk1</Constant>
+                        </Apply>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnBlack_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ethn"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ethn"/>
+                        <Constant dataType="string">A2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnChinese_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ethn"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ethn"/>
+                        <Constant dataType="string">A3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnJapan_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ethn"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ethn"/>
+                        <Constant dataType="string">A4</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnOther_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ethn"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ethn"/>
+                        <Constant dataType="string">A6</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnSAsian_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ethn"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ethn"/>
+                        <Constant dataType="string">A5</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduHSGrad2_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="edu"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="edu"/>
+                        <Constant dataType="string">C2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduNoHSGrad2_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="edu"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="edu"/>
+                        <Constant dataType="string">C1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduSomePS2_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="edu"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="edu"/>
+                        <Constant dataType="string">C3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduPSGrad2_cat" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="edu"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="edu"/>
+                        <Constant dataType="string">C4</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PhysicalActivity_cont">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="is.na">
+                            <FieldRef field="vigact"/>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="modact"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="ligact"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="+">
+                    <Apply function="+">
+                        <FieldRef field="vpa"/>
+                        <FieldRef field="mpa"/>
+                    </Apply>
+                    <FieldRef field="lpa"/>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="vpa">
+            <Apply function="vpa.fun">
+                <FieldRef field="vigact"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="mpa">
+            <Apply function="mpa.fun">
+                <FieldRef field="modact"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="lpa">
+            <Apply function="lpa.fun">
+                <FieldRef field="ligact"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="weight" optype="continuous">
+            <FieldRef field="kgs"/>
+        </DerivedField>
+        <DerivedField name="height" optype="continuous">
+            <Apply function="/">
+                <FieldRef field="cm"/>
+                <Constant dataType="double">100</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="BMI_cont" optype="continuous">
+            <Apply function="/">
+                <FieldRef field="weight"/>
+                <FieldRef field="height"/>
+                <Constant dataType="double">2</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Diabetes_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ001"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="HeartDis_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ002"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Stroke_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ003"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Hypertension_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ004"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Dementia_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ005"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ActiveCancer_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ006"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="COPD_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ007"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Mood_cat">
+            <Apply function="if">
+                <Apply function="and">
+                    <Apply function="and">
+                        <Apply function="and">
+                            <Apply function="and">
+                                <Apply function="and">
+                                    <Apply function="and">
+                                        <Apply function="and">
+                                            <Apply function="and">
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ001"/>
+                                                </Apply>
+                                                <Apply function="is.na">
+                                                    <FieldRef field="cond_SQ002"/>
+                                                </Apply>
+                                            </Apply>
+                                            <Apply function="is.na">
+                                                <FieldRef field="cond_SQ003"/>
+                                            </Apply>
+                                        </Apply>
+                                        <Apply function="is.na">
+                                            <FieldRef field="cond_SQ004"/>
+                                        </Apply>
+                                    </Apply>
+                                    <Apply function="is.na">
+                                        <FieldRef field="cond_SQ005"/>
+                                    </Apply>
+                                </Apply>
+                                <Apply function="is.na">
+                                    <FieldRef field="cond_SQ006"/>
+                                </Apply>
+                            </Apply>
+                            <Apply function="is.na">
+                                <FieldRef field="cond_SQ007"/>
+                            </Apply>
+                        </Apply>
+                        <Apply function="is.na">
+                            <FieldRef field="cond_SQ008"/>
+                        </Apply>
+                    </Apply>
+                    <Apply function="is.na">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="if">
+                    <Apply function="equal">
+                        <FieldRef field="cond_SQ010"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Apply function="disease.fun">
+                        <FieldRef field="cond_SQ009"/>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="juice_cont" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="fv_juice1"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="/">
+                    <FieldRef field="fv_juice1"/>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="fruit_cont" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="fv_fruit1"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="/">
+                    <FieldRef field="fv_fruit1"/>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="potato_cont" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="fv_pot1"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="/">
+                    <FieldRef field="fv_pot1"/>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="otherveg_cont" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="fv_veg1"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="/">
+                    <FieldRef field="fv_veg1"/>
+                    <Constant dataType="double">7</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="potatoadd">
+            <Apply function="if">
+                <Apply function="lessOrEqual">
+                    <FieldRef field="potato_cont"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <FieldRef field="potato_cont"/>
+                <Constant dataType="double">1</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="potatominus">
+            <Apply function="if">
+                <Apply function="greaterThan">
+                    <FieldRef field="potato_cont"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Apply function="-">
+                    <FieldRef field="potato_cont"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="s_juice" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.null">
+                    <FieldRef field="juice_cont"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="standard.fun">
+                    <FieldRef field="juice_cont"/>
+                    <MapValues outputColumn="Mean">
+                        <FieldColumnPair column="index" constant="juice_cont"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                    <MapValues outputColumn="Std.Dev">
+                        <FieldColumnPair column="index" constant="juice_cont"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="s_fruit" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.null">
+                    <FieldRef field="fruit_cont"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="standard.fun">
+                    <FieldRef field="fruit_cont"/>
+                    <MapValues outputColumn="Mean">
+                        <FieldColumnPair column="index" constant="fruit_cont"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                    <MapValues outputColumn="Std.Dev">
+                        <FieldColumnPair column="index" constant="fruit_cont"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="s_otherveg" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.null">
+                    <FieldRef field="otherveg_cont"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="standard.fun">
+                    <FieldRef field="otherveg_cont"/>
+                    <MapValues outputColumn="Mean">
+                        <FieldColumnPair column="index" constant="otherveg_cont"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                    <MapValues outputColumn="Std.Dev">
+                        <FieldColumnPair column="index" constant="otherveg_cont"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="s_potadd" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.null">
+                    <FieldRef field="potatoadd"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="standard.fun">
+                    <FieldRef field="potatoadd"/>
+                    <MapValues outputColumn="Mean">
+                        <FieldColumnPair column="index" constant="POTATOTOADD"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                    <MapValues outputColumn="Std.Dev">
+                        <FieldColumnPair column="index" constant="POTATOTOADD"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="s_potminus" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.null">
+                    <FieldRef field="potatominus"/>
+                </Apply>
+                <Constant dataType="NULL">NULL</Constant>
+                <Apply function="standard.fun">
+                    <FieldRef field="potatominus"/>
+                    <MapValues outputColumn="Mean">
+                        <FieldColumnPair column="index" constant="POTATOMINUS"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                    <MapValues outputColumn="Std.Dev">
+                        <FieldColumnPair column="index" constant="POTATOMINUS"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                    </MapValues>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Positpart" optype="continuous">
+            <Apply function="+">
+                <FieldRef field="s_fruit"/>
+                <FieldRef field="s_otherveg"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="Minusjuice" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Positpart"/>
+                <FieldRef field="s_juice"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DietScore2_cont" optype="continuous">
+            <Apply function="-">
+                <Apply function="+">
+                    <FieldRef field="Minusjuice"/>
+                    <FieldRef field="s_potadd"/>
+                </Apply>
+                <FieldRef field="s_potminus"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Age_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AgeC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PackYearsC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="PackYears_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="PackYearsC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeFormer5PlusC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SmokeFormer5Plus_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SmokeFormer5PlusC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeFormer0to5C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SmokeFormer0to5_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SmokeFormer0to5C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SmokeCurrentC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SmokeCurrent_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SmokeCurrentC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DrinksLastWeekC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DrinksLastWeek_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DrinksLastWeekC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="FormerDrinkerC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="FormerDrinker_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="FormerDrinkerC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DietScore2C_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DietScore2_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DietScore2C_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PhysicalActivityC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="PhysicalActivity_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="PhysicalActivityC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="BMIC_cont" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="BMI_cont"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="BMIC_cont"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DepIndModC_cat" optype="continuous">
+            <MapValues outputColumn="Means">
+                <FieldColumnPair column="Name" constant="DepIndModC_cat"/>
+                <TableLocator location="taxonomy" name="means"/>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="DepIndHighC_cat" optype="continuous">
+            <MapValues outputColumn="Means">
+                <FieldColumnPair column="Name" constant="DepIndHighC_cat"/>
+                <TableLocator location="taxonomy" name="means"/>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="EduNoHSGrad2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduNoHSGrad2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduNoHSGrad2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DepIndHighC_cat_Mutated_1" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DepIndHigh_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DepIndHighC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduHSGrad2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduHSGrad2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduHSGrad2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduSomePS2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduSomePS2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduSomePS2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EduPSGrad2C_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EduPSGrad2_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EduPSGrad2C_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ActiveCancerC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ActiveCancer_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ActiveCancerC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DiabetesC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Diabetes_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DiabetesC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="HeartDisC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="HeartDis_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="HeartDisC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="StrokeC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Stroke_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="StrokeC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="HypertensionC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Hypertension_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="HypertensionC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="MoodC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Mood_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="MoodC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DementiaC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="Dementia_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="DementiaC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="COPDC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="COPD_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="COPDC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnBlackC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnBlack_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnBlackC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnChineseC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnChinese_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnChineseC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnOtherC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnOther_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnOtherC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnSAsianC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnSAsian_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnSAsianC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EthnJapanC_cat" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EthnJapan_cat"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="EthnJapanC_cat"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeC_rcs1" optype="continuous">
+            <FieldRef field="AgeC_cont"/>
+        </DerivedField>
+        <DerivedField name="PackYearsC_rcs1" optype="continuous">
+            <FieldRef field="PackYearsC_cont"/>
+        </DerivedField>
+        <DerivedField name="DrinksLastWeekC_rcs1" optype="continuous">
+            <FieldRef field="DrinksLastWeekC_cont"/>
+        </DerivedField>
+        <DerivedField name="DietScore2C_rcs1" optype="continuous">
+            <FieldRef field="DietScore2C_cont"/>
+        </DerivedField>
+        <DerivedField name="PhysicalActivityC_rcs1" optype="continuous">
+            <FieldRef field="PhysicalActivityC_cont"/>
+        </DerivedField>
+        <DerivedField name="BMIC_rcs1" optype="continuous">
+            <FieldRef field="BMIC_cont"/>
+        </DerivedField>
+        <DerivedField name="AgeCXSmokeCurrentC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="SmokeCurrentC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXSmokeFormer5PlusC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="SmokeFormer5PlusC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXSmokeFormer0to5C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="SmokeFormer0to5C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXPackYearsC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="PackYearsC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXFormerDrinkerC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="FormerDrinkerC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDrinksLastWeekC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DrinksLastWeekC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDietScore2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DietScore2C_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDepIndHighC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DepIndHighC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDepIndModC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DepIndModC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEduHSGrad2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EduHSGrad2C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEduNoHSGrad2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EduNoHSGrad2C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXEduSomePS2C_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="EduSomePS2C_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXPhysicalActivityC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="PhysicalActivityC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXBMIC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="BMIC_cont"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDiabetesC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DiabetesC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXHypertensionC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="HypertensionC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXCOPDC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="COPDC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXMoodC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="MoodC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXActiveCancerC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="ActiveCancerC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXDementiaC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="DementiaC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXHeartDisC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="HeartDisC_cat"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AgeCXStrokeC_int" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="AgeC_cont"/>
+                <FieldRef field="StrokeC_cat"/>
+            </Apply>
+        </DerivedField>
+    </LocalTransformations>
+</PMML>
