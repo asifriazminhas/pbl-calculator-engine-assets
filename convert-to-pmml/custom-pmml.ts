@@ -31,10 +31,6 @@ export function makeCustomPmmlNode(
                 numOfKnots += 1;
             }
 
-            const referenceRowWithKnotWithoutRcsName = referenceRowWithKnot[
-                'Variable'
-            ].split('_rcs1')[0];
-
             let parameterNamesForRcsVar: string[] = [];
             let knotLocations: string[] = [];
 
@@ -44,7 +40,10 @@ export function makeCustomPmmlNode(
                         parameter => {
                             return (
                                 parameter.$.label ===
-                                `${referenceRowWithKnotWithoutRcsName}_rcs${i}`
+                                referenceRowWithKnot.Variable.replace(
+                                    'rcs1',
+                                    `rcs${i}`,
+                                )
                             );
                         },
                     )!.$.name,
