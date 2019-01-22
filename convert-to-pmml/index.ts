@@ -36,7 +36,7 @@ export async function convertToPmml() {
         } else {
             algorithmFolderPathsAndNames.push({
                 folderPath: modelFolderPath,
-                name: algorithmInfo.AlgorithmName,
+                name: algorithmInfo[0].AlgorithmName,
             });
         }
 
