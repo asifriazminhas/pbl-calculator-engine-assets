@@ -75,7 +75,7 @@ export function makeGeneralRegressionModelNode(
         CovariateList: {
             Predictor: predictors,
         },
-        Extensions: [
+        Extension: [
             {
                 name: 'maximumTime',
                 value: `${algorithmInfo.maximumTime}`,
