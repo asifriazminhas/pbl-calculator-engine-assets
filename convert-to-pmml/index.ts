@@ -3,9 +3,9 @@ const algorithms: Array<{
 }> = require('../algorithms.json');
 import * as path from 'path';
 import * as fs from 'fs';
-const csvParse = require('csv-parse/lib/sync');
 import { constructPmmlNode } from './pmml';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
+import { IAlgorithmJson } from '../reference-files';
 
 export async function convertToPmml() {
     for (const { name } of algorithms) {
@@ -18,25 +18,21 @@ export async function convertToPmml() {
             folderPath: string;
         }> = [];
 
-        const algorithmInfo = csvParse(
-            fs.readFileSync(`${modelFolderPath}/algorithm-info.csv`, 'utf8'),
-            {
-                columns: true,
-            },
-        );
+        const algorithmInfo: IAlgorithmJson = require(`${modelFolderPath}/algorithm-info.json`);
+
         if (isGenderedModel) {
             algorithmFolderPathsAndNames.push({
                 folderPath: `${modelFolderPath}/male`,
-                name: `Male ${algorithmInfo[0].AlgorithmName}`,
+                name: `Male ${algorithmInfo.algorithmName}`,
             });
             algorithmFolderPathsAndNames.push({
                 folderPath: `${modelFolderPath}/female`,
-                name: `Female ${algorithmInfo[0].AlgorithmName}`,
+                name: `Female ${algorithmInfo.algorithmName}`,
             });
         } else {
             algorithmFolderPathsAndNames.push({
                 folderPath: modelFolderPath,
-                name: algorithmInfo[0].AlgorithmName,
+                name: algorithmInfo.algorithmName,
             });
         }
 
