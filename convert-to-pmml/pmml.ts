@@ -9,6 +9,7 @@ import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/
 import { ITaxonomy } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/taxonomy';
 import { makeCustomPmmlNode } from './custom-pmml';
 import { constructMiningSchemaNode } from './mining-schema';
+import { IAlgorithmJson } from '../reference-files';
 const promisifiedParseString = promisify(parseString);
 
 export async function constructPmmlNode(
@@ -20,6 +21,8 @@ export async function constructPmmlNode(
 ): Promise<IPmml[]> {
     const pmmlNodes: IPmml[] = [];
     for (let { name, folderPath } of algorithmFolderPathsAndNames) {
+        const algorithmInfo: IAlgorithmJson = require(`${modelFolderPath}/algorithm-info.json`);
+
         const betasCsvString = fs.readFileSync(
             `${folderPath}/betas.csv`,
             'utf8',
@@ -47,6 +50,7 @@ export async function constructPmmlNode(
         const generalRegressionModel = makeGeneralRegressionModelNode(
             betasCsvString,
             referenceCsvString,
+            algorithmInfo,
         );
 
         const webSpecificationsCsvString = fs.readFileSync(
