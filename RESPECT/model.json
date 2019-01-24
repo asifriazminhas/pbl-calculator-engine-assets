@@ -3,6 +3,7 @@
     "algorithms": [
         {
             "algorithm": {
+                "name": "RESPECT",
                 "derivedFields": [
                     {
                         "fieldType": 1,
