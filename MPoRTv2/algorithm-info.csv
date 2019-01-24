@@ -1,2 +1,0 @@
-AlgorithmName,GenderSpecific,BaselineSurvival,RegressionType,TimeMetric,MaximumTime
-MPoRTv2,true,0.921096526,CoxRegression,years,5
