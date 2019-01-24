@@ -1,6 +1,9 @@
 <PMML>
-    <Header description="Male MPoRTv2" copyright="">
-        <Extension name="ModelName" value="Male MPoRTv2"/>
+    <Header description="Male MPoRTv2">
+        <Extension>
+            <name>ModelName</name>
+            <value>Male MPoRTv2</value>
+        </Extension>
     </Header>
     <DataDictionary numberOfFields="155">
         <DataField name="AgeC_rcs1" displayName="Age RCS1" optype="continuous" dataType="integer"/>
@@ -2715,6 +2718,14 @@
             <Predictor name="AgeCXStrokeC_int"/>
             <Predictor name="AgeCXEpilepsyC_int"/>
         </CovariateList>
+        <Extension>
+            <name>maximumTime</name>
+            <value>5</value>
+        </Extension>
+        <Extension>
+            <name>timeMetric</name>
+            <value>years</value>
+        </Extension>
     </GeneralRegressionModel>
     <MiningSchema>
         <MiningField name="sex" invalidValueTreatment="asIs"/>

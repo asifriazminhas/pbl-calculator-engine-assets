@@ -29,13 +29,6 @@
                                 "name": "smokingstat",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -51,13 +44,6 @@
                                 "name": "smokingstat",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "age",
@@ -83,13 +69,6 @@
                                 "name": "smokingstat",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "age",
@@ -130,13 +109,6 @@
                                 "name": "dailycig",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "lessdaily",
@@ -194,13 +166,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "drk",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -221,13 +186,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "evdk",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -246,13 +204,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -268,13 +219,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -290,13 +234,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -312,13 +249,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -334,13 +264,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -356,13 +279,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -378,13 +294,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -400,13 +309,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -422,13 +324,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -454,13 +349,6 @@
                                 "name": "ligact",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             "vpa",
                             "mpa",
@@ -605,13 +493,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -670,13 +551,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -739,13 +613,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -804,13 +671,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -873,13 +733,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -938,13 +791,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -1007,13 +853,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -1072,13 +911,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -1332,13 +1164,6 @@
                                 "name": "immigratewhen",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -2686,13 +2511,6 @@
                                 "name": "smokingstat",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -2708,13 +2526,6 @@
                                 "name": "smokingstat",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "age",
@@ -2740,13 +2551,6 @@
                                 "name": "smokingstat",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "age",
@@ -2787,13 +2591,6 @@
                                 "name": "dailycig",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "lessdaily",
@@ -2851,13 +2648,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "drk",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -2878,13 +2668,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "evdk",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -2903,13 +2686,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -2925,13 +2701,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -2947,13 +2716,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -2969,13 +2731,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -2991,13 +2746,6 @@
                                 "name": "ethn",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -3013,13 +2761,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -3035,13 +2776,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -3057,13 +2791,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -3079,13 +2806,6 @@
                                 "name": "edu",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             }
                         ],
                         "displayName": "",
@@ -3111,13 +2831,6 @@
                                 "name": "ligact",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             "vpa",
                             "mpa",
@@ -3262,13 +2975,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -3327,13 +3033,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -3396,13 +3095,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -3461,13 +3153,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -3530,13 +3215,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -3595,13 +3273,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
@@ -3664,13 +3335,6 @@
                                 "fieldType": 0
                             },
                             {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
-                            },
-                            {
                                 "name": "cond_SQ010",
                                 "isRequired": false,
                                 "fieldType": 0
@@ -3729,13 +3393,6 @@
                                 "name": "cond_SQ009",
                                 "isRequired": false,
                                 "fieldType": 0
-                            },
-                            {
-                                "fieldType": 0,
-                                "name": "undefined",
-                                "displayName": "",
-                                "extensions": {},
-                                "isRequired": false
                             },
                             {
                                 "name": "cond_SQ010",
