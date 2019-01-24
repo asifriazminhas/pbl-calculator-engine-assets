@@ -1,0 +1,7 @@
+{
+    "algorithmName": "RESPECT",
+    "genderSpecific": false,
+    "regressionType": "CoxRegression",
+    "maximumTime": 4022,
+    "timeMetric": "days"
+}
