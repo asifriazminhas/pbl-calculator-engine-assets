@@ -6,273 +6,273 @@
         </Extension>
     </Header>
     <DataDictionary numberOfFields="267">
-        <DataField name="Age_rcs1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_rcs2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_rcs3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_rcs4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sex_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1A_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1B_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1C_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1D_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1DE_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1K_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1L_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2E_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3D_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3E_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2C_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2B_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="B2B_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="H3_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_6_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_6_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_3_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_6_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K8E_cat2_1_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_rcs1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="age" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sex_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="sex" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="B2B_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="B2B" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K8E_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K8E" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="H3_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="H3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1A_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1A" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1B_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1B" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1C_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1C" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1D_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1D" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1DE_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1DE" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1K_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1K" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1L_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1L" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2E_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2_K2E" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3D_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3_K3D" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3E_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3_K3E" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_L1A1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_L1A2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2C_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2_L2C" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2B_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2_L2B" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1Z_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1Z" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P2OXY_cat3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sched_P2OXY" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="specialtherapy_P0" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1AA_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1AA" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P2G_cat3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sched_P2G" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P2F_cat3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sched_P2F" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1X_cat2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Diseases_J1X" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2I_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2I" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2H_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2H" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2C_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2C" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2G_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADLdiff_H2G" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_H0ADL" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADLdiff_H1AB_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADLdiff_H1AB" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_H1AB" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADLdiff_H1BB_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADLdiff_H1BB" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_H1BB" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADdiff_H1EB_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADLdiff_H1EB" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_H1EB" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_H0IADL" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADLdiff_H1EB_formatted" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1A_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1A_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1B_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1B_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1C_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1C_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1D_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1D_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1DE_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1DE_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1K_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1K_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1L_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1L_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2E_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2E_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3D_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3D_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3E_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3E_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2C_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2C_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2B_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2B_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="B2B_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="B2B_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="H3_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="H3_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_7" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_7" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K8E_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K8E_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_5" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_6" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_7" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sex_cat2_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sex_cat2_2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BB6_cat5_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1A_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1B_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1C_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1D_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1DE_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1K_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="J1L_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K2E_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3D_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K3E_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L1A_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2C_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="L2B_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="B2B_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="H3_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="IADL_cat7_7_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ADL_cat7_7_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4A_cat4_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="P4B_cat4_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Renal_cat4_4_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Oxygen_cat6_6_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Cancer_cat6_6_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A2_cat5_5_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="K8E_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="A1_cat7_7_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_cont_c" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_cont" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Sex_cat2_2_c" displayName="" optype="continuous" dataType="integer"/>
+        <DataField name="Age_rcs1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_rcs2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_rcs3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_rcs4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sex_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1A_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1B_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1C_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1D_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1DE_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1K_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1L_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2E_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3D_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3E_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2C_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2B_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="B2B_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="H3_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K8E_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_rcs1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="age" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sex_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="sex" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="B2B_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="B2B" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K8E_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K8E" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="H3_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="H3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1A_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1A" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1B_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1B" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1C_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1C" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1D_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1D" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1DE_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1DE" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1K_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1K" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1L_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1L" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2E_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2_K2E" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3D_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3_K3D" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3E_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3_K3E" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_L1A1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_L1A2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2C_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2_L2C" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2B_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2_L2B" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1Z_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1Z" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P2OXY_cat3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sched_P2OXY" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="specialtherapy_P0" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1AA_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1AA" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P2G_cat3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sched_P2G" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P2F_cat3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sched_P2F" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1X_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diseases_J1X" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2I_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2I" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2H_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2H" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2C_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2C" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2G_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADLdiff_H2G" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_H0ADL" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADLdiff_H1AB_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADLdiff_H1AB" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_H1AB" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADLdiff_H1BB_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADLdiff_H1BB" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_H1BB" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADdiff_H1EB_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADLdiff_H1EB" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_H1EB" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_H0IADL" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADLdiff_H1EB_formatted" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1A_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1A_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1B_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1B_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1C_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1C_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1D_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1D_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1DE_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1DE_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1K_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1K_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1L_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1L_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2E_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2E_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3D_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3D_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3E_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3E_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2C_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2C_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2B_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2B_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="B2B_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="B2B_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="H3_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="H3_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_7" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_7" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K8E_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K8E_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_5" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_6" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_7" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sex_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sex_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BB6_cat5_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1A_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1B_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1C_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1D_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1DE_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1K_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="J1L_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K2E_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3D_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K3E_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L1A_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2C_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="L2B_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="B2B_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="H3_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="IADL_cat7_7_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ADL_cat7_7_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4A_cat4_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="P4B_cat4_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Renal_cat4_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Oxygen_cat6_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Cancer_cat6_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A2_cat5_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="K8E_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="A1_cat7_7_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_cont_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Sex_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
     </DataDictionary>
     <LocalTransformations>
         <DefineFunction name="last.fun">
