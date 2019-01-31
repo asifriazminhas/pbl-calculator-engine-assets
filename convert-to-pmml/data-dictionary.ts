@@ -38,6 +38,8 @@ export async function makeDataDictionaryNode(
                     displayName: webSpecRow ? webSpecRow.displayName : '',
                     optype: 'continuous' as 'continuous',
                     dataType: 'integer',
+                    // TODO Fix this
+                    'X-shortLabel': '',
                 },
                 Extension: [],
             };
@@ -61,6 +63,8 @@ export async function makeDataDictionaryNode(
                 displayName: webSpecRow ? webSpecRow.displayName : '',
                 optype: 'continuous' as 'continuous',
                 dataType: 'integer',
+                // TODO Fix this
+                'X-shortLabel': '',
             },
             Extension: [],
         };
