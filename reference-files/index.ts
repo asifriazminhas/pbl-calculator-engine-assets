@@ -4,4 +4,5 @@ export interface IAlgorithmJson {
     regressionType: 'CoxRegression';
     maximumTime: number;
     timeMetric: 'days' | 'years';
+    extends?: string;
 }

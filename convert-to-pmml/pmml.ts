@@ -9,26 +9,56 @@ import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/
 import { ITaxonomy } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/taxonomy';
 import { makeCustomPmmlNode } from './custom-pmml';
 import { constructMiningSchemaNode } from './mining-schema';
-import { IAlgorithmJson } from '../reference-files';
+import {
+    getAlgorithmNamesAndFolderPathsForModel,
+    getConfigForModel,
+} from './util';
 const promisifiedParseString = promisify(parseString);
+import * as path from 'path';
+import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
 
-export async function constructPmmlNode(
-    algorithmFolderPathsAndNames: Array<{
-        name: string;
-        folderPath: string;
-    }>,
-    modelFolderPath: string,
-): Promise<IPmml[]> {
-    const pmmlNodes: IPmml[] = [];
-    for (let { name, folderPath } of algorithmFolderPathsAndNames) {
-        const algorithmInfo: IAlgorithmJson = require(`${modelFolderPath}/algorithm-info.json`);
+export async function writePMMLFilesForModel(modelName: string) {
+    const modelConfig = getConfigForModel(modelName);
+    const modelFolderPath = path.join(
+        __dirname,
+        `../${modelConfig.algorithmName}`,
+    );
+
+    const algorithmNamesAndFolderPaths = getAlgorithmNamesAndFolderPathsForModel(
+        modelName,
+    );
+    const parentAlgorithmNamesAndFolderPaths = modelConfig.extends
+        ? getAlgorithmNamesAndFolderPathsForModel(modelConfig.extends)
+        : [];
+
+    for (
+        let algorithmIndex = 0;
+        algorithmIndex < algorithmNamesAndFolderPaths.length;
+        algorithmIndex++
+    ) {
+        const { name, folderPath } = algorithmNamesAndFolderPaths[
+            algorithmIndex
+        ];
+        const parentAlgorithmFolderPath = parentAlgorithmNamesAndFolderPaths[
+            algorithmIndex
+        ]
+            ? parentAlgorithmNamesAndFolderPaths[algorithmIndex].folderPath
+            : undefined;
 
         const betasCsvString = fs.readFileSync(
-            `${folderPath}/betas.csv`,
+            `${
+                parentAlgorithmFolderPath
+                    ? parentAlgorithmFolderPath
+                    : folderPath
+            }/betas.csv`,
             'utf8',
         );
         const referenceCsvString = fs.readFileSync(
-            `${folderPath}/reference.csv`,
+            `${
+                parentAlgorithmFolderPath
+                    ? parentAlgorithmFolderPath
+                    : folderPath
+            }/reference.csv`,
             'utf8',
         );
 
@@ -50,7 +80,7 @@ export async function constructPmmlNode(
         const generalRegressionModel = makeGeneralRegressionModelNode(
             betasCsvString,
             referenceCsvString,
-            algorithmInfo,
+            modelConfig,
         );
 
         const webSpecificationsCsvString = fs.readFileSync(
@@ -73,8 +103,11 @@ export async function constructPmmlNode(
             ...makeCustomPmmlNode(referenceCsvString, generalRegressionModel),
         };
 
-        pmmlNodes.push(pmml);
+        fs.writeFileSync(
+            `${folderPath}/model.xml`,
+            buildXmlFromXml2JsObject({
+                PMML: pmml,
+            }),
+        );
     }
-
-    return pmmlNodes;
 }
