@@ -1,4 +1,3 @@
-import { IHeader } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/header/header';
 import { ICustomHeader } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/custom/header';
 
 export function makeHeaderNode(modelName: string): ICustomHeader {
@@ -6,11 +5,9 @@ export function makeHeaderNode(modelName: string): ICustomHeader {
         $: {
             description: modelName,
         },
-        Extension: [
-            {
-                name: 'ModelName',
-                value: modelName,
-            },
-        ],
+        Extension: {
+            name: 'ModelName' as 'ModelName',
+            value: modelName,
+        },
     };
 }
