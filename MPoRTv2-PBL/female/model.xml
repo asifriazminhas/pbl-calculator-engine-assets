@@ -1,160 +1,160 @@
 <PMML>
-    <Header description="Female MPoRTv2">
+    <Header description="MPoRTv2-PBL female algorithm">
         <Extension>
             <name>ModelName</name>
-            <value>Female MPoRTv2</value>
+            <value>MPoRTv2-PBL female algorithm</value>
         </Extension>
     </Header>
     <DataDictionary numberOfFields="149">
-        <DataField name="AgeC_rcs1" displayName="Age RCS1" optype="continuous" dataType="integer"/>
-        <DataField name="AgeC_rcs2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeC_rcs3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeC_rcs4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="SmokeCurrentC_cat" displayName="Current Smoker" optype="continuous" dataType="integer"/>
-        <DataField name="SmokeFormer0to5C_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="continuous" dataType="integer"/>
-        <DataField name="SmokeFormer5PlusC_cat" displayName="Former Smoker 5+ Years Since Quit" optype="continuous" dataType="integer"/>
-        <DataField name="PackYearsC_rcs1" displayName="Packyears Smoking RCS1" optype="continuous" dataType="integer"/>
-        <DataField name="PackYearsC_rcs2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="FormerDrinkerC_cat" displayName="Former Drinker" optype="continuous" dataType="integer"/>
-        <DataField name="DrinksLastWeekC_rcs1" displayName="Drinks Last Week" optype="continuous" dataType="integer"/>
-        <DataField name="DrinksLastWeekC_rcs2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DrinksLastWeekC_rcs3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DietScore2C_rcs1" displayName="Diet" optype="continuous" dataType="integer"/>
-        <DataField name="DietScore2C_rcs2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DepIndHighC_cat" displayName="High Deprivation" optype="continuous" dataType="integer"/>
-        <DataField name="DepIndModC_cat" displayName="Average Deprivation" optype="continuous" dataType="integer"/>
-        <DataField name="EthnBlackC_cat" displayName="Black" optype="continuous" dataType="integer"/>
-        <DataField name="EthnChineseC_cat" displayName="Chinese" optype="continuous" dataType="integer"/>
-        <DataField name="EthnJapanC_cat" displayName="Japanese/Korean/South East Asian/Filipino" optype="continuous" dataType="integer"/>
-        <DataField name="EthnOtherC_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="continuous" dataType="integer"/>
-        <DataField name="EthnSAsianC_cat" displayName="South Asian/Arab/West Asian" optype="continuous" dataType="integer"/>
-        <DataField name="EduHSGrad2C_cat" displayName="High School Graduate" optype="continuous" dataType="integer"/>
-        <DataField name="EduNoHSGrad2C_cat" displayName="Less than High School" optype="continuous" dataType="integer"/>
-        <DataField name="EduSomePS2C_cat" displayName="Some Post-secondary" optype="continuous" dataType="integer"/>
-        <DataField name="PhysicalActivityC_rcs1" displayName="Physical Activity" optype="continuous" dataType="integer"/>
-        <DataField name="PhysicalActivityC_rcs2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BMIC_rcs1" displayName="BMI RCS1" optype="continuous" dataType="integer"/>
-        <DataField name="BMIC_rcs2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DiabetesC_cat" displayName="Diabetes" optype="continuous" dataType="integer"/>
-        <DataField name="HypertensionC_cat" displayName="Hypertension" optype="continuous" dataType="integer"/>
-        <DataField name="COPDC_cat" displayName="COPD" optype="continuous" dataType="integer"/>
-        <DataField name="MoodC_cat" displayName="Has a mood disorder" optype="continuous" dataType="integer"/>
-        <DataField name="ActiveCancerC_cat" displayName="Cancer " optype="continuous" dataType="integer"/>
-        <DataField name="DementiaC_cat" displayName="Dementia" optype="continuous" dataType="integer"/>
-        <DataField name="HeartDisC_cat" displayName="Heart Disease" optype="continuous" dataType="integer"/>
-        <DataField name="StrokeC_cat" displayName="Stroke" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXSmokeCurrentC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXSmokeFormer0to5C_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXSmokeFormer5PlusC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXPackYearsC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXFormerDrinkerC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXDrinksLastWeekC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXDietScore2C_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXDepIndHighC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXDepIndModC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXEduHSGrad2C_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXEduNoHSGrad2C_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXEduSomePS2C_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXPhysicalActivityC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXBMIC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXDiabetesC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXHypertensionC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXCOPDC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXMoodC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXActiveCancerC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXDementiaC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXHeartDisC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="AgeCXStrokeC_int" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Age_cont" displayName="Age" optype="continuous" dataType="integer"/>
-        <DataField name="age" displayName="Age" optype="continuous" dataType="integer"/>
-        <DataField name="SmokeCurrent_cat" displayName="Current Smoker" optype="continuous" dataType="integer"/>
-        <DataField name="smokingstat" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="SmokeFormer0to5_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="continuous" dataType="integer"/>
-        <DataField name="stopdaily2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="SmokeFormer5Plus_cat" displayName="Former Smoker 5+ Years Since Quit" optype="continuous" dataType="integer"/>
-        <DataField name="PackYears_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer"/>
-        <DataField name="dailyage" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="dailycig" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="lessdaily" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="dailyage2" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="dailycig3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="stopdaily" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="pastsmoke" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="dailyage3" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="dailycig4" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DrinksLastWeek_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer"/>
-        <DataField name="alc" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="drk" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="FormerDrinker_cat" displayName="Former Drinker" optype="continuous" dataType="integer"/>
-        <DataField name="evdk" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="EthnBlack_cat" displayName="Black" optype="continuous" dataType="integer"/>
-        <DataField name="ethn" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="EthnChinese_cat" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="EthnJapan_cat" displayName="Japanese/Korean/South East/Asian/Filipino" optype="continuous" dataType="integer"/>
-        <DataField name="EthnOther_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="continuous" dataType="integer"/>
-        <DataField name="EthnSAsian_cat" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="EduHSGrad2_cat" displayName="High School Graduate" optype="continuous" dataType="integer"/>
-        <DataField name="edu" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="EduNoHSGrad2_cat" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="EduSomePS2_cat" displayName="Some Post-secondary" optype="continuous" dataType="integer"/>
-        <DataField name="EduPSGrad2_cat" displayName="Post-secondary Graduate" optype="continuous" dataType="integer"/>
-        <DataField name="PhysicalActivity_cont" displayName="Physical Activity" optype="continuous" dataType="integer"/>
-        <DataField name="vigact" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="modact" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="ligact" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="vpa" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="mpa" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="lpa" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="weight" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="kgs" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="height" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cm" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="BMI_cont" displayName="BMI" optype="continuous" dataType="integer"/>
-        <DataField name="Diabetes_cat" displayName="Diabetes" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ001" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ002" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ003" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ004" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ005" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ006" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ007" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ008" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ009" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="cond_SQ010" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="HeartDis_cat" displayName="Heart Disease" optype="continuous" dataType="integer"/>
-        <DataField name="Stroke_cat" displayName="Stroke" optype="continuous" dataType="integer"/>
-        <DataField name="Hypertension_cat" displayName="Hypertension" optype="continuous" dataType="integer"/>
-        <DataField name="Dementia_cat" displayName="Dementia" optype="continuous" dataType="integer"/>
-        <DataField name="ActiveCancer_cat" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="COPD_cat" displayName="COPD" optype="continuous" dataType="integer"/>
-        <DataField name="Mood_cat" displayName="Has a mood disorder" optype="continuous" dataType="integer"/>
-        <DataField name="juice_cont" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="fv_juice1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="fruit_cont" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="fv_fruit1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="potato_cont" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="fv_pot1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="otherveg_cont" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="fv_veg1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="potatoadd" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="potatominus" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="s_juice" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="s_fruit" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="s_otherveg" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="s_potadd" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="s_potminus" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Positpart" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="Minusjuice" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DietScore2_cont" displayName="Diet" optype="continuous" dataType="integer"/>
-        <DataField name="AgeC_cont" displayName="Age" optype="continuous" dataType="integer"/>
-        <DataField name="PackYearsC_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer"/>
-        <DataField name="DrinksLastWeekC_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer"/>
-        <DataField name="DietScore2C_cont" displayName="Diet" optype="continuous" dataType="integer"/>
-        <DataField name="PhysicalActivityC_cont" displayName="Physical Activity" optype="continuous" dataType="integer"/>
-        <DataField name="BMIC_cont" displayName="BMI" optype="continuous" dataType="integer"/>
-        <DataField name="DepIndHighC_cat_Mutated_1" displayName="" optype="continuous" dataType="integer"/>
-        <DataField name="DepIndHigh_cat" displayName="High Deprivation" optype="continuous" dataType="integer"/>
-        <DataField name="EduPSGrad2C_cat" displayName="Post-secondary Graduate" optype="continuous" dataType="integer"/>
+        <DataField name="AgeC_rcs1" displayName="Age RCS1" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeC_rcs3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeC_rcs4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="SmokeCurrentC_cat" displayName="Current Smoker" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="SmokeFormer0to5C_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="SmokeFormer5PlusC_cat" displayName="Former Smoker 5+ Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PackYearsC_rcs1" displayName="Packyears Smoking RCS1" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PackYearsC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="FormerDrinkerC_cat" displayName="Former Drinker" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DrinksLastWeekC_rcs1" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DrinksLastWeekC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DrinksLastWeekC_rcs3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DietScore2C_rcs1" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DietScore2C_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DepIndHighC_cat" displayName="High Deprivation" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DepIndModC_cat" displayName="Average Deprivation" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnBlackC_cat" displayName="Black" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnChineseC_cat" displayName="Chinese" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnJapanC_cat" displayName="Japanese/Korean/South East Asian/Filipino" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnOtherC_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnSAsianC_cat" displayName="South Asian/Arab/West Asian" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduHSGrad2C_cat" displayName="High School Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduNoHSGrad2C_cat" displayName="Less than High School" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduSomePS2C_cat" displayName="Some Post-secondary" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PhysicalActivityC_rcs1" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PhysicalActivityC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BMIC_rcs1" displayName="BMI RCS1" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BMIC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DiabetesC_cat" displayName="Diabetes" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="HypertensionC_cat" displayName="Hypertension" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="COPDC_cat" displayName="COPD" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="MoodC_cat" displayName="Has a mood disorder" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ActiveCancerC_cat" displayName="Cancer " optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DementiaC_cat" displayName="Dementia" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="HeartDisC_cat" displayName="Heart Disease" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="StrokeC_cat" displayName="Stroke" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXSmokeCurrentC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXSmokeFormer0to5C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXSmokeFormer5PlusC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXPackYearsC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXFormerDrinkerC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXDrinksLastWeekC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXDietScore2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXDepIndHighC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXDepIndModC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXEduHSGrad2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXEduNoHSGrad2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXEduSomePS2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXPhysicalActivityC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXBMIC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXDiabetesC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXHypertensionC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXCOPDC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXMoodC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXActiveCancerC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXDementiaC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXHeartDisC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeCXStrokeC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Age_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="age" displayName="Age" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="SmokeCurrent_cat" displayName="Current Smoker" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="smokingstat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="SmokeFormer0to5_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="stopdaily2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="SmokeFormer5Plus_cat" displayName="Former Smoker 5+ Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PackYears_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="dailyage" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="dailycig" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="lessdaily" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="dailyage2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="dailycig3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="stopdaily" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="pastsmoke" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="dailyage3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="dailycig4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DrinksLastWeek_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="alc" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="drk" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="FormerDrinker_cat" displayName="Former Drinker" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="evdk" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnBlack_cat" displayName="Black" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ethn" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnChinese_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnJapan_cat" displayName="Japanese/Korean/South East/Asian/Filipino" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnOther_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EthnSAsian_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduHSGrad2_cat" displayName="High School Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="edu" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduNoHSGrad2_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduSomePS2_cat" displayName="Some Post-secondary" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduPSGrad2_cat" displayName="Post-secondary Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PhysicalActivity_cont" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="vigact" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="modact" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ligact" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="vpa" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="mpa" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="lpa" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="weight" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="kgs" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="height" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cm" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BMI_cont" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Diabetes_cat" displayName="Diabetes" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ001" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ002" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ003" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ004" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ005" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ006" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ007" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ008" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ009" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="cond_SQ010" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="HeartDis_cat" displayName="Heart Disease" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Stroke_cat" displayName="Stroke" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Hypertension_cat" displayName="Hypertension" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Dementia_cat" displayName="Dementia" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="ActiveCancer_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="COPD_cat" displayName="COPD" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Mood_cat" displayName="Has a mood disorder" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="juice_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="fv_juice1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="fruit_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="fv_fruit1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="potato_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="fv_pot1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="otherveg_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="fv_veg1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="potatoadd" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="potatominus" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="s_juice" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="s_fruit" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="s_otherveg" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="s_potadd" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="s_potminus" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Positpart" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="Minusjuice" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DietScore2_cont" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeC_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PackYearsC_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DrinksLastWeekC_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DietScore2C_cont" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="PhysicalActivityC_cont" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="BMIC_cont" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DepIndHighC_cat_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="DepIndHigh_cat" displayName="High Deprivation" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="EduPSGrad2C_cat" displayName="Post-secondary Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
     </DataDictionary>
     <LocalTransformations>
         <DefineFunction name="Center.fun">
