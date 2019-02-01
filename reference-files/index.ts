@@ -6,3 +6,10 @@ export interface IAlgorithmJson {
     timeMetric: 'days' | 'years';
     extends?: string;
 }
+
+export interface IConfigJson {
+    models: Array<{
+        name: string;
+        webSpecVersion: 'v1' | 'v2';
+    }>;
+}
