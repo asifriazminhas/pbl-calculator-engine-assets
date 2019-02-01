@@ -2,13 +2,13 @@ import { IGeneralRegressionModel } from '@ottawamhealth/pbl-calculator-engine/li
 import { IParameter } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/parameter';
 import { IPCell } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/p_cell';
 import { IPredictor } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/predictor';
-import { IAlgorithmJson } from '../reference-files';
+import { IModelConfigJson } from '../reference-files';
 const csvParse = require('csv-parse/lib/sync');
 
 export function makeGeneralRegressionModelNode(
     betasCsvString: string,
     referenceCsvString: string,
-    algorithmInfo: IAlgorithmJson,
+    modelConfig: IModelConfigJson,
 ): IGeneralRegressionModel {
     const betasCsv = csvParse(betasCsvString, {
         columns: true,
@@ -78,13 +78,13 @@ export function makeGeneralRegressionModelNode(
         Extension: [
             {
                 name: 'maximumTime',
-                value: `${algorithmInfo.maximumTime}`,
+                value: `${modelConfig.maximumTime}`,
             },
             {
                 name: 'timeMetric',
                 value: `${
-                    algorithmInfo.timeMetric
-                }` as IAlgorithmJson['timeMetric'],
+                    modelConfig.timeMetric
+                }` as IModelConfigJson['timeMetric'],
             },
         ],
     };

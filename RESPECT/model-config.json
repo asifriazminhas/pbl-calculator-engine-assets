@@ -1,5 +1,5 @@
 {
-    "algorithmName": "RESPECT",
+    "modelName": "RESPECT",
     "genderSpecific": false,
     "regressionType": "CoxRegression",
     "maximumTime": 4022,

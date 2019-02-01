@@ -1,5 +1,5 @@
-export interface IAlgorithmJson {
-    algorithmName: string;
+export interface IModelConfigJson {
+    modelName: string;
     genderSpecific: boolean;
     regressionType: 'CoxRegression';
     maximumTime: number;

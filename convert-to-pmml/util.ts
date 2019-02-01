@@ -1,4 +1,4 @@
-import { IAlgorithmJson } from '../reference-files';
+import { IModelConfigJson } from '../reference-files';
 import * as path from 'path';
 
 export function getAlgorithmNamesAndFolderPathsForModel(
@@ -12,33 +12,30 @@ export function getAlgorithmNamesAndFolderPathsForModel(
     if (modelConfig.genderSpecific) {
         return [
             {
-                name: `${modelConfig.algorithmName} male algorithm`,
+                name: `${modelConfig.modelName} male algorithm`,
                 folderPath: path.join(
                     __dirname,
-                    `../${modelConfig.algorithmName}/male`,
+                    `../${modelConfig.modelName}/male`,
                 ),
             },
             {
-                name: `${modelConfig.algorithmName} female algorithm`,
+                name: `${modelConfig.modelName} female algorithm`,
                 folderPath: path.join(
                     __dirname,
-                    `../${modelConfig.algorithmName}/female`,
+                    `../${modelConfig.modelName}/female`,
                 ),
             },
         ];
     } else {
         return [
             {
-                name: `${modelConfig.algorithmName}`,
-                folderPath: path.join(
-                    __dirname,
-                    `../${modelConfig.algorithmName}`,
-                ),
+                name: `${modelConfig.modelName}`,
+                folderPath: path.join(__dirname, `../${modelConfig.modelName}`),
             },
         ];
     }
 }
 
-export function getConfigForModel(name: string): IAlgorithmJson {
-    return require(path.join(__dirname, `../${name}/algorithm-info.json`));
+export function getConfigForModel(name: string): IModelConfigJson {
+    return require(path.join(__dirname, `../${name}/model-config.json`));
 }

@@ -1,8 +1,7 @@
 {
-    "algorithmName": "MPoRTv2-PBL",
+    "modelName": "MPoRTv2",
     "genderSpecific": true,
     "regressionType": "CoxRegression",
     "maximumTime": 5,
-    "timeMetric": "years",
-    "extends": "MPoRTv2"
+    "timeMetric": "years"
 }

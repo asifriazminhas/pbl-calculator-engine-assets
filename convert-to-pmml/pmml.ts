@@ -19,10 +19,7 @@ import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/l
 
 export async function writePMMLFilesForModel(modelName: string) {
     const modelConfig = getConfigForModel(modelName);
-    const modelFolderPath = path.join(
-        __dirname,
-        `../${modelConfig.algorithmName}`,
-    );
+    const modelFolderPath = path.join(__dirname, `../${modelConfig.modelName}`);
 
     const algorithmNamesAndFolderPaths = getAlgorithmNamesAndFolderPathsForModel(
         modelName,
