@@ -15,7 +15,7 @@
         "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }],
         "ALCOHOL": [
             { "name": "FormerDrinker_cat", "coefficent": 0 },
-            { "name": "DrinksLastWeek_cont", "coefficent": 2 }
+            { "name": "DrinksLastWeek_cont", "coefficent": 0 }
         ]
     },
     "female": {
@@ -34,7 +34,7 @@
         "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }],
         "ALCOHOL": [
             { "name": "FormerDrinker_cat", "coefficent": 0 },
-            { "name": "DrinksLastWeek_cont", "coefficent": 2 }
+            { "name": "DrinksLastWeek_cont", "coefficent": 0 }
         ]
     }
 }
