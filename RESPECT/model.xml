@@ -1751,13 +1751,15 @@
         </DerivedField>
         <DerivedField name="L1A_cat2" optype="continuous">
             <Apply function="ifelse">
-                <Apply function="equal">
-                    <FieldRef field="L1A_L1A1"/>
-                    <Constant dataType="string">Yes</Constant>
-                </Apply>
-                <Apply function="equal">
-                    <FieldRef field="L1A_L1A2"/>
-                    <Constant dataType="string">Yes</Constant>
+                <Apply function="or">
+                    <Apply function="equal">
+                        <FieldRef field="L1A_L1A1"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
+                    <Apply function="equal">
+                        <FieldRef field="L1A_L1A2"/>
+                        <Constant dataType="string">Yes</Constant>
+                    </Apply>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -1939,15 +1941,17 @@
         </DerivedField>
         <DerivedField name="IADLdiff_H1AB_formatted" optype="continuous">
             <Apply function="ifelse">
-                <Apply function="equal">
-                    <Apply function="is.na">
-                        <FieldRef field="IADLdiff_H1AB"/>
+                <Apply function="or">
+                    <Apply function="equal">
+                        <Apply function="is.na">
+                            <FieldRef field="IADLdiff_H1AB"/>
+                        </Apply>
+                        <Constant dataType="boolean">true</Constant>
                     </Apply>
-                    <Constant dataType="boolean">true</Constant>
-                </Apply>
-                <Apply function="equal">
-                    <FieldRef field="IADL_H1AB"/>
-                    <Constant dataType="string">No</Constant>
+                    <Apply function="equal">
+                        <FieldRef field="IADL_H1AB"/>
+                        <Constant dataType="string">No</Constant>
+                    </Apply>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <FieldRef field="IADLdiff_H1AB"/>
@@ -1955,15 +1959,17 @@
         </DerivedField>
         <DerivedField name="IADLdiff_H1BB_formatted" optype="continuous">
             <Apply function="ifelse">
-                <Apply function="equal">
-                    <Apply function="is.na">
-                        <FieldRef field="IADLdiff_H1BB"/>
+                <Apply function="or">
+                    <Apply function="equal">
+                        <Apply function="is.na">
+                            <FieldRef field="IADLdiff_H1BB"/>
+                        </Apply>
+                        <Constant dataType="boolean">true</Constant>
                     </Apply>
-                    <Constant dataType="boolean">true</Constant>
-                </Apply>
-                <Apply function="equal">
-                    <FieldRef field="IADL_H1BB"/>
-                    <Constant dataType="string">No</Constant>
+                    <Apply function="equal">
+                        <FieldRef field="IADL_H1BB"/>
+                        <Constant dataType="string">No</Constant>
+                    </Apply>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <FieldRef field="IADLdiff_H1BB"/>
@@ -1971,15 +1977,17 @@
         </DerivedField>
         <DerivedField name="IADdiff_H1EB_formatted" optype="continuous">
             <Apply function="ifelse">
-                <Apply function="equal">
-                    <Apply function="is.na">
-                        <FieldRef field="IADLdiff_H1EB"/>
+                <Apply function="or">
+                    <Apply function="equal">
+                        <Apply function="is.na">
+                            <FieldRef field="IADLdiff_H1EB"/>
+                        </Apply>
+                        <Constant dataType="boolean">true</Constant>
                     </Apply>
-                    <Constant dataType="boolean">true</Constant>
-                </Apply>
-                <Apply function="equal">
-                    <FieldRef field="IADL_H1EB"/>
-                    <Constant dataType="string">No</Constant>
+                    <Apply function="equal">
+                        <FieldRef field="IADL_H1EB"/>
+                        <Constant dataType="string">No</Constant>
+                    </Apply>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <FieldRef field="IADLdiff_H1EB"/>

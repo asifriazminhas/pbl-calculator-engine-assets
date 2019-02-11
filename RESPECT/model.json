@@ -296,7 +296,7 @@
                     {
                         "fieldType": 1,
                         "name": "L1A_cat2",
-                        "equation": "derived = func['ifelse'](obj['L1A_L1A1'] == 'Yes', obj['L1A_L1A2'] == 'Yes', 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['L1A_L1A1'] == 'Yes' || obj['L1A_L1A2'] == 'Yes', 1, 0);",
                         "derivedFrom": [
                             {
                                 "name": "L1A_L1A1",
@@ -584,7 +584,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADLdiff_H1AB_formatted",
-                        "equation": "derived = func['ifelse'](func['is.na'](obj['IADLdiff_H1AB']) == true, obj['IADL_H1AB'] == 'No', 0, obj['IADLdiff_H1AB']);",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['IADLdiff_H1AB']) == true || obj['IADL_H1AB'] == 'No', 0, obj['IADLdiff_H1AB']);",
                         "derivedFrom": [
                             {
                                 "name": "IADLdiff_H1AB",
@@ -606,7 +606,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADLdiff_H1BB_formatted",
-                        "equation": "derived = func['ifelse'](func['is.na'](obj['IADLdiff_H1BB']) == true, obj['IADL_H1BB'] == 'No', 0, obj['IADLdiff_H1BB']);",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['IADLdiff_H1BB']) == true || obj['IADL_H1BB'] == 'No', 0, obj['IADLdiff_H1BB']);",
                         "derivedFrom": [
                             {
                                 "name": "IADLdiff_H1BB",
@@ -628,7 +628,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADdiff_H1EB_formatted",
-                        "equation": "derived = func['ifelse'](func['is.na'](obj['IADLdiff_H1EB']) == true, obj['IADL_H1EB'] == 'No', 0, obj['IADLdiff_H1EB']);",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['IADLdiff_H1EB']) == true || obj['IADL_H1EB'] == 'No', 0, obj['IADLdiff_H1EB']);",
                         "derivedFrom": [
                             {
                                 "name": "IADLdiff_H1EB",
