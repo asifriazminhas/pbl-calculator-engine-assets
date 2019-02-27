@@ -3,12 +3,12 @@ import { IParameter } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmm
 import { IPCell } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/p_cell';
 import { IPredictor } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/predictor';
 import { IModelConfigJson } from '../reference-files';
-const csvParse = require('csv-parse/lib/sync');
+import csvParse from 'csv-parse/lib/sync';
 
 export function makeGeneralRegressionModelNode(
     betasCsvString: string,
-    referenceCsvString: string,
     modelConfig: IModelConfigJson,
+    referenceCsvString?: string,
 ): IGeneralRegressionModel {
     const betasCsv = csvParse(betasCsvString, {
         columns: true,
@@ -17,14 +17,19 @@ export function makeGeneralRegressionModelNode(
         return columnName !== 'H0_5YR';
     });
 
-    const referenceCsv: ReferenceCsv = csvParse(referenceCsvString, {
-        columns: true,
-    });
+    const referenceCsv: ReferenceCsv | undefined = referenceCsvString
+        ? csvParse(referenceCsvString, {
+              columns: true,
+          })
+        : undefined;
+
     const parameters: IParameter[] = covariateNames.map(
         (covariateName, index) => {
-            const referenceCsvRow = referenceCsv.find(({ Variable }) => {
-                return Variable === covariateName;
-            });
+            const referenceCsvRow = referenceCsv
+                ? referenceCsv.find(({ Variable }) => {
+                      return Variable === covariateName;
+                  })
+                : undefined;
 
             return {
                 $: Object.assign(
@@ -35,7 +40,9 @@ export function makeGeneralRegressionModelNode(
                     },
                     referenceCsvRow
                         ? {
-                              referencePoint: referenceCsvRow.Mean,
+                              referencePoint: referenceCsvRow
+                                  ? referenceCsvRow.Mean
+                                  : undefined,
                           }
                         : undefined,
                 ),

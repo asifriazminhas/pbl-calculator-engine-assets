@@ -50,14 +50,13 @@ export async function writePMMLFilesForModel(modelName: string) {
             }/betas.csv`,
             'utf8',
         );
-        const referenceCsvString = fs.readFileSync(
-            `${
-                parentAlgorithmFolderPath
-                    ? parentAlgorithmFolderPath
-                    : folderPath
-            }/reference.csv`,
-            'utf8',
-        );
+
+        const referenceCsvPath = `${
+            parentAlgorithmFolderPath ? parentAlgorithmFolderPath : folderPath
+        }/reference.csv`;
+        const referenceCsvString = fs.existsSync(referenceCsvPath)
+            ? fs.readFileSync(referenceCsvPath, 'utf8')
+            : undefined;
 
         const localTransformationsXmlString = fs.readFileSync(
             `${folderPath}/local-transformations.xml`,
@@ -76,8 +75,8 @@ export async function writePMMLFilesForModel(modelName: string) {
 
         const generalRegressionModel = makeGeneralRegressionModelNode(
             betasCsvString,
-            referenceCsvString,
             modelConfig,
+            referenceCsvString,
         );
 
         const webSpecificationsCsvString = fs.readFileSync(
@@ -85,20 +84,30 @@ export async function writePMMLFilesForModel(modelName: string) {
             'utf8',
         );
 
-        const pmml: IPmml = {
-            Header: makeHeaderNode(name),
-            DataDictionary: await makeDataDictionaryNode(
-                betasCsvString,
-                localTransformationsXmlString,
-                webSpecificationsCsvString,
-            ),
-            LocalTransformations:
-                localTransformationsAndTaxonomy.PMML.LocalTransformations,
-            Taxonomy: localTransformationsAndTaxonomy.PMML.Taxonomy,
-            GeneralRegressionModel: generalRegressionModel,
-            MiningSchema: constructMiningSchemaNode(webSpecificationsCsvString),
-            ...makeCustomPmmlNode(referenceCsvString, generalRegressionModel),
-        };
+        const pmml: IPmml = Object.assign(
+            {
+                Header: makeHeaderNode(name),
+                DataDictionary: await makeDataDictionaryNode(
+                    betasCsvString,
+                    localTransformationsXmlString,
+                    webSpecificationsCsvString,
+                    false,
+                ),
+                LocalTransformations:
+                    localTransformationsAndTaxonomy.PMML.LocalTransformations,
+                GeneralRegressionModel: generalRegressionModel,
+                MiningSchema: constructMiningSchemaNode(
+                    webSpecificationsCsvString,
+                ),
+                ...makeCustomPmmlNode(
+                    generalRegressionModel,
+                    referenceCsvString,
+                ),
+            },
+            localTransformationsAndTaxonomy.PMML.Taxonomy
+                ? { Taxonomy: localTransformationsAndTaxonomy.PMML.Taxonomy }
+                : undefined,
+        );
 
         fs.writeFileSync(
             `${folderPath}/model.xml`,

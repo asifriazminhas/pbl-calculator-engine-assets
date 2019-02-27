@@ -7,34 +7,145 @@ import { IApply } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/lo
 import { flatten, uniqBy } from 'lodash';
 import { parseString } from 'xml2js';
 import { promisify } from 'bluebird';
+import { VariableDetailsSheet } from '../reference-files/msw';
 const promisifiedParseString = promisify(parseString);
-
-const csvParse = require('csv-parse/lib/sync');
+import csvParse from 'csv-parse/lib/sync';
 
 export async function makeDataDictionaryNode(
     betasCsvString: string,
     localTransformationsXMLString: string,
     webSpecCsv: string,
+    isMsw: boolean,
 ): Promise<IDataDictionary> {
-    const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
-        columns: true,
-    });
+    if (isMsw) {
+        const webSpec: VariableDetailsSheet = csvParse(webSpecCsv, {
+            columns: true,
+        });
 
-    const betasCsv: Array<{
-        [index: string]: string;
-    }> = csvParse(betasCsvString, {
-        columns: true,
-    });
-    const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
-        .filter(columnName => {
-            return columnName !== 'H0_5YR';
-        })
-        .map(covariateName => {
-            const webSpecRow = findWebSpecRowForName(webSpec, covariateName);
+        const betasCsv: Array<{
+            [index: string]: string;
+        }> = csvParse(betasCsvString, {
+            columns: true,
+        });
+        const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
+            .filter(columnName => {
+                return columnName !== 'H0_5YR';
+            })
+            .map(covariateName => {
+                const webSpecRow = webSpec.find(webSpecRow => {
+                    return webSpecRow.variable_start === covariateName;
+                });
+
+                return {
+                    $: {
+                        name: covariateName,
+                        displayName: webSpecRow
+                            ? webSpecRow.variable_short_label_start
+                            : '',
+                        optype: 'continuous' as 'continuous',
+                        dataType: 'integer',
+                        // TODO Fix this
+                        'X-shortLabel': webSpecRow
+                            ? webSpecRow.variable_short_label_start
+                            : '',
+                    },
+                    Extension: [],
+                };
+            });
+
+        const localTransformations: {
+            PMML: { LocalTransformations: ILocalTransformations };
+        } = await promisifiedParseString(localTransformationsXMLString, {
+            explicitArray: false,
+            explicitChildren: true,
+            preserveChildrenOrder: true,
+        });
+        const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
+            localTransformations.PMML.LocalTransformations,
+        ).map(dataFieldName => {
+            const webSpecRow = webSpec.find(({ variable }) => {
+                return variable === dataFieldName;
+            });
 
             return {
                 $: {
-                    name: covariateName,
+                    name: dataFieldName,
+                    displayName: webSpecRow
+                        ? webSpecRow.variable_short_label_start
+                        : '',
+                    optype: 'continuous' as 'continuous',
+                    dataType: 'integer',
+                    // TODO Fix this
+                    'X-shortLabel': webSpecRow
+                        ? webSpecRow.variable_short_label_start
+                        : '',
+                },
+                Extension: [],
+            };
+        });
+
+        const dataFields = uniqBy(
+            betaDataFields.concat(localTransformationDataFields),
+            dataField => {
+                return dataField.$.name;
+            },
+        );
+
+        return {
+            DataField: dataFields,
+            $: {
+                numberOfFields: `${dataFields.length}`,
+            },
+        };
+    } else {
+        const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
+            columns: true,
+        });
+
+        const betasCsv: Array<{
+            [index: string]: string;
+        }> = csvParse(betasCsvString, {
+            columns: true,
+        });
+        const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
+            .filter(columnName => {
+                return columnName !== 'H0_5YR';
+            })
+            .map(covariateName => {
+                const webSpecRow = webSpec.find(({ Name }) => {
+                    return Name === covariateName;
+                });
+
+                return {
+                    $: {
+                        name: covariateName,
+                        displayName: webSpecRow ? webSpecRow.displayName : '',
+                        optype: 'continuous' as 'continuous',
+                        dataType: 'integer',
+                        // TODO Fix this
+                        'X-shortLabel': '',
+                    },
+                    Extension: [],
+                };
+            });
+
+        const localTransformations: {
+            PMML: { LocalTransformations: ILocalTransformations };
+        } = await promisifiedParseString(localTransformationsXMLString, {
+            explicitArray: false,
+            explicitChildren: true,
+            preserveChildrenOrder: true,
+        });
+        const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
+            localTransformations.PMML.LocalTransformations,
+        ).map(dataFieldName => {
+            const webSpecRow = webSpec.find(({ Name }) => {
+                return Name === dataFieldName;
+            });
+
+            return {
+                $: {
+                    name: dataFieldName,
                     displayName: webSpecRow ? webSpecRow.displayName : '',
                     optype: 'continuous' as 'continuous',
                     dataType: 'integer',
@@ -45,44 +156,20 @@ export async function makeDataDictionaryNode(
             };
         });
 
-    const localTransformations: {
-        PMML: { LocalTransformations: ILocalTransformations };
-    } = await promisifiedParseString(localTransformationsXMLString, {
-        explicitArray: false,
-        explicitChildren: true,
-        preserveChildrenOrder: true,
-    });
-    const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
-        localTransformations.PMML.LocalTransformations,
-    ).map(dataFieldName => {
-        const webSpecRow = findWebSpecRowForName(webSpec, dataFieldName);
+        const dataFields = uniqBy(
+            betaDataFields.concat(localTransformationDataFields),
+            dataField => {
+                return dataField.$.name;
+            },
+        );
 
         return {
+            DataField: dataFields,
             $: {
-                name: dataFieldName,
-                displayName: webSpecRow ? webSpecRow.displayName : '',
-                optype: 'continuous' as 'continuous',
-                dataType: 'integer',
-                // TODO Fix this
-                'X-shortLabel': '',
+                numberOfFields: `${dataFields.length}`,
             },
-            Extension: [],
         };
-    });
-
-    const dataFields = uniqBy(
-        betaDataFields.concat(localTransformationDataFields),
-        dataField => {
-            return dataField.$.name;
-        },
-    );
-
-    return {
-        DataField: dataFields,
-        $: {
-            numberOfFields: `${dataFields.length}`,
-        },
-    };
+    }
 }
 
 function getDataFieldNamesFromLocalTransformationsNode(
@@ -137,12 +224,6 @@ function getDataFieldNamesFromApplyNode(apply: IApply): string[] {
               }),
           )
         : [];
-}
-
-function findWebSpecRowForName(webSpec: WebSpecV2Csv, name: string) {
-    return webSpec.find(webSpecRow => {
-        return webSpecRow.Name === name;
-    });
 }
 
 interface WebSpecV2CsvRow {

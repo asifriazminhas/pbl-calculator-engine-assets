@@ -1,10 +1,10 @@
 import { IGeneralRegressionModel } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/general_regression_model';
 import { IRestrictedCubicSpline } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/custom/restricted_cubic_spline';
-const csvParse = require('csv-parse/lib/sync');
+import csvParse from 'csv-parse/lib/sync';
 
 export function makeCustomPmmlNode(
-    referenceCsvString: string,
     generalRegressionModel: IGeneralRegressionModel,
+    referenceCsvString?: string,
 ): {
     CustomPMML: {
         RestrictedCubicSpline: IRestrictedCubicSpline;
@@ -13,9 +13,33 @@ export function makeCustomPmmlNode(
     const referenceCsv: Array<{
         Variable: string;
         [index: string]: string;
-    }> = csvParse(referenceCsvString, {
-        columns: true,
-    });
+    }> = referenceCsvString
+        ? csvParse(referenceCsvString, {
+              columns: true,
+          })
+        : undefined;
+
+    return {
+        CustomPMML: Object.assign(
+            {},
+            constructRestrictedCubicSplineNode(
+                generalRegressionModel,
+                referenceCsv,
+            ),
+        ),
+    };
+}
+
+function constructRestrictedCubicSplineNode(
+    generalRegressionModel: IGeneralRegressionModel,
+    referenceCsv?: Array<{
+        Variable: string;
+        [index: string]: string;
+    }>,
+) {
+    if (referenceCsv === undefined) {
+        return undefined;
+    }
 
     const referenceRowsWithKnots = referenceCsv.filter(referenceCsvRow => {
         return referenceCsvRow['Knot1'].trim() !== '';
@@ -61,19 +85,17 @@ export function makeCustomPmmlNode(
     );
 
     return {
-        CustomPMML: {
-            RestrictedCubicSpline: {
-                PCell: parameterNamesAndKnots.map(
-                    ({ parameterNames, knotsLocations }) => {
-                        return {
-                            $: {
-                                parameterName: parameterNames.join(', '),
-                                knotLocations: knotsLocations.join(', '),
-                            },
-                        };
-                    },
-                ),
-            },
+        RestrictedCubicSpline: {
+            PCell: parameterNamesAndKnots.map(
+                ({ parameterNames, knotsLocations }) => {
+                    return {
+                        $: {
+                            parameterName: parameterNames.join(', '),
+                            knotLocations: knotsLocations.join(', '),
+                        },
+                    };
+                },
+            ),
         },
     };
 }
