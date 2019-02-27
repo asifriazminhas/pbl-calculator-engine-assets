@@ -1,0 +1,44 @@
+Variable,Category Value,Category Label,Category Description
+AlcoholHeavy_cat,1,Heavy drinker,Males: >21 drinks/week; Females: >14 drinks/week
+,0,Else,Else
+AlcoholMod_cat,1,Moderate drinker,Males: 4-21 drinks/week; Females: 3 to 14 drinks/week
+,0,Else,Else
+Cancer_cat,1,Has cancer,
+,0,Does not have cancer,
+DepIndHigh_cat,1,High neighbourhood deprivation,4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)
+,0,Else,Else
+DepIndMod_cat,1,Moderate neighbourhood deprivation,3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)
+,0,Else,Else
+Diabetes_cat,1,Has diabetes,
+,0,Does not have diabetes,
+EduHSGrad_cat,1,High school graduate,
+,0,Else,
+EduNoGrad_cat,1,Less than high school graduation,
+,0,Else,
+HeartDis_cat,1,Has heart disease,
+,0,Does not have heart disease,
+Immig0to15_cat,1,Immigrated <15 years,
+,0,Else,
+Immig16to30_cat,1,Immigrated 16 to 30 years,
+,0,Else,
+Immig31to45_cat,1,Immigrated 31 to 45 years,
+,0,Else,
+Stroke_cat,1,Suffers from effects of a previous stroke,
+,0,Does not suffer from the effects of a previous stroke,
+SmokeType,0,Non-smoker,Never smoked OR Formal occasional smoker with <100 lifetime cigarettes
+,1,Former light smoker,Former daily smoker (<20 cigarettes/day) OR Former occasional smoker with 100+ lifetime cigarettes; Non-smoker now
+,2,Former heavy smoker,Former daily smoker (20+ cigarettes/day); Non-smoker now
+,3,Current light smoker,Currently daily smoker (< 20 cigarettes/day) OR Current occasional smoker
+,4,Current heavy smoker,Current daily smoker (20+ cigarettes/day)
+AlcoholType,0,Non/light drinker,Males: <4 drinks/week; Females: <3 drinks/week
+,1,Moderate drinker,Males: 4-21 drinks/week; Females: 3 to 14 drinks/week
+,2,Heavy drinker,Males: >21 drinks/week; Females: >14 drinks/week
+DepInd,0,Low level of neighbourhood deprivation,1st or 2nd quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)
+,1,Moderate level of neighbourhood deprivation,3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)
+,2,High level of neighbourhood deprivation,4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)
+Edu,0,Post-secondary school graduate,
+,1,High school graduate,
+,2,Less than high school education,
+ImEth,0,Non-immigrant or >45 years in Canada,
+,1,Immigrated <15 years,
+,2,Immigrated 16 to 30 years,

@@ -1,0 +1,42 @@
+Name,displayName,displayValue,order,variableUse,Recommended,variableType,usageType,Units,ValidCat (for _xc),UserMin_male,UserMax_male,UserMin_female,UserMax_female,Recommended
+Age,Age,Age,1,Input,MPoRT,continuous,active,Years,NA,20,79,20,79,Yes
+Age_spine,Age Spline,"Age Spline- Units above 80, 0 if 80 or less",2,Input,,continuous,active,Years,NA,NA,NA,,,
+QSLight_df,Light smoker function,Time varying function for light current and light former smokers,3,Input,,continuous,active,NA,NA,NA,NA,,,
+QSHeavy_df,Heavy smoker function,Time varying function for heavy current and heavy former smokers,4,Input,,continuous,active,NA,NA,NA,NA,,,
+AlcoholHeavy_cat,Heavy alcohol,Heavy drinker- Dummy variable,7,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+AlcoholLight,Light alcohol,Light or non-drinker,5,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+AlcoholMod_cat,Mod. alcohol,Moderate drinker- Dummy variable,6,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+BMI,BMI,Body mass index,,Input,MPoRT,continuous,active,kg/m2,NA,0,85.2,0,67.35,Yes
+BMI_spline,BMI Spline,"Body mass index spline- Units above 35, 0 if 35 or less",20,Input,,continuous,active,kg/m2,NA,NA,NA,,,
+Cancer_cat,Cancer,Has cancer- Dummy variable,21,Input,MPoRT,categorical,active,NA,"[1,0]",NA,NA,,,Yes
+CancerNo ,No cancer,Does not have cancer,22,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+DepIndHigh_cat,High deprivation,High level of neighbourhood deprivation- Dummy variable,13,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+DepIndLow_cat,Low deprivation,Low level of neighbourhood deprivation,15,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+DepIndMod_cat,Average deprivation,Moderate level of neightbourhood deprivation- Dummy variable,14,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+Diabetes_cat,Diabetes,Has diabetes- Dummy variable,23,Input,MPoRT,categorical,active,NA,"[1,0]",NA,NA,,,Yes
+DiabetesNo ,No diabetes,Does not have diabetes,24,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+DietScore,Diet,Diet score,,Input,MPoRT,continuous,active,NA,NA,0,10,0,10,Yes
+DietScore_cont,Diet,Final diet score,8,Input,,continuous,active,NA,NA,0,10,0,10,
+EduHSGrad_cat,High school,High school graduate- Dummy variable,11,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+EduNoGrad_cat,<High school,Less than high school education- Dummy variable,12,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+EduPSGrad,Post-secondary ,Post-secondary school graduate,10,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+HeartDis_cat,Heart disease,Has heart disease- Dummy variable,25,Input,MPoRT,categorical,active,NA,"[1,0]",NA,NA,,,Yes
+HeartDisNo,No heart disease,Does not have heart disease,26,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+Immig0to15_cat,Immigrate <15y,Immigranted <15 years- Dummy variable,19,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+Immig16to30_cat,Immigrate 15-30y,Immigranted 16 to 30 years- Dummy variable,18,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+Immig31to45_cat,Immigrate 31-45y,Immigranted 31 to 45 years- Dummy variable,17,Input,,categorical,active,NA,"[1,0]",NA,NA,,,
+ImEthNon,Non/late-immigrant,Non-immigrant or >45 years in Canada,16,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+QSHeavyCont_df,Heavy smoker,Time-varying function for current heavy and former heavy smoker,,Input,,continuous,active,NA,NA,0,1,0,1,
+QSLightCont_df,Light smoker,Time-varying function for current light and former light smoker,,Input,,continuous,active,NA,NA,0,1,0,1,
+Stroke_cat,Stroke,Suffers from effects of a previous stroke- Dummy variable,,Input,,categorical,active,NA,"[1,0]",NA,NA,,,Yes
+StrokeNo ,No stroke,Does not suffer from a previous stroke,,Reference,,categorical,supplementary,NA,NA,NA,NA,,,
+SmokeType,Smoking Status,Type of smoker,,Input,MPoRT,categorical,active,NA,[0:4],0,NA,,,Yes
+QuitTime,Smoking Quit Time,"Time since quitting smoking. For current and non-smokers, leave missing",,Input,MPoRT,continuous,active,years,NA,0,Age_cont - 5,0,Age_cont - 5,Yes
+AlcoholType,Alcohol Status,Type of drinker,,Input,MPoRT,categorical,active,NA,[0:2],NA,NA,,,Yes
+DepInd,Deprivation Level,Neighbourhood deprivation level,,Input,MPoRT,categorical,active,NA,[0:2],NA,NA,,,Yes
+Edu,Education Level,Highest level of education received,,Input,MPoRT,categorical,active,NA,[0:2],NA,NA,,,Yes
+ImEth,Immigrant Status,Immigrant status,,Input,MPoRT,categorical,active,NA,[0:3],NA,NA,,,Yes
+PhysicalActivity,Activity,Average daily leisure time energy expenditure in METs,,Input,MPoRT,continuous,active,METs/day,NA,0,10,0,10,Yes
+PhysicalActivity_cont,Activity,Average daily leisure time energy expenditure in METs- log transformed,9,Input,,continuous,active,log(METs/day),NA,0,2,0,2,
+CancerAge_Int,Cancer Age Int,Cancer interaction with continuous age,27,Input,,continuous,active,NA,NA,0,79,0,79,
+DiabetesAge_Int,Diabetes Age Int,Diabetes interaction with continuous age,28,Input,,continuous,active,NA,NA,0,79,0,79,
