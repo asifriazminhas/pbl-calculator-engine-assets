@@ -1,23 +1,36 @@
 {
-  "name": "@ottawamhealth/pbl-calculator-engine-assets",
-  "version": "1.7.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "ts-node ./build.ts",
-    "prepublish": "npm run build"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/csv-parse": "^1.1.11",
-    "@types/node": "8.0.27",
-    "ts-node": "3.3.0",
-    "tslib": "1.7.1",
-    "typescript": "2.6.1"
-  },
-  "dependencies": {
-    "@ottawamhealth/pbl-calculator-engine": "^1.5.0",
-    "csv-parse": "^2.0.4"
-  }
+    "name": "@ottawamhealth/pbl-calculator-engine-assets",
+    "version": "1.7.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "ts-node ./build/index.ts",
+        "test": "ts-node node_modules/tape/bin/tape -r source-map-support/register  tests/**/*.spec.ts | tap-spec",
+        "convert-to-pmml": "ts-node ./convert-to-pmml/index.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/bluebird": "3.5.25",
+        "@types/chai": "4.1.7",
+        "@types/csv-parse": "1.1.12",
+        "@types/lodash": "4.14.121",
+        "@types/node": "8.0.27",
+        "@types/tape": "4.2.33",
+        "@types/xml2js": "0.4.3",
+        "babel-polyfill": "6.26.0",
+        "bluebird": "3.5.3",
+        "chai": "4.2.0",
+        "lodash": "4.17.11",
+        "tap-spec": "5.0.0",
+        "tape": "4.10.1",
+        "ts-node": "8.0.2",
+        "tslib": "1.7.1",
+        "typescript": "3.3.3333",
+        "xml2js": "0.4.19"
+    },
+    "dependencies": {
+        "@ottawamhealth/pbl-calculator-engine": "1.11.5",
+        "csv-parse": "^2.0.4"
+    }
 }
