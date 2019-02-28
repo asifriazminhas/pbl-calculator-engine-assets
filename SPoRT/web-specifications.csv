@@ -1,0 +1,26 @@
+Name,displayName,variableUse,Recommended,variableType,usageType,Units,ValidCat (for _xc),UserMin_female,UserMax_female,UserMin_male,UserMax_male
+Age ,Age,Input,,continuous,active,Years,NA,20,85,20,85
+PackYears ,Pack years,Input,,continuous,active,Pack years,NA,0,51.25,0,67.6
+SmokeNever,Never smoker,Reference,,continuous,supplementary,NA,NA,NA,NA,,
+SmokeFormer5plus_cat,Former smoker: quit 5 or more years,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+SmokeFormer0to5_cat,Former smoker: quit less than 5 years,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+SmokeCurrent_cat,Current smoker,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+DrinksLastWeek ,Number of drinks in past week,Input,,continuous,active,Drinks/Week,NA,0,14,0,31
+FormerDrinkerNo,Not a former drinker,Reference,,continuous,supplementary,NA,"[1,0]",NA,NA,,
+FormerDrinker_cat,Former drinker,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+FruitVeg ,Average daily consumption of fruit & vegetables,Input,,continuous,active,Times/day,NA,0.7,9.9,0.4,8
+PhysicalActivity ,Average daily leisure time energy expenditure in METs,Input,,continuous,active,METs/day,NA,0,6.9,,
+BMI,Body mass index = weight in kg divided by height in m2,Input,,continuous,active,kg/m2,NA,18.16,38.87,19.77,37
+DiabetesNo ,Does not have diabetes,Reference,,continuous,supplementary,NA,NA,NA,NA,,
+Diabetes_cat,Has diabetes,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+HypertensionNo ,Does not have hypertension,Reference,,continuous,supplementary,NA,NA,NA,NA,,
+Hypertension_cat,Has hypertension,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+EduNoHSGrad2,Less than high school education,Reference,,continuous,supplementary,NA,NA,NA,NA,,
+EduHSGrad2_cat,High school graduate,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+EduSomePS2_cat,Some post-secondary education,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+EduPSGrad2_cat,Post-secondary school graduate,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+SurveyCycle2_cat,Canadian Community Health Survey cycle 2.1,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+SurveyCycle3_cat,Canadian Community Health Survey cycle 3.1,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+SurveyCycle4_cat,Canadian Community Health Survey cycle 4.1,Input,,continuous,active,NA,"[1,0]",NA,NA,,
+Potato ,Average daily consumption of potatoes,Input,,continuous,active,Times/day,NA,,,0,1
+Juice ,Average daily consumption of juice,Input,,continuous,active,Times/day,NA,,,0,3
