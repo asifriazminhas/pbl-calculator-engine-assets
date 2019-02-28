@@ -1,0 +1,11 @@
+﻿Variable,Minimum,Maximum,Mean,Knot1
+age,20,79,,
+BMI,0,67.35,,
+DietScore,0,10,,
+DietScore_cont,0,10,,
+QSHeavyCont_df,0,1,,
+QSLightCont_df,0,1,,
+PhysicalActivity,0,10,,
+PhysicalActivity_cont,0,2,,
+CancerAge_Int,0,79,,
+DiabetesAge_Int,0,79,,
