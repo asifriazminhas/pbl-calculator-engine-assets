@@ -20,6 +20,7 @@ export async function makeDataDictionaryNode(
     betasCsvString: string,
     localTransformationsXMLString: string,
     webSpecCsv: string,
+    referenceCsvString: string,
     isMsw: boolean,
     webSpecCategoriesCsv?: string,
 ): Promise<IDataDictionary> {
@@ -120,6 +121,14 @@ export async function makeDataDictionaryNode(
               })
             : undefined;
 
+        const referenceCsv: Array<{
+            Variable: string;
+            Minimum: string;
+            Maximum: string;
+        }> = csvParse(referenceCsvString, {
+            columns: true,
+        });
+
         const betasCsv: Array<{
             [index: string]: string;
         }> = csvParse(betasCsvString, {
@@ -162,13 +171,11 @@ export async function makeDataDictionaryNode(
                         ),
                     ) as ICategoricalDataField;
                 } else {
-                    return Object.assign({}, baseDataField, {
-                        Interval: {
-                            $: {
-                                closure: 'closedClosed',
-                            },
-                        },
-                    }) as IContinuousDataField;
+                    return Object.assign(
+                        {},
+                        baseDataField,
+                        constructIntervalNode(covariateName, referenceCsv),
+                    ) as IContinuousDataField;
                 }
             });
 
@@ -212,13 +219,11 @@ export async function makeDataDictionaryNode(
                     ),
                 ) as ICategoricalDataField;
             } else {
-                return Object.assign({}, baseDataField, {
-                    Interval: {
-                        $: {
-                            closure: 'closedClosed',
-                        },
-                    },
-                }) as IContinuousDataField;
+                return Object.assign(
+                    {},
+                    baseDataField,
+                    constructIntervalNode(dataFieldName, referenceCsv),
+                ) as IContinuousDataField;
             }
         });
 
@@ -355,4 +360,40 @@ function constructValuesNodeForVariable(
             };
         }),
     };
+}
+
+function constructIntervalNode(
+    variableName: string,
+    referenceCsv: Array<{
+        Variable: string;
+        Minimum: string;
+        Maximum: string;
+    }>,
+) {
+    const referenceCsvRow = referenceCsv.find(({ Variable }) => {
+        return variableName === Variable;
+    });
+
+    if (!referenceCsvRow) {
+        console.warn(
+            `No reference row found for variable ${variableName}. Interval margins being set infinity`,
+        );
+        return {
+            Interval: {
+                $: {
+                    closure: 'closedClosed',
+                },
+            },
+        };
+    } else {
+        return {
+            Interval: {
+                $: {
+                    closure: 'openOpen',
+                    leftMargin: referenceCsvRow.Minimum,
+                    rightMargin: referenceCsvRow.Maximum,
+                },
+            },
+        };
+    }
 }

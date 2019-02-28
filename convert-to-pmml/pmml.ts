@@ -54,9 +54,7 @@ export async function writePMMLFilesForModel(modelName: string) {
         const referenceCsvPath = `${
             parentAlgorithmFolderPath ? parentAlgorithmFolderPath : folderPath
         }/reference.csv`;
-        const referenceCsvString = fs.existsSync(referenceCsvPath)
-            ? fs.readFileSync(referenceCsvPath, 'utf8')
-            : undefined;
+        const referenceCsvString = fs.readFileSync(referenceCsvPath, 'utf8');
 
         const localTransformationsXmlString = fs.readFileSync(
             `${folderPath}/local-transformations.xml`,
@@ -98,6 +96,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                     betasCsvString,
                     localTransformationsXmlString,
                     webSpecificationsCsvString,
+                    referenceCsvString,
                     false,
                     webSpecificationCategoriesCsvString,
                 ),
