@@ -84,6 +84,13 @@ export async function writePMMLFilesForModel(modelName: string) {
             'utf8',
         );
 
+        const webSpecCategoriesPath = `${modelFolderPath}/web-specifications-categories.csv`;
+        const webSpecificationCategoriesCsvString = fs.existsSync(
+            webSpecCategoriesPath,
+        )
+            ? fs.readFileSync(webSpecCategoriesPath, 'utf8')
+            : undefined;
+
         const pmml: IPmml = Object.assign(
             {
                 Header: makeHeaderNode(name),
@@ -92,6 +99,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                     localTransformationsXmlString,
                     webSpecificationsCsvString,
                     false,
+                    webSpecificationCategoriesCsvString,
                 ),
                 LocalTransformations:
                     localTransformationsAndTaxonomy.PMML.LocalTransformations,

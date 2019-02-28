@@ -1,5 +1,10 @@
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
-import { IDataField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
+import {
+    IDataField,
+    IValue,
+    IContinuousDataField,
+    ICategoricalDataField,
+} from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
 import { IDerivedField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/derived_field';
 import { IFieldRef } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/common';
@@ -16,6 +21,7 @@ export async function makeDataDictionaryNode(
     localTransformationsXMLString: string,
     webSpecCsv: string,
     isMsw: boolean,
+    webSpecCategoriesCsv?: string,
 ): Promise<IDataDictionary> {
     if (isMsw) {
         const webSpec: VariableDetailsSheet = csvParse(webSpecCsv, {
@@ -101,6 +107,18 @@ export async function makeDataDictionaryNode(
         const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
             columns: true,
         });
+        const webSpecCategories:
+            | Array<{
+                  Variable: string;
+                  'Category Value': string;
+                  'Category Label': string;
+                  'Category Description': string;
+              }>
+            | undefined = webSpecCategoriesCsv
+            ? csvParse(webSpecCategoriesCsv, {
+                  columns: true,
+              })
+            : undefined;
 
         const betasCsv: Array<{
             [index: string]: string;
@@ -116,17 +134,42 @@ export async function makeDataDictionaryNode(
                     return Name === covariateName;
                 });
 
-                return {
+                const baseDataField = {
                     $: {
                         name: covariateName,
                         displayName: webSpecRow ? webSpecRow.displayName : '',
-                        optype: 'continuous' as 'continuous',
                         dataType: 'integer',
+                        optype: webSpecRow
+                            ? webSpecRow.variableType
+                            : 'continuous',
                         // TODO Fix this
                         'X-shortLabel': '',
                     },
                     Extension: [],
                 };
+
+                if (
+                    baseDataField.$.optype === 'categorical' &&
+                    webSpecRow &&
+                    webSpecCategories
+                ) {
+                    return Object.assign(
+                        {},
+                        baseDataField,
+                        constructValuesNodeForVariable(
+                            webSpecRow,
+                            webSpecCategories,
+                        ),
+                    ) as ICategoricalDataField;
+                } else {
+                    return Object.assign({}, baseDataField, {
+                        Interval: {
+                            $: {
+                                closure: 'closedClosed',
+                            },
+                        },
+                    }) as IContinuousDataField;
+                }
             });
 
         const localTransformations: {
@@ -143,17 +186,40 @@ export async function makeDataDictionaryNode(
                 return Name === dataFieldName;
             });
 
-            return {
+            const baseDataField = {
                 $: {
                     name: dataFieldName,
                     displayName: webSpecRow ? webSpecRow.displayName : '',
-                    optype: 'continuous' as 'continuous',
+                    optype: webSpecRow ? webSpecRow.variableType : 'continuous',
                     dataType: 'integer',
                     // TODO Fix this
                     'X-shortLabel': '',
                 },
                 Extension: [],
             };
+
+            if (
+                baseDataField.$.optype === 'categorical' &&
+                webSpecRow &&
+                webSpecCategories
+            ) {
+                return Object.assign(
+                    {},
+                    baseDataField,
+                    constructValuesNodeForVariable(
+                        webSpecRow,
+                        webSpecCategories,
+                    ),
+                ) as ICategoricalDataField;
+            } else {
+                return Object.assign({}, baseDataField, {
+                    Interval: {
+                        $: {
+                            closure: 'closedClosed',
+                        },
+                    },
+                }) as IContinuousDataField;
+            }
         });
 
         const dataFields = uniqBy(
@@ -233,6 +299,60 @@ interface WebSpecV2CsvRow {
     UserMax_male: string;
     UserMax_female: string;
     displayName: string;
-    variableType: 'Continuous' | 'Categorical';
+    variableType: 'continuous' | 'categorical';
 }
 type WebSpecV2Csv = WebSpecV2CsvRow[];
+
+interface IWebSpecCategories {
+    Variable: string;
+    'Category Value': string;
+    'Category Label': string;
+    'Category Description': string;
+}
+type WebSpecCategories = IWebSpecCategories[];
+
+function constructValuesNodeForVariable(
+    webSpecRow: WebSpecV2CsvRow,
+    webSpecCategories: WebSpecCategories,
+):
+    | {
+          Value: IValue[];
+      }
+    | undefined {
+    if (webSpecRow.variableType === 'continuous') {
+        return undefined;
+    }
+
+    const variableName = webSpecRow.Name;
+
+    const categoriesFound = [];
+    // The web spec categories Variable columns are not all filled. The first category for a variable has it's Variable column filled but the remaining ones are empty until the categories for the next variable starts
+    for (const category of webSpecCategories) {
+        // Found start category for this variable
+        if (category.Variable === variableName) {
+            categoriesFound.push(category);
+        } else if (categoriesFound.length >= 1 && category.Variable === '') {
+            //If we have already added a category and the Variable is empty then this is still a category for the variable we are looking for
+            categoriesFound.push(category);
+        } else if (categoriesFound.length !== 0) {
+            // Otherwise we have reached the categories for the next variable so break
+            break;
+        }
+    }
+
+    if (categoriesFound.length === 0) {
+        console.warn(`No categories found for variable ${variableName}`);
+    }
+
+    return {
+        Value: categoriesFound.map(category => {
+            return {
+                $: {
+                    value: category['Category Value'],
+                    displayName: category['Category Label'],
+                    description: category['Category Description'],
+                },
+            };
+        }),
+    };
+}
