@@ -38,11 +38,9 @@ export function makeGeneralRegressionModelNode(
                         name: `p${index}`,
                         label: covariateName,
                     },
-                    referenceCsvRow
+                    referenceCsvRow && referenceCsvRow.Mean
                         ? {
-                              referencePoint: referenceCsvRow
-                                  ? referenceCsvRow.Mean
-                                  : undefined,
+                              referencePoint: referenceCsvRow.Mean,
                           }
                         : undefined,
                 ),
