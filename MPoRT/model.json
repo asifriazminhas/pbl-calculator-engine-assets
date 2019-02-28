@@ -12,6 +12,7 @@
                         "derivedFrom": [
                             {
                                 "name": "age",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -19,6 +20,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -28,6 +30,7 @@
                         "derivedFrom": ["Age_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -37,6 +40,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkm",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -44,6 +48,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -53,6 +58,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkt",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -60,6 +66,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -69,6 +76,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkw",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -76,6 +84,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -85,6 +94,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkr",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -92,6 +102,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -101,6 +112,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkf",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -108,6 +120,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -117,6 +130,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksa",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -124,6 +138,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -133,6 +148,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -140,6 +156,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -156,6 +173,7 @@
                             "drk_drksu2",
                             {
                                 "name": "dany",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -163,6 +181,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -172,6 +191,7 @@
                         "derivedFrom": ["DrinksLastWeek"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -181,12 +201,14 @@
                         "derivedFrom": [
                             {
                                 "name": "db",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "dany",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -201,6 +223,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -211,6 +234,7 @@
                             "Binge",
                             {
                                 "name": "dany",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -219,6 +243,23 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "0",
+                                "displayValue": "Non/light drinker",
+                                "description": "Males: <4 drinks/week; Females: <3 drinks/week"
+                            },
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate drinker",
+                                "description": "Males: 4-21 drinks/week; Females: 3 to 14 drinks/week"
+                            },
+                            {
+                                "value": "2",
+                                "displayValue": "Heavy drinker",
+                                "description": "Males: >21 drinks/week; Females: >14 drinks/week"
+                            }
+                        ],
                         "metadata": {
                             "label": "Alcohol Status",
                             "shortLabel": ""
@@ -231,6 +272,18 @@
                         "derivedFrom": ["AlcoholType"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate drinker",
+                                "description": "Males: 4-21 drinks/week; Females: 3 to 14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "Mod. alcohol",
                             "shortLabel": ""
@@ -243,6 +296,18 @@
                         "derivedFrom": ["AlcoholType"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Heavy drinker",
+                                "description": "Males: >21 drinks/week; Females: >14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "Heavy alcohol",
                             "shortLabel": ""
@@ -255,12 +320,14 @@
                         "derivedFrom": [
                             {
                                 "name": "stpn",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "stpny",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -268,6 +335,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": {
                             "label": "Smoking Quit Time",
                             "shortLabel": ""
@@ -280,30 +348,35 @@
                         "derivedFrom": [
                             {
                                 "name": "smk",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "evd",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "s100",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayf",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayd",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -311,6 +384,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -322,12 +396,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -335,6 +411,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -342,6 +419,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": {
                             "label": "Light smoker",
                             "shortLabel": ""
@@ -356,12 +434,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -369,6 +449,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -376,6 +457,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": {
                             "label": "Heavy smoker",
                             "shortLabel": ""
@@ -388,12 +470,14 @@
                         "derivedFrom": [
                             {
                                 "name": "frt",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "frtu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -401,6 +485,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -410,12 +495,14 @@
                         "derivedFrom": [
                             {
                                 "name": "sal",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "salu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -423,6 +510,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -432,12 +520,14 @@
                         "derivedFrom": [
                             {
                                 "name": "pot",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "potu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -445,6 +535,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -454,12 +545,14 @@
                         "derivedFrom": [
                             {
                                 "name": "car",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "caru",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -467,6 +560,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -476,12 +570,14 @@
                         "derivedFrom": [
                             {
                                 "name": "veg",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "vegu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -489,6 +585,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -498,12 +595,14 @@
                         "derivedFrom": [
                             {
                                 "name": "jui",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "juiu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -511,6 +610,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -526,6 +626,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -535,6 +636,7 @@
                         "derivedFrom": ["FruitVeg"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -544,6 +646,7 @@
                         "derivedFrom": ["dpotato"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -553,6 +656,7 @@
                         "derivedFrom": ["dcarrot"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -562,6 +666,7 @@
                         "derivedFrom": ["djuice"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -576,6 +681,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -585,6 +691,7 @@
                         "derivedFrom": ["DietScore"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -594,18 +701,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa1",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa1",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa1",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -613,6 +723,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -622,18 +733,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa2",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa2",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa2",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -641,6 +755,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -650,18 +765,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa3",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa3",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa3",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -669,6 +787,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -678,18 +797,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa4",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa4",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa4",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -697,6 +819,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -706,18 +829,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa5",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa5",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa5",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -725,6 +851,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -734,18 +861,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa6",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa6",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa6",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -753,6 +883,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -762,18 +893,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa7",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa7",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa7",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -781,6 +915,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -790,18 +925,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa8",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa8",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa8",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -809,6 +947,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -818,18 +957,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa9",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa9",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa9",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -837,6 +979,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -846,18 +989,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa10",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa10",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa10",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -865,6 +1011,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -874,18 +1021,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa11",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa11",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa11",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -893,6 +1043,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -902,18 +1053,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa12",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa12",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa12",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -921,6 +1075,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -930,18 +1085,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa13",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa13",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa13",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -949,6 +1107,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -958,18 +1117,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa14",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa14",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa14",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -977,6 +1139,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -986,18 +1149,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa15",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa15",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa15",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1005,6 +1171,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1014,18 +1181,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa16",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa16",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa16",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1033,6 +1203,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1042,18 +1213,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa17",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa17",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa17",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1061,6 +1235,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1070,18 +1245,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa18",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa18",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa18",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1089,6 +1267,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1098,18 +1277,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa19",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa19",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa19",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1117,6 +1299,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1126,18 +1309,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa20",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa20",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa20",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1145,6 +1331,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1154,18 +1341,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa21",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa21",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa21",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1173,6 +1363,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1182,18 +1373,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa22",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa22",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa22",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1201,6 +1395,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1210,6 +1405,7 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa0",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1239,6 +1435,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "Activity", "shortLabel": "" }
                     },
                     {
@@ -1248,6 +1445,7 @@
                         "derivedFrom": ["PhysicalActivity"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1257,6 +1455,7 @@
                         "derivedFrom": [
                             {
                                 "name": "dep",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1264,6 +1463,23 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "0",
+                                "displayValue": "Low level of neighbourhood deprivation",
+                                "description": "1st or 2nd quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate level of neighbourhood deprivation",
+                                "description": "3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "2",
+                                "displayValue": "High level of neighbourhood deprivation",
+                                "description": "4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            }
+                        ],
                         "metadata": {
                             "label": "Deprivation Level",
                             "shortLabel": ""
@@ -1276,6 +1492,18 @@
                         "derivedFrom": ["DepInd"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High neighbourhood deprivation",
+                                "description": "4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "High deprivation",
                             "shortLabel": ""
@@ -1288,6 +1516,18 @@
                         "derivedFrom": ["DepInd"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate neighbourhood deprivation",
+                                "description": "3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "Average deprivation",
                             "shortLabel": ""
@@ -1300,18 +1540,21 @@
                         "derivedFrom": [
                             {
                                 "name": "hs",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "ed",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "hdg",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1319,6 +1562,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1328,6 +1572,7 @@
                         "derivedFrom": ["Edu2"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1337,6 +1582,18 @@
                         "derivedFrom": ["Edu1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High school graduate",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "High school", "shortLabel": "" }
                     },
                     {
@@ -1346,6 +1603,18 @@
                         "derivedFrom": ["Edu1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Less than high school graduation",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "<High school",
                             "shortLabel": ""
@@ -1358,18 +1627,21 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "imyr",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "CurrentYear",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1377,6 +1649,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1386,6 +1659,7 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1394,6 +1668,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1403,6 +1678,7 @@
                         "derivedFrom": ["Immig2"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1412,6 +1688,18 @@
                         "derivedFrom": ["Immig1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated <15 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Immigrate <15y",
                             "shortLabel": ""
@@ -1424,6 +1712,18 @@
                         "derivedFrom": ["Immig1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 16 to 30 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Immigrate 15-30y",
                             "shortLabel": ""
@@ -1436,6 +1736,18 @@
                         "derivedFrom": ["Immig1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 31 to 45 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Immigrate 31-45y",
                             "shortLabel": ""
@@ -1448,18 +1760,21 @@
                         "derivedFrom": [
                             {
                                 "name": "weightlb",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hft",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hin",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1467,6 +1782,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1476,6 +1792,7 @@
                         "derivedFrom": ["BMI_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "BMI Spline", "shortLabel": "" }
                     },
                     {
@@ -1485,6 +1802,7 @@
                         "derivedFrom": [
                             {
                                 "name": "hd",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1492,6 +1810,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has heart disease",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have heart disease",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Heart disease",
                             "shortLabel": ""
@@ -1504,6 +1834,7 @@
                         "derivedFrom": [
                             {
                                 "name": "stk",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1511,6 +1842,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Suffers from effects of a previous stroke",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not suffer from the effects of a previous stroke",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "Stroke", "shortLabel": "" }
                     },
                     {
@@ -1520,6 +1863,7 @@
                         "derivedFrom": [
                             {
                                 "name": "can",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1527,6 +1871,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has cancer",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have cancer",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "Cancer", "shortLabel": "" }
                     },
                     {
@@ -1536,6 +1892,7 @@
                         "derivedFrom": ["Cancer_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1545,6 +1902,7 @@
                         "derivedFrom": [
                             {
                                 "name": "diab",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1552,6 +1910,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has diabetes",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have diabetes",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "Diabetes", "shortLabel": "" }
                     },
                     {
@@ -1561,6 +1931,7 @@
                         "derivedFrom": ["Diabetes_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     }
                 ],
@@ -1638,6 +2009,7 @@
                 "covariates": [
                     {
                         "name": "Age_cont",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1648,6 +2020,7 @@
                     },
                     {
                         "name": "Age_spline",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1658,6 +2031,7 @@
                     },
                     {
                         "name": "QSLightCont_df",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": {
                             "label": "Light smoker",
@@ -1671,6 +2045,7 @@
                     },
                     {
                         "name": "QSHeavyCont_df",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy smoker",
@@ -1684,6 +2059,7 @@
                     },
                     {
                         "name": "PhysicalActivityLog_cont",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1694,6 +2070,7 @@
                     },
                     {
                         "name": "DietScore_cont",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "Diet", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1704,6 +2081,18 @@
                     },
                     {
                         "name": "AlcoholHeavy_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Heavy drinker",
+                                "description": "Males: >21 drinks/week; Females: >14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy alcohol",
@@ -1717,6 +2106,18 @@
                     },
                     {
                         "name": "AlcoholMod_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate drinker",
+                                "description": "Males: 4-21 drinks/week; Females: 3 to 14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Mod. alcohol",
@@ -1730,6 +2131,18 @@
                     },
                     {
                         "name": "DepIndMod_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate neighbourhood deprivation",
+                                "description": "3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Average deprivation",
@@ -1743,6 +2156,18 @@
                     },
                     {
                         "name": "DepIndHigh_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High neighbourhood deprivation",
+                                "description": "4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "High deprivation",
@@ -1756,6 +2181,18 @@
                     },
                     {
                         "name": "EduNoGrad_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Less than high school graduation",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "<High school",
@@ -1769,6 +2206,18 @@
                     },
                     {
                         "name": "EduHSGrad_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High school graduate",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "High school",
@@ -1782,6 +2231,18 @@
                     },
                     {
                         "name": "Immig0to15_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated <15 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Immigrate <15y",
@@ -1795,6 +2256,18 @@
                     },
                     {
                         "name": "Immig16to30_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 16 to 30 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Immigrate 15-30y",
@@ -1808,6 +2281,18 @@
                     },
                     {
                         "name": "Immig31to45_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 31 to 45 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Immigrate 31-45y",
@@ -1821,6 +2306,18 @@
                     },
                     {
                         "name": "HeartDis_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has heart disease",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have heart disease",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Heart disease",
@@ -1834,6 +2331,18 @@
                     },
                     {
                         "name": "Stroke_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Suffers from effects of a previous stroke",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not suffer from the effects of a previous stroke",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": { "label": "Stroke", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1844,6 +2353,18 @@
                     },
                     {
                         "name": "Cancer_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has cancer",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have cancer",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": { "label": "Cancer", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1854,6 +2375,18 @@
                     },
                     {
                         "name": "Diabetes_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has diabetes",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have diabetes",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": { "label": "Diabetes", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1864,6 +2397,7 @@
                     },
                     {
                         "name": "BMI_spline",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "BMI Spline", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -1874,6 +2408,7 @@
                     },
                     {
                         "name": "AgeXCancer_int",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
@@ -1884,6 +2419,7 @@
                     },
                     {
                         "name": "AgeXDiabetes_int",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
@@ -1912,6 +2448,7 @@
                         "derivedFrom": [
                             {
                                 "name": "age",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1919,6 +2456,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1928,6 +2466,7 @@
                         "derivedFrom": ["Age_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1937,6 +2476,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkm",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1944,6 +2484,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1953,6 +2494,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkt",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1960,6 +2502,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1969,6 +2512,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkw",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1976,6 +2520,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1985,6 +2530,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkr",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1992,6 +2538,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2001,6 +2548,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkf",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2008,6 +2556,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2017,6 +2566,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksa",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2024,6 +2574,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2033,6 +2584,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2040,6 +2592,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2056,6 +2609,7 @@
                             "drk_drksu2",
                             {
                                 "name": "dany",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2063,6 +2617,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2072,6 +2627,7 @@
                         "derivedFrom": ["DrinksLastWeek"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2081,12 +2637,14 @@
                         "derivedFrom": [
                             {
                                 "name": "db",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "dany",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2101,6 +2659,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2111,6 +2670,7 @@
                             "Binge",
                             {
                                 "name": "dany",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2119,6 +2679,23 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "0",
+                                "displayValue": "Non/light drinker",
+                                "description": "Males: <4 drinks/week; Females: <3 drinks/week"
+                            },
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate drinker",
+                                "description": "Males: 4-21 drinks/week; Females: 3 to 14 drinks/week"
+                            },
+                            {
+                                "value": "2",
+                                "displayValue": "Heavy drinker",
+                                "description": "Males: >21 drinks/week; Females: >14 drinks/week"
+                            }
+                        ],
                         "metadata": {
                             "label": "Alcohol Status",
                             "shortLabel": ""
@@ -2131,6 +2708,18 @@
                         "derivedFrom": ["AlcoholType"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate drinker",
+                                "description": "Males: 4-21 drinks/week; Females: 3 to 14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "Mod. alcohol",
                             "shortLabel": ""
@@ -2143,6 +2732,18 @@
                         "derivedFrom": ["AlcoholType"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Heavy drinker",
+                                "description": "Males: >21 drinks/week; Females: >14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "Heavy alcohol",
                             "shortLabel": ""
@@ -2155,12 +2756,14 @@
                         "derivedFrom": [
                             {
                                 "name": "stpn",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "stpny",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2168,6 +2771,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": {
                             "label": "Smoking Quit Time",
                             "shortLabel": ""
@@ -2180,30 +2784,35 @@
                         "derivedFrom": [
                             {
                                 "name": "smk",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "evd",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "s100",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayf",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayd",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2211,6 +2820,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2222,12 +2832,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2235,6 +2847,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2242,6 +2855,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": {
                             "label": "Light smoker",
                             "shortLabel": ""
@@ -2256,12 +2870,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2269,6 +2885,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2276,6 +2893,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": {
                             "label": "Heavy smoker",
                             "shortLabel": ""
@@ -2288,12 +2906,14 @@
                         "derivedFrom": [
                             {
                                 "name": "frt",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "frtu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2301,6 +2921,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2310,12 +2931,14 @@
                         "derivedFrom": [
                             {
                                 "name": "sal",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "salu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2323,6 +2946,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2332,12 +2956,14 @@
                         "derivedFrom": [
                             {
                                 "name": "pot",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "potu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2345,6 +2971,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2354,12 +2981,14 @@
                         "derivedFrom": [
                             {
                                 "name": "car",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "caru",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2367,6 +2996,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2376,12 +3006,14 @@
                         "derivedFrom": [
                             {
                                 "name": "veg",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "vegu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2389,6 +3021,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2398,12 +3031,14 @@
                         "derivedFrom": [
                             {
                                 "name": "jui",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "juiu",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2411,6 +3046,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2426,6 +3062,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2435,6 +3072,7 @@
                         "derivedFrom": ["FruitVeg"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2444,6 +3082,7 @@
                         "derivedFrom": ["dpotato"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2453,6 +3092,7 @@
                         "derivedFrom": ["dcarrot"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2462,6 +3102,7 @@
                         "derivedFrom": ["djuice"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2476,6 +3117,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -2485,6 +3127,7 @@
                         "derivedFrom": ["DietScore"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -2494,18 +3137,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa1",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa1",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa1",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2513,6 +3159,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2522,18 +3169,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa2",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa2",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa2",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2541,6 +3191,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2550,18 +3201,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa3",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa3",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa3",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2569,6 +3223,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2578,18 +3233,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa4",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa4",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa4",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2597,6 +3255,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2606,18 +3265,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa5",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa5",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa5",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2625,6 +3287,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2634,18 +3297,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa6",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa6",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa6",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2653,6 +3319,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2662,18 +3329,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa7",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa7",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa7",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2681,6 +3351,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2690,18 +3361,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa8",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa8",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa8",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2709,6 +3383,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2718,18 +3393,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa9",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa9",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa9",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2737,6 +3415,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2746,18 +3425,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa10",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa10",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa10",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2765,6 +3447,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2774,18 +3457,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa11",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa11",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa11",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2793,6 +3479,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2802,18 +3489,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa12",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa12",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa12",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2821,6 +3511,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2830,18 +3521,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa13",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa13",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa13",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2849,6 +3543,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2858,18 +3553,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa14",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa14",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa14",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2877,6 +3575,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2886,18 +3585,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa15",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa15",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa15",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2905,6 +3607,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2914,18 +3617,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa16",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa16",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa16",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2933,6 +3639,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2942,18 +3649,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa17",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa17",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa17",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2961,6 +3671,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2970,18 +3681,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa18",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa18",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa18",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2989,6 +3703,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2998,18 +3713,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa19",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa19",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa19",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3017,6 +3735,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3026,18 +3745,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa20",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa20",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa20",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3045,6 +3767,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3054,18 +3777,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa21",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa21",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa21",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3073,6 +3799,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3082,18 +3809,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa22",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa22",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa22",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3101,6 +3831,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3110,6 +3841,7 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa0",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3139,6 +3871,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "Activity", "shortLabel": "" }
                     },
                     {
@@ -3148,6 +3881,7 @@
                         "derivedFrom": ["PhysicalActivity"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3157,6 +3891,7 @@
                         "derivedFrom": [
                             {
                                 "name": "dep",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3164,6 +3899,23 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "0",
+                                "displayValue": "Low level of neighbourhood deprivation",
+                                "description": "1st or 2nd quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate level of neighbourhood deprivation",
+                                "description": "3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "2",
+                                "displayValue": "High level of neighbourhood deprivation",
+                                "description": "4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            }
+                        ],
                         "metadata": {
                             "label": "Deprivation Level",
                             "shortLabel": ""
@@ -3176,6 +3928,18 @@
                         "derivedFrom": ["DepInd"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High neighbourhood deprivation",
+                                "description": "4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "High deprivation",
                             "shortLabel": ""
@@ -3188,6 +3952,18 @@
                         "derivedFrom": ["DepInd"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate neighbourhood deprivation",
+                                "description": "3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "metadata": {
                             "label": "Average deprivation",
                             "shortLabel": ""
@@ -3200,18 +3976,21 @@
                         "derivedFrom": [
                             {
                                 "name": "hs",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "ed",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "hdg",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3219,6 +3998,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3228,6 +4008,7 @@
                         "derivedFrom": ["Edu2"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3237,6 +4018,18 @@
                         "derivedFrom": ["Edu1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High school graduate",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "High school", "shortLabel": "" }
                     },
                     {
@@ -3246,6 +4039,18 @@
                         "derivedFrom": ["Edu1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Less than high school graduation",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "<High school",
                             "shortLabel": ""
@@ -3258,18 +4063,21 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "imyr",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "CurrentYear",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3277,6 +4085,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3286,6 +4095,7 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3294,6 +4104,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3303,6 +4114,7 @@
                         "derivedFrom": ["Immig2"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3312,6 +4124,18 @@
                         "derivedFrom": ["Immig1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated <15 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Immigrate <15y",
                             "shortLabel": ""
@@ -3324,6 +4148,18 @@
                         "derivedFrom": ["Immig1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 16 to 30 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Immigrate 15-30y",
                             "shortLabel": ""
@@ -3336,6 +4172,18 @@
                         "derivedFrom": ["Immig1"],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 31 to 45 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Immigrate 31-45y",
                             "shortLabel": ""
@@ -3348,18 +4196,21 @@
                         "derivedFrom": [
                             {
                                 "name": "weightlb",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hft",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hin",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3367,6 +4218,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3376,6 +4228,7 @@
                         "derivedFrom": ["BMI_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "BMI Spline", "shortLabel": "" }
                     },
                     {
@@ -3385,6 +4238,7 @@
                         "derivedFrom": [
                             {
                                 "name": "hd",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3392,6 +4246,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has heart disease",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have heart disease",
+                                "description": ""
+                            }
+                        ],
                         "metadata": {
                             "label": "Heart disease",
                             "shortLabel": ""
@@ -3404,6 +4270,7 @@
                         "derivedFrom": [
                             {
                                 "name": "stk",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3411,6 +4278,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Suffers from effects of a previous stroke",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not suffer from the effects of a previous stroke",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "Stroke", "shortLabel": "" }
                     },
                     {
@@ -3420,6 +4299,7 @@
                         "derivedFrom": [
                             {
                                 "name": "can",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3427,6 +4307,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has cancer",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have cancer",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "Cancer", "shortLabel": "" }
                     },
                     {
@@ -3436,6 +4328,7 @@
                         "derivedFrom": ["Cancer_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3445,6 +4338,7 @@
                         "derivedFrom": [
                             {
                                 "name": "diab",
+                                "interval": {},
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3452,6 +4346,18 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has diabetes",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have diabetes",
+                                "description": ""
+                            }
+                        ],
                         "metadata": { "label": "Diabetes", "shortLabel": "" }
                     },
                     {
@@ -3461,6 +4367,7 @@
                         "derivedFrom": ["Diabetes_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
+                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     }
                 ],
@@ -3538,6 +4445,7 @@
                 "covariates": [
                     {
                         "name": "Age_cont",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3548,6 +4456,7 @@
                     },
                     {
                         "name": "Age_spline",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3558,6 +4467,7 @@
                     },
                     {
                         "name": "QSLightCont_df",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": {
                             "label": "Light smoker",
@@ -3571,6 +4481,7 @@
                     },
                     {
                         "name": "QSHeavyCont_df",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy smoker",
@@ -3584,6 +4495,7 @@
                     },
                     {
                         "name": "PhysicalActivityLog_cont",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3594,6 +4506,7 @@
                     },
                     {
                         "name": "DietScore_cont",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "Diet", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3604,6 +4517,7 @@
                     },
                     {
                         "name": "BMI_spline",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "BMI Spline", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3614,6 +4528,7 @@
                     },
                     {
                         "name": "AgeXCancer_int",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
@@ -3624,6 +4539,7 @@
                     },
                     {
                         "name": "AgeXDiabetes_int",
+                        "interval": {},
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
@@ -3634,6 +4550,18 @@
                     },
                     {
                         "name": "AlcoholHeavy_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Heavy drinker",
+                                "description": "Males: >21 drinks/week; Females: >14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy alcohol",
@@ -3647,6 +4575,18 @@
                     },
                     {
                         "name": "AlcoholMod_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate drinker",
+                                "description": "Males: 4-21 drinks/week; Females: 3 to 14 drinks/week"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Mod. alcohol",
@@ -3660,6 +4600,18 @@
                     },
                     {
                         "name": "DepIndMod_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Moderate neighbourhood deprivation",
+                                "description": "3rd quinitle of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Average deprivation",
@@ -3673,6 +4625,18 @@
                     },
                     {
                         "name": "DepIndHigh_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High neighbourhood deprivation",
+                                "description": "4th or 5th quintile of neighbourhood social and material deprivation (Pampalon's deprivaiton index)"
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": "Else"
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "High deprivation",
@@ -3686,6 +4650,18 @@
                     },
                     {
                         "name": "EduNoGrad_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Less than high school graduation",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "<High school",
@@ -3699,6 +4675,18 @@
                     },
                     {
                         "name": "EduHSGrad_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "High school graduate",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "High school",
@@ -3712,6 +4700,18 @@
                     },
                     {
                         "name": "Immig0to15_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated <15 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Immigrate <15y",
@@ -3725,6 +4725,18 @@
                     },
                     {
                         "name": "Immig16to30_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 16 to 30 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Immigrate 15-30y",
@@ -3738,6 +4750,18 @@
                     },
                     {
                         "name": "Immig31to45_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Immigrated 31 to 45 years",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Else",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Immigrate 31-45y",
@@ -3751,6 +4775,18 @@
                     },
                     {
                         "name": "HeartDis_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has heart disease",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have heart disease",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": {
                             "label": "Heart disease",
@@ -3764,6 +4800,18 @@
                     },
                     {
                         "name": "Stroke_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Suffers from effects of a previous stroke",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not suffer from the effects of a previous stroke",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": { "label": "Stroke", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3774,6 +4822,18 @@
                     },
                     {
                         "name": "Cancer_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has cancer",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have cancer",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": { "label": "Cancer", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -3784,6 +4844,18 @@
                     },
                     {
                         "name": "Diabetes_cat",
+                        "categories": [
+                            {
+                                "value": "1",
+                                "displayValue": "Has diabetes",
+                                "description": ""
+                            },
+                            {
+                                "value": "0",
+                                "displayValue": "Does not have diabetes",
+                                "description": ""
+                            }
+                        ],
                         "isRequired": false,
                         "metadata": { "label": "Diabetes", "shortLabel": "" },
                         "dataFieldType": 2,
