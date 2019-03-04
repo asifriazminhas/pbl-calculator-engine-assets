@@ -85,7 +85,7 @@
         <DataField name="AgeXDiabetes_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="">
             <Interval closure="closedClosed"/>
         </DataField>
-        <DataField name="age" displayName="" optype="continuous" dataType="integer" X-shortLabel="">
+        <DataField name="age" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="">
             <Interval closure="openOpen" leftMargin="20" rightMargin="79"/>
         </DataField>
         <DataField name="drk_drkm2" displayName="" optype="continuous" dataType="integer" X-shortLabel="">
@@ -4773,7 +4773,7 @@
         </Extension>
     </GeneralRegressionModel>
     <MiningSchema>
-        <MiningField name="Age" invalidValueTreatment="asIs"/>
+        <MiningField name="age" invalidValueTreatment="asIs"/>
         <MiningField name="Age_spine" invalidValueTreatment="asIs"/>
         <MiningField name="QSLight_df" invalidValueTreatment="asIs"/>
         <MiningField name="QSHeavy_df" invalidValueTreatment="asIs"/>

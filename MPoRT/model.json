@@ -12,9 +12,21 @@
                         "derivedFrom": [
                             {
                                 "name": "age",
-                                "interval": {},
+                                "interval": {
+                                    "lowerMargin": {
+                                        "margin": 20,
+                                        "isOpen": false
+                                    },
+                                    "higherMargin": {
+                                        "margin": 79,
+                                        "isOpen": false
+                                    }
+                                },
                                 "isRequired": false,
-                                "metadata": { "label": "", "shortLabel": "" },
+                                "metadata": {
+                                    "label": "Age",
+                                    "shortLabel": ""
+                                },
                                 "fieldType": 0
                             }
                         ],
@@ -419,7 +431,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "metadata": {
                             "label": "Light smoker",
                             "shortLabel": ""
@@ -457,7 +472,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "metadata": {
                             "label": "Heavy smoker",
                             "shortLabel": ""
@@ -681,7 +699,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -691,7 +712,10 @@
                         "derivedFrom": ["DietScore"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -1435,7 +1459,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "metadata": { "label": "Activity", "shortLabel": "" }
                     },
                     {
@@ -2031,7 +2058,10 @@
                     },
                     {
                         "name": "QSLightCont_df",
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "isRequired": false,
                         "metadata": {
                             "label": "Light smoker",
@@ -2045,7 +2075,10 @@
                     },
                     {
                         "name": "QSHeavyCont_df",
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy smoker",
@@ -2070,7 +2103,10 @@
                     },
                     {
                         "name": "DietScore_cont",
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "isRequired": false,
                         "metadata": { "label": "Diet", "shortLabel": "" },
                         "dataFieldType": 2,
@@ -2448,9 +2484,21 @@
                         "derivedFrom": [
                             {
                                 "name": "age",
-                                "interval": {},
+                                "interval": {
+                                    "lowerMargin": {
+                                        "margin": 20,
+                                        "isOpen": false
+                                    },
+                                    "higherMargin": {
+                                        "margin": 79,
+                                        "isOpen": false
+                                    }
+                                },
                                 "isRequired": false,
-                                "metadata": { "label": "", "shortLabel": "" },
+                                "metadata": {
+                                    "label": "Age",
+                                    "shortLabel": ""
+                                },
                                 "fieldType": 0
                             }
                         ],
@@ -2855,7 +2903,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "metadata": {
                             "label": "Light smoker",
                             "shortLabel": ""
@@ -2893,7 +2944,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "metadata": {
                             "label": "Heavy smoker",
                             "shortLabel": ""
@@ -3117,7 +3171,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -3127,7 +3184,10 @@
                         "derivedFrom": ["DietScore"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -3871,7 +3931,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "metadata": { "label": "Activity", "shortLabel": "" }
                     },
                     {
@@ -4467,7 +4530,10 @@
                     },
                     {
                         "name": "QSLightCont_df",
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "isRequired": false,
                         "metadata": {
                             "label": "Light smoker",
@@ -4481,7 +4547,10 @@
                     },
                     {
                         "name": "QSHeavyCont_df",
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 1, "isOpen": false }
+                        },
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy smoker",
@@ -4506,7 +4575,10 @@
                     },
                     {
                         "name": "DietScore_cont",
-                        "interval": {},
+                        "interval": {
+                            "lowerMargin": { "margin": 0, "isOpen": false },
+                            "higherMargin": { "margin": 10, "isOpen": false }
+                        },
                         "isRequired": false,
                         "metadata": { "label": "Diet", "shortLabel": "" },
                         "dataFieldType": 2,

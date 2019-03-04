@@ -1,5 +1,5 @@
 Name,displayName,displayValue,order,variableUse,Recommended,variableType,usageType,Units,ValidCat (for _xc),UserMin_male,UserMax_male,UserMin_female,UserMax_female,Recommended
-Age,Age,Age,1,Input,MPoRT,continuous,active,Years,NA,20,79,20,79,Yes
+age,Age,Age,1,Input,MPoRT,continuous,active,Years,NA,20,79,20,79,Yes
 Age_spine,Age Spline,"Age Spline- Units above 80, 0 if 80 or less",2,Input,,continuous,active,Years,NA,NA,NA,,,
 QSLight_df,Light smoker function,Time varying function for light current and light former smokers,3,Input,,continuous,active,NA,NA,NA,NA,,,
 QSHeavy_df,Heavy smoker function,Time varying function for heavy current and heavy former smokers,4,Input,,continuous,active,NA,NA,NA,NA,,,
