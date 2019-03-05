@@ -1,0 +1,7 @@
+{
+    "modelName": "MPoRTv2-PUMF",
+    "genderSpecific": true,
+    "regressionType": "CoxRegression",
+    "maximumTime": 5,
+    "timeMetric": "years"
+}
