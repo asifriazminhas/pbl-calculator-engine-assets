@@ -16,6 +16,7 @@ import {
 const promisifiedParseString = promisify(parseString);
 import * as path from 'path';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
+import { constructDataDictionaryNode as constructDataDictionaryNodeForMSW } from './msw/data-dictionary';
 
 export async function writePMMLFilesForModel(modelName: string) {
     const modelConfig = getConfigForModel(modelName);
@@ -77,10 +78,12 @@ export async function writePMMLFilesForModel(modelName: string) {
             referenceCsvString,
         );
 
-        const webSpecificationsCsvString = fs.readFileSync(
-            `${modelFolderPath}/web-specifications.csv`,
-            'utf8',
-        );
+        const webSpecificationsCsvString = modelConfig.useMsw
+            ? fs.readFileSync(`${folderPath}/variables.csv`, 'utf8')
+            : fs.readFileSync(
+                  `${modelFolderPath}/web-specifications.csv`,
+                  'utf8',
+              );
 
         const webSpecCategoriesPath = `${modelFolderPath}/web-specifications-categories.csv`;
         const webSpecificationCategoriesCsvString = fs.existsSync(
@@ -92,14 +95,29 @@ export async function writePMMLFilesForModel(modelName: string) {
         const pmml: IPmml = Object.assign(
             {
                 Header: makeHeaderNode(name),
-                DataDictionary: await makeDataDictionaryNode(
-                    betasCsvString,
-                    localTransformationsXmlString,
-                    webSpecificationsCsvString,
-                    referenceCsvString,
-                    false,
-                    webSpecificationCategoriesCsvString,
-                ),
+                DataDictionary: modelConfig.useMsw
+                    ? await constructDataDictionaryNodeForMSW(
+                          betasCsvString,
+                          webSpecificationsCsvString,
+                          fs.readFileSync(
+                              path.join(
+                                  __dirname,
+                                  '../master-reference-files/MSW/variable-details.csv',
+                              ),
+                              'utf8',
+                          ),
+                          fs.readFileSync(
+                              `${folderPath}/local-transformations.xml`,
+                              'utf8',
+                          ),
+                      )
+                    : await makeDataDictionaryNode(
+                          betasCsvString,
+                          localTransformationsXmlString,
+                          webSpecificationsCsvString,
+                          referenceCsvString,
+                          webSpecificationCategoriesCsvString,
+                      ),
                 LocalTransformations:
                     localTransformationsAndTaxonomy.PMML.LocalTransformations,
                 GeneralRegressionModel: generalRegressionModel,

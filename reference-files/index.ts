@@ -4,6 +4,7 @@ export interface IModelConfigJson {
     regressionType: 'CoxRegression';
     maximumTime: number;
     timeMetric: 'days' | 'years';
+    useMsw: boolean;
     extends?: string;
 }
 

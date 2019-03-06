@@ -6,199 +6,64 @@ import {
     ICategoricalDataField,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
-import { IDerivedField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/derived_field';
-import { IFieldRef } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/common';
-import { IApply } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/common';
-import { flatten, uniqBy } from 'lodash';
+import { uniqBy } from 'lodash';
 import { parseString } from 'xml2js';
 import { promisify } from 'bluebird';
-import { VariableDetailsSheet } from '../reference-files/msw';
 const promisifiedParseString = promisify(parseString);
 import csvParse from 'csv-parse/lib/sync';
+import { getDataFieldNamesFromLocalTransformationsNode } from '../util/local-transformations';
 
 export async function makeDataDictionaryNode(
     betasCsvString: string,
     localTransformationsXMLString: string,
     webSpecCsv: string,
     referenceCsvString: string,
-    isMsw: boolean,
     webSpecCategoriesCsv?: string,
 ): Promise<IDataDictionary> {
-    if (isMsw) {
-        const webSpec: VariableDetailsSheet = csvParse(webSpecCsv, {
-            columns: true,
-        });
+    const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
+        columns: true,
+    });
+    const webSpecCategories:
+        | Array<{
+              Variable: string;
+              'Category Value': string;
+              'Category Label': string;
+              'Category Description': string;
+          }>
+        | undefined = webSpecCategoriesCsv
+        ? csvParse(webSpecCategoriesCsv, {
+              columns: true,
+          })
+        : undefined;
 
-        const betasCsv: Array<{
-            [index: string]: string;
-        }> = csvParse(betasCsvString, {
-            columns: true,
-        });
-        const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
-            .filter(columnName => {
-                return columnName !== 'H0_5YR';
-            })
-            .map(covariateName => {
-                const webSpecRow = webSpec.find(webSpecRow => {
-                    return webSpecRow.variable_start === covariateName;
-                });
+    const referenceCsv: Array<{
+        Variable: string;
+        Minimum: string;
+        Maximum: string;
+    }> = csvParse(referenceCsvString, {
+        columns: true,
+    });
 
-                return {
-                    $: {
-                        name: covariateName,
-                        displayName: webSpecRow
-                            ? webSpecRow.variable_short_label_start
-                            : '',
-                        optype: 'continuous' as 'continuous',
-                        dataType: 'integer',
-                        // TODO Fix this
-                        'X-shortLabel': webSpecRow
-                            ? webSpecRow.variable_short_label_start
-                            : '',
-                    },
-                    Extension: [],
-                };
-            });
-
-        const localTransformations: {
-            PMML: { LocalTransformations: ILocalTransformations };
-        } = await promisifiedParseString(localTransformationsXMLString, {
-            explicitArray: false,
-            explicitChildren: true,
-            preserveChildrenOrder: true,
-        });
-        const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
-            localTransformations.PMML.LocalTransformations,
-        ).map(dataFieldName => {
-            const webSpecRow = webSpec.find(({ variable }) => {
-                return variable === dataFieldName;
-            });
-
-            return {
-                $: {
-                    name: dataFieldName,
-                    displayName: webSpecRow
-                        ? webSpecRow.variable_short_label_start
-                        : '',
-                    optype: 'continuous' as 'continuous',
-                    dataType: 'integer',
-                    // TODO Fix this
-                    'X-shortLabel': webSpecRow
-                        ? webSpecRow.variable_short_label_start
-                        : '',
-                },
-                Extension: [],
-            };
-        });
-
-        const dataFields = uniqBy(
-            betaDataFields.concat(localTransformationDataFields),
-            dataField => {
-                return dataField.$.name;
-            },
-        );
-
-        return {
-            DataField: dataFields,
-            $: {
-                numberOfFields: `${dataFields.length}`,
-            },
-        };
-    } else {
-        const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
-            columns: true,
-        });
-        const webSpecCategories:
-            | Array<{
-                  Variable: string;
-                  'Category Value': string;
-                  'Category Label': string;
-                  'Category Description': string;
-              }>
-            | undefined = webSpecCategoriesCsv
-            ? csvParse(webSpecCategoriesCsv, {
-                  columns: true,
-              })
-            : undefined;
-
-        const referenceCsv: Array<{
-            Variable: string;
-            Minimum: string;
-            Maximum: string;
-        }> = csvParse(referenceCsvString, {
-            columns: true,
-        });
-
-        const betasCsv: Array<{
-            [index: string]: string;
-        }> = csvParse(betasCsvString, {
-            columns: true,
-        });
-        const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
-            .filter(columnName => {
-                return columnName !== 'H0_5YR';
-            })
-            .map(covariateName => {
-                const webSpecRow = webSpec.find(({ Name }) => {
-                    return Name === covariateName;
-                });
-
-                const baseDataField = {
-                    $: {
-                        name: covariateName,
-                        displayName: webSpecRow ? webSpecRow.displayName : '',
-                        dataType: 'integer',
-                        optype: webSpecRow
-                            ? webSpecRow.variableType
-                            : 'continuous',
-                        // TODO Fix this
-                        'X-shortLabel': '',
-                    },
-                    Extension: [],
-                };
-
-                if (
-                    baseDataField.$.optype === 'categorical' &&
-                    webSpecRow &&
-                    webSpecCategories
-                ) {
-                    return Object.assign(
-                        {},
-                        baseDataField,
-                        constructValuesNodeForVariable(
-                            webSpecRow,
-                            webSpecCategories,
-                        ),
-                    ) as ICategoricalDataField;
-                } else {
-                    return Object.assign(
-                        {},
-                        baseDataField,
-                        constructIntervalNode(covariateName, referenceCsv),
-                    ) as IContinuousDataField;
-                }
-            });
-
-        const localTransformations: {
-            PMML: { LocalTransformations: ILocalTransformations };
-        } = await promisifiedParseString(localTransformationsXMLString, {
-            explicitArray: false,
-            explicitChildren: true,
-            preserveChildrenOrder: true,
-        });
-        const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
-            localTransformations.PMML.LocalTransformations,
-        ).map(dataFieldName => {
+    const betasCsv: Array<{
+        [index: string]: string;
+    }> = csvParse(betasCsvString, {
+        columns: true,
+    });
+    const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
+        .filter(columnName => {
+            return columnName !== 'H0_5YR';
+        })
+        .map(covariateName => {
             const webSpecRow = webSpec.find(({ Name }) => {
-                return Name === dataFieldName;
+                return Name === covariateName;
             });
 
             const baseDataField = {
                 $: {
-                    name: dataFieldName,
+                    name: covariateName,
                     displayName: webSpecRow ? webSpecRow.displayName : '',
-                    optype: webSpecRow ? webSpecRow.variableType : 'continuous',
                     dataType: 'integer',
+                    optype: webSpecRow ? webSpecRow.variableType : 'continuous',
                     // TODO Fix this
                     'X-shortLabel': '',
                 },
@@ -222,79 +87,69 @@ export async function makeDataDictionaryNode(
                 return Object.assign(
                     {},
                     baseDataField,
-                    constructIntervalNode(dataFieldName, referenceCsv),
+                    constructIntervalNode(covariateName, referenceCsv),
                 ) as IContinuousDataField;
             }
         });
 
-        const dataFields = uniqBy(
-            betaDataFields.concat(localTransformationDataFields),
-            dataField => {
-                return dataField.$.name;
-            },
-        );
+    const localTransformations: {
+        PMML: { LocalTransformations: ILocalTransformations };
+    } = await promisifiedParseString(localTransformationsXMLString, {
+        explicitArray: false,
+        explicitChildren: true,
+        preserveChildrenOrder: true,
+    });
+    const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
+        localTransformations.PMML.LocalTransformations,
+    ).map(dataFieldName => {
+        const webSpecRow = webSpec.find(({ Name }) => {
+            return Name === dataFieldName;
+        });
 
-        return {
-            DataField: dataFields,
+        const baseDataField = {
             $: {
-                numberOfFields: `${dataFields.length}`,
+                name: dataFieldName,
+                displayName: webSpecRow ? webSpecRow.displayName : '',
+                optype: webSpecRow ? webSpecRow.variableType : 'continuous',
+                dataType: 'integer',
+                // TODO Fix this
+                'X-shortLabel': '',
             },
+            Extension: [],
         };
-    }
-}
 
-function getDataFieldNamesFromLocalTransformationsNode(
-    localTransformations: ILocalTransformations,
-): string[] {
-    return flatten(
-        localTransformations.DerivedField instanceof Array
-            ? localTransformations.DerivedField.map(derivedField => {
-                  return getDataFieldNamesFromDerivedFieldNode(derivedField);
-              })
-            : getDataFieldNamesFromDerivedFieldNode(
-                  localTransformations.DerivedField,
-              ),
+        if (
+            baseDataField.$.optype === 'categorical' &&
+            webSpecRow &&
+            webSpecCategories
+        ) {
+            return Object.assign(
+                {},
+                baseDataField,
+                constructValuesNodeForVariable(webSpecRow, webSpecCategories),
+            ) as ICategoricalDataField;
+        } else {
+            return Object.assign(
+                {},
+                baseDataField,
+                constructIntervalNode(dataFieldName, referenceCsv),
+            ) as IContinuousDataField;
+        }
+    });
+
+    const dataFields = uniqBy(
+        betaDataFields.concat(localTransformationDataFields),
+        dataField => {
+            return dataField.$.name;
+        },
     );
-}
 
-function getDataFieldNamesFromDerivedFieldNode(
-    derivedField: IDerivedField,
-): string[] {
-    const fieldRefNodeFieldNames = derivedField.FieldRef
-        ? getDataFieldNamesFromFieldRefNode(derivedField.FieldRef)
-        : [];
-    const applyNodeFieldNames = derivedField.Apply
-        ? getDataFieldNamesFromApplyNode(derivedField.Apply)
-        : [];
-
-    return [derivedField.$.name]
-        .concat(fieldRefNodeFieldNames)
-        .concat(applyNodeFieldNames);
-}
-
-function getDataFieldNamesFromFieldRefNode(fieldRef: IFieldRef): string[] {
-    return [fieldRef.$.field];
-}
-
-function getDataFieldNamesFromApplyNode(apply: IApply): string[] {
-    return apply.$$
-        ? flatten(
-              apply.$$.filter(applyChildNode => {
-                  return (
-                      applyChildNode['#name'] === 'FieldRef' ||
-                      applyChildNode['#name'] === 'Apply'
-                  );
-              }).map(applyChildNode => {
-                  return applyChildNode['#name'] === 'FieldRef'
-                      ? getDataFieldNamesFromFieldRefNode(
-                            applyChildNode as IFieldRef,
-                        )
-                      : getDataFieldNamesFromApplyNode(
-                            applyChildNode as IApply,
-                        );
-              }),
-          )
-        : [];
+    return {
+        DataField: dataFields,
+        $: {
+            numberOfFields: `${dataFields.length}`,
+        },
+    };
 }
 
 interface WebSpecV2CsvRow {
