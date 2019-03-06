@@ -236,6 +236,7 @@ function constructIntervalNode(
         return {
             Interval: {
                 $: {
+                    'X-description': '',
                     closure: 'closedClosed',
                 },
             },

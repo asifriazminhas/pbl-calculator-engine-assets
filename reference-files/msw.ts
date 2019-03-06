@@ -7,9 +7,11 @@ export interface IVariableDetailsSheetRow {
     catLabel: string;
     catLabelLong: string;
     low: string;
+    high: string;
     variableType: VariableTypeValues;
     variableStart: string;
     variableStartType: VariableTypeValues;
+    catStartLabel: string;
 }
 export type VariableDetailsSheet = IVariableDetailsSheetRow[];
 

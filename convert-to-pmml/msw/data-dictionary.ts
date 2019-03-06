@@ -19,6 +19,7 @@ import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/
 const promisifiedParseString = promisify(parseString);
 import { getDataFieldNamesFromLocalTransformationsNode } from '../../util/local-transformations';
 import { findVariableSheetRowForFinalVariableName } from '../../util/msw/variable-sheet';
+import { stringify } from 'querystring';
 
 export async function constructDataDictionaryNode(
     betasCsvString: string,
@@ -86,6 +87,7 @@ export async function constructDataDictionaryNode(
                     Interval: {
                         $: {
                             closure: 'closedClosed',
+                            'X-description': '',
                         },
                     },
                 }) as IContinuousDataField;
@@ -142,6 +144,7 @@ export async function constructDataDictionaryNode(
                 Interval: {
                     $: {
                         closure: 'closedClosed' as 'closedClosed',
+                        'X-description': '',
                     },
                 },
                 Extension: [],
@@ -156,11 +159,17 @@ export async function constructDataDictionaryNode(
                 ),
             ) as ICategoricalDataField;
         } else {
-            //@ts-ignore
             return Object.assign(
                 {},
                 baseDataField,
-                //constructIntervalNode(dataFieldName, referenceCsv),
+                constructIntervalNodeForVariable(
+                    dataFieldName,
+                    variableDetailsSheet,
+                ),
+                constructValuesNodeForVariable(
+                    dataFieldName,
+                    variableDetailsSheet,
+                ),
             ) as IContinuousDataField;
         }
     });
@@ -181,9 +190,13 @@ function constructValuesNodeForVariable(
 ) {
     const variableDetails = variableDetailsSheet.filter(
         variableDetailsSheetRow => {
+            const hasSameLowAndHighValues =
+                variableDetailsSheetRow.low === variableDetailsSheetRow.high;
+
             return (
-                variableDetailsSheetRow.variable === variable ||
-                variableDetailsSheetRow.variableStart === variable
+                (variableDetailsSheetRow.variable === variable ||
+                    variableDetailsSheetRow.variableStart === variable) &&
+                hasSameLowAndHighValues
             );
         },
     );
@@ -254,4 +267,51 @@ function getOpTypeForVariableType(
     variableType: VariableTypeValues,
 ): 'categorical' | 'continuous' {
     return variableType === CatValue ? 'categorical' : 'continuous';
+}
+
+function constructIntervalNodeForVariable(
+    variable: string,
+    variableDetailsSheet: VariableDetailsSheet,
+) {
+    const variableDetails = variableDetailsSheet.filter(variableDetailsRow => {
+        const hasSameLowAndHighValues =
+            variableDetailsRow.low === variableDetailsRow.high;
+
+        return (
+            (variableDetailsRow.variable === variable ||
+                variableDetailsRow.variableStart === variable) &&
+            !hasSameLowAndHighValues
+        );
+    });
+
+    return {
+        Interval: variableDetails
+            ? variableDetails.map(
+                  ({
+                      low,
+                      high,
+                      catStartLabel,
+                      catLabelLong,
+                      variableStart,
+                  }) => {
+                      return {
+                          $: {
+                              closure: 'closedClosed',
+                              leftMargin: low,
+                              rightMargin: high,
+                              'X-description':
+                                  variable === variableStart
+                                      ? catStartLabel
+                                      : catLabelLong,
+                          },
+                      };
+                  },
+              )
+            : {
+                  $: {
+                      closure: 'closedClosed',
+                      'X-description': '',
+                  },
+              },
+    };
 }
