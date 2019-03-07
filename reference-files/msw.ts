@@ -26,6 +26,9 @@ export interface IVariablesSheetRow {
     max: string;
     labelLong: string;
     label: string;
+    variableStart: string;
+    required: BooleanColumnValues;
+    recommended: BooleanColumnValues;
 }
 export type VariablesSheet = IVariablesSheetRow[];
 

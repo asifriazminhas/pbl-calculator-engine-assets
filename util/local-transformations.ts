@@ -43,7 +43,7 @@ function getDataFieldNamesFromFieldRefNode(fieldRef: IFieldRef): string[] {
     return [fieldRef.$.field];
 }
 
-function getDataFieldNamesFromApplyNode(apply: IApply): string[] {
+export function getDataFieldNamesFromApplyNode(apply: IApply): string[] {
     return apply.$$
         ? flatten(
               apply.$$.filter(applyChildNode => {

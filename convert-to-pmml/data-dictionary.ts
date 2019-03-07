@@ -66,6 +66,8 @@ export async function makeDataDictionaryNode(
                     optype: webSpecRow ? webSpecRow.variableType : 'continuous',
                     // TODO Fix this
                     'X-shortLabel': '',
+                    'X-required': 'false',
+                    'X-recommended': 'false',
                 },
                 Extension: [],
             };
@@ -114,6 +116,8 @@ export async function makeDataDictionaryNode(
                 dataType: 'integer',
                 // TODO Fix this
                 'X-shortLabel': '',
+                'X-required': 'false',
+                'X-recommended': 'false',
             },
             Extension: [],
         };
