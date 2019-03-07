@@ -21514,7 +21514,7 @@
         <DerivedField name="packYears" optype="continuous">
             <Apply function="PackYears1.fun">
                 <FieldRef field="TypeOfSmoker2"/>
-                <FieldRef field="Age_cont"/>
+                <FieldRef field="DHHGAGE_cont"/>
                 <FieldRef field="agecigd"/>
                 <FieldRef field="SMK_204b"/>
                 <FieldRef field="tsq_ds"/>
@@ -21647,25 +21647,53 @@
             </Apply>
         </DerivedField>
         <DerivedField name="zJuice" optype="continuous">
-            <X-Zscore mean="0.866571" sd="0.912188" />
+            <Apply function="zScore">
+                <Constant dataType="double">0.866571</Constant>
+                <Constant dataType="double">0.912188</Constant>
+                <FieldRef field="Juice_cont"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="zFruit" optype="continuous">
-            <X-Zscore mean="1.1443171" sd="1.0552868" />
+            <Apply function="zScore">
+                <Constant dataType="double">1.1443171</Constant>
+                <Constant dataType="double">1.0552868</Constant>
+                <FieldRef field="Fruit_cont"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="zSalad" optype="continuous">
-            <X-Zscore mean="0.4916125" sd="0.414286" />
+            <Apply function="zScore">
+                <Constant dataType="double">0.4916125</Constant>
+                <Constant dataType="double">0.414286</Constant>
+                <FieldRef field="Salad_cont"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="zCarrot" optype="continuous">
-            <X-Zscore mean="0.3165909" sd="0.3317559" />
+            <Apply function="zScore">
+                <Constant dataType="double">0.3165909</Constant>
+                <Constant dataType="double">0.3317559</Constant>
+                <FieldRef field="Carrot_cont"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="zVeg" optype="continuous">
-            <X-Zscore mean="1.0870556" sd="0.9109867" />
+            <Apply function="zScore">
+                <Constant dataType="double">1.0870556</Constant>
+                <Constant dataType="double">0.9109867</Constant>
+                <FieldRef field="Veg_cont"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="zPotAdd" optype="continuous">
-            <X-Zscore mean="0.4034392" sd="0.3135315" />
+            <Apply function="zScore">
+                <Constant dataType="double">0.4034392</Constant>
+                <Constant dataType="double">0.3135315</Constant>
+                <FieldRef field="Potato_add"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="zPotMinus" optype="continuous">
-            <X-Zscore mean="0.0100872" sd="0.0995831" />
+            <Apply function="zScore">
+                <Constant dataType="double">0.0100872</Constant>
+                <Constant dataType="double">0.0995831</Constant>
+                <FieldRef field="Potato_minus"/>
+            </Apply>
         </DerivedField>
         <DerivedField name="dietScore2" optype="continuous">
             <Apply function="-">
