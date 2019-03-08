@@ -3,14 +3,12 @@ import {
     IDataField,
     ICategoricalDataField,
     IContinuousDataField,
+    IBaseDataField,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import {
     VariableDetailsSheet,
     VariablesSheet,
     CatValue,
-    IVariablesSheetRow,
-    VariableTypeValues,
-    IVariableDetailsSheetRow,
     TrueColumnValue,
 } from '../../reference-files/msw';
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
@@ -25,6 +23,10 @@ import {
 import { findVariableSheetRowForFinalVariableName } from '../../util/msw/variable-sheet';
 import { trim, flatten, uniq } from 'lodash';
 import { IDerivedField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/derived_field';
+import {
+    constructBaseDataFieldNodeFromVariableSheetRow,
+    constructBaseDataFieldNodeFromVariableDetails,
+} from './data-field';
 
 export async function constructDataDictionaryNode(
     betasCsvString: string,
@@ -69,36 +71,12 @@ export async function constructDataDictionaryNode(
                 );
             }
 
-            const baseDataField = {
-                $: {
+            return constructBaseDataFieldNodeFromVariableSheetRow(
+                variableSheetRow,
+                {
                     name: finalVariableName,
-                    displayName: variableSheetRow.labelLong,
-                    dataType: 'integer',
-                    'X-shortLabel': variableSheetRow.label,
-                    'X-required': 'false',
-                    'X-recommended': 'false',
-                    optype:
-                        variableSheetRow.variableType === CatValue
-                            ? ('categorical' as 'categorical')
-                            : ('continuous' as 'continuous'),
                 },
-                Extension: [],
-            };
-
-            if (baseDataField.$.optype === 'categorical') {
-                return Object.assign({}, baseDataField, {
-                    Value: [],
-                }) as ICategoricalDataField;
-            } else {
-                return Object.assign({}, baseDataField, {
-                    Interval: {
-                        $: {
-                            closure: 'closedClosed',
-                            'X-description': '',
-                        },
-                    },
-                }) as IContinuousDataField;
-            }
+            );
         });
 
     const localTransformations: {
@@ -144,25 +122,23 @@ export async function constructDataDictionaryNode(
                 $: {
                     name: dataFieldName,
                     displayName: '',
-                    optype: 'continuous',
+                    optype: '',
                     dataType: 'integer',
                     'X-shortLabel': '',
                     'X-required': 'false',
                     'X-recommended': 'false',
                 },
-                Interval: {
-                    $: {
-                        closure: 'closedClosed' as 'closedClosed',
-                        'X-description': '',
-                    },
-                },
                 Extension: [],
-            } as IContinuousDataField;
+            } as IBaseDataField<any>;
         } else if (baseDataField.$.optype === 'categorical') {
             return Object.assign(
                 {},
                 baseDataField,
                 constructValuesNodeForVariable(
+                    dataFieldName,
+                    variableDetailsSheet,
+                ),
+                constructIntervalNodeForVariable(
                     dataFieldName,
                     variableDetailsSheet,
                 ),
@@ -249,6 +225,48 @@ export async function constructDataDictionaryNode(
             }
         });
 
+    variablesSheet
+        .filter(({ variable }) => {
+            return (
+                dataFields.find(dataField => {
+                    return dataField.$.name === variable;
+                }) === undefined
+            );
+        })
+        .forEach(variablesSheetRow => {
+            const baseDataField = constructBaseDataFieldNodeFromVariableSheetRow(
+                variablesSheetRow,
+            );
+
+            if (baseDataField.$.optype === 'categorical') {
+                return dataFields.push(Object.assign(
+                    {},
+                    baseDataField,
+                    constructValuesNodeForVariable(
+                        variablesSheetRow.variable,
+                        variableDetailsSheet,
+                    ),
+                    constructIntervalNodeForVariable(
+                        variablesSheetRow.variable,
+                        variableDetailsSheet,
+                    ),
+                ) as ICategoricalDataField);
+            }
+
+            return dataFields.push(Object.assign(
+                {},
+                baseDataField,
+                constructValuesNodeForVariable(
+                    variablesSheetRow.variable,
+                    variableDetailsSheet,
+                ),
+                constructIntervalNodeForVariable(
+                    variablesSheetRow.variable,
+                    variableDetailsSheet,
+                ),
+            ) as IContinuousDataField);
+        });
+
     return {
         DataField: dataFields,
         $: {
@@ -289,63 +307,6 @@ function constructValuesNodeForVariable(
                 };
             }),
     };
-}
-
-function constructBaseDataFieldNodeFromVariableSheetRow(
-    variableSheetRow: IVariablesSheetRow,
-) {
-    return {
-        $: {
-            name: variableSheetRow.variable,
-            displayName: variableSheetRow.labelLong,
-            optype: getOpTypeForVariableType(variableSheetRow.variableType),
-            dataType: 'integer',
-            'X-shortLabel': variableSheetRow.label,
-            'X-required': 'false',
-            'X-recommended': 'false',
-        },
-        Extension: [],
-    };
-}
-
-function constructBaseDataFieldNodeFromVariableDetails(
-    variableDetails: IVariableDetailsSheetRow,
-    isStartVariable: boolean,
-) {
-    return isStartVariable
-        ? {
-              $: {
-                  name: variableDetails.variableStart,
-                  displayName: variableDetails.variableStartLabel,
-                  optype: getOpTypeForVariableType(
-                      variableDetails.variableStartType,
-                  ),
-                  dataType: 'integer',
-                  'X-shortLabel': variableDetails.variableStartShortLabel,
-                  'X-required': 'false',
-                  'X-recommended': 'false',
-              },
-          }
-        : {
-              $: {
-                  name: variableDetails.variable,
-                  displayName: variableDetails.variableStartLabel,
-                  optype: getOpTypeForVariableType(
-                      variableDetails.variableType,
-                  ),
-                  dataType: 'integer',
-                  'X-shortLabel': variableDetails.variableStartShortLabel,
-                  'X-required': 'false',
-                  'X-recommended': 'false',
-              },
-              Extension: [],
-          };
-}
-
-function getOpTypeForVariableType(
-    variableType: VariableTypeValues,
-): 'categorical' | 'continuous' {
-    return variableType === CatValue ? 'categorical' : 'continuous';
 }
 
 function constructIntervalNodeForVariable(
