@@ -17968,175 +17968,6 @@
                         <FieldRef field="var1"/>
                   </Apply>
             </DefineFunction>
-            <DefineFunction name="my.max">
-                  <ParameterField name="x" dataType="double"/>
-                  <Apply function="ifelse">
-                        <Apply function="not">
-                              <Apply function="all">
-                                    <Apply function="is.na">
-                                          <FieldRef field="x"/>
-                                    </Apply>
-                              </Apply>
-                        </Apply>
-                        <Apply function="max">
-                              <FieldRef field="x"/>
-                              <Apply function="my.max(T)">
-                                    <FieldRef field="x"/>
-                              </Apply>
-                        </Apply>
-                        <Constant dataType="NA">NA</Constant>
-                  </Apply>
-            </DefineFunction>
-            <DefineFunction name="CCHS_NA.fun">
-                  <ParameterField name="x" dataType="double"/>
-                  <Apply function="if">
-                        <Apply function="my.max">
-                              <Apply function="equal">
-                                    <Apply function="nchar">
-                                          <FieldRef field="x"/>
-                                    </Apply>
-                                    <Constant dataType="double">7</Constant>
-                              </Apply>
-                        </Apply>
-                        <Apply function="ifelse2">
-                              <Apply function="isIn">
-                                    <FieldRef field="x"/>
-                                    <Constant dataType="double">9999996</Constant>
-                                    <Constant dataType="double">9999997</Constant>
-                                    <Constant dataType="double">9999998</Constant>
-                                    <Constant dataType="double">9999999</Constant>
-                              </Apply>
-                              <Constant dataType="NA">NA</Constant>
-                              <FieldRef field="x"/>
-                        </Apply>
-                        <Apply function="if">
-                              <Apply function="my.max">
-                                    <Apply function="equal">
-                                          <Apply function="nchar">
-                                                <FieldRef field="x"/>
-                                          </Apply>
-                                          <Constant dataType="double">6</Constant>
-                                    </Apply>
-                              </Apply>
-                              <Apply function="ifelse2">
-                                    <Apply function="isIn">
-                                          <FieldRef field="x"/>
-                                          <Constant dataType="double">999996</Constant>
-                                          <Constant dataType="double">999997</Constant>
-                                          <Constant dataType="double">999998</Constant>
-                                          <Constant dataType="double">999999</Constant>
-                                    </Apply>
-                                    <Constant dataType="NA">NA</Constant>
-                                    <FieldRef field="x"/>
-                              </Apply>
-                              <Apply function="if">
-                                    <Apply function="my.max">
-                                          <Apply function="equal">
-                                                <Apply function="nchar">
-                                                      <FieldRef field="x"/>
-                                                </Apply>
-                                                <Constant dataType="double">5</Constant>
-                                          </Apply>
-                                    </Apply>
-                                    <Apply function="ifelse2">
-                                          <Apply function="isIn">
-                                                <FieldRef field="x"/>
-                                                <Constant dataType="double">99996</Constant>
-                                                <Constant dataType="double">99997</Constant>
-                                                <Constant dataType="double">99998</Constant>
-                                                <Constant dataType="double">99999</Constant>
-                                          </Apply>
-                                          <Constant dataType="NA">NA</Constant>
-                                          <FieldRef field="x"/>
-                                    </Apply>
-                                    <Apply function="if">
-                                          <Apply function="my.max">
-                                                <Apply function="equal">
-                                                      <Apply function="nchar">
-                                                            <FieldRef field="x"/>
-                                                      </Apply>
-                                                      <Constant dataType="double">4</Constant>
-                                                </Apply>
-                                          </Apply>
-                                          <Apply function="ifelse2">
-                                                <Apply function="isIn">
-                                                      <FieldRef field="x"/>
-                                                      <Constant dataType="double">9996</Constant>
-                                                      <Constant dataType="double">9997</Constant>
-                                                      <Constant dataType="double">9998</Constant>
-                                                      <Constant dataType="double">9999</Constant>
-                                                </Apply>
-                                                <Constant dataType="NA">NA</Constant>
-                                                <FieldRef field="x"/>
-                                          </Apply>
-                                          <Apply function="if">
-                                                <Apply function="my.max">
-                                                      <Apply function="equal">
-                                                            <Apply function="nchar">
-                                                                  <FieldRef field="x"/>
-                                                            </Apply>
-                                                            <Constant dataType="double">3</Constant>
-                                                      </Apply>
-                                                </Apply>
-                                                <Apply function="ifelse2">
-                                                      <Apply function="isIn">
-                                                            <FieldRef field="x"/>
-                                                            <Constant dataType="double">996</Constant>
-                                                            <Constant dataType="double">997</Constant>
-                                                            <Constant dataType="double">998</Constant>
-                                                            <Constant dataType="double">999</Constant>
-                                                      </Apply>
-                                                      <Constant dataType="NA">NA</Constant>
-                                                      <FieldRef field="x"/>
-                                                </Apply>
-                                                <Apply function="if">
-                                                      <Apply function="my.max">
-                                                            <Apply function="equal">
-                                                                  <Apply function="nchar">
-                                                                        <FieldRef field="x"/>
-                                                                  </Apply>
-                                                                  <Constant dataType="double">2</Constant>
-                                                            </Apply>
-                                                      </Apply>
-                                                      <Apply function="ifelse2">
-                                                            <Apply function="isIn">
-                                                                  <FieldRef field="x"/>
-                                                                  <Constant dataType="double">96</Constant>
-                                                                  <Constant dataType="double">97</Constant>
-                                                                  <Constant dataType="double">98</Constant>
-                                                                  <Constant dataType="double">99</Constant>
-                                                            </Apply>
-                                                            <Constant dataType="NA">NA</Constant>
-                                                            <FieldRef field="x"/>
-                                                      </Apply>
-                                                      <Apply function="if">
-                                                            <Apply function="my.max">
-                                                                  <Apply function="equal">
-                                                                        <Apply function="nchar">
-                                                                              <FieldRef field="x"/>
-                                                                        </Apply>
-                                                                        <Constant dataType="double">1</Constant>
-                                                                  </Apply>
-                                                            </Apply>
-                                                            <Apply function="ifelse2">
-                                                                  <Apply function="isIn">
-                                                                        <FieldRef field="x"/>
-                                                                        <Constant dataType="double">6</Constant>
-                                                                        <Constant dataType="double">7</Constant>
-                                                                        <Constant dataType="double">8</Constant>
-                                                                        <Constant dataType="double">9</Constant>
-                                                                  </Apply>
-                                                                  <Constant dataType="NA">NA</Constant>
-                                                                  <FieldRef field="x"/>
-                                                            </Apply>
-                                                      </Apply>
-                                                </Apply>
-                                          </Apply>
-                                    </Apply>
-                              </Apply>
-                        </Apply>
-                  </Apply>
-            </DefineFunction>
             <DefineFunction name="CCHS_NA1.fun">
                   <ParameterField name="x" dataType="double"/>
                   <Apply function="ifelse2">
@@ -18276,22 +18107,6 @@
                                           <FieldRef field="var1"/>
                                     </Apply>
                               </Apply>
-                        </Apply>
-                  </Apply>
-            </DefineFunction>
-            <DefineFunction name="zScore.fun">
-                  <ParameterField name="var1" dataType="double"/>
-                  <Apply function="/">
-                        <Apply function="-">
-                              <FieldRef field="var1"/>
-                              <Apply function="mean">
-                                    <FieldRef field="var1"/>
-                                    <Constant dataType="boolean">true</Constant>
-                              </Apply>
-                        </Apply>
-                        <Apply function="sd">
-                              <FieldRef field="var1"/>
-                              <Constant dataType="boolean">true</Constant>
                         </Apply>
                   </Apply>
             </DefineFunction>
@@ -18356,175 +18171,6 @@
                         <FieldRef field="var1"/>
                   </Apply>
             </DefineFunction>
-            <DefineFunction name="my.max">
-                  <ParameterField name="x" dataType="double"/>
-                  <Apply function="ifelse">
-                        <Apply function="not">
-                              <Apply function="all">
-                                    <Apply function="is.na">
-                                          <FieldRef field="x"/>
-                                    </Apply>
-                              </Apply>
-                        </Apply>
-                        <Apply function="max">
-                              <FieldRef field="x"/>
-                              <Apply function="my.max(T)">
-                                    <FieldRef field="x"/>
-                              </Apply>
-                        </Apply>
-                        <Constant dataType="NA">NA</Constant>
-                  </Apply>
-            </DefineFunction>
-            <DefineFunction name="CCHS_NA.fun">
-                  <ParameterField name="x" dataType="double"/>
-                  <Apply function="if">
-                        <Apply function="my.max">
-                              <Apply function="equal">
-                                    <Apply function="nchar">
-                                          <FieldRef field="x"/>
-                                    </Apply>
-                                    <Constant dataType="double">7</Constant>
-                              </Apply>
-                        </Apply>
-                        <Apply function="ifelse2">
-                              <Apply function="isIn">
-                                    <FieldRef field="x"/>
-                                    <Constant dataType="double">9999996</Constant>
-                                    <Constant dataType="double">9999997</Constant>
-                                    <Constant dataType="double">9999998</Constant>
-                                    <Constant dataType="double">9999999</Constant>
-                              </Apply>
-                              <Constant dataType="NA">NA</Constant>
-                              <FieldRef field="x"/>
-                        </Apply>
-                        <Apply function="if">
-                              <Apply function="my.max">
-                                    <Apply function="equal">
-                                          <Apply function="nchar">
-                                                <FieldRef field="x"/>
-                                          </Apply>
-                                          <Constant dataType="double">6</Constant>
-                                    </Apply>
-                              </Apply>
-                              <Apply function="ifelse2">
-                                    <Apply function="isIn">
-                                          <FieldRef field="x"/>
-                                          <Constant dataType="double">999996</Constant>
-                                          <Constant dataType="double">999997</Constant>
-                                          <Constant dataType="double">999998</Constant>
-                                          <Constant dataType="double">999999</Constant>
-                                    </Apply>
-                                    <Constant dataType="NA">NA</Constant>
-                                    <FieldRef field="x"/>
-                              </Apply>
-                              <Apply function="if">
-                                    <Apply function="my.max">
-                                          <Apply function="equal">
-                                                <Apply function="nchar">
-                                                      <FieldRef field="x"/>
-                                                </Apply>
-                                                <Constant dataType="double">5</Constant>
-                                          </Apply>
-                                    </Apply>
-                                    <Apply function="ifelse2">
-                                          <Apply function="isIn">
-                                                <FieldRef field="x"/>
-                                                <Constant dataType="double">99996</Constant>
-                                                <Constant dataType="double">99997</Constant>
-                                                <Constant dataType="double">99998</Constant>
-                                                <Constant dataType="double">99999</Constant>
-                                          </Apply>
-                                          <Constant dataType="NA">NA</Constant>
-                                          <FieldRef field="x"/>
-                                    </Apply>
-                                    <Apply function="if">
-                                          <Apply function="my.max">
-                                                <Apply function="equal">
-                                                      <Apply function="nchar">
-                                                            <FieldRef field="x"/>
-                                                      </Apply>
-                                                      <Constant dataType="double">4</Constant>
-                                                </Apply>
-                                          </Apply>
-                                          <Apply function="ifelse2">
-                                                <Apply function="isIn">
-                                                      <FieldRef field="x"/>
-                                                      <Constant dataType="double">9996</Constant>
-                                                      <Constant dataType="double">9997</Constant>
-                                                      <Constant dataType="double">9998</Constant>
-                                                      <Constant dataType="double">9999</Constant>
-                                                </Apply>
-                                                <Constant dataType="NA">NA</Constant>
-                                                <FieldRef field="x"/>
-                                          </Apply>
-                                          <Apply function="if">
-                                                <Apply function="my.max">
-                                                      <Apply function="equal">
-                                                            <Apply function="nchar">
-                                                                  <FieldRef field="x"/>
-                                                            </Apply>
-                                                            <Constant dataType="double">3</Constant>
-                                                      </Apply>
-                                                </Apply>
-                                                <Apply function="ifelse2">
-                                                      <Apply function="isIn">
-                                                            <FieldRef field="x"/>
-                                                            <Constant dataType="double">996</Constant>
-                                                            <Constant dataType="double">997</Constant>
-                                                            <Constant dataType="double">998</Constant>
-                                                            <Constant dataType="double">999</Constant>
-                                                      </Apply>
-                                                      <Constant dataType="NA">NA</Constant>
-                                                      <FieldRef field="x"/>
-                                                </Apply>
-                                                <Apply function="if">
-                                                      <Apply function="my.max">
-                                                            <Apply function="equal">
-                                                                  <Apply function="nchar">
-                                                                        <FieldRef field="x"/>
-                                                                  </Apply>
-                                                                  <Constant dataType="double">2</Constant>
-                                                            </Apply>
-                                                      </Apply>
-                                                      <Apply function="ifelse2">
-                                                            <Apply function="isIn">
-                                                                  <FieldRef field="x"/>
-                                                                  <Constant dataType="double">96</Constant>
-                                                                  <Constant dataType="double">97</Constant>
-                                                                  <Constant dataType="double">98</Constant>
-                                                                  <Constant dataType="double">99</Constant>
-                                                            </Apply>
-                                                            <Constant dataType="NA">NA</Constant>
-                                                            <FieldRef field="x"/>
-                                                      </Apply>
-                                                      <Apply function="if">
-                                                            <Apply function="my.max">
-                                                                  <Apply function="equal">
-                                                                        <Apply function="nchar">
-                                                                              <FieldRef field="x"/>
-                                                                        </Apply>
-                                                                        <Constant dataType="double">1</Constant>
-                                                                  </Apply>
-                                                            </Apply>
-                                                            <Apply function="ifelse2">
-                                                                  <Apply function="isIn">
-                                                                        <FieldRef field="x"/>
-                                                                        <Constant dataType="double">6</Constant>
-                                                                        <Constant dataType="double">7</Constant>
-                                                                        <Constant dataType="double">8</Constant>
-                                                                        <Constant dataType="double">9</Constant>
-                                                                  </Apply>
-                                                                  <Constant dataType="NA">NA</Constant>
-                                                                  <FieldRef field="x"/>
-                                                            </Apply>
-                                                      </Apply>
-                                                </Apply>
-                                          </Apply>
-                                    </Apply>
-                              </Apply>
-                        </Apply>
-                  </Apply>
-            </DefineFunction>
             <DefineFunction name="CCHS_NA1.fun">
                   <ParameterField name="x" dataType="double"/>
                   <Apply function="ifelse2">
@@ -18664,22 +18310,6 @@
                                           <FieldRef field="var1"/>
                                     </Apply>
                               </Apply>
-                        </Apply>
-                  </Apply>
-            </DefineFunction>
-            <DefineFunction name="zScore.fun">
-                  <ParameterField name="var1" dataType="double"/>
-                  <Apply function="/">
-                        <Apply function="-">
-                              <FieldRef field="var1"/>
-                              <Apply function="mean">
-                                    <FieldRef field="var1"/>
-                                    <Constant dataType="boolean">true</Constant>
-                              </Apply>
-                        </Apply>
-                        <Apply function="sd">
-                              <FieldRef field="var1"/>
-                              <Constant dataType="boolean">true</Constant>
                         </Apply>
                   </Apply>
             </DefineFunction>
@@ -20202,7 +19832,7 @@
                         <FieldRef field="TypeOfSmoker2"/>
                   </Apply>
             </DerivedField>
-            <DerivedField name="ALWDWKY" optype="continuous">
+            <DerivedField name="ALWDWKY_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="ALWDWKY"/>
@@ -20375,7 +20005,7 @@
                         <FieldRef field="zPotMinus"/>
                   </Apply>
             </DerivedField>
-            <DerivedField name="PACDEE" optype="continuous">
+            <DerivedField name="PACDEE_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="PACDEE"/>
@@ -20385,7 +20015,7 @@
                         <FieldRef field="PACDEE"/>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_101" optype="continuous">
+            <DerivedField name="CCC_101_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_101"/>
@@ -20409,7 +20039,7 @@
                         </Apply>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_071" optype="continuous">
+            <DerivedField name="CCC_071_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_071"/>
@@ -20433,7 +20063,7 @@
                         </Apply>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_091" optype="continuous">
+            <DerivedField name="CCC_091_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_091"/>
@@ -20464,7 +20094,7 @@
                         </Apply>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_280" optype="continuous">
+            <DerivedField name="CCC_280_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_280"/>
@@ -20488,7 +20118,7 @@
                         </Apply>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_131" optype="continuous">
+            <DerivedField name="CCC_131_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_131"/>
@@ -20512,7 +20142,7 @@
                         </Apply>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_121" optype="continuous">
+            <DerivedField name="CCC_121_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_121"/>
@@ -20536,7 +20166,7 @@
                         </Apply>
                   </Apply>
             </DerivedField>
-            <DerivedField name="CCC_151" optype="continuous">
+            <DerivedField name="CCC_151_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="CCC_151"/>
@@ -20563,7 +20193,7 @@
             <DerivedField name="dementia" optype="continuous">
                   <Constant dataType="NA">NA</Constant>
             </DerivedField>
-            <DerivedField name="HWTGBMI" optype="continuous">
+            <DerivedField name="HWTGBMI_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="HWTGBMI"/>
@@ -20573,7 +20203,7 @@
                         <FieldRef field="HWTGBMI"/>
                   </Apply>
             </DerivedField>
-            <DerivedField name="SDCGCGT" optype="continuous">
+            <DerivedField name="SDCGCGT_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="SDCGCGT"/>
@@ -20583,7 +20213,7 @@
                         <FieldRef field="SDCGCGT"/>
                   </Apply>
             </DerivedField>
-            <DerivedField name="EDUDR04" optype="continuous">
+            <DerivedField name="EDUDR04_Mutated_1" optype="continuous">
                   <Apply function="ifelse">
                         <Apply function="equal">
                               <FieldRef field="EDUDR04"/>
