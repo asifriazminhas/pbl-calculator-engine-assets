@@ -21958,5 +21958,806 @@
         <DerivedField name="epilepsy" optype="continuous">
             <Constant dataType="NA">NA</Constant>
         </DerivedField>
+        <DerivedField name="smokeSimp_cat4_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="smokeSimp"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="smokeSimp"/>
+                    <Constant dataType="double">2</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="smokeSimp"/>
+                    <Constant dataType="double">3</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_4" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="smokeSimp"/>
+                    <Constant dataType="double">4</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="smokeSimp"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="formerDrinker_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="formerDrinker"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="formerDrinker_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="formerDrinker"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="depInd_cat3_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="depInd"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="depInd_cat3_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="depInd"/>
+                    <Constant dataType="double">2</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="depInd_cat3_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="depInd"/>
+                    <Constant dataType="double">3</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="EDUDR04"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="EDUDR04"/>
+                    <Constant dataType="double">2</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="EDUDR04"/>
+                    <Constant dataType="double">3</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_4" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="EDUDR04"/>
+                    <Constant dataType="double">4</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="EDUDR04"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_131_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_131"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_131_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_131"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_131_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_131"/>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_101_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_101"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_101_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_101"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_101_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_101"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_121_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_121"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_121_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_121"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_121_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_121"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_151_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_151"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_151_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_151"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_151_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_151"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_071_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_071"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_071_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_071"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_071_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_071"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_280_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_280"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_280_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_280"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_280_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_280"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="dementia_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="dementia"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="dementia_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="dementia"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_091_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_091"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_091_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="CCC_091"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_091_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CCC_091"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SDCGCGT_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="SDCGCGT"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SDCGCGT_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="SDCGCGT"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SDCGCGT_cat2_NA" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="SDCGCGT"/>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="epilepsy_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="epilepsy"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="epilepsy_cat2_0" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="epilepsy"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DHHGAGE_cont_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="DHHGAGE_cont"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="DHHGAGE_cont_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_2_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="smokeSimp_cat4_2"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="smokeSimp_cat4_2_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_3_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="smokeSimp_cat4_3"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="smokeSimp_cat4_3_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp_cat4_4_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="smokeSimp_cat4_4"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="smokeSimp_cat4_4_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="packYears_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="packYears"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="packYears_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="formerDrinker_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="formerDrinker_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="formerDrinker_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ALWDWKY_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ALWDWKY"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="ALWDWKY_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="dietScore2_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="dietScore2"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="dietScore2_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="PACDEE_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="PACDEE"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="PACDEE_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="HWTGBMI_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="HWTGBMI"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="HWTGBMI_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="depInd_cat3_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="depInd_cat3_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="depInd_cat3_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="depInd_cat3_2_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="depInd_cat3_2"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="depInd_cat3_2_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_2_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EDUDR04_cat4_2"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="EDUDR04_cat4_2_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_3_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EDUDR04_cat4_3"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="EDUDR04_cat4_3_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="EDUDR04_cat4_4_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="EDUDR04_cat4_4"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="EDUDR04_cat4_4_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_131_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_131_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_131_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_101_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_101_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_101_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_121_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_121_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_121_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_151_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_151_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_151_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_071_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_071_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_071_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_280_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_280_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_280_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="dementia_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="dementia_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="dementia_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CCC_091_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CCC_091_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="CCC_091_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SDCGCGT_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SDCGCGT_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="SDCGCGT_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="epilepsy_cat2_1_C" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="epilepsy_cat2_1"/>
+                <MapValues outputColumn="mean">
+                    <FieldColumnPair column="variable" constant="epilepsy_cat2_1_C"/>
+                    <TableLocator location="taxonomy" name="reference_table"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="DHHGAGE_cont_C_rcs1" optype="continuous">
+            <FieldRef field="DHHGAGE_cont_C"/>
+        </DerivedField>
+        <DerivedField name="packYears_C_rcs1" optype="continuous">
+            <FieldRef field="packYears_C"/>
+        </DerivedField>
+        <DerivedField name="ALWDWKY_C_rcs1" optype="continuous">
+            <FieldRef field="ALWDWKY_C"/>
+        </DerivedField>
+        <DerivedField name="dietScore2_C_rcs1" optype="continuous">
+            <FieldRef field="dietScore2_C"/>
+        </DerivedField>
+        <DerivedField name="PACDEE_C_rcs1" optype="continuous">
+            <FieldRef field="PACDEE_C"/>
+        </DerivedField>
+        <DerivedField name="HWTGBMI_C_rcs1" optype="continuous">
+            <FieldRef field="HWTGBMI_C"/>
+        </DerivedField>
+        <DerivedField name="interaction1" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="smokeSimp_cat4_2_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction2" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="smokeSimp_cat4_3_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction3" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="smokeSimp_cat4_4_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction4" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="packYears_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction5" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="formerDrinker_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction6" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="ALWDWKY_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction7" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="dietScore2_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction8" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="PACDEE_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction9" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="HWTGBMI_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction10" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="depInd_cat3_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction11" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="depInd_cat3_2_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction12" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="EDUDR04_cat4_2_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction13" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="EDUDR04_cat4_3_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction14" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="EDUDR04_cat4_4_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction15" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_131_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction16" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_101_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction17" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_121_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction18" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_151_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction19" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_071_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction20" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_280_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction21" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="dementia_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction22" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="CCC_091_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="interaction23" optype="continuous">
+            <Apply function="Interact.fun">
+                <FieldRef field="epilepsy_cat2_1_C"/>
+                <FieldRef field="DHHGAGE_cont_C"/>
+            </Apply>
+        </DerivedField>
     </LocalTransformations>
 </PMML>
