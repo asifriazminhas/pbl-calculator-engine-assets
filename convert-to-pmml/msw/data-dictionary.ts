@@ -208,8 +208,11 @@ export async function constructDataDictionaryNode(
                     );
 
                     if (!derivedField) {
-                        dataField.$['X-required'] = 'true';
-                        dataField.$['X-recommended'] = 'true';
+                        if (required === TrueColumnValue) {
+                            dataField.$['X-required'] = 'true';
+                        } else {
+                            dataField.$['X-recommended'] = 'true';
+                        }
                     } else {
                         const recommendedOrRequiredFields = uniq(
                             getRecommendedDataFields(
@@ -232,9 +235,11 @@ export async function constructDataDictionaryNode(
                                 );
 
                                 if (foundDataField) {
-                                    foundDataField.$['X-recommended'] = 'true';
                                     if (required === TrueColumnValue) {
                                         foundDataField.$['X-required'] = 'true';
+                                    } else {
+                                        foundDataField.$['X-recommended'] =
+                                            'true';
                                     }
                                 }
                             },
