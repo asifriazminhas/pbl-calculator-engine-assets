@@ -237,6 +237,10 @@ export async function constructDataDictionaryNode(
             const baseDataField = constructBaseDataFieldNodeFromVariableSheetRow(
                 variablesSheetRow,
             );
+            baseDataField.$['X-required'] =
+                variablesSheetRow.required === TrueColumnValue
+                    ? 'true'
+                    : 'false';
 
             if (baseDataField.$.optype === 'categorical') {
                 return dataFields.push(Object.assign(
