@@ -6,6 +6,11 @@ export interface IModelConfigJson {
     timeMetric: 'days' | 'years';
     useMsw: boolean;
     extends?: string;
+    sexVariable?: string;
+    sexValues?: {
+        male: number;
+        female: number;
+    };
 }
 
 export interface IConfigJson {
