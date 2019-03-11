@@ -121,9 +121,11 @@ export async function writePMMLFilesForModel(modelName: string) {
                 LocalTransformations:
                     localTransformationsAndTaxonomy.PMML.LocalTransformations,
                 GeneralRegressionModel: generalRegressionModel,
-                MiningSchema: constructMiningSchemaNode(
-                    webSpecificationsCsvString,
-                ),
+                MiningSchema: modelConfig.useMsw
+                    ? {
+                          MiningField: [],
+                      }
+                    : constructMiningSchemaNode(webSpecificationsCsvString),
                 ...makeCustomPmmlNode(
                     generalRegressionModel,
                     referenceCsvString,
