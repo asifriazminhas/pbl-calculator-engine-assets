@@ -4,5 +4,10 @@
     "regressionType": "CoxRegression",
     "maximumTime": 5,
     "timeMetric": "years",
-    "useMsw": true
+    "useMsw": true,
+    "sexVariable": "DHH_SEX",
+    "sexValues": {
+        "male": 1,
+        "female": 2
+    }
 }

@@ -3,12 +3,12 @@ DHH_SEX,Sex,Sex,SEX,cat,N/A,"Male, Female",0,N/A,0,N/A,0,1,0,1,1,1,2,DHH_SEX,2
 DHHGAGE_cont,Age,Age,AGE,cont,years,N/A,1,1,0,N/A,5,0,0,1,1,20,102,DHHGAGE,102
 smokeSimp,Simple smoking status,Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat),SMOKING,cat,N/A,"Non-smoker, Current smoker, Former smoker; quit 0 to 5 years or former occasional, Former smoker; quit 5 plus years",1,1,DHHGAGE_cont,"1, 2, 3",0,1,0,1,0,1,4,"SMKDSTY, SMKG09C, SMK_202, SMK_09A, SMKG203, SMK_204, SMK_208, SMK_05B, SMK_05C, SMKG01C, SMK_01A, DHHGAGE",4
 packYears,Packyears,Packyears of smoking,SMOKING,cont,packyears,N/A,1,1,DHHGAGE_cont,4,3,0,0,1,0,0,112.5,"SMKDSTY, SMKG09C, SMK_202, SMK_09A, SMKG203, SMK_204, SMK_208, SMK_05B, SMK_05C, SMKG01C, SMK_01A, DHHGAGE",112.5
-formerDrinker,Former drinker,Former drinker status (yes/no),ALCOHOL,cat,N/A,"Former drinker, Not former drinker",1,1,DHHGAGE_cont,5,0,1,0,1,0,1,2,NA,1
+formerDrinker,Former drinker,Former drinker status (yes/no),ALCOHOL,cat,N/A,"Former drinker, Not former drinker",1,1,DHHGAGE_cont,5,0,1,0,0,0,1,2,NA,1
 ALWDWKY,Drinks last week,Weekly alcohol consumption ,ALCOHOL,cont,drinks/week,N/A,0,1,DHHGAGE_cont,6,3,0,0,1,0,0,50,ALWDWKY,50
 dietScore2,Diet,Simplified diet score (z-transformed),DIET,cont,N/A,N/A,1,1,DHHGAGE_cont,7,3,0,0,1,0,-16.8,18.4,"FVCDJUI, FVCDFRU, FVCDSAL, FVCDPOT, FVCDCAR, FVCDVEG",18.4
 PACDEE,Physical activity,Average daily leisure time energy expenditure in METs,ACTIVITY,cont,METs/day,N/A,0,1,DHHGAGE_cont,8,3,0,0,1,0,0,16,PACDEE,16
 HWTGBMI,BMI,Body mass index ,BMI,cont,kg/m2,N/A,0,1,DHHGAGE_cont,9,3,0,0,1,0,8.6,43.7,HWTGBMI,43.7
-depInd,Deprivation index,Neighbourhood social and material deprivation,DEPRIVATION,cat,N/A,"Low deprivation, Moderate deprivation, High deprivation",0,1,DHHGAGE_cont,"10, 11",0,1,0,1,0,1,3,NA,3
+depInd,Deprivation index,Neighbourhood social and material deprivation,DEPRIVATION,cat,N/A,"Low deprivation, Moderate deprivation, High deprivation",0,1,DHHGAGE_cont,"10, 11",0,1,0,0,0,1,3,NA,3
 EDUDR04,Education,Level of education ,EDUCATION,cat,N/A,"Post-secondary graduate, Some post-secondary, High school graduate, Less than high school",0,1,DHHGAGE_cont,"12, 13, 14",0,1,0,1,0,1,4,EDUDR04,4
 CCC_131,Cancer,Active cancer,DISEASE,cat,N/A,"Cancer, No Cancer",0,1,DHHGAGE_cont,15,0,1,0,1,0,0,1,CCC_131,1
 CCC_101,Diabetes,Diabetes,DISEASE,cat,N/A,"Diabetes, No Diabetes",0,1,DHHGAGE_cont,16,0,1,0,1,0,0,1,CCC_101,1

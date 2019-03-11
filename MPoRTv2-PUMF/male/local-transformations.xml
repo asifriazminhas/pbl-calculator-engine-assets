@@ -291,102 +291,6 @@
             </row>
             <row>
                 <index>19</index>
-                <variable>EthnWhiteC_cat</variable>
-                <Minimum>0</Minimum>
-                <Maximum>1</Maximum>
-                <mean>0.8875269</mean>
-                <sd>0.3159497</sd>
-                <Median>1</Median>
-                <Q1>1</Q1>
-                <Q3>1</Q3>
-                <Knot1>NA</Knot1>
-                <Knot2>NA</Knot2>
-                <Knot3>NA</Knot3>
-                <Knot4>NA</Knot4>
-                <Knot5>NA</Knot5>
-            </row>
-            <row>
-                <index>20</index>
-                <variable>EthnBlackC_cat</variable>
-                <Minimum>0</Minimum>
-                <Maximum>1</Maximum>
-                <mean>0.012992</mean>
-                <sd>0.1132405</sd>
-                <Median>0</Median>
-                <Q1>0</Q1>
-                <Q3>0</Q3>
-                <Knot1>NA</Knot1>
-                <Knot2>NA</Knot2>
-                <Knot3>NA</Knot3>
-                <Knot4>NA</Knot4>
-                <Knot5>NA</Knot5>
-            </row>
-            <row>
-                <index>21</index>
-                <variable>EthnChineseC_cat</variable>
-                <Minimum>0</Minimum>
-                <Maximum>1</Maximum>
-                <mean>0.0159793</mean>
-                <sd>0.125396</sd>
-                <Median>0</Median>
-                <Q1>0</Q1>
-                <Q3>0</Q3>
-                <Knot1>NA</Knot1>
-                <Knot2>NA</Knot2>
-                <Knot3>NA</Knot3>
-                <Knot4>NA</Knot4>
-                <Knot5>NA</Knot5>
-            </row>
-            <row>
-                <index>22</index>
-                <variable>EthnJapanC_cat</variable>
-                <Minimum>0</Minimum>
-                <Maximum>1</Maximum>
-                <mean>0.012374</mean>
-                <sd>0.1105487</sd>
-                <Median>0</Median>
-                <Q1>0</Q1>
-                <Q3>0</Q3>
-                <Knot1>NA</Knot1>
-                <Knot2>NA</Knot2>
-                <Knot3>NA</Knot3>
-                <Knot4>NA</Knot4>
-                <Knot5>NA</Knot5>
-            </row>
-            <row>
-                <index>23</index>
-                <variable>EthnSAsianC_cat</variable>
-                <Minimum>0</Minimum>
-                <Maximum>1</Maximum>
-                <mean>0.0294349</mean>
-                <sd>0.1690231</sd>
-                <Median>0</Median>
-                <Q1>0</Q1>
-                <Q3>0</Q3>
-                <Knot1>NA</Knot1>
-                <Knot2>NA</Knot2>
-                <Knot3>NA</Knot3>
-                <Knot4>NA</Knot4>
-                <Knot5>NA</Knot5>
-            </row>
-            <row>
-                <index>24</index>
-                <variable>EthnOtherC_cat</variable>
-                <Minimum>0</Minimum>
-                <Maximum>1</Maximum>
-                <mean>0.041693</mean>
-                <sd>0.1998879</sd>
-                <Median>0</Median>
-                <Q1>0</Q1>
-                <Q3>0</Q3>
-                <Knot1>NA</Knot1>
-                <Knot2>NA</Knot2>
-                <Knot3>NA</Knot3>
-                <Knot4>NA</Knot4>
-                <Knot5>NA</Knot5>
-            </row>
-            <row>
-                <index>25</index>
                 <variable>DiabetesC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -402,7 +306,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>26</index>
+                <index>20</index>
                 <variable>HypertensionC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -418,7 +322,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>27</index>
+                <index>21</index>
                 <variable>HeartDisC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -434,7 +338,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>28</index>
+                <index>22</index>
                 <variable>StrokeC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -450,7 +354,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>29</index>
+                <index>23</index>
                 <variable>COPDC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -466,7 +370,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>30</index>
+                <index>24</index>
                 <variable>MoodC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -482,7 +386,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>31</index>
+                <index>25</index>
                 <variable>ActiveCancerC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -498,7 +402,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>32</index>
+                <index>26</index>
                 <variable>DementiaC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -514,7 +418,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>33</index>
+                <index>27</index>
                 <variable>EpilepsyC_cat</variable>
                 <Minimum>0</Minimum>
                 <Maximum>1</Maximum>
@@ -530,7 +434,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>34</index>
+                <index>28</index>
                 <variable>Fruit_cont</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
@@ -546,7 +450,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>35</index>
+                <index>29</index>
                 <variable>Salad_cont</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
@@ -562,7 +466,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>36</index>
+                <index>30</index>
                 <variable>Carrot_cont</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
@@ -578,7 +482,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>37</index>
+                <index>31</index>
                 <variable>Veg_cont</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
@@ -594,7 +498,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>38</index>
+                <index>32</index>
                 <variable>Juice_cont</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
@@ -610,7 +514,7 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>39</index>
+                <index>33</index>
                 <variable>Potato_minus</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
@@ -626,12 +530,28 @@
                 <Knot5>NA</Knot5>
             </row>
             <row>
-                <index>40</index>
+                <index>34</index>
                 <variable>Potato_add</variable>
                 <Minimum>NA</Minimum>
                 <Maximum>NA</Maximum>
                 <mean>0.4034392</mean>
                 <sd>0.3135315</sd>
+                <Median>NA</Median>
+                <Q1>NA</Q1>
+                <Q3>NA</Q3>
+                <Knot1>NA</Knot1>
+                <Knot2>NA</Knot2>
+                <Knot3>NA</Knot3>
+                <Knot4>NA</Knot4>
+                <Knot5>NA</Knot5>
+            </row>
+            <row>
+                <index>35</index>
+                <variable>SDCGCGT_cat2_1_C</variable>
+                <Minimum>NA</Minimum>
+                <Maximum>NA</Maximum>
+                <mean>0.2295</mean>
+                <sd>NA</sd>
                 <Median>NA</Median>
                 <Q1>NA</Q1>
                 <Q3>NA</Q3>
@@ -19451,7 +19371,7 @@
                 </Apply>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="Center.fun">
+        <DefineFunction name="Center.fun_Mutated_1">
             <ParameterField name="uncentered" dataType="double"/>
             <ParameterField name="mean" dataType="double"/>
             <Apply function="ifelse2">
@@ -19467,7 +19387,7 @@
                 <Constant dataType="NA">NA</Constant>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="Interact.fun">
+        <DefineFunction name="Interact.fun_Mutated_1">
             <ParameterField name="var1" dataType="double"/>
             <ParameterField name="var2" dataType="double"/>
             <Apply function="ifelse2">
@@ -19490,7 +19410,7 @@
                 <Constant dataType="NA">NA</Constant>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="Max.fun">
+        <DefineFunction name="Max.fun_Mutated_1">
             <ParameterField name="var1" dataType="double"/>
             <ParameterField name="max" dataType="double"/>
             <Apply function="ifelse2">
@@ -19502,7 +19422,7 @@
                 <FieldRef field="var1"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="NA0.fun">
+        <DefineFunction name="NA0.fun_Mutated_1">
             <ParameterField name="var1" dataType="double"/>
             <Apply function="ifelse2">
                 <Apply function="is.na">
@@ -19512,7 +19432,7 @@
                 <FieldRef field="var1"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="CCHS_NA1.fun">
+        <DefineFunction name="CCHS_NA1.fun_Mutated_1">
             <ParameterField name="x" dataType="double"/>
             <Apply function="ifelse2">
                 <Apply function="isIn">
@@ -19526,7 +19446,7 @@
                 <FieldRef field="x"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="CCHS_NA2.fun">
+        <DefineFunction name="CCHS_NA2.fun_Mutated_1">
             <ParameterField name="x" dataType="double"/>
             <Apply function="ifelse2">
                 <Apply function="isIn">
@@ -19540,7 +19460,7 @@
                 <FieldRef field="x"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="CCHS_NA3.fun">
+        <DefineFunction name="CCHS_NA3.fun_Mutated_1">
             <ParameterField name="x" dataType="double"/>
             <Apply function="ifelse2">
                 <Apply function="isIn">
@@ -19554,7 +19474,7 @@
                 <FieldRef field="x"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="CCHS_NA4.fun">
+        <DefineFunction name="CCHS_NA4.fun_Mutated_1">
             <ParameterField name="x" dataType="double"/>
             <Apply function="ifelse2">
                 <Apply function="isIn">
@@ -19568,7 +19488,7 @@
                 <FieldRef field="x"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="falseifNA">
+        <DefineFunction name="falseifNA_Mutated_1">
             <ParameterField name="x" dataType="double"/>
             <Apply function="ifelse">
                 <Apply function="is.na">
@@ -19578,7 +19498,7 @@
                 <FieldRef field="x"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="ifelse2">
+        <DefineFunction name="ifelse2_Mutated_1">
             <ParameterField name="x" dataType="double"/>
             <ParameterField name="a" dataType="double"/>
             <ParameterField name="b" dataType="double"/>
@@ -19590,7 +19510,7 @@
                 <FieldRef field="b"/>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="naReplace.fun">
+        <DefineFunction name="naReplace.fun_Mutated_1">
             <ParameterField name="var1" dataType="double"/>
             <Apply function="ifelse">
                 <Apply function="equal">
@@ -19622,7 +19542,7 @@
                 </Apply>
             </Apply>
         </DefineFunction>
-        <DefineFunction name="naReplace2.fun">
+        <DefineFunction name="naReplace2.fun_Mutated_1">
             <ParameterField name="var1" dataType="double"/>
             <Apply function="ifelse">
                 <Apply function="equal">
@@ -21690,7 +21610,7 @@
         <DerivedField name="EDUDR04_cat4_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="EDUDR04"/>
+                    <FieldRef field="EDUDR04_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21700,7 +21620,7 @@
         <DerivedField name="EDUDR04_cat4_2" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="EDUDR04"/>
+                    <FieldRef field="EDUDR04_Mutated_1"/>
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21710,7 +21630,7 @@
         <DerivedField name="EDUDR04_cat4_3" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="EDUDR04"/>
+                    <FieldRef field="EDUDR04_Mutated_1"/>
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21720,7 +21640,7 @@
         <DerivedField name="EDUDR04_cat4_4" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="EDUDR04"/>
+                    <FieldRef field="EDUDR04_Mutated_1"/>
                     <Constant dataType="double">4</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21730,7 +21650,7 @@
         <DerivedField name="EDUDR04_cat4_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="EDUDR04"/>
+                    <FieldRef field="EDUDR04_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21739,7 +21659,7 @@
         <DerivedField name="CCC_131_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_131"/>
+                    <FieldRef field="CCC_131_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21749,7 +21669,7 @@
         <DerivedField name="CCC_131_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_131"/>
+                    <FieldRef field="CCC_131_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21759,7 +21679,7 @@
         <DerivedField name="CCC_131_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_131"/>
+                    <FieldRef field="CCC_131_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                     <Constant dataType="double">0</Constant>
                 </Apply>
@@ -21768,7 +21688,7 @@
         <DerivedField name="CCC_101_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_101"/>
+                    <FieldRef field="CCC_101_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21778,7 +21698,7 @@
         <DerivedField name="CCC_101_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_101"/>
+                    <FieldRef field="CCC_101_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21788,7 +21708,7 @@
         <DerivedField name="CCC_101_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_101"/>
+                    <FieldRef field="CCC_101_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21797,7 +21717,7 @@
         <DerivedField name="CCC_121_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_121"/>
+                    <FieldRef field="CCC_121_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21807,7 +21727,7 @@
         <DerivedField name="CCC_121_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_121"/>
+                    <FieldRef field="CCC_121_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21817,7 +21737,7 @@
         <DerivedField name="CCC_121_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_121"/>
+                    <FieldRef field="CCC_121_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21826,7 +21746,7 @@
         <DerivedField name="CCC_151_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_151"/>
+                    <FieldRef field="CCC_151_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21836,7 +21756,7 @@
         <DerivedField name="CCC_151_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_151"/>
+                    <FieldRef field="CCC_151_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21846,7 +21766,7 @@
         <DerivedField name="CCC_151_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_151"/>
+                    <FieldRef field="CCC_151_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21855,7 +21775,7 @@
         <DerivedField name="CCC_071_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_071"/>
+                    <FieldRef field="CCC_071_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21865,7 +21785,7 @@
         <DerivedField name="CCC_071_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_071"/>
+                    <FieldRef field="CCC_071_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21875,7 +21795,7 @@
         <DerivedField name="CCC_071_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_071"/>
+                    <FieldRef field="CCC_071_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21884,7 +21804,7 @@
         <DerivedField name="CCC_280_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_280"/>
+                    <FieldRef field="CCC_280_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21894,7 +21814,7 @@
         <DerivedField name="CCC_280_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_280"/>
+                    <FieldRef field="CCC_280_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21904,7 +21824,7 @@
         <DerivedField name="CCC_280_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_280"/>
+                    <FieldRef field="CCC_280_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21933,7 +21853,7 @@
         <DerivedField name="CCC_091_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_091"/>
+                    <FieldRef field="CCC_091_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21943,7 +21863,7 @@
         <DerivedField name="CCC_091_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="CCC_091"/>
+                    <FieldRef field="CCC_091_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21953,7 +21873,7 @@
         <DerivedField name="CCC_091_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="CCC_091"/>
+                    <FieldRef field="CCC_091_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -21962,7 +21882,7 @@
         <DerivedField name="SDCGCGT_cat2_0" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="SDCGCGT"/>
+                    <FieldRef field="SDCGCGT_Mutated_1"/>
                     <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21972,7 +21892,7 @@
         <DerivedField name="SDCGCGT_cat2_1" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
-                    <FieldRef field="SDCGCGT"/>
+                    <FieldRef field="SDCGCGT_Mutated_1"/>
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
@@ -21982,7 +21902,7 @@
         <DerivedField name="SDCGCGT_cat2_NA" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="is.na">
-                    <FieldRef field="SDCGCGT"/>
+                    <FieldRef field="SDCGCGT_Mutated_1"/>
                 </Apply>
                 <Constant dataType="double">1</Constant>
                 <Constant dataType="double">0</Constant>
@@ -22012,7 +21932,7 @@
             <Apply function="-">
                 <FieldRef field="DHHGAGE_cont"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="DHHGAGE_cont_C"/>
+                    <FieldColumnPair column="variable" constant="AgeC_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22021,7 +21941,7 @@
             <Apply function="-">
                 <FieldRef field="smokeSimp_cat4_2"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="smokeSimp_cat4_2_C"/>
+                    <FieldColumnPair column="variable" constant="SmokeCurrentC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22030,7 +21950,7 @@
             <Apply function="-">
                 <FieldRef field="smokeSimp_cat4_3"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="smokeSimp_cat4_3_C"/>
+                    <FieldColumnPair column="variable" constant="SmokeFormer0to5C_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22039,7 +21959,7 @@
             <Apply function="-">
                 <FieldRef field="smokeSimp_cat4_4"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="smokeSimp_cat4_4_C"/>
+                    <FieldColumnPair column="variable" constant="SmokeFormer5PlusC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22048,7 +21968,7 @@
             <Apply function="-">
                 <FieldRef field="packYears"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="packYears_C"/>
+                    <FieldColumnPair column="variable" constant="PackYearsC_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22057,16 +21977,16 @@
             <Apply function="-">
                 <FieldRef field="formerDrinker_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="formerDrinker_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="FormerDrinkerC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
         </DerivedField>
         <DerivedField name="ALWDWKY_C" optype="continuous">
             <Apply function="-">
-                <FieldRef field="ALWDWKY"/>
+                <FieldRef field="ALWDWKY_Mutated_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="ALWDWKY_C"/>
+                    <FieldColumnPair column="variable" constant="DrinksLastWeekC_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22075,25 +21995,25 @@
             <Apply function="-">
                 <FieldRef field="dietScore2"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="dietScore2_C"/>
+                    <FieldColumnPair column="variable" constant="DietScore2C_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
         </DerivedField>
         <DerivedField name="PACDEE_C" optype="continuous">
             <Apply function="-">
-                <FieldRef field="PACDEE"/>
+                <FieldRef field="PACDEE_Mutated_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="PACDEE_C"/>
+                    <FieldColumnPair column="variable" constant="PhysicalActivityC_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
         </DerivedField>
         <DerivedField name="HWTGBMI_C" optype="continuous">
             <Apply function="-">
-                <FieldRef field="HWTGBMI"/>
+                <FieldRef field="HWTGBMI_Mutated_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="HWTGBMI_C"/>
+                    <FieldColumnPair column="variable" constant="BMIC_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22102,7 +22022,7 @@
             <Apply function="-">
                 <FieldRef field="depInd_cat3_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="depInd_cat3_1_C"/>
+                    <FieldColumnPair column="variable" constant="DepIndLowC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22111,7 +22031,7 @@
             <Apply function="-">
                 <FieldRef field="depInd_cat3_2"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="depInd_cat3_2_C"/>
+                    <FieldColumnPair column="variable" constant="DepIndModC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22120,7 +22040,7 @@
             <Apply function="-">
                 <FieldRef field="EDUDR04_cat4_2"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="EDUDR04_cat4_2_C"/>
+                    <FieldColumnPair column="variable" constant="EduSomePS2C_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22129,7 +22049,7 @@
             <Apply function="-">
                 <FieldRef field="EDUDR04_cat4_3"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="EDUDR04_cat4_3_C"/>
+                    <FieldColumnPair column="variable" constant="EduHSGrad2C_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22138,7 +22058,7 @@
             <Apply function="-">
                 <FieldRef field="EDUDR04_cat4_4"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="EDUDR04_cat4_4_C"/>
+                    <FieldColumnPair column="variable" constant="EduNoHSGrad2C_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22147,7 +22067,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_131_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_131_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="ActiveCancerC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22156,7 +22076,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_101_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_101_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="DiabetesC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22165,7 +22085,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_121_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_121_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="HeartDisC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22174,7 +22094,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_151_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_151_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="StrokeC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22183,7 +22103,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_071_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_071_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="HypertensionC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22192,7 +22112,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_280_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_280_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="MoodC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22201,7 +22121,7 @@
             <Apply function="-">
                 <FieldRef field="dementia_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="dementia_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="DementiaC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22210,7 +22130,7 @@
             <Apply function="-">
                 <FieldRef field="CCC_091_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="CCC_091_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="COPDC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -22228,7 +22148,7 @@
             <Apply function="-">
                 <FieldRef field="epilepsy_cat2_1"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="epilepsy_cat2_1_C"/>
+                    <FieldColumnPair column="variable" constant="EpilepsyC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
