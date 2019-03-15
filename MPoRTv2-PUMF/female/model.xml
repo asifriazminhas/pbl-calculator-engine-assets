@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <PMML>
     <Header description="MPoRTv2-PUMF female algorithm">
         <Extension>
@@ -42,6 +43,7 @@
         <DataField name="immigPct_C_rcs1" displayName="Fraction of lifetime lived in Canada" optype="continuous" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false"/>
         <DataField name="immigPct_C_rcs2" displayName="Fraction of lifetime lived in Canada" optype="continuous" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false"/>
         <DataField name="DHHGAGE_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" leftMargin="20" rightMargin="102" X-description=""/>
             <Value value="1" displayName="Age" description="converted categorical age"/>
             <Value value="2" displayName="Age" description="converted categorical age"/>
             <Value value="3" displayName="Age" description="converted categorical age"/>
@@ -169,7 +171,9 @@
             <Value value="6" displayName="not applicable" description="not applicable"/>
             <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="packYears" displayName="Packyears of smoking" optype="continuous" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false"/>
+        <DataField name="packYears" displayName="Packyears of smoking" optype="continuous" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" leftMargin="0" rightMargin="78" X-description=""/>
+        </DataField>
         <DataField name="smoker" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
         <DataField name="eversmoker" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
         <DataField name="smokeSimp" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" optype="categorical" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false">
@@ -230,7 +234,9 @@
         <DataField name="zVeg" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
         <DataField name="zPotAdd" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
         <DataField name="zPotMinus" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dietScore2" displayName="Simplified diet score (z-transformed)" optype="continuous" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false"/>
+        <DataField name="dietScore2" displayName="Simplified diet score (z-transformed)" optype="continuous" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" leftMargin="-18.9" rightMargin="20.7" X-description=""/>
+        </DataField>
         <DataField name="PACDEE_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
         <DataField name="PACDEE" displayName="Average daily leisure time energy expenditure in METs" optype="continuous" dataType="integer" X-shortLabel="Physical activity" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="42.2" X-description="Daily energy expenditure - (D)"/>
@@ -311,9 +317,7 @@
             <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
         <DataField name="immigPct" displayName="Fraction of lifetime lived in Canada" optype="continuous" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false">
-            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
-            <Interval closure="closedClosed" leftMargin="2" rightMargin="7" X-description="Non-immigrant"/>
-            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="missing"/>
+            <Interval closure="closedClosed" leftMargin="0" rightMargin="1" X-description=""/>
             <Value value="1" displayName="Time in Canada" description="0 to 9 years"/>
             <Value value="2" displayName="Time in Canada" description="10 or more years"/>
             <Value value="6" displayName="Time in Canada" description="Not applicable"/>
