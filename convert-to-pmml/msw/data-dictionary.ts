@@ -141,6 +141,7 @@ export async function constructDataDictionaryNode(
                 constructIntervalNodeForVariable(
                     dataFieldName,
                     variableDetailsSheet,
+                    variablesSheet,
                 ),
             ) as ICategoricalDataField;
         } else {
@@ -150,6 +151,7 @@ export async function constructDataDictionaryNode(
                 constructIntervalNodeForVariable(
                     dataFieldName,
                     variableDetailsSheet,
+                    variablesSheet,
                 ),
                 constructValuesNodeForVariable(
                     dataFieldName,
@@ -253,6 +255,7 @@ export async function constructDataDictionaryNode(
                     constructIntervalNodeForVariable(
                         variablesSheetRow.variable,
                         variableDetailsSheet,
+                        variablesSheet,
                     ),
                 ) as ICategoricalDataField);
             }
@@ -267,6 +270,7 @@ export async function constructDataDictionaryNode(
                 constructIntervalNodeForVariable(
                     variablesSheetRow.variable,
                     variableDetailsSheet,
+                    variablesSheet,
                 ),
             ) as IContinuousDataField);
         });
@@ -316,6 +320,7 @@ function constructValuesNodeForVariable(
 function constructIntervalNodeForVariable(
     variable: string,
     variableDetailsSheet: VariableDetailsSheet,
+    variableSheet: VariablesSheet,
 ) {
     const variableDetails = variableDetailsSheet.filter(variableDetailsRow => {
         const hasSameLowAndHighValues =
@@ -327,36 +332,54 @@ function constructIntervalNodeForVariable(
             !hasSameLowAndHighValues
         );
     });
+    const variableSheetRow = variableSheet.find(variableSheet => {
+        return variableSheet.variable === variable;
+    });
 
     return {
-        Interval: variableDetails
-            ? variableDetails.map(
-                  ({
-                      low,
-                      high,
-                      catStartLabel,
-                      catLabelLong,
-                      variableStart,
-                  }) => {
-                      return {
+        Interval:
+            variableSheetRow &&
+            variableSheetRow.variable !==
+                variableSheetRow.variableStart.split(',').map(trim)[0] &&
+            variableSheetRow.variableType !== CatValue
+                ? [
+                      {
                           $: {
                               closure: 'closedClosed',
-                              leftMargin: low,
-                              rightMargin: high,
-                              'X-description':
-                                  variable === variableStart
-                                      ? catStartLabel
-                                      : catLabelLong,
+                              leftMargin: variableSheetRow.min,
+                              rightMargin: variableSheetRow.max,
+                              'X-description': '',
                           },
-                      };
+                      },
+                  ]
+                : variableDetails
+                ? variableDetails.map(
+                      ({
+                          low,
+                          high,
+                          catStartLabel,
+                          catLabelLong,
+                          variableStart,
+                      }) => {
+                          return {
+                              $: {
+                                  closure: 'closedClosed',
+                                  leftMargin: low,
+                                  rightMargin: high,
+                                  'X-description':
+                                      variable === variableStart
+                                          ? catStartLabel
+                                          : catLabelLong,
+                              },
+                          };
+                      },
+                  )
+                : {
+                      $: {
+                          closure: 'closedClosed',
+                          'X-description': '',
+                      },
                   },
-              )
-            : {
-                  $: {
-                      closure: 'closedClosed',
-                      'X-description': '',
-                  },
-              },
     };
 }
 

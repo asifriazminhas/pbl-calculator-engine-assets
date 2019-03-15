@@ -17,6 +17,7 @@ const promisifiedParseString = promisify(parseString);
 import * as path from 'path';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
 import { constructDataDictionaryNode as constructDataDictionaryNodeForMSW } from './msw/data-dictionary';
+const formatXml = require('xml-formatter');
 
 export async function writePMMLFilesForModel(modelName: string) {
     const modelConfig = getConfigForModel(modelName);
@@ -138,9 +139,13 @@ export async function writePMMLFilesForModel(modelName: string) {
 
         fs.writeFileSync(
             `${folderPath}/model.xml`,
-            buildXmlFromXml2JsObject({
-                PMML: pmml,
-            }),
+            formatXml('<?xml version="1.0" encoding="UTF-8"?>' +
+                buildXmlFromXml2JsObject({
+                    PMML: pmml,
+                }), {
+                    collapseContent: true
+                }
+                ),
         );
     }
 }

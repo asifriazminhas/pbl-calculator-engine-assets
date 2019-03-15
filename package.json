@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@ottawamhealth/pbl-calculator-engine": "1.13.0",
         "@types/bluebird": "3.5.25",
         "@types/chai": "4.1.7",
         "@types/csv-parse": "1.1.12",
@@ -27,10 +28,10 @@
         "ts-node": "8.0.2",
         "tslib": "1.7.1",
         "typescript": "3.3.3333",
+        "xml-formatter": "1.1.0",
         "xml2js": "0.4.19"
     },
     "dependencies": {
-        "@ottawamhealth/pbl-calculator-engine": "1.11.7",
         "csv-parse": "^2.0.4"
     }
 }
