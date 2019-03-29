@@ -3,5 +3,6 @@
     "genderSpecific": false,
     "regressionType": "CoxRegression",
     "maximumTime": 4022,
-    "timeMetric": "days"
+    "timeMetric": "days",
+    "useMsw": false
 }
