@@ -100,5 +100,5 @@ function isMutatedField(dataField: IDataField) {
 }
 
 function isDummyField(dataField: IDataField) {
-  return /.*_cat[0-9]*_[0-9]*$/;
+  return /.*_cat[0-9]*_[0-9]*$/.test(dataField.$.name);
 }
