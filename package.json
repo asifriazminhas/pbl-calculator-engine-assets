@@ -7,7 +7,7 @@
     "build": "ts-node ./build/index.ts",
     "test": "ts-node node_modules/tape/bin/tape -r source-map-support/register  tests/**/*.spec.ts | tap-spec",
     "convert-to-pmml": "ts-node ./convert-to-pmml/index.ts",
-    "ci": "TRAVIS_REPO_SLUG=yulric/test ts-node ./src/ci/ci.ts && git status"
+    "ci": "TRAVIS_REPO_SLUG=yulric/test ts-node ./src/ci/ci.ts"
   },
   "author": "",
   "license": "ISC",
