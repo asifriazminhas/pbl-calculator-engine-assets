@@ -15,31 +15,39 @@ export function addWarningsForDataFields(
   algorithm: string,
   dataFields: IDataField[]
 ) {
-  return dataFields.forEach(dataField => {
-    if (Strings.isEmpty(dataField.$.displayName)) {
-      Warnings.push(
-        NoLabelFoundWarning.ForVariable(algorithm, dataField.$.name)
-      );
-    }
+  return dataFields
+    .filter(dataField => {
+      return isInteractionField(dataField) === false;
+    })
+    .forEach(dataField => {
+      if (Strings.isEmpty(dataField.$.displayName)) {
+        Warnings.push(
+          NoLabelFoundWarning.ForVariable(algorithm, dataField.$.name)
+        );
+      }
 
-    if (dataField.$.optype === "categorical") {
-      const categoricalDataField = dataField as ICategoricalDataField;
+      if (dataField.$.optype === "categorical") {
+        const categoricalDataField = dataField as ICategoricalDataField;
 
-      if (categoricalDataField.Value) {
-        if (categoricalDataField.Value instanceof Array) {
-          categoricalDataField.Value.forEach(value => {
-            addWarningsForValue(algorithm, categoricalDataField.$.name, value);
-          });
-        } else {
-          addWarningsForValue(
-            algorithm,
-            categoricalDataField.$.name,
-            categoricalDataField.Value
-          );
+        if (categoricalDataField.Value) {
+          if (categoricalDataField.Value instanceof Array) {
+            categoricalDataField.Value.forEach(value => {
+              addWarningsForValue(
+                algorithm,
+                categoricalDataField.$.name,
+                value
+              );
+            });
+          } else {
+            addWarningsForValue(
+              algorithm,
+              categoricalDataField.$.name,
+              categoricalDataField.Value
+            );
+          }
         }
       }
-    }
-  });
+    });
 }
 
 export function prettifyWarnings(): string {
@@ -77,4 +85,8 @@ function addWarningsForValue(
       NoLabelFoundWarning.ForCategory(algorithm, variable, value.$.value)
     );
   }
+}
+
+function isInteractionField(dataField: IDataField) {
+  return /interaction[0-9]+/.test(dataField.$.name);
 }
