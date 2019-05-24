@@ -96,9 +96,9 @@ function isInteractionField(dataField: IDataField) {
 }
 
 function isMutatedField(dataField: IDataField) {
-  return /.*_Mutated_[0-9]*$/.test(dataField.$.name);
+  return /.*_Mutated_[0-9]+$/.test(dataField.$.name);
 }
 
 function isDummyField(dataField: IDataField) {
-  return /.*_cat[0-9]*_[0-9]*$/.test(dataField.$.name);
+  return /.*_cat[0-9]+_([0-9]+|NA)$/.test(dataField.$.name);
 }
