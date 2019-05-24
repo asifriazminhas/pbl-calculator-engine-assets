@@ -58,7 +58,7 @@ export function prettifyWarnings(): string {
         .code(
           warningsForAlgorithm
             .map(warning => {
-              return MarkdownBuilder.text(warning.warning);
+              return MarkdownBuilder.text(warning.warning).toMarkdown();
             })
             .join("\n")
         )
