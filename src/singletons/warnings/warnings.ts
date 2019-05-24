@@ -42,19 +42,7 @@ export function addWarningsForDataFields(
   });
 }
 
-function addWarningsForValue(
-  algorithm: string,
-  variable: string,
-  value: IValue
-) {
-  if (Strings.isEmpty(value.$.displayName)) {
-    Warnings.push(
-      NoLabelFoundWarning.ForCategory(algorithm, variable, value.$.value)
-    );
-  }
-}
-
-function prettifyWarnings(): string {
+export function prettifyWarnings(): string {
   const algorithms = uniqBy(Warnings, "algorithm").map(({ algorithm }) => {
     return algorithm;
   });
@@ -65,14 +53,28 @@ function prettifyWarnings(): string {
         return warning.algorithm === algorithm;
       });
 
-      return MarkdownBuilder.h1(algorithm)
-        .h2("Warnings")
-        .unorderedList(
-          warningsForAlgorithm.map(warning => {
-            return MarkdownBuilder.text(warning.warning).toMarkdownNode();
-          })
+      return MarkdownBuilder.h2(algorithm)
+        .text(`### Warnings: ${warningsForAlgorithm.length}`)
+        .code(
+          warningsForAlgorithm
+            .map(warning => {
+              return MarkdownBuilder.text(warning.warning);
+            })
+            .join("\n")
         )
         .toMarkdown();
     })
     .join("\n");
+}
+
+function addWarningsForValue(
+  algorithm: string,
+  variable: string,
+  value: IValue
+) {
+  if (Strings.isEmpty(value.$.displayName)) {
+    Warnings.push(
+      NoLabelFoundWarning.ForCategory(algorithm, variable, value.$.value)
+    );
+  }
 }

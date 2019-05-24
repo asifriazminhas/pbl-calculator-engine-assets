@@ -1,18 +1,24 @@
 import { convertToPmml } from "../../convert-to-pmml";
 import { PrComments } from "./pr-comments";
 
+process.on("uncaughtException", err => {
+  console.log(`Error when building PR`);
+  console.error(err);
+
+  return PrComments.forUncaughtException(err).catch(onPrCommentException);
+});
+
 convertToPmml()
   .then(() => {
-    console.log("Build Done");
+    console.log("Build Successful");
+
+    return PrComments.forSuccessfulBuild();
   })
-  .catch((err: Error) => {
-    console.log(`Error when building PR`);
-    console.error(err);
+  .catch(onPrCommentException);
 
-    PrComments.forUncaughtException(err).catch(err => {
-      console.log(`Error when posting PR comment to Github`);
-      console.error(err);
+function onPrCommentException(err: Error) {
+  console.log(`Error when posting PR comment to Github`);
+  console.error(err);
 
-      process.exit(1);
-    });
-  });
+  process.exit(1);
+}
