@@ -17,7 +17,11 @@ export function addWarningsForDataFields(
 ) {
   return dataFields
     .filter(dataField => {
-      return !isInteractionField(dataField) && !isMutatedField(dataField);
+      return (
+        !isInteractionField(dataField) &&
+        !isMutatedField(dataField) &&
+        !isDummyField(dataField)
+      );
     })
     .forEach(dataField => {
       if (Strings.isEmpty(dataField.$.displayName)) {
@@ -93,4 +97,8 @@ function isInteractionField(dataField: IDataField) {
 
 function isMutatedField(dataField: IDataField) {
   return /.*_Mutated_[0-9]*$/.test(dataField.$.name);
+}
+
+function isDummyField(dataField: IDataField) {
+  return /.*_cat[0-9]*_[0-9]*$/;
 }
