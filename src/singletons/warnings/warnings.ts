@@ -17,7 +17,7 @@ export function addWarningsForDataFields(
 ) {
   return dataFields
     .filter(dataField => {
-      return isInteractionField(dataField) === false;
+      return !isInteractionField(dataField) && !isMutatedField(dataField);
     })
     .forEach(dataField => {
       if (Strings.isEmpty(dataField.$.displayName)) {
@@ -89,4 +89,8 @@ function addWarningsForValue(
 
 function isInteractionField(dataField: IDataField) {
   return /interaction[0-9]+/.test(dataField.$.name);
+}
+
+function isMutatedField(dataField: IDataField) {
+  return /.*_Mutated_[0-9]*$/.test(dataField.$.name);
 }
