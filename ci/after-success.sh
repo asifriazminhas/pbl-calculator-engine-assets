@@ -6,13 +6,13 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout -b $TRAVIS_BRANCH
+  git checkout $TRAVIS_BRANCH
   git add .
   git commit --message "[Feature] Algorithm Files Build"
 }
 
 upload_files() {
-  git remote add origin https://${GH_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git > /dev/null 2>&1
+  git remote add origin https://BigLifeLab:${GH_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git > /dev/null 2>&1
   git push --quiet --set-upstream origin $TRAVIS_BRANCH 
 }
 
