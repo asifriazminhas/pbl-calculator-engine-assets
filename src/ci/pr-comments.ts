@@ -15,7 +15,7 @@ export abstract class PrComments {
       repo,
       issue_number: Number(process.env.TRAVIS_PULL_REQUEST as string),
       body: MarkdownBuilder.h2(
-        `Travic CI encountered the following error when building the current PR`
+        `Travis CI encountered the following unknown error when building the current PR`
       )
         .code(error.stack as string)
         .text("@yulric Please look into this")
