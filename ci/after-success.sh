@@ -6,7 +6,7 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout $TRAVIS_PULL_REQUEST_BRANCH
+  git checkout -b $TRAVIS_PULL_REQUEST_BRANCH
   git add .
   git commit --message "[Feature] Algorithm Files Build"
 }
