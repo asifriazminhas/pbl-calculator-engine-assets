@@ -6,13 +6,12 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout -b $TRAVIS_PULL_REQUEST_BRANCH
   git add .
   git commit --message "[Feature] Algorithm Files Build"
 }
 
 upload_files() {
-  git push --quiet --set-upstream https://${GITHUB_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git $TRAVIS_PULL_REQUEST_BRANCH 
+  git push --quiet --set-upstream https://${GITHUB_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git HEAD:$TRAVIS_PULL_REQUEST_BRANCH 
 }
 
 setup_git
