@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "8.16.0"
+
+cache: npm
+
+before_install:
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+
+script:
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then GITHUB_TOKEN=$GITHUB_TOKEN TRAVIS_REPO_SLUG=$TRAVIS_REPO_SLUG TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST ts-node ./src/ci/ci.ts'
