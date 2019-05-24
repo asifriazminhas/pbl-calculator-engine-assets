@@ -11,9 +11,9 @@ commit_website_files() {
 }
 
 upload_files() {
-  git push --quiet --set-upstream https://${GITHUB_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git HEAD:$TRAVIS_PULL_REQUEST_BRANCH 
+  git push --quiet --set-upstream https://${GITHUB_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git HEAD:$TRAVIS_BRANCH
 }
 
-setup_git
-commit_website_files
-upload_files
+if ["$TRAVIS_BRANCH" == "master"]; then
+    setup_git && commit_website_files && upload_files;
+fi
