@@ -10,8 +10,6 @@ convertToPmml()
     throw new Error(`Test Uncught Exception`);
   })
   .catch((err: Error) => {
-    console.error(err);
-
     const pullRequestSlugSep = process.env.TRAVIS_REPO_SLUG!.split("/");
     const owner = pullRequestSlugSep[0];
     const repo = pullRequestSlugSep[1];
@@ -21,7 +19,7 @@ convertToPmml()
         owner,
         repo,
         issue_number: Number(process.env.TRAVIS_PULL_REQUEST as string),
-        body: err.toString()
+        body: err.stack as string
       })
       .then(() => {
         process.exit(1);
