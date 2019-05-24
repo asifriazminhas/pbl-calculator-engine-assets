@@ -11,4 +11,4 @@ script:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then GITHUB_TOKEN=$GITHUB_TOKEN TRAVIS_REPO_SLUG=$TRAVIS_REPO_SLUG TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST ts-node ./src/ci/ci.ts; fi'
 
 after_success:
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then ./ci/after-success.sh; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./ci/after-success.sh; fi'
