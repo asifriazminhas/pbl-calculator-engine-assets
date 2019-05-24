@@ -3,8 +3,7 @@ import { PrComments } from "./pr-comments";
 
 convertToPmml()
   .then(() => {
-    console.log("Done");
-    throw new Error(`Test Uncught Exception`);
+    console.log("Build Done");
   })
   .catch((err: Error) => {
     console.log(`Error when building PR`);
