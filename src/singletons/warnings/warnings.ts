@@ -20,7 +20,9 @@ export function addWarningsForDataFields(
       return (
         !isInteractionField(dataField) &&
         !isMutatedField(dataField) &&
-        !isDummyField(dataField)
+        !isDummyField(dataField) &&
+        !isCenteredField(dataField) &&
+        !isRcsVariable(dataField)
       );
     })
     .forEach(dataField => {
@@ -101,4 +103,12 @@ function isMutatedField(dataField: IDataField) {
 
 function isDummyField(dataField: IDataField) {
   return /.*_cat[0-9]+_([0-9]+|NA)$/.test(dataField.$.name);
+}
+
+function isCenteredField(dataField: IDataField) {
+  return /.*_C$/.test(dataField.$.name);
+}
+
+function isRcsVariable(dataField: IDataField) {
+  return /.*_rcs[0-9]+$/.test(dataField.$.name);
 }
