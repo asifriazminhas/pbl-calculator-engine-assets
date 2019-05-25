@@ -23,8 +23,4 @@ jobs:
             - ./node_modules
       - run:
           name: Run build
-          command: |
-            echo $CIRCLE_PULL_REQUEST
-            echo $CIRCLE_PR_USERNAME
-            echo $CIRCLE_PROJECT_REPONAME
-            echo $CIRCLE_USERNAME
+          command: npm run ci-build

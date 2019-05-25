@@ -5,7 +5,7 @@ process.on("uncaughtException", err => {
   console.log(`Error when building PR`);
   console.error(err);
 
-  return PrComments.forUncaughtException(err).catch(onPrCommentException);
+  return process.exit(1);
 });
 
 convertToPmml()
@@ -14,11 +14,12 @@ convertToPmml()
 
     return PrComments.forSuccessfulBuild();
   })
-  .catch(onPrCommentException);
-
-function onPrCommentException(err: Error) {
-  console.log(`Error when posting PR comment to Github`);
-  console.error(err);
-
-  process.exit(1);
-}
+  .then(() => {
+    return process.exit(0);
+  })
+  .catch(err => {
+    PrComments.forUncaughtException(err);
+  })
+  .then(() => {
+    return process.exit(1);
+  });
