@@ -8,6 +8,8 @@ before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
 
 script:
+  - echo $TRAVIS_PULL_REQUEST;
+  - echo $TRAVIS_BRANCH;
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then GITHUB_TOKEN=$GITHUB_TOKEN TRAVIS_REPO_SLUG=$TRAVIS_REPO_SLUG TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST ts-node ./src/ci/pr/pr.ts; fi'
   - 'if [ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]; then ts-node ./src/ci/commit/commit.ts; fi'
 
