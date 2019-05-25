@@ -3,7 +3,7 @@ const GithubApi = new Octokit({
   auth: process.env.GITHUB_TOKEN
 });
 import { MarkdownBuilder } from "md-builder";
-import { prettifyWarnings } from "../singletons/warnings/warnings";
+import { prettifyWarnings } from "../../singletons/warnings/warnings";
 
 export abstract class PrComments {
   static async forUncaughtException(error: Error) {

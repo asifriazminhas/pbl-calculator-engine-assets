@@ -1,4 +1,4 @@
-import { convertToPmml } from "../../convert-to-pmml";
+import { convertToPmml } from "../../../convert-to-pmml";
 import { PrComments } from "./pr-comments";
 
 process.on("uncaughtException", err => {
