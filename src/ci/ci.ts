@@ -6,6 +6,8 @@ function runCiBuild() {
 
     return process.exit(0);
   } else {
+    console.log("Starting build for PR");
+
     return require("./pr/pr");
   }
 }

@@ -10,16 +10,20 @@ process.on("uncaughtException", err => {
 
 convertToPmml()
   .then(() => {
-    console.log("Build Successful");
+    console.log("Built PMML files");
 
     return PrComments.forSuccessfulBuild();
   })
   .then(() => {
+    console.log("Logged PR comments for successful build");
+
     return process.exit(0);
   })
   .catch(err => {
-    PrComments.forUncaughtException(err);
+    return PrComments.forUncaughtException(err);
   })
   .then(() => {
+    console.log("Logged PR comments for failed build");
+
     return process.exit(1);
   });
