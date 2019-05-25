@@ -13,6 +13,7 @@ script:
 
 deploy:
   - provider: script
+    skip_cleanup: true
     script: bash ci/deploy.sh
     on:
       branch: master
