@@ -35,6 +35,6 @@
   "dependencies": {
     "@octokit/rest": "^16.27.0",
     "csv-parse": "^2.0.4",
-    "md-builder": "^1.0.2"
+    "md-builder": "^1.0.3"
   }
 }
