@@ -68,7 +68,7 @@ export function prettifyWarnings(): string {
       });
 
       return MarkdownBuilder.h2(algorithm)
-        .text(`### Warnings: ${warningsForAlgorithm.length}`)
+        .h3(`Warnings: ${warningsForAlgorithm.length}`)
         .code(
           warningsForAlgorithm
             .map(warning => {
