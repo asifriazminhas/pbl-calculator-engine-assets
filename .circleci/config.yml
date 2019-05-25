@@ -11,6 +11,9 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
+          name: Set NPM token for private dependencies installation
+          command: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      - run:
           name: Install Dependencies
           command: npm install
       # special step to save the dependency cache
