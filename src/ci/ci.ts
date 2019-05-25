@@ -2,9 +2,9 @@ import { CIEnvVariables } from "./env/ci";
 
 function runCiBuild() {
   if (CIEnvVariables.getCurrentBranchName() === "master") {
-    console.log("Build for master");
+    console.log("Starting build for master");
 
-    return process.exit(0);
+    return require("./master-commit/master-commit");
   } else {
     console.log("Starting build for PR");
 
