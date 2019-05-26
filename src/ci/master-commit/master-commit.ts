@@ -10,5 +10,5 @@ process.on("uncaughtException", err => {
 convertToPmml().then(() => {
   console.log("Built PMML files");
 
-  //return process.exit(0);
+  return process.exit(0);
 });
