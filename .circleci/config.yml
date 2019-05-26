@@ -35,9 +35,6 @@ jobs:
 
   deploy:
     <<: *defaults
-    branches:
-      only:
-        - master
     steps:
       - checkout
       # special step to restore the dependency cache
@@ -68,3 +65,15 @@ jobs:
             git commit -m "[skip ci] Build"
             git remote add origin https://${GITHUB_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git
             git push origin master
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
