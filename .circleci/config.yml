@@ -26,6 +26,8 @@ jobs:
           command: npm run ci-build
 
   deploy:
+    docker:
+      - image: circleci/node:8.16.0
     steps:
       - run:
           name: Commit and Push to master
