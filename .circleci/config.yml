@@ -63,7 +63,7 @@ jobs:
             git status
             git add .
             git commit -m "[skip ci] Build"
-            git push origin master
+            git push https://${GITHUB_TOKEN}@github.com/Big-Life-Lab/pbl-calculator-engine-assets.git master
 
 workflows:
   version: 2
