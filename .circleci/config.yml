@@ -24,6 +24,11 @@ jobs:
       - run:
           name: Run build
           command: npm run ci-build
+      # persist everything but the node_modules directory
+      - persist_to_workspace:
+          root: .
+          paths:
+            - !**/node_modules/**/*
 
   deploy:
     docker:
