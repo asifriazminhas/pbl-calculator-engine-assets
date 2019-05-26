@@ -25,8 +25,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:8.16.0
-    steps:
-      - *id001
+    steps: *id001
 
   deploy:
     docker:
