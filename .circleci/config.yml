@@ -28,7 +28,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - !**/node_modules/**/*
+            - '!**/node_modules/**/*''
 
   deploy:
     docker:
