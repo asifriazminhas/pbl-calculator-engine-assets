@@ -1,40 +1,63 @@
+# ****IMPORTANT****
+# The steps in the build job need to be run before the the final step in the
+# deploy job. But I could not figure out a DRY way of doing it in YAML.
+# So changing any build job step should be replicated in the deploy job steps
+
 version: 2.0
 
-build-job-steps: &id001
-  - checkout
-  # special step to restore the dependency cache
-  # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
-  - restore_cache:
-      key: dependency-cache-{{ checksum "package.json" }}
-  - run:
-      name: Set NPM token for private dependencies installation
-      command: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-  - run:
-      name: Install Dependencies
-      command: npm install
-  # special step to save the dependency cache
-  - save_cache:
-      key: dependency-cache-{{ checksum "package.json" }}
-      paths:
-        - ./node_modules
-  - run:
-      name: Run build
-      command: npm run ci-build
+default: &defaults
+  docker:
+    - image: circleci/node:8.16.0
 
 jobs:
   build:
-    docker:
-      - image: circleci/node:8.16.0
-    steps: *id001
+    <<: *defaults
+    steps:
+      - checkout
+      # special step to restore the dependency cache
+      # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Set NPM token for private dependencies installation
+          command: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      - run:
+          name: Install Dependencies
+          command: npm install
+      # special step to save the dependency cache
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run build
+          command: npm run ci-build
 
   deploy:
-    docker:
-      - image: circleci/node:8.16.0
+    <<: *defaults
     branches:
       only:
         - master
     steps:
-      - *id001
+      - checkout
+      # special step to restore the dependency cache
+      # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Set NPM token for private dependencies installation
+          command: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      - run:
+          name: Install Dependencies
+          command: npm install
+      # special step to save the dependency cache
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run build
+          command: npm run ci-build
       - run:
           name: Commit and Push to master
           command: |
