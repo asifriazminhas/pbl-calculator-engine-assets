@@ -1,5 +1,5 @@
 Lime question,variable,dummyVariable,variableType,method,target,databaseStart,variableStart,variableStartType,numValidCat,catValues,catLabel,catLabelLong,units,low,high,interval,catStartLabel,reference,variableStartShortLabel,variableStartLabel
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,1,1,"[,]",12 To 15 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,1,1,"[,]",12 To 14 Years,N/A,Age,Age - (G)
 ,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,2,2,"[,]",15 To 17 Years,N/A,Age,Age - (G)
 ,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,3,3,"[,]",18 To 19 Years,N/A,Age,Age - (G)
 ,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,4,4,"[,]",20 To 24 Years,N/A,Age,Age - (G)
