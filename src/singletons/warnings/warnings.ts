@@ -4,7 +4,7 @@ import {
   ICategoricalDataField,
   IValue
 } from "@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field";
-import { NoLabelFoundWarning } from "./no-label-found-warning";
+import { NoLabelFoundWarning } from "./warning-types/no-label-found-warning";
 import { Strings } from "../../util/strings";
 import { uniqBy } from "lodash";
 import { MarkdownBuilder } from "md-builder";

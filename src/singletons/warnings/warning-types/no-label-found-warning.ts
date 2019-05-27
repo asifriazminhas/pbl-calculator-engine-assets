@@ -1,4 +1,4 @@
-import { IWarning } from "./warning";
+import { IWarning } from "../warning";
 
 export abstract class NoLabelFoundWarning {
   static ForCategory(
