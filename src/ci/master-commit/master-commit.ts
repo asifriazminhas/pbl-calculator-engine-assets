@@ -1,3 +1,5 @@
+// This script is run when a commit is pushed to the master branch
+
 import { convertToPmml } from "../../../convert-to-pmml";
 
 process.on("uncaughtException", err => {
