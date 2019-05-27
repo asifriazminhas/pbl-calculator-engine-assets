@@ -4,8 +4,8 @@ const GithubApi = new Octokit({
 });
 import { MarkdownBuilder } from "md-builder";
 import { prettifyWarnings } from "../../singletons/warnings/warnings";
-import { Owner, RepoName } from "../constants/github";
-import { CIEnvVariables } from "../env/ci";
+import { Owner, RepoName } from "../../constants/github";
+import { CIEnvVariables } from "../../env/ci";
 
 export abstract class PrComments {
   static async forUncaughtException(error: Error) {

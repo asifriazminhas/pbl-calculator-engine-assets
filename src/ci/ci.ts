@@ -1,4 +1,4 @@
-import { CIEnvVariables } from "./env/ci";
+import { CIEnvVariables } from "../env/ci";
 
 function runCiBuild() {
   if (CIEnvVariables.getCurrentBranchName() === "master") {
