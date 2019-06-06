@@ -5,8 +5,9 @@ require('codemirror/mode/javascript/javascript');
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/xq-light.css';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
-const schema = require('../../../json-schemas/model-config-schema.json');
-const reactJsonSchemaUiConfig = require('./form-ui-config.json');
+const schema = require('../../../../json-schemas/model-config-schema.json');
+const reactJsonSchemaUiConfig = require('../../../config/form-ui-config.json');
+
 export class App extends React.Component {
     render() {
         return (
