@@ -1,4 +1,4 @@
-// This script is run when a commit has been pushed to a branch that has a PR attahced to it
+// This script is run when a commit has been pushed to a branch that has a PR attached to it
 
 import { convertToPmml } from "../../../convert-to-pmml";
 import { PrComments } from "./pr-comments";
