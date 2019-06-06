@@ -8,14 +8,14 @@ export abstract class NoLabelFoundWarning {
     ): IValidationInfo {
         return {
             algorithm,
-            warning: `No label found for category ${categoryValue} for variable ${variable}`,
+            message: `No label found for category ${categoryValue} for variable ${variable}`,
         };
     }
 
     static ForVariable(algorithm: string, variable: string): IValidationInfo {
         return {
             algorithm,
-            warning: `No label found for variable ${variable}`,
+            message: `No label found for variable ${variable}`,
         };
     }
 }
