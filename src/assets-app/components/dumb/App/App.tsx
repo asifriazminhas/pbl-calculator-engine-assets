@@ -3,7 +3,7 @@ import React from 'react';
 import Form from 'react-jsonschema-form';
 require('codemirror/mode/javascript/javascript');
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/xq-light.css';
+import 'codemirror/theme/solarized.css';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
 const schema = require('../../../../json-schemas/model-config-schema.json');
 const reactJsonSchemaUiConfig = require('../../../config/form-ui-config.json');
@@ -18,7 +18,7 @@ export class App extends React.Component {
                 <div style={{ flexBasis: '50%', padding: 50 }}>
                     <CodeMirror
                         options={{
-                            them: 'xq-light',
+                            them: 'solarized',
                             mode: 'javascript',
                             lineNumbers: true,
                             json: true,
