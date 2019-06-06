@@ -12,10 +12,15 @@ import {
     TrueColumnValue,
 } from '../../reference-files/msw';
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
-import { parseString } from 'xml2js';
+import { parseString, convertableToString, OptionsV2 } from 'xml2js';
 import { promisify } from 'bluebird';
 import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
-const promisifiedParseString = promisify(parseString);
+// xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
+const promisifiedParseString = promisify(parseString as (
+    xml: convertableToString,
+    options: OptionsV2,
+    callback: (err: any, result: any) => void,
+) => void);
 import {
     getDataFieldNamesFromLocalTransformationsNode,
     getDataFieldNamesFromApplyNode,

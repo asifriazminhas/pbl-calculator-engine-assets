@@ -11,12 +11,17 @@ import { isGenderedModel } from './util';
 import csvParse from 'csv-parse/lib/sync';
 import { IModelConfigJson } from '../reference-files';
 import bluebird from 'bluebird';
-import { parseString } from 'xml2js';
+import { parseString, convertableToString, OptionsV2 } from 'xml2js';
 import {
     ICustomPmml,
     Pmml,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/pmml';
-const promisifiedParseXmlString = bluebird.promisify(parseString);
+// xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
+const promisifiedParseXmlString = bluebird.promisify(parseString as (
+    xml: convertableToString,
+    options: OptionsV2,
+    callback: (err: any, result: any) => void,
+) => void);
 import { parseDerivedFields } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml-to-json-parser/data_fields/derived_field/derived_field';
 import { returnEmptyArrayIfUndefined } from '@ottawamhealth/pbl-calculator-engine/lib/util/undefined/undefined';
 import { AlgorithmType } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/json/algorithm-type';
