@@ -1,5 +1,17 @@
 {
     "modelName": {
         "ui:title": "Model Name"
+    },
+    "genderSpecific": {
+        "ui:title": "Stratified by Sex"
+    },
+    "regressionType": {
+        "ui:title": "Regression Type"
+    },
+    "timeMetric": {
+        "ui:title": "Time Metric"
+    },
+    "maximumTime": {
+        "ui:title": "Maximum Time"
     }
 }

@@ -1,33 +1,35 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "type": "object",
-  "properties": {
-    "modelName": {
-      "type": "string",
-      "description": "Name of the model which will be set within the PMML file. Should match one of the name fields within the config.json file"
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "modelName": {
+            "type": "string",
+            "description": "Name of the model which will be set within the PMML file. Should match one of the name fields within the config.json file"
+        },
+        "genderSpecific": {
+            "type": "boolean",
+            "title": "Stratified by Sex",
+            "description": "Whether this model is stratified by sex. True if it is"
+        },
+        "regressionType": {
+            "type": "string",
+            "enum": ["CoxRegression"]
+        },
+        "timeMetric": {
+            "type": "string",
+            "enum": ["years"],
+            "description": "The units of time used for the maximumTime field"
+        },
+        "maximumTime": {
+            "type": "number",
+            "description": "Maximum time expressed in units of the timeMetric field that this model is valid for. eg. MPoRT gives a 5 year risk of death. The timeMetric field would be 'years' and the maximumTime field would be '5'"
+        }
     },
-    "genderSpecific": {
-      "type": "boolean",
-      "description": "Whether this model is stratified by gender. True if it is"
-    },
-    "regressionType": {
-      "type": "string",
-      "enum": ["CoxRegression"]
-    },
-    "timeMetric": {
-      "type": "string",
-      "enum": ["years"]
-    },
-    "maximumTime": {
-      "type": "number",
-      "description": "Maximum time expressed in terms of the timeMetric field that this model is valid until"
-    }
-  },
-  "required": [
-    "modelName",
-    "genderSpecific",
-    "regressionType",
-    "timeMetric",
-    "maximumTime"
-  ]
+    "required": [
+        "modelName",
+        "genderSpecific",
+        "regressionType",
+        "timeMetric",
+        "maximumTime"
+    ]
 }
