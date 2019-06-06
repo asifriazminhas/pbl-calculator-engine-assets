@@ -6,13 +6,13 @@ import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/xq-light.css';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
 const schema = require('../../../json-schemas/model-config-schema.json');
-
+const reactJsonSchemaUiConfig = require('./form-ui-config.json');
 export class App extends React.Component {
     render() {
         return (
             <div style={{ display: 'flex' }}>
                 <div style={{ flexBasis: '50%', padding: 50 }}>
-                    <Form schema={schema} />
+                    <Form schema={schema} uiSchema={reactJsonSchemaUiConfig} />
                 </div>
                 <div style={{ flexBasis: '50%', padding: 50 }}>
                     <CodeMirror
