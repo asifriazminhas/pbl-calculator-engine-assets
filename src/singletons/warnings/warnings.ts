@@ -1,4 +1,4 @@
-import { IWarning } from './warning';
+import { IValidationInfo } from '../../validation/validation-info';
 import {
     IDataField,
     ICategoricalDataField,
@@ -9,7 +9,7 @@ import { Strings } from '../../util/strings';
 import { uniqBy } from 'lodash';
 import { MarkdownBuilder } from 'md-builder';
 
-let Warnings: IWarning[] = [];
+let Warnings: IValidationInfo[] = [];
 
 export function addWarningsForDataFields(
     algorithm: string,
