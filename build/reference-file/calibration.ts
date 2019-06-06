@@ -1,31 +1,35 @@
+import { constructBuildReferenceFileFunction } from './reference-file';
 import {
     ICalibrationFactorJsonObject,
     CalibrationJson,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/json/json-calibration';
-
-// tslint:disable-next-line
-const csvParse = require('csv-parse/lib/sync');
+import csvParse = require('csv-parse/lib/sync');
 
 export interface ICalibrationCsvRow {
     age: string;
     [index: string]: string;
 }
 
-export type CalibrationCsv = ICalibrationCsvRow[];
+export const buildCalibrationReferenceFiles = constructBuildReferenceFileFunction(
+    {
+        male: '/calibration-references/male/calibration.csv',
+        female: '/calibration-references/female/calibration.csv',
+    },
+    function(maleReferenceFile, femaleReferenceFile) {
+        return getCalibrationJsonsFromCalibrationCsvString({
+            male: maleReferenceFile,
+            female: femaleReferenceFile,
+        }).map(({ calibrationJson, popName }) => {
+            return {
+                referenceFileJson: calibrationJson,
+                fileName: `${popName}.csv`,
+            };
+        });
+    },
+    'calibration',
+);
 
-function getCalibrationFactorObjectsForPopName(
-    calibrationCsv: CalibrationCsv,
-    popName: string,
-): ICalibrationFactorJsonObject[] {
-    return calibrationCsv.map(calibrationCsvRow => {
-        return {
-            age: Number(calibrationCsvRow.age),
-            factor: Number(calibrationCsvRow[popName]),
-        };
-    });
-}
-
-export function getCalibrationJsonsFromCalibrationCsvString(calibrationCsvStrings: {
+function getCalibrationJsonsFromCalibrationCsvString(calibrationCsvStrings: {
     male: string;
     female: string;
 }): {
@@ -87,4 +91,18 @@ export function getCalibrationJsonsFromCalibrationCsvString(calibrationCsvString
     });
 
     return calibrationJsonsWithPopName;
+}
+
+type CalibrationCsv = ICalibrationCsvRow[];
+
+function getCalibrationFactorObjectsForPopName(
+    calibrationCsv: CalibrationCsv,
+    popName: string,
+): ICalibrationFactorJsonObject[] {
+    return calibrationCsv.map(calibrationCsvRow => {
+        return {
+            age: Number(calibrationCsvRow.age),
+            factor: Number(calibrationCsvRow[popName]),
+        };
+    });
 }

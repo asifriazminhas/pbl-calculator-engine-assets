@@ -1,6 +1,7 @@
 export interface IModelConfigJson {
     modelName: string;
     genderSpecific: boolean;
+    algorithmType: 'Simple' | 'Regression';
     regressionType: 'CoxRegression';
     maximumTime: number;
     timeMetric: 'days' | 'years';
