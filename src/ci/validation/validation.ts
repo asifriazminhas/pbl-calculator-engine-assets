@@ -60,4 +60,8 @@ export abstract class Validation {
             })
             .join('\n');
     }
+
+    static hasErrors(): boolean {
+        return Validation.errors.length > 0;
+    }
 }
