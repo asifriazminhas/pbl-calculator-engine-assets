@@ -1,9 +1,9 @@
 import { IValidationInfo } from '../../validation/validation-info';
 
-export abstract class Errors {
+export abstract class Validation {
     private static errors: IValidationInfo[] = [];
 
     static addError(error: IValidationInfo) {
-        Errors.addError(error);
+        Validation.errors.push(error);
     }
 }
