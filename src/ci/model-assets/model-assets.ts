@@ -1,6 +1,7 @@
 import { existsSync } from 'fs';
 import * as path from 'path';
 import { Errors } from '../validation/errors';
+import { AppUrl } from '../../constants/ci';
 
 export class ModelAssets {
     static validateAssetsForModel(modelName: string): boolean {
@@ -10,7 +11,7 @@ export class ModelAssets {
         if (!hasModelConfigJson) {
             Errors.addError({
                 algorithm: modelName,
-                message: `Missing model-config.json file in root of model folder. Please add one inside the ${modelName} folder. You can use the tool at {TODO ADD LINK HERE} to generate the file contents`,
+                message: `Missing model-config.json file in root of model folder. Please add one inside the ${modelName} folder. You can use the tool at ${AppUrl} to generate the file contents`,
             });
             return false;
         }
