@@ -22,7 +22,14 @@ const promisifiedParseString = promisify(parseString as (
 import * as path from 'path';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
 import { constructDataDictionaryNode as constructDataDictionaryNodeForMSW } from './msw/data-dictionary';
-import { addWarningsForDataFields } from '../src/singletons/warnings/warnings';
+import {
+    IDataField,
+    ICategoricalDataField,
+} from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml';
+import { Strings } from '../src/util/strings';
+import { Validation } from '../src/ci/validation/validation';
+import { NoLabelFoundWarning } from '../src/ci/validation/warnings/no-label-found-warning';
+import { IValue } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 const formatXml = require('xml-formatter');
 
 export async function writePMMLFilesForModel(modelName: string) {
@@ -159,6 +166,83 @@ export async function writePMMLFilesForModel(modelName: string) {
                     collapseContent: true,
                 },
             ),
+        );
+    }
+}
+
+function addWarningsForDataFields(algorithm: string, dataFields: IDataField[]) {
+    return dataFields
+        .filter(dataField => {
+            return (
+                !isInteractionField(dataField) &&
+                !isMutatedField(dataField) &&
+                !isDummyField(dataField) &&
+                !isCenteredField(dataField) &&
+                !isRcsVariable(dataField)
+            );
+        })
+        .forEach(dataField => {
+            if (Strings.isEmpty(dataField.$.displayName)) {
+                Validation.addWarning(
+                    NoLabelFoundWarning.ForVariable(
+                        algorithm,
+                        dataField.$.name,
+                    ),
+                );
+            }
+
+            if (dataField.$.optype === 'categorical') {
+                const categoricalDataField = dataField as ICategoricalDataField;
+
+                if (categoricalDataField.Value) {
+                    if (categoricalDataField.Value instanceof Array) {
+                        categoricalDataField.Value.forEach(value => {
+                            addWarningsForValue(
+                                algorithm,
+                                categoricalDataField.$.name,
+                                value,
+                            );
+                        });
+                    } else {
+                        addWarningsForValue(
+                            algorithm,
+                            categoricalDataField.$.name,
+                            categoricalDataField.Value,
+                        );
+                    }
+                }
+            }
+        });
+}
+
+function isInteractionField(dataField: IDataField) {
+    return /interaction[0-9]+/.test(dataField.$.name);
+}
+
+function isMutatedField(dataField: IDataField) {
+    return /.*_Mutated_[0-9]+$/.test(dataField.$.name);
+}
+
+function isDummyField(dataField: IDataField) {
+    return /.*_cat[0-9]+_([0-9]+|NA)$/.test(dataField.$.name);
+}
+
+function isCenteredField(dataField: IDataField) {
+    return /.*_C$/.test(dataField.$.name);
+}
+
+function isRcsVariable(dataField: IDataField) {
+    return /.*_rcs[0-9]+$/.test(dataField.$.name);
+}
+
+function addWarningsForValue(
+    algorithm: string,
+    variable: string,
+    value: IValue,
+) {
+    if (Strings.isEmpty(value.$.displayName)) {
+        Validation.addWarning(
+            NoLabelFoundWarning.ForCategory(algorithm, variable, value.$.value),
         );
     }
 }
