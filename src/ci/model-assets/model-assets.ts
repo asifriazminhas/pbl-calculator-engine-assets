@@ -6,6 +6,12 @@ import { MarkdownBuilder } from 'md-builder';
 import { ModelConfig } from './model-config/model-config';
 
 export class ModelAssets {
+    modelConfig: ModelConfig;
+
+    constructor(modelConfig: ModelConfig) {
+        this.modelConfig = modelConfig;
+    }
+
     static validateAssetsForModel(modelName: string): boolean {
         const hasModelConfigJson = existsSync(
             ModelConfig.getModelConfigPath(modelName),
