@@ -2,16 +2,25 @@ import { existsSync } from 'fs';
 import * as path from 'path';
 import { AppUrl } from '../../constants/ci';
 import { Validation } from '../validation/validation';
+import { MarkdownBuilder } from 'md-builder';
+import { ModelConfig } from './model-config/model-config';
 
 export class ModelAssets {
     static validateAssetsForModel(modelName: string): boolean {
         const hasModelConfigJson = existsSync(
-            path.join(__dirname, `../../../${modelName}/model-config.json`),
+            ModelConfig.getModelConfigPath(modelName),
         );
         if (!hasModelConfigJson) {
             Validation.addError({
                 algorithm: modelName,
-                message: `Missing model-config.json file in root of model folder. Please add one inside the ${modelName} folder. You can use the tool at ${AppUrl} to generate the file contents`,
+                message: MarkdownBuilder.text(
+                    `Missing model-config.json file in root of model folder. Please add one inside the ${modelName} folder. You can use the tool at${MarkdownBuilder.link(
+                        {
+                            linkTo: AppUrl,
+                            linkLabel: AppUrl,
+                        },
+                    ).toMarkdown()} to generate the file contents`,
+                ).toMarkdown(),
             });
             return false;
         }
