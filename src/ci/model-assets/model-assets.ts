@@ -4,13 +4,22 @@ import { Validation } from '../validation/validation';
 import { MarkdownBuilder } from 'md-builder';
 import { ModelConfig } from './model-config/model-config';
 import { AssetsUtil } from './assets-util';
+import { AlgorithmAssets } from './algorithm-assets';
 
-export class ModelAssets {
+export abstract class ModelAssets {
     modelConfig: ModelConfig;
 
     constructor(modelConfig: ModelConfig) {
         this.modelConfig = modelConfig;
     }
+
+    abstract forEachAlgorithmAssets(
+        iterator: (
+            algorithmAssets: AlgorithmAssets,
+            index: number,
+            algorithmsAssets: AlgorithmAssets[],
+        ) => void,
+    ): void;
 
     static validateAssetsForModel(modelName: string): boolean {
         const hasModelConfigJson = existsSync(

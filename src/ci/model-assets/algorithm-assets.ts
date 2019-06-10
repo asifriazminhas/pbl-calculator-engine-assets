@@ -21,8 +21,7 @@ export class AlgorithmAssets {
             Taxonomy: ITaxonomy;
         };
     }; // This is initialized in the finishConstruction method. Because the method to parse the XML is async it cannot be done in the constructor
-
-    private algorithmFolder: string; // Store this because we cannot finish the construction in the constructor and we need it for the finishConstruction method
+    algorithmFolder: string; // Store this because we cannot finish the construction in the constructor and we need it for the finishConstruction method
 
     constructor(algorithmName: string, algorithmFolder: string) {
         const csvParseOptions = {

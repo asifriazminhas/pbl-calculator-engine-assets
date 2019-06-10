@@ -9,7 +9,6 @@ export class SexStratifiedModelAssets extends ModelAssets {
     constructor(modelConfig: ModelConfig) {
         super(modelConfig);
     }
-
     async finishConstruction(): Promise<SexStratifiedModelAssets> {
         this.maleAlgorithmAssets = await new AlgorithmAssets(
             this.getAlgorithmNameForSex(Sex.Male),
@@ -21,6 +20,18 @@ export class SexStratifiedModelAssets extends ModelAssets {
         );
 
         return this;
+    }
+
+    forEachAlgorithmAssets(
+        iterator: (
+            algorithmAssets: AlgorithmAssets,
+            index: number,
+            algorithmsAssets: AlgorithmAssets[],
+        ) => void,
+    ): void {
+        return [this.maleAlgorithmAssets, this.femaleAlgorithmAssets].forEach(
+            iterator,
+        );
     }
 
     private getAlgorithmNameForSex(sex: string) {

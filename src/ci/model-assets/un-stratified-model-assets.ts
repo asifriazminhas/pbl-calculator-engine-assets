@@ -9,7 +9,6 @@ export class UnStratifiedModelAssets extends ModelAssets {
     constructor(modelConfig: ModelConfig) {
         super(modelConfig);
     }
-
     async finishConstruction(): Promise<UnStratifiedModelAssets> {
         this.algorithmAssets = await new AlgorithmAssets(
             this.modelConfig.config.modelName,
@@ -17,5 +16,15 @@ export class UnStratifiedModelAssets extends ModelAssets {
         ).finishConstruction();
 
         return this;
+    }
+
+    forEachAlgorithmAssets(
+        iterator: (
+            algorithmAssets: AlgorithmAssets,
+            index: number,
+            algorithmsAssets: AlgorithmAssets[],
+        ) => void,
+    ): void {
+        return [this.algorithmAssets].forEach(iterator);
     }
 }

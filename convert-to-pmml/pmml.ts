@@ -46,14 +46,11 @@ export async function writePMMLFilesForModel(modelName: string) {
         ? getAlgorithmNamesAndFolderPathsForModel(modelConfig.extends)
         : [];
 
-    for (
-        let algorithmIndex = 0;
-        algorithmIndex < algorithmNamesAndFolderPaths.length;
-        algorithmIndex++
-    ) {
-        const { name, folderPath } = algorithmNamesAndFolderPaths[
-            algorithmIndex
-        ];
+    modelAssets.forEachAlgorithmAssets((algorithmAssets, algorithmIndex) => {
+        const { name, folderPath } = {
+            name: algorithmAssets.algorithmName,
+            folderPath: algorithmAssets.algorithmFolder,
+        };
         const parentAlgorithmFolderPath = parentAlgorithmNamesAndFolderPaths[
             algorithmIndex
         ]
@@ -83,11 +80,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                 LocalTransformations: ILocalTransformations;
                 Taxonomy: ITaxonomy;
             };
-        } = await promisifiedParseString(localTransformationsXmlString, {
-            explicitArray: false,
-            explicitChildren: true,
-            preserveChildrenOrder: true,
-        });
+        } = algorithmAssets.localTransformations;
 
         const generalRegressionModel = makeGeneralRegressionModelNode(
             betasCsvString,
@@ -113,7 +106,7 @@ export async function writePMMLFilesForModel(modelName: string) {
             {
                 Header: makeHeaderNode(name),
                 DataDictionary: modelConfig.useMsw
-                    ? await constructDataDictionaryNodeForMSW(
+                    ? constructDataDictionaryNodeForMSW(
                           betasCsvString,
                           webSpecificationsCsvString,
                           fs.readFileSync(
@@ -123,14 +116,11 @@ export async function writePMMLFilesForModel(modelName: string) {
                               ),
                               'utf8',
                           ),
-                          fs.readFileSync(
-                              `${folderPath}/local-transformations.xml`,
-                              'utf8',
-                          ),
+                          algorithmAssets.localTransformations,
                       )
-                    : await makeDataDictionaryNode(
+                    : makeDataDictionaryNode(
                           betasCsvString,
-                          localTransformationsXmlString,
+                          algorithmAssets.localTransformations,
                           webSpecificationsCsvString,
                           referenceCsvString,
                           webSpecificationCategoriesCsvString,
@@ -170,7 +160,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                 },
             ),
         );
-    }
+    });
 }
 
 function addWarningsForDataFields(algorithm: string, dataFields: IDataField[]) {

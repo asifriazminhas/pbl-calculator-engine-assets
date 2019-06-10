@@ -33,12 +33,14 @@ import {
     constructBaseDataFieldNodeFromVariableDetails,
 } from './data-field';
 
-export async function constructDataDictionaryNode(
+export function constructDataDictionaryNode(
     betasCsvString: string,
     variablesCsvString: string,
     variableDetailsCsvString: string,
-    localTransformationsXMLString: string,
-): Promise<IDataDictionary> {
+    localTransformations: {
+        PMML: { LocalTransformations: ILocalTransformations };
+    },
+): IDataDictionary {
     const betasCsv: { [variableName: string]: string } = csvParse(
         betasCsvString,
         {
@@ -84,13 +86,6 @@ export async function constructDataDictionaryNode(
             );
         });
 
-    const localTransformations: {
-        PMML: { LocalTransformations: ILocalTransformations };
-    } = await promisifiedParseString(localTransformationsXMLString, {
-        explicitArray: false,
-        explicitChildren: true,
-        preserveChildrenOrder: true,
-    });
     const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
         localTransformations.PMML.LocalTransformations,
     ).map(dataFieldName => {

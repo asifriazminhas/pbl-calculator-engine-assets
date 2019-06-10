@@ -18,13 +18,15 @@ const promisifiedParseString = promisify(parseString as (
 import csvParse from 'csv-parse/lib/sync';
 import { getDataFieldNamesFromLocalTransformationsNode } from '../util/local-transformations';
 
-export async function makeDataDictionaryNode(
+export function makeDataDictionaryNode(
     betasCsvString: string,
-    localTransformationsXMLString: string,
+    localTransformations: {
+        PMML: { LocalTransformations: ILocalTransformations };
+    },
     webSpecCsv: string,
     referenceCsvString: string,
     webSpecCategoriesCsv?: string,
-): Promise<IDataDictionary> {
+): IDataDictionary {
     const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
         columns: true,
     });
@@ -99,13 +101,6 @@ export async function makeDataDictionaryNode(
             }
         });
 
-    const localTransformations: {
-        PMML: { LocalTransformations: ILocalTransformations };
-    } = await promisifiedParseString(localTransformationsXMLString, {
-        explicitArray: false,
-        explicitChildren: true,
-        preserveChildrenOrder: true,
-    });
     const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
         localTransformations.PMML.LocalTransformations,
     ).map(dataFieldName => {
