@@ -71,10 +71,6 @@ export async function writePMMLFilesForModel(modelName: string) {
         }/reference.csv`;
         const referenceCsvString = fs.readFileSync(referenceCsvPath, 'utf8');
 
-        const localTransformationsXmlString = fs.readFileSync(
-            `${folderPath}/local-transformations.xml`,
-            'utf8',
-        );
         const localTransformationsAndTaxonomy: {
             PMML: {
                 LocalTransformations: ILocalTransformations;
