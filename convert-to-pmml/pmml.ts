@@ -28,7 +28,6 @@ export async function writePMMLFilesForModel(modelName: string) {
     const modelAssets = await ModelAssetsFactory.createFromModelName(modelName);
 
     const modelConfig = modelAssets.modelConfig.config;
-    const modelFolderPath = modelAssets.modelAssetsFolder;
 
     const algorithmNamesAndFolderPaths = getAlgorithmNamesAndFolderPathsForModel(
         modelName,
@@ -52,13 +51,6 @@ export async function writePMMLFilesForModel(modelName: string) {
             modelConfig,
             algorithmAssets.referenceCsv,
         );
-
-        const webSpecCategoriesPath = `${modelFolderPath}/web-specifications-categories.csv`;
-        const webSpecificationCategoriesCsvString = fs.existsSync(
-            webSpecCategoriesPath,
-        )
-            ? fs.readFileSync(webSpecCategoriesPath, 'utf8')
-            : undefined;
 
         const pmml: IPmml = Object.assign(
             {
