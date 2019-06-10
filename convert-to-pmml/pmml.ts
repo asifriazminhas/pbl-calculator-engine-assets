@@ -8,7 +8,6 @@ import { ITaxonomy } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml
 import { makeCustomPmmlNode } from './custom-pmml';
 import { constructMiningSchemaNode } from './mining-schema';
 import { getAlgorithmNamesAndFolderPathsForModel } from './util';
-import * as path from 'path';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
 import { constructDataDictionaryNode as constructDataDictionaryNodeForMSW } from './msw/data-dictionary';
 import {
@@ -59,13 +58,6 @@ export async function writePMMLFilesForModel(modelName: string) {
                     ? constructDataDictionaryNodeForMSW(
                           algorithmAssets.betasCsv,
                           algorithmAssets.webSpec as MSW,
-                          fs.readFileSync(
-                              path.join(
-                                  __dirname,
-                                  '../master-reference-files/MSW/variable-details.csv',
-                              ),
-                              'utf8',
-                          ),
                           algorithmAssets.localTransformations,
                       )
                     : makeDataDictionaryNode(

@@ -25,22 +25,17 @@ import {
     constructBaseDataFieldNodeFromVariableDetails,
 } from './data-field';
 import { MSW } from '../../src/ci/model-assets/web-spec/msw/msw';
+import { VariableDetails as NewVariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
 
 export function constructDataDictionaryNode(
     betasCsv: Array<{ [index: string]: string }>,
     msw: MSW,
-    variableDetailsCsvString: string,
     localTransformations: {
         PMML: { LocalTransformations: ILocalTransformations };
     },
 ): IDataDictionary {
     const variablesSheet = msw.sheet;
-    const variableDetailsSheet: VariableDetailsSheet = csvParse(
-        variableDetailsCsvString,
-        {
-            columns: true,
-        },
-    );
+    const variableDetailsSheet: VariableDetailsSheet = NewVariableDetails.sheet;
 
     const InteractionFinalVariableRegex = /interaction[0-9]+/;
     const finalVariablesDataDicNodes: IDataField[] = Object.keys(betasCsv[0])
