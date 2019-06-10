@@ -31,20 +31,12 @@ export async function writePMMLFilesForModel(modelName: string) {
     const algorithmNamesAndFolderPaths = getAlgorithmNamesAndFolderPathsForModel(
         modelName,
     );
-    const parentAlgorithmNamesAndFolderPaths = modelConfig.extends
-        ? getAlgorithmNamesAndFolderPathsForModel(modelConfig.extends)
-        : [];
 
     modelAssets.forEachAlgorithmAssets((algorithmAssets, algorithmIndex) => {
         const { name, folderPath } = {
             name: algorithmAssets.algorithmName,
             folderPath: algorithmAssets.algorithmFolder,
         };
-        const parentAlgorithmFolderPath = parentAlgorithmNamesAndFolderPaths[
-            algorithmIndex
-        ]
-            ? parentAlgorithmNamesAndFolderPaths[algorithmIndex].folderPath
-            : undefined;
 
         const localTransformationsAndTaxonomy: {
             PMML: {
