@@ -1,13 +1,23 @@
 import { RegressionType } from './regression-type';
 import { TimeMetric } from './time-metric';
 import * as path from 'path';
+import { AlgorithmType } from './algorithm-type';
+import { AssetsUtil } from '../assets-util';
 
 interface IModelConfigJson {
     modelName: string;
     genderSpecific: boolean;
+    algorithmType: AlgorithmType;
     regressionType: RegressionType;
     maximumTime: number;
     timeMetric: TimeMetric;
+    useMsw: boolean;
+    extends?: string;
+    sexVariable?: string;
+    sexValues?: {
+        male: number;
+        female: number;
+    };
 }
 
 export class ModelConfig {
@@ -18,9 +28,6 @@ export class ModelConfig {
     }
 
     static getModelConfigPath(modelName: string): string {
-        return path.join(
-            __dirname,
-            `../../../../${modelName}/model-config.json`,
-        );
+        return `${AssetsUtil.getAssetsFolderPath(modelName)}/model-config.json`;
     }
 }
