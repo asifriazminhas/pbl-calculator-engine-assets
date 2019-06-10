@@ -1,5 +1,4 @@
 import { existsSync } from 'fs';
-import * as path from 'path';
 import { AppUrl } from '../../constants/ci';
 import { Validation } from '../validation/validation';
 import { MarkdownBuilder } from 'md-builder';
