@@ -4,7 +4,7 @@ import csvParse from 'csv-parse/lib/sync';
 
 export function makeCustomPmmlNode(
     generalRegressionModel: IGeneralRegressionModel,
-    referenceCsvString?: string,
+    referenceCsvString: string,
 ): {
     CustomPMML: {
         RestrictedCubicSpline: IRestrictedCubicSpline;
@@ -13,11 +13,9 @@ export function makeCustomPmmlNode(
     const referenceCsv: Array<{
         Variable: string;
         [index: string]: string;
-    }> = referenceCsvString
-        ? csvParse(referenceCsvString, {
-              columns: true,
-          })
-        : undefined;
+    }> = csvParse(referenceCsvString, {
+        columns: true,
+    });
 
     return {
         CustomPMML: Object.assign(
@@ -32,15 +30,11 @@ export function makeCustomPmmlNode(
 
 function constructRestrictedCubicSplineNode(
     generalRegressionModel: IGeneralRegressionModel,
-    referenceCsv?: Array<{
+    referenceCsv: Array<{
         Variable: string;
         [index: string]: string;
     }>,
 ) {
-    if (referenceCsv === undefined) {
-        return undefined;
-    }
-
     const referenceRowsWithKnots = referenceCsv.filter(referenceCsvRow => {
         return referenceCsvRow['Knot1'].trim() !== '';
     });

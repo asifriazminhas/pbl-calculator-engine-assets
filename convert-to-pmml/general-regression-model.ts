@@ -8,25 +8,21 @@ import csvParse from 'csv-parse/lib/sync';
 export function makeGeneralRegressionModelNode(
     betasCsv: Array<{ [index: string]: string }>,
     modelConfig: IModelConfigJson,
-    referenceCsvString?: string,
+    referenceCsvString: string,
 ): IGeneralRegressionModel {
     const covariateNames = Object.keys(betasCsv[0]).filter(columnName => {
         return columnName !== 'H0_5YR';
     });
 
-    const referenceCsv: ReferenceCsv | undefined = referenceCsvString
-        ? csvParse(referenceCsvString, {
-              columns: true,
-          })
-        : undefined;
+    const referenceCsv: ReferenceCsv = csvParse(referenceCsvString, {
+        columns: true,
+    });
 
     const parameters: IParameter[] = covariateNames.map(
         (covariateName, index) => {
-            const referenceCsvRow = referenceCsv
-                ? referenceCsv.find(({ Variable }) => {
-                      return Variable === covariateName;
-                  })
-                : undefined;
+            const referenceCsvRow = referenceCsv.find(({ Variable }) => {
+                return Variable === covariateName;
+            });
 
             return {
                 $: Object.assign(
