@@ -16,7 +16,11 @@ export function makeDataDictionaryNode(
         PMML: { LocalTransformations: ILocalTransformations };
     },
     webSpecCsv: string,
-    referenceCsvString: string,
+    referenceCsv: Array<{
+        Variable: string;
+        Minimum: string;
+        Maximum: string;
+    }>,
     webSpecCategoriesCsv?: string,
 ): IDataDictionary {
     const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
@@ -34,14 +38,6 @@ export function makeDataDictionaryNode(
               columns: true,
           })
         : undefined;
-
-    const referenceCsv: Array<{
-        Variable: string;
-        Minimum: string;
-        Maximum: string;
-    }> = csvParse(referenceCsvString, {
-        columns: true,
-    });
 
     const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
         .filter(columnName => {

@@ -4,19 +4,15 @@ import csvParse from 'csv-parse/lib/sync';
 
 export function makeCustomPmmlNode(
     generalRegressionModel: IGeneralRegressionModel,
-    referenceCsvString: string,
+    referenceCsv: Array<{
+        Variable: string;
+        [index: string]: string;
+    }>,
 ): {
     CustomPMML: {
         RestrictedCubicSpline: IRestrictedCubicSpline;
     };
 } {
-    const referenceCsv: Array<{
-        Variable: string;
-        [index: string]: string;
-    }> = csvParse(referenceCsvString, {
-        columns: true,
-    });
-
     return {
         CustomPMML: Object.assign(
             {},

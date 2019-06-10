@@ -14,7 +14,13 @@ const promisifiedParseString = promisify(parseString as (
 export class AlgorithmAssets {
     algorithmName: string;
     betasCsv: Array<{ [index: string]: string }>;
-    referenceCsv: { [index: string]: string };
+    referenceCsv: Array<{
+        Variable: string;
+        Mean: string;
+        Minimum: string;
+        Maximum: string;
+        [index: string]: string;
+    }>;
     localTransformations!: {
         PMML: {
             LocalTransformations: ILocalTransformations;
@@ -45,7 +51,14 @@ export class AlgorithmAssets {
             csvParseOptions,
         );
         this.referenceCsv = csvParse(
-            readFileSync(`${algorithmFolder}/referenceCsv.csv`, 'utf8'),
+            readFileSync(
+                `${
+                    parentAlgorithmFolder
+                        ? parentAlgorithmFolder
+                        : algorithmFolder
+                }/reference.csv`,
+                'utf8',
+            ),
             csvParseOptions,
         );
         this.algorithmFolder = algorithmFolder;

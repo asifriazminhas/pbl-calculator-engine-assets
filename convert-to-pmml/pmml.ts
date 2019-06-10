@@ -46,11 +46,6 @@ export async function writePMMLFilesForModel(modelName: string) {
             ? parentAlgorithmNamesAndFolderPaths[algorithmIndex].folderPath
             : undefined;
 
-        const referenceCsvPath = `${
-            parentAlgorithmFolderPath ? parentAlgorithmFolderPath : folderPath
-        }/reference.csv`;
-        const referenceCsvString = fs.readFileSync(referenceCsvPath, 'utf8');
-
         const localTransformationsAndTaxonomy: {
             PMML: {
                 LocalTransformations: ILocalTransformations;
@@ -61,7 +56,7 @@ export async function writePMMLFilesForModel(modelName: string) {
         const generalRegressionModel = makeGeneralRegressionModelNode(
             algorithmAssets.betasCsv,
             modelConfig,
-            referenceCsvString,
+            algorithmAssets.referenceCsv,
         );
 
         const webSpecificationsCsvString = modelConfig.useMsw
@@ -98,7 +93,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                           algorithmAssets.betasCsv,
                           algorithmAssets.localTransformations,
                           webSpecificationsCsvString,
-                          referenceCsvString,
+                          algorithmAssets.referenceCsv,
                           webSpecificationCategoriesCsvString,
                       ),
                 LocalTransformations:
@@ -111,7 +106,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                     : constructMiningSchemaNode(webSpecificationsCsvString),
                 ...makeCustomPmmlNode(
                     generalRegressionModel,
-                    referenceCsvString,
+                    algorithmAssets.referenceCsv,
                 ),
             },
             localTransformationsAndTaxonomy.PMML.Taxonomy

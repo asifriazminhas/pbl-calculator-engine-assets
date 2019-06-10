@@ -8,14 +8,10 @@ import csvParse from 'csv-parse/lib/sync';
 export function makeGeneralRegressionModelNode(
     betasCsv: Array<{ [index: string]: string }>,
     modelConfig: IModelConfigJson,
-    referenceCsvString: string,
+    referenceCsv: ReferenceCsv,
 ): IGeneralRegressionModel {
     const covariateNames = Object.keys(betasCsv[0]).filter(columnName => {
         return columnName !== 'H0_5YR';
-    });
-
-    const referenceCsv: ReferenceCsv = csvParse(referenceCsvString, {
-        columns: true,
     });
 
     const parameters: IParameter[] = covariateNames.map(
