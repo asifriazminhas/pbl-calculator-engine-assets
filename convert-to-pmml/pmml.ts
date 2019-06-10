@@ -46,7 +46,7 @@ export async function writePMMLFilesForModel(modelName: string) {
         } = algorithmAssets.localTransformations;
 
         const generalRegressionModel = makeGeneralRegressionModelNode(
-            algorithmAssets.betasCsv,
+            algorithmAssets.betasSheet.sheet,
             modelConfig,
             algorithmAssets.referenceCsv,
         );
@@ -56,12 +56,12 @@ export async function writePMMLFilesForModel(modelName: string) {
                 Header: makeHeaderNode(name),
                 DataDictionary: modelConfig.useMsw
                     ? constructDataDictionaryNodeForMSW(
-                          algorithmAssets.betasCsv,
+                          algorithmAssets.betasSheet.sheet,
                           algorithmAssets.webSpec as MSW,
                           algorithmAssets.localTransformations,
                       )
                     : makeDataDictionaryNode(
-                          algorithmAssets.betasCsv,
+                          algorithmAssets.betasSheet.sheet,
                           algorithmAssets.localTransformations,
                           algorithmAssets.webSpec as WebSpecV1,
                           algorithmAssets.referenceCsv,
