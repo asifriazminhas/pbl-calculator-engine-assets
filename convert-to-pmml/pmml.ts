@@ -3,22 +3,11 @@ import * as fs from 'fs';
 import { IPmml } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/pmml';
 import { makeGeneralRegressionModelNode } from './general-regression-model';
 import { makeDataDictionaryNode } from './data-dictionary';
-import { parseString, convertableToString, OptionsV2 } from 'xml2js';
-import { promisify } from 'bluebird';
 import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
 import { ITaxonomy } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/taxonomy';
 import { makeCustomPmmlNode } from './custom-pmml';
 import { constructMiningSchemaNode } from './mining-schema';
-import {
-    getAlgorithmNamesAndFolderPathsForModel,
-    getConfigForModel,
-} from './util';
-// xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
-const promisifiedParseString = promisify(parseString as (
-    xml: convertableToString,
-    options: OptionsV2,
-    callback: (err: any, result: any) => void,
-) => void);
+import { getAlgorithmNamesAndFolderPathsForModel } from './util';
 import * as path from 'path';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
 import { constructDataDictionaryNode as constructDataDictionaryNodeForMSW } from './msw/data-dictionary';
