@@ -7,6 +7,7 @@ import { parseString, convertableToString, OptionsV2 } from 'xml2js';
 import { WebSpecV1 } from '../web-spec/web-spec-v1/web-spec-v1';
 import { MSW } from '../web-spec/msw/msw';
 import { BetasSheet } from './betas-sheet';
+import { ReferenceSheet } from './reference-sheet';
 // xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
 const promisifiedParseString = promisify(parseString as (
     xml: convertableToString,
@@ -17,13 +18,7 @@ const promisifiedParseString = promisify(parseString as (
 export class AlgorithmAssets {
     algorithmName: string;
     betasSheet: BetasSheet;
-    referenceCsv: Array<{
-        Variable: string;
-        Mean: string;
-        Minimum: string;
-        Maximum: string;
-        [index: string]: string;
-    }>;
+    referenceSheet: ReferenceSheet;
     localTransformations!: {
         PMML: {
             LocalTransformations: ILocalTransformations;
@@ -46,17 +41,7 @@ export class AlgorithmAssets {
 
         this.algorithmName = algorithmName;
         this.betasSheet = new BetasSheet(algorithmFolder);
-        this.referenceCsv = csvParse(
-            readFileSync(
-                `${
-                    parentAlgorithmFolder
-                        ? parentAlgorithmFolder
-                        : algorithmFolder
-                }/reference.csv`,
-                'utf8',
-            ),
-            csvParseOptions,
-        );
+        this.referenceSheet = new ReferenceSheet(algorithmFolder);
         this.algorithmFolder = algorithmFolder;
         this.webSpec = useMsw
             ? new MSW(algorithmFolder)

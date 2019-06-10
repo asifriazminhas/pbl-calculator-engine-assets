@@ -2,23 +2,22 @@ import { IGeneralRegressionModel } from '@ottawamhealth/pbl-calculator-engine/li
 import { IParameter } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/parameter';
 import { IPCell } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/p_cell';
 import { IPredictor } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/predictor';
-import { IModelConfigJson } from '../reference-files';
-import csvParse from 'csv-parse/lib/sync';
+import { AlgorithmAssets } from '../src/ci/model-assets/algorithm-assets/algorithm-assets';
+import { ModelConfig } from '../src/ci/model-assets/model-config/model-config';
 
 export function makeGeneralRegressionModelNode(
-    betasCsv: Array<{ [index: string]: string }>,
-    modelConfig: IModelConfigJson,
-    referenceCsv: ReferenceCsv,
+    algorithmAssets: AlgorithmAssets,
+    modelConfig: ModelConfig,
 ): IGeneralRegressionModel {
-    const covariateNames = Object.keys(betasCsv[0]).filter(columnName => {
-        return columnName !== 'H0_5YR';
-    });
+    const { betasSheet, referenceSheet } = algorithmAssets;
+
+    const covariateNames = betasSheet.getCovariateNames();
 
     const parameters: IParameter[] = covariateNames.map(
         (covariateName, index) => {
-            const referenceCsvRow = referenceCsv.find(({ Variable }) => {
-                return Variable === covariateName;
-            });
+            const referenceCsvRow = referenceSheet.findRowForVariable(
+                covariateName,
+            );
 
             return {
                 $: Object.assign(
@@ -42,7 +41,7 @@ export function makeGeneralRegressionModelNode(
             $: {
                 parameterName: `p${index}`,
                 df: '',
-                beta: betasCsv[0][covariateName],
+                beta: betasSheet.getBeta(covariateName),
             },
         };
     });
@@ -57,8 +56,8 @@ export function makeGeneralRegressionModelNode(
 
     return {
         $: {
-            baselineHazard: betasCsv[0]['H0_5YR'],
-            modelType: 'CoxRegression',
+            baselineHazard: betasSheet.getBaselineHazard(),
+            modelType: modelConfig.config.regressionType,
         },
         ParameterList: {
             Parameter: parameters,
@@ -72,20 +71,12 @@ export function makeGeneralRegressionModelNode(
         Extension: [
             {
                 name: 'maximumTime',
-                value: `${modelConfig.maximumTime}`,
+                value: `${modelConfig.config.maximumTime}`,
             },
             {
                 name: 'timeMetric',
-                value: `${
-                    modelConfig.timeMetric
-                }` as IModelConfigJson['timeMetric'],
+                value: modelConfig.config.timeMetric,
             },
         ],
     };
 }
-
-interface ReferenceCsvRow {
-    Variable: string;
-    Mean: string;
-}
-type ReferenceCsv = ReferenceCsvRow[];

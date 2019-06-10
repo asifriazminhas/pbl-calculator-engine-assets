@@ -46,9 +46,8 @@ export async function writePMMLFilesForModel(modelName: string) {
         } = algorithmAssets.localTransformations;
 
         const generalRegressionModel = makeGeneralRegressionModelNode(
-            algorithmAssets.betasSheet.sheet,
-            modelConfig,
-            algorithmAssets.referenceCsv,
+            algorithmAssets,
+            modelAssets.modelConfig,
         );
 
         const pmml: IPmml = Object.assign(
@@ -64,7 +63,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                           algorithmAssets.betasSheet.sheet,
                           algorithmAssets.localTransformations,
                           algorithmAssets.webSpec as WebSpecV1,
-                          algorithmAssets.referenceCsv,
+                          algorithmAssets.referenceSheet.sheet,
                       ),
                 LocalTransformations:
                     localTransformationsAndTaxonomy.PMML.LocalTransformations,
@@ -78,7 +77,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                       ),
                 ...makeCustomPmmlNode(
                     generalRegressionModel,
-                    algorithmAssets.referenceCsv,
+                    algorithmAssets.referenceSheet.sheet,
                 ),
             },
             localTransformationsAndTaxonomy.PMML.Taxonomy
