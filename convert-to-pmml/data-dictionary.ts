@@ -7,37 +7,23 @@ import {
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
 import { uniqBy } from 'lodash';
-import csvParse from 'csv-parse/lib/sync';
 import { getDataFieldNamesFromLocalTransformationsNode } from '../util/local-transformations';
+import { WebSpecV1 } from '../src/ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
 
 export function makeDataDictionaryNode(
     betasCsv: Array<{ [index: string]: string }>,
     localTransformations: {
         PMML: { LocalTransformations: ILocalTransformations };
     },
-    webSpecCsv: string,
+    webSpecV1: WebSpecV1,
     referenceCsv: Array<{
         Variable: string;
         Minimum: string;
         Maximum: string;
     }>,
-    webSpecCategoriesCsv?: string,
 ): IDataDictionary {
-    const webSpec: WebSpecV2Csv = csvParse(webSpecCsv, {
-        columns: true,
-    });
-    const webSpecCategories:
-        | Array<{
-              Variable: string;
-              'Category Value': string;
-              'Category Label': string;
-              'Category Description': string;
-          }>
-        | undefined = webSpecCategoriesCsv
-        ? csvParse(webSpecCategoriesCsv, {
-              columns: true,
-          })
-        : undefined;
+    const webSpec: WebSpecV2Csv = webSpecV1.sheet;
+    const webSpecCategories = webSpecV1.categoriesSheet;
 
     const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
         .filter(columnName => {

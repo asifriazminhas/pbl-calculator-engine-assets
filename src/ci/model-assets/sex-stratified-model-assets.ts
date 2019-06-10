@@ -14,11 +14,15 @@ export class SexStratifiedModelAssets extends ModelAssets {
         this.maleAlgorithmAssets = await new AlgorithmAssets(
             this.getAlgorithmNameForSex(Sex.Male),
             this.getAlgorithmAssetsFolderForSex(Sex.Male),
+            this.modelConfig.config.useMsw,
+            this.modelAssetsFolder,
             this.getParentAlgorithmAssetsFolderForSex(Sex.Male),
         ).finishConstruction();
         this.femaleAlgorithmAssets = await new AlgorithmAssets(
             this.getAlgorithmNameForSex(Sex.Female),
             this.getAlgorithmAssetsFolderForSex(Sex.Female),
+            this.modelConfig.config.useMsw,
+            this.modelAssetsFolder,
             this.getParentAlgorithmAssetsFolderForSex(Sex.Female),
         );
 

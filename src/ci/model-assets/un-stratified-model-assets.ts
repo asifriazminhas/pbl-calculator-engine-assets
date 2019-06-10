@@ -14,6 +14,8 @@ export class UnStratifiedModelAssets extends ModelAssets {
         this.algorithmAssets = await new AlgorithmAssets(
             this.modelConfig.config.modelName,
             this.modelAssetsFolder,
+            this.modelConfig.config.useMsw,
+            this.modelAssetsFolder,
             this.modelConfig.config.extends
                 ? AssetsUtil.getAssetsFolderPath(
                       this.modelConfig.config.extends,

@@ -20,6 +20,8 @@ import { Validation } from '../src/ci/validation/validation';
 import { NoLabelFoundWarning } from '../src/ci/validation/warnings/no-label-found-warning';
 import { IValue } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import { ModelAssetsFactory } from '../src/ci/model-assets/model-assets-factory';
+import { MSW } from '../src/ci/model-assets/web-spec/msw/msw';
+import { WebSpecV1 } from '../src/ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
 const formatXml = require('xml-formatter');
 
 export async function writePMMLFilesForModel(modelName: string) {
@@ -51,13 +53,6 @@ export async function writePMMLFilesForModel(modelName: string) {
             algorithmAssets.referenceCsv,
         );
 
-        const webSpecificationsCsvString = modelConfig.useMsw
-            ? fs.readFileSync(`${folderPath}/variables.csv`, 'utf8')
-            : fs.readFileSync(
-                  `${modelFolderPath}/web-specifications.csv`,
-                  'utf8',
-              );
-
         const webSpecCategoriesPath = `${modelFolderPath}/web-specifications-categories.csv`;
         const webSpecificationCategoriesCsvString = fs.existsSync(
             webSpecCategoriesPath,
@@ -71,7 +66,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                 DataDictionary: modelConfig.useMsw
                     ? constructDataDictionaryNodeForMSW(
                           algorithmAssets.betasCsv,
-                          webSpecificationsCsvString,
+                          algorithmAssets.webSpec as MSW,
                           fs.readFileSync(
                               path.join(
                                   __dirname,
@@ -84,9 +79,8 @@ export async function writePMMLFilesForModel(modelName: string) {
                     : makeDataDictionaryNode(
                           algorithmAssets.betasCsv,
                           algorithmAssets.localTransformations,
-                          webSpecificationsCsvString,
+                          algorithmAssets.webSpec as WebSpecV1,
                           algorithmAssets.referenceCsv,
-                          webSpecificationCategoriesCsvString,
                       ),
                 LocalTransformations:
                     localTransformationsAndTaxonomy.PMML.LocalTransformations,
@@ -95,7 +89,9 @@ export async function writePMMLFilesForModel(modelName: string) {
                     ? {
                           MiningField: [],
                       }
-                    : constructMiningSchemaNode(webSpecificationsCsvString),
+                    : constructMiningSchemaNode(
+                          algorithmAssets.webSpec as WebSpecV1,
+                      ),
                 ...makeCustomPmmlNode(
                     generalRegressionModel,
                     algorithmAssets.referenceCsv,

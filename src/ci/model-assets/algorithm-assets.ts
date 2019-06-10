@@ -4,6 +4,8 @@ import { readFileSync } from 'fs';
 import csvParse from 'csv-parse/lib/sync';
 import { promisify } from 'bluebird';
 import { parseString, convertableToString, OptionsV2 } from 'xml2js';
+import { WebSpecV1 } from './web-spec/web-spec-v1/web-spec-v1';
+import { MSW } from './web-spec/msw/msw';
 // xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
 const promisifiedParseString = promisify(parseString as (
     xml: convertableToString,
@@ -27,11 +29,14 @@ export class AlgorithmAssets {
             Taxonomy: ITaxonomy;
         };
     }; // This is initialized in the finishConstruction method. Because the method to parse the XML is async it cannot be done in the constructor
+    webSpec: MSW | WebSpecV1;
     algorithmFolder: string; // Store this because we cannot finish the construction in the constructor and we need it for the finishConstruction method
 
     constructor(
         algorithmName: string,
         algorithmFolder: string,
+        useMsw: boolean,
+        modelFolderPath: string,
         parentAlgorithmFolder?: string,
     ) {
         const csvParseOptions = {
@@ -62,6 +67,9 @@ export class AlgorithmAssets {
             csvParseOptions,
         );
         this.algorithmFolder = algorithmFolder;
+        this.webSpec = useMsw
+            ? new MSW(algorithmFolder)
+            : new WebSpecV1(modelFolderPath);
     }
 
     async finishConstruction(): Promise<AlgorithmAssets> {
