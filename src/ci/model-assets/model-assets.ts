@@ -4,7 +4,7 @@ import { Validation } from '../validation/validation';
 import { MarkdownBuilder } from 'md-builder';
 import { ModelConfig } from './model-config/model-config';
 import { AssetsUtil } from './assets-util';
-import { AlgorithmAssets } from './algorithm-assets';
+import { AlgorithmAssets } from './algorithm-assets/algorithm-assets';
 
 export abstract class ModelAssets {
     modelConfig: ModelConfig;

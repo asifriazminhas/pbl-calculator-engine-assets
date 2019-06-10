@@ -4,8 +4,8 @@ import { readFileSync } from 'fs';
 import csvParse from 'csv-parse/lib/sync';
 import { promisify } from 'bluebird';
 import { parseString, convertableToString, OptionsV2 } from 'xml2js';
-import { WebSpecV1 } from './web-spec/web-spec-v1/web-spec-v1';
-import { MSW } from './web-spec/msw/msw';
+import { WebSpecV1 } from '../web-spec/web-spec-v1/web-spec-v1';
+import { MSW } from '../web-spec/msw/msw';
 // xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
 const promisifiedParseString = promisify(parseString as (
     xml: convertableToString,

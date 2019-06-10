@@ -1,5 +1,5 @@
 import { ModelAssets } from './model-assets';
-import { AlgorithmAssets } from './algorithm-assets';
+import { AlgorithmAssets } from './algorithm-assets/algorithm-assets';
 import { ModelConfig } from './model-config/model-config';
 import { AssetsUtil } from './assets-util';
 
