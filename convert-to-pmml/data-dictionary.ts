@@ -19,7 +19,7 @@ import csvParse from 'csv-parse/lib/sync';
 import { getDataFieldNamesFromLocalTransformationsNode } from '../util/local-transformations';
 
 export function makeDataDictionaryNode(
-    betasCsvString: string,
+    betasCsv: Array<{ [index: string]: string }>,
     localTransformations: {
         PMML: { LocalTransformations: ILocalTransformations };
     },
@@ -51,11 +51,6 @@ export function makeDataDictionaryNode(
         columns: true,
     });
 
-    const betasCsv: Array<{
-        [index: string]: string;
-    }> = csvParse(betasCsvString, {
-        columns: true,
-    });
     const betaDataFields: IDataField[] = Object.keys(betasCsv[0])
         .filter(columnName => {
             return columnName !== 'H0_5YR';

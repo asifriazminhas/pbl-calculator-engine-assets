@@ -57,15 +57,6 @@ export async function writePMMLFilesForModel(modelName: string) {
             ? parentAlgorithmNamesAndFolderPaths[algorithmIndex].folderPath
             : undefined;
 
-        const betasCsvString = fs.readFileSync(
-            `${
-                parentAlgorithmFolderPath
-                    ? parentAlgorithmFolderPath
-                    : folderPath
-            }/betas.csv`,
-            'utf8',
-        );
-
         const referenceCsvPath = `${
             parentAlgorithmFolderPath ? parentAlgorithmFolderPath : folderPath
         }/reference.csv`;
@@ -79,7 +70,7 @@ export async function writePMMLFilesForModel(modelName: string) {
         } = algorithmAssets.localTransformations;
 
         const generalRegressionModel = makeGeneralRegressionModelNode(
-            betasCsvString,
+            algorithmAssets.betasCsv,
             modelConfig,
             referenceCsvString,
         );
@@ -103,7 +94,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                 Header: makeHeaderNode(name),
                 DataDictionary: modelConfig.useMsw
                     ? constructDataDictionaryNodeForMSW(
-                          betasCsvString,
+                          algorithmAssets.betasCsv,
                           webSpecificationsCsvString,
                           fs.readFileSync(
                               path.join(
@@ -115,7 +106,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                           algorithmAssets.localTransformations,
                       )
                     : makeDataDictionaryNode(
-                          betasCsvString,
+                          algorithmAssets.betasCsv,
                           algorithmAssets.localTransformations,
                           webSpecificationsCsvString,
                           referenceCsvString,

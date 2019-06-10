@@ -1,6 +1,7 @@
 import { ModelAssets } from './model-assets';
 import { AlgorithmAssets } from './algorithm-assets';
 import { ModelConfig } from './model-config/model-config';
+import { AssetsUtil } from './assets-util';
 
 export class SexStratifiedModelAssets extends ModelAssets {
     maleAlgorithmAssets!: AlgorithmAssets; // Initialized within the finishConstruction method due to the need to call the async finishConstruction method for the AlgorithmAssets class
@@ -13,10 +14,12 @@ export class SexStratifiedModelAssets extends ModelAssets {
         this.maleAlgorithmAssets = await new AlgorithmAssets(
             this.getAlgorithmNameForSex(Sex.Male),
             this.getAlgorithmAssetsFolderForSex(Sex.Male),
+            this.getParentAlgorithmAssetsFolderForSex(Sex.Male),
         ).finishConstruction();
         this.femaleAlgorithmAssets = await new AlgorithmAssets(
             this.getAlgorithmNameForSex(Sex.Female),
             this.getAlgorithmAssetsFolderForSex(Sex.Female),
+            this.getParentAlgorithmAssetsFolderForSex(Sex.Female),
         );
 
         return this;
@@ -40,6 +43,14 @@ export class SexStratifiedModelAssets extends ModelAssets {
 
     private getAlgorithmAssetsFolderForSex(sex: string) {
         return `${this.modelAssetsFolder}/${sex}`;
+    }
+
+    private getParentAlgorithmAssetsFolderForSex(sex: string) {
+        return this.modelConfig.config.extends
+            ? `${AssetsUtil.getAssetsFolderPath(
+                  this.modelConfig.config.extends,
+              )}/sex`
+            : undefined;
     }
 }
 

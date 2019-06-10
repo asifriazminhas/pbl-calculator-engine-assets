@@ -13,7 +13,7 @@ const promisifiedParseString = promisify(parseString as (
 
 export class AlgorithmAssets {
     algorithmName: string;
-    betasCsv: { [index: string]: string };
+    betasCsv: Array<{ [index: string]: string }>;
     referenceCsv: { [index: string]: string };
     localTransformations!: {
         PMML: {
@@ -23,14 +23,25 @@ export class AlgorithmAssets {
     }; // This is initialized in the finishConstruction method. Because the method to parse the XML is async it cannot be done in the constructor
     algorithmFolder: string; // Store this because we cannot finish the construction in the constructor and we need it for the finishConstruction method
 
-    constructor(algorithmName: string, algorithmFolder: string) {
+    constructor(
+        algorithmName: string,
+        algorithmFolder: string,
+        parentAlgorithmFolder?: string,
+    ) {
         const csvParseOptions = {
             columns: true,
         };
 
         this.algorithmName = algorithmName;
         this.betasCsv = csvParse(
-            readFileSync(`${algorithmFolder}/betas.csv`, 'utf8'),
+            readFileSync(
+                `${
+                    parentAlgorithmFolder
+                        ? parentAlgorithmFolder
+                        : algorithmFolder
+                }/betas.csv`,
+                'utf8',
+            ),
             csvParseOptions,
         );
         this.referenceCsv = csvParse(

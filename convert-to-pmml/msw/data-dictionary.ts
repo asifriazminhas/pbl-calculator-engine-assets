@@ -34,19 +34,13 @@ import {
 } from './data-field';
 
 export function constructDataDictionaryNode(
-    betasCsvString: string,
+    betasCsv: Array<{ [index: string]: string }>,
     variablesCsvString: string,
     variableDetailsCsvString: string,
     localTransformations: {
         PMML: { LocalTransformations: ILocalTransformations };
     },
 ): IDataDictionary {
-    const betasCsv: { [variableName: string]: string } = csvParse(
-        betasCsvString,
-        {
-            columns: true,
-        },
-    );
     const variablesSheet: VariablesSheet = csvParse(variablesCsvString, {
         columns: true,
     });
