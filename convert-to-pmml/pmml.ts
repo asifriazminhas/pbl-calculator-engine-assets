@@ -30,11 +30,14 @@ import { Strings } from '../src/util/strings';
 import { Validation } from '../src/ci/validation/validation';
 import { NoLabelFoundWarning } from '../src/ci/validation/warnings/no-label-found-warning';
 import { IValue } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
+import { ModelAssetsFactory } from '../src/ci/model-assets/model-assets-factory';
 const formatXml = require('xml-formatter');
 
 export async function writePMMLFilesForModel(modelName: string) {
-    const modelConfig = getConfigForModel(modelName);
-    const modelFolderPath = path.join(__dirname, `../${modelConfig.modelName}`);
+    const modelAssets = await ModelAssetsFactory.createFromModelName(modelName);
+
+    const modelConfig = modelAssets.modelConfig.config;
+    const modelFolderPath = modelAssets.modelAssetsFolder;
 
     const algorithmNamesAndFolderPaths = getAlgorithmNamesAndFolderPathsForModel(
         modelName,

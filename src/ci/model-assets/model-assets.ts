@@ -4,6 +4,7 @@ import { AppUrl } from '../../constants/ci';
 import { Validation } from '../validation/validation';
 import { MarkdownBuilder } from 'md-builder';
 import { ModelConfig } from './model-config/model-config';
+import { AssetsUtil } from './assets-util';
 
 export class ModelAssets {
     modelConfig: ModelConfig;
@@ -32,5 +33,11 @@ export class ModelAssets {
         }
 
         return true;
+    }
+
+    get modelAssetsFolder(): string {
+        return AssetsUtil.getAssetsFolderPath(
+            this.modelConfig.config.modelName,
+        );
     }
 }
