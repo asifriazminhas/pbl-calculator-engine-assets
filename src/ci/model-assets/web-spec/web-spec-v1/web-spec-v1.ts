@@ -1,8 +1,8 @@
 import { VariableType } from './variable-type';
-import csvParse from 'csv-parse/lib/sync';
-import { readFileSync, existsSync } from 'fs';
+import { existsSync } from 'fs';
 import { InvalidValueTreatment } from './invalid-value-treatment';
 import { MissingValueReplacement } from './missing-value-replacement';
+import { AssetsUtil } from '../../assets-util';
 
 export class WebSpecV1 {
     sheet: WebSpecV1SheetRow[];
@@ -13,17 +13,13 @@ export class WebSpecV1 {
             columns: true,
         };
 
-        this.sheet = csvParse(
-            readFileSync(`${modelFolderPath}/web-specifications.csv`, 'utf8'),
-            csvParseOptions,
+        this.sheet = AssetsUtil.parseCsvFile(
+            `${modelFolderPath}/web-specifications.csv`,
         );
 
         const categoriesSheetPath = `${modelFolderPath}/web-specifications-categories.csv`;
         if (existsSync(categoriesSheetPath)) {
-            this.categoriesSheet = csvParse(
-                readFileSync(categoriesSheetPath, 'utf8'),
-                csvParseOptions,
-            );
+            this.categoriesSheet = AssetsUtil.parseCsvFile(categoriesSheetPath);
         }
     }
 }
