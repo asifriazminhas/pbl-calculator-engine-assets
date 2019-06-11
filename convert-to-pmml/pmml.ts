@@ -17,7 +17,6 @@ import { Validation } from '../src/ci/validation/validation';
 import { NoLabelFoundWarning } from '../src/ci/validation/warnings/no-label-found-warning';
 import { IValue } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import { ModelAssetsFactory } from '../src/ci/model-assets/model-assets-factory';
-import { MSW } from '../src/ci/model-assets/web-spec/msw/msw';
 import { WebSpecV1 } from '../src/ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
 const formatXml = require('xml-formatter');
 
@@ -45,11 +44,7 @@ export async function writePMMLFilesForModel(modelName: string) {
             {
                 Header: makeHeaderNode(name),
                 DataDictionary: modelConfig.useMsw
-                    ? constructDataDictionaryNodeForMSW(
-                          algorithmAssets.betasSheet.sheet,
-                          algorithmAssets.webSpec as MSW,
-                          algorithmAssets.localTransformations.xml,
-                      )
+                    ? constructDataDictionaryNodeForMSW(algorithmAssets)
                     : makeDataDictionaryNode(algorithmAssets),
                 LocalTransformations: algorithmAssets.localTransformations.getLocalTransformationsNode(),
                 GeneralRegressionModel: generalRegressionModel,

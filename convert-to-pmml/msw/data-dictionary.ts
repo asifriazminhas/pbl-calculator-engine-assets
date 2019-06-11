@@ -11,11 +11,7 @@ import {
     TrueColumnValue,
 } from '../../reference-files/msw';
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
-import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
-import {
-    getDataFieldNamesFromLocalTransformationsNode,
-    getDataFieldNamesFromApplyNode,
-} from '../../util/local-transformations';
+import { getDataFieldNamesFromApplyNode } from '../../util/local-transformations';
 import { findVariableSheetRowForFinalVariableName } from '../../util/msw/variable-sheet';
 import { trim, flatten, uniq } from 'lodash';
 import { IDerivedField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/derived_field';
@@ -25,23 +21,20 @@ import {
 } from './data-field';
 import { MSW } from '../../src/ci/model-assets/web-spec/msw/msw';
 import { VariableDetails as NewVariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
+import { AlgorithmAssets } from '../../src/ci/model-assets/algorithm-assets/algorithm-assets';
 
 export function constructDataDictionaryNode(
-    betasCsv: Array<{ [index: string]: string }>,
-    msw: MSW,
-    localTransformations: {
-        PMML: { LocalTransformations: ILocalTransformations };
-    },
+    algorithmAssets: AlgorithmAssets,
 ): IDataDictionary {
-    const variablesSheet = msw.sheet;
+    const variablesSheet = (algorithmAssets.webSpec as MSW).sheet;
     const variableDetailsSheet: VariableDetailsSheet = NewVariableDetails.sheet;
 
     const InteractionFinalVariableRegex = /interaction[0-9]+/;
-    const finalVariablesDataDicNodes: IDataField[] = Object.keys(betasCsv[0])
+    const finalVariablesDataDicNodes: IDataField[] = algorithmAssets.betasSheet
+        .getCovariateNames()
         .filter(finalVariableName => {
             return (
-                InteractionFinalVariableRegex.test(finalVariableName) ===
-                    false && finalVariableName !== 'H0_5YR'
+                InteractionFinalVariableRegex.test(finalVariableName) === false
             );
         })
         .map(finalVariableName => {
@@ -65,80 +58,80 @@ export function constructDataDictionaryNode(
             );
         });
 
-    const localTransformationDataFields: IDataField[] = getDataFieldNamesFromLocalTransformationsNode(
-        localTransformations.PMML.LocalTransformations,
-    ).map(dataFieldName => {
-        const variablesRow = variablesSheet.find(({ variable }) => {
-            return variable === dataFieldName;
-        });
-        const variablesDetailsRow = variableDetailsSheet.find(
-            ({ variable, variableStart }) => {
-                return (
-                    variable === dataFieldName ||
-                    variableStart === dataFieldName
-                );
-            },
-        );
-
-        const baseDataField = variablesRow
-            ? constructBaseDataFieldNodeFromVariableSheetRow(variablesRow)
-            : variablesDetailsRow
-            ? variablesDetailsRow.variable === dataFieldName
-                ? constructBaseDataFieldNodeFromVariableDetails(
-                      variablesDetailsRow,
-                      false,
-                  )
-                : variablesDetailsRow.variableStart === dataFieldName
-                ? constructBaseDataFieldNodeFromVariableDetails(
-                      variablesDetailsRow,
-                      true,
-                  )
-                : undefined
-            : undefined;
-
-        if (!baseDataField) {
-            return {
-                $: {
-                    name: dataFieldName,
-                    displayName: '',
-                    optype: '',
-                    dataType: 'integer',
-                    'X-shortLabel': '',
-                    'X-required': 'false',
-                    'X-recommended': 'false',
+    const localTransformationDataFields: IDataField[] = algorithmAssets.localTransformations
+        .getFieldNames()
+        .map(dataFieldName => {
+            const variablesRow = variablesSheet.find(({ variable }) => {
+                return variable === dataFieldName;
+            });
+            const variablesDetailsRow = variableDetailsSheet.find(
+                ({ variable, variableStart }) => {
+                    return (
+                        variable === dataFieldName ||
+                        variableStart === dataFieldName
+                    );
                 },
-                Extension: [],
-            } as IBaseDataField<any>;
-        } else if (baseDataField.$.optype === 'categorical') {
-            return Object.assign(
-                {},
-                baseDataField,
-                constructValuesNodeForVariable(
-                    dataFieldName,
-                    variableDetailsSheet,
-                ),
-                constructIntervalNodeForVariable(
-                    dataFieldName,
-                    variableDetailsSheet,
-                    variablesSheet,
-                ),
-            ) as ICategoricalDataField;
-        } else {
-            return Object.assign(
-                {},
-                baseDataField,
-                constructIntervalNodeForVariable(
-                    dataFieldName,
-                    variableDetailsSheet,
-                    variablesSheet,
-                ),
-                constructValuesNodeForVariable(
-                    dataFieldName,
-                    variableDetailsSheet,
-                ),
-            ) as IContinuousDataField;
-        }
-    });
+            );
+
+            const baseDataField = variablesRow
+                ? constructBaseDataFieldNodeFromVariableSheetRow(variablesRow)
+                : variablesDetailsRow
+                ? variablesDetailsRow.variable === dataFieldName
+                    ? constructBaseDataFieldNodeFromVariableDetails(
+                          variablesDetailsRow,
+                          false,
+                      )
+                    : variablesDetailsRow.variableStart === dataFieldName
+                    ? constructBaseDataFieldNodeFromVariableDetails(
+                          variablesDetailsRow,
+                          true,
+                      )
+                    : undefined
+                : undefined;
+
+            if (!baseDataField) {
+                return {
+                    $: {
+                        name: dataFieldName,
+                        displayName: '',
+                        optype: '',
+                        dataType: 'integer',
+                        'X-shortLabel': '',
+                        'X-required': 'false',
+                        'X-recommended': 'false',
+                    },
+                    Extension: [],
+                } as IBaseDataField<any>;
+            } else if (baseDataField.$.optype === 'categorical') {
+                return Object.assign(
+                    {},
+                    baseDataField,
+                    constructValuesNodeForVariable(
+                        dataFieldName,
+                        variableDetailsSheet,
+                    ),
+                    constructIntervalNodeForVariable(
+                        dataFieldName,
+                        variableDetailsSheet,
+                        variablesSheet,
+                    ),
+                ) as ICategoricalDataField;
+            } else {
+                return Object.assign(
+                    {},
+                    baseDataField,
+                    constructIntervalNodeForVariable(
+                        dataFieldName,
+                        variableDetailsSheet,
+                        variablesSheet,
+                    ),
+                    constructValuesNodeForVariable(
+                        dataFieldName,
+                        variableDetailsSheet,
+                    ),
+                ) as IContinuousDataField;
+            }
+        });
 
     const dataFields = finalVariablesDataDicNodes.concat(
         localTransformationDataFields,
@@ -153,12 +146,11 @@ export function constructDataDictionaryNode(
                 return dataField.$.name === variable;
             });
 
+            const localTransformationsNode = algorithmAssets.localTransformations.getLocalTransformationsNode();
+
             if (dataField) {
-                if (
-                    localTransformations.PMML.LocalTransformations
-                        .DerivedField instanceof Array
-                ) {
-                    const derivedField = localTransformations.PMML.LocalTransformations.DerivedField.find(
+                if (localTransformationsNode.DerivedField instanceof Array) {
+                    const derivedField = localTransformationsNode.DerivedField.find(
                         derivedField => {
                             return derivedField.$.name === dataField.$.name;
                         },
@@ -174,8 +166,7 @@ export function constructDataDictionaryNode(
                         const recommendedOrRequiredFields = uniq(
                             getRecommendedDataFields(
                                 dataField,
-                                localTransformations.PMML.LocalTransformations
-                                    .DerivedField,
+                                localTransformationsNode.DerivedField,
                                 variableStart.split(',').map(trim),
                             ),
                         );
