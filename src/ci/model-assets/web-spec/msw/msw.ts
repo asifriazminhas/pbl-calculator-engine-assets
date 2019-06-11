@@ -1,17 +1,13 @@
 import { VariableType } from './variable-type';
 import { MswBoolean } from './msw-boolean';
-import csvParse from 'csv-parse/lib/sync';
-import { readFileSync } from 'fs';
+import { AssetsUtil } from '../../assets-util';
 
 export class MSW {
     sheet: IMswSheetRow[];
 
     constructor(algorithmFolderPath: string) {
-        this.sheet = csvParse(
-            readFileSync(`${algorithmFolderPath}/variables.csv`, 'utf8'),
-            {
-                columns: true,
-            },
+        this.sheet = AssetsUtil.parseCsvFile(
+            `${algorithmFolderPath}/variables.csv`,
         );
     }
 }
