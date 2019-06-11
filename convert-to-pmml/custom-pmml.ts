@@ -1,6 +1,5 @@
 import { IGeneralRegressionModel } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/general_regression_model';
 import { IRestrictedCubicSpline } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/custom/restricted_cubic_spline';
-import csvParse from 'csv-parse/lib/sync';
 
 export function makeCustomPmmlNode(
     generalRegressionModel: IGeneralRegressionModel,
