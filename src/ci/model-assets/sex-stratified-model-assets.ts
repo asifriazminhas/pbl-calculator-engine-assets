@@ -53,7 +53,7 @@ export class SexStratifiedModelAssets extends ModelAssets {
         return this.modelConfig.config.extends
             ? `${AssetsUtil.getAssetsFolderPath(
                   this.modelConfig.config.extends,
-              )}/sex`
+              )}/${sex}`
             : undefined;
     }
 }
