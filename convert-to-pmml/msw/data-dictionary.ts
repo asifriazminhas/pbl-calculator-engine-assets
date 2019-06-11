@@ -28,29 +28,27 @@ export function constructDataDictionaryNode(
     const msw = algorithmAssets.webSpec as MSW;
     const variableDetailsSheet = VariableDetails.sheet;
 
-    const InteractionFinalVariableRegex = /interaction[0-9]+/;
-    const finalVariablesDataDicNodes: IDataField[] = algorithmAssets.betasSheet
-        .getCovariateNames()
-        .filter(finalVariableName => {
-            return (
-                InteractionFinalVariableRegex.test(finalVariableName) === false
-            );
+    const finalVariablesDataDicNodes: IDataField[] = algorithmAssets.betasSheet.covariates
+        .filter(covariate => {
+            return !covariate.isInteractionVariable();
         })
-        .map(finalVariableName => {
+        .map(covariate => {
             const variableSheetRow = msw.findRowForCovariateName(
-                finalVariableName,
+                covariate.name,
             );
 
             if (!variableSheetRow) {
                 throw new Error(
-                    `No row found in variable sheet for variable ${finalVariableName}`,
+                    `No row found in variable sheet for variable ${
+                        covariate.name
+                    }`,
                 );
             }
 
             return constructBaseDataFieldNodeFromVariableSheetRow(
                 variableSheetRow,
                 {
-                    name: finalVariableName,
+                    name: covariate.name,
                 },
             );
         });
