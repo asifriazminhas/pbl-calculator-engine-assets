@@ -6,11 +6,11 @@ import { constructDataField } from './data-field';
 export function makeDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
 ): IDataDictionary {
-    const covariateFields = algorithmAssets.betasSheet
-        .getCovariateNames()
-        .map(covariateName => {
-            return constructDataField(covariateName, algorithmAssets);
-        });
+    const covariateFields = algorithmAssets.betasSheet.covariates.map(
+        covariate => {
+            return constructDataField(covariate.name, algorithmAssets);
+        },
+    );
 
     const localTransformationFields = algorithmAssets.localTransformations
         .getFieldNames()

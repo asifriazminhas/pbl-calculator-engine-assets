@@ -1,6 +1,6 @@
 import { WebSpecV1 } from '../web-spec/web-spec-v1/web-spec-v1';
 import { MSW } from '../web-spec/msw/msw';
-import { BetasSheet } from './betas-sheet';
+import { BetasSheet } from './betas-sheet/betas-sheet';
 import { ReferenceSheet } from './reference-sheet';
 import { LocalTransformations } from './local-transformations';
 

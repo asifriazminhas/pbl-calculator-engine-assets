@@ -11,12 +11,10 @@ export function makeGeneralRegressionModelNode(
 ): IGeneralRegressionModel {
     const { betasSheet, referenceSheet } = algorithmAssets;
 
-    const covariateNames = betasSheet.getCovariateNames();
-
-    const parameters: IParameter[] = covariateNames.map(
-        (covariateName, index) => {
+    const parameters: IParameter[] = betasSheet.covariates.map(
+        (covariate, index) => {
             const referenceCsvRow = referenceSheet.findRowForVariable(
-                covariateName,
+                covariate.name,
             );
 
             return {
@@ -24,7 +22,7 @@ export function makeGeneralRegressionModelNode(
                     {},
                     {
                         name: `p${index}`,
-                        label: covariateName,
+                        label: covariate.name,
                     },
                     referenceCsvRow && referenceCsvRow.Mean
                         ? {
@@ -36,27 +34,27 @@ export function makeGeneralRegressionModelNode(
         },
     );
 
-    const pCells: IPCell[] = covariateNames.map((covariateName, index) => {
+    const pCells: IPCell[] = betasSheet.covariates.map((covariate, index) => {
         return {
             $: {
                 parameterName: `p${index}`,
                 df: '',
-                beta: betasSheet.getBeta(covariateName),
+                beta: covariate.beta,
             },
         };
     });
 
-    const predictors: IPredictor[] = covariateNames.map(covariateName => {
+    const predictors: IPredictor[] = betasSheet.covariates.map(covariate => {
         return {
             $: {
-                name: covariateName,
+                name: covariate.name,
             },
         };
     });
 
     return {
         $: {
-            baselineHazard: betasSheet.getBaselineHazard(),
+            baselineHazard: betasSheet.baselineHazard,
             modelType: modelConfig.config.regressionType,
         },
         ParameterList: {
