@@ -1,4 +1,3 @@
-import csvParse from 'csv-parse/lib/sync';
 import {
     IDataField,
     ICategoricalDataField,
