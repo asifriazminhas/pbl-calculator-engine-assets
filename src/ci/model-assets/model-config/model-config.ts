@@ -1,6 +1,5 @@
 import { RegressionType } from './regression-type';
 import { TimeMetric } from './time-metric';
-import * as path from 'path';
 import { AlgorithmType } from './algorithm-type';
 import { AssetsUtil } from '../assets-util';
 
