@@ -1,0 +1,7 @@
+{
+    "modelName": "DemPoRT PUMF",
+    "genderSpecific": true,
+    "regressionType": "FineGrayRegression",
+    "maximumTime": 5,
+    "timeMetric": "years"
+}
