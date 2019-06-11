@@ -19,14 +19,14 @@ import {
     constructBaseDataFieldNodeFromVariableDetails,
 } from './data-field';
 import { MSW } from '../../src/ci/model-assets/web-spec/msw/msw';
-import { VariableDetails as NewVariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
 import { AlgorithmAssets } from '../../src/ci/model-assets/algorithm-assets/algorithm-assets';
+import { VariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
 
 export function constructDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
 ): IDataDictionary {
     const msw = algorithmAssets.webSpec as MSW;
-    const variableDetailsSheet: VariableDetailsSheet = NewVariableDetails.sheet;
+    const variableDetailsSheet = VariableDetails.sheet;
 
     const InteractionFinalVariableRegex = /interaction[0-9]+/;
     const finalVariablesDataDicNodes: IDataField[] = algorithmAssets.betasSheet
