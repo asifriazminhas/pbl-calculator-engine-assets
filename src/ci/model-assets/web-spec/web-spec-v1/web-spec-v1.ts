@@ -25,6 +25,15 @@ export class WebSpecV1 {
         });
     }
 
+    getVariableType(variableName: string) {
+        const foundRow = this.findRowForVariable(variableName);
+        if (foundRow) {
+            return foundRow.variableType;
+        } else {
+            return 'continuous';
+        }
+    }
+
     getCategoryRowsForVariable(variableName: string) {
         if (!this.categoriesSheet) {
             return [];
