@@ -1,5 +1,3 @@
-import { readFileSync } from 'fs';
-import csvParse from 'csv-parse/lib/sync';
 import { AssetsUtil } from '../assets-util';
 
 export class BetasSheet {
