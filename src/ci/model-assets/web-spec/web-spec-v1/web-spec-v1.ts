@@ -9,10 +9,6 @@ export class WebSpecV1 {
     categoriesSheet?: WebSpecCategoriesSheetRow[];
 
     constructor(modelFolderPath: string) {
-        const csvParseOptions = {
-            columns: true,
-        };
-
         this.sheet = AssetsUtil.parseCsvFile(
             `${modelFolderPath}/web-specifications.csv`,
         );
@@ -22,9 +18,41 @@ export class WebSpecV1 {
             this.categoriesSheet = AssetsUtil.parseCsvFile(categoriesSheetPath);
         }
     }
+
+    findRowForVariable(variableName: string) {
+        return this.sheet.find(({ Name }) => {
+            return Name === variableName;
+        });
+    }
+
+    getCategoryRowsForVariable(variableName: string) {
+        if (!this.categoriesSheet) {
+            return [];
+        }
+
+        const categoriesFound = [];
+        // The web spec categories Variable columns are not all filled. The first category for a variable has it's Variable column filled but the remaining ones are empty until the categories for the next variable starts
+        for (const category of this.categoriesSheet) {
+            // Found start category for this variable
+            if (category.Variable === variableName) {
+                categoriesFound.push(category);
+            } else if (
+                categoriesFound.length >= 1 &&
+                category.Variable === ''
+            ) {
+                //If we have already added a category and the Variable is empty then this is still a category for the variable we are looking for
+                categoriesFound.push(category);
+            } else if (categoriesFound.length !== 0) {
+                // Otherwise we have reached the categories for the next variable so break
+                break;
+            }
+        }
+
+        return categoriesFound;
+    }
 }
 
-interface WebSpecV1SheetRow {
+export interface WebSpecV1SheetRow {
     Name: string;
     UserMin_male: string;
     UserMin_female: string;
