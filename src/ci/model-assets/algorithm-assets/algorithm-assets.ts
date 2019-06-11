@@ -1,30 +1,14 @@
-import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
-import { ITaxonomy } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/taxonomy';
-import { readFileSync } from 'fs';
-import csvParse from 'csv-parse/lib/sync';
-import { promisify } from 'bluebird';
-import { parseString, convertableToString, OptionsV2 } from 'xml2js';
 import { WebSpecV1 } from '../web-spec/web-spec-v1/web-spec-v1';
 import { MSW } from '../web-spec/msw/msw';
 import { BetasSheet } from './betas-sheet';
 import { ReferenceSheet } from './reference-sheet';
-// xml2js has 2 types for the same function name (parseString) and we want the second type (the one with the options argument). But when promisifying the function the type returned will be the first type promisified, thus we have to explicitly set the type of the promisified parseString
-const promisifiedParseString = promisify(parseString as (
-    xml: convertableToString,
-    options: OptionsV2,
-    callback: (err: any, result: any) => void,
-) => void);
+import { LocalTransformations } from './local-transformations';
 
 export class AlgorithmAssets {
     algorithmName: string;
     betasSheet: BetasSheet;
     referenceSheet: ReferenceSheet;
-    localTransformations!: {
-        PMML: {
-            LocalTransformations: ILocalTransformations;
-            Taxonomy: ITaxonomy;
-        };
-    }; // This is initialized in the finishConstruction method. Because the method to parse the XML is async it cannot be done in the constructor
+    localTransformations!: LocalTransformations; // This is initialized in the finishConstruction method. Because the method to parse the XML is async it cannot be done in the constructor
     webSpec: MSW | WebSpecV1;
     algorithmFolder: string; // Store this because we cannot finish the construction in the constructor and we need it for the finishConstruction method
 
@@ -35,13 +19,13 @@ export class AlgorithmAssets {
         modelFolderPath: string,
         parentAlgorithmFolder?: string,
     ) {
-        const csvParseOptions = {
-            columns: true,
-        };
-
         this.algorithmName = algorithmName;
-        this.betasSheet = new BetasSheet(algorithmFolder);
-        this.referenceSheet = new ReferenceSheet(algorithmFolder);
+        this.betasSheet = new BetasSheet(
+            parentAlgorithmFolder ? parentAlgorithmFolder : algorithmFolder,
+        );
+        this.referenceSheet = new ReferenceSheet(
+            parentAlgorithmFolder ? parentAlgorithmFolder : algorithmFolder,
+        );
         this.algorithmFolder = algorithmFolder;
         this.webSpec = useMsw
             ? new MSW(algorithmFolder)
@@ -49,16 +33,8 @@ export class AlgorithmAssets {
     }
 
     async finishConstruction(): Promise<AlgorithmAssets> {
-        this.localTransformations = await promisifiedParseString(
-            readFileSync(
-                `${this.algorithmFolder}/local-transformations.xml`,
-                'utf8',
-            ),
-            {
-                explicitArray: false,
-                explicitChildren: true,
-                preserveChildrenOrder: true,
-            },
+        this.localTransformations = await LocalTransformations.factory(
+            this.algorithmFolder,
         );
 
         return this;

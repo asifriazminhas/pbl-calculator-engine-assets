@@ -3,8 +3,6 @@ import * as fs from 'fs';
 import { IPmml } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/pmml';
 import { makeGeneralRegressionModelNode } from './general-regression-model';
 import { makeDataDictionaryNode } from './data-dictionary';
-import { ILocalTransformations } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/local_transformations';
-import { ITaxonomy } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/taxonomy';
 import { makeCustomPmmlNode } from './custom-pmml';
 import { constructMiningSchemaNode } from './mining-schema';
 import { getAlgorithmNamesAndFolderPathsForModel } from './util';
@@ -38,13 +36,6 @@ export async function writePMMLFilesForModel(modelName: string) {
             folderPath: algorithmAssets.algorithmFolder,
         };
 
-        const localTransformationsAndTaxonomy: {
-            PMML: {
-                LocalTransformations: ILocalTransformations;
-                Taxonomy: ITaxonomy;
-            };
-        } = algorithmAssets.localTransformations;
-
         const generalRegressionModel = makeGeneralRegressionModelNode(
             algorithmAssets,
             modelAssets.modelConfig,
@@ -57,16 +48,10 @@ export async function writePMMLFilesForModel(modelName: string) {
                     ? constructDataDictionaryNodeForMSW(
                           algorithmAssets.betasSheet.sheet,
                           algorithmAssets.webSpec as MSW,
-                          algorithmAssets.localTransformations,
+                          algorithmAssets.localTransformations.xml,
                       )
-                    : makeDataDictionaryNode(
-                          algorithmAssets.betasSheet.sheet,
-                          algorithmAssets.localTransformations,
-                          algorithmAssets.webSpec as WebSpecV1,
-                          algorithmAssets.referenceSheet.sheet,
-                      ),
-                LocalTransformations:
-                    localTransformationsAndTaxonomy.PMML.LocalTransformations,
+                    : makeDataDictionaryNode(algorithmAssets),
+                LocalTransformations: algorithmAssets.localTransformations.getLocalTransformationsNode(),
                 GeneralRegressionModel: generalRegressionModel,
                 MiningSchema: modelConfig.useMsw
                     ? {
@@ -80,8 +65,10 @@ export async function writePMMLFilesForModel(modelName: string) {
                     algorithmAssets.referenceSheet.sheet,
                 ),
             },
-            localTransformationsAndTaxonomy.PMML.Taxonomy
-                ? { Taxonomy: localTransformationsAndTaxonomy.PMML.Taxonomy }
+            algorithmAssets.localTransformations.getTaxonomyNode()
+                ? {
+                      Taxonomy: algorithmAssets.localTransformations.getTaxonomyNode(),
+                  }
                 : undefined,
         );
 
