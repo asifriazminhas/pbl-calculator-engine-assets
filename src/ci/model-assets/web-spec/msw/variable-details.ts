@@ -10,6 +10,12 @@ const sheet = AssetsUtil.parseCsvFile(
 
 export abstract class VariableDetails {
     static sheet: IVariableDetailsSheetRow[] = sheet;
+
+    static findRowsForVariable(variableName: string) {
+        return this.sheet.filter(({ variable }) => {
+            return variable === variableName;
+        });
+    }
 }
 
 interface IVariableDetailsSheetRow {

@@ -12,7 +12,6 @@ import {
 } from '../../reference-files/msw';
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
 import { getDataFieldNamesFromApplyNode } from '../../util/local-transformations';
-import { findVariableSheetRowForFinalVariableName } from '../../util/msw/variable-sheet';
 import { trim, flatten, uniq } from 'lodash';
 import { IDerivedField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/local_transformations/derived_field';
 import {
@@ -26,7 +25,7 @@ import { AlgorithmAssets } from '../../src/ci/model-assets/algorithm-assets/algo
 export function constructDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
 ): IDataDictionary {
-    const variablesSheet = (algorithmAssets.webSpec as MSW).sheet;
+    const msw = algorithmAssets.webSpec as MSW;
     const variableDetailsSheet: VariableDetailsSheet = NewVariableDetails.sheet;
 
     const InteractionFinalVariableRegex = /interaction[0-9]+/;
@@ -38,10 +37,8 @@ export function constructDataDictionaryNode(
             );
         })
         .map(finalVariableName => {
-            const variableSheetRow = findVariableSheetRowForFinalVariableName(
+            const variableSheetRow = msw.findRowForCovariateName(
                 finalVariableName,
-                variablesSheet,
-                variableDetailsSheet,
             );
 
             if (!variableSheetRow) {
@@ -61,9 +58,7 @@ export function constructDataDictionaryNode(
     const localTransformationDataFields: IDataField[] = algorithmAssets.localTransformations
         .getFieldNames()
         .map(dataFieldName => {
-            const variablesRow = variablesSheet.find(({ variable }) => {
-                return variable === dataFieldName;
-            });
+            const variablesRow = msw.findRowForVariableName(dataFieldName);
             const variablesDetailsRow = variableDetailsSheet.find(
                 ({ variable, variableStart }) => {
                     return (
@@ -113,7 +108,7 @@ export function constructDataDictionaryNode(
                     constructIntervalNodeForVariable(
                         dataFieldName,
                         variableDetailsSheet,
-                        variablesSheet,
+                        msw.sheet,
                     ),
                 ) as ICategoricalDataField;
             } else {
@@ -123,7 +118,7 @@ export function constructDataDictionaryNode(
                     constructIntervalNodeForVariable(
                         dataFieldName,
                         variableDetailsSheet,
-                        variablesSheet,
+                        msw.sheet,
                     ),
                     constructValuesNodeForVariable(
                         dataFieldName,
@@ -137,7 +132,7 @@ export function constructDataDictionaryNode(
         localTransformationDataFields,
     );
 
-    variablesSheet
+    msw.sheet
         .filter(({ recommended }) => {
             return recommended === TrueColumnValue;
         })
@@ -197,7 +192,7 @@ export function constructDataDictionaryNode(
             }
         });
 
-    variablesSheet
+    msw.sheet
         .filter(({ variable }) => {
             return (
                 dataFields.find(dataField => {
@@ -225,7 +220,7 @@ export function constructDataDictionaryNode(
                     constructIntervalNodeForVariable(
                         variablesSheetRow.variable,
                         variableDetailsSheet,
-                        variablesSheet,
+                        msw.sheet,
                     ),
                 ) as ICategoricalDataField);
             }
@@ -240,7 +235,7 @@ export function constructDataDictionaryNode(
                 constructIntervalNodeForVariable(
                     variablesSheetRow.variable,
                     variableDetailsSheet,
-                    variablesSheet,
+                    msw.sheet,
                 ),
             ) as IContinuousDataField);
         });
