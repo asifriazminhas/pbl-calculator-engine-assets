@@ -51,7 +51,7 @@
             </row>
         </InlineTable>
     </Taxonomy>
-    <Taxonomy name="Spec_Mutated_1">
+    <Taxonomy name="Spec_Mutated_2">
         <InlineTable>
             <row>
                 <index>fruit_cont</index>
@@ -1139,29 +1139,35 @@
                 </Apply>
             </Apply>
         </DerivedField>
-        <DerivedField name="DrinksLastWeek_cont">
-            <Apply function="if">
-                <Apply function="is.na">
+        <DerivedField name="onePlusMonth" optype="continuous">
+            <FieldRef field="alc1"/>
+        </DerivedField>
+        <DerivedField name="lessOneMonth" optype="continuous">
+            <FieldRef field="alc2"/>
+        </DerivedField>
+        <DerivedField name="zeroYear" optype="continuous">
+            <FieldRef field="alc3"/>
+        </DerivedField>
+        <DerivedField name="DrinksLastWeek_cont" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
                     <FieldRef field="alc"/>
+                    <FieldRef field="zeroYear"/>
                 </Apply>
-                <Constant dataType="NA">NA</Constant>
-                <Apply function="if">
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
                     <Apply function="or">
                         <Apply function="equal">
-                            <Apply function="last.fun">
-                                <FieldRef field="alc"/>
-                            </Apply>
-                            <Constant dataType="double">1</Constant>
+                            <FieldRef field="alc"/>
+                            <FieldRef field="onePlusMonth"/>
                         </Apply>
                         <Apply function="equal">
-                            <Apply function="last.fun">
-                                <FieldRef field="alc"/>
-                            </Apply>
-                            <Constant dataType="double">2</Constant>
+                            <FieldRef field="alc"/>
+                            <FieldRef field="lessOneMonth"/>
                         </Apply>
                     </Apply>
                     <FieldRef field="drk"/>
-                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
                 </Apply>
             </Apply>
         </DerivedField>
@@ -1175,7 +1181,7 @@
                     <Apply function="and">
                         <Apply function="equal">
                             <FieldRef field="alc"/>
-                            <Constant dataType="string">alc3</Constant>
+                            <FieldRef field="zeroYear"/>
                         </Apply>
                         <Apply function="equal">
                             <FieldRef field="evdk"/>
@@ -1932,11 +1938,11 @@
                     <FieldRef field="juice_cont"/>
                     <MapValues outputColumn="Mean">
                         <FieldColumnPair column="index" constant="juice_cont"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                     <MapValues outputColumn="Std.Dev">
                         <FieldColumnPair column="index" constant="juice_cont"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                 </Apply>
             </Apply>
@@ -1951,11 +1957,11 @@
                     <FieldRef field="fruit_cont"/>
                     <MapValues outputColumn="Mean">
                         <FieldColumnPair column="index" constant="fruit_cont"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                     <MapValues outputColumn="Std.Dev">
                         <FieldColumnPair column="index" constant="fruit_cont"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                 </Apply>
             </Apply>
@@ -1970,11 +1976,11 @@
                     <FieldRef field="otherveg_cont"/>
                     <MapValues outputColumn="Mean">
                         <FieldColumnPair column="index" constant="otherveg_cont"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                     <MapValues outputColumn="Std.Dev">
                         <FieldColumnPair column="index" constant="otherveg_cont"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                 </Apply>
             </Apply>
@@ -1989,11 +1995,11 @@
                     <FieldRef field="potatoadd"/>
                     <MapValues outputColumn="Mean">
                         <FieldColumnPair column="index" constant="POTATOTOADD"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                     <MapValues outputColumn="Std.Dev">
                         <FieldColumnPair column="index" constant="POTATOTOADD"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                 </Apply>
             </Apply>
@@ -2008,11 +2014,11 @@
                     <FieldRef field="potatominus"/>
                     <MapValues outputColumn="Mean">
                         <FieldColumnPair column="index" constant="POTATOMINUS"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                     <MapValues outputColumn="Std.Dev">
                         <FieldColumnPair column="index" constant="POTATOMINUS"/>
-                        <TableLocator location="taxonomy" name="Spec_Mutated_1"/>
+                        <TableLocator location="taxonomy" name="Spec_Mutated_2"/>
                     </MapValues>
                 </Apply>
             </Apply>
@@ -2365,7 +2371,7 @@
         <DerivedField name="AgeCXDepIndHighC_int" optype="continuous">
             <Apply function="Interact.fun">
                 <FieldRef field="AgeC_cont"/>
-                <FieldRef field="DepIndHighC_cat"/>
+                <FieldRef field="DepIndHighC_cat_Mutated_1"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXDepIndModC_int" optype="continuous">

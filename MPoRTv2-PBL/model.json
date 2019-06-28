@@ -402,8 +402,110 @@
                     },
                     {
                         "fieldType": 1,
+                        "name": "onePlusMonth",
+                        "equation": "derived = obj['alc1'];",
+                        "derivedFrom": [
+                            {
+                                "name": "alc1",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "lessOneMonth",
+                        "equation": "derived = obj['alc2'];",
+                        "derivedFrom": [
+                            {
+                                "name": "alc2",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "zeroYear",
+                        "equation": "derived = obj['alc3'];",
+                        "derivedFrom": [
+                            {
+                                "name": "alc3",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
                         "name": "DrinksLastWeek_cont",
-                        "equation": "derived = func['is.na'](obj['alc']) ? undefined : userFunctions['last.fun'](obj['alc'], userFunctions, func) == 1 || userFunctions['last.fun'](obj['alc'], userFunctions, func) == 2 ? obj['drk'] : 0;",
+                        "equation": "derived = func['ifelse'](obj['alc'] == obj['zeroYear'], 0, func['ifelse'](obj['alc'] == obj['onePlusMonth'] || obj['alc'] == obj['lessOneMonth'], obj['drk'], undefined));",
                         "derivedFrom": [
                             {
                                 "name": "alc",
@@ -420,6 +522,9 @@
                                 },
                                 "fieldType": 0
                             },
+                            "zeroYear",
+                            "onePlusMonth",
+                            "lessOneMonth",
                             {
                                 "name": "drk",
                                 "intervals": [
@@ -452,7 +557,7 @@
                     {
                         "fieldType": 1,
                         "name": "FormerDrinker_cat",
-                        "equation": "derived = func['ifelse'](func['is.na'](obj['alc']), undefined, func['ifelse'](obj['alc'] == 'alc3' && obj['evdk'] == 'evdk1', 1, 0));",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['alc']), undefined, func['ifelse'](obj['alc'] == obj['zeroYear'] && obj['evdk'] == 'evdk1', 1, 0));",
                         "derivedFrom": [
                             {
                                 "name": "alc",
@@ -469,6 +574,7 @@
                                 },
                                 "fieldType": 0
                             },
+                            "zeroYear",
                             {
                                 "name": "evdk",
                                 "intervals": [
@@ -2637,7 +2743,7 @@
                     {
                         "fieldType": 1,
                         "name": "s_juice",
-                        "equation": "derived = func['ifelse'](func['is.null'](obj['juice_cont']), null, userFunctions['standard.fun'](obj['juice_cont'], getValueFromTable(tables['Spec_Mutated_1'], 'Mean', { 'index': 'juice_cont' }), getValueFromTable(tables['Spec_Mutated_1'], 'Std.Dev', { 'index': 'juice_cont' }), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](func['is.null'](obj['juice_cont']), null, userFunctions['standard.fun'](obj['juice_cont'], getValueFromTable(tables['Spec_Mutated_2'], 'Mean', { 'index': 'juice_cont' }), getValueFromTable(tables['Spec_Mutated_2'], 'Std.Dev', { 'index': 'juice_cont' }), userFunctions, func));",
                         "derivedFrom": [
                             "juice_cont",
                             {
@@ -2668,7 +2774,7 @@
                     {
                         "fieldType": 1,
                         "name": "s_fruit",
-                        "equation": "derived = func['ifelse'](func['is.null'](obj['fruit_cont']), null, userFunctions['standard.fun'](obj['fruit_cont'], getValueFromTable(tables['Spec_Mutated_1'], 'Mean', { 'index': 'fruit_cont' }), getValueFromTable(tables['Spec_Mutated_1'], 'Std.Dev', { 'index': 'fruit_cont' }), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](func['is.null'](obj['fruit_cont']), null, userFunctions['standard.fun'](obj['fruit_cont'], getValueFromTable(tables['Spec_Mutated_2'], 'Mean', { 'index': 'fruit_cont' }), getValueFromTable(tables['Spec_Mutated_2'], 'Std.Dev', { 'index': 'fruit_cont' }), userFunctions, func));",
                         "derivedFrom": [
                             "fruit_cont",
                             {
@@ -2699,7 +2805,7 @@
                     {
                         "fieldType": 1,
                         "name": "s_otherveg",
-                        "equation": "derived = func['ifelse'](func['is.null'](obj['otherveg_cont']), null, userFunctions['standard.fun'](obj['otherveg_cont'], getValueFromTable(tables['Spec_Mutated_1'], 'Mean', { 'index': 'otherveg_cont' }), getValueFromTable(tables['Spec_Mutated_1'], 'Std.Dev', { 'index': 'otherveg_cont' }), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](func['is.null'](obj['otherveg_cont']), null, userFunctions['standard.fun'](obj['otherveg_cont'], getValueFromTable(tables['Spec_Mutated_2'], 'Mean', { 'index': 'otherveg_cont' }), getValueFromTable(tables['Spec_Mutated_2'], 'Std.Dev', { 'index': 'otherveg_cont' }), userFunctions, func));",
                         "derivedFrom": [
                             "otherveg_cont",
                             {
@@ -2730,7 +2836,7 @@
                     {
                         "fieldType": 1,
                         "name": "s_potadd",
-                        "equation": "derived = func['ifelse'](func['is.null'](obj['potatoadd']), null, userFunctions['standard.fun'](obj['potatoadd'], getValueFromTable(tables['Spec_Mutated_1'], 'Mean', { 'index': 'POTATOTOADD' }), getValueFromTable(tables['Spec_Mutated_1'], 'Std.Dev', { 'index': 'POTATOTOADD' }), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](func['is.null'](obj['potatoadd']), null, userFunctions['standard.fun'](obj['potatoadd'], getValueFromTable(tables['Spec_Mutated_2'], 'Mean', { 'index': 'POTATOTOADD' }), getValueFromTable(tables['Spec_Mutated_2'], 'Std.Dev', { 'index': 'POTATOTOADD' }), userFunctions, func));",
                         "derivedFrom": [
                             "potatoadd",
                             {
@@ -2761,7 +2867,7 @@
                     {
                         "fieldType": 1,
                         "name": "s_potminus",
-                        "equation": "derived = func['ifelse'](func['is.null'](obj['potatominus']), null, userFunctions['standard.fun'](obj['potatominus'], getValueFromTable(tables['Spec_Mutated_1'], 'Mean', { 'index': 'POTATOMINUS' }), getValueFromTable(tables['Spec_Mutated_1'], 'Std.Dev', { 'index': 'POTATOMINUS' }), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](func['is.null'](obj['potatominus']), null, userFunctions['standard.fun'](obj['potatominus'], getValueFromTable(tables['Spec_Mutated_2'], 'Mean', { 'index': 'POTATOMINUS' }), getValueFromTable(tables['Spec_Mutated_2'], 'Std.Dev', { 'index': 'POTATOMINUS' }), userFunctions, func));",
                         "derivedFrom": [
                             "potatominus",
                             {
@@ -3921,7 +4027,7 @@
                     },
                     {
                         "fieldType": 1,
-                        "name": "ImmigrantPercentC_rcs1",
+                        "name": "ImmigrantPercentC_rcs1_Mutated_1",
                         "equation": "derived = obj['ImmigrantPercentC_cont'];",
                         "derivedFrom": [
                             {
@@ -3945,18 +4051,11 @@
                         "isRecommended": false,
                         "intervals": [
                             {
-                                "lowerMargin": {
-                                    "margin": 0,
-                                    "isOpen": false
-                                },
-                                "higherMargin": {
-                                    "margin": 1,
-                                    "isOpen": false
-                                }
+                                "description": ""
                             }
                         ],
                         "metadata": {
-                            "label": "Immigrantion Percent",
+                            "label": "",
                             "shortLabel": ""
                         }
                     },
@@ -4465,7 +4564,7 @@
                         {},
                         {}
                     ],
-                    "Spec_Mutated_1": [
+                    "Spec_Mutated_2": [
                         {
                             "index": "fruit_cont",
                             "Mean": "1.1443171",
@@ -12352,6 +12451,20 @@
             "isRecommended": false,
             "metadata": {
                 "label": "Post-secondary Graduate",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ImmigrantPercentC_rcs1_Mutated_1",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
                 "shortLabel": ""
             }
         },
