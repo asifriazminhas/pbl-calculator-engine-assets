@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <PMML>
     <Header description="MPoRTv2-PBL female algorithm">
         <Extension>
@@ -6,155 +7,453 @@
         </Extension>
     </Header>
     <DataDictionary numberOfFields="149">
-        <DataField name="AgeC_rcs1" displayName="Age RCS1" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeC_rcs3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeC_rcs4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="SmokeCurrentC_cat" displayName="Current Smoker" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="SmokeFormer0to5C_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="SmokeFormer5PlusC_cat" displayName="Former Smoker 5+ Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PackYearsC_rcs1" displayName="Packyears Smoking RCS1" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PackYearsC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="FormerDrinkerC_cat" displayName="Former Drinker" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DrinksLastWeekC_rcs1" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DrinksLastWeekC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DrinksLastWeekC_rcs3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DietScore2C_rcs1" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DietScore2C_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DepIndHighC_cat" displayName="High Deprivation" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DepIndModC_cat" displayName="Average Deprivation" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnBlackC_cat" displayName="Black" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnChineseC_cat" displayName="Chinese" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnJapanC_cat" displayName="Japanese/Korean/South East Asian/Filipino" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnOtherC_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnSAsianC_cat" displayName="South Asian/Arab/West Asian" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduHSGrad2C_cat" displayName="High School Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduNoHSGrad2C_cat" displayName="Less than High School" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduSomePS2C_cat" displayName="Some Post-secondary" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PhysicalActivityC_rcs1" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PhysicalActivityC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="BMIC_rcs1" displayName="BMI RCS1" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="BMIC_rcs2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DiabetesC_cat" displayName="Diabetes" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="HypertensionC_cat" displayName="Hypertension" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="COPDC_cat" displayName="COPD" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="MoodC_cat" displayName="Has a mood disorder" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="ActiveCancerC_cat" displayName="Cancer " optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DementiaC_cat" displayName="Dementia" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="HeartDisC_cat" displayName="Heart Disease" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="StrokeC_cat" displayName="Stroke" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXSmokeCurrentC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXSmokeFormer0to5C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXSmokeFormer5PlusC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXPackYearsC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXFormerDrinkerC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXDrinksLastWeekC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXDietScore2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXDepIndHighC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXDepIndModC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXEduHSGrad2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXEduNoHSGrad2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXEduSomePS2C_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXPhysicalActivityC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXBMIC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXDiabetesC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXHypertensionC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXCOPDC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXMoodC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXActiveCancerC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXDementiaC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXHeartDisC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeCXStrokeC_int" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Age_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="age" displayName="Age" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="SmokeCurrent_cat" displayName="Current Smoker" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="smokingstat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="SmokeFormer0to5_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="stopdaily2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="SmokeFormer5Plus_cat" displayName="Former Smoker 5+ Years Since Quit" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PackYears_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="dailyage" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="dailycig" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="lessdaily" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="dailyage2" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="dailycig3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="stopdaily" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="pastsmoke" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="dailyage3" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="dailycig4" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DrinksLastWeek_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="alc" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="drk" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="FormerDrinker_cat" displayName="Former Drinker" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="evdk" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnBlack_cat" displayName="Black" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="ethn" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnChinese_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnJapan_cat" displayName="Japanese/Korean/South East/Asian/Filipino" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnOther_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EthnSAsian_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduHSGrad2_cat" displayName="High School Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="edu" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduNoHSGrad2_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduSomePS2_cat" displayName="Some Post-secondary" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduPSGrad2_cat" displayName="Post-secondary Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PhysicalActivity_cont" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="vigact" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="modact" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="ligact" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="vpa" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="mpa" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="lpa" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="weight" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="kgs" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="height" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cm" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="BMI_cont" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Diabetes_cat" displayName="Diabetes" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ001" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ002" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ003" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ004" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ005" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ006" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ007" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ008" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ009" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="cond_SQ010" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="HeartDis_cat" displayName="Heart Disease" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Stroke_cat" displayName="Stroke" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Hypertension_cat" displayName="Hypertension" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Dementia_cat" displayName="Dementia" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="ActiveCancer_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="COPD_cat" displayName="COPD" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Mood_cat" displayName="Has a mood disorder" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="juice_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="fv_juice1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="fruit_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="fv_fruit1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="potato_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="fv_pot1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="otherveg_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="fv_veg1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="potatoadd" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="potatominus" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="s_juice" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="s_fruit" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="s_otherveg" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="s_potadd" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="s_potminus" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Positpart" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="Minusjuice" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DietScore2_cont" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="AgeC_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PackYearsC_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DrinksLastWeekC_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DietScore2C_cont" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="PhysicalActivityC_cont" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="BMIC_cont" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DepIndHighC_cat_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="DepIndHigh_cat" displayName="High Deprivation" optype="continuous" dataType="integer" X-shortLabel=""/>
-        <DataField name="EduPSGrad2C_cat" displayName="Post-secondary Graduate" optype="continuous" dataType="integer" X-shortLabel=""/>
+        <DataField name="AgeC_rcs1" displayName="Age RCS1" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="20" rightMargin="102"/>
+        </DataField>
+        <DataField name="AgeC_rcs2" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeC_rcs3" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeC_rcs4" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SmokeCurrentC_cat" displayName="Current Smoker" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="SmokeFormer0to5C_cat" displayName="Former Smoker &lt;5 Years Since Quit" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="SmokeFormer5PlusC_cat" displayName="Former Smoker 5+ Years Since Quit" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="PackYearsC_rcs1" displayName="Packyears Smoking RCS1" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="78"/>
+        </DataField>
+        <DataField name="PackYearsC_rcs2" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="FormerDrinkerC_cat" displayName="Former Drinker" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="DrinksLastWeekC_rcs1" displayName="Drinks Last Week" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="24"/>
+        </DataField>
+        <DataField name="DrinksLastWeekC_rcs2" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DrinksLastWeekC_rcs3" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DietScore2C_rcs1" displayName="Diet" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="-18.8680064" rightMargin="20.6964115"/>
+        </DataField>
+        <DataField name="DietScore2C_rcs2" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DepIndHighC_cat" displayName="High Deprivation" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="DepIndModC_cat" displayName="Average Deprivation" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EthnBlackC_cat" displayName="Black" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EthnChineseC_cat" displayName="Chinese" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EthnJapanC_cat" displayName="Japanese/Korean/South East Asian/Filipino" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EthnOtherC_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EthnSAsianC_cat" displayName="South Asian/Arab/West Asian" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EduHSGrad2C_cat" displayName="High School Graduate" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EduNoHSGrad2C_cat" displayName="Less than High School" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="EduSomePS2C_cat" displayName="Some Post-secondary" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="PhysicalActivityC_rcs1" displayName="Physical Activity" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="12.354"/>
+        </DataField>
+        <DataField name="PhysicalActivityC_rcs2" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="BMIC_rcs1" displayName="BMI RCS1" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="8.89" rightMargin="47.152205"/>
+        </DataField>
+        <DataField name="BMIC_rcs2" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DiabetesC_cat" displayName="Diabetes" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="HypertensionC_cat" displayName="Hypertension" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="COPDC_cat" displayName="COPD" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="MoodC_cat" displayName="Has a mood disorder" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="ActiveCancerC_cat" displayName="Cancer " dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="DementiaC_cat" displayName="Dementia" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="HeartDisC_cat" displayName="Heart Disease" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="StrokeC_cat" displayName="Stroke" dataType="integer" optype="categorical" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
+        <DataField name="AgeCXSmokeCurrentC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXSmokeFormer0to5C_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXSmokeFormer5PlusC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXPackYearsC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXFormerDrinkerC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXDrinksLastWeekC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXDietScore2C_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXDepIndHighC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXDepIndModC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXEduHSGrad2C_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXEduNoHSGrad2C_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXEduSomePS2C_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXPhysicalActivityC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXBMIC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXDiabetesC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXHypertensionC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXCOPDC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXMoodC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXActiveCancerC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXDementiaC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXHeartDisC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeCXStrokeC_int" displayName="" dataType="integer" optype="continuous" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Age_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="age" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SmokeCurrent_cat" displayName="Current Smoker" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="smokingstat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SmokeFormer0to5_cat" displayName="Former Smoker &lt;5 Years Since Quit" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="stopdaily2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SmokeFormer5Plus_cat" displayName="Former Smoker 5+ Years Since Quit" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="PackYears_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="dailyage" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="dailycig" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="lessdaily" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="dailyage2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="dailycig3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="stopdaily" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="pastsmoke" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="dailyage3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="dailycig4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DrinksLastWeek_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="alc" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="drk" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="FormerDrinker_cat" displayName="Former Drinker" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="evdk" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EthnBlack_cat" displayName="Black" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ethn" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EthnChinese_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EthnJapan_cat" displayName="Japanese/Korean/South East/Asian/Filipino" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EthnOther_cat" displayName="Other/Multiple Origin/Unknown/Latin American/Aboriginal" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EthnSAsian_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EduHSGrad2_cat" displayName="High School Graduate" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="edu" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EduNoHSGrad2_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EduSomePS2_cat" displayName="Some Post-secondary" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EduPSGrad2_cat" displayName="Post-secondary Graduate" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="PhysicalActivity_cont" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="vigact" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="modact" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ligact" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="vpa" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="mpa" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="lpa" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="weight" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="kgs" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="height" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cm" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="BMI_cont" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Diabetes_cat" displayName="Diabetes" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ001" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ002" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ003" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ004" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ005" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ006" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ007" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ008" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ009" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="cond_SQ010" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="HeartDis_cat" displayName="Heart Disease" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Stroke_cat" displayName="Stroke" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Hypertension_cat" displayName="Hypertension" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Dementia_cat" displayName="Dementia" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ActiveCancer_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="COPD_cat" displayName="COPD" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Mood_cat" displayName="Has a mood disorder" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="juice_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="fv_juice1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="fruit_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="fv_fruit1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="potato_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="fv_pot1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="otherveg_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="fv_veg1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="potatoadd" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="potatominus" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="s_juice" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="s_fruit" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="s_otherveg" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="s_potadd" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="s_potminus" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Positpart" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="Minusjuice" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DietScore2_cont" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AgeC_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="PackYearsC_cont" displayName="Packyears Smoking" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DrinksLastWeekC_cont" displayName="Drinks Last Week" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DietScore2C_cont" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="PhysicalActivityC_cont" displayName="Physical Activity" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="BMIC_cont" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DepIndHighC_cat_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="DepIndHigh_cat" displayName="High Deprivation" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="EduPSGrad2C_cat" displayName="Post-secondary Graduate" optype="categorical" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="openOpen" leftMargin="0" rightMargin="1"/>
+        </DataField>
     </DataDictionary>
     <LocalTransformations>
         <DefineFunction name="Center.fun">
@@ -1830,6 +2129,316 @@
             </Apply>
         </DerivedField>
     </LocalTransformations>
+    <GeneralRegressionModel baselineHazard="0.006213" modelType="CoxRegression">
+        <ParameterList>
+            <Parameter name="p0" label="AgeC_rcs1" referencePoint="52.1712945"/>
+            <Parameter name="p1" label="AgeC_rcs2"/>
+            <Parameter name="p2" label="AgeC_rcs3"/>
+            <Parameter name="p3" label="AgeC_rcs4"/>
+            <Parameter name="p4" label="SmokeCurrentC_cat" referencePoint="0.210621"/>
+            <Parameter name="p5" label="SmokeFormer0to5C_cat" referencePoint="0.0949346"/>
+            <Parameter name="p6" label="SmokeFormer5PlusC_cat" referencePoint="0.2988136"/>
+            <Parameter name="p7" label="PackYearsC_rcs1" referencePoint="8.5522579"/>
+            <Parameter name="p8" label="PackYearsC_rcs2"/>
+            <Parameter name="p9" label="FormerDrinkerC_cat" referencePoint="0.1567167"/>
+            <Parameter name="p10" label="DrinksLastWeekC_rcs1" referencePoint="2.1419706"/>
+            <Parameter name="p11" label="DrinksLastWeekC_rcs2"/>
+            <Parameter name="p12" label="DrinksLastWeekC_rcs3"/>
+            <Parameter name="p13" label="DietScore2C_rcs1" referencePoint="9.12E-13"/>
+            <Parameter name="p14" label="DietScore2C_rcs2"/>
+            <Parameter name="p15" label="DepIndHighC_cat" referencePoint="0.1660356"/>
+            <Parameter name="p16" label="DepIndModC_cat" referencePoint="0.6447579"/>
+            <Parameter name="p17" label="EthnBlackC_cat" referencePoint="0.0140624"/>
+            <Parameter name="p18" label="EthnChineseC_cat" referencePoint="0.0140414"/>
+            <Parameter name="p19" label="EthnJapanC_cat" referencePoint="0.0135471"/>
+            <Parameter name="p20" label="EthnOtherC_cat" referencePoint="0.041693"/>
+            <Parameter name="p21" label="EthnSAsianC_cat" referencePoint="0.0251167"/>
+            <Parameter name="p22" label="EduHSGrad2C_cat" referencePoint="0.1977786"/>
+            <Parameter name="p23" label="EduNoHSGrad2C_cat" referencePoint="0.1912154"/>
+            <Parameter name="p24" label="EduSomePS2C_cat" referencePoint="0.0640225"/>
+            <Parameter name="p25" label="PhysicalActivityC_rcs1" referencePoint="1.8600395"/>
+            <Parameter name="p26" label="PhysicalActivityC_rcs2"/>
+            <Parameter name="p27" label="BMIC_rcs1" referencePoint="25.9326726"/>
+            <Parameter name="p28" label="BMIC_rcs2"/>
+            <Parameter name="p29" label="DiabetesC_cat" referencePoint="0.0725525"/>
+            <Parameter name="p30" label="HypertensionC_cat" referencePoint="0.2434684"/>
+            <Parameter name="p31" label="COPDC_cat" referencePoint="0.070228"/>
+            <Parameter name="p32" label="MoodC_cat" referencePoint="0.1035382"/>
+            <Parameter name="p33" label="ActiveCancerC_cat" referencePoint="0.0298708"/>
+            <Parameter name="p34" label="DementiaC_cat" referencePoint="0.0049644"/>
+            <Parameter name="p35" label="HeartDisC_cat" referencePoint="0.0745824"/>
+            <Parameter name="p36" label="StrokeC_cat" referencePoint="0.0174282"/>
+            <Parameter name="p37" label="AgeCXSmokeCurrentC_int"/>
+            <Parameter name="p38" label="AgeCXSmokeFormer0to5C_int"/>
+            <Parameter name="p39" label="AgeCXSmokeFormer5PlusC_int"/>
+            <Parameter name="p40" label="AgeCXPackYearsC_int"/>
+            <Parameter name="p41" label="AgeCXFormerDrinkerC_int"/>
+            <Parameter name="p42" label="AgeCXDrinksLastWeekC_int"/>
+            <Parameter name="p43" label="AgeCXDietScore2C_int"/>
+            <Parameter name="p44" label="AgeCXDepIndHighC_int"/>
+            <Parameter name="p45" label="AgeCXDepIndModC_int"/>
+            <Parameter name="p46" label="AgeCXEduHSGrad2C_int"/>
+            <Parameter name="p47" label="AgeCXEduNoHSGrad2C_int"/>
+            <Parameter name="p48" label="AgeCXEduSomePS2C_int"/>
+            <Parameter name="p49" label="AgeCXPhysicalActivityC_int"/>
+            <Parameter name="p50" label="AgeCXBMIC_int"/>
+            <Parameter name="p51" label="AgeCXDiabetesC_int"/>
+            <Parameter name="p52" label="AgeCXHypertensionC_int"/>
+            <Parameter name="p53" label="AgeCXCOPDC_int"/>
+            <Parameter name="p54" label="AgeCXMoodC_int"/>
+            <Parameter name="p55" label="AgeCXActiveCancerC_int"/>
+            <Parameter name="p56" label="AgeCXDementiaC_int"/>
+            <Parameter name="p57" label="AgeCXHeartDisC_int"/>
+            <Parameter name="p58" label="AgeCXStrokeC_int"/>
+        </ParameterList>
+        <ParamMatrix>
+            <PCell parameterName="p0" df="" beta="0.079617627"/>
+            <PCell parameterName="p1" df="" beta="-0.049273613"/>
+            <PCell parameterName="p2" df="" beta="0.210067145"/>
+            <PCell parameterName="p3" df="" beta="-0.274827306"/>
+            <PCell parameterName="p4" df="" beta="0.334379174"/>
+            <PCell parameterName="p5" df="" beta="0.183879678"/>
+            <PCell parameterName="p6" df="" beta="-0.100337027"/>
+            <PCell parameterName="p7" df="" beta="0.043378465"/>
+            <PCell parameterName="p8" df="" beta="-0.126628893"/>
+            <PCell parameterName="p9" df="" beta="0.181465872"/>
+            <PCell parameterName="p10" df="" beta="-0.194845986"/>
+            <PCell parameterName="p11" df="" beta="1.633939941"/>
+            <PCell parameterName="p12" df="" beta="-3.227887317"/>
+            <PCell parameterName="p13" df="" beta="-0.012019164"/>
+            <PCell parameterName="p14" df="" beta="-0.000435562"/>
+            <PCell parameterName="p15" df="" beta="0.206433498"/>
+            <PCell parameterName="p16" df="" beta="0.064476835"/>
+            <PCell parameterName="p17" df="" beta="-0.045195605"/>
+            <PCell parameterName="p18" df="" beta="-0.655011418"/>
+            <PCell parameterName="p19" df="" beta="-0.407040822"/>
+            <PCell parameterName="p20" df="" beta="-0.070025874"/>
+            <PCell parameterName="p21" df="" beta="-0.468552595"/>
+            <PCell parameterName="p22" df="" beta="0.045291195"/>
+            <PCell parameterName="p23" df="" beta="0.144770078"/>
+            <PCell parameterName="p24" df="" beta="0.011207365"/>
+            <PCell parameterName="p25" df="" beta="-0.270693903"/>
+            <PCell parameterName="p26" df="" beta="0.263940219"/>
+            <PCell parameterName="p27" df="" beta="-0.086045216"/>
+            <PCell parameterName="p28" df="" beta="0.099378799"/>
+            <PCell parameterName="p29" df="" beta="0.631359707"/>
+            <PCell parameterName="p30" df="" beta="0.137793481"/>
+            <PCell parameterName="p31" df="" beta="0.490330764"/>
+            <PCell parameterName="p32" df="" beta="0.133488535"/>
+            <PCell parameterName="p33" df="" beta="1.614413634"/>
+            <PCell parameterName="p34" df="" beta="1.325522394"/>
+            <PCell parameterName="p35" df="" beta="0.456030352"/>
+            <PCell parameterName="p36" df="" beta="0.571557898"/>
+            <PCell parameterName="p37" df="" beta="-0.00277481"/>
+            <PCell parameterName="p38" df="" beta="0.002499011"/>
+            <PCell parameterName="p39" df="" beta="0.002215083"/>
+            <PCell parameterName="p40" df="" beta="-0.000216421"/>
+            <PCell parameterName="p41" df="" beta="-0.00178976"/>
+            <PCell parameterName="p42" df="" beta="-0.000566729"/>
+            <PCell parameterName="p43" df="" beta="-0.000186826"/>
+            <PCell parameterName="p44" df="" beta="-0.00355352"/>
+            <PCell parameterName="p45" df="" beta="-0.000573484"/>
+            <PCell parameterName="p46" df="" beta="0.003231432"/>
+            <PCell parameterName="p47" df="" beta="-0.000192286"/>
+            <PCell parameterName="p48" df="" beta="0.003204902"/>
+            <PCell parameterName="p49" df="" beta="0.00015476"/>
+            <PCell parameterName="p50" df="" beta="-0.000248673"/>
+            <PCell parameterName="p51" df="" beta="-0.010527824"/>
+            <PCell parameterName="p52" df="" beta="-0.004194519"/>
+            <PCell parameterName="p53" df="" beta="-0.007505024"/>
+            <PCell parameterName="p54" df="" beta="-0.002606946"/>
+            <PCell parameterName="p55" df="" beta="-0.042052221"/>
+            <PCell parameterName="p56" df="" beta="-0.023233466"/>
+            <PCell parameterName="p57" df="" beta="-0.006567629"/>
+            <PCell parameterName="p58" df="" beta="-0.010440163"/>
+        </ParamMatrix>
+        <CovariateList>
+            <Predictor name="AgeC_rcs1"/>
+            <Predictor name="AgeC_rcs2"/>
+            <Predictor name="AgeC_rcs3"/>
+            <Predictor name="AgeC_rcs4"/>
+            <Predictor name="SmokeCurrentC_cat"/>
+            <Predictor name="SmokeFormer0to5C_cat"/>
+            <Predictor name="SmokeFormer5PlusC_cat"/>
+            <Predictor name="PackYearsC_rcs1"/>
+            <Predictor name="PackYearsC_rcs2"/>
+            <Predictor name="FormerDrinkerC_cat"/>
+            <Predictor name="DrinksLastWeekC_rcs1"/>
+            <Predictor name="DrinksLastWeekC_rcs2"/>
+            <Predictor name="DrinksLastWeekC_rcs3"/>
+            <Predictor name="DietScore2C_rcs1"/>
+            <Predictor name="DietScore2C_rcs2"/>
+            <Predictor name="DepIndHighC_cat"/>
+            <Predictor name="DepIndModC_cat"/>
+            <Predictor name="EthnBlackC_cat"/>
+            <Predictor name="EthnChineseC_cat"/>
+            <Predictor name="EthnJapanC_cat"/>
+            <Predictor name="EthnOtherC_cat"/>
+            <Predictor name="EthnSAsianC_cat"/>
+            <Predictor name="EduHSGrad2C_cat"/>
+            <Predictor name="EduNoHSGrad2C_cat"/>
+            <Predictor name="EduSomePS2C_cat"/>
+            <Predictor name="PhysicalActivityC_rcs1"/>
+            <Predictor name="PhysicalActivityC_rcs2"/>
+            <Predictor name="BMIC_rcs1"/>
+            <Predictor name="BMIC_rcs2"/>
+            <Predictor name="DiabetesC_cat"/>
+            <Predictor name="HypertensionC_cat"/>
+            <Predictor name="COPDC_cat"/>
+            <Predictor name="MoodC_cat"/>
+            <Predictor name="ActiveCancerC_cat"/>
+            <Predictor name="DementiaC_cat"/>
+            <Predictor name="HeartDisC_cat"/>
+            <Predictor name="StrokeC_cat"/>
+            <Predictor name="AgeCXSmokeCurrentC_int"/>
+            <Predictor name="AgeCXSmokeFormer0to5C_int"/>
+            <Predictor name="AgeCXSmokeFormer5PlusC_int"/>
+            <Predictor name="AgeCXPackYearsC_int"/>
+            <Predictor name="AgeCXFormerDrinkerC_int"/>
+            <Predictor name="AgeCXDrinksLastWeekC_int"/>
+            <Predictor name="AgeCXDietScore2C_int"/>
+            <Predictor name="AgeCXDepIndHighC_int"/>
+            <Predictor name="AgeCXDepIndModC_int"/>
+            <Predictor name="AgeCXEduHSGrad2C_int"/>
+            <Predictor name="AgeCXEduNoHSGrad2C_int"/>
+            <Predictor name="AgeCXEduSomePS2C_int"/>
+            <Predictor name="AgeCXPhysicalActivityC_int"/>
+            <Predictor name="AgeCXBMIC_int"/>
+            <Predictor name="AgeCXDiabetesC_int"/>
+            <Predictor name="AgeCXHypertensionC_int"/>
+            <Predictor name="AgeCXCOPDC_int"/>
+            <Predictor name="AgeCXMoodC_int"/>
+            <Predictor name="AgeCXActiveCancerC_int"/>
+            <Predictor name="AgeCXDementiaC_int"/>
+            <Predictor name="AgeCXHeartDisC_int"/>
+            <Predictor name="AgeCXStrokeC_int"/>
+        </CovariateList>
+        <Extension>
+            <name>maximumTime</name>
+            <value>5</value>
+        </Extension>
+        <Extension>
+            <name>timeMetric</name>
+            <value>years</value>
+        </Extension>
+    </GeneralRegressionModel>
+    <MiningSchema>
+        <MiningField name="sex" invalidValueTreatment="asIs"/>
+        <MiningField name="age" invalidValueTreatment="asIs"/>
+        <MiningField name="Age_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="AgeC_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="AgeC_rcs1" invalidValueTreatment="returnInvalid"/>
+        <MiningField name="SmokingStatus" invalidValueTreatment="asIs"/>
+        <MiningField name="DailyCig" invalidValueTreatment="asIs"/>
+        <MiningField name="AgeDailyStart" invalidValueTreatment="asIs"/>
+        <MiningField name="AgeDailyQuit" invalidValueTreatment="asIs"/>
+        <MiningField name="PastDaily" invalidValueTreatment="asIs"/>
+        <MiningField name="PastSmoke" invalidValueTreatment="asIs"/>
+        <MiningField name="TypeOfSmoker2" invalidValueTreatment="asIs"/>
+        <MiningField name="PackYears" invalidValueTreatment="asIs"/>
+        <MiningField name="PackYears_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="PackYearsC_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="PackYearsC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="SmokeSimple" invalidValueTreatment="asIs"/>
+        <MiningField name="SmokeFormer5Plus_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="SmokeFormer0to5_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="SmokeCurrent_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="SmokeNonC" invalidValueTreatment="asIs"/>
+        <MiningField name="SmokeFormer5PlusC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="SmokeFormer0to5C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="SmokeCurrentC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="DrinksLastWeek" invalidValueTreatment="asIs"/>
+        <MiningField name="DrinksLastWeek_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="DrinksLastWeekC_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="DrinksLastWeekC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="FormerDrinkerNo" invalidValueTreatment="asIs"/>
+        <MiningField name="FormerDrinker_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="FormerDrinkerC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="dfruit" invalidValueTreatment="asIs"/>
+        <MiningField name="dsalad" invalidValueTreatment="asIs"/>
+        <MiningField name="dpotato" invalidValueTreatment="asIs"/>
+        <MiningField name="dcarrot" invalidValueTreatment="asIs"/>
+        <MiningField name="dveg" invalidValueTreatment="asIs"/>
+        <MiningField name="djuice" invalidValueTreatment="asIs"/>
+        <MiningField name="DietScore2_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="DietScore2C_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="DietScore2C_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="PhysicalActivity" invalidValueTreatment="asIs"/>
+        <MiningField name="PhysicalActivity_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="PhysicalActivityC_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="PhysicalActivityC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="BMI_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="BMIC_cont" invalidValueTreatment="asIs"/>
+        <MiningField name="BMIC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="DepInd" invalidValueTreatment="asIs"/>
+        <MiningField name="DepIndC" invalidValueTreatment="asIs"/>
+        <MiningField name="DepIndLow" invalidValueTreatment="asIs"/>
+        <MiningField name="DepIndMod_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="DepIndHigh_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="DepIndLowC" invalidValueTreatment="asIs"/>
+        <MiningField name="DepIndModC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="DepIndHighC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Edu2" invalidValueTreatment="asIs"/>
+        <MiningField name="EduHSGrad2_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EduSomePS2_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EduPSGrad2_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EduNoHSGrad2" invalidValueTreatment="asIs"/>
+        <MiningField name="EduHSGrad2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EduSomePS2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EduPSGrad2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EduNoHSGrad2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Cancer_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="CancerNo " invalidValueTreatment="asIs"/>
+        <MiningField name="ActiveCancerC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Diabetes_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="DiabetesNo " invalidValueTreatment="asIs"/>
+        <MiningField name="DiabetesC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="HeartDis_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="HeartDisNo" invalidValueTreatment="asIs"/>
+        <MiningField name="HeartDisC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Stroke_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="StrokeNo " invalidValueTreatment="asIs"/>
+        <MiningField name="StrokeC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Hypertension_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="NoHypertension" invalidValueTreatment="asIs"/>
+        <MiningField name="HypertensionC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Mood_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="NoMood" invalidValueTreatment="asIs"/>
+        <MiningField name="MoodC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Dementia_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="NoDementia" invalidValueTreatment="asIs"/>
+        <MiningField name="DementiaC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="COPD_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="NoCOPD" invalidValueTreatment="asIs"/>
+        <MiningField name="COPDC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Epilepsy_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="NoEpilepsy" invalidValueTreatment="asIs"/>
+        <MiningField name="EpilepsyC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="Ethnicity6_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnWhite" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnBlack_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EthChinese6_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnJapanC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EthnOther_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnSAsian6_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnWhiteC" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnBlackC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EthnChineseC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EthnJapan_cat" invalidValueTreatment="asIs"/>
+        <MiningField name="EthnOtherC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="EthnSAsianC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+        <MiningField name="ImmigrantPercentC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
+    </MiningSchema>
+    <CustomPMML>
+        <RestrictedCubicSpline>
+            <PCell parameterName="p1, p2, p3" knotLocations="-28.1712945, -14.1712945, -0.1712945, 12.8287055, 29.8287055"/>
+            <PCell parameterName="p8" knotLocations="-8.552258, -6.052258, 20.197742"/>
+            <PCell parameterName="p11, p12" knotLocations="-2.1419706, -1.1419706, -0.1419706, 4.8580294"/>
+            <PCell parameterName="p14" knotLocations="-3.3821214, -0.2196557, 3.7547511"/>
+            <PCell parameterName="p26" knotLocations="-1.7600395, -0.1600395, 2.6399605"/>
+            <PCell parameterName="p28" knotLocations="-5.852673, -1.042673, 7.085145"/>
+        </RestrictedCubicSpline>
+    </CustomPMML>
     <Taxonomy name="Spec">
         <InlineTable>
             <row>
@@ -2610,314 +3219,4 @@
             </row>
         </InlineTable>
     </Taxonomy>
-    <GeneralRegressionModel baselineHazard="0.006213" modelType="CoxRegression">
-        <ParameterList>
-            <Parameter name="p0" label="AgeC_rcs1" referencePoint="52.1712945"/>
-            <Parameter name="p1" label="AgeC_rcs2"/>
-            <Parameter name="p2" label="AgeC_rcs3"/>
-            <Parameter name="p3" label="AgeC_rcs4"/>
-            <Parameter name="p4" label="SmokeCurrentC_cat" referencePoint="0.210621"/>
-            <Parameter name="p5" label="SmokeFormer0to5C_cat" referencePoint="0.0949346"/>
-            <Parameter name="p6" label="SmokeFormer5PlusC_cat" referencePoint="0.2988136"/>
-            <Parameter name="p7" label="PackYearsC_rcs1" referencePoint="8.5522579"/>
-            <Parameter name="p8" label="PackYearsC_rcs2"/>
-            <Parameter name="p9" label="FormerDrinkerC_cat" referencePoint="0.1567167"/>
-            <Parameter name="p10" label="DrinksLastWeekC_rcs1" referencePoint="2.1419706"/>
-            <Parameter name="p11" label="DrinksLastWeekC_rcs2"/>
-            <Parameter name="p12" label="DrinksLastWeekC_rcs3"/>
-            <Parameter name="p13" label="DietScore2C_rcs1" referencePoint="9.12E-13"/>
-            <Parameter name="p14" label="DietScore2C_rcs2"/>
-            <Parameter name="p15" label="DepIndHighC_cat" referencePoint="0.1660356"/>
-            <Parameter name="p16" label="DepIndModC_cat" referencePoint="0.6447579"/>
-            <Parameter name="p17" label="EthnBlackC_cat" referencePoint="0.0140624"/>
-            <Parameter name="p18" label="EthnChineseC_cat" referencePoint="0.0140414"/>
-            <Parameter name="p19" label="EthnJapanC_cat" referencePoint="0.0135471"/>
-            <Parameter name="p20" label="EthnOtherC_cat" referencePoint="0.041693"/>
-            <Parameter name="p21" label="EthnSAsianC_cat" referencePoint="0.0251167"/>
-            <Parameter name="p22" label="EduHSGrad2C_cat" referencePoint="0.1977786"/>
-            <Parameter name="p23" label="EduNoHSGrad2C_cat" referencePoint="0.1912154"/>
-            <Parameter name="p24" label="EduSomePS2C_cat" referencePoint="0.0640225"/>
-            <Parameter name="p25" label="PhysicalActivityC_rcs1" referencePoint="1.8600395"/>
-            <Parameter name="p26" label="PhysicalActivityC_rcs2"/>
-            <Parameter name="p27" label="BMIC_rcs1" referencePoint="25.9326726"/>
-            <Parameter name="p28" label="BMIC_rcs2"/>
-            <Parameter name="p29" label="DiabetesC_cat" referencePoint="0.0725525"/>
-            <Parameter name="p30" label="HypertensionC_cat" referencePoint="0.2434684"/>
-            <Parameter name="p31" label="COPDC_cat" referencePoint="0.070228"/>
-            <Parameter name="p32" label="MoodC_cat" referencePoint="0.1035382"/>
-            <Parameter name="p33" label="ActiveCancerC_cat" referencePoint="0.0298708"/>
-            <Parameter name="p34" label="DementiaC_cat" referencePoint="0.0049644"/>
-            <Parameter name="p35" label="HeartDisC_cat" referencePoint="0.0745824"/>
-            <Parameter name="p36" label="StrokeC_cat" referencePoint="0.0174282"/>
-            <Parameter name="p37" label="AgeCXSmokeCurrentC_int"/>
-            <Parameter name="p38" label="AgeCXSmokeFormer0to5C_int"/>
-            <Parameter name="p39" label="AgeCXSmokeFormer5PlusC_int"/>
-            <Parameter name="p40" label="AgeCXPackYearsC_int"/>
-            <Parameter name="p41" label="AgeCXFormerDrinkerC_int"/>
-            <Parameter name="p42" label="AgeCXDrinksLastWeekC_int"/>
-            <Parameter name="p43" label="AgeCXDietScore2C_int"/>
-            <Parameter name="p44" label="AgeCXDepIndHighC_int"/>
-            <Parameter name="p45" label="AgeCXDepIndModC_int"/>
-            <Parameter name="p46" label="AgeCXEduHSGrad2C_int"/>
-            <Parameter name="p47" label="AgeCXEduNoHSGrad2C_int"/>
-            <Parameter name="p48" label="AgeCXEduSomePS2C_int"/>
-            <Parameter name="p49" label="AgeCXPhysicalActivityC_int"/>
-            <Parameter name="p50" label="AgeCXBMIC_int"/>
-            <Parameter name="p51" label="AgeCXDiabetesC_int"/>
-            <Parameter name="p52" label="AgeCXHypertensionC_int"/>
-            <Parameter name="p53" label="AgeCXCOPDC_int"/>
-            <Parameter name="p54" label="AgeCXMoodC_int"/>
-            <Parameter name="p55" label="AgeCXActiveCancerC_int"/>
-            <Parameter name="p56" label="AgeCXDementiaC_int"/>
-            <Parameter name="p57" label="AgeCXHeartDisC_int"/>
-            <Parameter name="p58" label="AgeCXStrokeC_int"/>
-        </ParameterList>
-        <ParamMatrix>
-            <PCell parameterName="p0" df="" beta="0.079617627"/>
-            <PCell parameterName="p1" df="" beta="-0.049273613"/>
-            <PCell parameterName="p2" df="" beta="0.210067145"/>
-            <PCell parameterName="p3" df="" beta="-0.274827306"/>
-            <PCell parameterName="p4" df="" beta="0.334379174"/>
-            <PCell parameterName="p5" df="" beta="0.183879678"/>
-            <PCell parameterName="p6" df="" beta="-0.100337027"/>
-            <PCell parameterName="p7" df="" beta="0.043378465"/>
-            <PCell parameterName="p8" df="" beta="-0.126628893"/>
-            <PCell parameterName="p9" df="" beta="0.181465872"/>
-            <PCell parameterName="p10" df="" beta="-0.194845986"/>
-            <PCell parameterName="p11" df="" beta="1.633939941"/>
-            <PCell parameterName="p12" df="" beta="-3.227887317"/>
-            <PCell parameterName="p13" df="" beta="-0.012019164"/>
-            <PCell parameterName="p14" df="" beta="-0.000435562"/>
-            <PCell parameterName="p15" df="" beta="0.206433498"/>
-            <PCell parameterName="p16" df="" beta="0.064476835"/>
-            <PCell parameterName="p17" df="" beta="-0.045195605"/>
-            <PCell parameterName="p18" df="" beta="-0.655011418"/>
-            <PCell parameterName="p19" df="" beta="-0.407040822"/>
-            <PCell parameterName="p20" df="" beta="-0.070025874"/>
-            <PCell parameterName="p21" df="" beta="-0.468552595"/>
-            <PCell parameterName="p22" df="" beta="0.045291195"/>
-            <PCell parameterName="p23" df="" beta="0.144770078"/>
-            <PCell parameterName="p24" df="" beta="0.011207365"/>
-            <PCell parameterName="p25" df="" beta="-0.270693903"/>
-            <PCell parameterName="p26" df="" beta="0.263940219"/>
-            <PCell parameterName="p27" df="" beta="-0.086045216"/>
-            <PCell parameterName="p28" df="" beta="0.099378799"/>
-            <PCell parameterName="p29" df="" beta="0.631359707"/>
-            <PCell parameterName="p30" df="" beta="0.137793481"/>
-            <PCell parameterName="p31" df="" beta="0.490330764"/>
-            <PCell parameterName="p32" df="" beta="0.133488535"/>
-            <PCell parameterName="p33" df="" beta="1.614413634"/>
-            <PCell parameterName="p34" df="" beta="1.325522394"/>
-            <PCell parameterName="p35" df="" beta="0.456030352"/>
-            <PCell parameterName="p36" df="" beta="0.571557898"/>
-            <PCell parameterName="p37" df="" beta="-0.00277481"/>
-            <PCell parameterName="p38" df="" beta="0.002499011"/>
-            <PCell parameterName="p39" df="" beta="0.002215083"/>
-            <PCell parameterName="p40" df="" beta="-0.000216421"/>
-            <PCell parameterName="p41" df="" beta="-0.00178976"/>
-            <PCell parameterName="p42" df="" beta="-0.000566729"/>
-            <PCell parameterName="p43" df="" beta="-0.000186826"/>
-            <PCell parameterName="p44" df="" beta="-0.00355352"/>
-            <PCell parameterName="p45" df="" beta="-0.000573484"/>
-            <PCell parameterName="p46" df="" beta="0.003231432"/>
-            <PCell parameterName="p47" df="" beta="-0.000192286"/>
-            <PCell parameterName="p48" df="" beta="0.003204902"/>
-            <PCell parameterName="p49" df="" beta="0.00015476"/>
-            <PCell parameterName="p50" df="" beta="-0.000248673"/>
-            <PCell parameterName="p51" df="" beta="-0.010527824"/>
-            <PCell parameterName="p52" df="" beta="-0.004194519"/>
-            <PCell parameterName="p53" df="" beta="-0.007505024"/>
-            <PCell parameterName="p54" df="" beta="-0.002606946"/>
-            <PCell parameterName="p55" df="" beta="-0.042052221"/>
-            <PCell parameterName="p56" df="" beta="-0.023233466"/>
-            <PCell parameterName="p57" df="" beta="-0.006567629"/>
-            <PCell parameterName="p58" df="" beta="-0.010440163"/>
-        </ParamMatrix>
-        <CovariateList>
-            <Predictor name="AgeC_rcs1"/>
-            <Predictor name="AgeC_rcs2"/>
-            <Predictor name="AgeC_rcs3"/>
-            <Predictor name="AgeC_rcs4"/>
-            <Predictor name="SmokeCurrentC_cat"/>
-            <Predictor name="SmokeFormer0to5C_cat"/>
-            <Predictor name="SmokeFormer5PlusC_cat"/>
-            <Predictor name="PackYearsC_rcs1"/>
-            <Predictor name="PackYearsC_rcs2"/>
-            <Predictor name="FormerDrinkerC_cat"/>
-            <Predictor name="DrinksLastWeekC_rcs1"/>
-            <Predictor name="DrinksLastWeekC_rcs2"/>
-            <Predictor name="DrinksLastWeekC_rcs3"/>
-            <Predictor name="DietScore2C_rcs1"/>
-            <Predictor name="DietScore2C_rcs2"/>
-            <Predictor name="DepIndHighC_cat"/>
-            <Predictor name="DepIndModC_cat"/>
-            <Predictor name="EthnBlackC_cat"/>
-            <Predictor name="EthnChineseC_cat"/>
-            <Predictor name="EthnJapanC_cat"/>
-            <Predictor name="EthnOtherC_cat"/>
-            <Predictor name="EthnSAsianC_cat"/>
-            <Predictor name="EduHSGrad2C_cat"/>
-            <Predictor name="EduNoHSGrad2C_cat"/>
-            <Predictor name="EduSomePS2C_cat"/>
-            <Predictor name="PhysicalActivityC_rcs1"/>
-            <Predictor name="PhysicalActivityC_rcs2"/>
-            <Predictor name="BMIC_rcs1"/>
-            <Predictor name="BMIC_rcs2"/>
-            <Predictor name="DiabetesC_cat"/>
-            <Predictor name="HypertensionC_cat"/>
-            <Predictor name="COPDC_cat"/>
-            <Predictor name="MoodC_cat"/>
-            <Predictor name="ActiveCancerC_cat"/>
-            <Predictor name="DementiaC_cat"/>
-            <Predictor name="HeartDisC_cat"/>
-            <Predictor name="StrokeC_cat"/>
-            <Predictor name="AgeCXSmokeCurrentC_int"/>
-            <Predictor name="AgeCXSmokeFormer0to5C_int"/>
-            <Predictor name="AgeCXSmokeFormer5PlusC_int"/>
-            <Predictor name="AgeCXPackYearsC_int"/>
-            <Predictor name="AgeCXFormerDrinkerC_int"/>
-            <Predictor name="AgeCXDrinksLastWeekC_int"/>
-            <Predictor name="AgeCXDietScore2C_int"/>
-            <Predictor name="AgeCXDepIndHighC_int"/>
-            <Predictor name="AgeCXDepIndModC_int"/>
-            <Predictor name="AgeCXEduHSGrad2C_int"/>
-            <Predictor name="AgeCXEduNoHSGrad2C_int"/>
-            <Predictor name="AgeCXEduSomePS2C_int"/>
-            <Predictor name="AgeCXPhysicalActivityC_int"/>
-            <Predictor name="AgeCXBMIC_int"/>
-            <Predictor name="AgeCXDiabetesC_int"/>
-            <Predictor name="AgeCXHypertensionC_int"/>
-            <Predictor name="AgeCXCOPDC_int"/>
-            <Predictor name="AgeCXMoodC_int"/>
-            <Predictor name="AgeCXActiveCancerC_int"/>
-            <Predictor name="AgeCXDementiaC_int"/>
-            <Predictor name="AgeCXHeartDisC_int"/>
-            <Predictor name="AgeCXStrokeC_int"/>
-        </CovariateList>
-        <Extension>
-            <name>maximumTime</name>
-            <value>5</value>
-        </Extension>
-        <Extension>
-            <name>timeMetric</name>
-            <value>years</value>
-        </Extension>
-    </GeneralRegressionModel>
-    <MiningSchema>
-        <MiningField name="sex" invalidValueTreatment="asIs"/>
-        <MiningField name="age" invalidValueTreatment="asIs"/>
-        <MiningField name="Age_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="AgeC_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="AgeC_rcs1" invalidValueTreatment="returnInvalid"/>
-        <MiningField name="SmokingStatus" invalidValueTreatment="asIs"/>
-        <MiningField name="DailyCig" invalidValueTreatment="asIs"/>
-        <MiningField name="AgeDailyStart" invalidValueTreatment="asIs"/>
-        <MiningField name="AgeDailyQuit" invalidValueTreatment="asIs"/>
-        <MiningField name="PastDaily" invalidValueTreatment="asIs"/>
-        <MiningField name="PastSmoke" invalidValueTreatment="asIs"/>
-        <MiningField name="TypeOfSmoker2" invalidValueTreatment="asIs"/>
-        <MiningField name="PackYears" invalidValueTreatment="asIs"/>
-        <MiningField name="PackYears_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="PackYearsC_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="PackYearsC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="SmokeSimple" invalidValueTreatment="asIs"/>
-        <MiningField name="SmokeFormer5Plus_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="SmokeFormer0to5_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="SmokeCurrent_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="SmokeNonC" invalidValueTreatment="asIs"/>
-        <MiningField name="SmokeFormer5PlusC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="SmokeFormer0to5C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="SmokeCurrentC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="DrinksLastWeek" invalidValueTreatment="asIs"/>
-        <MiningField name="DrinksLastWeek_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="DrinksLastWeekC_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="DrinksLastWeekC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="FormerDrinkerNo" invalidValueTreatment="asIs"/>
-        <MiningField name="FormerDrinker_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="FormerDrinkerC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="dfruit" invalidValueTreatment="asIs"/>
-        <MiningField name="dsalad" invalidValueTreatment="asIs"/>
-        <MiningField name="dpotato" invalidValueTreatment="asIs"/>
-        <MiningField name="dcarrot" invalidValueTreatment="asIs"/>
-        <MiningField name="dveg" invalidValueTreatment="asIs"/>
-        <MiningField name="djuice" invalidValueTreatment="asIs"/>
-        <MiningField name="DietScore2_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="DietScore2C_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="DietScore2C_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="PhysicalActivity" invalidValueTreatment="asIs"/>
-        <MiningField name="PhysicalActivity_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="PhysicalActivityC_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="PhysicalActivityC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="BMI_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="BMIC_cont" invalidValueTreatment="asIs"/>
-        <MiningField name="BMIC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="DepInd" invalidValueTreatment="asIs"/>
-        <MiningField name="DepIndC" invalidValueTreatment="asIs"/>
-        <MiningField name="DepIndLow" invalidValueTreatment="asIs"/>
-        <MiningField name="DepIndMod_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="DepIndHigh_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="DepIndLowC" invalidValueTreatment="asIs"/>
-        <MiningField name="DepIndModC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="DepIndHighC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Edu2" invalidValueTreatment="asIs"/>
-        <MiningField name="EduHSGrad2_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EduSomePS2_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EduPSGrad2_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EduNoHSGrad2" invalidValueTreatment="asIs"/>
-        <MiningField name="EduHSGrad2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EduSomePS2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EduPSGrad2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EduNoHSGrad2C_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Cancer_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="CancerNo " invalidValueTreatment="asIs"/>
-        <MiningField name="ActiveCancerC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Diabetes_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="DiabetesNo " invalidValueTreatment="asIs"/>
-        <MiningField name="DiabetesC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="HeartDis_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="HeartDisNo" invalidValueTreatment="asIs"/>
-        <MiningField name="HeartDisC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Stroke_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="StrokeNo " invalidValueTreatment="asIs"/>
-        <MiningField name="StrokeC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Hypertension_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="NoHypertension" invalidValueTreatment="asIs"/>
-        <MiningField name="HypertensionC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Mood_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="NoMood" invalidValueTreatment="asIs"/>
-        <MiningField name="MoodC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Dementia_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="NoDementia" invalidValueTreatment="asIs"/>
-        <MiningField name="DementiaC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="COPD_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="NoCOPD" invalidValueTreatment="asIs"/>
-        <MiningField name="COPDC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Epilepsy_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="NoEpilepsy" invalidValueTreatment="asIs"/>
-        <MiningField name="EpilepsyC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="Ethnicity6_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnWhite" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnBlack_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EthChinese6_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnJapanC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EthnOther_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnSAsian6_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnWhiteC" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnBlackC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EthnChineseC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EthnJapan_cat" invalidValueTreatment="asIs"/>
-        <MiningField name="EthnOtherC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="EthnSAsianC_cat" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-        <MiningField name="ImmigrantPercentC_rcs1" invalidValueTreatment="asMissing" missingValueTreatment="asMean"/>
-    </MiningSchema>
-    <CustomPMML>
-        <RestrictedCubicSpline>
-            <PCell parameterName="p1, p2, p3" knotLocations="-28.1712945, -14.1712945, -0.1712945, 12.8287055, 29.8287055"/>
-            <PCell parameterName="p8" knotLocations="-8.552258, -6.052258, 20.197742"/>
-            <PCell parameterName="p11, p12" knotLocations="-2.1419706, -1.1419706, -0.1419706, 4.8580294"/>
-            <PCell parameterName="p14" knotLocations="-3.3821214, -0.2196557, 3.7547511"/>
-            <PCell parameterName="p26" knotLocations="-1.7600395, -0.1600395, 2.6399605"/>
-            <PCell parameterName="p28" knotLocations="-5.852673, -1.042673, 7.085145"/>
-        </RestrictedCubicSpline>
-    </CustomPMML>
 </PMML>
