@@ -6,8 +6,6 @@ import {
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import {
     VariableDetailsSheet,
-    VariablesSheet,
-    CatValue,
     TrueColumnValue,
 } from '../../reference-files/msw';
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
@@ -21,6 +19,7 @@ import {
 import { MSW } from '../../src/ci/model-assets/web-spec/msw/msw';
 import { AlgorithmAssets } from '../../src/ci/model-assets/algorithm-assets/algorithm-assets';
 import { VariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
+import { IntervalFactory } from './interval';
 
 export function constructDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
@@ -56,7 +55,7 @@ export function constructDataDictionaryNode(
     const localTransformationDataFields: IDataField[] = algorithmAssets.localTransformations
         .getFieldNames()
         .map(dataFieldName => {
-            const variablesRow = msw.findRowForVariableName(dataFieldName);
+            const variablesRow = msw.findRowForVariable(dataFieldName);
             const variablesDetailsRow = variableDetailsSheet.find(
                 ({ variable, variableStart }) => {
                     return (
@@ -103,21 +102,13 @@ export function constructDataDictionaryNode(
                         dataFieldName,
                         variableDetailsSheet,
                     ),
-                    constructIntervalNodeForVariable(
-                        dataFieldName,
-                        variableDetailsSheet,
-                        msw.sheet,
-                    ),
+                    IntervalFactory.fromVariableName(dataFieldName, msw),
                 ) as ICategoricalDataField;
             } else {
                 return Object.assign(
                     {},
                     baseDataField,
-                    constructIntervalNodeForVariable(
-                        dataFieldName,
-                        variableDetailsSheet,
-                        msw.sheet,
-                    ),
+                    IntervalFactory.fromVariableName(dataFieldName, msw),
                     constructValuesNodeForVariable(
                         dataFieldName,
                         variableDetailsSheet,
@@ -215,10 +206,9 @@ export function constructDataDictionaryNode(
                         variablesSheetRow.variable,
                         variableDetailsSheet,
                     ),
-                    constructIntervalNodeForVariable(
+                    IntervalFactory.fromVariableName(
                         variablesSheetRow.variable,
-                        variableDetailsSheet,
-                        msw.sheet,
+                        msw,
                     ),
                 ) as ICategoricalDataField);
             }
@@ -230,10 +220,9 @@ export function constructDataDictionaryNode(
                     variablesSheetRow.variable,
                     variableDetailsSheet,
                 ),
-                constructIntervalNodeForVariable(
+                IntervalFactory.fromVariableName(
                     variablesSheetRow.variable,
-                    variableDetailsSheet,
-                    msw.sheet,
+                    msw,
                 ),
             ) as IContinuousDataField);
         });
@@ -277,72 +266,6 @@ function constructValuesNodeForVariable(
                     },
                 };
             }),
-    };
-}
-
-function constructIntervalNodeForVariable(
-    variable: string,
-    variableDetailsSheet: VariableDetailsSheet,
-    variableSheet: VariablesSheet,
-) {
-    const variableDetails = variableDetailsSheet.filter(variableDetailsRow => {
-        const hasSameLowAndHighValues =
-            variableDetailsRow.low === variableDetailsRow.high;
-
-        return (
-            (variableDetailsRow.variable === variable ||
-                variableDetailsRow.variableStart === variable) &&
-            !hasSameLowAndHighValues
-        );
-    });
-    const variableSheetRow = variableSheet.find(variableSheet => {
-        return variableSheet.variable === variable;
-    });
-
-    return {
-        Interval:
-            variableSheetRow &&
-            variableSheetRow.variable !==
-                variableSheetRow.variableStart.split(',').map(trim)[0] &&
-            variableSheetRow.variableType !== CatValue
-                ? [
-                      {
-                          $: {
-                              closure: 'closedClosed',
-                              leftMargin: variableSheetRow.min,
-                              rightMargin: variableSheetRow.max,
-                              'X-description': '',
-                          },
-                      },
-                  ]
-                : variableDetails
-                ? variableDetails.map(
-                      ({
-                          low,
-                          high,
-                          catStartLabel,
-                          catLabelLong,
-                          variableStart,
-                      }) => {
-                          return {
-                              $: {
-                                  closure: 'closedClosed',
-                                  leftMargin: low,
-                                  rightMargin: high,
-                                  'X-description':
-                                      variable === variableStart
-                                          ? catStartLabel
-                                          : catLabelLong,
-                              },
-                          };
-                      },
-                  )
-                : {
-                      $: {
-                          closure: 'closedClosed',
-                          'X-description': '',
-                      },
-                  },
     };
 }
 

@@ -16,6 +16,15 @@ export abstract class VariableDetails {
             return variable === variableName;
         });
     }
+
+    static findRowsForContVariable(variableName: string) {
+        return this.sheet.filter(({ low, high, variable, variableStart }) => {
+            return (
+                low !== high &&
+                (variable === variableName || variable === variableStart)
+            );
+        });
+    }
 }
 
 interface IVariableDetailsSheetRow {

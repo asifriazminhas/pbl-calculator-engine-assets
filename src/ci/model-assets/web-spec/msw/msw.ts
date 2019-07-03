@@ -2,6 +2,7 @@ import { VariableType } from './variable-type';
 import { MswBoolean, TrueColumnValue } from './msw-boolean';
 import { AssetsUtil } from '../../assets-util';
 import { VariableDetails } from './variable-details';
+import { trim } from 'lodash';
 
 export class MSW {
     sheet: IMswSheetRow[];
@@ -22,10 +23,24 @@ export class MSW {
         });
     }
 
-    findRowForVariableName(variableName: string) {
+    findRowForVariable(variableName: string) {
         return this.sheet.find(({ variable }) => {
             return variable === variableName;
         });
+    }
+
+    findRowForContVariable(variableName: string) {
+        const row = this.findRowForVariable(variableName);
+
+        if (row && row.variableType === 'cont') {
+            return row;
+        }
+
+        return undefined;
+    }
+
+    isStartVariable(row: IMswSheetRow): boolean {
+        return row.variable !== row.variableStart.split(',').map(trim)[0];
     }
 
     private getCovariateNamesForRow(variableSheetRow: IMswSheetRow) {
@@ -77,7 +92,7 @@ export class MSW {
     }
 }
 
-interface IMswSheetRow {
+export interface IMswSheetRow {
     variable: string;
     variableType: VariableType;
     catLabel: string;
