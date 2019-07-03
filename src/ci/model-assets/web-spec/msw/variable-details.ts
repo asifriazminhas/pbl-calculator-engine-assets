@@ -25,6 +25,15 @@ export abstract class VariableDetails {
             );
         });
     }
+
+    static findRowForCatVariable(variableName: string) {
+        return this.sheet.filter(({ low, high, variable, variableStart }) => {
+            return (
+                low === high &&
+                (variable === variableName || variable === variableStart)
+            );
+        });
+    }
 }
 
 interface IVariableDetailsSheetRow {

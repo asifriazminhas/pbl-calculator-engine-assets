@@ -4,10 +4,7 @@ import {
     IContinuousDataField,
     IBaseDataField,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
-import {
-    VariableDetailsSheet,
-    TrueColumnValue,
-} from '../../reference-files/msw';
+import { TrueColumnValue } from '../../reference-files/msw';
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
 import { getDataFieldNamesFromApplyNode } from '../../util/local-transformations';
 import { trim, flatten, uniq } from 'lodash';
@@ -20,6 +17,7 @@ import { MSW } from '../../src/ci/model-assets/web-spec/msw/msw';
 import { AlgorithmAssets } from '../../src/ci/model-assets/algorithm-assets/algorithm-assets';
 import { VariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
 import { IntervalFactory } from './interval';
+import { ValueFactory } from './value';
 
 export function constructDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
@@ -98,10 +96,7 @@ export function constructDataDictionaryNode(
                 return Object.assign(
                     {},
                     baseDataField,
-                    constructValuesNodeForVariable(
-                        dataFieldName,
-                        variableDetailsSheet,
-                    ),
+                    ValueFactory.fromVariableName(dataFieldName),
                     IntervalFactory.fromVariableName(dataFieldName, msw),
                 ) as ICategoricalDataField;
             } else {
@@ -109,10 +104,7 @@ export function constructDataDictionaryNode(
                     {},
                     baseDataField,
                     IntervalFactory.fromVariableName(dataFieldName, msw),
-                    constructValuesNodeForVariable(
-                        dataFieldName,
-                        variableDetailsSheet,
-                    ),
+                    ValueFactory.fromVariableName(dataFieldName),
                 ) as IContinuousDataField;
             }
         });
@@ -202,10 +194,7 @@ export function constructDataDictionaryNode(
                 return dataFields.push(Object.assign(
                     {},
                     baseDataField,
-                    constructValuesNodeForVariable(
-                        variablesSheetRow.variable,
-                        variableDetailsSheet,
-                    ),
+                    ValueFactory.fromVariableName(variablesSheetRow.variable),
                     IntervalFactory.fromVariableName(
                         variablesSheetRow.variable,
                         msw,
@@ -216,10 +205,7 @@ export function constructDataDictionaryNode(
             return dataFields.push(Object.assign(
                 {},
                 baseDataField,
-                constructValuesNodeForVariable(
-                    variablesSheetRow.variable,
-                    variableDetailsSheet,
-                ),
+                ValueFactory.fromVariableName(variablesSheetRow.variable),
                 IntervalFactory.fromVariableName(
                     variablesSheetRow.variable,
                     msw,
@@ -232,40 +218,6 @@ export function constructDataDictionaryNode(
         $: {
             numberOfFields: `${finalVariablesDataDicNodes.length}`,
         },
-    };
-}
-
-function constructValuesNodeForVariable(
-    variable: string,
-    variableDetailsSheet: VariableDetailsSheet,
-) {
-    const variableDetails = variableDetailsSheet.filter(
-        variableDetailsSheetRow => {
-            const hasSameLowAndHighValues =
-                variableDetailsSheetRow.low === variableDetailsSheetRow.high;
-
-            return (
-                (variableDetailsSheetRow.variable === variable ||
-                    variableDetailsSheetRow.variableStart === variable) &&
-                hasSameLowAndHighValues
-            );
-        },
-    );
-
-    return {
-        Value: variableDetails
-            .filter(({ low }) => {
-                return low.trim().length !== 0;
-            })
-            .map(({ low, catLabel, catLabelLong }) => {
-                return {
-                    $: {
-                        value: low,
-                        displayName: catLabel,
-                        description: catLabelLong,
-                    },
-                };
-            }),
     };
 }
 
