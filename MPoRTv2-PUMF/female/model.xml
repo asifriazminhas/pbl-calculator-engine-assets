@@ -6,7 +6,7 @@
             <value>MPoRTv2-PUMF female algorithm</value>
         </Extension>
     </Header>
-    <DataDictionary numberOfFields="167">
+    <DataDictionary numberOfFields="187">
         <DataField name="DHHGAGE_cont_C_rcs1" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
@@ -110,6 +110,72 @@
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
         <DataField name="immigPct_C_rcs2" displayName="Time in Canada" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction5" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction6" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction7" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction9" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction10" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction11" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction12" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction13" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction14" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction15" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction16" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction17" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction18" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction19" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction20" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction21" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction22" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
         <DataField optype="continuous" name="DHHGAGE_cont" displayName="Age" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -622,14 +688,6 @@
         </DataField>
         <DataField name="immigPct_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
-        </DataField>
-        <DataField optype="categorical" name="DHH_SEX" displayName="Sex" dataType="integer" X-shortLabel="" X-required="true" X-recommended="true">
-            <Value value="1" displayName="Male" description="Male"/>
-            <Value value="2" displayName="Female" description="Female"/>
-            <Value value="6" displayName="missing" description="missing"/>
-        </DataField>
-        <DataField optype="continuous" name="WTS_M" displayName="Survey weight" dataType="integer" X-shortLabel="" X-required="true" X-recommended="true">
-            <Interval closure="closedClosed" leftMargin="1.07" rightMargin="13166.31" X-description=""/>
         </DataField>
     </DataDictionary>
     <LocalTransformations>
