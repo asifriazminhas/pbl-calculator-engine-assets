@@ -37,5 +37,5 @@ export function getAlgorithmNamesAndFolderPathsForModel(
 }
 
 export function getConfigForModel(name: string): IModelConfigJson {
-    return require(path.join(__dirname, `../${name}/model-config.json`));
+    return require(path.join(__dirname, `../../${name}/model-config.json`));
 }
