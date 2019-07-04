@@ -10,7 +10,8 @@ export function constructDataDictionaryNode(
     const msw = algorithmAssets.webSpec as MSW;
     let dataFields: IDataField[] = [];
 
-    const covariateFields = algorithmAssets.betasSheet.covariates
+    const covariates = algorithmAssets.betasSheet.covariates;
+    const covariateFields = covariates
         .filter(covariate => {
             return covariate.isInteractionVariable() === false;
         })
@@ -31,7 +32,18 @@ export function constructDataDictionaryNode(
                 covariate.name,
                 variableSheetRow,
             );
-        });
+        })
+        .concat(
+            covariates
+                .filter(covariate => {
+                    return covariate.isInteractionVariable() === true;
+                })
+                .map(interactionCovariate => {
+                    return DataFieldFactory.fromVariableName(
+                        interactionCovariate.name,
+                    );
+                }),
+        );
     dataFields = dataFields.concat(covariateFields);
 
     const covariateNames = covariateFields.map(({ $ }) => {
