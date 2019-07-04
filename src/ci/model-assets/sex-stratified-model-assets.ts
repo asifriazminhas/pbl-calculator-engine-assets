@@ -24,7 +24,7 @@ export class SexStratifiedModelAssets extends ModelAssets {
             this.modelConfig.config.useMsw,
             this.modelAssetsFolder,
             this.getParentAlgorithmAssetsFolderForSex(Sex.Female),
-        );
+        ).finishConstruction();
 
         return this;
     }
