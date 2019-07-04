@@ -1,4 +1,4 @@
-import { IValidationInfo } from '../../../validation/validation-info';
+import { IValidationInfo } from '../validation-info';
 
 export abstract class NoLabelFoundWarning {
     static ForCategory(

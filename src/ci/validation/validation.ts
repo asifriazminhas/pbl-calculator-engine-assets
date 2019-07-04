@@ -1,4 +1,4 @@
-import { IValidationInfo } from '../../validation/validation-info';
+import { IValidationInfo } from './validation-info';
 import { uniqBy } from 'lodash';
 import { MarkdownBuilder } from 'md-builder';
 
