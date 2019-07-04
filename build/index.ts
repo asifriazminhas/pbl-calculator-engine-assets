@@ -3,6 +3,7 @@ import 'babel-polyfill';
 import { getModelBuildData } from './util';
 import { buildModelJsonFromFolder } from './model';
 import * as fs from 'fs';
+import { addGroupsToModelsCovariates } from './groups';
 
 async function build() {
     const modelBuildData = getModelBuildData();
@@ -12,6 +13,7 @@ async function build() {
             return buildModelJsonFromFolder(folderPath, modelName);
         }),
     );
+    addGroupsToModelsCovariates(models);
 
     models.forEach((model, index) => {
         fs.writeFileSync(
