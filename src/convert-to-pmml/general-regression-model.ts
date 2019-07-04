@@ -2,8 +2,8 @@ import { IGeneralRegressionModel } from '@ottawamhealth/pbl-calculator-engine/li
 import { IParameter } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/parameter';
 import { IPCell } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/p_cell';
 import { IPredictor } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/general_regression_model/predictor';
-import { AlgorithmAssets } from '../src/ci/model-assets/algorithm-assets/algorithm-assets';
-import { ModelConfig } from '../src/ci/model-assets/model-config/model-config';
+import { AlgorithmAssets } from '../ci/model-assets/algorithm-assets/algorithm-assets';
+import { ModelConfig } from '../ci/model-assets/model-config/model-config';
 
 export function makeGeneralRegressionModelNode(
     algorithmAssets: AlgorithmAssets,

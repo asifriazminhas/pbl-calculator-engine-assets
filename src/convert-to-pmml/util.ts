@@ -1,4 +1,4 @@
-import { IModelConfigJson } from '../reference-files';
+import { IModelConfigJson } from '../../reference-files';
 import * as path from 'path';
 
 export function getAlgorithmNamesAndFolderPathsForModel(

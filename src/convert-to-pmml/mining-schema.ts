@@ -1,12 +1,12 @@
 import { IMiningSchema } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/mining-schema/mining-schema';
 import { InvalidValueTreatment as PmmlInvalidValueTreatment } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/mining-schema/invalid-value-treatment';
 import { MissingValueTreatment as PmmlMissingValueTreatment } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/mining-schema/missing-value-treatment';
-import { WebSpecV1 } from '../src/ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
+import { WebSpecV1 } from '../ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
 import {
     AsMissing,
     ReturnInvalid,
-} from '../src/ci/model-assets/web-spec/web-spec-v1/invalid-value-treatment';
-import { AsMean } from '../src/ci/model-assets/web-spec/web-spec-v1/missing-value-replacement';
+} from '../ci/model-assets/web-spec/web-spec-v1/invalid-value-treatment';
+import { AsMean } from '../ci/model-assets/web-spec/web-spec-v1/missing-value-replacement';
 
 export function constructMiningSchemaNode(
     webSpecSheet: WebSpecV1,

@@ -1,8 +1,8 @@
-import { IVariableDetailsSheetRow } from '../../reference-files/msw';
-import { VariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
-import { MSW } from '../../src/ci/model-assets/web-spec/msw/msw';
+import { IVariableDetailsSheetRow } from '../../../reference-files/msw';
+import { VariableDetails } from '../../ci/model-assets/web-spec/msw/variable-details';
+import { MSW } from '../../ci/model-assets/web-spec/msw/msw';
 import { IInterval } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
-import { MSWRow } from '../../src/ci/model-assets/web-spec/msw/msw-row';
+import { MSWRow } from '../../ci/model-assets/web-spec/msw/msw-row';
 
 export class IntervalFactory {
     static fromVariableName(

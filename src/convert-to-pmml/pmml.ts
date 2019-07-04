@@ -12,12 +12,12 @@ import {
     IDataField,
     ICategoricalDataField,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml';
-import { Strings } from '../src/util/strings';
-import { Validation } from '../src/ci/validation/validation';
-import { NoLabelFoundWarning } from '../src/ci/validation/warnings/no-label-found-warning';
+import { Strings } from '../util/strings';
+import { Validation } from '../ci/validation/validation';
+import { NoLabelFoundWarning } from '../ci/validation/warnings/no-label-found-warning';
 import { IValue } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
-import { ModelAssetsFactory } from '../src/ci/model-assets/model-assets-factory';
-import { WebSpecV1 } from '../src/ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
+import { ModelAssetsFactory } from '../ci/model-assets/model-assets-factory';
+import { WebSpecV1 } from '../ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
 const formatXml = require('xml-formatter');
 
 export async function writePMMLFilesForModel(modelName: string) {

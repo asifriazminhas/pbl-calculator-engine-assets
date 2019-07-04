@@ -1,11 +1,11 @@
-import { WebSpecV1 } from '../src/ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
+import { WebSpecV1 } from '../ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
 import { IDataField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml';
 import {
     IValue,
     IInterval,
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
-import { ReferenceSheet } from '../src/ci/model-assets/algorithm-assets/reference-sheet';
-import { AlgorithmAssets } from '../src/ci/model-assets/algorithm-assets/algorithm-assets';
+import { ReferenceSheet } from '../ci/model-assets/algorithm-assets/reference-sheet';
+import { AlgorithmAssets } from '../ci/model-assets/algorithm-assets/algorithm-assets';
 
 export function constructDataField(
     variableName: string,
