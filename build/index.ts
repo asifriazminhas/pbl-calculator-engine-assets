@@ -4,6 +4,7 @@ import { getModelBuildData } from './util';
 import { buildModelJsonFromFolder } from './model';
 import * as fs from 'fs';
 import { addGroupsToModelsCovariates } from './groups';
+import { IModelJson } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/json/json-model';
 
 async function build() {
     const modelBuildData = getModelBuildData();
@@ -13,7 +14,9 @@ async function build() {
             return buildModelJsonFromFolder(folderPath, modelName);
         }),
     );
-    addGroupsToModelsCovariates(models);
+    addGroupsToModelsCovariates(models.filter(modelOrAlgorithm => {
+        return 'algorithmType' in modelOrAlgorithm === false;
+    }) as IModelJson[]);
 
     models.forEach((model, index) => {
         fs.writeFileSync(
