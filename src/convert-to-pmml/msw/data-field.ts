@@ -86,9 +86,9 @@ export class DataFieldFactory {
     ): IDataField {
         const dollarProperties = {
             name: variableName,
-            displayName: variableSheetRow.row.label,
+            displayName: variableSheetRow.row.labelLong,
             dataType: 'integer',
-            'X-shortLabel': '',
+            'X-shortLabel': variableSheetRow.row.label,
             'X-required': DataFieldFactory.getXRequired(
                 variableName,
                 variableSheetRow,

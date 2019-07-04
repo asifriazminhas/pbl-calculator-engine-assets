@@ -178,7 +178,7 @@
         <DataField name="interaction22" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField optype="continuous" name="DHHGAGE_cont" displayName="Age" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="continuous" name="DHHGAGE_cont" displayName="Age" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="20" rightMargin="102" X-description=""/>
         </DataField>
         <DataField optype="categorical" name="DHHGAGE" displayName="Age - (G)" dataType="integer" X-shortLabel="Age" X-required="true" X-recommended="true">
@@ -315,7 +315,7 @@
             <Value value="2" displayName="no" description="not applicable"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField optype="continuous" name="packYears" displayName="Packyears" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="continuous" name="packYears" displayName="Packyears of smoking" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="78" X-description=""/>
         </DataField>
         <DataField name="smoker" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -324,7 +324,7 @@
         <DataField name="eversmoker" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField optype="categorical" name="smokeSimp" displayName="Simple smoking status" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="categorical" name="smokeSimp" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false">
             <Value value="1" displayName="Non-smoker" description="Non-smoker"/>
             <Value value="2" displayName="Current smoker" description="Current smoker"/>
             <Value value="3" displayName="Former smoker; quit 0 to 5 years or former occasional" description="Former smoker; quit 0 to 5 years or former occasional"/>
@@ -416,7 +416,7 @@
         <DataField name="zPotMinus" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField optype="continuous" name="dietScore2" displayName="Diet" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="continuous" name="dietScore2" displayName="Simplified diet score (z-transformed)" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="-18.9" rightMargin="20.7" X-description=""/>
         </DataField>
         <DataField name="PACDEE_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -483,7 +483,7 @@
             <Value value="1" displayName="Stroke" description="Stroke"/>
             <Value value="2" displayName="No Stroke" description="No Stroke"/>
         </DataField>
-        <DataField optype="categorical" name="dementia" displayName="Demenia" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="categorical" name="dementia" displayName="Dementia" dataType="integer" X-shortLabel="Demenia" X-required="false" X-recommended="false">
             <Value value="1" displayName="Dementia" description="Dementia"/>
             <Value value="2" displayName="No Dementia" description="No Dementia"/>
         </DataField>
@@ -522,7 +522,7 @@
             <Value value="2" displayName="Time in Canada" description="10 or more years"/>
             <Value value="6" displayName="Time in Canada" description="Not applicable"/>
         </DataField>
-        <DataField optype="continuous" name="immigPct" displayName="Time in Canada" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="continuous" name="immigPct" displayName="Fraction of lifetime lived in Canada" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="1" X-description=""/>
         </DataField>
         <DataField optype="categorical" name="SDCFIMM" displayName="Immigrant - (F)" dataType="integer" X-shortLabel="Immigrant" X-required="false" X-recommended="true">
@@ -549,7 +549,7 @@
         <DataField name="formerDrinker_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField optype="categorical" name="formerDrinker" displayName="Former drinker" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="categorical" name="formerDrinker" displayName="Former drinker status (yes/no)" dataType="integer" X-shortLabel="Former drinker" X-required="false" X-recommended="false">
             <Value value="1" displayName="yes" description="Former drinker"/>
             <Value value="0" displayName="no" description="Not a former drinker"/>
         </DataField>
@@ -559,7 +559,7 @@
         <DataField name="depInd_cat3_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField optype="categorical" name="depInd" displayName="Deprivation index" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField optype="categorical" name="depInd" displayName="Neighbourhood social and material deprivation" dataType="integer" X-shortLabel="Deprivation index" X-required="false" X-recommended="false">
             <Value value="1" displayName="Low deprivation" description="Low deprivation"/>
             <Value value="2" displayName="Moderate deprivation" description="Moderate deprivation"/>
             <Value value="3" displayName="High deprivation" description="High deprivation"/>
