@@ -1,9 +1,10 @@
 import { VariableDetails } from '../../src/ci/model-assets/web-spec/msw/variable-details';
 
 export class ValueFactory {
-    static fromVariableName(variableName: string) {
+    static fromVariableName(variableName: string, isStartVariable: boolean) {
         const variableDetails = VariableDetails.findRowForCatVariable(
             variableName,
+            isStartVariable,
         );
 
         return {

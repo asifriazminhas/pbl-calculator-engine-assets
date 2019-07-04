@@ -11,9 +11,18 @@ const sheet = AssetsUtil.parseCsvFile(
 export abstract class VariableDetails {
     static sheet: IVariableDetailsSheetRow[] = sheet;
 
-    static findRowsForVariable(variableName: string) {
-        return this.sheet.filter(({ variable }) => {
-            return variable === variableName;
+    static findRowsForVariable(
+        variableName: string,
+        includeStartVariable: boolean,
+    ) {
+        return this.sheet.filter(({ variable, variableStart }) => {
+            const isVariable = variable === variableName;
+
+            if (includeStartVariable) {
+                return isVariable || variableStart === variableName;
+            } else {
+                return isVariable;
+            }
         });
     }
 
@@ -21,17 +30,22 @@ export abstract class VariableDetails {
         return this.sheet.filter(({ low, high, variable, variableStart }) => {
             return (
                 low !== high &&
-                (variable === variableName || variable === variableStart)
+                (variable === variableName || variableStart === variableName)
             );
         });
     }
 
-    static findRowForCatVariable(variableName: string) {
-        return this.sheet.filter(({ low, high, variable, variableStart }) => {
-            return (
-                low === high &&
-                (variable === variableName || variable === variableStart)
-            );
+    static findRowForCatVariable(
+        variableName: string,
+        includeStartVariable: boolean,
+    ) {
+        return this.findRowsForVariable(
+            variableName,
+            includeStartVariable,
+        ).filter(({ variableStartType, variableType }) => {
+            return includeStartVariable
+                ? variableStartType === 'cat'
+                : variableType === 'cat';
         });
     }
 }

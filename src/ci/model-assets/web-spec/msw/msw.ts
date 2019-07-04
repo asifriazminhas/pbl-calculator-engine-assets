@@ -1,94 +1,57 @@
 import { VariableType } from './variable-type';
-import { MswBoolean, TrueColumnValue } from './msw-boolean';
+import { MswBoolean } from './msw-boolean';
 import { AssetsUtil } from '../../assets-util';
-import { VariableDetails } from './variable-details';
-import { trim } from 'lodash';
+import { MSWRow } from './msw-row';
 
 export class MSW {
-    sheet: IMswSheetRow[];
+    sheet: MSWRow[];
 
     constructor(algorithmFolderPath: string) {
         this.sheet = AssetsUtil.parseCsvFile(
             `${algorithmFolderPath}/variables.csv`,
-        );
+        ).map((row: IMswSheetRow) => {
+            return new MSWRow(row);
+        });
     }
 
     findRowForCovariateName(covariateName: string) {
         return this.sheet.find(variableSheetRow => {
             return (
-                this.getCovariateNamesForRow(variableSheetRow).indexOf(
-                    covariateName,
-                ) > -1
+                variableSheetRow.getCovariateNames().indexOf(covariateName) > -1
             );
         });
     }
 
-    findRowForVariable(variableName: string) {
-        return this.sheet.find(({ variable }) => {
-            return variable === variableName;
+    findRowForVariable(variableName: string, includeStartVariable: boolean) {
+        return this.sheet.find(row => {
+            const isVariable = row.row.variable === variableName;
+
+            if (includeStartVariable) {
+                return row.isStartVariable(variableName) || isVariable;
+            } else {
+                return isVariable;
+            }
         });
     }
 
     findRowForContVariable(variableName: string) {
-        const row = this.findRowForVariable(variableName);
+        const row = this.findRowForVariable(variableName, false);
 
-        if (row && row.variableType === 'cont') {
+        if (row && row.row.variableType === 'cont') {
             return row;
         }
 
         return undefined;
     }
 
-    isStartVariable(row: IMswSheetRow): boolean {
-        return row.variable !== row.variableStart.split(',').map(trim)[0];
-    }
+    isStartVariable(variableName: string) {
+        const mswRow = this.findRowForVariable(variableName, true);
 
-    private getCovariateNamesForRow(variableSheetRow: IMswSheetRow) {
-        const variableDetailsRows = VariableDetails.findRowsForVariable(
-            variableSheetRow.variable,
-        );
-
-        if (variableDetailsRows.length === 0) {
-            throw new Error(
-                `No row found in variables details sheet for variable ${
-                    variableSheetRow.variable
-                }`,
-            );
+        if (!mswRow) {
+            return false;
         }
 
-        const covariateNames: string[] = [];
-
-        if (variableSheetRow.dummy === TrueColumnValue) {
-            variableDetailsRows.forEach(({ dummyVariable }) => {
-                covariateNames.push(dummyVariable);
-            });
-        } else {
-            covariateNames.push(variableSheetRow.variable);
-        }
-
-        if (variableSheetRow.centre === TrueColumnValue) {
-            for (
-                let variableIndex = 0;
-                variableIndex < covariateNames.length;
-                variableIndex++
-            ) {
-                covariateNames[variableIndex] += '_C';
-            }
-        }
-
-        if (variableSheetRow.rcs !== '0') {
-            const variableNameAfterCentering = covariateNames[0];
-
-            const numOfKnots = Number(variableSheetRow.rcs);
-
-            for (let knotNumber = 1; knotNumber < numOfKnots; knotNumber++) {
-                covariateNames[
-                    knotNumber - 1
-                ] = `${variableNameAfterCentering}_rcs${knotNumber}`;
-            }
-        }
-
-        return covariateNames;
+        return mswRow.isStartVariable(variableName);
     }
 }
 
