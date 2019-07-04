@@ -2,25 +2,27 @@ import { VariableDetails } from '../../ci/model-assets/web-spec/msw/variable-det
 
 export class ValueFactory {
     static fromVariableName(variableName: string, isStartVariable: boolean) {
-        const variableDetails = VariableDetails.findRowForCatVariable(
+        const variableDetails = VariableDetails.findRowsForVariable(
             variableName,
             isStartVariable,
-        );
+        )
+            .filter(({ low, high }) => {
+                return low === high;
+            })
+            .filter(({ low }) => {
+                return low.trim().length !== 0;
+            });
 
         return {
-            Value: variableDetails
-                .filter(({ low }) => {
-                    return low.trim().length !== 0;
-                })
-                .map(({ low, catLabel, catLabelLong }) => {
-                    return {
-                        $: {
-                            value: low,
-                            displayName: catLabel,
-                            description: catLabelLong,
-                        },
-                    };
-                }),
+            Value: variableDetails.map(({ low, catLabel, catLabelLong }) => {
+                return {
+                    $: {
+                        value: low,
+                        displayName: catLabel,
+                        description: catLabelLong,
+                    },
+                };
+            }),
         };
     }
 }
