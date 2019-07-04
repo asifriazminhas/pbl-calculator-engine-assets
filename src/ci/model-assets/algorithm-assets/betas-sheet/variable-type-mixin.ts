@@ -13,7 +13,7 @@ export function VariableTypeMixin<T extends Constructor<{ name: string }>>(
         isInteractionVariable(): boolean {
             const InteractionVariableRegex = /interaction[0-9]+/;
 
-            return !InteractionVariableRegex.test(this.name);
+            return InteractionVariableRegex.test(this.name);
         }
     };
 }
