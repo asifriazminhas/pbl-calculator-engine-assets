@@ -210,7 +210,6 @@
             <Value value="4" displayName="Former daily current nonsmoker" description="Former daily current nonsmoker"/>
             <Value value="5" displayName="Never daily current nonsmoker (former occasional)" description="Never daily current nonsmoker (former occasional)"/>
             <Value value="6" displayName="Never smoked" description="Never smoked"/>
-            <Value value="96" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="TypeOfSmoker2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -224,7 +223,6 @@
             <Value value="2" displayName="stpoy" description="converted categorical years since stopped daily smoking - occasional smoker"/>
             <Value value="3" displayName="stpoy" description="converted categorical years since stopped daily smoking - occasional smoker"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
-            <Value value="7" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="stpo" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -236,7 +234,6 @@
             <Value value="3" displayName="2 to 3 years" description="2 years to less than 3 years ago"/>
             <Value value="4" displayName="≥3 years" description="3 or more years ago"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
-            <Value value="7" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="tsq_ds" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -258,7 +255,6 @@
             <Value value="10" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
             <Value value="11" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
             <Value value="96" displayName="not applicable" description="not applicable"/>
-            <Value value="97" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="SMK_204b" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -266,6 +262,7 @@
         <DataField optype="continuous" name="SMK_204" displayName="# of cigarettes smoked daily - daily smoker" dataType="integer" X-shortLabel="cigdayd" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="1" rightMargin="80" X-description="# of cigarettes smoked daily - daily smoker"/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="SMK_208b" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -273,6 +270,7 @@
         <DataField optype="continuous" name="SMK_208" displayName="# of cigarettes smoke each day - occasional smoker" dataType="integer" X-shortLabel="cigdayf" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="1" rightMargin="99" X-description="# of cigarettes smoke each day - occasional smoker"/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="SMK_05Bb" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -280,6 +278,7 @@
         <DataField optype="continuous" name="SMK_05B" displayName="# of cigarettes smoked daily - occasional smoker" dataType="integer" X-shortLabel="cigdayo" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="1" rightMargin="40" X-description="# of cigarettes smoked daily - occasional smoker"/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="SMK_05Cb" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -287,6 +286,7 @@
         <DataField optype="continuous" name="SMK_05C" displayName="Past month, smoked 1 + cigarettes daily - occasional smoker" dataType="integer" X-shortLabel="dayocc" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="30" X-description="Past month, smoked 1 + cigarettes daily - occasional smoker"/>
             <Interval closure="closedClosed" leftMargin="97" rightMargin="99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="96" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="agec1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -305,7 +305,6 @@
             <Value value="10" displayName="agec1" description="converted categorical age"/>
             <Value value="11" displayName="agec1" description="converted categorical age"/>
             <Value value="96" displayName="not applicable" description="not applicable"/>
-            <Value value="97" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="s100" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -315,7 +314,6 @@
             <Value value="1" displayName="yes" description="yes"/>
             <Value value="2" displayName="no" description="not applicable"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
-            <Value value="7" displayName="missing" description="missing"/>
         </DataField>
         <DataField optype="continuous" name="packYears" displayName="Packyears" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="78" X-description=""/>
@@ -338,6 +336,7 @@
         <DataField optype="continuous" name="ALWDWKY" displayName="Weekly consumption" dataType="integer" X-shortLabel="drinks/week" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="264" X-description=""/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="FormerDrinker_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -348,6 +347,7 @@
         <DataField optype="continuous" name="FVCDJUI" displayName="Daily consumption - fruit juice - (D)" dataType="integer" X-shortLabel="Daily juice" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption - fruit juice - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="Fruit_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -355,6 +355,7 @@
         <DataField optype="continuous" name="FVCDFRU" displayName="Daily consumption - fruit - (D)" dataType="integer" X-shortLabel="Daily fruit" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption - fruit - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="Salad_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -362,6 +363,7 @@
         <DataField optype="continuous" name="FVCDSAL" displayName="Daily consumption - green salad - (D)" dataType="integer" X-shortLabel="Daily salad" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="14" X-description="Daily consumption - green salad - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="Potato_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -369,6 +371,7 @@
         <DataField optype="continuous" name="FVCDPOT" displayName="Daily consumption - potatoes - (D)" dataType="integer" X-shortLabel="Daily potatoes" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption - potatoes - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="Carrot_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -376,6 +379,7 @@
         <DataField optype="continuous" name="FVCDCAR" displayName="Daily consumption - carrots - (D)" dataType="integer" X-shortLabel="Daily carrots" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="13" X-description="Daily consumption - carrots - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="Veg_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -383,6 +387,7 @@
         <DataField optype="continuous" name="FVCDVEG" displayName="Daily consumption other vegetables - (D)" dataType="integer" X-shortLabel="Daily other vegetables" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption other vegetables - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="Potato_add" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -420,6 +425,7 @@
         <DataField optype="continuous" name="PACDEE" displayName="Daily energy expenditure - (D)" dataType="integer" X-shortLabel="Physical Activity" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="42.2" X-description="Daily energy expenditure - (D)"/>
             <Interval closure="closedClosed" leftMargin="99.7" rightMargin="99.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="99.6" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="CCC_101_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -428,7 +434,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Diabetes" description="Diabetes"/>
             <Value value="2" displayName="No Diabetes" description="No Diabetes"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="CCC_071_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -437,7 +442,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Hypertension" description="Hypertension"/>
             <Value value="2" displayName="No Hypertension" description="No Hypertension"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="CCC_091_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -446,7 +450,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="COPD" description="COPD"/>
             <Value value="2" displayName="No COPD" description="No COPD"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="CCC_280_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -455,7 +458,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Has a mood disorder" description="Has a mood disorder"/>
             <Value value="2" displayName="Does not have a mood disorder" description="Does not have a mood disorder"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="CCC_131_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -464,7 +466,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Cancer" description="Cancer"/>
             <Value value="0" displayName="No Cancer" description="No Cancer"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="CCC_121_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -473,7 +474,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Heart Disease" description="Heart Disease"/>
             <Value value="2" displayName="No Heart Disease" description="No Heart Disease"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="CCC_151_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -482,7 +482,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Stroke" description="Stroke"/>
             <Value value="2" displayName="No Stroke" description="No Stroke"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField optype="categorical" name="dementia" displayName="Demenia" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Value value="1" displayName="Dementia" description="Dementia"/>
@@ -494,6 +493,7 @@
         <DataField optype="continuous" name="HWTGBMI" displayName="BMI / self-report - (D,G)" dataType="integer" X-shortLabel="BMI" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="12" rightMargin="56.73" X-description="BMI / self-report - (D,G)"/>
             <Interval closure="closedClosed" leftMargin="999.97" rightMargin="999.99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="999.96" displayName="not applicable" description="not applicable"/>
         </DataField>
         <DataField name="SDCGCGT_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -502,7 +502,6 @@
             <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="0" displayName="White" description="White"/>
             <Value value="1" displayName="Non-white" description="Non-white"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="EDUDR04_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -513,7 +512,6 @@
             <Value value="2" displayName="Some post-secondary" description="Some Post-secondary"/>
             <Value value="3" displayName="High school graduate" description="High School Graduate"/>
             <Value value="4" displayName="Less than high school" description="Less than High School"/>
-            <Value value="6" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="SDCGRES_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
@@ -523,7 +521,6 @@
             <Value value="1" displayName="Time in Canada" description="0 to 9 years"/>
             <Value value="2" displayName="Time in Canada" description="10 or more years"/>
             <Value value="6" displayName="Time in Canada" description="Not applicable"/>
-            <Value value="7" displayName="Time in Canada" description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
         <DataField optype="continuous" name="immigPct" displayName="Time in Canada" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="1" X-description=""/>
@@ -532,9 +529,7 @@
             <Interval closure="closedClosed" leftMargin="2" rightMargin="7" X-description="Non-immigrant"/>
             <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Yes" description="Immigrant"/>
-            <Value value="2" displayName="No" description="Non-immigrant"/>
             <Value value="6" displayName="Not applicable" description="Not applicable"/>
-            <Value value="7" displayName="missing" description="missing"/>
         </DataField>
         <DataField name="smokeSimp_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
