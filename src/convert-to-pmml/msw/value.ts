@@ -1,4 +1,4 @@
-import { VariableDetails } from '../../ci/model-assets/web-spec/msw/variable-details';
+import { VariableDetails } from '../../model-assets/web-spec/msw/variable-details';
 
 export class ValueFactory {
     static fromVariableName(variableName: string, isStartVariable: boolean) {

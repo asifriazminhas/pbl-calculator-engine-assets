@@ -1,6 +1,6 @@
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
 import { uniqBy } from 'lodash';
-import { AlgorithmAssets } from '../ci/model-assets/algorithm-assets/algorithm-assets';
+import { AlgorithmAssets } from '../model-assets/algorithm-assets/algorithm-assets';
 import { constructDataField } from './data-field';
 
 export function makeDataDictionaryNode(

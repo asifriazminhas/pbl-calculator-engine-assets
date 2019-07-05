@@ -15,8 +15,8 @@ import { Strings } from '../util/strings';
 import { Validation } from '../ci/validation/validation';
 import { NoLabelFoundWarning } from '../ci/validation/warnings/no-label-found-warning';
 import { IValue } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
-import { ModelAssetsFactory } from '../ci/model-assets/model-assets-factory';
-import { WebSpecV1 } from '../ci/model-assets/web-spec/web-spec-v1/web-spec-v1';
+import { ModelAssetsFactory } from '../model-assets/model-assets-factory';
+import { WebSpecV1 } from '../model-assets/web-spec/web-spec-v1/web-spec-v1';
 const formatXml = require('xml-formatter');
 
 export async function writePMMLFilesForModel(modelName: string) {

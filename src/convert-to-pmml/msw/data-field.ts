@@ -5,8 +5,8 @@ import {
 } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_field';
 import { ValueFactory } from './value';
 import { IntervalFactory } from './interval';
-import { VariableDetails } from '../../ci/model-assets/web-spec/msw/variable-details';
-import { MSWRow } from '../../ci/model-assets/web-spec/msw/msw-row';
+import { VariableDetails } from '../../model-assets/web-spec/msw/variable-details';
+import { MSWRow } from '../../model-assets/web-spec/msw/msw-row';
 
 export class DataFieldFactory {
     static forCovariate(covariateName: string, mswRow: MSWRow): IDataField {

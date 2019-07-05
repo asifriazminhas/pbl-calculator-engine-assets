@@ -1,6 +1,6 @@
 import { existsSync } from 'fs';
-import { AppUrl } from '../../constants/ci';
-import { Validation } from '../validation/validation';
+import { AppUrl } from '../constants/ci';
+import { Validation } from '../ci/validation/validation';
 import { MarkdownBuilder } from 'md-builder';
 import { ModelConfig } from './model-config/model-config';
 import { AssetsUtil } from './assets-util';

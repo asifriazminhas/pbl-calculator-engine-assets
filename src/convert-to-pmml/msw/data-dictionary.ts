@@ -1,7 +1,7 @@
 import { IDataDictionary } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml/data_dictionary/data_dictionary';
 import { DataFieldFactory } from './data-field';
-import { MSW } from '../../ci/model-assets/web-spec/msw/msw';
-import { AlgorithmAssets } from '../../ci/model-assets/algorithm-assets/algorithm-assets';
+import { MSW } from '../../model-assets/web-spec/msw/msw';
+import { AlgorithmAssets } from '../../model-assets/algorithm-assets/algorithm-assets';
 import { IDataField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmml';
 
 export function constructDataDictionaryNode(
