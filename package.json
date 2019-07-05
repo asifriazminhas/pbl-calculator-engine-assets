@@ -6,7 +6,7 @@
     "scripts": {
         "build": "ts-node ./build/index.ts",
         "test": "ts-node node_modules/tape/bin/tape -r source-map-support/register  tests/**/*.spec.ts | tap-spec",
-        "convert-to-pmml": "ts-node ./convert-to-pmml/index.ts",
+        "convert-to-pmml": "ts-node ./src/scripts/convert-to-pmml.ts",
         "ci-build": "GITHUB_TOKEN=$GITHUB_TOKEN CIRCLE_PULL_REQUEST=$CIRCLE_PULL_REQUEST CIRCLE_BRANCH=$CIRCLE_BRANCH ts-node ./src/ci/ci.ts",
         "build-ts": "tsc -w",
         "build-app:dev": "NODE_ENV=development webpack-dev-server",
