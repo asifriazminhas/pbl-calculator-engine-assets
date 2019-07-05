@@ -5,7 +5,6 @@ import { makeGeneralRegressionModelNode } from './general-regression-model';
 import { makeDataDictionaryNode } from './data-dictionary';
 import { makeCustomPmmlNode } from './custom-pmml';
 import { constructMiningSchemaNode } from './mining-schema';
-import { getAlgorithmNamesAndFolderPathsForModel } from './util';
 import { buildXmlFromXml2JsObject } from '@ottawamhealth/pbl-calculator-engine/lib/util/xmlbuilder';
 import { constructDataDictionaryNode as constructDataDictionaryNodeForMSW } from './msw/data-dictionary';
 import {
@@ -25,11 +24,7 @@ export async function writePMMLFilesForModel(modelName: string) {
 
     const modelConfig = modelAssets.modelConfig.config;
 
-    const algorithmNamesAndFolderPaths = getAlgorithmNamesAndFolderPathsForModel(
-        modelName,
-    );
-
-    modelAssets.forEachAlgorithmAssets((algorithmAssets, algorithmIndex) => {
+    modelAssets.forEachAlgorithmAssets(algorithmAssets => {
         const { name, folderPath } = {
             name: algorithmAssets.algorithmName,
             folderPath: algorithmAssets.algorithmFolder,
@@ -67,10 +62,7 @@ export async function writePMMLFilesForModel(modelName: string) {
                 : undefined,
         );
 
-        addWarningsForDataFields(
-            algorithmNamesAndFolderPaths[algorithmIndex].name,
-            pmml.DataDictionary.DataField,
-        );
+        addWarningsForDataFields(name, pmml.DataDictionary.DataField);
 
         fs.writeFileSync(
             `${folderPath}/model.xml`,
