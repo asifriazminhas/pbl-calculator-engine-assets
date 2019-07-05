@@ -6,7 +6,7 @@ import { constructDataField } from './data-field';
 export function makeDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
 ): IDataDictionary {
-    const covariateFields = algorithmAssets.betasSheet.covariates.map(
+    const covariateFields = algorithmAssets.predictiveBetas.covariates.map(
         covariate => {
             return constructDataField(covariate.name, algorithmAssets);
         },

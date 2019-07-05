@@ -9,9 +9,9 @@ export function makeGeneralRegressionModelNode(
     algorithmAssets: AlgorithmAssets,
     modelConfig: ModelConfig,
 ): IGeneralRegressionModel {
-    const { betasSheet, referenceSheet } = algorithmAssets;
+    const { predictiveBetas, referenceSheet } = algorithmAssets;
 
-    const parameters: IParameter[] = betasSheet.covariates.map(
+    const parameters: IParameter[] = predictiveBetas.covariates.map(
         (covariate, index) => {
             const referenceCsvRow = referenceSheet.findRowForVariable(
                 covariate.name,
@@ -34,27 +34,31 @@ export function makeGeneralRegressionModelNode(
         },
     );
 
-    const pCells: IPCell[] = betasSheet.covariates.map((covariate, index) => {
-        return {
-            $: {
-                parameterName: `p${index}`,
-                df: '',
-                beta: covariate.beta,
-            },
-        };
-    });
+    const pCells: IPCell[] = predictiveBetas.covariates.map(
+        (covariate, index) => {
+            return {
+                $: {
+                    parameterName: `p${index}`,
+                    df: '',
+                    beta: covariate.beta,
+                },
+            };
+        },
+    );
 
-    const predictors: IPredictor[] = betasSheet.covariates.map(covariate => {
-        return {
-            $: {
-                name: covariate.name,
-            },
-        };
-    });
+    const predictors: IPredictor[] = predictiveBetas.covariates.map(
+        covariate => {
+            return {
+                $: {
+                    name: covariate.name,
+                },
+            };
+        },
+    );
 
     return {
         $: {
-            baselineHazard: betasSheet.baselineHazard,
+            baselineHazard: `${algorithmAssets.referenceSheet.baselineHazard}`,
             modelType: modelConfig.config.regressionType,
         },
         ParameterList: {

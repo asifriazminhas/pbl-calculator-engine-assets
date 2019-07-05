@@ -6,7 +6,7 @@ import { LocalTransformations } from './local-transformations';
 
 export class AlgorithmAssets {
     algorithmName: string;
-    betasSheet: BetasSheet;
+    predictiveBetas: BetasSheet;
     referenceSheet: ReferenceSheet;
     localTransformations!: LocalTransformations; // This is initialized in the finishConstruction method. Because the method to parse the XML is async it cannot be done in the constructor
     webSpec: MSW | WebSpecV1;
@@ -20,7 +20,7 @@ export class AlgorithmAssets {
         parentAlgorithmFolder?: string,
     ) {
         this.algorithmName = algorithmName;
-        this.betasSheet = new BetasSheet(
+        this.predictiveBetas = new BetasSheet(
             parentAlgorithmFolder ? parentAlgorithmFolder : algorithmFolder,
         );
         this.referenceSheet = new ReferenceSheet(

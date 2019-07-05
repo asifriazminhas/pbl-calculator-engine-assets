@@ -10,7 +10,7 @@ export function constructDataDictionaryNode(
     const msw = algorithmAssets.webSpec as MSW;
     let dataFields: IDataField[] = [];
 
-    const covariates = algorithmAssets.betasSheet.covariates;
+    const covariates = algorithmAssets.predictiveBetas.covariates;
     const covariateFields = covariates
         .filter(covariate => {
             return covariate.isInteractionVariable() === false;
