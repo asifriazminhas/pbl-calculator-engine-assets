@@ -6,13 +6,14 @@ import { MarkdownBuilder } from 'md-builder';
 import { Owner, RepoName } from '../../constants/github';
 import { CIEnvVariables } from '../../env/ci';
 import { Validation } from '../validation/validation';
+import { CIName } from '../../constants/ci';
 
 export abstract class PrComments {
     static async forUncaughtException(error: Error) {
         await GithubApi.issues.createComment(
             Object.assign({}, PrComments.buildBaseGithubApiObj(), {
                 body: MarkdownBuilder.h2(
-                    `Travis CI encountered the following unknown error when building the current PR`,
+                    `${CIName} encountered the following unknown error when building the current PR`,
                 )
                     .code(error.stack as string)
                     .text('@yulric Please look into this')
