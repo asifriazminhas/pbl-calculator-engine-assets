@@ -12,7 +12,7 @@ const promisifiedParseString = promisify(parseString as (
 
 export abstract class AssetsUtil {
     static getAssetsFolderPath(modelName: string) {
-        return path.join(__dirname, `../../../${modelName}`);
+        return path.join(__dirname, `../../${modelName}`);
     }
 
     static parseCsvFile(filePath: string) {

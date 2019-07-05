@@ -4,7 +4,7 @@ import { AssetsUtil } from '../../assets-util';
 const sheet = AssetsUtil.parseCsvFile(
     path.join(
         __dirname,
-        '../../../../../master-reference-files/MSW/variable-details.csv',
+        '../../../../master-reference-files/MSW/variable-details.csv',
     ),
 );
 
