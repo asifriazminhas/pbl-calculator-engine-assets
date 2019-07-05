@@ -6,7 +6,7 @@ export class BetasSheet {
 
     constructor(algorithmFolderPath: string) {
         const sheet: IBetasSheetCsvRow[] = AssetsUtil.parseCsvFile(
-            `${algorithmFolderPath}/betas.csv`,
+            `${algorithmFolderPath}/predictive-betas.csv`,
         );
 
         this.covariates = sheet.map(({ Covariate, Beta }) => {
