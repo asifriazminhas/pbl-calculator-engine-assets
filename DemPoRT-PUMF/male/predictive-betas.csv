@@ -37,11 +37,6 @@ MoodC_cat,0.187227029
 HypertensionC_cat,-0.082890932
 BMIC_rcs1,-0.019794479
 BMIC_rcs2,0.009216159
-SurveyCycle2C_cat,-0.170331842
-SurveyCycle3C_cat,-0.129982009
-SurveyCycle4C_cat,-0.483229366
-SurveyCycle5C_cat,-0.429320295
-SurveyCycle6C_cat,-0.531534513
 AgeCXPackYearsC_int,2.90E-05
 AgeCXSmokeFormer5PlusC_int,-0.007018043
 AgeCXSmokeFormer0to5C_int,-0.005431465

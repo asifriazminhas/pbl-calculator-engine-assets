@@ -5,9 +5,9 @@ AgeC_rcs3,1.106105622
 AgeC_rcs4,-0.835209921
 MSDivorcedWidowedC_cat,0.06825224
 MSSingleC_cat,0.088459004
-EduLessHS3C_cat,0.109690884
-EduHSGrad3C_cat,0.042997787
-EduSomePS3C_cat,-0.016447634
+EduHSGrad2C_cat,-0.066693097
+EduSomePS2C_cat,-0.126138518
+EduPSGrad2C_cat,-0.109690884
 StressNotVeryC_cat,-0.070428472
 StressABitC_cat,0.021273964
 StressQuiteC_cat,0.07269401
@@ -37,11 +37,6 @@ HypertensionC_cat,-0.004768246
 EpilepsyC_cat,0.357291218
 BMIC_rcs1,-0.041788926
 BMIC_rcs2,0.018017794
-SurveyCycle2C_cat,0.017878485
-SurveyCycle3C_cat,-0.142443061
-SurveyCycle4C_cat,-0.234082293
-SurveyCycle5C_cat,-0.365462336
-SurveyCycle6C_cat,-0.466450071
 AgeCXPackYearsC_int,-0.000155971
 AgeCXSmokeFormer5PlusC_int,0.002122531
 AgeCXSmokeFormer0to5C_int,-0.007432523

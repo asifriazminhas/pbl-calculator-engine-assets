@@ -8,14 +8,10 @@
         ],
         "DIET": [
             { "name": "FruitVegC_rcs1", "coefficent": 0.53 },
-            { "name": "Juice_rcs1", "coefficent": -0.792},
-            { "name": "Potato_rcs1", "coefficent": -0.502 }
+            { "name": "Juice_rcs1", "coefficent": 0.208},
+            { "name": "Potato_rcs1", "coefficent": -0.212 }
         ],
-        "ACTIVITY": [{ "name": "PhysicalActivityC_rcs1", "coefficent": 1 }],
-        "ALCOHOL": [
-            { "name": "FormerDrinkerC_cat", "coefficent": -0.158 },
-            { "name": "DrinksLastWeekC_rcs1", "coefficent": -4.96 }
-        ]
+        "ACTIVITY": [{ "name": "PhysicalActivityC_rcs1", "coefficent": 1 }]
     },
     "female": {
         "SMOKING": [
@@ -26,13 +22,9 @@
         ],
         "DIET": [
             { "name": "FruitVegC_rcs1", "coefficent": -0.19 },
-            { "name": "JuiceC_rcs1", "coefficent": -0.757 },
-            { "name": "PotatoC_rcs1", "coefficent": -0.445 }
+            { "name": "JuiceC_rcs1", "coefficent": -0.257 },
+            { "name": "PotatoC_rcs1", "coefficent": -0.055 }
         ],
-        "ACTIVITY": [{ "name": "PhysicalActivityC_rcs1", "coefficent": 1 }],
-        "ALCOHOL": [
-            { "name": "FormerDrinkerC_cat", "coefficent": -0.212 },
-            { "name": "DrinksLastWeekC_rcs1", "coefficent": -1.92 }
-        ]
+        "ACTIVITY": [{ "name": "PhysicalActivityC_rcs1", "coefficent": 1.39 }]
     }
 }
