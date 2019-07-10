@@ -2,6 +2,7 @@ import { VariableType } from './variable-type';
 import { MswBoolean, TrueColumnValue } from './msw-boolean';
 import { trim } from 'lodash';
 import { VariableDetails } from './variable-details';
+import { CovariateNameGenError } from './msw-errors';
 
 export class MSWRow {
     row: IMswSheetRow;
@@ -32,10 +33,10 @@ export class MSWRow {
         );
 
         if (variableDetailsRows.length === 0) {
-            throw new Error(
-                `No row found in variables details sheet for variable ${
+            throw new CovariateNameGenError(
+                `Could not generate name for variable ${
                     this.row.variable
-                }`,
+                }. No variable detail rows found for this variable`,
             );
         }
 

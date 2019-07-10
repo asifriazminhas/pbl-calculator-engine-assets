@@ -2,6 +2,8 @@ import { VariableType } from './variable-type';
 import { MswBoolean } from './msw-boolean';
 import { AssetsUtil } from '../../assets-util';
 import { MSWRow } from './msw-row';
+import { CovariateNameGenError } from './msw-errors';
+import { tryCatch } from 'ramda';
 
 export class MSW {
     sheet: MSWRow[];
@@ -15,10 +17,24 @@ export class MSW {
     }
 
     findRowForCovariateName(covariateName: string) {
+        // For each variable sheet row, check if it's the covariate with name passed in the covariateName argument
         return this.sheet.find(variableSheetRow => {
-            return (
-                variableSheetRow.getCovariateNames().indexOf(covariateName) > -1
-            );
+            return tryCatch(
+                (covariateName: string) => {
+                    return (
+                        variableSheetRow
+                            .getCovariateNames()
+                            .indexOf(covariateName) > -1
+                    );
+                },
+                err => {
+                    if (err instanceof CovariateNameGenError) {
+                        return false;
+                    }
+
+                    throw err;
+                },
+            )(covariateName);
         });
     }
 

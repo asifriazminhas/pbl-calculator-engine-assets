@@ -7,6 +7,8 @@ import { IDataField } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/pmm
 export function constructDataDictionaryNode(
     algorithmAssets: AlgorithmAssets,
 ): IDataDictionary {
+    console.log(`Constructing DataDictionary node`);
+
     const msw = algorithmAssets.webSpec as MSW;
     let dataFields: IDataField[] = [];
 
@@ -22,9 +24,9 @@ export function constructDataDictionaryNode(
 
             if (!variableSheetRow) {
                 throw new Error(
-                    `No row found in variable sheet for covariate ${
+                    `Could not generate DataField for covariate ${
                         covariate.name
-                    }`,
+                    }. No row in variable sheet found for the covariate.`,
                 );
             }
 
