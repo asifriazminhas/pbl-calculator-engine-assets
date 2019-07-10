@@ -25,6 +25,8 @@ export async function writePMMLFilesForModel(modelName: string) {
     const modelConfig = modelAssets.modelConfig.config;
 
     modelAssets.forEachAlgorithmAssets(algorithmAssets => {
+        console.log(`Converting ${algorithmAssets.algorithmName} to PMML`);
+
         const { name, folderPath } = {
             name: algorithmAssets.algorithmName,
             folderPath: algorithmAssets.algorithmFolder,
