@@ -4,8 +4,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { ICovariateJson } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/json/json-covariate';
 import { DataFieldType } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/json/data-field-type';
-import { CovariateGroup } from '@ottawamhealth/pbl-calculator-engine/lib/engine/data-field/covariate/covariate-group';
 import { WebSpec } from '../src/web-spec/web-spec';
+import { RiskFactor } from '@ottawamhealth/pbl-calculator-engine/lib/risk-factors';
 
 /**
  * Populates the group field for each covariate for each algorithm for each
@@ -113,6 +113,6 @@ function addGroupToCovariate_mutate(
     }
 
     covariateToAddGroupTo.groups.push(
-        rowForCurrentCovariate.TYPE as CovariateGroup,
+        rowForCurrentCovariate.TYPE as RiskFactor,
     );
 }
