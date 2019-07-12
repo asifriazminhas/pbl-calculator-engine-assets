@@ -5,9 +5,9 @@ Age_cont_C_rcs3,1.106105622
 Age_cont_C_rcs4,-0.835209921
 MS_cat3_1_C,0.06825224
 MS_cat3_2_C,0.088459004
-Edu_cat4_1_C,-0.066693097
-Edu_cat4_2_C,-0.126138518
-Edu_cat4_3_C,-0.109690884
+Edu_cat4_1_C,0.10969
+Edu_cat4_2_C,0.043
+Edu_cat4_3_C,-0.01645
 Stress_cat5_1_C,-0.070428472
 Stress_cat5_2_C,0.021273964
 Stress_cat5_3_C,0.07269401
