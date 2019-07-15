@@ -22234,31 +22234,31 @@
         </DerivedField>
         <DerivedField name="AgeCXNeedHelp2C_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="NeedHelp_cat7_1_C"/>
+                <FieldRef field="NeedHelp_cat7_2_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXNeedHelp3C_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="NeedHelp_cat7_1_C"/>
+                <FieldRef field="NeedHelp_cat7_3_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXNeedHelp4C_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="NeedHelp_cat7_1_C"/>
+                <FieldRef field="NeedHelp_cat7_4_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXNeedHelp5C_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="NeedHelp_cat7_1_C"/>
+                <FieldRef field="NeedHelp_cat7_5_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
         <DerivedField name="AgeCXNeedHelp6C_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="NeedHelp_cat7_1_C"/>
+                <FieldRef field="NeedHelp_cat7_6_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
