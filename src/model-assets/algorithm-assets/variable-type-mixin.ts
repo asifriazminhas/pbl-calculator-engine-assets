@@ -1,4 +1,4 @@
-import { Constructor } from './util-types';
+import { Constructor } from './betas-sheet/util-types';
 
 export function VariableTypeMixin<T extends Constructor<{ name: string }>>(
     BaseClass: T,

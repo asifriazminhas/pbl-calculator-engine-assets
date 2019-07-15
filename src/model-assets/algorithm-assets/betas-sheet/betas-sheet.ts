@@ -1,8 +1,8 @@
 import { AssetsUtil } from '../../assets-util';
-import { BetasSheetCovariate } from './betas-sheet-covariate';
+import { VariableBeta } from '../variable-beta';
 
 export class BetasSheet {
-    covariates: BetasSheetCovariate[];
+    covariates: VariableBeta[];
 
     constructor(algorithmFolderPath: string) {
         const sheet: IBetasSheetCsvRow[] = AssetsUtil.parseCsvFile(
@@ -10,7 +10,7 @@ export class BetasSheet {
         );
 
         this.covariates = sheet.map(({ Covariate, Beta }) => {
-            return new BetasSheetCovariate(Covariate, Beta);
+            return new VariableBeta(Covariate, Beta);
         });
     }
 }
