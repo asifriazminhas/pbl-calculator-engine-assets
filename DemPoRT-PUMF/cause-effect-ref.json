@@ -1,30 +1,30 @@
 {
     "male": {
         "SMOKING": [
-            { "name": "PackYearsC_rcs1", "coefficent": -21.2 },
-            { "name": "SmokeFormer5PlusC_cat", "coefficent": -0.553 },
-            { "name": "SmokeFormer0to5C_cat", "coefficent": -0.0914 },
-            { "name": "SmokeCurrentC_cat", "coefficent": -0.161 }
+            { "name": "PackYears_cont", "coefficent": 0 },
+            { "name": "SmokeFormer5Plus_cat", "coefficent": 0 },
+            { "name": "SmokeFormer0to5_cat", "coefficent": -0 },
+            { "name": "SmokeCurrent_cat", "coefficent": 0 }
         ],
         "DIET": [
-            { "name": "FruitVegC_rcs1", "coefficent": 0.53 },
-            { "name": "Juice_rcs1", "coefficent": 0.208},
-            { "name": "Potato_rcs1", "coefficent": -0.212 }
+            { "name": "FruitVeg_cont", "coefficent": 5 },
+            { "name": "Juice_cont", "coefficent": 1},
+            { "name": "Potato_cont", "coefficent": 0.714 }
         ],
-        "ACTIVITY": [{ "name": "PhysicalActivityC_rcs1", "coefficent": 1 }]
+        "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }]
     },
     "female": {
         "SMOKING": [
-            { "name": "PackYearsC_rcs1", "coefficent": -11.3 },
-            { "name": "SmokeFormer5PlusC_cat", "coefficent": -0.383 },
-            { "name": "SmokeFormer0to5C_cat", "coefficent": -0.0613 },
-            { "name": "SmokeCurrentC_cat", "coefficent": -0.145 }
+            { "name": "PackYears_cont", "coefficent": 0 },
+            { "name": "SmokeFormer5Plus_cat", "coefficent": 0 },
+            { "name": "SmokeFormer0to5_cat", "coefficent": 0 },
+            { "name": "SmokeCurrent_cat", "coefficent": 0 }
         ],
         "DIET": [
-            { "name": "FruitVegC_rcs1", "coefficent": -0.19 },
-            { "name": "JuiceC_rcs1", "coefficent": -0.257 },
-            { "name": "PotatoC_rcs1", "coefficent": -0.055 }
+            { "name": "FruitVeg_cont", "coefficent": 5 },
+            { "name": "Juice_cont", "coefficent": 1 },
+            { "name": "Potato_cont", "coefficent": 0.714 }
         ],
-        "ACTIVITY": [{ "name": "PhysicalActivityC_rcs1", "coefficent": 1.39 }]
+        "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }]
     }
 }
