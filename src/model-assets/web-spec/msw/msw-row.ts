@@ -3,6 +3,7 @@ import { MswBoolean, TrueColumnValue } from './msw-boolean';
 import { trim } from 'lodash';
 import { VariableDetails } from './variable-details';
 import { CovariateNameGenError } from './msw-errors';
+import { RiskFactor } from '@ottawamhealth/pbl-calculator-engine/lib/risk-factors';
 
 export class MSWRow {
     row: IMswSheetRow;
@@ -76,7 +77,7 @@ export class MSWRow {
     }
 }
 
-interface IMswSheetRow {
+export interface IMswSheetRow {
     variable: string;
     variableType: VariableType;
     catLabel: string;
@@ -90,4 +91,5 @@ interface IMswSheetRow {
     variableStart: string;
     required: MswBoolean;
     recommended: MswBoolean;
+    subject: RiskFactor;
 }

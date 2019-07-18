@@ -1,6 +1,6 @@
 import { VariableTypeMixin } from './variable-type-mixin';
 
-class _BetasSheetCovariate {
+class _VariableBeta {
     name: string;
     beta: string;
 
@@ -10,6 +10,4 @@ class _BetasSheetCovariate {
     }
 }
 
-export class BetasSheetCovariate extends VariableTypeMixin(
-    _BetasSheetCovariate,
-) {}
+export class VariableBeta extends VariableTypeMixin(_VariableBeta) {}

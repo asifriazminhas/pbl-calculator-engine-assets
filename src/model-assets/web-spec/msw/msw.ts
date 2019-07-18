@@ -1,7 +1,5 @@
-import { VariableType } from './variable-type';
-import { MswBoolean } from './msw-boolean';
 import { AssetsUtil } from '../../assets-util';
-import { MSWRow } from './msw-row';
+import { MSWRow, IMswSheetRow } from './msw-row';
 import { CovariateNameGenError } from './msw-errors';
 import { tryCatch } from 'ramda';
 
@@ -69,20 +67,4 @@ export class MSW {
 
         return mswRow.isStartVariable(variableName);
     }
-}
-
-export interface IMswSheetRow {
-    variable: string;
-    variableType: VariableType;
-    catLabel: string;
-    centre: MswBoolean;
-    rcs: string;
-    dummy: MswBoolean;
-    min: string;
-    max: string;
-    labelLong: string;
-    label: string;
-    variableStart: string;
-    required: MswBoolean;
-    recommended: MswBoolean;
 }
