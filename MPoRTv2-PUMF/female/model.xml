@@ -198,6 +198,22 @@
             <Value value="14" displayName="Age" description="converted categorical age"/>
             <Value value="15" displayName="Age" description="converted categorical age"/>
             <Value value="16" displayName="Age" description="converted categorical age"/>
+            <Value value="1" displayName="Age" description="converted categorical age"/>
+            <Value value="2" displayName="Age" description="converted categorical age"/>
+            <Value value="3" displayName="Age" description="converted categorical age"/>
+            <Value value="4" displayName="Age" description="converted categorical age"/>
+            <Value value="5" displayName="Age" description="converted categorical age"/>
+            <Value value="6" displayName="Age" description="converted categorical age"/>
+            <Value value="7" displayName="Age" description="converted categorical age"/>
+            <Value value="8" displayName="Age" description="converted categorical age"/>
+            <Value value="9" displayName="Age" description="converted categorical age"/>
+            <Value value="10" displayName="Age" description="converted categorical age"/>
+            <Value value="11" displayName="Age" description="converted categorical age"/>
+            <Value value="12" displayName="Age" description="converted categorical age"/>
+            <Value value="13" displayName="Age" description="converted categorical age"/>
+            <Value value="14" displayName="Age" description="converted categorical age"/>
+            <Value value="15" displayName="Age" description="converted categorical age"/>
+            <Value value="16" displayName="Age" description="converted categorical age"/>
         </DataField>
         <DataField name="SMKDSTYb" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" X-description=""/>
