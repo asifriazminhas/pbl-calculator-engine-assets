@@ -1,0 +1,38 @@
+[
+    {
+        "sexVariable": "DHH_SEX",
+        "sexValue": "1",
+        "ref": {
+            "SMOKING": [
+                { "name": "PackYears", "coefficent": 0 },
+                { "name": "smokeSimp_cat4_2", "coefficent": 0 },
+                { "name": "smokeSimp_cat4_3", "coefficent": 0 },
+                { "name": "smokeSimp_cat4_4", "coefficent": 0 }
+            ],
+            "DIET": [
+                { "name": "FruitVeg_cont", "coefficent": 5 },
+                { "name": "Juice_cont", "coefficent": 1 },
+                { "name": "Potato_cont", "coefficent": 0.714 }
+            ],
+            "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }]
+        }
+    },
+    {
+        "sexVariable": "DHH_SEX",
+        "sexValue": "2",
+        "ref": {
+            "SMOKING": [
+                { "name": "PackYears", "coefficent": 0 },
+                { "name": "smokeSimp_cat4_2", "coefficent": 0 },
+                { "name": "smokeSimp_cat4_3", "coefficent": 0 },
+                { "name": "smokeSimp_cat4_4", "coefficent": 0 }
+            ],
+            "DIET": [
+                { "name": "FruitVeg_cont", "coefficent": 5 },
+                { "name": "Juice_cont", "coefficent": 1 },
+                { "name": "Potato_cont", "coefficent": 0.714 }
+            ],
+            "ACTIVITY": [{ "name": "PhysicalActivity_cont", "coefficent": 3 }]
+        }
+    }
+]

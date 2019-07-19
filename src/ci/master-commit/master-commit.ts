@@ -1,6 +1,6 @@
 // This script is run when a commit is pushed to the master branch
 
-import { convertToPmml } from "../../../convert-to-pmml";
+import { convertToPmml } from "../../convert-to-pmml";
 
 process.on("uncaughtException", err => {
   console.log(`Error when building commit on master`);

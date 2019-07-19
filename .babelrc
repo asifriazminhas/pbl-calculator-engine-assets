@@ -1,0 +1,23 @@
+// Requires @babel/cli: v7.x.x, @babel/core: v7.x.x and
+// @babel/preset-env: v7.x.x.
+{
+    "plugins": [
+        [
+            "lodash",
+            { "id": ["lodash", "core-decorators"] }
+        ] /* Requires babel-plugin-lodash. Enable this plugin if you want optimized builds for webpack i.e. only the imported methods are used in the final build. */
+    ],
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "browsers": ["ie >= 10"]
+                }
+            }
+        ] /* Provides back ward support for all IE browser greater than 10*/,
+        [
+            "@babel/preset-react"
+        ] /* Requires @babel/preset-react. Enable this plugin if react support is needed.*/
+    ]
+}

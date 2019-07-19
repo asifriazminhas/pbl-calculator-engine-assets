@@ -1,0 +1,126 @@
+{
+    "SMOKING": [
+        {
+            "name": "PackYears_C_rcs1",
+            "beta": 0.010920977
+        },
+        {
+            "name": "PackYears_C_rcs2",
+            "beta": -0.055663545
+        },
+        {
+            "name": "smokeSimp_cat4_2_C",
+            "beta": 0.022801729
+        },
+        {
+            "name": "smokeSimp_cat4_3_C",
+            "beta": 0.23665156
+        },
+        {
+            "name": "smokeSimp_cat4_4_C",
+            "beta": 0.1932893
+        },
+        {
+            "name": "AgeCXPackYearsC_int",
+            "beta": -0.000117086
+        },
+        {
+            "name": "AgeCXSmokeFormer5PlusC_int",
+            "beta": 0.002304388
+        },
+        {
+            "name": "AgeCXSmokeFormer0to5C_int",
+            "beta": -0.005804053
+        },
+        {
+            "name": "AgeCXSmokeCurrentC_int",
+            "beta": -0.009256138
+        }
+    ],
+    "DIET": [
+        {
+            "name": "FruitVeg_C_rcs1",
+            "beta": -0.099207937
+        },
+        {
+            "name": "FruitVeg_C_rcs2",
+            "beta": 0.073291208
+        },
+        {
+            "name": "Potato_C_rcs1",
+            "beta": 0.10712321
+        },
+        {
+            "name": "Potato_C_rcs2",
+            "beta": 0.150235517
+        },
+        {
+            "name": "Juice_C_rcs1",
+            "beta": 0.188707928
+        },
+        {
+            "name": "Juice_C_rcs2",
+            "beta": -0.039005385
+        },
+        {
+            "name": "AgeCXFruitVegC_int",
+            "beta": 0.001425871
+        },
+        {
+            "name": "AgeCXJuiceC_int",
+            "beta": -0.005303289
+        },
+        {
+            "name": "AgeCXPotatoC_int",
+            "beta": -0.00381856
+        }
+    ],
+    "ACTIVITY": [
+        {
+            "name": "PhysicalActivity_C_rcs1",
+            "beta": -0.162037438
+        },
+        {
+            "name": "PhysicalActivity_C_rcs2",
+            "beta": 0.185889583
+        },
+        {
+            "name": "AgeCXPhysicalActivityC_int",
+            "beta": -0.000557154
+        }
+    ],
+    "AGE": [
+        {
+            "name": "AgeCXPackYearsC_int",
+            "beta": -0.000117086
+        },
+        {
+            "name": "AgeCXSmokeFormer5PlusC_int",
+            "beta": 0.002304388
+        },
+        {
+            "name": "AgeCXSmokeFormer0to5C_int",
+            "beta": -0.005804053
+        },
+        {
+            "name": "AgeCXSmokeCurrentC_int",
+            "beta": -0.009256138
+        },
+        {
+            "name": "AgeCXFruitVegC_int",
+            "beta": 0.001425871
+        },
+        {
+            "name": "AgeCXJuiceC_int",
+            "beta": -0.005303289
+        },
+        {
+            "name": "AgeCXPotatoC_int",
+            "beta": -0.00381856
+        },
+        {
+            "name": "AgeCXPhysicalActivityC_int",
+            "beta": -0.000557154
+        }
+    ]
+}
