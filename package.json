@@ -18,7 +18,7 @@
         "@babel/core": "7.4.5",
         "@babel/preset-env": "7.4.5",
         "@babel/preset-react": "7.0.0",
-        "@ottawamhealth/pbl-calculator-engine": "1.13.0",
+        "@ottawamhealth/pbl-calculator-engine": "1.15.0",
         "@types/bluebird": "3.5.27",
         "@types/chai": "4.1.7",
         "@types/csv-parse": "1.1.12",
