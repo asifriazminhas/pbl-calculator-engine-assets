@@ -1,4 +1,5 @@
 import { Constructor } from './betas-sheet/util-types';
+import { InteractionUtil } from '../../util/interaction';
 
 export function VariableTypeMixin<T extends Constructor<{ name: string }>>(
     BaseClass: T,
@@ -11,12 +12,7 @@ export function VariableTypeMixin<T extends Constructor<{ name: string }>>(
         }
 
         isInteractionVariable(): boolean {
-            // This account for the following interaction names:
-            // interaction1 - The current way of doing interaction naming
-            // AgeCXPhysical_int - The old way of naming interactions
-            const InteractionVariableRegex = /interaction[0-9]+$|.*X.*_int$/;
-
-            return InteractionVariableRegex.test(this.name);
+            return InteractionUtil.isInteractionVar(this.name);
         }
     };
 }

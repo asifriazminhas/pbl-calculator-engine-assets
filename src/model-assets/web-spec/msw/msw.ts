@@ -2,6 +2,8 @@ import { AssetsUtil } from '../../assets-util';
 import { MSWRow, IMswSheetRow } from './msw-row';
 import { CovariateNameGenError } from './msw-errors';
 import { tryCatch } from 'ramda';
+import { InteractionUtil } from '../../../util/interaction';
+import { RiskFactor } from '@ottawamhealth/pbl-calculator-engine/lib/risk-factors';
 
 export class MSW {
     sheet: MSWRow[];
@@ -66,5 +68,35 @@ export class MSW {
         }
 
         return mswRow.isStartVariable(variableName);
+    }
+
+    getGroupsForCovariate(
+        covariateName: string,
+        mapVariable: (varName: string) => string = (varName: string) => {
+            return varName;
+        },
+    ): RiskFactor[] {
+        let covariates: string[] = [];
+        if (InteractionUtil.isInteractionVar(covariateName)) {
+            covariates = InteractionUtil.getInteractingVars(covariateName).map(
+                interactingVar => {
+                    return mapVariable(interactingVar);
+                },
+            );
+        } else {
+            covariates = [mapVariable(covariateName)];
+        }
+
+        return covariates.map(covariate => {
+            const mswRow = this.findRowForCovariateName(covariate);
+
+            if (!mswRow) {
+                throw new Error(
+                    `No row found in MSW for variable ${covariate}`,
+                );
+            }
+
+            return mswRow.row.subject;
+        });
     }
 }

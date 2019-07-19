@@ -4,7 +4,10 @@ import { BetasSheet } from './betas-sheet/betas-sheet';
 import { ReferenceSheet } from './reference-sheet';
 import { LocalTransformations } from './local-transformations';
 import { ExternalCoefficients } from './external-coefficients';
+import { VarMappings } from './var-mappings';
+import { autobind } from 'core-decorators';
 
+@autobind
 export class AlgorithmAssets {
     algorithmName: string;
     predictiveBetas: BetasSheet;
@@ -13,6 +16,7 @@ export class AlgorithmAssets {
     webSpec: MSW | WebSpecV1;
     algorithmFolder: string; // Store this because we cannot finish the construction in the constructor and we need it for the finishConstruction method
     externalCoefficients?: ExternalCoefficients[];
+    varMappings?: VarMappings;
 
     constructor(
         algorithmName: string,
@@ -35,6 +39,9 @@ export class AlgorithmAssets {
         this.externalCoefficients = ExternalCoefficients.create(
             algorithmFolder,
         );
+        this.varMappings = VarMappings.hasVarMappingsFile(algorithmFolder)
+            ? new VarMappings(algorithmFolder)
+            : undefined;
     }
 
     async finishConstruction(): Promise<AlgorithmAssets> {
@@ -43,5 +50,11 @@ export class AlgorithmAssets {
         );
 
         return this;
+    }
+
+    mapVariable(varName: string): string {
+        return this.varMappings
+            ? this.varMappings.getMapping(varName)
+            : varName;
     }
 }

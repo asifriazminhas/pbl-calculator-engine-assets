@@ -2,82 +2,62 @@ import { ModelAssets } from '../src/model-assets/model-assets';
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { RiskFactor } from '@ottawamhealth/pbl-calculator-engine/lib/risk-factors';
 import { MSW } from '../src/model-assets/web-spec/msw/msw';
+import { ExternalCoefficients } from '../src/model-assets/algorithm-assets/external-coefficients';
 
 export function buildExternalCoefficientsJson(modelAssets: ModelAssets) {
     modelAssets.forEachAlgorithmAssets(
-        ({ externalCoefficients, webSpec, algorithmFolder }) => {
+        ({ externalCoefficients, webSpec, algorithmFolder, mapVariable }) => {
             if (externalCoefficients !== undefined) {
-                const mappings = require(`${algorithmFolder}/mappings.json`);
                 const msw = webSpec as MSW;
 
-                externalCoefficients.forEach(
-                    ({ variableBetas, betaSetName }) => {
-                        const externalCoefficientsJson: {
-                            [riskFactor in RiskFactor]?: {
-                                [variableName: string]: number;
-                            }
-                        } = {};
+                externalCoefficients.forEach(externalCoefficientsAsset => {
+                    const externalCoefficientsJson = buildJsonForExternalCoefficients(
+                        externalCoefficientsAsset,
+                        msw,
+                        mapVariable,
+                    );
 
-                        variableBetas.forEach(variableBeta => {
-                            let groups: RiskFactor[];
-                            if (variableBeta.isInteractionVariable() === true) {
-                                const interactions = variableBeta.name
-                                    .replace('_int', '')
-                                    .split('X');
-                                groups = interactions.map(interaction => {
-                                    return getGroupForCovariate(
-                                        mappings[interaction],
-                                        msw,
-                                    );
-                                });
-                            } else {
-                                groups = [
-                                    getGroupForCovariate(
-                                        variableBeta.name,
-                                        msw,
-                                    ),
-                                ];
-                            }
+                    const externalCoefficientsFolderPath = `${algorithmFolder}/external-coefficients`;
+                    if (existsSync(externalCoefficientsFolderPath) === false) {
+                        mkdirSync(externalCoefficientsFolderPath);
+                    }
 
-                            groups.forEach(group => {
-                                if (
-                                    externalCoefficientsJson[group] ===
-                                    undefined
-                                ) {
-                                    externalCoefficientsJson[group] = {};
-                                }
-
-                                externalCoefficientsJson[group]![
-                                    variableBeta.name
-                                ] = Number(variableBeta.beta);
-                            });
-                        });
-
-                        const externalCoefficientsFolderPath = `${algorithmFolder}/external-coefficients`;
-                        if (
-                            existsSync(externalCoefficientsFolderPath) === false
-                        ) {
-                            mkdirSync(externalCoefficientsFolderPath);
-                        }
-
-                        writeFileSync(
-                            `${externalCoefficientsFolderPath}/${betaSetName}.json`,
-                            JSON.stringify(externalCoefficientsJson, null, 4),
-                        );
-                    },
-                );
+                    writeFileSync(
+                        `${externalCoefficientsFolderPath}/${
+                            externalCoefficientsAsset.betaSetName
+                        }.json`,
+                        JSON.stringify(externalCoefficientsJson, null, 4),
+                    );
+                });
             }
         },
     );
 }
 
-function getGroupForCovariate(covariateName: string, msw: MSW) {
-    const mswRow = msw.findRowForCovariateName(covariateName);
-    if (!mswRow) {
-        throw new Error(
-            `Cannot parse external coefficient for variable ${covariateName}. No group found.`,
-        );
-    }
+function buildJsonForExternalCoefficients(
+    { variableBetas }: ExternalCoefficients,
+    msw: MSW,
+    mapVar?: (varName: string) => string,
+) {
+    const externalCoefficientsJson: {
+        [riskFactor in RiskFactor]?: Array<{
+            name: string;
+            beta: number;
+        }>
+    } = {};
 
-    return mswRow.row.subject;
+    variableBetas.forEach(variableBeta => {
+        msw.getGroupsForCovariate(variableBeta.name, mapVar).forEach(group => {
+            if (externalCoefficientsJson[group] === undefined) {
+                externalCoefficientsJson[group] = [];
+            }
+
+            externalCoefficientsJson[group]!.push({
+                name: variableBeta.name,
+                beta: Number(variableBeta.beta),
+            });
+        });
+    });
+
+    return externalCoefficientsJson;
 }
