@@ -21091,12 +21091,43 @@
                 <FieldRef field="TypeOfSmoker2"/>
             </Apply>
         </DerivedField>
-        <DerivedField name="smokeSimp" optype="continuous">
+        <DerivedField name="smokesimp1" optype="continuous">
             <Apply function="SmokeSimple1.fun">
                 <FieldRef field="smoker"/>
                 <FieldRef field="eversmoker"/>
                 <FieldRef field="tsq_ds"/>
                 <FieldRef field="TypeOfSmoker2"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="smokeSimp" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="smokesimp1"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="smokesimp1"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Apply function="ifelse">
+                        <Apply function="equal">
+                            <FieldRef field="smokesimp1"/>
+                            <Constant dataType="double">2</Constant>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                        <Apply function="ifelse">
+                            <Apply function="equal">
+                                <FieldRef field="smokesimp1"/>
+                                <Constant dataType="double">1</Constant>
+                            </Apply>
+                            <Constant dataType="double">3</Constant>
+                            <Constant dataType="NA">NA</Constant>
+                        </Apply>
+                    </Apply>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="ALWDWKY_Mutated_1" optype="continuous">
@@ -21205,7 +21236,7 @@
                 <FieldRef field="Veg_cont"/>
             </Apply>
         </DerivedField>
-        <DerivedField name="PACDEE_Mutated_1" optype="continuous">
+        <DerivedField name="PhysicalActivity_cont" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="PACDEE"/>
@@ -21807,7 +21838,7 @@
             <Apply function="-">
                 <FieldRef field="smokeSimp_cat4_2"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="SmokeCurrentC_cat"/>
+                    <FieldColumnPair column="variable" constant="SmokeFormer5PlusC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -21825,7 +21856,7 @@
             <Apply function="-">
                 <FieldRef field="smokeSimp_cat4_4"/>
                 <MapValues outputColumn="mean">
-                    <FieldColumnPair column="variable" constant="SmokeFormer5PlusC_cat"/>
+                    <FieldColumnPair column="variable" constant="SmokeCurrentC_cat"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
                 </MapValues>
             </Apply>
@@ -21886,7 +21917,7 @@
         </DerivedField>
         <DerivedField name="PhysicalActivity_C" optype="continuous">
             <Apply function="-">
-                <FieldRef field="PACDEE_Mutated_1"/>
+                <FieldRef field="PhysicalActivity_cont"/>
                 <MapValues outputColumn="mean">
                     <FieldColumnPair column="variable" constant="PhysicalActivityC_rcs1"/>
                     <TableLocator location="taxonomy" name="reference_table"/>
@@ -22132,7 +22163,7 @@
         </DerivedField>
         <DerivedField name="AgeCXSmokeCurrentC_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="smokeSimp_cat4_2_C"/>
+                <FieldRef field="smokeSimp_cat4_4_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
@@ -22144,7 +22175,7 @@
         </DerivedField>
         <DerivedField name="AgeCXSmokeFormer5PlusC_int" optype="continuous">
             <Apply function="Interact.fun">
-                <FieldRef field="smokeSimp_cat4_4_C"/>
+                <FieldRef field="smokeSimp_cat4_2_C"/>
                 <FieldRef field="Age_cont_C"/>
             </Apply>
         </DerivedField>
