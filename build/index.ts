@@ -9,7 +9,7 @@ import { IModelJson } from '@ottawamhealth/pbl-calculator-engine/lib/parsers/jso
 import { ModelAssetsFactory } from '../src/model-assets/model-assets-factory';
 import { buildExternalCoefficientsJson } from './external-coefficients';
 
-async function build() {
+export async function build() {
     const modelBuildData = getModelBuildData();
 
     const models = await Promise.all(
@@ -37,11 +37,3 @@ async function build() {
         );
     });
 }
-
-build()
-    .then(() => {
-        console.log('Done');
-    })
-    .catch(err => {
-        console.error(err);
-    });
