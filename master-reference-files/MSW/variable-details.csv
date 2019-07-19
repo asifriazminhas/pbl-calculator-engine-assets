@@ -1,247 +1,328 @@
-Lime question,variable,dummyVariable,variableType,method,target,databaseStart,variableStart,variableStartType,numValidCat,catValues,catLabel,catLabelLong,units,low,high,interval,catStartLabel,reference,variableStartShortLabel,variableStartLabel
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,1,1,"[,]",12 To 14 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,2,2,"[,]",15 To 17 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,3,3,"[,]",18 To 19 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,4,4,"[,]",20 To 24 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,5,5,"[,]",25 To 29 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,6,6,"[,]",30 To 34 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,7,7,"[,]",35 To 39 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,8,8,"[,]",40 To 44 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,9,9,"[,]",45 To 49 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,10,10,"[,]",50 To 54 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,11,11,"[,]",55 To 59 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,12,12,"[,]",60 To 64 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,13,13,"[,]",65 To 69 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,14,14,"[,]",70 To 74 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,15,15,"[,]",75 To 79 Years,N/A,Age,Age - (G)
-,DHHGAGE_cont,N/A,cont,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,Age,converted categorical age,years,16,16,"[,]",80 Years or more,N/A,Age,Age - (G)
-,DHH_SEX,DHH_SEX_cat2_1,cat,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHH_SEX,cat,2,1,Male,Male,N/A,1,1,"[,]",Male,N/A,Sex,Sex
-,DHH_SEX,DHH_SEX_cat2_2,cat,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHH_SEX,cat,2,2,Female,Female,N/A,2,2,"[,]",Female,N/A,Sex,Sex
-,DHH_SEX,DHH_SEX_cat2_NA,cat,Map1_1,CCHS_bllFlow,PUMF 2013-2014,DHH_SEX,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (6); don't know (7); refusal (8); not stated (9),N/A,Sex,Sex
-,packYears,N/A,cont,PBL Smoking Functions (PackYears1.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"TypeOfSmoker2 (derived), age_cont, agecidg, cigdayd, tsq_ds (function of: stpo and stpoy), cigdayf, cigdayo, dayocc, agec1, s100, SmokeDaily (function of: smk, evd, s100, cigdayf, cigdayd), AgeDailyStart, DailyCig, AgeDailyQuit",,,,Packyears Smoking,Packyears of smoking,,,,,,,,
-,SmokingStatus,SmokingStatus_cat6_1,cat,PBL Smoking Functions (TypeOfSmoker2.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,1,Daily smoker,Daily smoker,N/A,,,,,,,
-,SmokingStatus,SmokingStatus_cat6_2,cat,PBL Smoking Functions (TypeOfSmoker2.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,2,Former daily current occasional smoker,Former daily current occasional smoker,N/A,,,,,,,
-,SmokingStatus,SmokingStatus_cat6_3,cat,PBL Smoking Functions (TypeOfSmoker2.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,3,Never daily current occasional smoker,Never daily current occasional smoker,N/A,,,,,,,
-,SmokingStatus,SmokingStatus_cat6_4,cat,PBL Smoking Functions (TypeOfSmoker2.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,4,Former daily current nonsmoker,Former daily current nonsmoker,N/A,,,,,,,
-,SmokingStatus,SmokingStatus_cat6_5,cat,PBL Smoking Functions (TypeOfSmoker2.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,5,Never daily current nonsmoker (former occasional),Never daily current nonsmoker (former occasional),N/A,,,,,,,
-,SmokingStatus,SmokingStatus_cat6_6,cat,PBL Smoking Functions (TypeOfSmoker2.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,6,Never smoked,Never smoked,N/A,,,,,,,
-,SMKDSTY,SMKDSTY_cat6_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,1,Daily smoker,Daily smoker,N/A,1,1,"[,]",Daily,0,Smoke status,Type of smoker - (D)
-,SMKDSTY,SMKDSTY_cat6_2,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,2,Former daily current occasional smoker,Former daily current occasional smoker,N/A,2,2,"[,]",Occassional,0,Smoke status,Type of smoker - (D)
-,SMKDSTY,SMKDSTY_cat6_3,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,3,Never daily current occasional smoker,Never daily current occasional smoker,N/A,3,3,"[,]",Always occassional,0,Smoke status,Type of smoker - (D)
-,SMKDSTY,SMKDSTY_cat6_4,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,4,Former daily current nonsmoker,Former daily current nonsmoker,N/A,4,4,"[,]",Former daily,0,Smoke status,Type of smoker - (D)
-,SMKDSTY,SMKDSTY_cat6_5,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,5,Never daily current nonsmoker (former occasional),Never daily current nonsmoker (former occasional),N/A,5,5,"[,]",Former occasional,0,Smoke status,Type of smoker - (D)
-,SMKDSTY,SMKDSTY_cat6_6,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,6,Never smoked,Never smoked,N/A,6,6,"[,]",Never smoked,1,Smoke status,Type of smoker - (D)
-,SMKDSTY,SMKDSTY_cat6_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,NA,missing,missing,N/A,96,99,"[,]",missing (.D); don't know (.E); refusal (.F); not stated (.G),0,Smoke status,Type of smoker - (D)
-,smokeSimp,smokeSimp_cat4_1,cat,PBL Smoking Functions (SmokeSimple1.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,0,Non-smoker,Non-smoker,N/A,1,1,"[,]",,,,
-,smokeSimp,smokeSimp_cat4_2,cat,PBL Smoking Functions (SmokeSimple1.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,1,Current smoker,Current smoker,N/A,2,2,"[,]",,,,
-,smokeSimp,smokeSimp_cat4_3,cat,PBL Smoking Functions (SmokeSimple1.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,2,Former smoker; quit 0 to 5 years or former occasional,Former smoker; quit 0 to 5 years or former occasional,N/A,3,3,"[,]",,,,
-,smokeSimp,smokeSimp_cat4_4,cat,PBL Smoking Functions (SmokeSimple1.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,3,Former smoker; quit 5 plus years,Former smoker; quit 5 plus years,N/A,4,4,"[,]",,,,
-,smokeSimp,smokeSimp_cat4_NA,cat,PBL Smoking Functions (SmokeSimple1.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker3",cat,4,NA,missing,missing,N/A,,,,,,,
-,AgeDailyStart,N/A,cont,?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"?agecigd, agecigo",?,,?,Age Started Daily Smoking,Age started daily smoking,,,,,,,,
-,DailyCig,N/A,cont,?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"?cigdayd, cigdayo, cigdayf",?,,?,Cigarettes/day,Cigarettes smoked a day (current and former daily smokers),,,,,,,,
-,PastDaily,,cat,?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,?evd,?,,?,Have you ever smoked daily?,Have you ever smoked daily?,,,,,,,,
-,AgeDailyQuit,,cat,?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"?stpn, stpny, stpo, stpoy",?,,?,Age Quit Daily Smoking,Age quit daily smoking,,,,,,,,
-,PastSmoke,,cat,?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,??,?,,?,In the past did you smoke?,In the past did you smoke?,,,,,,,,
-,,,cat,PBL Smoking Functions (tsq_ds.fun),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"stpo, stpoy",?,,?,,,,,,,,,,
-Ever smoked a whole cigarette? (wcig),SMK_01B,SMK_01B_cat2_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,1,yes,yes,N/A,1,1,"[,]",Yes,N/A,Ever smoke,Ever smoked a whole cigarette
-,SMK_01B,SMK_01B_cat2_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,2,no,no,N/A,2,2,"[,]",No,N/A,Ever smoke,Ever smoked a whole cigarette
-,SMK_01B,SMK_01B_cat2_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,Ever smoke,Ever smoked a whole cigarette
-,SMK_01B,SMK_01B_cat2_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Ever smoke,Ever smoked a whole cigarette
-At what age did you smoke your first whole cigarette? ,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,1,1,"[,]",5 To 11 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,2,2,"[,]",12 To 14 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,3,3,"[,]",15 To 17 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,4,4,"[,]",18 To 19 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,5,5,"[,]",20 To 24 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,6,6,"[,]",25 To 29 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,7,7,"[,]",30 To 34 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,8,8,"[,]",35 To 39 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,9,9,"[,]",40 To 44 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,10,10,"[,]",45 To 49 Years,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,agec1,converted categorical age,years,11,11,"[,]",50 Years or more,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,not applicable,not applicable,N/A,96,96,"[,]",Not applicable,N/A,agec1,Age smoked first whole cigarette - (G)
-,SMKG01C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,NA,missing,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,agec1,Age smoked first whole cigarette - (G)
-"In your lifetime, have you smoked a total of 100 or more cigarettes (about 4 packs)? (s100)",SMK_01A,SMK_01A_cat2_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,1,yes,yes,N/A,1,1,"[,]",Yes,N/A,s100,"In lifetime, smoked 100 or more cigarettes"
-,SMK_01A,SMK_01A_cat2_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,1,no,not applicable,N/A,2,2,"[,]",No,N/A,s100,"In lifetime, smoked 100 or more cigarettes"
-,SMK_01A,SMK_01A_cat2_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,s100,"In lifetime, smoked 100 or more cigarettes"
-,SMK_01A,SMK_01A_cat2_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,s100,"In lifetime, smoked 100 or more cigarettes"
-"At the present time, do you smoke cigarettes daily, occasionally, or not at all? (smk)",SMK_202,SMK_202_cat3_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,1,Daily,Daily,N/A,1,1,"[,]",Daily,N/A,smk,Daily/occasional/not at all type of smoker
-,SMK_202,SMK_202_cat3_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,2,Occasionally,Occasionally,N/A,2,2,"[,]",Occasionally,N/A,smk,Daily/occasional/not at all type of smoker
-,SMK_202,SMK_202_cat3_3,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,3,Not at all,Not at all,N/A,3,3,"[,]",Not at all,N/A,smk,Daily/occasional/not at all type of smoker
-,SMK_202,SMK_202_cat3_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,smk,Daily/occasional/not at all type of smoker
-,SMK_202,SMK_202_cat3_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,smk,Daily/occasional/not at all type of smoker
-At what age did you begin to smoke cigarettes daily? ,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,1,1,"[,]",5 To 11 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,2,2,"[,]",12 To 14 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,3,3,"[,]",15 To 17 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,4,4,"[,]",18 To 19 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,5,5,"[,]",20 To 24 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,6,6,"[,]",25 To 29 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,7,7,"[,]",30 To 34 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,8,8,"[,]",35 To 39 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,9,9,"[,]",40 To 44 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,10,10,"[,]",45 To 49 Years,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,agecigd,converted categorical age started smoking daily - daily smoker,years,11,11,"[,]",50 Years or more,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,not applicable,not applicable,N/A,96,96,"[,]",Not applicable,N/A,agecigd,Age started to smoke daily - (G)
-,SMKG203_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,NA,missing,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,agecigd,Age started to smoke daily - (G)
-How many cigarettes do you smoke each day now?,SMK_204,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_204,cont,N/A,N/A,Cigarettes/day - daily ,# of cigarettes smoked daily - daily smoker,cigarettes/day,1,80,"[,]",# of cigarettes smoked daily - daily smoker,N/A,cigdayd,# of cigarettes smoked daily - daily smoker
-,SMK_204,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_204,cont,N/A,N/A,not applicable,not applicable,N/A,996,996,"[,]",Not applicable,N/A,cigdayd,# of cigarettes smoked daily - daily smoker
-,SMK_204,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_204,cont,N/A,NA,missing,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,cigdayd,# of cigarettes smoked daily - daily smoker
-"On the days that you do smoke, how many cigarettes do you usually smoke?",SMK_05B,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05B,cont,N/A,N/A,Cigarettes/day - occasional ,# of cigarettes smoked daily - daily smoker,cigarettes/day,1,40,"[,]",# of cigarettes smoked daily - occasional smoker,N/A,cigdayo,# of cigarettes smoked daily - occasional smoker
-,SMK_05B,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05B,cont,N/A,N/A,not applicable,not applicable,N/A,996,996,"[,]",Not applicable,N/A,cigdayo,# of cigarettes smoked daily - occasional smoker
-,SMK_05B,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05B,cont,N/A,NA,missing,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,cigdayo,# of cigarettes smoked daily - occasional smoker
-"In the past month, on how many days have you smoked one or more cigarettes?",SMK_05C,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05C,cont,N/A,N/A,Smoked one or more cigarettes,"Past month, smoked 1 + cigarettes daily - occasional smoker",days,0,30,"[,]","Past month, smoked 1 + cigarettes daily - occasional smoker",N/A,dayocc,"Past month, smoked 1 + cigarettes daily - occasional smoker"
-,SMK_05C,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05C,cont,N/A,N/A,not applicable,not applicable,N/A,96,96,"[,]",Not applicable,N/A,dayocc,"Past month, smoked 1 + cigarettes daily - occasional smoker"
-,SMK_05C,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05C,cont,N/A,NA,missing,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,dayocc,"Past month, smoked 1 + cigarettes daily - occasional smoker"
-Have you ever smoked cigarettes daily? (evd),SMK_05D,SMK_05D_cat2_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,1,yes,Occasional smoker who previously smoked daily,N/A,1,1,"[,]",Yes,N/A,evd,Ever smoked cigarettes daily - occasional smoker
-,SMK_05D,SMK_05D_cat2_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,2,no,Occasional smoker never daily,N/A,2,2,"[,]",No,N/A,evd,Ever smoked cigarettes daily - occasional smoker
-,SMK_05D,SMK_05D_cat2_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,evd,Ever smoked cigarettes daily - occasional smoker
-,SMK_05D,SMK_05D_cat2_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,evd,Ever smoked cigarettes daily - occasional smoker
-At what age did you begin to smoke cigarettes daily?,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,1,1,"[,]",5 To 11 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,2,2,"[,]",12 To 14 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,3,3,"[,]",15 To 17 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,4,4,"[,]",18 To 19 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,5,5,"[,]",20 To 24 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,6,6,"[,]",25 To 29 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,7,7,"[,]",30 To 34 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,8,8,"[,]",35 To 39 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,9,9,"[,]",40 To 44 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,10,10,"[,]",45 To 49 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,agecigo,converted categorical age started smoking daily - occasional smoker,years,11,11,"[,]",50 Years or more,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,not applicable,not applicable,N/A,96,96,"[,]",Not applicable,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-,SMKG207_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,NA,missing,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
-How many cigarettes did you usually smoke each day?,SMK_208,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_208,cont,N/A,N/A,Cigarettes/day - historic daily,Cigarettes/day - historic daily,cigarettes/day,1,99,"[,]",# of cigarettes smoke each day - occasional smoker,N/A,cigdayf,# of cigarettes smoke each day - occasional smoker
-,SMK_208,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_208,cont,N/A,N/A,not applicable,not applicable,N/A,996,996,"[,]",Not applicable,N/A,cigdayf,# of cigarettes smoke each day - occasional smoker
-,SMK_208,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_208,cont,N/A,NA,missing,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,cigdayf,# of cigarettes smoke each day - occasional smoker
-When did you stop smoking daily? (stpo),SMK_09A,SMK_09A_cat4_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,1,<1 year,Less than one year ago,years,1,1,"[,]",Less than 1 year,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
-,SMK_09A,SMK_09A_cat4_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,2,1 to 2 years,1 year to less than 2 years ago,years,2,2,"[,]",1 to <2 years,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
-,SMK_09A,SMK_09A_cat4_3,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,3,2 to 3 years,2 years to less than 3 years ago,years,3,3,"[,]",2 to <3 years,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
-,SMK_09A,SMK_09A_cat4_4,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,4,≥3 years,3 or more years ago,years,4,4,"[,]",3 years or more,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
-,SMK_09A,SMK_09A_cat4_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
-,SMK_09A,SMK_09A_cat4_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
-How many years ago was it?,SMKG09C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,stpoy,converted categorical years since stopped daily smoking - occasional smoker,years,1,1,"[,]",3 to 5 years,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
-,SMKG09C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,stpoy,converted categorical years since stopped daily smoking - occasional smoker,years,2,2,"[,]",6 to 10 years,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
-,SMKG09C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,stpoy,converted categorical years since stopped daily smoking - occasional smoker,years,3,3,"[,]",11 or more years,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
-,SMKG09C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
-,SMKG09C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
-When did you stop smoking? (stpn),SMK_06A,SMK_06A_cat4_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,1,<1 year,Less than one year ago,years,1,1,"[,]",Less than one year ,N/A,stpn,When did you stop smoking - non-smoker
-,SMK_06A,SMK_06A_cat4_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,2,1 to 2 years,1 year to less than 2 years ago,years,2,2,"[,]",1 year to < 2 years,N/A,stpn,When did you stop smoking - non-smoker
-,SMK_06A,SMK_06A_cat4_3,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,3,2 to 3 years,2 years to less than 3 years ago,years,3,3,"[,]",2 years to < 3 years,N/A,stpn,When did you stop smoking - non-smoker
-,SMK_06A,SMK_06A_cat4_4,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,4,≥3 years,3 or more years ago,years,4,4,"[,]",3 or more years,N/A,stpn,When did you stop smoking - non-smoker
-,SMK_06A,SMK_06A_cat4_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpn,When did you stop smoking - non-smoker
-,SMK_06A,SMK_06A_cat4_NA,cat,Map1_2,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpn,When did you stop smoking - non-smoker
-How many years ago was it?,SMKG06C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,stpny,converted categorical years since stopped smoking - non-smoker,years,1,1,"[,]",3 to 5 years,N/A,stpny,# years stopped smoking - non-smoker - (G)
-,SMKG06C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,stpny,converted categorical years since stopped smoking - non-smoker,years,2,2,"[,]",6 to 10 years,N/A,stpny,# years stopped smoking - non-smoker - (G)
-,SMKG06C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,stpny,converted categorical years since stopped smoking - non-smoker,years,3,3,"[,]",11 or more years,N/A,stpny,# years stopped smoking - non-smoker - (G)
-,SMKG06C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpny,# years stopped smoking - non-smoker - (G)
-,SMKG06C_cont,N/A,cont,Map1_1,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpny,# years stopped smoking - non-smoker - (G)
-,SMK_10,N/A,,,,PUMF 2013-2014,SMK_10,cat,2,1,yes,was when stopped smoking - non-smoker,N/A,1,1,"[,]",Yes,N/A,,Was when stopped smoking - non-smoker
-,SMK_10,N/A,,,,PUMF 2013-2014,SMK_10,cat,2,0,no,was not when stopped smoking - non-smoker,N/A,2,2,"[,]",No,N/A,,Was when stopped smoking - non-smoker
-,SMK_10,N/A,,,,PUMF 2013-2014,SMK_10,cat,2,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,,Was when stopped smoking - non-smoker
-,SMK_10,N/A,,,,PUMF 2013-2014,SMK_10,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,,Was when stopped smoking - non-smoker
-,SMK_10A,N/A,,,,PUMF 2013-2014,SMK_10A,cat,4,1,<1 year,Less than one year ago,years,1,1,"[,]",Less than one year ,N/A,,Stopped smoking completely - non-smoker
-,SMK_10A,N/A,,,,PUMF 2013-2014,SMK_10A,cat,4,2,1 to 2 years,1 year to less than 2 years ago,years,2,2,"[,]",1 year to < 2 years,N/A,,Stopped smoking completely - non-smoker
-,SMK_10A,N/A,,,,PUMF 2013-2014,SMK_10A,cat,4,3,2 to 3 years,2 years to less than 3 years ago,years,3,3,"[,]",2 years to < 3 years,N/A,,Stopped smoking completely - non-smoker
-,SMK_10A,N/A,,,,PUMF 2013-2014,SMK_10A,cat,4,4,≥3 years,3 or more years ago,years,4,4,"[,]",3 or more years,N/A,,Stopped smoking completely - non-smoker
-,SMK_10A,N/A,,,,PUMF 2013-2014,SMK_10A,cat,4,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,,Stopped smoking completely - non-smoker
-,SMK_10A,N/A,,,,PUMF 2013-2014,SMK_10A,cat,4,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,,Stopped smoking completely - non-smoker
-,SMKG10C,N/A,,,,PUMF 2013-2014,SMKG10C,cat,3,1,4,Converted categorical years since stopped smoking - non-smoker,years,1,1,"[,]",3 to 5 years,N/A,,# years stopped smoking - non-smoker - (G)
-,SMKG10C,N/A,,,,PUMF 2013-2014,SMKG10C,cat,3,2,8,Converted categorical years since stopped smoking - non-smoker,years,2,2,"[,]",6 to 10 years,N/A,,# years stopped smoking - non-smoker - (G)
-,SMKG10C,N/A,,,,PUMF 2013-2014,SMKG10C,cat,3,3,13,Converted categorical years since stopped smoking - non-smoker,years,3,3,"[,]",11 or more years,N/A,,# years stopped smoking - non-smoker - (G)
-,SMKG10C,N/A,,,,PUMF 2013-2014,SMKG10C,cat,3,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,,# years stopped smoking - non-smoker - (G)
-,SMKG10C,N/A,,,,PUMF 2013-2014,SMKG10C,cat,3,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,,# years stopped smoking - non-smoker - (G)
-,ALWDWKY,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,ALWDWKY,cont,N/A,N/A,drinks/week,drinks/week,drinks/week,0,264,"[,]",,N/A,drinks/week,Weekly consumption
-,ALWDWKY,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,ALWDWKY,cont,N/A,N/A,not applicable,not applicable,N/A,996,996,"[,]",Not applicable,N/A,drinks/week,Weekly consumption
-,ALWDWKY,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,ALWDWKY,cont,N/A,NA,missing,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,drinks/week,Weekly consumption
-,formerDrinker,formerDrinker_cat2_1,cat,Map3_1,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"dany, d12, evdk",cat,2,1,yes,Former drinker,N/A,1,1,"[,]",,,,
-,formerDrinker,formerDrinker_cat2_0,cat,Map3_1,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"dany, d12, evdk",cat,2,0,no,Not a former drinker,N/A,0,0,"[,]",,,,
-"Thinking back over the past week, did you have a drink of beer, wine, liquor or any other alcoholic beverage? (dany)",ALW_1,ALW_1_cat2_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,1,yes,alcohol in the past week,N/A,1,1,"[,]","Past week, had any alcohol",N/A,dany,"Past week, had any alcohol"
-,ALW_1,ALW_1_cat2_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,2,no,no alcohol in past week,N/A,2,2,"[,]","Past week, had any alcohol",N/A,dany,"Past week, had any alcohol"
-,ALW_1,ALW_1_cat2_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,dany,"Past week, had any alcohol"
-,ALW_1,ALW_1_cat2_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,dany,"Past week, had any alcohol"
-"During the past 12 months, have you had a drink of beer, wine, liquor or any other alcoholic beverage? (d12)",ALC_1,ALC_1_cat2_1,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,1,yes,alcohol in the past year,N/A,1,1,"[,]","Past year, have you drank alcohol",N/A,d12,"Past year, have you drank alcohol"
-,ALC_1,ALC_1_cat2_2,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,2,no,no alcohol in past week,N/A,2,2,"[,]","Past year, have you drank alcohol",N/A,d12,"Past year, have you drank alcohol"
-,ALC_1,ALC_1_cat2_N/A,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,N/A,not applicable,not applicable,N/A,6,6,"[,]",Not applicable,N/A,d12,"Past year, have you drank alcohol"
-,ALC_1,ALC_1_cat2_NA,cat,Map1_1,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,d12,"Past year, have you drank alcohol"
-Have you ever had a drink? (evdk),formerDrinker,formerDrinker_cat2_1,cat,N/A,PoRT_limesurvey,PUMF 2013-2014,N/A,cat,2,1,Former drinker,Former drinker,,,,,,,,
-,formerDrinker,formerDrinker_cat2_0,cat,N/A,PoRT_limesurvey,PUMF 2013-2014,N/A,cat,2,0,Not former drinker,Not former drinker,,,,,,,,
-,dietScore2,N/A,cont,Map6_1,derived_CCHS_bllFlow,PUMF 2013-2014,"FVCDJUI, FVCDFRU, FVCDSAL, FVCDPOT, FVCDCAR, FVCDVEG",cont,N/A,N/A,Diet,Simplified diet score (z-transformed),N/A,,,,,N/A,Diet,Simplified diet score
-"How often do you usually drink fruit juices such as orange, grapefruit or tomato?",FVCDJUI,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDJUI,cont,N/A,N/A,Daily juice,Daily juice,N/A,0,20,"[,]",Daily consumption - fruit juice - (D),N/A,Daily juice,Daily consumption - fruit juice - (D)
-,FVCDJUI,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDJUI,cont,N/A,N/A,not applicable,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily juice,Daily consumption - fruit juice - (D)
-,FVCDJUI,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDJUI,cont,N/A,NA,missing,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily juice,Daily consumption - fruit juice - (D)
-"Not counting juice, how often do you eat fruit?",FVCDFRU,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDFRU,cont,N/A,N/A,Daily fruit,Daily fruit,N/A,0,20,"[,]",Daily consumption - fruit - (D),N/A,Daily fruit,Daily consumption - fruit - (D)
-,FVCDFRU,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDFRU,cont,N/A,N/A,not applicable,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily fruit,Daily consumption - fruit - (D)
-,FVCDFRU,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDFRU,cont,N/A,NA,missing,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily fruit,Daily consumption - fruit - (D)
-How often do you (usually) eat green salad?,FVCDSAL,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDSAL,cont,N/A,N/A,Daily salad,Daily salad,N/A,0,14,"[,]",Daily consumption - green salad - (D),N/A,Daily salad,Daily consumption - green salad - (D)
-,FVCDSAL,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDSAL,cont,N/A,N/A,not applicable,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily salad,Daily consumption - green salad - (D)
-,FVCDSAL,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDSAL,cont,N/A,NA,missing,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily salad,Daily consumption - green salad - (D)
-"How often do you usually eat potatoes, not including french fries, fried potatoes or potato chips?",FVCDPOT,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDPOT,cont,N/A,N/A,Daily potatoes,Daily potatoes,N/A,0,20,"[,]",Daily consumption - potatoes - (D),N/A,Daily potatoes,Daily consumption - potatoes - (D)
-,FVCDPOT,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDPOT,cont,N/A,N/A,not applicable,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily potatoes,Daily consumption - potatoes - (D)
-,FVCDPOT,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDPOT,cont,N/A,NA,missing,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily potatoes,Daily consumption - potatoes - (D)
-How often do you usually eat carrots?,FVCDCAR,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDCAR,cont,N/A,N/A,Daily carrots,Daily carrots,N/A,0,13,"[,]",Daily consumption - carrots - (D),N/A,Daily carrots,Daily consumption - carrots - (D)
-,FVCDCAR,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDCAR,cont,N/A,N/A,not applicable,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily carrots,Daily consumption - carrots - (D)
-,FVCDCAR,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDCAR,cont,N/A,NA,missing,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily carrots,Daily consumption - carrots - (D)
-"Not counting carrots, potatoes or salad, how many servings of other vegetables do you usually eat?",FVCDVEG,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDVEG,cont,N/A,N/A,Daily other vegetables,Daily other vegetables,N/A,0,20,"[,]",Daily consumption other vegetables - (D),N/A,Daily other vegetables,Daily consumption other vegetables - (D)
-,FVCDVEG,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDVEG,cont,N/A,N/A,not applicable,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily other vegetables,Daily consumption other vegetables - (D)
-,FVCDVEG,N/A,cont,Map1_2,PoRT_limesurvey,PUMF 2013-2014,FVCDVEG,cont,N/A,NA,missing,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily other vegetables,Daily consumption other vegetables - (D)
-,PACDEE,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,PACDEE,cont,N/A,N/A,Physical Activity,Average daily leisure time energy expenditure in METs,,0,42.2,"[,]",Daily energy expenditure - (D),N/A,Physical Activity,Daily energy expenditure - (D)
-,PACDEE,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,PACDEE,cont,N/A,N/A,not applicable,not applicable,N/A,99.6,99.6,"[,]",Not applicable,N/A,Physical Activity,Daily energy expenditure - (D)
-,PACDEE,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,PACDEE,cont,N/A,NA,missing,missing,N/A,99.7,99.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Physical Activity,Daily energy expenditure - (D)
-,HWTGBMI,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,HWTGBMI,cont,N/A,N/A,BMI,Body Mass Index,kg/m2,12,56.73,"[,]","BMI / self-report - (D,G)",N/A,BMI,"BMI / self-report - (D,G)"
-,HWTGBMI,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,HWTGBMI,cont,N/A,N/A,not applicable,not applicable,N/A,999.96,999.96,"[,]",Not applicable,N/A,BMI,"BMI / self-report - (D,G)"
-,HWTGBMI,N/A,cont,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,HWTGBMI,cont,N/A,NA,missing,missing,N/A,999.97,999.99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,BMI,"BMI / self-report - (D,G)"
-,CCC_131,CCC_131_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_131,cat,2,1,Cancer,Cancer,N/A,1,1,"[,]",Yes (Do you have cancer?),0,Cancer,Do you have cancer
-,CCC_131,CCC_131_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_131,cat,2,0,No Cancer,No Cancer,N/A,0,0,"[,]",No (Do you have cancer?),1,Cancer,Do you have cancer
-,CCC_131,CCC_131_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_131,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Cancer,Do you have cancer
-,CCC_101,CCC_101_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_101,cat,2,1,Diabetes,Diabetes,N/A,1,1,"[,]",Yes (Do you have diabetes?),0,Diabetes,Do you have diabetes
-,CCC_101,CCC_101_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_101,cat,2,0,No Diabetes,No Diabetes,N/A,2,2,"[,]",No (Do you have diabetes?),1,Diabetes,Do you have diabetes
-,CCC_101,CCC_101_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_101,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Diabetes,Do you have diabetes
-,CCC_121,CCC_121_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_121,cat,2,1,Heart Disease,Heart Disease,N/A,1,1,"[,]",Yes (Do you have heart disease?),0,Heart Disease,Do you have heart disease
-,CCC_121,CCC_121_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_121,cat,2,0,No Heart Disease,No Heart Disease,N/A,2,2,"[,]",No (Do you have heart disease?),1,Heart Disease,Do you have heart disease
-,CCC_121,CCC_121_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_121,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Heart Disease,Do you have heart disease
-,CCC_151,CCC_151_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_151,cat,2,1,Stroke,Stroke,N/A,1,1,"[,]",Yes (Do you suffer from the effects of stroke?),0,Stroke,Do you suffer from effects of stroke
-,CCC_151,CCC_151_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_151,cat,2,0,No Stroke,No Stroke,N/A,2,2,"[,]",No (Do you suffer from the effects of stroke?),1,Stroke,Do you suffer from effects of stroke
-,CCC_151,CCC_151_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_151,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Stroke,Do you suffer from effects of stroke
-,CCC_071,CCC_071_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_071,cat,2,1,Hypertension,Hypertension,N/A,1,1,"[,]",Yes (Do you have high blood pressure?),0,Hypertension,Do you have high blood pressure
-,CCC_071,CCC_071_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_071,cat,2,0,No Hypertension,No Hypertension,N/A,2,2,"[,]",No (Do you have high blood pressure?),1,Hypertension,Do you have high blood pressure
-,CCC_071,CCC_071_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_071,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Hypertension,Do you have high blood pressure
-,CCC_280,CCC_280_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_280,cat,2,1,Has a mood disorder,Has a mood disorder,N/A,1,1,"[,]",Yes (Do you have a mood disorder?),0,Mood disorder,Do you have a mood disorder
-,CCC_280,CCC_280_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_280,cat,2,0,Does not have a mood disorder,Does not have a mood disorder,N/A,2,2,"[,]",No (Do you have a mood disorder?),1,Mood disorder,Do you have a mood disorder
-,CCC_280,CCC_280_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_280,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Mood disorder,Do you have a mood disorder
-,dementia,dementia_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,1,Dementia,Dementia,N/A,1,1,"[,]",,0,,
-,dementia,dementia_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,0,No Dementia,No Dementia,N/A,2,2,"[,]",,1,,
-,CCC_091,CCC_091_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_091,cat,2,1,COPD,COPD,N/A,1,1,"[,]","Yes (Do you have COPD(eg bronchitis,emphysema)?)",0,COPD,"Do you have COPD(eg bronchitis,emphysema)"
-,CCC_091,CCC_091_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_091,cat,2,0,No COPD,No COPD,N/A,2,2,"[,]","No (Do you have COPD(eg bronchitis,emphysema)?)",1,COPD,"Do you have COPD(eg bronchitis,emphysema)"
-,CCC_091,CCC_091_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_091,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,COPD,"Do you have COPD(eg bronchitis,emphysema)"
-,epilepsy,epilepsy_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,1,Epilepsy,Epilepsy,N/A,1,1,"[,]",,0,,
-,epilepsy,epilepsy_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,0,No Epilepsy,No Epilepsy,N/A,2,2,"[,]",,1,,
-,EDUDR04,EDUDR04_cat4_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,0,Post-secondary graduate,Post-secondary Graduate,N/A,1,1,"[,]",Post-Sec Cert,1,Education,Highest level/education - respondent 4 levels - (D)
-,EDUDR04,EDUDR04_cat4_2,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,1,Some post-secondary,Some Post-secondary,N/A,2,2,"[,]",Some Post-Sec. Ed,0,Education,Highest level/education - respondent 4 levels - (D)
-,EDUDR04,EDUDR04_cat4_3,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,2,High school graduate,High School Graduate,N/A,3,3,"[,]",Sec. School G.,0,Education,Highest level/education - respondent 4 levels - (D)
-,EDUDR04,EDUDR04_cat4_4,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,3,Less than high school,Less than High School,N/A,4,4,"[,]",< Sec. School Gr,0,Education,Highest level/education - respondent 4 levels - (D)
-,EDUDR04,EDUDR04_cat4_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Education,Highest level/education - respondent 4 levels - (D)
+Lime question,variable,dummyVariable,variableType,catLabel,target,databaseStart,variableStart,variableStartType,numValidCat,catValues,,catLabelLong,units,low,high,interval,catStartLabel,reference,variableStartShortLabel,variableStartLabel
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,1,1,"[,]",12 To 14 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,2,2,"[,]",15 To 17 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,3,3,"[,]",18 To 19 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,4,4,"[,]",20 To 24 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,5,5,"[,]",25 To 29 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,6,6,"[,]",30 To 34 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,7,7,"[,]",35 To 39 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,8,8,"[,]",40 To 44 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,9,9,"[,]",45 To 49 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,10,10,"[,]",50 To 54 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,11,11,"[,]",55 To 59 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,12,12,"[,]",60 To 64 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,13,13,"[,]",65 To 69 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,14,14,"[,]",70 To 74 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,15,15,"[,]",75 To 79 Years,N/A,Age,Age - (G)
+,DHHGAGE_cont,N/A,cont,Age,CCHS_bllFlow,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,16,16,"[,]",80 Years or more,N/A,Age,Age - (G)
+,DHH_SEX,DHH_SEX_cat2_1,cat,Male,CCHS_bllFlow,PUMF 2013-2014,DHH_SEX,cat,2,1,,Male,N/A,1,1,"[,]",Male,N/A,Sex,Sex
+,DHH_SEX,DHH_SEX_cat2_2,cat,Female,CCHS_bllFlow,PUMF 2013-2014,DHH_SEX,cat,2,2,,Female,N/A,2,2,"[,]",Female,N/A,Sex,Sex
+,DHH_SEX,DHH_SEX_cat2_NA,cat,missing,CCHS_bllFlow,PUMF 2013-2014,DHH_SEX,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (6); don't know (7); refusal (8); not stated (9),N/A,Sex,Sex
+,packYears,N/A,cont,Packyears Smoking,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"TypeOfSmoker2 (derived), age_cont, agecidg, cigdayd, tsq_ds (function of: stpo and stpoy), cigdayf, cigdayo, dayocc, agec1, s100, SmokeDaily (function of: smk, evd, s100, cigdayf, cigdayd), AgeDailyStart, DailyCig, AgeDailyQuit",,,,,Packyears of smoking,,,,,,,,
+,SmokingStatus,SmokingStatus_cat6_1,cat,Daily smoker,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,1,,Daily smoker,N/A,,,,,,,
+,SmokingStatus,SmokingStatus_cat6_2,cat,Former daily current occasional smoker,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,2,,Former daily current occasional smoker,N/A,,,,,,,
+,SmokingStatus,SmokingStatus_cat6_3,cat,Never daily current occasional smoker,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,3,,Never daily current occasional smoker,N/A,,,,,,,
+,SmokingStatus,SmokingStatus_cat6_4,cat,Former daily current nonsmoker,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,4,,Former daily current nonsmoker,N/A,,,,,,,
+,SmokingStatus,SmokingStatus_cat6_5,cat,Never daily current nonsmoker (former occasional),derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,5,,Never daily current nonsmoker (former occasional),N/A,,,,,,,
+,SmokingStatus,SmokingStatus_cat6_6,cat,Never smoked,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"smk, evd, s100, wcig",cat,6,6,,Never smoked,N/A,,,,,,,
+,SMKDSTY,SMKDSTY_cat6_1,cat,Daily smoker,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,1,,Daily smoker,N/A,1,1,"[,]",Daily,0,Smoke status,Type of smoker - (D)
+,SMKDSTY,SMKDSTY_cat6_2,cat,Former daily current occasional smoker,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,2,,Former daily current occasional smoker,N/A,2,2,"[,]",Occassional,0,Smoke status,Type of smoker - (D)
+,SMKDSTY,SMKDSTY_cat6_3,cat,Never daily current occasional smoker,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,3,,Never daily current occasional smoker,N/A,3,3,"[,]",Always occassional,0,Smoke status,Type of smoker - (D)
+,SMKDSTY,SMKDSTY_cat6_4,cat,Former daily current nonsmoker,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,4,,Former daily current nonsmoker,N/A,4,4,"[,]",Former daily,0,Smoke status,Type of smoker - (D)
+,SMKDSTY,SMKDSTY_cat6_5,cat,Never daily current nonsmoker (former occasional),derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,5,,Never daily current nonsmoker (former occasional),N/A,5,5,"[,]",Former occasional,0,Smoke status,Type of smoker - (D)
+,SMKDSTY,SMKDSTY_cat6_6,cat,Never smoked,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,6,,Never smoked,N/A,6,6,"[,]",Never smoked,1,Smoke status,Type of smoker - (D)
+,SMKDSTY,SMKDSTY_cat6_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,SMKDSTY,cat,6,NA,,missing,N/A,96,99,"[,]",missing (.D); don't know (.E); refusal (.F); not stated (.G),0,Smoke status,Type of smoker - (D)
+,smokeSimp,smokeSimp_cat4_1,cat,Non-smoker,"derived_CCHS_bllFlow, DemPORT-PUMF",CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,0,,Non-smoker,N/A,1,1,"[,]",,,,
+,smokeSimp,smokeSimp_cat4_2,cat,Current smoker,"derived_CCHS_bllFlow, DemPORT-PUMF",CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,1,,Current smoker,N/A,2,2,"[,]",,,,
+,smokeSimp,smokeSimp_cat4_3,cat,Former smoker; quit 0 to 5 years or former occasional,"derived_CCHS_bllFlow, DemPORT-PUMF",CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,2,,Former smoker; quit 0 to 5 years or former occasional,N/A,3,3,"[,]",,,,
+,smokeSimp,smokeSimp_cat4_4,cat,Former smoker; quit 5 plus years,"derived_CCHS_bllFlow, DemPORT-PUMF",CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker2",cat,4,3,,Former smoker; quit 5 plus years,N/A,4,4,"[,]",,,,
+,smokeSimp,smokeSimp_cat4_NA,cat,missing,"derived_CCHS_bllFlow, DemPORT-PUMF",CCHS$; LimeSurvey; PUMF 2013-2014,"smoker, eversmoker, tsq_ds, TypeOfSmoker3",cat,4,NA,,missing,N/A,,,,,,,
+,AgeDailyStart,N/A,cont,Age Started Daily Smoking,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"?agecigd, agecigo",?,,?,,Age started daily smoking,,,,,,,,
+,DailyCig,N/A,cont,Cigarettes/day,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"?cigdayd, cigdayo, cigdayf",?,,?,,Cigarettes smoked a day (current and former daily smokers),,,,,,,,
+,PastDaily,,cat,Have you ever smoked daily?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,?evd,?,,?,,Have you ever smoked daily?,,,,,,,,
+,AgeDailyQuit,,cat,Age Quit Daily Smoking,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"?stpn, stpny, stpo, stpoy",?,,?,,Age quit daily smoking,,,,,,,,
+,PastSmoke,,cat,In the past did you smoke?,derived_CCHS_bllFlow,CCHS$; LimeSurvey,??,?,,?,,In the past did you smoke?,,,,,,,,
+,,,cat,,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"stpo, stpoy",?,,?,,,,,,,,,,
+Ever smoked a whole cigarette? (wcig),SMK_01B,SMK_01B_cat2_1,cat,yes,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,1,,yes,N/A,1,1,"[,]",Yes,N/A,Ever smoke,Ever smoked a whole cigarette
+,SMK_01B,SMK_01B_cat2_2,cat,no,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,2,,no,N/A,2,2,"[,]",No,N/A,Ever smoke,Ever smoked a whole cigarette
+,SMK_01B,SMK_01B_cat2_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,Ever smoke,Ever smoked a whole cigarette
+,SMK_01B,SMK_01B_cat2_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_01B,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Ever smoke,Ever smoked a whole cigarette
+At what age did you smoke your first whole cigarette? ,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,1,1,"[,]",5 To 11 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,2,2,"[,]",12 To 14 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,3,3,"[,]",15 To 17 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,4,4,"[,]",18 To 19 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,5,5,"[,]",20 To 24 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,6,6,"[,]",25 To 29 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,7,7,"[,]",30 To 34 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,8,8,"[,]",35 To 39 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,9,9,"[,]",40 To 44 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,10,10,"[,]",45 To 49 Years,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,agec1,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,converted categorical age,years,11,11,"[,]",50 Years or more,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,N/A,,not applicable,N/A,96,96,"[,]",Not applicable,N/A,agec1,Age smoked first whole cigarette - (G)
+,SMKG01C_cont,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMKG01C,cat,N/A,NA,,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,agec1,Age smoked first whole cigarette - (G)
+"In your lifetime, have you smoked a total of 100 or more cigarettes (about 4 packs)? (s100)",SMK_01A,SMK_01A_cat2_1,cat,yes,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,1,,yes,N/A,1,1,"[,]",Yes,N/A,s100,"In lifetime, smoked 100 or more cigarettes"
+,SMK_01A,SMK_01A_cat2_1,cat,no,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,1,,not applicable,N/A,2,2,"[,]",No,N/A,s100,"In lifetime, smoked 100 or more cigarettes"
+,SMK_01A,SMK_01A_cat2_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,s100,"In lifetime, smoked 100 or more cigarettes"
+,SMK_01A,SMK_01A_cat2_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_01A,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,s100,"In lifetime, smoked 100 or more cigarettes"
+"At the present time, do you smoke cigarettes daily, occasionally, or not at all? (smk)",SMK_202,SMK_202_cat3_1,cat,Daily,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,1,,Daily,N/A,1,1,"[,]",Daily,N/A,smk,Daily/occasional/not at all type of smoker
+,SMK_202,SMK_202_cat3_2,cat,Occasionally,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,2,,Occasionally,N/A,2,2,"[,]",Occasionally,N/A,smk,Daily/occasional/not at all type of smoker
+,SMK_202,SMK_202_cat3_3,cat,Not at all,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,3,,Not at all,N/A,3,3,"[,]",Not at all,N/A,smk,Daily/occasional/not at all type of smoker
+,SMK_202,SMK_202_cat3_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,smk,Daily/occasional/not at all type of smoker
+,SMK_202,SMK_202_cat3_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_202,cat,3,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,smk,Daily/occasional/not at all type of smoker
+At what age did you begin to smoke cigarettes daily? ,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,1,1,"[,]",5 To 11 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,2,2,"[,]",12 To 14 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,3,3,"[,]",15 To 17 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,4,4,"[,]",18 To 19 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,5,5,"[,]",20 To 24 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,6,6,"[,]",25 To 29 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,7,7,"[,]",30 To 34 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,8,8,"[,]",35 To 39 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,9,9,"[,]",40 To 44 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,10,10,"[,]",45 To 49 Years,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,agecigd,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,converted categorical age started smoking daily - daily smoker,years,11,11,"[,]",50 Years or more,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,N/A,,not applicable,N/A,96,96,"[,]",Not applicable,N/A,agecigd,Age started to smoke daily - (G)
+,SMKG203_cont,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMKG203,cat,N/A,NA,,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,agecigd,Age started to smoke daily - (G)
+How many cigarettes do you smoke each day now?,SMK_204,N/A,cont,Cigarettes/day - daily ,PoRT_limesurvey,PUMF 2013-2014,SMK_204,cont,N/A,N/A,,# of cigarettes smoked daily - daily smoker,cigarettes/day,1,80,"[,]",# of cigarettes smoked daily - daily smoker,N/A,cigdayd,# of cigarettes smoked daily - daily smoker
+,SMK_204,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_204,cont,N/A,N/A,,not applicable,N/A,996,996,"[,]",Not applicable,N/A,cigdayd,# of cigarettes smoked daily - daily smoker
+,SMK_204,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_204,cont,N/A,NA,,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,cigdayd,# of cigarettes smoked daily - daily smoker
+"On the days that you do smoke, how many cigarettes do you usually smoke?",SMK_05B,N/A,cont,Cigarettes/day - occasional ,PoRT_limesurvey,PUMF 2013-2014,SMK_05B,cont,N/A,N/A,,# of cigarettes smoked daily - daily smoker,cigarettes/day,1,40,"[,]",# of cigarettes smoked daily - occasional smoker,N/A,cigdayo,# of cigarettes smoked daily - occasional smoker
+,SMK_05B,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_05B,cont,N/A,N/A,,not applicable,N/A,996,996,"[,]",Not applicable,N/A,cigdayo,# of cigarettes smoked daily - occasional smoker
+,SMK_05B,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_05B,cont,N/A,NA,,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,cigdayo,# of cigarettes smoked daily - occasional smoker
+"In the past month, on how many days have you smoked one or more cigarettes?",SMK_05C,N/A,cont,Smoked one or more cigarettes,PoRT_limesurvey,PUMF 2013-2014,SMK_05C,cont,N/A,N/A,,"Past month, smoked 1 + cigarettes daily - occasional smoker",days,0,30,"[,]","Past month, smoked 1 + cigarettes daily - occasional smoker",N/A,dayocc,"Past month, smoked 1 + cigarettes daily - occasional smoker"
+,SMK_05C,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_05C,cont,N/A,N/A,,not applicable,N/A,96,96,"[,]",Not applicable,N/A,dayocc,"Past month, smoked 1 + cigarettes daily - occasional smoker"
+,SMK_05C,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_05C,cont,N/A,NA,,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,dayocc,"Past month, smoked 1 + cigarettes daily - occasional smoker"
+Have you ever smoked cigarettes daily? (evd),SMK_05D,SMK_05D_cat2_1,cat,yes,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,1,,Occasional smoker who previously smoked daily,N/A,1,1,"[,]",Yes,N/A,evd,Ever smoked cigarettes daily - occasional smoker
+,SMK_05D,SMK_05D_cat2_2,cat,no,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,2,,Occasional smoker never daily,N/A,2,2,"[,]",No,N/A,evd,Ever smoked cigarettes daily - occasional smoker
+,SMK_05D,SMK_05D_cat2_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,evd,Ever smoked cigarettes daily - occasional smoker
+,SMK_05D,SMK_05D_cat2_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_05D,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,evd,Ever smoked cigarettes daily - occasional smoker
+At what age did you begin to smoke cigarettes daily?,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,1,1,"[,]",5 To 11 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,2,2,"[,]",12 To 14 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,3,3,"[,]",15 To 17 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,4,4,"[,]",18 To 19 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,5,5,"[,]",20 To 24 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,6,6,"[,]",25 To 29 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,7,7,"[,]",30 To 34 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,8,8,"[,]",35 To 39 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,9,9,"[,]",40 To 44 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,10,10,"[,]",45 To 49 Years,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,agecigo,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,converted categorical age started smoking daily - occasional smoker,years,11,11,"[,]",50 Years or more,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,N/A,,not applicable,N/A,96,96,"[,]",Not applicable,N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+,SMKG207_cont,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMKG207,cat,N/A,NA,,missing,N/A,97,99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,agecigo,Age you started smoking daily - occasional smoker - (G)
+How many cigarettes did you usually smoke each day?,SMK_208,N/A,cont,Cigarettes/day - historic daily,PoRT_limesurvey,PUMF 2013-2014,SMK_208,cont,N/A,N/A,,Cigarettes/day - historic daily,cigarettes/day,1,99,"[,]",# of cigarettes smoke each day - occasional smoker,N/A,cigdayf,# of cigarettes smoke each day - occasional smoker
+,SMK_208,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_208,cont,N/A,N/A,,not applicable,N/A,996,996,"[,]",Not applicable,N/A,cigdayf,# of cigarettes smoke each day - occasional smoker
+,SMK_208,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_208,cont,N/A,NA,,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,cigdayf,# of cigarettes smoke each day - occasional smoker
+When did you stop smoking daily? (stpo),SMK_09A,SMK_09A_cat4_1,cat,<1 year,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,1,,Less than one year ago,years,1,1,"[,]",Less than 1 year,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
+,SMK_09A,SMK_09A_cat4_2,cat,1 to 2 years,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,2,,1 year to less than 2 years ago,years,2,2,"[,]",1 to <2 years,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
+,SMK_09A,SMK_09A_cat4_3,cat,2 to 3 years,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,3,,2 years to less than 3 years ago,years,3,3,"[,]",2 to <3 years,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
+,SMK_09A,SMK_09A_cat4_4,cat,≥3 years,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,4,,3 or more years ago,years,4,4,"[,]",3 years or more,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
+,SMK_09A,SMK_09A_cat4_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
+,SMK_09A,SMK_09A_cat4_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_09A,cat,4,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpo,When did you stop smoking daily - occasional smoker - (G)
+How many years ago was it?,SMKG09C_cont,N/A,cont,stpoy,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,,converted categorical years since stopped daily smoking - occasional smoker,years,1,1,"[,]",3 to 5 years,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
+,SMKG09C_cont,N/A,cont,stpoy,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,,converted categorical years since stopped daily smoking - occasional smoker,years,2,2,"[,]",6 to 10 years,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
+,SMKG09C_cont,N/A,cont,stpoy,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,,converted categorical years since stopped daily smoking - occasional smoker,years,3,3,"[,]",11 or more years,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
+,SMKG09C_cont,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
+,SMKG09C_cont,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMKG09C,cat,N/A,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpoy,Years since stopped smoking daily - occasional smoker - (G)
+When did you stop smoking? (stpn),SMK_06A,SMK_06A_cat4_1,cat,<1 year,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,1,,Less than one year ago,years,1,1,"[,]",Less than one year ,N/A,stpn,When did you stop smoking - non-smoker
+,SMK_06A,SMK_06A_cat4_2,cat,1 to 2 years,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,2,,1 year to less than 2 years ago,years,2,2,"[,]",1 year to < 2 years,N/A,stpn,When did you stop smoking - non-smoker
+,SMK_06A,SMK_06A_cat4_3,cat,2 to 3 years,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,3,,2 years to less than 3 years ago,years,3,3,"[,]",2 years to < 3 years,N/A,stpn,When did you stop smoking - non-smoker
+,SMK_06A,SMK_06A_cat4_4,cat,≥3 years,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,4,,3 or more years ago,years,4,4,"[,]",3 or more years,N/A,stpn,When did you stop smoking - non-smoker
+,SMK_06A,SMK_06A_cat4_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpn,When did you stop smoking - non-smoker
+,SMK_06A,SMK_06A_cat4_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,SMK_06A,cat,4,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpn,When did you stop smoking - non-smoker
+How many years ago was it?,SMKG06C_cont,N/A,cont,stpny,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,,converted categorical years since stopped smoking - non-smoker,years,1,1,"[,]",3 to 5 years,N/A,stpny,# years stopped smoking - non-smoker - (G)
+,SMKG06C_cont,N/A,cont,stpny,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,,converted categorical years since stopped smoking - non-smoker,years,2,2,"[,]",6 to 10 years,N/A,stpny,# years stopped smoking - non-smoker - (G)
+,SMKG06C_cont,N/A,cont,stpny,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,,converted categorical years since stopped smoking - non-smoker,years,3,3,"[,]",11 or more years,N/A,stpny,# years stopped smoking - non-smoker - (G)
+,SMKG06C_cont,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,stpny,# years stopped smoking - non-smoker - (G)
+,SMKG06C_cont,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,SMKG06C,cat,N/A,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,stpny,# years stopped smoking - non-smoker - (G)
+,SMK_10,N/A,,yes,,PUMF 2013-2014,SMK_10,cat,2,1,,was when stopped smoking - non-smoker,N/A,1,1,"[,]",Yes,N/A,,Was when stopped smoking - non-smoker
+,SMK_10,N/A,,no,,PUMF 2013-2014,SMK_10,cat,2,0,,was not when stopped smoking - non-smoker,N/A,2,2,"[,]",No,N/A,,Was when stopped smoking - non-smoker
+,SMK_10,N/A,,not applicable,,PUMF 2013-2014,SMK_10,cat,2,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,,Was when stopped smoking - non-smoker
+,SMK_10,N/A,,missing,,PUMF 2013-2014,SMK_10,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,,Was when stopped smoking - non-smoker
+,SMK_10A,N/A,,<1 year,,PUMF 2013-2014,SMK_10A,cat,4,1,,Less than one year ago,years,1,1,"[,]",Less than one year ,N/A,,Stopped smoking completely - non-smoker
+,SMK_10A,N/A,,1 to 2 years,,PUMF 2013-2014,SMK_10A,cat,4,2,,1 year to less than 2 years ago,years,2,2,"[,]",1 year to < 2 years,N/A,,Stopped smoking completely - non-smoker
+,SMK_10A,N/A,,2 to 3 years,,PUMF 2013-2014,SMK_10A,cat,4,3,,2 years to less than 3 years ago,years,3,3,"[,]",2 years to < 3 years,N/A,,Stopped smoking completely - non-smoker
+,SMK_10A,N/A,,≥3 years,,PUMF 2013-2014,SMK_10A,cat,4,4,,3 or more years ago,years,4,4,"[,]",3 or more years,N/A,,Stopped smoking completely - non-smoker
+,SMK_10A,N/A,,not applicable,,PUMF 2013-2014,SMK_10A,cat,4,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,,Stopped smoking completely - non-smoker
+,SMK_10A,N/A,,missing,,PUMF 2013-2014,SMK_10A,cat,4,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,,Stopped smoking completely - non-smoker
+,SMKG10C,N/A,,4,,PUMF 2013-2014,SMKG10C,cat,3,1,,Converted categorical years since stopped smoking - non-smoker,years,1,1,"[,]",3 to 5 years,N/A,,# years stopped smoking - non-smoker - (G)
+,SMKG10C,N/A,,8,,PUMF 2013-2014,SMKG10C,cat,3,2,,Converted categorical years since stopped smoking - non-smoker,years,2,2,"[,]",6 to 10 years,N/A,,# years stopped smoking - non-smoker - (G)
+,SMKG10C,N/A,,13,,PUMF 2013-2014,SMKG10C,cat,3,3,,Converted categorical years since stopped smoking - non-smoker,years,3,3,"[,]",11 or more years,N/A,,# years stopped smoking - non-smoker - (G)
+,SMKG10C,N/A,,not applicable,,PUMF 2013-2014,SMKG10C,cat,3,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,,# years stopped smoking - non-smoker - (G)
+,SMKG10C,N/A,,missing,,PUMF 2013-2014,SMKG10C,cat,3,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,,# years stopped smoking - non-smoker - (G)
+,ALWDWKY,N/A,cont,drinks/week,derived_CCHS_bllFlow,PUMF 2013-2014,ALWDWKY,cont,N/A,N/A,,drinks/week,drinks/week,0,264,"[,]",,N/A,drinks/week,Weekly consumption
+,ALWDWKY,N/A,cont,not applicable,derived_CCHS_bllFlow,PUMF 2013-2014,ALWDWKY,cont,N/A,N/A,,not applicable,N/A,996,996,"[,]",Not applicable,N/A,drinks/week,Weekly consumption
+,ALWDWKY,N/A,cont,missing,derived_CCHS_bllFlow,PUMF 2013-2014,ALWDWKY,cont,N/A,NA,,missing,N/A,997,999,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,drinks/week,Weekly consumption
+,formerDrinker,formerDrinker_cat2_1,cat,yes,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"dany, d12, evdk",cat,2,1,,Former drinker,N/A,1,1,"[,]",,,,
+,formerDrinker,formerDrinker_cat2_0,cat,no,derived_CCHS_bllFlow,CCHS$; LimeSurvey,"dany, d12, evdk",cat,2,0,,Not a former drinker,N/A,0,0,"[,]",,,,
+"Thinking back over the past week, did you have a drink of beer, wine, liquor or any other alcoholic beverage? (dany)",ALW_1,ALW_1_cat2_1,cat,yes,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,1,,alcohol in the past week,N/A,1,1,"[,]","Past week, had any alcohol",N/A,dany,"Past week, had any alcohol"
+,ALW_1,ALW_1_cat2_2,cat,no,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,2,,no alcohol in past week,N/A,2,2,"[,]","Past week, had any alcohol",N/A,dany,"Past week, had any alcohol"
+,ALW_1,ALW_1_cat2_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,dany,"Past week, had any alcohol"
+,ALW_1,ALW_1_cat2_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,ALW_1,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,dany,"Past week, had any alcohol"
+"During the past 12 months, have you had a drink of beer, wine, liquor or any other alcoholic beverage? (d12)",ALC_1,ALC_1_cat2_1,cat,yes,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,1,,alcohol in the past year,N/A,1,1,"[,]","Past year, have you drank alcohol",N/A,d12,"Past year, have you drank alcohol"
+,ALC_1,ALC_1_cat2_2,cat,no,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,2,,no alcohol in past week,N/A,2,2,"[,]","Past year, have you drank alcohol",N/A,d12,"Past year, have you drank alcohol"
+,ALC_1,ALC_1_cat2_N/A,cat,not applicable,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,N/A,,not applicable,N/A,6,6,"[,]",Not applicable,N/A,d12,"Past year, have you drank alcohol"
+,ALC_1,ALC_1_cat2_NA,cat,missing,PoRT_limesurvey,PUMF 2013-2014,ALC_1,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,d12,"Past year, have you drank alcohol"
+Have you ever had a drink? (evdk),formerDrinker,formerDrinker_cat2_1,cat,Former drinker,PoRT_limesurvey,PUMF 2013-2014,N/A,cat,2,1,,Former drinker,,,,,,,,
+,formerDrinker,formerDrinker_cat2_0,cat,Not former drinker,PoRT_limesurvey,PUMF 2013-2014,N/A,cat,2,0,,Not former drinker,,,,,,,,
+,dietScore2,N/A,cont,Diet,derived_CCHS_bllFlow,PUMF 2013-2014,"FVCDJUI, FVCDFRU, FVCDSAL, FVCDPOT, FVCDCAR, FVCDVEG",cont,N/A,N/A,,Simplified diet score (z-transformed),N/A,,,,,N/A,Diet,Simplified diet score
+"How often do you usually drink fruit juices such as orange, grapefruit or tomato?",FVCDJUI,N/A,cont,Daily juice,PoRT_limesurvey,PUMF 2013-2014,FVCDJUI,cont,N/A,N/A,,Daily juice,N/A,0,20,"[,]",Daily consumption - fruit juice - (D),N/A,Daily juice,Daily consumption - fruit juice - (D)
+,FVCDJUI,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,FVCDJUI,cont,N/A,N/A,,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily juice,Daily consumption - fruit juice - (D)
+,FVCDJUI,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,FVCDJUI,cont,N/A,NA,,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily juice,Daily consumption - fruit juice - (D)
+"Not counting juice, how often do you eat fruit?",FVCDFRU,N/A,cont,Daily fruit,PoRT_limesurvey,PUMF 2013-2014,FVCDFRU,cont,N/A,N/A,,Daily fruit,N/A,0,20,"[,]",Daily consumption - fruit - (D),N/A,Daily fruit,Daily consumption - fruit - (D)
+,FVCDFRU,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,FVCDFRU,cont,N/A,N/A,,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily fruit,Daily consumption - fruit - (D)
+,FVCDFRU,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,FVCDFRU,cont,N/A,NA,,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily fruit,Daily consumption - fruit - (D)
+How often do you (usually) eat green salad?,FVCDSAL,N/A,cont,Daily salad,PoRT_limesurvey,PUMF 2013-2014,FVCDSAL,cont,N/A,N/A,,Daily salad,N/A,0,14,"[,]",Daily consumption - green salad - (D),N/A,Daily salad,Daily consumption - green salad - (D)
+,FVCDSAL,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,FVCDSAL,cont,N/A,N/A,,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily salad,Daily consumption - green salad - (D)
+,FVCDSAL,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,FVCDSAL,cont,N/A,NA,,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily salad,Daily consumption - green salad - (D)
+"How often do you usually eat potatoes, not including french fries, fried potatoes or potato chips?",FVCDPOT,N/A,cont,Daily potatoes,PoRT_limesurvey,PUMF 2013-2014,FVCDPOT,cont,N/A,N/A,,Daily potatoes,N/A,0,20,"[,]",Daily consumption - potatoes - (D),N/A,Daily potatoes,Daily consumption - potatoes - (D)
+,FVCDPOT,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,FVCDPOT,cont,N/A,N/A,,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily potatoes,Daily consumption - potatoes - (D)
+,FVCDPOT,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,FVCDPOT,cont,N/A,NA,,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily potatoes,Daily consumption - potatoes - (D)
+How often do you usually eat carrots?,FVCDCAR,N/A,cont,Daily carrots,PoRT_limesurvey,PUMF 2013-2014,FVCDCAR,cont,N/A,N/A,,Daily carrots,N/A,0,13,"[,]",Daily consumption - carrots - (D),N/A,Daily carrots,Daily consumption - carrots - (D)
+,FVCDCAR,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,FVCDCAR,cont,N/A,N/A,,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily carrots,Daily consumption - carrots - (D)
+,FVCDCAR,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,FVCDCAR,cont,N/A,NA,,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily carrots,Daily consumption - carrots - (D)
+"Not counting carrots, potatoes or salad, how many servings of other vegetables do you usually eat?",FVCDVEG,N/A,cont,Daily other vegetables,PoRT_limesurvey,PUMF 2013-2014,FVCDVEG,cont,N/A,N/A,,Daily other vegetables,N/A,0,20,"[,]",Daily consumption other vegetables - (D),N/A,Daily other vegetables,Daily consumption other vegetables - (D)
+,FVCDVEG,N/A,cont,not applicable,PoRT_limesurvey,PUMF 2013-2014,FVCDVEG,cont,N/A,N/A,,not applicable,N/A,999.6,999.6,"[,]",Not applicable,N/A,Daily other vegetables,Daily consumption other vegetables - (D)
+,FVCDVEG,N/A,cont,missing,PoRT_limesurvey,PUMF 2013-2014,FVCDVEG,cont,N/A,NA,,missing,N/A,999.7,999.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Daily other vegetables,Daily consumption other vegetables - (D)
+,PACDEE,N/A,cont,Physical Activity,derived_CCHS_bllFlow,PUMF 2013-2014,PACDEE,cont,N/A,N/A,,Average daily leisure time energy expenditure in METs,,0,42.2,"[,]",Daily energy expenditure - (D),N/A,Physical Activity,Daily energy expenditure - (D)
+,PACDEE,N/A,cont,not applicable,derived_CCHS_bllFlow,PUMF 2013-2014,PACDEE,cont,N/A,N/A,,not applicable,N/A,99.6,99.6,"[,]",Not applicable,N/A,Physical Activity,Daily energy expenditure - (D)
+,PACDEE,N/A,cont,missing,derived_CCHS_bllFlow,PUMF 2013-2014,PACDEE,cont,N/A,NA,,missing,N/A,99.7,99.9,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,Physical Activity,Daily energy expenditure - (D)
+,HWTGBMI,N/A,cont,BMI,derived_CCHS_bllFlow,PUMF 2013-2014,HWTGBMI,cont,N/A,N/A,,Body Mass Index,kg/m2,12,56.73,"[,]","BMI / self-report - (D,G)",N/A,BMI,"BMI / self-report - (D,G)"
+,HWTGBMI,N/A,cont,not applicable,derived_CCHS_bllFlow,PUMF 2013-2014,HWTGBMI,cont,N/A,N/A,,not applicable,N/A,999.96,999.96,"[,]",Not applicable,N/A,BMI,"BMI / self-report - (D,G)"
+,HWTGBMI,N/A,cont,missing,derived_CCHS_bllFlow,PUMF 2013-2014,HWTGBMI,cont,N/A,NA,,missing,N/A,999.97,999.99,"[,]",don't know (.E); refusal (.F); not stated (.G),N/A,BMI,"BMI / self-report - (D,G)"
+,CCC_131,CCC_131_cat2_1,cat,Cancer,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_131,cat,2,1,,Cancer,N/A,1,1,"[,]",Yes (Do you have cancer?),0,Cancer,Do you have cancer
+,CCC_131,CCC_131_cat2_0,cat,No Cancer,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_131,cat,2,0,,No Cancer,N/A,0,0,"[,]",No (Do you have cancer?),1,Cancer,Do you have cancer
+,CCC_131,CCC_131_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_131,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Cancer,Do you have cancer
+,CCC_101,CCC_101_cat2_1,cat,Diabetes,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_101,cat,2,1,,Diabetes,N/A,1,1,"[,]",Yes (Do you have diabetes?),0,Diabetes,Do you have diabetes
+,CCC_101,CCC_101_cat2_0,cat,No Diabetes,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_101,cat,2,0,,No Diabetes,N/A,2,2,"[,]",No (Do you have diabetes?),1,Diabetes,Do you have diabetes
+,CCC_101,CCC_101_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_101,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Diabetes,Do you have diabetes
+,CCC_121,CCC_121_cat2_1,cat,Heart Disease,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_121,cat,2,1,,Heart Disease,N/A,1,1,"[,]",Yes (Do you have heart disease?),0,Heart Disease,Do you have heart disease
+,CCC_121,CCC_121_cat2_0,cat,No Heart Disease,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_121,cat,2,0,,No Heart Disease,N/A,2,2,"[,]",No (Do you have heart disease?),1,Heart Disease,Do you have heart disease
+,CCC_121,CCC_121_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_121,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Heart Disease,Do you have heart disease
+,CCC_151,CCC_151_cat2_1,cat,Stroke,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_151,cat,2,1,,Stroke,N/A,1,1,"[,]",Yes (Do you suffer from the effects of stroke?),0,Stroke,Do you suffer from effects of stroke
+,CCC_151,CCC_151_cat2_0,cat,No Stroke,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_151,cat,2,0,,No Stroke,N/A,2,2,"[,]",No (Do you suffer from the effects of stroke?),1,Stroke,Do you suffer from effects of stroke
+,CCC_151,CCC_151_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_151,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Stroke,Do you suffer from effects of stroke
+,CCC_071,CCC_071_cat2_1,cat,Hypertension,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_071,cat,2,1,,Hypertension,N/A,1,1,"[,]",Yes (Do you have high blood pressure?),0,Hypertension,Do you have high blood pressure
+,CCC_071,CCC_071_cat2_0,cat,No Hypertension,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_071,cat,2,0,,No Hypertension,N/A,2,2,"[,]",No (Do you have high blood pressure?),1,Hypertension,Do you have high blood pressure
+,CCC_071,CCC_071_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_071,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Hypertension,Do you have high blood pressure
+,CCC_280,CCC_280_cat2_1,cat,Has a mood disorder,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_280,cat,2,1,,Has a mood disorder,N/A,1,1,"[,]",Yes (Do you have a mood disorder?),0,Mood disorder,Do you have a mood disorder
+,CCC_280,CCC_280_cat2_0,cat,Does not have a mood disorder,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_280,cat,2,0,,Does not have a mood disorder,N/A,2,2,"[,]",No (Do you have a mood disorder?),1,Mood disorder,Do you have a mood disorder
+,CCC_280,CCC_280_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_280,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Mood disorder,Do you have a mood disorder
+,dementia,dementia_cat2_1,cat,Dementia,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,1,,Dementia,N/A,1,1,"[,]",,0,,
+,dementia,dementia_cat2_0,cat,No Dementia,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,0,,No Dementia,N/A,2,2,"[,]",,1,,
+,CCC_091,CCC_091_cat2_1,cat,COPD,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_091,cat,2,1,,COPD,N/A,1,1,"[,]","Yes (Do you have COPD(eg bronchitis,emphysema)?)",0,COPD,"Do you have COPD(eg bronchitis,emphysema)"
+,CCC_091,CCC_091_cat2_0,cat,No COPD,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_091,cat,2,0,,No COPD,N/A,2,2,"[,]","No (Do you have COPD(eg bronchitis,emphysema)?)",1,COPD,"Do you have COPD(eg bronchitis,emphysema)"
+,CCC_091,CCC_091_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,CCC_091,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,COPD,"Do you have COPD(eg bronchitis,emphysema)"
+,epilepsy,epilepsy_cat2_1,cat,Epilepsy,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,1,,Epilepsy,N/A,1,1,"[,]",,0,,
+,epilepsy,epilepsy_cat2_0,cat,No Epilepsy,derived_CCHS_bllFlow,PUMF 2013-2014,N/A,cat,2,0,,No Epilepsy,N/A,2,2,"[,]",,1,,
+,EDUDR04,EDUDR04_cat4_1,cat,Post-secondary graduate,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,0,,Post-secondary Graduate,N/A,1,1,"[,]",Post-Sec Cert,1,Education,Highest level/education - respondent 4 levels - (D)
+,EDUDR04,EDUDR04_cat4_2,cat,Some post-secondary,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,1,,Some Post-secondary,N/A,2,2,"[,]",Some Post-Sec. Ed,0,Education,Highest level/education - respondent 4 levels - (D)
+,EDUDR04,EDUDR04_cat4_3,cat,High school graduate,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,2,,High School Graduate,N/A,3,3,"[,]",Sec. School G.,0,Education,Highest level/education - respondent 4 levels - (D)
+,EDUDR04,EDUDR04_cat4_4,cat,Less than high school,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,3,,Less than High School,N/A,4,4,"[,]",< Sec. School Gr,0,Education,Highest level/education - respondent 4 levels - (D)
+,EDUDR04,EDUDR04_cat4_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,EDUDR04,cat,4,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Education,Highest level/education - respondent 4 levels - (D)
 ,Ethnicity_cat6,Ethnicity_cat6_1,cat,,,CCHS$; LimeSurvey,,cat,,,,,,,,,,,,
 ,Ethnicity_cat6,Ethnicity_cat6_2,cat,,,CCHS$; LimeSurvey,,cat,,,,,,,,,,,,
 ,Ethnicity_cat6,Ethnicity_cat6_3,cat,,,CCHS$; LimeSurvey,,cat,,,,,,,,,,,,
 ,Ethnicity_cat6,Ethnicity_cat6_4,cat,,,CCHS$; LimeSurvey,,cat,,,,,,,,,,,,
 ,Ethnicity_cat6,Ethnicity_cat6_5,cat,,,CCHS$; LimeSurvey,,cat,,,,,,,,,,,,
 ,Ethnicity_cat6,Ethnicity_cat6_6,cat,,,CCHS$; LimeSurvey,,cat,,,,,,,,,,,,
-,SDCGCGT,SDCGCGT_cat2_0,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGCGT,cat,2,0,White,White,N/A,0,0,"[,]",White,1,Ethnicity,"Cultural or racial origin - (D, G)"
-,SDCGCGT,SDCGCGT_cat2_1,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGCGT,cat,2,1,Non-white,Non-white,N/A,1,1,"[,]",Visible minority,0,Ethnicity,"Cultural or racial origin - (D, G)"
-,SDCGCGT,SDCGCGT_cat2_NA,cat,Map1_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGCGT,cat,2,NA,missing,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Ethnicity,"Cultural or racial origin - (D, G)"
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,Time in Canada,0 to 9 years,years,1,1,"[,]",0 to 9 years,,Time in Canada,"Length/time in Canada since immigration - (D,G)"
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,Time in Canada,10 or more years,years,2,2,"[,]",10 or more years,,Time in Canada,"Length/time in Canada since immigration - (D,G)"
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,Time in Canada,Not applicable,N/A,6,6,"[,]",Not applicable,,Time in Canada,"Length/time in Canada since immigration - (D,G)"
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,Time in Canada,don't know (.E); refusal (.F); not stated (.G),N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),,Time in Canada,"Length/time in Canada since immigration - (D,G)"
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,1,Yes,Immigrant,N/A,1,1,"[,]",Immigrant,0,Immigrant,Immigrant - (F)
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,0,No,Non-immigrant,N/A,2,7,"[,]",Non-immigrant,1,Immigrant,Immigrant - (F)
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,N/A,Not applicable,Not applicable,N/A,6,6,"[,]",Not applicable,0,Immigrant,Immigrant - (F)
-,immigPct,N/A,cont,Map2_1,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,NA,missing,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),0,Immigrant,Immigrant - (F)
-,depInd,depInd_cat3_1,cat,look-up table,Postal code look-up table,PUMF 2013-2014,N/A,cat,3,0,Low deprivation,Low deprivation,N/A,1,1,"[,]",,,,
-,depInd,depInd_cat3_2,cat,look-up table,Postal code look-up table,PUMF 2013-2014,N/A,cat,3,1,Moderate deprivation,Moderate deprivation,N/A,2,2,"[,]",,,,
-,depInd,depInd_cat3_3,cat,look-up table,Postal code look-up table,PUMF 2013-2014,N/A,cat,3,2,High deprivation,High deprivation,N/A,3,3,"[,]",,,betacoefficient,HR
-,WTS_M,N/A,cont,,,PUMF 2013-2014,WTS_M,cont,N/A,N/A,Weights - Master,Weights - Master,N/A,1.07,13166.31,"[,]",,,,
+,SDCGCGT,SDCGCGT_cat2_0,cat,White,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGCGT,cat,2,0,,White,N/A,0,0,"[,]",White,1,Ethnicity,"Cultural or racial origin - (D, G)"
+,SDCGCGT,SDCGCGT_cat2_1,cat,Non-white,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGCGT,cat,2,1,,Non-white,N/A,1,1,"[,]",Visible minority,0,Ethnicity,"Cultural or racial origin - (D, G)"
+,SDCGCGT,SDCGCGT_cat2_NA,cat,missing,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGCGT,cat,2,NA,,missing,N/A,6,9,"[,]",not applicable (.D); don't know (.E); refusal (.F); not stated (.G),0,Ethnicity,"Cultural or racial origin - (D, G)"
+,immigPct,N/A,cont,Time in Canada,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,,0 to 9 years,years,1,1,"[,]",0 to 9 years,,Time in Canada,"Length/time in Canada since immigration - (D,G)"
+,immigPct,N/A,cont,Time in Canada,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,,10 or more years,years,2,2,"[,]",10 or more years,,Time in Canada,"Length/time in Canada since immigration - (D,G)"
+,immigPct,N/A,cont,Time in Canada,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,,Not applicable,N/A,6,6,"[,]",Not applicable,,Time in Canada,"Length/time in Canada since immigration - (D,G)"
+,immigPct,N/A,cont,Time in Canada,derived_CCHS_bllFlow,PUMF 2013-2014,SDCGRES,cat,N/A,N/A,,don't know (.E); refusal (.F); not stated (.G),N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),,Time in Canada,"Length/time in Canada since immigration - (D,G)"
+,immigPct,N/A,cont,Yes,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,1,,Immigrant,N/A,1,1,"[,]",Immigrant,0,Immigrant,Immigrant - (F)
+,immigPct,N/A,cont,No,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,0,,Non-immigrant,N/A,2,7,"[,]",Non-immigrant,1,Immigrant,Immigrant - (F)
+,immigPct,N/A,cont,Not applicable,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,N/A,,Not applicable,N/A,6,6,"[,]",Not applicable,0,Immigrant,Immigrant - (F)
+,immigPct,N/A,cont,missing,derived_CCHS_bllFlow,PUMF 2013-2014,SDCFIMM,cat,2,NA,,missing,N/A,7,9,"[,]",don't know (.E); refusal (.F); not stated (.G),0,Immigrant,Immigrant - (F)
+,depInd,depInd_cat3_1,cat,Low deprivation,Postal code look-up table,PUMF 2013-2014,N/A,cat,3,0,,Low deprivation,N/A,1,1,"[,]",,,,
+,depInd,depInd_cat3_2,cat,Moderate deprivation,Postal code look-up table,PUMF 2013-2014,N/A,cat,3,1,,Moderate deprivation,N/A,2,2,"[,]",,,,
+,depInd,depInd_cat3_3,cat,High deprivation,Postal code look-up table,PUMF 2013-2014,N/A,cat,3,2,,High deprivation,N/A,3,3,"[,]",,,betacoefficient,HR
+,WTS_M,N/A,cont,Weights - Master,,PUMF 2013-2014,WTS_M,cont,N/A,N/A,,Weights - Master,N/A,1.07,13166.31,"[,]",,,,
 ,,,,,,,DrinksLastWeek,cont,,0,,,drinks/week,0,3.676470588,"[,]",>0 to <= 50 grams/week,,0,1
 ,,,,,,,DrinksLastWeek,cont,,,,,drinks/week,3.676470588,7.352941176,"(,]",>50 to <= 100 grams/week,,-0.009804,0.990243902
 ,,,,,,,DrinksLastWeek,cont,,,,,drinks/week,7.352941176,11.02941176,"(,]",>100 to <= 150 grams/week,,0.02051973,1.020731707
 ,,,,,,,DrinksLastWeek,cont,,,,,drinks/week,11.02941176,18.38235294,"(,]",>150 to <= 250 grams/week,,0.038282187,1.03902439
 ,,,,,,,DrinksLastWeek,cont,,,,,drinks/week,18.38235294,25.73529412,"(,]",>250 to <= 350 grams/week,,0.184352014,1.202439024
 ,,,,,,,DrinksLastWeek,cont,,,,,drinks/week,25.73529412,N/A,"(,]",>350 grams/week,,0.412109651,1.51
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,1,1,"[,]",12 To 14 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,2,2,"[,]",15 To 17 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,3,3,"[,]",18 To 19 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,4,4,"[,]",20 To 24 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,5,5,"[,]",25 To 29 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,6,6,"[,]",30 To 34 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,7,7,"[,]",35 To 39 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,8,8,"[,]",40 To 44 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,9,9,"[,]",45 To 49 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,10,10,"[,]",50 To 54 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,11,11,"[,]",55 To 59 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,12,12,"[,]",60 To 64 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,13,13,"[,]",65 To 69 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,14,14,"[,]",70 To 74 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,15,15,"[,]",75 To 79 Years,N/A,Age,Age - (G)
+,Age_cont,N/A,cont,Age,DemPORT-PUMF,PUMF 2013-2014,DHHGAGE,cat,N/A,N/A,,converted categorical age,years,16,16,"[,]",80 Years or more,N/A,Age,Age - (G)
+,Ethnicity_cat2,Ethnicity_cat2_1,cat,Non White,DemPORT-PUMF,PUMF 2013-2014,SDCGCGT,cat,N/A,N/A,,,,,,,,,,
+,Ethnicity_cat2,Ethnicity_cat2_2,cat,White,DemPORT-PUMF,PUMF 2013-2014,SDCGCGT,cat,N/A,N/A,,,,,,,,,,
+,Ethnicity_cat3,Ethnicity_cat2_3,cat,missing,DemPORT-PUMF,PUMF 2013-2015,SDCGCGT,cat,N/A,N/A,,,,,,,,,,
+,Multilingual_cat2,Multilingual_cat2_1,cat,Multilingual,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Multilingual_cat2,Multilingual_cat2_2,cat,Not Multilingual,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Multilingual_cat3,Multilingual_cat2_3,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Stress_cat5,Stress_cat5_1,cat,Stress Not Very,DemPORT-PUMF,PUMF 2013-2014,GEN_07,cat,N/A,N/A,,,,,,,,,,
+,Stress_cat5,Stress_cat5_2,cat,Stress A Bit,DemPORT-PUMF,PUMF 2013-2014,GEN_07,cat,N/A,N/A,,,,,,,,,,
+,Stress_cat5,Stress_cat5_3,cat,Stress Quite,DemPORT-PUMF,PUMF 2013-2014,GEN_07,cat,N/A,N/A,,,,,,,,,,
+,Stress_cat5,Stress_cat5_4,cat,Stress Extremely,DemPORT-PUMF,PUMF 2013-2014,GEN_07,cat,N/A,N/A,,,,,,,,,,
+,Stress_cat5,Stress_cat5_5,cat,Stress Not at All,DemPORT-PUMF,PUMF 2013-2014,GEN_07,cat,N/A,N/A,,,,,,,,,,
+,Stress_cat5,Stress_cat5_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,GEN_08,cat,N/A,N/A,,,,,,,,,,
+,SRHealth_cat5,SRHealth_cat5_1,cat,Health Poor,DemPORT-PUMF,PUMF 2013-2014,GEN_01,cat,N/A,N/A,,,,,,,,,,
+,SRHealth_cat5,SRHealth_cat5_2,cat,Health Fair,DemPORT-PUMF,PUMF 2013-2014,GEN_01,cat,N/A,N/A,,,,,,,,,,
+,SRHealth_cat5,SRHealth_cat5_3,cat,Health Good,DemPORT-PUMF,PUMF 2013-2014,GEN_01,cat,N/A,N/A,,,,,,,,,,
+,SRHealth_cat5,SRHealth_cat5_4,cat,Health Very Good,DemPORT-PUMF,PUMF 2013-2014,GEN_01,cat,N/A,N/A,,,,,,,,,,
+,SRHealth_cat5,SRHealth_cat5_5,cat,Health Excellent,DemPORT-PUMF,PUMF 2013-2014,GEN_01,cat,N/A,N/A,,,,,,,,,,
+,SRHealth_cat5,SRHealth_cat_NA,cat,missing,Health Excellent,Health Excellent,Health Excellent,Health Excellent,Health Excellent,,,,,,,,,,,
+,PackYears,N/A,cont,Packyears Smoking,DemPORT-PUMF,PUMF 2013-2014,"TypeOfSmoker2 (derived), age_cont, agecidg, cigdayd, tsq_ds (function of: stpo and stpoy), cigdayf, cigdayo, dayocc, agec1, s100, SmokeDaily (function of: smk, evd, s100, cigdayf, cigdayd), AgeDailyStart, DailyCig, AgeDailyQuit",,,,,Packyears of smoking,,,,,,,,
+,PackYears,N/A,cont,missing,DemPORT-PUMF,PUMF 2013-2015,"TypeOfSmoker2 (derived), age_cont, agecidg, cigdayd, tsq_ds (function of: stpo and stpoy), cigdayf, cigdayo, dayocc, agec1, s100, SmokeDaily (function of: smk, evd, s100, cigdayf, cigdayd), AgeDailyStart, DailyCig, AgeDailyQuit",,,,,Packyears of smoking,,,,,,,,
+,DrinksLastWeek,N/A,cont,Drinks last week,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,DrinksLastWeek,N/A,cont,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,FruitVeg,N/A,cont,Daily fruit and veg,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,FruitVeg,N/A,cont,Daily fruit and veg,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Potato,N/A,cont,Daily Potto,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Potto,N/A,cont,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Juice,N/A,cont,Daily Juice,DemPORT-PUMF,PUMF 2013-2016,,,,,,,,,,,,,,
+,Juice,N/A,cont,missing,DemPORT-PUMF,PUMF 2013-2017,,,,,,,,,,,,,,
+,PhysicalActivity,N/A,cont,Physical Activity,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,PhysicalActivity,N/A,cont,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,COPD_cat2,COPD_cat2_1,cat,COPD,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,COPD_cat2,COPD_cat2_2,cat,No COPD,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,COPD_cat2,COPD_cat2_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,HeartDis_cat2,HeartDis_cat2_1,cat,Heart Disease,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,HeartDis_cat2,HeartDis_cat2_2,cat,No Heart Disease,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,HeartDis_cat2,HeartDis_cat2_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Stroke_cat2,Stroke_cat2_1,cat,Stroke,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Stroke_cat2,Stroke_cat2_2,cat,No Stroke,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Stroke_cat2,Stroke_cat2_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Diabetes_cat2,Diabetes_cat2_1,cat,Diabetes,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Diabetes_cat2,Diabetes_cat2_2,cat,No Diabetes,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Diabetes_cat2,Diabetes_cat2_NA,,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Mood_cat2,Mood_cat2_1,cat,Mood Disorder,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Mood_cat2,Mood_cat2_2,cat,No Mood Disorder,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Mood_cat2,Mood_cat2_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Hypertension_cat2,Hypertension_cat2_1,cat,Hypertension,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Hypertension_cat2,Hypertension_cat2_2,cat,No Hypertension,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,Hypertension_cat2,Hypertension_cat2_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,BMI,N/A,cont,BMI,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,BMI,N/A,cont,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_1,cat,Need help with 1 activity,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_2,cat,Need help with 2 activities,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_3,cat,Need help with 3 activities,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_4,cat,Need Help with 4 activities,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_5,cat,Need help with 5 activities,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_6,cat,Need help with 6 activities,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_7,cat,Need help with 7 activities,DemPORT-PUMF,PUMF 2013-2014,,,,,,,,,,,,,,
+,NeedHelp_cat7,NeedHelp_cat7_NA,cat,missing,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,MS_cat3,MS_cat3_1,cat,Divorced Widowed,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,MS_cat3,MS_cat3_2,cat,Single,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,MS_cat3,MS_cat3_3,cat,,DemPORT-PUMF,PUMF 2013-2015,,,,,,,,,,,,,,
+,Edu_cat4,Edu_cat4_1,cat,Less than highschool,,,,,,,,,,,,,,,,
+,Edu_cat4,Edu_cat4_2,cat,High school grad,,,,,,,,,,,,,,,,
+,Edu_cat4,Edu_cat4_3,cat,Some post secondary grad,,,,,,,,,,,,,,,,
+,Edu_cat4,Edu_cat4_4,cat,,,,,,,,,,,,,,,,,

@@ -1,0 +1,13 @@
+{
+    "AgeC": "Age_cont_C_rcs1",
+    "PackYearsC": "PackYears_C_rcs1",
+    "SmokeFormer5PlusC": "smokeSimp_cat4_2_C",
+    "SmokeFormer0to5C": "smokeSimp_cat4_3_C",
+    "SmokeCurrentC": "smokeSimp_cat4_4_C",
+    "FruitVegC": "FruitVeg_C_rcs1",
+    "JuiceC": "Juice_C_rcs1",
+    "PotatoC": "Potato_C_rcs1",
+    "PhysicalActivityC": "PhysicalActivity_C_rcs1",
+    "DrinksLastWeekC": "DrinksLastWeek_C_rcs1",
+    "FormerDrinkerC": "formerDrinker_cat2_1_C"
+}

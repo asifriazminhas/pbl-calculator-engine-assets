@@ -1,4 +1,4 @@
-import * as test from 'tape';
+import test from 'tape';
 import { runIntegrationTest, getRelativeDifference } from './test-utils';
 import { expect } from 'chai';
 import {

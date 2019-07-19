@@ -1,7 +1,10 @@
 {
-  "models": [
-    {
-      "name": "MPoRTv2-PUMF"
-    }
-  ]
+    "models": [
+        {
+            "name": "MPoRTv2-PUMF"
+        },
+        {
+            "name": "DemPoRT-PUMF"
+        }
+    ]
 }

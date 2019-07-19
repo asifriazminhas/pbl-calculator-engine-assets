@@ -6,44 +6,198 @@
             <value>MPoRTv2-PUMF female algorithm</value>
         </Extension>
     </Header>
-    <DataDictionary numberOfFields="35">
-        <DataField name="DHHGAGE_cont_C_rcs1" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false"/>
-        <DataField name="DHHGAGE_cont_C_rcs2" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false"/>
-        <DataField name="DHHGAGE_cont_C_rcs3" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false"/>
-        <DataField name="DHHGAGE_cont_C_rcs4" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_2_C" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" optype="categorical" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_3_C" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" optype="categorical" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_4_C" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" optype="categorical" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false"/>
-        <DataField name="packYears_C_rcs1" displayName="Packyears of smoking" optype="continuous" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false"/>
-        <DataField name="packYears_C_rcs2" displayName="Packyears of smoking" optype="continuous" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false"/>
-        <DataField name="formerDrinker_cat2_1_C" displayName="Former drinker status (yes/no)" optype="categorical" dataType="integer" X-shortLabel="Former drinker" X-required="false" X-recommended="false"/>
-        <DataField name="ALWDWKY_C_rcs1" displayName="Weekly alcohol consumption " optype="continuous" dataType="integer" X-shortLabel="Drinks last week" X-required="false" X-recommended="false"/>
-        <DataField name="ALWDWKY_C_rcs2" displayName="Weekly alcohol consumption " optype="continuous" dataType="integer" X-shortLabel="Drinks last week" X-required="false" X-recommended="false"/>
-        <DataField name="ALWDWKY_C_rcs3" displayName="Weekly alcohol consumption " optype="continuous" dataType="integer" X-shortLabel="Drinks last week" X-required="false" X-recommended="false"/>
-        <DataField name="dietScore2_C_rcs1" displayName="Simplified diet score (z-transformed)" optype="continuous" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false"/>
-        <DataField name="dietScore2_C_rcs2" displayName="Simplified diet score (z-transformed)" optype="continuous" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false"/>
-        <DataField name="depInd_cat3_1_C" displayName="Neighbourhood social and material deprivation" optype="categorical" dataType="integer" X-shortLabel="Deprivation index" X-required="false" X-recommended="false"/>
-        <DataField name="depInd_cat3_2_C" displayName="Neighbourhood social and material deprivation" optype="categorical" dataType="integer" X-shortLabel="Deprivation index" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGCGT_cat2_1_C" displayName="Ethnicity: white/non-white" optype="categorical" dataType="integer" X-shortLabel="Ethnicity" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_2_C" displayName="Level of education " optype="categorical" dataType="integer" X-shortLabel="Education" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_3_C" displayName="Level of education " optype="categorical" dataType="integer" X-shortLabel="Education" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_4_C" displayName="Level of education " optype="categorical" dataType="integer" X-shortLabel="Education" X-required="false" X-recommended="false"/>
-        <DataField name="PACDEE_C_rcs1" displayName="Average daily leisure time energy expenditure in METs" optype="continuous" dataType="integer" X-shortLabel="Physical activity" X-required="false" X-recommended="false"/>
-        <DataField name="PACDEE_C_rcs2" displayName="Average daily leisure time energy expenditure in METs" optype="continuous" dataType="integer" X-shortLabel="Physical activity" X-required="false" X-recommended="false"/>
-        <DataField name="HWTGBMI_C_rcs1" displayName="Body mass index " optype="continuous" dataType="integer" X-shortLabel="BMI" X-required="false" X-recommended="false"/>
-        <DataField name="HWTGBMI_C_rcs2" displayName="Body mass index " optype="continuous" dataType="integer" X-shortLabel="BMI" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_101_cat2_1_C" displayName="Diabetes" optype="categorical" dataType="integer" X-shortLabel="Diabetes" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_071_cat2_1_C" displayName="Hypertension" optype="categorical" dataType="integer" X-shortLabel="Hypertension" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_091_cat2_1_C" displayName="Chronic Obstructive Pulmonary Disease" optype="categorical" dataType="integer" X-shortLabel="COPD" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_280_cat2_1_C" displayName="Has a mood disorder" optype="categorical" dataType="integer" X-shortLabel="Mood disorder" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_131_cat2_1_C" displayName="Active cancer" optype="categorical" dataType="integer" X-shortLabel="Cancer" X-required="false" X-recommended="false"/>
-        <DataField name="dementia_cat2_1_C" displayName="Dementia" optype="categorical" dataType="integer" X-shortLabel="Demenia" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_121_cat2_1_C" displayName="Heart disease" optype="categorical" dataType="integer" X-shortLabel="Heart disease" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_151_cat2_1_C" displayName="Stroke" optype="categorical" dataType="integer" X-shortLabel="Stroke" X-required="false" X-recommended="false"/>
-        <DataField name="immigPct_C_rcs1" displayName="Fraction of lifetime lived in Canada" optype="continuous" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false"/>
-        <DataField name="immigPct_C_rcs2" displayName="Fraction of lifetime lived in Canada" optype="continuous" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false"/>
-        <DataField name="DHHGAGE_cont" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false">
+    <DataDictionary numberOfFields="187">
+        <DataField name="DHHGAGE_cont_C_rcs1" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="DHHGAGE_cont_C_rcs2" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="DHHGAGE_cont_C_rcs3" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="DHHGAGE_cont_C_rcs4" displayName="Age" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_2_C" displayName="Simple smoking status" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_3_C" displayName="Simple smoking status" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_4_C" displayName="Simple smoking status" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="packYears_C_rcs1" displayName="Packyears" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="packYears_C_rcs2" displayName="Packyears" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="formerDrinker_cat2_1_C" displayName="Former drinker" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="ALWDWKY_C_rcs1" displayName="Drinks last week" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="ALWDWKY_C_rcs2" displayName="Drinks last week" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="ALWDWKY_C_rcs3" displayName="Drinks last week" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="dietScore2_C_rcs1" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="dietScore2_C_rcs2" displayName="Diet" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="depInd_cat3_1_C" displayName="Deprivation index" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="depInd_cat3_2_C" displayName="Deprivation index" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="SDCGCGT_cat2_1_C" displayName="Ethnicity" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_2_C" displayName="Education" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_3_C" displayName="Education" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_4_C" displayName="Education" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="PACDEE_C_rcs1" displayName="Physical activity" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="PACDEE_C_rcs2" displayName="Physical activity" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="HWTGBMI_C_rcs1" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="HWTGBMI_C_rcs2" displayName="BMI" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_101_cat2_1_C" displayName="Diabetes" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_071_cat2_1_C" displayName="Hypertension" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_091_cat2_1_C" displayName="COPD" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_280_cat2_1_C" displayName="Mood disorder" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_131_cat2_1_C" displayName="Cancer" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="dementia_cat2_1_C" displayName="Demenia" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_121_cat2_1_C" displayName="Heart disease" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_151_cat2_1_C" displayName="Stroke" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="immigPct_C_rcs1" displayName="Time in Canada" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="immigPct_C_rcs2" displayName="Time in Canada" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction5" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction6" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction7" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction9" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction10" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction11" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction12" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction13" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction14" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction15" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction16" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction17" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction18" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction19" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction20" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction21" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="interaction22" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="DHHGAGE_cont" displayName="Age" dataType="integer" X-shortLabel="Age" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="20" rightMargin="102" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="DHHGAGE" displayName="Age - (G)" dataType="integer" X-shortLabel="Age" X-required="true" X-recommended="true">
+            <Value value="1" displayName="Age" description="converted categorical age"/>
+            <Value value="2" displayName="Age" description="converted categorical age"/>
+            <Value value="3" displayName="Age" description="converted categorical age"/>
+            <Value value="4" displayName="Age" description="converted categorical age"/>
+            <Value value="5" displayName="Age" description="converted categorical age"/>
+            <Value value="6" displayName="Age" description="converted categorical age"/>
+            <Value value="7" displayName="Age" description="converted categorical age"/>
+            <Value value="8" displayName="Age" description="converted categorical age"/>
+            <Value value="9" displayName="Age" description="converted categorical age"/>
+            <Value value="10" displayName="Age" description="converted categorical age"/>
+            <Value value="11" displayName="Age" description="converted categorical age"/>
+            <Value value="12" displayName="Age" description="converted categorical age"/>
+            <Value value="13" displayName="Age" description="converted categorical age"/>
+            <Value value="14" displayName="Age" description="converted categorical age"/>
+            <Value value="15" displayName="Age" description="converted categorical age"/>
+            <Value value="16" displayName="Age" description="converted categorical age"/>
             <Value value="1" displayName="Age" description="converted categorical age"/>
             <Value value="2" displayName="Age" description="converted categorical age"/>
             <Value value="3" displayName="Age" description="converted categorical age"/>
@@ -61,55 +215,50 @@
             <Value value="15" displayName="Age" description="converted categorical age"/>
             <Value value="16" displayName="Age" description="converted categorical age"/>
         </DataField>
-        <DataField name="DHHGAGE" displayName="Age - (G)" optype="categorical" dataType="integer" X-shortLabel="Age" X-required="true" X-recommended="true">
-            <Value value="1" displayName="Age" description="converted categorical age"/>
-            <Value value="2" displayName="Age" description="converted categorical age"/>
-            <Value value="3" displayName="Age" description="converted categorical age"/>
-            <Value value="4" displayName="Age" description="converted categorical age"/>
-            <Value value="5" displayName="Age" description="converted categorical age"/>
-            <Value value="6" displayName="Age" description="converted categorical age"/>
-            <Value value="7" displayName="Age" description="converted categorical age"/>
-            <Value value="8" displayName="Age" description="converted categorical age"/>
-            <Value value="9" displayName="Age" description="converted categorical age"/>
-            <Value value="10" displayName="Age" description="converted categorical age"/>
-            <Value value="11" displayName="Age" description="converted categorical age"/>
-            <Value value="12" displayName="Age" description="converted categorical age"/>
-            <Value value="13" displayName="Age" description="converted categorical age"/>
-            <Value value="14" displayName="Age" description="converted categorical age"/>
-            <Value value="15" displayName="Age" description="converted categorical age"/>
-            <Value value="16" displayName="Age" description="converted categorical age"/>
+        <DataField name="SMKDSTYb" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField name="SMKDSTYb" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMKDSTY" displayName="Type of smoker - (D)" optype="categorical" dataType="integer" X-shortLabel="Smoke status" X-required="false" X-recommended="true">
+        <DataField optype="categorical" name="SMKDSTY" displayName="Type of smoker - (D)" dataType="integer" X-shortLabel="Smoke status" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="96" rightMargin="99" X-description="missing (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Daily smoker" description="Daily smoker"/>
             <Value value="2" displayName="Former daily current occasional smoker" description="Former daily current occasional smoker"/>
             <Value value="3" displayName="Never daily current occasional smoker" description="Never daily current occasional smoker"/>
             <Value value="4" displayName="Former daily current nonsmoker" description="Former daily current nonsmoker"/>
             <Value value="5" displayName="Never daily current nonsmoker (former occasional)" description="Never daily current nonsmoker (former occasional)"/>
             <Value value="6" displayName="Never smoked" description="Never smoked"/>
-            <Interval closure="closedClosed" leftMargin="96" rightMargin="99" X-description="missing (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="TypeOfSmoker2" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="stpoy" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMKG09C" displayName="Years since stopped smoking daily - occasional smoker - (G)" optype="categorical" dataType="integer" X-shortLabel="stpoy" X-required="false" X-recommended="true">
+        <DataField name="TypeOfSmoker2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="stpoy" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SMKG09C" displayName="Years since stopped smoking daily - occasional smoker - (G)" dataType="integer" X-shortLabel="stpoy" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="stpoy" description="converted categorical years since stopped daily smoking - occasional smoker"/>
             <Value value="2" displayName="stpoy" description="converted categorical years since stopped daily smoking - occasional smoker"/>
             <Value value="3" displayName="stpoy" description="converted categorical years since stopped daily smoking - occasional smoker"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
-            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="stpo" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMK_09A" displayName="When did you stop smoking daily - occasional smoker - (G)" optype="categorical" dataType="integer" X-shortLabel="stpo" X-required="false" X-recommended="true">
+        <DataField name="stpo" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SMK_09A" displayName="When did you stop smoking daily - occasional smoker - (G)" dataType="integer" X-shortLabel="stpo" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="&lt;1 year" description="Less than one year ago"/>
             <Value value="2" displayName="1 to 2 years" description="1 year to less than 2 years ago"/>
             <Value value="3" displayName="2 to 3 years" description="2 years to less than 3 years ago"/>
             <Value value="4" displayName="≥3 years" description="3 or more years ago"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
-            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="tsq_ds" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="agecigd" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMKG203" displayName="Age started to smoke daily - (G)" optype="categorical" dataType="integer" X-shortLabel="agecigd" X-required="false" X-recommended="true">
+        <DataField name="tsq_ds" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="agecigd" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SMKG203" displayName="Age started to smoke daily - (G)" dataType="integer" X-shortLabel="agecigd" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="97" rightMargin="99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
             <Value value="2" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
             <Value value="3" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
@@ -122,34 +271,44 @@
             <Value value="10" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
             <Value value="11" displayName="agecigd" description="converted categorical age started smoking daily - daily smoker"/>
             <Value value="96" displayName="not applicable" description="not applicable"/>
-            <Interval closure="closedClosed" leftMargin="97" rightMargin="99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="SMK_204b" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMK_204" displayName="# of cigarettes smoked daily - daily smoker" optype="continuous" dataType="integer" X-shortLabel="cigdayd" X-required="false" X-recommended="true">
+        <DataField name="SMK_204b" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="SMK_204" displayName="# of cigarettes smoked daily - daily smoker" dataType="integer" X-shortLabel="cigdayd" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="1" rightMargin="80" X-description="# of cigarettes smoked daily - daily smoker"/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="SMK_208b" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMK_208" displayName="# of cigarettes smoke each day - occasional smoker" optype="continuous" dataType="integer" X-shortLabel="cigdayf" X-required="false" X-recommended="true">
+        <DataField name="SMK_208b" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="SMK_208" displayName="# of cigarettes smoke each day - occasional smoker" dataType="integer" X-shortLabel="cigdayf" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="1" rightMargin="99" X-description="# of cigarettes smoke each day - occasional smoker"/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="SMK_05Bb" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMK_05B" displayName="# of cigarettes smoked daily - occasional smoker" optype="continuous" dataType="integer" X-shortLabel="cigdayo" X-required="false" X-recommended="true">
+        <DataField name="SMK_05Bb" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="SMK_05B" displayName="# of cigarettes smoked daily - occasional smoker" dataType="integer" X-shortLabel="cigdayo" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="1" rightMargin="40" X-description="# of cigarettes smoked daily - occasional smoker"/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="SMK_05Cb" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMK_05C" displayName="Past month, smoked 1 + cigarettes daily - occasional smoker" optype="continuous" dataType="integer" X-shortLabel="dayocc" X-required="false" X-recommended="true">
+        <DataField name="SMK_05Cb" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="SMK_05C" displayName="Past month, smoked 1 + cigarettes daily - occasional smoker" dataType="integer" X-shortLabel="dayocc" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="30" X-description="Past month, smoked 1 + cigarettes daily - occasional smoker"/>
             <Interval closure="closedClosed" leftMargin="97" rightMargin="99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="96" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="agec1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMKG01C" displayName="Age smoked first whole cigarette - (G)" optype="categorical" dataType="integer" X-shortLabel="agec1" X-required="false" X-recommended="true">
+        <DataField name="agec1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SMKG01C" displayName="Age smoked first whole cigarette - (G)" dataType="integer" X-shortLabel="agec1" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="97" rightMargin="99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="agec1" description="converted categorical age"/>
             <Value value="2" displayName="agec1" description="converted categorical age"/>
             <Value value="3" displayName="agec1" description="converted categorical age"/>
@@ -162,285 +321,384 @@
             <Value value="10" displayName="agec1" description="converted categorical age"/>
             <Value value="11" displayName="agec1" description="converted categorical age"/>
             <Value value="96" displayName="not applicable" description="not applicable"/>
-            <Interval closure="closedClosed" leftMargin="97" rightMargin="99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="s100" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SMK_01A" displayName="In lifetime, smoked 100 or more cigarettes" optype="categorical" dataType="integer" X-shortLabel="s100" X-required="false" X-recommended="true">
+        <DataField name="s100" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SMK_01A" displayName="In lifetime, smoked 100 or more cigarettes" dataType="integer" X-shortLabel="s100" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="yes" description="yes"/>
             <Value value="2" displayName="no" description="not applicable"/>
             <Value value="6" displayName="not applicable" description="not applicable"/>
-            <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="packYears" displayName="Packyears of smoking" optype="continuous" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false">
+        <DataField optype="continuous" name="packYears" displayName="Packyears of smoking" dataType="integer" X-shortLabel="Packyears" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="78" X-description=""/>
         </DataField>
-        <DataField name="smoker" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="eversmoker" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" optype="categorical" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false">
+        <DataField name="smoker" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="eversmoker" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="smokeSimp" displayName="Smoking Status (4 categories) (categorical form of SmokeFormer5Plus_cat; SmokeFormer0to5_cat; SmokeCurrent_cat)" dataType="integer" X-shortLabel="Simple smoking status" X-required="false" X-recommended="false">
             <Value value="1" displayName="Non-smoker" description="Non-smoker"/>
             <Value value="2" displayName="Current smoker" description="Current smoker"/>
             <Value value="3" displayName="Former smoker; quit 0 to 5 years or former occasional" description="Former smoker; quit 0 to 5 years or former occasional"/>
             <Value value="4" displayName="Former smoker; quit 5 plus years" description="Former smoker; quit 5 plus years"/>
         </DataField>
-        <DataField name="ALWDWKY_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="ALWDWKY" displayName="Weekly alcohol consumption " optype="continuous" dataType="integer" X-shortLabel="Drinks last week" X-required="false" X-recommended="true">
+        <DataField name="ALWDWKY_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="ALWDWKY" displayName="Weekly consumption" dataType="integer" X-shortLabel="drinks/week" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="264" X-description=""/>
             <Interval closure="closedClosed" leftMargin="997" rightMargin="999" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="996" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="FormerDrinker_cat" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="Juice_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="FVCDJUI" displayName="Daily consumption - fruit juice - (D)" optype="continuous" dataType="integer" X-shortLabel="Daily juice" X-required="false" X-recommended="true">
+        <DataField name="FormerDrinker_cat" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="Juice_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="FVCDJUI" displayName="Daily consumption - fruit juice - (D)" dataType="integer" X-shortLabel="Daily juice" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption - fruit juice - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="Fruit_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="FVCDFRU" displayName="Daily consumption - fruit - (D)" optype="continuous" dataType="integer" X-shortLabel="Daily fruit" X-required="false" X-recommended="true">
+        <DataField name="Fruit_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="FVCDFRU" displayName="Daily consumption - fruit - (D)" dataType="integer" X-shortLabel="Daily fruit" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption - fruit - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="Salad_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="FVCDSAL" displayName="Daily consumption - green salad - (D)" optype="continuous" dataType="integer" X-shortLabel="Daily salad" X-required="false" X-recommended="true">
+        <DataField name="Salad_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="FVCDSAL" displayName="Daily consumption - green salad - (D)" dataType="integer" X-shortLabel="Daily salad" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="14" X-description="Daily consumption - green salad - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="Potato_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="FVCDPOT" displayName="Daily consumption - potatoes - (D)" optype="continuous" dataType="integer" X-shortLabel="Daily potatoes" X-required="false" X-recommended="true">
+        <DataField name="Potato_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="FVCDPOT" displayName="Daily consumption - potatoes - (D)" dataType="integer" X-shortLabel="Daily potatoes" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption - potatoes - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="Carrot_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="FVCDCAR" displayName="Daily consumption - carrots - (D)" optype="continuous" dataType="integer" X-shortLabel="Daily carrots" X-required="false" X-recommended="true">
+        <DataField name="Carrot_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="FVCDCAR" displayName="Daily consumption - carrots - (D)" dataType="integer" X-shortLabel="Daily carrots" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="13" X-description="Daily consumption - carrots - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="Veg_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="FVCDVEG" displayName="Daily consumption other vegetables - (D)" optype="continuous" dataType="integer" X-shortLabel="Daily other vegetables" X-required="false" X-recommended="true">
+        <DataField name="Veg_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="FVCDVEG" displayName="Daily consumption other vegetables - (D)" dataType="integer" X-shortLabel="Daily other vegetables" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="20" X-description="Daily consumption other vegetables - (D)"/>
             <Interval closure="closedClosed" leftMargin="999.7" rightMargin="999.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="Potato_add" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="Potato_minus" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zJuice" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zFruit" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zSalad" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zCarrot" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zVeg" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zPotAdd" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="zPotMinus" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dietScore2" displayName="Simplified diet score (z-transformed)" optype="continuous" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false">
+        <DataField name="Potato_add" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="Potato_minus" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zJuice" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zFruit" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zSalad" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zCarrot" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zVeg" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zPotAdd" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="zPotMinus" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="dietScore2" displayName="Simplified diet score (z-transformed)" dataType="integer" X-shortLabel="Diet" X-required="false" X-recommended="false">
             <Interval closure="closedClosed" leftMargin="-18.9" rightMargin="20.7" X-description=""/>
         </DataField>
-        <DataField name="PACDEE_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="PACDEE" displayName="Average daily leisure time energy expenditure in METs" optype="continuous" dataType="integer" X-shortLabel="Physical activity" X-required="false" X-recommended="true">
+        <DataField name="PACDEE_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="PACDEE" displayName="Daily energy expenditure - (D)" dataType="integer" X-shortLabel="Physical Activity" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="0" rightMargin="42.2" X-description="Daily energy expenditure - (D)"/>
             <Interval closure="closedClosed" leftMargin="99.7" rightMargin="99.9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="99.6" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="CCC_101_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_101" displayName="Diabetes" optype="categorical" dataType="integer" X-shortLabel="Diabetes" X-required="false" X-recommended="true">
+        <DataField name="CCC_101_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_101" displayName="Do you have diabetes" dataType="integer" X-shortLabel="Diabetes" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Diabetes" description="Diabetes"/>
             <Value value="2" displayName="No Diabetes" description="No Diabetes"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="CCC_071_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_071" displayName="Hypertension" optype="categorical" dataType="integer" X-shortLabel="Hypertension" X-required="false" X-recommended="true">
+        <DataField name="CCC_071_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_071" displayName="Do you have high blood pressure" dataType="integer" X-shortLabel="Hypertension" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Hypertension" description="Hypertension"/>
             <Value value="2" displayName="No Hypertension" description="No Hypertension"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="CCC_091_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_091" displayName="Chronic Obstructive Pulmonary Disease" optype="categorical" dataType="integer" X-shortLabel="COPD" X-required="false" X-recommended="true">
+        <DataField name="CCC_091_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_091" displayName="Do you have COPD(eg bronchitis,emphysema)" dataType="integer" X-shortLabel="COPD" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="COPD" description="COPD"/>
             <Value value="2" displayName="No COPD" description="No COPD"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="CCC_280_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_280" displayName="Has a mood disorder" optype="categorical" dataType="integer" X-shortLabel="Mood disorder" X-required="false" X-recommended="true">
+        <DataField name="CCC_280_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_280" displayName="Do you have a mood disorder" dataType="integer" X-shortLabel="Mood disorder" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Has a mood disorder" description="Has a mood disorder"/>
             <Value value="2" displayName="Does not have a mood disorder" description="Does not have a mood disorder"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="CCC_131_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_131" displayName="Active cancer" optype="categorical" dataType="integer" X-shortLabel="Cancer" X-required="false" X-recommended="true">
+        <DataField name="CCC_131_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_131" displayName="Do you have cancer" dataType="integer" X-shortLabel="Cancer" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Cancer" description="Cancer"/>
             <Value value="0" displayName="No Cancer" description="No Cancer"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="CCC_121_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_121" displayName="Heart disease" optype="categorical" dataType="integer" X-shortLabel="Heart disease" X-required="false" X-recommended="true">
+        <DataField name="CCC_121_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_121" displayName="Do you have heart disease" dataType="integer" X-shortLabel="Heart Disease" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Heart Disease" description="Heart Disease"/>
             <Value value="2" displayName="No Heart Disease" description="No Heart Disease"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="CCC_151_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_151" displayName="Stroke" optype="categorical" dataType="integer" X-shortLabel="Stroke" X-required="false" X-recommended="true">
+        <DataField name="CCC_151_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="CCC_151" displayName="Do you suffer from effects of stroke" dataType="integer" X-shortLabel="Stroke" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Stroke" description="Stroke"/>
             <Value value="2" displayName="No Stroke" description="No Stroke"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="dementia" displayName="Dementia" optype="categorical" dataType="integer" X-shortLabel="Demenia" X-required="false" X-recommended="false">
+        <DataField optype="categorical" name="dementia" displayName="Dementia" dataType="integer" X-shortLabel="Demenia" X-required="false" X-recommended="false">
             <Value value="1" displayName="Dementia" description="Dementia"/>
             <Value value="2" displayName="No Dementia" description="No Dementia"/>
         </DataField>
-        <DataField name="HWTGBMI_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="HWTGBMI" displayName="Body mass index " optype="continuous" dataType="integer" X-shortLabel="BMI" X-required="false" X-recommended="true">
+        <DataField name="HWTGBMI_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="continuous" name="HWTGBMI" displayName="BMI / self-report - (D,G)" dataType="integer" X-shortLabel="BMI" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="12" rightMargin="56.73" X-description="BMI / self-report - (D,G)"/>
             <Interval closure="closedClosed" leftMargin="999.97" rightMargin="999.99" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="999.96" displayName="not applicable" description="not applicable"/>
         </DataField>
-        <DataField name="SDCGCGT_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGCGT" displayName="Ethnicity: white/non-white" optype="categorical" dataType="integer" X-shortLabel="Ethnicity" X-required="false" X-recommended="true">
+        <DataField name="SDCGCGT_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SDCGCGT" displayName="Cultural or racial origin - (D, G)" dataType="integer" X-shortLabel="Ethnicity" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="0" displayName="White" description="White"/>
             <Value value="1" displayName="Non-white" description="Non-white"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="EDUDR04_Mutated_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04" displayName="Level of education " optype="categorical" dataType="integer" X-shortLabel="Education" X-required="false" X-recommended="true">
+        <DataField name="EDUDR04_Mutated_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="EDUDR04" displayName="Highest level/education - respondent 4 levels - (D)" dataType="integer" X-shortLabel="Education" X-required="false" X-recommended="true">
+            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
             <Value value="1" displayName="Post-secondary graduate" description="Post-secondary Graduate"/>
             <Value value="2" displayName="Some post-secondary" description="Some Post-secondary"/>
             <Value value="3" displayName="High school graduate" description="High School Graduate"/>
             <Value value="4" displayName="Less than high school" description="Less than High School"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (.D); don't know (.E); refusal (.F); not stated (.G)"/>
         </DataField>
-        <DataField name="SDCGRES_cont" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGRES" displayName="Length/time in Canada since immigration - (D,G)" optype="categorical" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="true">
-            <Value value="1" displayName="Time in Canada" description="0 to 9 years"/>
-            <Value value="2" displayName="Time in Canada" description="10 or more years"/>
-            <Value value="6" displayName="Time in Canada" description="Not applicable"/>
+        <DataField name="SDCGRES_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SDCGRES" displayName="Length/time in Canada since immigration - (D,G)" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
-        </DataField>
-        <DataField name="immigPct" displayName="Fraction of lifetime lived in Canada" optype="continuous" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false">
-            <Interval closure="closedClosed" leftMargin="0" rightMargin="1" X-description=""/>
             <Value value="1" displayName="Time in Canada" description="0 to 9 years"/>
             <Value value="2" displayName="Time in Canada" description="10 or more years"/>
             <Value value="6" displayName="Time in Canada" description="Not applicable"/>
-            <Value value="1" displayName="Yes" description="Immigrant"/>
-            <Value value="6" displayName="Not applicable" description="Not applicable"/>
         </DataField>
-        <DataField name="SDCFIMM" displayName="Immigrant - (F)" optype="categorical" dataType="integer" X-shortLabel="Immigrant" X-required="false" X-recommended="true">
-            <Value value="1" displayName="Yes" description="Immigrant"/>
-            <Value value="6" displayName="Not applicable" description="Not applicable"/>
+        <DataField optype="continuous" name="immigPct" displayName="Fraction of lifetime lived in Canada" dataType="integer" X-shortLabel="Time in Canada" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" leftMargin="0" rightMargin="1" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="SDCFIMM" displayName="Immigrant - (F)" dataType="integer" X-shortLabel="Immigrant" X-required="false" X-recommended="true">
             <Interval closure="closedClosed" leftMargin="2" rightMargin="7" X-description="Non-immigrant"/>
             <Interval closure="closedClosed" leftMargin="7" rightMargin="9" X-description="don't know (.E); refusal (.F); not stated (.G)"/>
+            <Value value="1" displayName="Yes" description="Immigrant"/>
+            <Value value="6" displayName="Not applicable" description="Not applicable"/>
         </DataField>
-        <DataField name="smokeSimp_cat4_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_2" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_3" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_4" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="formerDrinker_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="formerDrinker" displayName="Former drinker status (yes/no)" optype="categorical" dataType="integer" X-shortLabel="Former drinker" X-required="false" X-recommended="false">
+        <DataField name="smokeSimp_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="smokeSimp_cat4_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="formerDrinker_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="formerDrinker" displayName="Former drinker status (yes/no)" dataType="integer" X-shortLabel="Former drinker" X-required="false" X-recommended="false">
             <Value value="1" displayName="yes" description="Former drinker"/>
             <Value value="0" displayName="no" description="Not a former drinker"/>
         </DataField>
-        <DataField name="formerDrinker_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="depInd_cat3_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="depInd" displayName="Neighbourhood social and material deprivation" optype="categorical" dataType="integer" X-shortLabel="Deprivation index" X-required="false" X-recommended="false">
+        <DataField name="formerDrinker_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="depInd_cat3_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField optype="categorical" name="depInd" displayName="Neighbourhood social and material deprivation" dataType="integer" X-shortLabel="Deprivation index" X-required="false" X-recommended="false">
             <Value value="1" displayName="Low deprivation" description="Low deprivation"/>
             <Value value="2" displayName="Moderate deprivation" description="Moderate deprivation"/>
             <Value value="3" displayName="High deprivation" description="High deprivation"/>
         </DataField>
-        <DataField name="depInd_cat3_2" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="depInd_cat3_3" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_2" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_3" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_4" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_131_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_131_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_131_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_101_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_101_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_101_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_121_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_121_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_121_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_151_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_151_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_151_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_071_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_071_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_071_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_280_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_280_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_280_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dementia_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dementia_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_091_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_091_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_091_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGCGT_cat2_0" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGCGT_cat2_1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGCGT_cat2_NA" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="DHHGAGE_cont_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_2_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_3_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="smokeSimp_cat4_4_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="packYears_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="formerDrinker_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="ALWDWKY_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dietScore2_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="PACDEE_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="HWTGBMI_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="depInd_cat3_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="depInd_cat3_2_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_2_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_3_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="EDUDR04_cat4_4_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_131_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_101_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_121_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_151_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_071_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_280_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dementia_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="CCC_091_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="SDCGCGT_cat2_1_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="DHHGAGE_cont_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="packYears_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="ALWDWKY_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="dietScore2_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="PACDEE_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="HWTGBMI_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="immigPct_C_rcs1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="immigPct_C" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction1" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction2" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction3" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction4" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction5" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction6" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction7" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction8" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction9" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction10" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction11" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction12" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction13" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction14" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction15" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction16" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction17" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction18" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction19" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction20" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction21" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="interaction22" displayName="" optype="" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false"/>
-        <DataField name="DHH_SEX" displayName="Sex" optype="categorical" dataType="integer" X-shortLabel="Sex" X-required="true" X-recommended="false">
-            <Value value="1" displayName="Male" description="Male"/>
-            <Value value="2" displayName="Female" description="Female"/>
-            <Interval closure="closedClosed" leftMargin="6" rightMargin="9" X-description="not applicable (6); don't know (7); refusal (8); not stated (9)"/>
+        <DataField name="depInd_cat3_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
         </DataField>
-        <DataField name="WTS_M" displayName="Weights - Master" optype="continuous" dataType="integer" X-shortLabel="Survey weight" X-required="true" X-recommended="false">
-            <Interval closure="closedClosed" leftMargin="1.07" rightMargin="13166.31" X-description=""/>
+        <DataField name="depInd_cat3_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="EDUDR04_cat4_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_131_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_131_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_131_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_101_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_101_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_101_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_121_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_121_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_121_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_151_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_151_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_151_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_071_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_071_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_071_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_280_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_280_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_280_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="dementia_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="dementia_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_091_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_091_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="CCC_091_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="SDCGCGT_cat2_0" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="SDCGCGT_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="SDCGCGT_cat2_NA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="DHHGAGE_cont_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="packYears_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="ALWDWKY_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="dietScore2_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="PACDEE_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="HWTGBMI_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
+        </DataField>
+        <DataField name="immigPct_C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval closure="closedClosed" X-description=""/>
         </DataField>
     </DataDictionary>
     <LocalTransformations>

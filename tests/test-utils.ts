@@ -101,7 +101,7 @@ export async function runIntegrationTest(
     validationFilesFolderName: string,
     validationFileName: string,
     testType: string,
-    modelsToExclude: string[],
+    _modelsToExclude: string[],
     runTestForDataAndAlgorithm: (
         algorithm: CoxSurvivalAlgorithm,
         data: Data,

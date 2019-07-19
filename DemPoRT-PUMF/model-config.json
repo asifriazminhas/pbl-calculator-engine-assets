@@ -1,0 +1,13 @@
+{
+    "modelName": "DemPoRT-PUMF",
+    "genderSpecific": true,
+    "regressionType": "FineGrayRegression",
+    "maximumTime": 5,
+    "timeMetric": "years",
+    "useMsw": true,
+    "sexVariable": "DHH_SEX",
+    "sexValues": {
+        "male": "1",
+        "female": "2"
+    }
+}
