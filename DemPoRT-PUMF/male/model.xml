@@ -2994,7 +2994,16 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="smokeSimp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="smokeSimp_cat4_3" optype="continuous">
@@ -3004,7 +3013,16 @@
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="smokeSimp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="smokeSimp_cat4_4" optype="continuous">
@@ -3014,7 +3032,16 @@
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="smokeSimp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="formerDrinker_cat2_1" optype="continuous">
@@ -3024,7 +3051,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="formerDrinker"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Stress_cat5_4" optype="continuous">
@@ -3034,7 +3068,17 @@
                     <Constant dataType="double">5</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_07_Mutated_1"/>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Stress_cat5_3" optype="continuous">
@@ -3044,7 +3088,17 @@
                     <Constant dataType="double">4</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_07_Mutated_1"/>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Stress_cat5_2" optype="continuous">
@@ -3054,7 +3108,17 @@
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_07_Mutated_1"/>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Stress_cat5_1" optype="continuous">
@@ -3064,7 +3128,17 @@
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_07_Mutated_1"/>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="NeedHelp_cat7_1" optype="continuous">
@@ -3074,7 +3148,19 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="NeedHelp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="NeedHelp_cat7_2" optype="continuous">
@@ -3084,7 +3170,19 @@
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="NeedHelp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="NeedHelp_cat7_3" optype="continuous">
@@ -3094,7 +3192,19 @@
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="NeedHelp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="NeedHelp_cat7_4" optype="continuous">
@@ -3104,7 +3214,19 @@
                     <Constant dataType="double">4</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="NeedHelp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="NeedHelp_cat7_5" optype="continuous">
@@ -3114,7 +3236,19 @@
                     <Constant dataType="double">5</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="NeedHelp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="NeedHelp_cat7_6" optype="continuous">
@@ -3124,7 +3258,19 @@
                     <Constant dataType="double">6</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="NeedHelp"/>
+                        <Constant dataType="double">0</Constant>
+                        <Constant dataType="double">1</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">5</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Diabetes_cat2_1" optype="continuous">
@@ -3134,7 +3280,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CCC_101_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="HeartDis_cat2_1" optype="continuous">
@@ -3144,7 +3297,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CCC_121_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Stroke_cat2_1" optype="continuous">
@@ -3154,7 +3314,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CCC_151_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Hypertension_cat2_1" optype="continuous">
@@ -3164,7 +3331,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CCC_071_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Mood_cat2_1" optype="continuous">
@@ -3174,7 +3348,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CCC_280_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="COPD_cat2_1" optype="continuous">
@@ -3184,7 +3365,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CCC_091_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Ethnicity_cat2_1" optype="continuous">
@@ -3194,7 +3382,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="SDCGCGT_Mutated_1"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Multilingual_cat2_1" optype="continuous">
@@ -3204,7 +3399,14 @@
                     <Constant dataType="double">1</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="Multilingual"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="SRHealth_cat5_1" optype="continuous">
@@ -3214,7 +3416,17 @@
                     <Constant dataType="double">5</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_01_Mutated_1"/>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="SRHealth_cat5_2" optype="continuous">
@@ -3224,7 +3436,17 @@
                     <Constant dataType="double">4</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_01_Mutated_1"/>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="SRHealth_cat5_3" optype="continuous">
@@ -3234,7 +3456,17 @@
                     <Constant dataType="double">3</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_01_Mutated_1"/>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="SRHealth_cat5_4" optype="continuous">
@@ -3244,7 +3476,17 @@
                     <Constant dataType="double">2</Constant>
                 </Apply>
                 <Constant dataType="double">1</Constant>
-                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="isIn">
+                        <FieldRef field="GEN_01_Mutated_1"/>
+                        <Constant dataType="double">5</Constant>
+                        <Constant dataType="double">4</Constant>
+                        <Constant dataType="double">3</Constant>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">0</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
             </Apply>
         </DerivedField>
         <DerivedField name="Age_cont_C" optype="continuous">
@@ -3718,43 +3960,43 @@
     </LocalTransformations>
     <GeneralRegressionModel baselineHazard="0.03026372" modelType="FineGrayRegression">
         <ParameterList>
-            <Parameter name="p0" label="Age_cont_C_rcs1"/>
+            <Parameter name="p0" label="Age_cont_C_rcs1" referencePoint="67.5"/>
             <Parameter name="p1" label="Age_cont_C_rcs2"/>
             <Parameter name="p2" label="Age_cont_C_rcs3"/>
             <Parameter name="p3" label="Age_cont_C_rcs4"/>
-            <Parameter name="p4" label="Ethnicity_cat2_1_C"/>
-            <Parameter name="p5" label="Multilingual_cat2_1_C"/>
-            <Parameter name="p6" label="Stress_cat5_1_C"/>
-            <Parameter name="p7" label="Stress_cat5_2_C"/>
-            <Parameter name="p8" label="Stress_cat5_3_C"/>
-            <Parameter name="p9" label="Stress_cat5_4_C"/>
-            <Parameter name="p10" label="SRHealth_cat5_1_C"/>
-            <Parameter name="p11" label="SRHealth_cat5_2_C"/>
-            <Parameter name="p12" label="SRHealth_cat5_3_C"/>
-            <Parameter name="p13" label="SRHealth_cat5_4_C"/>
-            <Parameter name="p14" label="PackYears_C_rcs1"/>
+            <Parameter name="p4" label="Ethnicity_cat2_1_C" referencePoint="0.0689"/>
+            <Parameter name="p5" label="Multilingual_cat2_1_C" referencePoint="0.307"/>
+            <Parameter name="p6" label="Stress_cat5_1_C" referencePoint="0.312"/>
+            <Parameter name="p7" label="Stress_cat5_2_C" referencePoint="0.323"/>
+            <Parameter name="p8" label="Stress_cat5_3_C" referencePoint="0.109"/>
+            <Parameter name="p9" label="Stress_cat5_4_C" referencePoint="0.0236"/>
+            <Parameter name="p10" label="SRHealth_cat5_1_C" referencePoint="0.314"/>
+            <Parameter name="p11" label="SRHealth_cat5_2_C" referencePoint="0.315"/>
+            <Parameter name="p12" label="SRHealth_cat5_3_C" referencePoint="0.159"/>
+            <Parameter name="p13" label="SRHealth_cat5_4_C" referencePoint="0.066"/>
+            <Parameter name="p14" label="PackYears_C_rcs1" referencePoint="21.2"/>
             <Parameter name="p15" label="PackYears_C_rcs2"/>
-            <Parameter name="p16" label="smokeSimp_cat4_4_C"/>
-            <Parameter name="p17" label="smokeSimp_cat4_3_C"/>
-            <Parameter name="p18" label="smokeSimp_cat4_2_C"/>
-            <Parameter name="p19" label="DrinksLastWeek_C_rcs1"/>
+            <Parameter name="p16" label="smokeSimp_cat4_4_C" referencePoint="0.161"/>
+            <Parameter name="p17" label="smokeSimp_cat4_3_C" referencePoint="0.0914"/>
+            <Parameter name="p18" label="smokeSimp_cat4_2_C" referencePoint="0.553"/>
+            <Parameter name="p19" label="DrinksLastWeek_C_rcs1" referencePoint="4.96"/>
             <Parameter name="p20" label="DrinksLastWeek_C_rcs2"/>
-            <Parameter name="p21" label="formerDrinker_cat2_1_C"/>
-            <Parameter name="p22" label="FruitVeg_C_rcs1"/>
+            <Parameter name="p21" label="formerDrinker_cat2_1_C" referencePoint="0.158"/>
+            <Parameter name="p22" label="FruitVeg_C_rcs1" referencePoint="4.47"/>
             <Parameter name="p23" label="FruitVeg_C_rcs2"/>
-            <Parameter name="p24" label="Potato_C_rcs1"/>
+            <Parameter name="p24" label="Potato_C_rcs1" referencePoint="0.502"/>
             <Parameter name="p25" label="Potato_C_rcs2"/>
-            <Parameter name="p26" label="Juice_C_rcs1"/>
+            <Parameter name="p26" label="Juice_C_rcs1" referencePoint="0.792"/>
             <Parameter name="p27" label="Juice_C_rcs2"/>
-            <Parameter name="p28" label="PhysicalActivity_C_rcs1"/>
+            <Parameter name="p28" label="PhysicalActivity_C_rcs1" referencePoint="2"/>
             <Parameter name="p29" label="PhysicalActivity_C_rcs2"/>
-            <Parameter name="p30" label="COPD_cat2_1_C"/>
-            <Parameter name="p31" label="HeartDis_cat2_1_C"/>
-            <Parameter name="p32" label="Stroke_cat2_1_C"/>
-            <Parameter name="p33" label="Diabetes_cat2_1_C"/>
-            <Parameter name="p34" label="Mood_cat2_1_C"/>
-            <Parameter name="p35" label="Hypertension_cat2_1_C"/>
-            <Parameter name="p36" label="BMI_C_rcs1"/>
+            <Parameter name="p30" label="COPD_cat2_1_C" referencePoint="0.0723"/>
+            <Parameter name="p31" label="HeartDis_cat2_1_C" referencePoint="0.187"/>
+            <Parameter name="p32" label="Stroke_cat2_1_C" referencePoint="0.0351"/>
+            <Parameter name="p33" label="Diabetes_cat2_1_C" referencePoint="0.166"/>
+            <Parameter name="p34" label="Mood_cat2_1_C" referencePoint="0.0569"/>
+            <Parameter name="p35" label="Hypertension_cat2_1_C" referencePoint="0.388"/>
+            <Parameter name="p36" label="BMI_C_rcs1" referencePoint="27.1"/>
             <Parameter name="p37" label="BMI_C_rcs2"/>
             <Parameter name="p38" label="AgeCXPackYearsC_int"/>
             <Parameter name="p39" label="AgeCXSmokeFormer5PlusC_int"/>
@@ -3773,12 +4015,12 @@
             <Parameter name="p52" label="AgeCXMoodC_int"/>
             <Parameter name="p53" label="AgeCXHypertensionC_int"/>
             <Parameter name="p54" label="AgeCXBMIC_int"/>
-            <Parameter name="p55" label="NeedHelp_cat7_1_C"/>
-            <Parameter name="p56" label="NeedHelp_cat7_2_C"/>
-            <Parameter name="p57" label="NeedHelp_cat7_3_C"/>
-            <Parameter name="p58" label="NeedHelp_cat7_4_C"/>
-            <Parameter name="p59" label="NeedHelp_cat7_5_C"/>
-            <Parameter name="p60" label="NeedHelp_cat7_6_C"/>
+            <Parameter name="p55" label="NeedHelp_cat7_1_C" referencePoint="0.052"/>
+            <Parameter name="p56" label="NeedHelp_cat7_2_C" referencePoint="0.0238"/>
+            <Parameter name="p57" label="NeedHelp_cat7_3_C" referencePoint="0.016"/>
+            <Parameter name="p58" label="NeedHelp_cat7_4_C" referencePoint="0.011"/>
+            <Parameter name="p59" label="NeedHelp_cat7_5_C" referencePoint="0.00898"/>
+            <Parameter name="p60" label="NeedHelp_cat7_6_C" referencePoint="0.00783"/>
             <Parameter name="p61" label="AgeCXNeedHelp1C_int"/>
             <Parameter name="p62" label="AgeCXNeedHelp2C_int"/>
             <Parameter name="p63" label="AgeCXNeedHelp3C_int"/>

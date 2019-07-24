@@ -2263,7 +2263,7 @@
                     {
                         "fieldType": 1,
                         "name": "smokeSimp_cat4_2",
-                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 1, 1, func['ifelse'](func['isIn'](obj['smokeSimp'], 0, 2, 3), 0, undefined));",
                         "derivedFrom": [
                             "smokeSimp"
                         ],
@@ -2283,7 +2283,7 @@
                     {
                         "fieldType": 1,
                         "name": "smokeSimp_cat4_3",
-                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 2, 1, func['ifelse'](func['isIn'](obj['smokeSimp'], 0, 1, 3), 0, undefined));",
                         "derivedFrom": [
                             "smokeSimp"
                         ],
@@ -2303,7 +2303,7 @@
                     {
                         "fieldType": 1,
                         "name": "smokeSimp_cat4_4",
-                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 3, 1, func['ifelse'](func['isIn'](obj['smokeSimp'], 0, 1, 2), 0, undefined));",
                         "derivedFrom": [
                             "smokeSimp"
                         ],
@@ -2323,7 +2323,7 @@
                     {
                         "fieldType": 1,
                         "name": "formerDrinker_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['formerDrinker'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['formerDrinker'] == 1, 1, func['ifelse'](obj['formerDrinker'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "formerDrinker"
                         ],
@@ -2343,7 +2343,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_4",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 5, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 5, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 4, 3, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -2363,7 +2363,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_3",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 4, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 4, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 3, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -2383,7 +2383,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_2",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 3, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -2403,7 +2403,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_1",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 3, 2), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -2423,7 +2423,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_1",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 1, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 2, 3, 4, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -2443,7 +2443,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_2",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 2, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 3, 4, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -2463,7 +2463,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_3",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 3, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 4, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -2483,7 +2483,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_4",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 4, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 4, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 3, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -2503,7 +2503,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_5",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 5, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 5, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 3, 4, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -2523,7 +2523,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_6",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 6, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 6, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 3, 4, 5), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -2543,7 +2543,7 @@
                     {
                         "fieldType": 1,
                         "name": "Diabetes_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_101_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_101_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_101_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_101_Mutated_1"
                         ],
@@ -2563,7 +2563,7 @@
                     {
                         "fieldType": 1,
                         "name": "HeartDis_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_121_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_121_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_121_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_121_Mutated_1"
                         ],
@@ -2583,7 +2583,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stroke_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_151_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_151_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_151_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_151_Mutated_1"
                         ],
@@ -2603,7 +2603,7 @@
                     {
                         "fieldType": 1,
                         "name": "Hypertension_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_071_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_071_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_071_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_071_Mutated_1"
                         ],
@@ -2623,7 +2623,7 @@
                     {
                         "fieldType": 1,
                         "name": "Mood_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_280_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_280_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_280_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_280_Mutated_1"
                         ],
@@ -2643,7 +2643,7 @@
                     {
                         "fieldType": 1,
                         "name": "COPD_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_091_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_091_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_091_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_091_Mutated_1"
                         ],
@@ -2663,7 +2663,7 @@
                     {
                         "fieldType": 1,
                         "name": "Ethnicity_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['SDCGCGT_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['SDCGCGT_Mutated_1'] == 1, 1, func['ifelse'](obj['SDCGCGT_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "SDCGCGT_Mutated_1"
                         ],
@@ -2683,7 +2683,7 @@
                     {
                         "fieldType": 1,
                         "name": "Multilingual_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['Multilingual'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['Multilingual'] == 1, 1, func['ifelse'](obj['Multilingual'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "Multilingual"
                         ],
@@ -2703,7 +2703,7 @@
                     {
                         "fieldType": 1,
                         "name": "SRHealth_cat5_1",
-                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 5, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 5, 1, func['ifelse'](func['isIn'](obj['GEN_01_Mutated_1'], 4, 3, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_01_Mutated_1"
                         ],
@@ -2723,7 +2723,7 @@
                     {
                         "fieldType": 1,
                         "name": "SRHealth_cat5_2",
-                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 4, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 4, 1, func['ifelse'](func['isIn'](obj['GEN_01_Mutated_1'], 5, 3, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_01_Mutated_1"
                         ],
@@ -2743,7 +2743,7 @@
                     {
                         "fieldType": 1,
                         "name": "SRHealth_cat5_3",
-                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 3, 1, func['ifelse'](func['isIn'](obj['GEN_01_Mutated_1'], 5, 4, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_01_Mutated_1"
                         ],
@@ -2763,7 +2763,7 @@
                     {
                         "fieldType": 1,
                         "name": "SRHealth_cat5_4",
-                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_01_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_01_Mutated_1'], 5, 4, 3, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_01_Mutated_1"
                         ],
@@ -7332,7 +7332,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.187761068,
-                        "referencePoint": null,
+                        "referencePoint": 67.5,
                         "extensions": {},
                         "groups": []
                     },
@@ -7441,7 +7441,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.285927841,
-                        "referencePoint": null,
+                        "referencePoint": 0.0689,
                         "extensions": {},
                         "groups": []
                     },
@@ -7460,7 +7460,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.06660212,
-                        "referencePoint": null,
+                        "referencePoint": 0.307,
                         "extensions": {},
                         "groups": []
                     },
@@ -7479,7 +7479,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.011475124,
-                        "referencePoint": null,
+                        "referencePoint": 0.312,
                         "extensions": {},
                         "groups": []
                     },
@@ -7498,7 +7498,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.122988924,
-                        "referencePoint": null,
+                        "referencePoint": 0.323,
                         "extensions": {},
                         "groups": []
                     },
@@ -7517,7 +7517,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.226566025,
-                        "referencePoint": null,
+                        "referencePoint": 0.109,
                         "extensions": {},
                         "groups": []
                     },
@@ -7536,7 +7536,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.241430647,
-                        "referencePoint": null,
+                        "referencePoint": 0.0236,
                         "extensions": {},
                         "groups": []
                     },
@@ -7555,7 +7555,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.032454228,
-                        "referencePoint": null,
+                        "referencePoint": 0.314,
                         "extensions": {},
                         "groups": []
                     },
@@ -7574,7 +7574,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.173588064,
-                        "referencePoint": null,
+                        "referencePoint": 0.315,
                         "extensions": {},
                         "groups": []
                     },
@@ -7593,7 +7593,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.15465262,
-                        "referencePoint": null,
+                        "referencePoint": 0.159,
                         "extensions": {},
                         "groups": []
                     },
@@ -7612,7 +7612,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.103639855,
-                        "referencePoint": null,
+                        "referencePoint": 0.066,
                         "extensions": {},
                         "groups": []
                     },
@@ -7631,7 +7631,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.007538736,
-                        "referencePoint": null,
+                        "referencePoint": 21.2,
                         "extensions": {},
                         "groups": []
                     },
@@ -7678,7 +7678,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.094669893,
-                        "referencePoint": null,
+                        "referencePoint": 0.161,
                         "extensions": {},
                         "groups": []
                     },
@@ -7697,7 +7697,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.048161163,
-                        "referencePoint": null,
+                        "referencePoint": 0.0914,
                         "extensions": {},
                         "groups": []
                     },
@@ -7716,7 +7716,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.042471004,
-                        "referencePoint": null,
+                        "referencePoint": 0.553,
                         "extensions": {},
                         "groups": []
                     },
@@ -7735,7 +7735,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.015677555,
-                        "referencePoint": null,
+                        "referencePoint": 4.96,
                         "extensions": {},
                         "groups": []
                     },
@@ -7782,7 +7782,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.127400898,
-                        "referencePoint": null,
+                        "referencePoint": 0.158,
                         "extensions": {},
                         "groups": []
                     },
@@ -7801,7 +7801,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.06418691,
-                        "referencePoint": null,
+                        "referencePoint": 4.47,
                         "extensions": {},
                         "groups": []
                     },
@@ -7848,7 +7848,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.030036024,
-                        "referencePoint": null,
+                        "referencePoint": 0.502,
                         "extensions": {},
                         "groups": []
                     },
@@ -7895,7 +7895,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.020219098,
-                        "referencePoint": null,
+                        "referencePoint": 0.792,
                         "extensions": {},
                         "groups": []
                     },
@@ -7942,7 +7942,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.055754756,
-                        "referencePoint": null,
+                        "referencePoint": 2,
                         "extensions": {},
                         "groups": []
                     },
@@ -7989,7 +7989,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.093301802,
-                        "referencePoint": null,
+                        "referencePoint": 0.0723,
                         "extensions": {},
                         "groups": []
                     },
@@ -8008,7 +8008,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.139571534,
-                        "referencePoint": null,
+                        "referencePoint": 0.187,
                         "extensions": {},
                         "groups": []
                     },
@@ -8027,7 +8027,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.437790265,
-                        "referencePoint": null,
+                        "referencePoint": 0.0351,
                         "extensions": {},
                         "groups": []
                     },
@@ -8046,7 +8046,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.145147156,
-                        "referencePoint": null,
+                        "referencePoint": 0.166,
                         "extensions": {},
                         "groups": []
                     },
@@ -8065,7 +8065,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.187227029,
-                        "referencePoint": null,
+                        "referencePoint": 0.0569,
                         "extensions": {},
                         "groups": []
                     },
@@ -8084,7 +8084,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.082890932,
-                        "referencePoint": null,
+                        "referencePoint": 0.388,
                         "extensions": {},
                         "groups": []
                     },
@@ -8103,7 +8103,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.019794479,
-                        "referencePoint": null,
+                        "referencePoint": 27.1,
                         "extensions": {},
                         "groups": []
                     },
@@ -8473,7 +8473,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.450023168,
-                        "referencePoint": null,
+                        "referencePoint": 0.052,
                         "extensions": {},
                         "groups": []
                     },
@@ -8492,7 +8492,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.202616363,
-                        "referencePoint": null,
+                        "referencePoint": 0.0238,
                         "extensions": {},
                         "groups": []
                     },
@@ -8511,7 +8511,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.333814021,
-                        "referencePoint": null,
+                        "referencePoint": 0.016,
                         "extensions": {},
                         "groups": []
                     },
@@ -8530,7 +8530,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.47548025,
-                        "referencePoint": null,
+                        "referencePoint": 0.011,
                         "extensions": {},
                         "groups": []
                     },
@@ -8549,7 +8549,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.815997542,
-                        "referencePoint": null,
+                        "referencePoint": 0.00898,
                         "extensions": {},
                         "groups": []
                     },
@@ -8568,7 +8568,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.238077031,
-                        "referencePoint": null,
+                        "referencePoint": 0.00783,
                         "extensions": {},
                         "groups": []
                     },
@@ -10941,7 +10941,7 @@
                     {
                         "fieldType": 1,
                         "name": "smokeSimp_cat4_2",
-                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 1, 1, func['ifelse'](func['isIn'](obj['smokeSimp'], 0, 2, 3), 0, undefined));",
                         "derivedFrom": [
                             "smokeSimp"
                         ],
@@ -10961,7 +10961,7 @@
                     {
                         "fieldType": 1,
                         "name": "smokeSimp_cat4_3",
-                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 2, 1, func['ifelse'](func['isIn'](obj['smokeSimp'], 0, 1, 3), 0, undefined));",
                         "derivedFrom": [
                             "smokeSimp"
                         ],
@@ -10981,7 +10981,7 @@
                     {
                         "fieldType": 1,
                         "name": "smokeSimp_cat4_4",
-                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['smokeSimp'] == 3, 1, func['ifelse'](func['isIn'](obj['smokeSimp'], 0, 1, 2), 0, undefined));",
                         "derivedFrom": [
                             "smokeSimp"
                         ],
@@ -11001,7 +11001,7 @@
                     {
                         "fieldType": 1,
                         "name": "formerDrinker_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['formerDrinker'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['formerDrinker'] == 1, 1, func['ifelse'](obj['formerDrinker'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "formerDrinker"
                         ],
@@ -11021,7 +11021,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_4",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 5, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 5, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 4, 3, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -11041,7 +11041,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_3",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 4, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 4, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 3, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -11061,7 +11061,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_2",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 3, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 2, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -11081,7 +11081,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_1",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 3, 2), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -11101,7 +11101,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_1",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 1, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 2, 3, 4, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -11121,7 +11121,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_2",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 2, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 3, 4, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -11141,7 +11141,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_3",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 3, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 4, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -11161,7 +11161,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_4",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 4, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 4, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 3, 5, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -11181,7 +11181,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_5",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 5, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 5, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 3, 4, 6), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -11201,7 +11201,7 @@
                     {
                         "fieldType": 1,
                         "name": "NeedHelp_cat7_6",
-                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 6, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['NeedHelp'] == 6, 1, func['ifelse'](func['isIn'](obj['NeedHelp'], 0, 1, 2, 3, 4, 5), 0, undefined));",
                         "derivedFrom": [
                             "NeedHelp"
                         ],
@@ -11221,7 +11221,7 @@
                     {
                         "fieldType": 1,
                         "name": "Diabetes_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_101_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_101_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_101_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_101_Mutated_1"
                         ],
@@ -11241,7 +11241,7 @@
                     {
                         "fieldType": 1,
                         "name": "HeartDis_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_121_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_121_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_121_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_121_Mutated_1"
                         ],
@@ -11261,7 +11261,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stroke_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_151_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_151_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_151_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_151_Mutated_1"
                         ],
@@ -11281,7 +11281,7 @@
                     {
                         "fieldType": 1,
                         "name": "Hypertension_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_071_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_071_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_071_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_071_Mutated_1"
                         ],
@@ -11301,7 +11301,7 @@
                     {
                         "fieldType": 1,
                         "name": "Mood_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_280_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_280_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_280_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_280_Mutated_1"
                         ],
@@ -11321,7 +11321,7 @@
                     {
                         "fieldType": 1,
                         "name": "COPD_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['CCC_091_Mutated_1'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['CCC_091_Mutated_1'] == 1, 1, func['ifelse'](obj['CCC_091_Mutated_1'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "CCC_091_Mutated_1"
                         ],
@@ -11341,7 +11341,7 @@
                     {
                         "fieldType": 1,
                         "name": "Edu_cat4_3",
-                        "equation": "derived = func['ifelse'](obj['Edu_cat4'] == 2, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['Edu_cat4'] == 2, 1, func['ifelse'](func['isIn'](obj['Edu_cat4'], 0, 1, 3), 0, undefined));",
                         "derivedFrom": [
                             "Edu_cat4"
                         ],
@@ -11361,7 +11361,7 @@
                     {
                         "fieldType": 1,
                         "name": "Edu_cat4_2",
-                        "equation": "derived = func['ifelse'](obj['Edu_cat4'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['Edu_cat4'] == 1, 1, func['ifelse'](func['isIn'](obj['Edu_cat4'], 0, 2, 3), 0, undefined));",
                         "derivedFrom": [
                             "Edu_cat4"
                         ],
@@ -11381,7 +11381,7 @@
                     {
                         "fieldType": 1,
                         "name": "Edu_cat4_1",
-                        "equation": "derived = func['ifelse'](obj['Edu_cat4'] == 0, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['Edu_cat4'] == 0, 1, func['ifelse'](func['isIn'](obj['Edu_cat4'], 1, 2, 3), 0, undefined));",
                         "derivedFrom": [
                             "Edu_cat4"
                         ],
@@ -11401,7 +11401,7 @@
                     {
                         "fieldType": 1,
                         "name": "MS_cat3_2",
-                        "equation": "derived = func['ifelse'](obj['DHHGMS_Mutated_1'] == 4, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['DHHGMS_Mutated_1'] == 4, 1, func['ifelse'](func['isIn'](obj['DHHGMS_Mutated_1'], 1, 2, 3), 0, undefined));",
                         "derivedFrom": [
                             "DHHGMS_Mutated_1"
                         ],
@@ -11421,7 +11421,7 @@
                     {
                         "fieldType": 1,
                         "name": "MS_cat3_1",
-                        "equation": "derived = func['ifelse'](obj['DHHGMS_Mutated_1'] == 3, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['DHHGMS_Mutated_1'] == 3, 1, func['ifelse'](func['isIn'](obj['DHHGMS_Mutated_1'], 1, 2, 4), 0, undefined));",
                         "derivedFrom": [
                             "DHHGMS_Mutated_1"
                         ],
@@ -11441,7 +11441,7 @@
                     {
                         "fieldType": 1,
                         "name": "epilepsy_cat2_1",
-                        "equation": "derived = func['ifelse'](obj['epilepsy'] == 1, 1, 0);",
+                        "equation": "derived = func['ifelse'](obj['epilepsy'] == 1, 1, func['ifelse'](obj['epilepsy'] == 0, 0, undefined));",
                         "derivedFrom": [
                             "epilepsy"
                         ],
@@ -16027,7 +16027,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.245279263,
-                        "referencePoint": null,
+                        "referencePoint": 68.8,
                         "extensions": {},
                         "groups": []
                     },
@@ -16136,7 +16136,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.06825224,
-                        "referencePoint": null,
+                        "referencePoint": 0.461,
                         "extensions": {},
                         "groups": []
                     },
@@ -16155,7 +16155,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.088459004,
-                        "referencePoint": null,
+                        "referencePoint": 0.0535,
                         "extensions": {},
                         "groups": []
                     },
@@ -16174,7 +16174,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.10969,
-                        "referencePoint": null,
+                        "referencePoint": 0.3104,
                         "extensions": {},
                         "groups": []
                     },
@@ -16193,7 +16193,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.043,
-                        "referencePoint": null,
+                        "referencePoint": 0.208,
                         "extensions": {},
                         "groups": []
                     },
@@ -16212,7 +16212,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.01645,
-                        "referencePoint": null,
+                        "referencePoint": 0.0496,
                         "extensions": {},
                         "groups": []
                     },
@@ -16231,7 +16231,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.070428472,
-                        "referencePoint": null,
+                        "referencePoint": 0.31,
                         "extensions": {},
                         "groups": []
                     },
@@ -16250,7 +16250,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.021273964,
-                        "referencePoint": null,
+                        "referencePoint": 0.352,
                         "extensions": {},
                         "groups": []
                     },
@@ -16269,7 +16269,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.07269401,
-                        "referencePoint": null,
+                        "referencePoint": 0.131,
                         "extensions": {},
                         "groups": []
                     },
@@ -16288,7 +16288,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.122294467,
-                        "referencePoint": null,
+                        "referencePoint": 0.0275,
                         "extensions": {},
                         "groups": []
                     },
@@ -16307,7 +16307,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.00696192,
-                        "referencePoint": null,
+                        "referencePoint": 11.3,
                         "extensions": {},
                         "groups": []
                     },
@@ -16354,7 +16354,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.039406677,
-                        "referencePoint": null,
+                        "referencePoint": 0.145,
                         "extensions": {},
                         "groups": []
                     },
@@ -16373,7 +16373,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.123883776,
-                        "referencePoint": null,
+                        "referencePoint": 0.0613,
                         "extensions": {},
                         "groups": []
                     },
@@ -16392,7 +16392,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.02632212,
-                        "referencePoint": null,
+                        "referencePoint": 0.383,
                         "extensions": {},
                         "groups": []
                     },
@@ -16411,7 +16411,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.028630605,
-                        "referencePoint": null,
+                        "referencePoint": 1.92,
                         "extensions": {},
                         "groups": []
                     },
@@ -16458,7 +16458,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.131370158,
-                        "referencePoint": null,
+                        "referencePoint": 0.212,
                         "extensions": {},
                         "groups": []
                     },
@@ -16477,7 +16477,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.064852024,
-                        "referencePoint": null,
+                        "referencePoint": 5.19,
                         "extensions": {},
                         "groups": []
                     },
@@ -16524,7 +16524,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.096159111,
-                        "referencePoint": null,
+                        "referencePoint": 0.445,
                         "extensions": {},
                         "groups": []
                     },
@@ -16571,7 +16571,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.169633579,
-                        "referencePoint": null,
+                        "referencePoint": 0.757,
                         "extensions": {},
                         "groups": []
                     },
@@ -16618,7 +16618,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.046545656,
-                        "referencePoint": null,
+                        "referencePoint": 1.61,
                         "extensions": {},
                         "groups": []
                     },
@@ -16665,7 +16665,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.18354168,
-                        "referencePoint": null,
+                        "referencePoint": 0.0835,
                         "extensions": {},
                         "groups": []
                     },
@@ -16684,7 +16684,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.067801038,
-                        "referencePoint": null,
+                        "referencePoint": 0.14,
                         "extensions": {},
                         "groups": []
                     },
@@ -16703,7 +16703,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.368505128,
-                        "referencePoint": null,
+                        "referencePoint": 0.031,
                         "extensions": {},
                         "groups": []
                     },
@@ -16722,7 +16722,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.40951651,
-                        "referencePoint": null,
+                        "referencePoint": 0.122,
                         "extensions": {},
                         "groups": []
                     },
@@ -16741,7 +16741,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.304972654,
-                        "referencePoint": null,
+                        "referencePoint": 0.0899,
                         "extensions": {},
                         "groups": []
                     },
@@ -16760,7 +16760,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.004768246,
-                        "referencePoint": null,
+                        "referencePoint": 0.434,
                         "extensions": {},
                         "groups": []
                     },
@@ -16779,7 +16779,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.357291218,
-                        "referencePoint": null,
+                        "referencePoint": 0.00626,
                         "extensions": {},
                         "groups": []
                     },
@@ -16798,7 +16798,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.041788926,
-                        "referencePoint": null,
+                        "referencePoint": 26.5,
                         "extensions": {},
                         "groups": []
                     },
@@ -17187,7 +17187,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.259410494,
-                        "referencePoint": null,
+                        "referencePoint": 0.103,
                         "extensions": {},
                         "groups": []
                     },
@@ -17206,7 +17206,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.39347433,
-                        "referencePoint": null,
+                        "referencePoint": 0.0529,
                         "extensions": {},
                         "groups": []
                     },
@@ -17225,7 +17225,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.475296526,
-                        "referencePoint": null,
+                        "referencePoint": 0.0312,
                         "extensions": {},
                         "groups": []
                     },
@@ -17244,7 +17244,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.466321125,
-                        "referencePoint": null,
+                        "referencePoint": 0.0184,
                         "extensions": {},
                         "groups": []
                     },
@@ -17263,7 +17263,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.33186687,
-                        "referencePoint": null,
+                        "referencePoint": 0.0118,
                         "extensions": {},
                         "groups": []
                     },
@@ -17282,7 +17282,7 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.628219989,
-                        "referencePoint": null,
+                        "referencePoint": 0.00866,
                         "extensions": {},
                         "groups": []
                     },
