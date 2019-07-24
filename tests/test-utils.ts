@@ -137,6 +137,11 @@ export async function runIntegrationTest(
                 );
                 modelPredicateDatas.push([]);
             } else {
+                const sexVariable =
+                    modelConfig.sexVariable === undefined
+                        ? 'sex'
+                        : modelConfig.sexVariable;
+
                 validationCsvFilePaths.push(
                     getCsvFilePathsInFolder(
                         path.join(
@@ -151,8 +156,11 @@ export async function runIntegrationTest(
                 );
                 modelPredicateDatas.push([
                     {
-                        name: 'sex',
-                        coefficent: 'male',
+                        name: sexVariable,
+                        coefficent:
+                            modelConfig.sexValues !== undefined
+                                ? modelConfig.sexValues.male
+                                : 'male',
                     },
                 ]);
 
@@ -170,8 +178,11 @@ export async function runIntegrationTest(
                 );
                 modelPredicateDatas.push([
                     {
-                        name: 'sex',
-                        coefficent: 'female',
+                        name: sexVariable,
+                        coefficent:
+                            modelConfig.sexValues !== undefined
+                                ? modelConfig.sexValues.female
+                                : 'female',
                     },
                 ]);
             }
