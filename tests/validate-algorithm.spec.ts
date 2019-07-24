@@ -6,18 +6,23 @@ import {
     findDatumWithName,
 } from '@ottawamhealth/pbl-calculator-engine/lib/engine/data';
 import { CoxSurvivalAlgorithm } from '@ottawamhealth/pbl-calculator-engine/lib/engine/algorithm/regression-algorithm/cox-survival-algorithm/cox-survival-algorithm';
-import { InteractionCovariate } from '@ottawamhealth/pbl-calculator-engine/lib/engine/data-field/covariate/interaction-covariate/interaction-covariate';
+//import { InteractionCovariate } from '@ottawamhealth/pbl-calculator-engine/lib/engine/data-field/covariate/interaction-covariate/interaction-covariate';
 import { NoDatumFoundError } from '@ottawamhealth/pbl-calculator-engine/lib/engine/errors/no-datum-found-error';
 
-function checkDataForAlgorithm(data: Data, cox: CoxSurvivalAlgorithm) {
+/*function checkDataForAlgorithm(data: Data, cox: CoxSurvivalAlgorithm) {
     cox.covariates
         .filter(covariate => !(covariate instanceof InteractionCovariate))
         .forEach(covariate => {
             findDatumWithName(covariate.name, data);
         });
-}
+}*/
 
-function assertScore(expectedScore: number, actualScore: number, data: Data) {
+function assertScore(
+    expectedScore: number,
+    actualScore: number,
+    data: Data,
+    index: number,
+) {
     const percentDiff = getRelativeDifference(
         expectedScore as number,
         actualScore,
@@ -27,10 +32,11 @@ function assertScore(expectedScore: number, actualScore: number, data: Data) {
     expect(percentDiff).to.be.lessThan(
         10,
         `
+        Index: ${index}
         Percent difference ${percentDiff} greater than ${MaximumPercentDiff}
         Expected Score: ${expectedScore}
         Actual Score: ${actualScore}
-        Data: ${JSON.stringify(data)}
+        Data: ${JSON.stringify(data, null, 4)}
     `,
     );
 }
@@ -38,13 +44,18 @@ function assertScore(expectedScore: number, actualScore: number, data: Data) {
 function testCalculatedScoreForDataAndExpectedScore(
     coxAlgorithm: CoxSurvivalAlgorithm,
     data: Data,
+    index: number,
 ) {
     // Debugging code
     /*if (expectedRisk !== 0.002523241) {
         return;
     }*/
 
-    checkDataForAlgorithm(data, coxAlgorithm);
+    /*if (index !== 2) {
+        return;
+    }*/
+
+    //checkDataForAlgorithm(data, coxAlgorithm);
 
     let expectedRisk;
     try {
@@ -95,12 +106,14 @@ function testCalculatedScoreForDataAndExpectedScore(
                 expectedRisk,
                 coxAlgorithm.getRiskToTime(data),
                 data,
+                index,
             );
         } else {
             return assertScore(
                 expectedSurvival as number,
                 coxAlgorithm.getSurvivalToTime(data),
                 data,
+                index,
             );
         }
     }
