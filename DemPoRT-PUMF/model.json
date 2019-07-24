@@ -2403,7 +2403,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_1",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 3, 2), 0, undefined));",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 3, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
@@ -11081,7 +11081,7 @@
                     {
                         "fieldType": 1,
                         "name": "Stress_cat5_1",
-                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 3, 2), 0, undefined));",
+                        "equation": "derived = func['ifelse'](obj['GEN_07_Mutated_1'] == 2, 1, func['ifelse'](func['isIn'](obj['GEN_07_Mutated_1'], 5, 4, 3, 1), 0, undefined));",
                         "derivedFrom": [
                             "GEN_07_Mutated_1"
                         ],
