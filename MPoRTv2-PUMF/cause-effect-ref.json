@@ -1,0 +1,44 @@
+{
+    "male": {
+        "SMOKING": [
+            { "name": "PackYears_cont", "coefficent": 0 },
+            { "name": "smokeSimp_cat4_2", "coefficent": 0 },
+            { "name": "smokeSimp_cat4_3", "coefficent": 0 },
+            { "name": "smokeSimp_cat4_4", "coefficent": 0 }
+        ],
+        "DIET": [
+            { "name": "FVCDFRU", "coefficent": 1.88236297159989 },
+            { "name": "FVCDJUI", "coefficent": 0 },
+            { "name": "FVCDPOT", "coefficent": 0 },
+            { "name": "FVCDCAR", "coefficent": 0.520781335265796 },
+            { "name": "FVCDSAL", "coefficent": 0.808685954597419 },
+            { "name": "FVCDVEG", "coefficent": 1.788169739 }
+        ],
+        "ACTIVITY": [{ "name": "PACDEE", "coefficent": 3 }],
+        "ALCOHOL": [
+            { "name": "formerDrinker", "coefficent": 1 },
+            { "name": "ALWDWKY", "coefficent": 0 }
+        ]
+    },
+    "female": {
+        "SMOKING": [
+            { "name": "PackYears_cont", "coefficent": 0 },
+            { "name": "smokeSimp_cat4_2", "coefficent": 0 },
+            { "name": "smokeSimp_cat4_3", "coefficent": 0 },
+            { "name": "smokeSimp_cat4_4", "coefficent": 0 }
+        ],
+        "DIET": [
+            { "name": "FVCDFRU", "coefficent": 1.92186505235282 },
+            { "name": "FVCDJUI", "coefficent": 0 },
+            { "name": "FVCDPOT", "coefficent": 0 },
+            { "name": "FVCDCAR", "coefficent": 0.474000718 },
+            { "name": "FVCDSAL", "coefficent": 0.761504264 },
+            { "name": "FVCDVEG", "coefficent": 1.84262996575799 }
+        ],
+        "ACTIVITY": [{ "name": "PACDEE", "coefficent": 3 }],
+        "ALCOHOL": [
+            { "name": "formerDrinker", "coefficent": 1 },
+            { "name": "ALWDWKY", "coefficent": 0 }
+        ]
+    }
+}
