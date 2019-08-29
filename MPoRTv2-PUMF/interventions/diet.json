@@ -1,0 +1,11 @@
+{
+    "interventionVariable": "TotalFruitVeg",
+    "updateMethod": "weightedMean",
+    "variables": ["Fruit_cont", "Salad_cont", "Carrot_cont", "Veg_cont"],
+    "means": [
+        1.88236297159989,
+        0.808685954597419,
+        0.520781335265796,
+        1.788169739
+    ]
+}

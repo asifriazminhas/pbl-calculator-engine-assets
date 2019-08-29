@@ -1,0 +1,5 @@
+{
+    "updateMethod": "categorical",
+    "interventionVariable": "smokeSimp_cat4_1",
+    "dummyVariable": "smokeSimp_cat4_3"
+}

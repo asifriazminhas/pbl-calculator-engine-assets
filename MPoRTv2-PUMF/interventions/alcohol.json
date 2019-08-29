@@ -1,0 +1,10 @@
+{
+    "updateMethod": "replace",
+    "interventionVariable": "DrinksLastWeek",
+    "exclude": [
+        {
+            "variable": "DrinksLastWeek",
+            "interval": [1, 3]
+        }
+    ]
+}
