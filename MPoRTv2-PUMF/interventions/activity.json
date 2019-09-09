@@ -1,4 +1,80 @@
-{
-    "interventionVariable": "PACDEE",
-    "updateMethod": "replace"
-}
+[
+    {
+        "name": "health behaviour",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPopulation": [null, 3],
+                    "setValue": 3
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPopulation": [null, 2],
+                    "setValue": 2
+                }
+            ]
+        }
+    },
+    {
+        "name": "target scenario",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPop": [null, null]
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPop": [null, null]
+                }
+            ]
+        }
+    },
+    {
+        "name": "relative scenario",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPop": [null, null]
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPop": [null, null]
+                }
+            ]
+        }
+    },
+    {
+        "name": "absolute scenario",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPop": [null, null]
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "PACDEE",
+                    "targetPop": [null, null]
+                }
+            ]
+        }
+    }
+]
