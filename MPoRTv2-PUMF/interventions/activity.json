@@ -1,6 +1,7 @@
 [
     {
-        "name": "health behaviour",
+        "name": "attribution",
+        "description": "Canadian physical activity guidelines, 2016",
         "male": {
             "variables": [
                 {
