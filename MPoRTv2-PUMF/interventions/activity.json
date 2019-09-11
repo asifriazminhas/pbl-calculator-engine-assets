@@ -49,7 +49,7 @@
                 {
                     "variableName": "PACDEE",
                     "targetPop": [null, null],
-                    "percentValue": "user-defined"
+                    "relativeValue": "user-defined"
                 }
             ]
         },
@@ -58,7 +58,7 @@
                 {
                     "variableName": "PACDEE",
                     "targetPop": [null, null],
-                    "percentValue": "user-defined"
+                    "relativeValue": "user-defined"
                 }
             ]
         }
