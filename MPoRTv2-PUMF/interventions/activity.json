@@ -27,7 +27,8 @@
             "variables": [
                 {
                     "variableName": "PACDEE",
-                    "targetPop": [null, null]
+                    "targetPop": [null, null],
+                    "targetValue": "user-defined"
                 }
             ]
         },
@@ -35,7 +36,8 @@
             "variables": [
                 {
                     "variableName": "PACDEE",
-                    "targetPop": [null, null]
+                    "targetPop": [null, null],
+                    "targetValue": "user-defined"
                 }
             ]
         }
@@ -46,7 +48,8 @@
             "variables": [
                 {
                     "variableName": "PACDEE",
-                    "targetPop": [null, null]
+                    "targetPop": [null, null],
+                    "percentValue": "user-defined"
                 }
             ]
         },
@@ -54,7 +57,8 @@
             "variables": [
                 {
                     "variableName": "PACDEE",
-                    "targetPop": [null, null]
+                    "targetPop": [null, null],
+                    "percentValue": "user-defined"
                 }
             ]
         }
@@ -65,7 +69,8 @@
             "variables": [
                 {
                     "variableName": "PACDEE",
-                    "targetPop": [null, null]
+                    "targetPop": [null, null],
+                    "absoluteValue": "user-defined"
                 }
             ]
         },
@@ -73,7 +78,8 @@
             "variables": [
                 {
                     "variableName": "PACDEE",
-                    "targetPop": [null, null]
+                    "targetPop": [null, null],
+                    "absoluteValue": "user-defined"
                 }
             ]
         }
