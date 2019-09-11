@@ -1,10 +1,92 @@
-{
-    "updateMethod": "replace",
-    "interventionVariable": "DrinksLastWeek",
-    "exclude": [
-        {
-            "variable": "DrinksLastWeek",
-            "interval": [1, 3]
+[
+    {
+        "name": "cause-deleted",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "setValue": 0
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "setValue": 0
+                }
+            ]
         }
-    ]
-}
+    },
+    {
+        "name": "target-scenario",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "targetValue": "user-defined",
+                    "allowableSetValue": [2, null]
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "targetValue": "user-defined",
+                    "allowableSetValue": [2, null]
+                }
+            ]
+        }
+    },
+    {
+        "name": "absolute-scenario",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "absoluteValue": "user-defined",
+                    "allowableSetValue": [2, null]
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "absoluteValue": "user-defined",
+                    "allowableSetValue": [2, null]
+                }
+            ]
+        }
+    },
+    {
+        "name": "relative-scenario",
+        "male": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "relativeValue": "user-defined",
+                    "allowableSetValue": [2, null]
+                }
+            ]
+        },
+        "female": {
+            "variables": [
+                {
+                    "variableName": "ALWDWKY",
+                    "targetPop": [2, null],
+                    "relativeValue": "user-defined",
+                    "allowableSetValue": [2, null]
+                }
+            ]
+        }
+    }
+]
