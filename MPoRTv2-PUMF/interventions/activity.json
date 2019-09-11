@@ -1,87 +1,97 @@
-[
-    {
-        "name": "attribution",
-        "description": "Canadian physical activity guidelines, 2016",
-        "male": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPopulation": [null, 3],
-                    "setValue": 3
-                }
-            ]
+{
+    "subject": "activity",
+    "algorithms": ["MPoRTv2-PUMF"],
+    "description": "Canadian physical activity guidelines, 2016",
+    "scenarios": [
+        {
+            "male": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "PACDEE",
+                        "targetPop": [null, 3],
+                        "targetValue": 3
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "PACDEE",
+                        "targetPop": [null, 2],
+                        "targetValue": 2
+                    }
+                ]
+            }
         },
-        "female": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPopulation": [null, 2],
-                    "setValue": 2
-                }
-            ]
-        }
-    },
-    {
-        "name": "target scenario",
-        "male": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPop": [null, null],
-                    "targetValue": "user-defined"
-                }
-            ]
+        {
+            "male": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "PACDEE",
+                        "targetPop": [null, "targetValue"],
+                        "targetValue": "user-defined"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "PACDEE",
+                        "targetPop": [null, "targetValue"],
+                        "targetValue": "user-defined"
+                    }
+                ]
+            }
         },
-        "female": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPop": [null, null],
-                    "targetValue": "user-defined"
-                }
-            ]
-        }
-    },
-    {
-        "name": "relative scenario",
-        "male": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPop": [null, null],
-                    "relativeValue": "user-defined"
-                }
-            ]
+        {
+            "name": "relative scenario",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "PACDEE",
+                        "targetPop": [null, null],
+                        "relativeValue": "user-defined",
+                        "postScenarioRange": [0, 3]
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "PACDEE",
+                        "targetPop": [null, null],
+                        "relativeValue": "user-defined",
+                        "postScenarioRange": [0, 3]
+                    }
+                ]
+            }
         },
-        "female": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPop": [null, null],
-                    "relativeValue": "user-defined"
-                }
-            ]
+        {
+            "name": "absolute scenario",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "PACDEE",
+                        "targetPop": [null, null],
+                        "absoluteValue": "user-defined",
+                        "postScenarioRange": [0, 3]
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "PACDEE",
+                        "targetPop": [null, null],
+                        "absoluteValue": "user-defined",
+                        "postScenarioRange": [0, 3]
+                    }
+                ]
+            }
         }
-    },
-    {
-        "name": "absolute scenario",
-        "male": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPop": [null, null],
-                    "absoluteValue": "user-defined"
-                }
-            ]
-        },
-        "female": {
-            "variables": [
-                {
-                    "variableName": "PACDEE",
-                    "targetPop": [null, null],
-                    "absoluteValue": "user-defined"
-                }
-            ]
-        }
-    }
-]
+    ]
+}

@@ -1,5 +1,88 @@
 {
-    "updateMethod": "categorical",
-    "interventionVariable": "smokeSimp_cat4_1",
-    "dummyVariable": "smokeSimp_cat4_3"
+    "name": "smoking",
+    "algorithm": "",
+    "subject": "smoking",
+    "scenarios": [
+        {
+            "name": "attribution",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "PackYears_cont",
+                        "targetValue": 0
+                    },
+                    { "variableName": "smokeSimp_cat4_2", "targetValue": 0 },
+                    { "variableName": "smokeSimp_cat4_3", "targetValue": 0 },
+                    { "variableName": "smokeSimp_cat4_4", "targetValue": 0 }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "PackYears_cont",
+                        "targetValue": 0
+                    },
+                    { "variableName": "smokeSimp_cat4_2", "targetValue": 0 },
+                    { "variableName": "smokeSimp_cat4_3", "targetValue": 0 },
+                    { "variableName": "smokeSimp_cat4_4", "targetValue": 0 }
+                ]
+            }
+        },
+        {
+            "name": "relative-scenario",
+            "male": {
+                "variables": [
+                    {
+                        "targetVariable": "CurrentSmoker",
+                        "method": "relative-scenario-cat",
+                        "targetPop": [1, 1],
+                        "relativeValue": "user-defined",
+                        "absorbingVariable": "FormerSmoker"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "absolute-scenario",
+            "male": {
+                "variables": [
+                    {
+                        "targetVariable": "CurrentSmoker",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "Value": "user-defined",
+                        "absorbingVariable": "FormerSmoker"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "male": {
+                "variables": [
+                    {
+                        "targetVariable": "CurrentSmoker",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "FormerSmoker"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "male": {
+                "variables": [
+                    {
+                        "targetVariable": "CurrentSmoker",
+                        "method": "target-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "FormerSmoker"
+                    }
+                ]
+            }
+        }
+    ]
 }
