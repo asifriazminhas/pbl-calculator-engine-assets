@@ -1,6 +1,6 @@
 {
     "name": "smoking",
-    "algorithm": "",
+    "algorithms": ["MPoRTv2-PUMF"],
     "subject": "smoking",
     "scenarios": [
         {
@@ -8,23 +8,57 @@
             "male": {
                 "variables": [
                     {
+                        "method": "attribution",
                         "variableName": "PackYears_cont",
-                        "targetValue": 0
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
                     },
-                    { "variableName": "smokeSimp_cat4_2", "targetValue": 0 },
-                    { "variableName": "smokeSimp_cat4_3", "targetValue": 0 },
-                    { "variableName": "smokeSimp_cat4_4", "targetValue": 0 }
+                    {
+                        "method": "attribution",
+                        "variableName": "smokeSimp_cat4_2",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "method": "attribution",
+                        "variableName": "smokeSimp_cat4_3",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "method": "attribution",
+                        "variableName": "smokeSimp_cat4_4",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    }
                 ]
             },
             "female": {
                 "variables": [
                     {
+                        "method": "attribution",
                         "variableName": "PackYears_cont",
-                        "targetValue": 0
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
                     },
-                    { "variableName": "smokeSimp_cat4_2", "targetValue": 0 },
-                    { "variableName": "smokeSimp_cat4_3", "targetValue": 0 },
-                    { "variableName": "smokeSimp_cat4_4", "targetValue": 0 }
+                    {
+                        "method": "attribution",
+                        "variableName": "smokeSimp_cat4_2",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "method": "attribution",
+                        "variableName": "smokeSimp_cat4_3",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "method": "attribution",
+                        "variableName": "smokeSimp_cat4_4",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    }
                 ]
             }
         },
@@ -33,11 +67,22 @@
             "male": {
                 "variables": [
                     {
-                        "targetVariable": "CurrentSmoker",
+                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "relative-scenario-cat",
                         "targetPop": [1, 1],
-                        "relativeValue": "user-defined",
-                        "absorbingVariable": "FormerSmoker"
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "method": "relative-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
                     }
                 ]
             }
@@ -47,25 +92,22 @@
             "male": {
                 "variables": [
                     {
-                        "targetVariable": "CurrentSmoker",
-                        "method": "absolute-scenario-cat",
-                        "targetPop": [1, 1],
-                        "Value": "user-defined",
-                        "absorbingVariable": "FormerSmoker"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "",
-            "male": {
-                "variables": [
-                    {
-                        "targetVariable": "CurrentSmoker",
+                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "absolute-scenario-cat",
                         "targetPop": [1, 1],
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "FormerSmoker"
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
                     }
                 ]
             }
@@ -75,11 +117,47 @@
             "male": {
                 "variables": [
                     {
-                        "targetVariable": "CurrentSmoker",
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "male": {
+                "variables": [
+                    {
+                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "target-scenario-cat",
                         "targetPop": [1, 1],
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "FormerSmoker"
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "method": "target-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
                     }
                 ]
             }
