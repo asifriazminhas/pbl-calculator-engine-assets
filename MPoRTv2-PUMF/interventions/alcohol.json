@@ -4,7 +4,7 @@
     "description": "Canadian healthy drinking guidelines",
     "scenarios": [
         {
-            "name": "total-attribution",
+            "name": "total attribution",
             "male": {
                 "variables": [
                     {
@@ -27,7 +27,7 @@
             }
         },
         {
-            "name": "target-scenario",
+            "name": "target scenario",
             "male": {
                 "variables": [
                     {
@@ -52,7 +52,7 @@
             }
         },
         {
-            "name": "absolute-scenario",
+            "name": "absolute scenario",
             "male": {
                 "variables": [
                     {
@@ -77,7 +77,7 @@
             }
         },
         {
-            "name": "relative-scenario",
+            "name": "relative scenario",
             "male": {
                 "variables": [
                     {

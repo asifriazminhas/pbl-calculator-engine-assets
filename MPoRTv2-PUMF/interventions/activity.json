@@ -4,7 +4,7 @@
     "description": "Canadian physical activity guidelines, 2016",
     "scenarios": [
         {
-            "name": "total-attribution",
+            "name": "total attribution",
             "male": {
                 "variables": [
                     {
@@ -27,7 +27,7 @@
             }
         },
         {
-            "name": "target-scenario",
+            "name": "target scenario",
             "male": {
                 "variables": [
                     {
@@ -50,10 +50,11 @@
             }
         },
         {
-            "name": "absolute-scenario",
+            "name": "absolute scenario",
             "male": {
                 "variables": [
                     {
+                        "method": "absolute-scenario",
                         "variableName": "PACDEE",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
@@ -64,6 +65,7 @@
             "female": {
                 "variables": [
                     {
+                        "method": "absolute-scenario",
                         "variableName": "PACDEE",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
@@ -73,10 +75,11 @@
             }
         },
         {
-            "name": "relative-scenario",
+            "name": "relative scenario",
             "male": {
                 "variables": [
                     {
+                        "method": "relative-scenario",
                         "variableName": "PACDEE",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
@@ -87,6 +90,7 @@
             "female": {
                 "variables": [
                     {
+                        "method": "relative-scenario",
                         "variableName": "PACDEE",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
