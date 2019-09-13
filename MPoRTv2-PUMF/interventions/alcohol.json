@@ -1,98 +1,105 @@
-[
-    {
-        "name": "cause-deleted",
-        "male": {
-            "variables": [
-                {
-                    "method": "attribution",
-                    "variableName": "ALWDWKY",
-                    "targetPop": [2, null],
-                    "targetValue": 0
-                }
-            ]
+{
+    "subject": "alcohol",
+    "algorithms": ["MPoRTv2-PUMF"],
+    "description": "",
+    "scenarios": [
+        {
+            "name": "cause-deleted",
+            "male": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "ALWDWKY",
+                        "targetPop": [2, null],
+                        "scenarioValue": 0
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "ALWDWKY",
+                        "targetPop": [2, null],
+                        "scenarioValue": 0
+                    }
+                ]
+            }
         },
-        "female": {
-            "variables": [
-                {
-                    "method": "attribution",
-                    "variableName": "ALWDWKY",
-                    "targetPop": [2, null],
-                    "targetValue": 0
-                }
-            ]
-        }
-    },
-    {
-        "name": "Target Scenario",
-        "male": {
-            "variables": [
-                {
-                    "method": "attribution",
-                    "variableName": "ALWDWKY",
-                    "targetValue": "user-defined",
-                    "targetPop": ["targetValue", null],
-                    "postScenarioRange": [0, 0]
-                }
-            ]
+        {
+            "name": "Target Scenario",
+            "male": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "ALWDWKY",
+                        "scenarioValue": "user-defined",
+                        "targetPop": ["scenarioValue", null],
+                        "postScenarioRange": [0, 0]
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "method": "attribution",
+                        "variableName": "ALWDWKY",
+                        "scenarioValue": "user-defined",
+                        "targetPop": ["scenarioValue", null],
+                        "postScenarioRange": [0, 0]
+                    }
+                ]
+            }
         },
-        "female": {
-            "variables": [
-                {
-                    "method": "attribution",
-                    "variableName": "ALWDWKY",
-                    "targetValue": "user-defined",
-                    "targetPop": ["targetValue", null],
-                    "postScenarioRange": [0, 0]
-                }
-            ]
-        }
-    },
-    {
-        "name": "absolute-scenario",
-        "male": {
-            "variables": [
-                {
-                    "variableName": "ALWDWKY",
-                    "targetPop": [2, null],
-                    "absoluteValue": "user-defined",
-                    "postScenarioRange": [2, null]
-                }
-            ]
+        {
+            "name": "absolute-scenario",
+            "male": {
+                "variables": [
+                    {
+                        "method": "absolute-scenario",
+                        "variableName": "ALWDWKY",
+                        "targetPop": [2, null],
+                        "scenarioValue": "user-defined",
+                        "postScenarioRange": [2, null]
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "method": "absolute-scenario",
+                        "variableName": "ALWDWKY",
+                        "targetPop": [2, null],
+                        "scenarioValue": "user-defined",
+                        "postScenarioRange": [2, null]
+                    }
+                ]
+            }
         },
-        "female": {
-            "variables": [
-                {
-                    "variableName": "ALWDWKY",
-                    "targetPop": [2, null],
-                    "absoluteValue": "user-defined",
-                    "postScenarioRange": [2, null]
-                }
-            ]
+        {
+            "name": "relative-scenario",
+            "male": {
+                "variables": [
+                    {
+                        "method": "relative-scenario",
+                        "variableName": "ALWDWKY",
+                        "targetPop": [2, null],
+                        "scenarioValue": "user-defined",
+                        "postScenarioRange": [2, null]
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "method": "relative-scenario",
+                        "variableName": "ALWDWKY",
+                        "targetPop": [2, null],
+                        "scenarioValue": "user-defined",
+                        "postScenarioRange": [2, null]
+                    }
+                ]
+            }
         }
-    },
-    {
-        "name": "relative-scenario",
-        "male": {
-            "variables": [
-                {
-                    "method": "relative-scenario",
-                    "variableName": "ALWDWKY",
-                    "targetPop": [2, null],
-                    "relativeValue": "user-defined",
-                    "postScenarioRange": [2, null]
-                }
-            ]
-        },
-        "female": {
-            "variables": [
-                {
-                    "method": "relative-scenario",
-                    "variableName": "ALWDWKY",
-                    "targetPop": [2, null],
-                    "relativeValue": "user-defined",
-                    "postScenarioRange": [2, null]
-                }
-            ]
-        }
-    }
-]
+    ]
+}
