@@ -67,22 +67,22 @@
             "male": {
                 "variables": [
                     {
-                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "relative-scenario-cat",
-                        "targetPop": [1, 1],
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "absorbingVariable": "smokeSimp_cat4_3",
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "smokeSimp_cat4_3"
+                        "targetPop": [1, 1]
                     }
                 ]
             },
             "female": {
                 "variables": [
                     {
-                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "relative-scenario-cat",
-                        "targetPop": [1, 1],
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "absorbingVariable": "smokeSimp_cat4_3",
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "smokeSimp_cat4_3"
+                        "targetPop": [1, 1]
                     }
                 ]
             }
@@ -117,22 +117,22 @@
             "male": {
                 "variables": [
                     {
-                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "absolute-scenario-cat",
-                        "targetPop": [1, 1],
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "absorbingVariable": "smokeSimp_cat4_3",
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "smokeSimp_cat4_3"
+                        "targetPop": [1, 1]
                     }
                 ]
             },
             "female": {
                 "variables": [
                     {
-                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "absolute-scenario-cat",
-                        "targetPop": [1, 1],
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "absorbingVariable": "smokeSimp_cat4_3",
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "smokeSimp_cat4_3"
+                        "targetPop": [1, 1]
                     }
                 ]
             }
@@ -142,22 +142,22 @@
             "male": {
                 "variables": [
                     {
-                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "target-scenario-cat",
-                        "targetPop": [1, 1],
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "absorbingVariable": "smokeSimp_cat4_3",
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "smokeSimp_cat4_3"
+                        "targetPop": [1, 1]
                     }
                 ]
             },
             "female": {
                 "variables": [
                     {
-                        "targetVariable": "smokeSimp_cat4_2",
                         "method": "target-scenario-cat",
-                        "targetPop": [1, 1],
+                        "targetVariable": "smokeSimp_cat4_2",
+                        "absorbingVariable": "smokeSimp_cat4_3",
                         "scenarioValue": "user-defined",
-                        "absorbingVariable": "smokeSimp_cat4_3"
+                        "targetPop": [1, 1]
                     }
                 ]
             }
