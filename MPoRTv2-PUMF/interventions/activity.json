@@ -4,6 +4,7 @@
     "description": "Canadian physical activity guidelines, 2016",
     "scenarios": [
         {
+            "name": "total-attribution",
             "male": {
                 "variables": [
                     {
@@ -26,6 +27,7 @@
             }
         },
         {
+            "name": "target-scenario",
             "male": {
                 "variables": [
                     {
@@ -48,7 +50,7 @@
             }
         },
         {
-            "name": "relative scenario",
+            "name": "absolute-scenario",
             "male": {
                 "variables": [
                     {
@@ -71,7 +73,7 @@
             }
         },
         {
-            "name": "absolute scenario",
+            "name": "relative-scenario",
             "male": {
                 "variables": [
                     {
@@ -93,5 +95,6 @@
                 ]
             }
         }
+        
     ]
 }

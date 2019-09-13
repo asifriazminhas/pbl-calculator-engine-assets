@@ -1,10 +1,10 @@
 {
     "subject": "alcohol",
     "algorithms": ["MPoRTv2-PUMF"],
-    "description": "",
+    "description": "Canadian healthy drinking guidelines",
     "scenarios": [
         {
-            "name": "cause-deleted",
+            "name": "total-attribution",
             "male": {
                 "variables": [
                     {
@@ -27,7 +27,7 @@
             }
         },
         {
-            "name": "Target Scenario",
+            "name": "target-scenario",
             "male": {
                 "variables": [
                     {
