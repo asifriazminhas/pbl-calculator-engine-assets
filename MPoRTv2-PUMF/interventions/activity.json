@@ -8,8 +8,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "PACDEE",
+                        "method": "attribution",
                         "targetPop": [null, 3],
                         "scenarioValue": 3
                     }
@@ -18,8 +18,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "PACDEE",
+                        "method": "attribution",
                         "targetPop": [null, 2],
                         "scenarioValue": 2
                     }
@@ -31,8 +31,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "PACDEE",
+                        "method": "attribution",
                         "scenarioValue": "user-defined",
                         "targetPop": [null, "scenarioValue"]
                     }
@@ -41,8 +41,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "PACDEE",
+                        "method": "attribution",
                         "scenarioValue": "user-defined",
                         "targetPop": [null, "scenarioValue"]
                     }
@@ -54,8 +54,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "absolute-scenario",
                         "variableName": "PACDEE",
+                        "method": "absolute-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 3]
@@ -65,8 +65,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "absolute-scenario",
                         "variableName": "PACDEE",
+                        "method": "absolute-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 2]
@@ -79,8 +79,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "relative-scenario",
                         "variableName": "PACDEE",
+                        "method": "relative-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 3]
@@ -90,8 +90,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "relative-scenario",
                         "variableName": "PACDEE",
+                        "method": "relative-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 2]
@@ -99,6 +99,5 @@
                 ]
             }
         }
-        
     ]
 }

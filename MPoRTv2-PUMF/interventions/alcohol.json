@@ -8,8 +8,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "ALWDWKY",
+                        "method": "attribution",
                         "targetPop": [2, null],
                         "scenarioValue": 0
                     }
@@ -18,8 +18,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "ALWDWKY",
+                        "method": "attribution",
                         "targetPop": [2, null],
                         "scenarioValue": 0
                     }
@@ -31,10 +31,10 @@
             "male": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "ALWDWKY",
-                        "scenarioValue": "user-defined",
+                        "method": "attribution",
                         "targetPop": ["scenarioValue", null],
+                        "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 0]
                     }
                 ]
@@ -42,10 +42,10 @@
             "female": {
                 "variables": [
                     {
-                        "method": "attribution",
                         "variableName": "ALWDWKY",
-                        "scenarioValue": "user-defined",
+                        "method": "attribution",
                         "targetPop": ["scenarioValue", null],
+                        "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 0]
                     }
                 ]
@@ -56,8 +56,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "absolute-scenario",
                         "variableName": "ALWDWKY",
+                        "method": "absolute-scenario",
                         "targetPop": [2, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [2, null]
@@ -67,8 +67,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "absolute-scenario",
                         "variableName": "ALWDWKY",
+                        "method": "absolute-scenario",
                         "targetPop": [2, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [2, null]
@@ -81,8 +81,8 @@
             "male": {
                 "variables": [
                     {
-                        "method": "relative-scenario",
                         "variableName": "ALWDWKY",
+                        "method": "relative-scenario",
                         "targetPop": [2, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [2, null]
@@ -92,8 +92,8 @@
             "female": {
                 "variables": [
                     {
-                        "method": "relative-scenario",
                         "variableName": "ALWDWKY",
+                        "method": "relative-scenario",
                         "targetPop": [2, null],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [2, null]
