@@ -59,9 +59,9 @@
                     {
                         "variableName": "PACDEE",
                         "method": "absolute-scenario",
-                        "targetPop": [0, 3],
+                        "targetPop": [null, null],
                         "scenarioValue": "user-defined",
-                        "postScenarioRange": [0, 3]
+                        "postScenarioRange": [0, null]
                     }
                 ]
             },
@@ -72,7 +72,7 @@
                         "method": "absolute-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
-                        "postScenarioRange": [0, 2]
+                        "postScenarioRange": [0, null]
                     }
                 ]
             }
@@ -86,7 +86,7 @@
                         "method": "relative-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
-                        "postScenarioRange": [0, 3]
+                        "postScenarioRange": [0, null]
                     }
                 ]
             },
@@ -97,7 +97,7 @@
                         "method": "relative-scenario",
                         "targetPop": [null, null],
                         "scenarioValue": "user-defined",
-                        "postScenarioRange": [0, 2]
+                        "postScenarioRange": [0, null]
                     }
                 ]
             }
