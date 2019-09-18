@@ -1,4 +1,5 @@
 {
+    "name": "Canada activity guidelines 2016",
     "subject": "activity",
     "algorithms": ["MPoRTv2-PUMF"],
     "description": "Canadian physical activity guidelines, 2016",
@@ -10,7 +11,7 @@
                     {
                         "variableName": "PACDEE",
                         "method": "attribution",
-                        "targetPop": [null, 3],
+                        "targetPop": [0, 3],
                         "scenarioValue": 3
                     }
                 ]
@@ -20,8 +21,8 @@
                     {
                         "variableName": "PACDEE",
                         "method": "attribution",
-                        "targetPop": [null, 2],
-                        "scenarioValue": 2
+                        "targetPop": [0, 3],
+                        "scenarioValue": 3
                     }
                 ]
             }
@@ -33,8 +34,9 @@
                     {
                         "variableName": "PACDEE",
                         "method": "attribution",
-                        "scenarioValue": "user-defined",
-                        "targetPop": [null, "scenarioValue"]
+                        "targetPop": [0, "scenarioValue"],
+                        "scenarioValue": "user-defined"
+                       
                     }
                 ]
             },
@@ -43,8 +45,9 @@
                     {
                         "variableName": "PACDEE",
                         "method": "attribution",
-                        "scenarioValue": "user-defined",
-                        "targetPop": [null, "scenarioValue"]
+                        "targetPop": [0, "scenarioValue"],
+                        "scenarioValue": "user-defined"
+                        
                     }
                 ]
             }
@@ -56,7 +59,7 @@
                     {
                         "variableName": "PACDEE",
                         "method": "absolute-scenario",
-                        "targetPop": [null, null],
+                        "targetPop": [0, 3],
                         "scenarioValue": "user-defined",
                         "postScenarioRange": [0, 3]
                     }
