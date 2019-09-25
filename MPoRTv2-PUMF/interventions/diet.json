@@ -38,18 +38,12 @@
                         "targetPop": [null, null]
                     },
                     {
-                        "variableName": "Pot_add",
+                        "variableName": "Potato_cont",
                         "method": "attribution",
                         "scenarioValue": 1,
                         "targetPop": [null, null]
                     },
-                    {
-                        "variableName": "Pot_minus",
-                        "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, null]
-                    }
-                ]
+                 ]
             },
             "female": {
                 "variables": [
