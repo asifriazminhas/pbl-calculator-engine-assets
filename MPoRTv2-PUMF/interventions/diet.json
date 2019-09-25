@@ -10,23 +10,41 @@
                     {
                         "variableName": "Fruit_cont",
                         "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, 7]
+                        "scenarioValue": 1.88236297159989,
+                        "targetPop": [null, 1.88236297159989]
                     },
                     {
                         "variableName": "Salad_cont",
                         "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, null]
+                        "scenarioValue": 0.808685954597419,
+                        "targetPop": [null, 0.808685954597419]
                     },
                     {
                         "variableName": "Carrot_cont",
+                        "method": "attribution",
+                        "scenarioValue": 0.520781335265796,
+                        "targetPop": [null, 0.520781335265796]
+                    },
+                    {
+                        "variableName": "Veg_cont",
+                        "method": "attribution",
+                        "scenarioValue": 1.7881697385369,
+                        "targetPop": [null, 1.7881697385369]
+                    },
+                    {
+                        "variableName": "Juice_cont",
                         "method": "attribution",
                         "scenarioValue": 0,
                         "targetPop": [null, null]
                     },
                     {
-                        "variableName": "Veg_cont",
+                        "variableName": "Pot_add",
+                        "method": "attribution",
+                        "scenarioValue": 1,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "Pot_minus",
                         "method": "attribution",
                         "scenarioValue": 0,
                         "targetPop": [null, null]
