@@ -10,59 +10,81 @@
                     {
                         "variableName": "Fruit_cont",
                         "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, 7]
+                        "scenarioValue": 1.88236297159989,
+                        "targetPop": [null, 1.88236297159989]
                     },
                     {
                         "variableName": "Salad_cont",
                         "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, null]
+                        "scenarioValue": 0.808685954597419,
+                        "targetPop": [null, 0.808685954597419]
                     },
                     {
                         "variableName": "Carrot_cont",
                         "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, null]
+                        "scenarioValue": 0.520781335265796,
+                        "targetPop": [null, 0.520781335265796]
                     },
                     {
                         "variableName": "Veg_cont",
                         "method": "attribution",
+                        "scenarioValue": 1.7881697385369,
+                        "targetPop": [null, 1.7881697385369]
+                    },
+                    {
+                        "variableName": "Juice_cont",
+                        "method": "attribution",
                         "scenarioValue": 0,
                         "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "Potato_cont",
+                        "method": "attribution",
+                        "scenarioValue": 1,
+                        "targetPop": [null, null]
                     }
-                ]
+                 ]
             },
             "female": {
                 "variables": [
                     {
-                        "variableName": "PackYears_cont",
+                        "variableName": "Fruit_cont",
+                        "method": "attribution",
+                        "scenarioValue": 1.92186505235282,
+                        "targetPop": [null, 1.92186505235282]
+                    },
+                    {
+                        "variableName": "Salad_cont",
+                        "method": "attribution",
+                        "scenarioValue": 0.761504264167256,
+                        "targetPop": [null, 0.761504264167256]
+                    },
+                    {
+                        "variableName": "Carrot_cont",
+                        "method": "attribution",
+                        "scenarioValue": 0.474000717721929,
+                        "targetPop": [null, 0.474000717721929]
+                    },
+                    {
+                        "variableName": "Veg_cont",
+                        "method": "attribution",
+                        "scenarioValue": 1.84262996575799,
+                        "targetPop": [null, 1.84262996575799]
+                    },
+                    {
+                        "variableName": "Juice_cont",
                         "method": "attribution",
                         "scenarioValue": 0,
                         "targetPop": [null, null]
                     },
                     {
-                        "variableName": "smokeSimp_cat4_2",
+                        "variableName": "Potato_cont",
                         "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, null]
-                    },
-                    {
-                        "variableName": "smokeSimp_cat4_3",
-                        "method": "attribution",
-                        "scenarioValue": 0,
-                        "targetPop": [null, null]
-                    },
-                    {
-                        "variableName": "smokeSimp_cat4_4",
-                        "method": "attribution",
-                        "scenarioValue": 0,
+                        "scenarioValue": 1,
                         "targetPop": [null, null]
                     }
-                ]
-            }
-        },
-        {
+                 ]
+            },
             "name": "relative scenario",
             "male": {
                 "variables": [
