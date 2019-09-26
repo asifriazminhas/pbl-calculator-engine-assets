@@ -1,0 +1,166 @@
+{
+    "name": "smoking",
+    "subject": "smoking",
+    "algorithms": ["MPoRTv2-PUMF"],
+    "scenarios": [
+        {
+            "name": "total attribution",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "PackYears_cont",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "smokeSimp_cat4_3",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "smokeSimp_cat4_4",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "PackYears_cont",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "smokeSimp_cat4_3",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    },
+                    {
+                        "variableName": "smokeSimp_cat4_4",
+                        "method": "attribution",
+                        "scenarioValue": 0,
+                        "targetPop": [null, null]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "relative scenario",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "relative-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "relative-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "absolutescenario",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "absolute-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "",
+            "male": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "target-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            },
+            "female": {
+                "variables": [
+                    {
+                        "variableName": "smokeSimp_cat4_2",
+                        "method": "target-scenario-cat",
+                        "targetPop": [1, 1],
+                        "scenarioValue": "user-defined",
+                        "absorbingVariable": "smokeSimp_cat4_3"
+                    }
+                ]
+            }
+        }
+    ]
+}
