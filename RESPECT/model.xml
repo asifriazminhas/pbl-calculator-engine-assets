@@ -7,203 +7,203 @@
         </Extension>
     </Header>
     <DataDictionary numberOfFields="275">
-        <DataField name="Age_rcs1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Age_rcs1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Age_rcs2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField name="Age_rcs2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
-        <DataField name="Age_rcs3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField name="Age_rcs3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
-        <DataField name="Age_rcs4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField name="Age_rcs4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
-        <DataField name="Sex_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Sex_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="BB6_cat5_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="BB6_cat5_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="BB6_cat5_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="BB6_cat5_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="BB6_cat5_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="BB6_cat5_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="BB6_cat5_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="BB6_cat5_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1A_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1A_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1B_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1B_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1C_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1C_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1D_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1D_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1DE_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1DE_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1K_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1K_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="J1L_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="J1L_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="K2E_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="K2E_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="K3D_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="K3D_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="K3E_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="K3E_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="L1A_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="L1A_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="L2C_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="L2C_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="L2B_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="L2B_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="B2B_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="B2B_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="H3_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="H3_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="IADL_cat7_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="IADL_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="IADL_cat7_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="IADL_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="IADL_cat7_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="IADL_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="IADL_cat7_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="IADL_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="IADL_cat7_5_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="IADL_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="IADL_cat7_6_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="IADL_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="ADL_cat7_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="ADL_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="ADL_cat7_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="ADL_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="ADL_cat7_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="ADL_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="ADL_cat7_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="ADL_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="ADL_cat7_5_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="ADL_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="ADL_cat7_6_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="ADL_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="P4A_cat4_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="P4A_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="P4A_cat4_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="P4A_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="P4A_cat4_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="P4A_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="P4B_cat4_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="P4B_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="P4B_cat4_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="P4B_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="P4B_cat4_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="P4B_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Renal_cat4_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Renal_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Renal_cat4_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Renal_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Renal_cat4_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Renal_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Oxygen_cat6_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Oxygen_cat6_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Oxygen_cat6_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Oxygen_cat6_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Oxygen_cat6_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Oxygen_cat6_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Oxygen_cat6_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Oxygen_cat6_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Oxygen_cat6_5_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Oxygen_cat6_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Cancer_cat6_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Cancer_cat6_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Cancer_cat6_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Cancer_cat6_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Cancer_cat6_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Cancer_cat6_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Cancer_cat6_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Cancer_cat6_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="Cancer_cat6_5_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="Cancer_cat6_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A2_cat5_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A2_cat5_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A2_cat5_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A2_cat5_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A2_cat5_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A2_cat5_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A2_cat5_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A2_cat5_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A1_cat7_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A1_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A1_cat7_2_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A1_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A1_cat7_3_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A1_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A1_cat7_4_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A1_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A1_cat7_5_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A1_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="A1_cat7_6_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="A1_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
-        <DataField name="K8E_cat2_1_c" displayName="" dataType="integer" optype="" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
+        <DataField name="K8E_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
         <DataField name="Age_rcs1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
@@ -334,7 +334,7 @@
         <DataField name="L1A_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
-        <DataField name="L1A_L1A" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+        <DataField name="L1A" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="K2Lay_L1A" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -2365,8 +2365,8 @@
                 <Apply function="and">
                     <Apply function="or">
                         <Apply function="equal">
-                            <FieldRef field="L1A_L1A"/>
-                            <Constant dataType="string">Yes</Constant>
+                            <FieldRef field="L1A"/>
+                            <Constant dataType="string">L1A</Constant>
                         </Apply>
                         <Apply function="equal">
                             <FieldRef field="K2Lay_L1A"/>
@@ -4370,72 +4370,72 @@
     </LocalTransformations>
     <GeneralRegressionModel baselineHazard="0.92290647" modelType="CoxRegression">
         <ParameterList>
-            <Parameter name="p0" label="Age_rcs1_c" referencePoint="79.725"/>
+            <Parameter name="p0" label="Age_rcs1_c" referencePoint="79.7096705937864"/>
             <Parameter name="p1" label="Age_rcs2_c"/>
             <Parameter name="p2" label="Age_rcs3_c"/>
             <Parameter name="p3" label="Age_rcs4_c"/>
-            <Parameter name="p4" label="Sex_cat2_1_c" referencePoint="0.351246514"/>
-            <Parameter name="p5" label="BB6_cat5_1_c" referencePoint="0.161122475"/>
-            <Parameter name="p6" label="BB6_cat5_2_c" referencePoint="0.059884787"/>
-            <Parameter name="p7" label="BB6_cat5_3_c" referencePoint="0.150151021"/>
-            <Parameter name="p8" label="BB6_cat5_4_c" referencePoint="0.285014419"/>
-            <Parameter name="p9" label="J1A_cat2_1_c" referencePoint="0.192285129"/>
-            <Parameter name="p10" label="J1B_cat2_1_c" referencePoint="0.137334717"/>
-            <Parameter name="p11" label="J1C_cat2_1_c" referencePoint="0.268181658"/>
-            <Parameter name="p12" label="J1D_cat2_1_c" referencePoint="0.607087352"/>
-            <Parameter name="p13" label="J1DE_cat2_1_c" referencePoint="0.236418075"/>
-            <Parameter name="p14" label="J1K_cat2_1_c" referencePoint="0.012040355"/>
-            <Parameter name="p15" label="J1L_cat2_1_c" referencePoint="0.048190717"/>
-            <Parameter name="p16" label="K2E_cat2_1_c" referencePoint="0.013762767"/>
-            <Parameter name="p17" label="K3D_cat2_1_c" referencePoint="0.270299931"/>
-            <Parameter name="p18" label="K3E_cat2_1_c" referencePoint="0.263921825"/>
-            <Parameter name="p19" label="L1A_cat2_1_c" referencePoint="0.07880277"/>
-            <Parameter name="p20" label="L2C_cat2_1_c" referencePoint="0.015119363"/>
-            <Parameter name="p21" label="L2B_cat2_1_c" referencePoint="0.032981214"/>
-            <Parameter name="p22" label="B2B_cat2_1_c" referencePoint="0.189991084"/>
-            <Parameter name="p23" label="H3_cat2_1_c" referencePoint="0.460683872"/>
-            <Parameter name="p24" label="IADL_cat7_1_c" referencePoint="0.060631441"/>
-            <Parameter name="p25" label="IADL_cat7_2_c" referencePoint="0.127692066"/>
-            <Parameter name="p26" label="IADL_cat7_3_c" referencePoint="0.103046483"/>
-            <Parameter name="p27" label="IADL_cat7_4_c" referencePoint="0.226245856"/>
-            <Parameter name="p28" label="IADL_cat7_5_c" referencePoint="0.264386794"/>
-            <Parameter name="p29" label="IADL_cat7_6_c" referencePoint="0.185535949"/>
-            <Parameter name="p30" label="ADL_cat7_1_c" referencePoint="0.113256259"/>
-            <Parameter name="p31" label="ADL_cat7_2_c" referencePoint="0.155784726"/>
-            <Parameter name="p32" label="ADL_cat7_3_c" referencePoint="0.07485542"/>
-            <Parameter name="p33" label="ADL_cat7_4_c" referencePoint="0.054661966"/>
-            <Parameter name="p34" label="ADL_cat7_5_c" referencePoint="0.03772855"/>
-            <Parameter name="p35" label="ADL_cat7_6_c" referencePoint="0.012621003"/>
-            <Parameter name="p36" label="P4A_cat4_1_c" referencePoint="0.266816799"/>
-            <Parameter name="p37" label="P4A_cat4_2_c" referencePoint="0.04095779"/>
-            <Parameter name="p38" label="P4A_cat4_3_c" referencePoint="0.011639236"/>
-            <Parameter name="p39" label="P4B_cat4_1_c" referencePoint="0.142984196"/>
-            <Parameter name="p40" label="P4B_cat4_2_c" referencePoint="0.032783659"/>
-            <Parameter name="p41" label="P4B_cat4_3_c" referencePoint="0.016955951"/>
-            <Parameter name="p42" label="Renal_cat4_1_c" referencePoint="0.061137723"/>
-            <Parameter name="p43" label="Renal_cat4_2_c" referencePoint="4.13E-05"/>
-            <Parameter name="p44" label="Renal_cat4_3_c" referencePoint="0.01472876"/>
-            <Parameter name="p45" label="Oxygen_cat6_1_c" referencePoint="0.000576891"/>
-            <Parameter name="p46" label="Oxygen_cat6_2_c" referencePoint="0.030654118"/>
-            <Parameter name="p47" label="Oxygen_cat6_3_c" referencePoint="0.120837725"/>
-            <Parameter name="p48" label="Oxygen_cat6_4_c" referencePoint="0.000446189"/>
-            <Parameter name="p49" label="Oxygen_cat6_5_c" referencePoint="0.061960995"/>
-            <Parameter name="p50" label="Cancer_cat6_1_c" referencePoint="1.73E-05"/>
-            <Parameter name="p51" label="Cancer_cat6_2_c" referencePoint="0.000602431"/>
-            <Parameter name="p52" label="Cancer_cat6_3_c" referencePoint="0.130364696"/>
-            <Parameter name="p53" label="Cancer_cat6_4_c" referencePoint="0.000313985"/>
-            <Parameter name="p54" label="Cancer_cat6_5_c" referencePoint="0.014945094"/>
-            <Parameter name="p55" label="A2_cat5_1_c" referencePoint="0.177015533"/>
-            <Parameter name="p56" label="A2_cat5_2_c" referencePoint="0.370591907"/>
-            <Parameter name="p57" label="A2_cat5_3_c" referencePoint="0.052458812"/>
-            <Parameter name="p58" label="A2_cat5_4_c" referencePoint="0.019625576"/>
-            <Parameter name="p59" label="A1_cat7_1_c" referencePoint="0.142029471"/>
-            <Parameter name="p60" label="A1_cat7_2_c" referencePoint="0.141354178"/>
-            <Parameter name="p61" label="A1_cat7_3_c" referencePoint="0.141211457"/>
-            <Parameter name="p62" label="A1_cat7_4_c" referencePoint="0.145973065"/>
-            <Parameter name="p63" label="A1_cat7_5_c" referencePoint="0.146764037"/>
-            <Parameter name="p64" label="A1_cat7_6_c" referencePoint="0.14107099"/>
-            <Parameter name="p65" label="K8E_cat2_1_c" referencePoint="0.012808793"/>
+            <Parameter name="p4" label="Sex_cat2_1_c" referencePoint="0.34975301906545"/>
+            <Parameter name="p5" label="BB6_cat5_1_c" referencePoint="0.16128960910659"/>
+            <Parameter name="p6" label="BB6_cat5_2_c" referencePoint="0.0599227355166"/>
+            <Parameter name="p7" label="BB6_cat5_3_c" referencePoint="0.15041138913874"/>
+            <Parameter name="p8" label="BB6_cat5_4_c" referencePoint="0.28380099971984"/>
+            <Parameter name="p9" label="J1A_cat2_1_c" referencePoint="0.19254633657235"/>
+            <Parameter name="p10" label="J1B_cat2_1_c" referencePoint="0.13675371208658"/>
+            <Parameter name="p11" label="J1C_cat2_1_c" referencePoint="0.26774355269172"/>
+            <Parameter name="p12" label="J1D_cat2_1_c" referencePoint="0.60783113876642"/>
+            <Parameter name="p13" label="J1DE_cat2_1_c" referencePoint="0.23467612321031"/>
+            <Parameter name="p14" label="J1K_cat2_1_c" referencePoint="0.0123062858491"/>
+            <Parameter name="p15" label="J1L_cat2_1_c" referencePoint="0.04808681932792"/>
+            <Parameter name="p16" label="K2E_cat2_1_c" referencePoint="0.01371960659992"/>
+            <Parameter name="p17" label="K3D_cat2_1_c" referencePoint="0.27103687757118"/>
+            <Parameter name="p18" label="K3E_cat2_1_c" referencePoint="0.26411256432563"/>
+            <Parameter name="p19" label="L1A_cat2_1_c" referencePoint="0.07815140299916"/>
+            <Parameter name="p20" label="L2C_cat2_1_c" referencePoint="0.01500169569"/>
+            <Parameter name="p21" label="L2B_cat2_1_c" referencePoint="0.03272018166001"/>
+            <Parameter name="p22" label="B2B_cat2_1_c" referencePoint="0.18861602205872"/>
+            <Parameter name="p23" label="H3_cat2_1_c" referencePoint="0.45907489051741"/>
+            <Parameter name="p24" label="IADL_cat7_1_c" referencePoint="0.06063123903331"/>
+            <Parameter name="p25" label="IADL_cat7_2_c" referencePoint="0.10922602810422"/>
+            <Parameter name="p26" label="IADL_cat7_3_c" referencePoint="0.01500390745956"/>
+            <Parameter name="p27" label="IADL_cat7_4_c" referencePoint="0.20127766555095"/>
+            <Parameter name="p28" label="IADL_cat7_5_c" referencePoint="0.3970170601159"/>
+            <Parameter name="p29" label="IADL_cat7_6_c" referencePoint="0.18470118993202"/>
+            <Parameter name="p30" label="ADL_cat7_1_c" referencePoint="0.11321016234389"/>
+            <Parameter name="p31" label="ADL_cat7_2_c" referencePoint="0.15577566758578"/>
+            <Parameter name="p32" label="ADL_cat7_3_c" referencePoint="0.07478730149368"/>
+            <Parameter name="p33" label="ADL_cat7_4_c" referencePoint="0.05436603311756"/>
+            <Parameter name="p34" label="ADL_cat7_5_c" referencePoint="0.03761703947271"/>
+            <Parameter name="p35" label="ADL_cat7_6_c" referencePoint="0.01265058464442"/>
+            <Parameter name="p36" label="P4A_cat4_1_c" referencePoint="0.26532903758534"/>
+            <Parameter name="p37" label="P4A_cat4_2_c" referencePoint="0.04062946961766"/>
+            <Parameter name="p38" label="P4A_cat4_3_c" referencePoint="0.01152995473245"/>
+            <Parameter name="p39" label="P4B_cat4_1_c" referencePoint="0.14247187366372"/>
+            <Parameter name="p40" label="P4B_cat4_2_c" referencePoint="0.03263171087748"/>
+            <Parameter name="p41" label="P4B_cat4_3_c" referencePoint="0.01688317433168"/>
+            <Parameter name="p42" label="Renal_cat4_1_c" referencePoint="0.06098069862428"/>
+            <Parameter name="p43" label="Renal_cat4_2_c" referencePoint="0.00004054910866"/>
+            <Parameter name="p44" label="Renal_cat4_3_c" referencePoint="0.01463233017296"/>
+            <Parameter name="p45" label="Oxygen_cat6_1_c" referencePoint="0.00057579734293"/>
+            <Parameter name="p46" label="Oxygen_cat6_2_c" referencePoint="0.03050177678822"/>
+            <Parameter name="p47" label="Oxygen_cat6_3_c" referencePoint="0.12086804582787"/>
+            <Parameter name="p48" label="Oxygen_cat6_4_c" referencePoint="0.00044456568218"/>
+            <Parameter name="p49" label="Oxygen_cat6_5_c" referencePoint="0.06172901399313"/>
+            <Parameter name="p50" label="Cancer_cat6_1_c" referencePoint="0.00001695689998"/>
+            <Parameter name="p51" label="Cancer_cat6_2_c" referencePoint="0.00059422875595"/>
+            <Parameter name="p52" label="Cancer_cat6_3_c" referencePoint="0.12966277886728"/>
+            <Parameter name="p53" label="Cancer_cat6_4_c" referencePoint="0.00031038499536"/>
+            <Parameter name="p54" label="Cancer_cat6_5_c" referencePoint="0.01475176572937"/>
+            <Parameter name="p55" label="A2_cat5_1_c" referencePoint="0.17719370677834"/>
+            <Parameter name="p56" label="A2_cat5_2_c" referencePoint="0.37385098571197"/>
+            <Parameter name="p57" label="A2_cat5_3_c" referencePoint="0.05198248278506"/>
+            <Parameter name="p58" label="A2_cat5_4_c" referencePoint="0.01963019212905"/>
+            <Parameter name="p59" label="A1_cat7_1_c" referencePoint="0.14050266149604"/>
+            <Parameter name="p60" label="A1_cat7_2_c" referencePoint="0.1402453589702"/>
+            <Parameter name="p61" label="A1_cat7_3_c" referencePoint="0.1405749126351"/>
+            <Parameter name="p62" label="A1_cat7_4_c" referencePoint="0.14614857193412"/>
+            <Parameter name="p63" label="A1_cat7_5_c" referencePoint="0.14823795691473"/>
+            <Parameter name="p64" label="A1_cat7_6_c" referencePoint="0.14446615255312"/>
+            <Parameter name="p65" label="K8E_cat2_1_c" referencePoint="0.01260856102272"/>
         </ParameterList>
         <ParamMatrix>
             <PCell parameterName="p0" df="" beta="0.013782701"/>
@@ -5558,7 +5558,7 @@
     </MiningSchema>
     <CustomPMML>
         <RestrictedCubicSpline>
-            <PCell parameterName="p1, p2, p3" knotLocations="58, 75, 82, 87, 94"/>
+            <PCell parameterName="p1, p2, p3" knotLocations="-21.709670593786, -4.7096705937864, 2.2903294062136, 7.2903294062136, 14.2903294062136"/>
         </RestrictedCubicSpline>
     </CustomPMML>
     <Taxonomy name="means">

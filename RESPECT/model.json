@@ -42,7 +42,7 @@
                     {
                         "fieldType": 1,
                         "name": "Sex_cat2",
-                        "equation": "derived = userFunctions['last.fun'](obj['sex'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['sex'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "sex",
@@ -76,7 +76,7 @@
                     {
                         "fieldType": 1,
                         "name": "BB6_cat5",
-                        "equation": "derived = userFunctions['last.fun'](obj['BB6'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['BB6'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "BB6",
@@ -110,7 +110,7 @@
                     {
                         "fieldType": 1,
                         "name": "B2B_cat2",
-                        "equation": "derived = userFunctions['last.fun'](obj['B2B'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['B2B'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "B2B",
@@ -144,7 +144,7 @@
                     {
                         "fieldType": 1,
                         "name": "K8E_cat2",
-                        "equation": "derived = userFunctions['last.fun'](obj['K8E'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['K8E'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "K8E",
@@ -178,7 +178,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4A_cat4",
-                        "equation": "derived = userFunctions['last.fun'](obj['P4A'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['P4A'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "P4A",
@@ -212,7 +212,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4B_cat4",
-                        "equation": "derived = userFunctions['last.fun'](obj['P4B'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['P4B'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "P4B",
@@ -246,7 +246,7 @@
                     {
                         "fieldType": 1,
                         "name": "H3_cat2",
-                        "equation": "derived = userFunctions['last.fun'](obj['H3'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['H3'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "H3",
@@ -280,7 +280,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1A_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1A'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1A'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1A",
@@ -314,7 +314,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1B_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1B'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1B'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1B",
@@ -348,7 +348,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1C_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1C'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1C'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1C",
@@ -382,7 +382,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1D_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1D'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1D'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1D",
@@ -416,7 +416,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1DE_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1DE'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1DE'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1DE",
@@ -450,7 +450,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1K_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1K'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1K'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1K",
@@ -484,7 +484,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1L_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1L'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1L'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1L",
@@ -717,10 +717,10 @@
                     {
                         "fieldType": 1,
                         "name": "L1A_cat2",
-                        "equation": "derived = func['ifelse']((obj['L1A_L1A'] == 'Yes' || obj['K2Lay_L1A'] == 'Yes') && obj['NoSymptomsOrConditions'] == false, 1, 0);",
+                        "equation": "derived = func['ifelse']((obj['L1A'] == 'L1A' || obj['K2Lay_L1A'] == 'Yes') && obj['NoSymptomsOrConditions'] == false, 1, 0);",
                         "derivedFrom": [
                             {
-                                "name": "L1A_L1A",
+                                "name": "L1A",
                                 "intervals": [
                                     {
                                         "description": ""
@@ -867,7 +867,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1Z_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1Z'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1Z'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1Z",
@@ -901,7 +901,7 @@
                     {
                         "fieldType": 1,
                         "name": "P2OXY_cat3",
-                        "equation": "derived = userFunctions['last.fun'](obj['Sched_P2OXY'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['Sched_P2OXY'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Sched_P2OXY",
@@ -935,7 +935,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6",
-                        "equation": "derived = func['ifelse'](obj['specialtherapy_P0'] == 'Yes', userFunctions['oxygen_cat6.fun'](undefined, obj['J1Z_cat2'], userFunctions, func), userFunctions['oxygen_cat6.fun'](obj['P2OXY_cat3'], obj['J1Z_cat2'], userFunctions, func));",
+                        "equation": "derived = func['ifelse'](obj['specialtherapy_P0'] == 'Yes', userFunctions['oxygen_cat6.fun'](undefined, obj['J1Z_cat2'], userFunctions, func, tables), userFunctions['oxygen_cat6.fun'](obj['P2OXY_cat3'], obj['J1Z_cat2'], userFunctions, func, tables));",
                         "derivedFrom": [
                             {
                                 "name": "specialtherapy_P0",
@@ -971,7 +971,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1AA_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1AA'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1AA'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1AA",
@@ -1005,7 +1005,7 @@
                     {
                         "fieldType": 1,
                         "name": "P2G_cat3",
-                        "equation": "derived = userFunctions['last.fun'](obj['Sched_P2G'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['Sched_P2G'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Sched_P2G",
@@ -1039,7 +1039,7 @@
                     {
                         "fieldType": 1,
                         "name": "Renal_cat4",
-                        "equation": "derived = func['ifelse'](obj['specialtherapy_P0'] == 'Yes', userFunctions['renal_cat4.fun'](obj['J1AA_cat2'], undefined, userFunctions, func), userFunctions['renal_cat4.fun'](obj['J1AA_cat2'], obj['P2G_cat3'], userFunctions, func));",
+                        "equation": "derived = func['ifelse'](obj['specialtherapy_P0'] == 'Yes', userFunctions['renal_cat4.fun'](obj['J1AA_cat2'], undefined, userFunctions, func, tables), userFunctions['renal_cat4.fun'](obj['J1AA_cat2'], obj['P2G_cat3'], userFunctions, func, tables));",
                         "derivedFrom": [
                             {
                                 "name": "specialtherapy_P0",
@@ -1075,7 +1075,7 @@
                     {
                         "fieldType": 1,
                         "name": "P2F_cat3",
-                        "equation": "derived = userFunctions['last.fun'](obj['Sched_P2F'], userFunctions, func);",
+                        "equation": "derived = userFunctions['last.fun'](obj['Sched_P2F'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Sched_P2F",
@@ -1109,7 +1109,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1X_cat2",
-                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1X'], userFunctions, func);",
+                        "equation": "derived = userFunctions['disease.fun'](obj['Diseases_J1X'], userFunctions, func, tables);",
                         "derivedFrom": [
                             {
                                 "name": "Diseases_J1X",
@@ -1143,7 +1143,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6",
-                        "equation": "derived = func['ifelse'](obj['specialtherapy_P0'] == 'Yes', userFunctions['cancer_cat6.fun'](undefined, obj['J1X_cat2'], userFunctions, func), userFunctions['cancer_cat6.fun'](obj['P2F_cat3'], obj['J1X_cat2'], userFunctions, func));",
+                        "equation": "derived = func['ifelse'](obj['specialtherapy_P0'] == 'Yes', userFunctions['cancer_cat6.fun'](undefined, obj['J1X_cat2'], userFunctions, func, tables), userFunctions['cancer_cat6.fun'](obj['P2F_cat3'], obj['J1X_cat2'], userFunctions, func, tables));",
                         "derivedFrom": [
                             {
                                 "name": "specialtherapy_P0",
@@ -1315,7 +1315,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7",
-                        "equation": "derived = func['ifelse'](obj['ADL_H0ADL'] == 'Yes', userFunctions['adl.fun'](undefined, undefined, undefined, undefined, userFunctions, func), userFunctions['adl.fun'](userFunctions['last.fun'](obj['ADLdiff_H2I_formatted'], userFunctions, func), userFunctions['last.fun'](obj['ADLdiff_H2H_formatted'], userFunctions, func), userFunctions['last.fun'](obj['ADLdiff_H2C_formatted'], userFunctions, func), userFunctions['last.fun'](obj['ADLdiff_H2G_formatted'], userFunctions, func), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](obj['ADL_H0ADL'] == 'Yes', userFunctions['adl.fun'](undefined, undefined, undefined, undefined, userFunctions, func, tables), userFunctions['adl.fun'](userFunctions['last.fun'](obj['ADLdiff_H2I_formatted'], userFunctions, func, tables), userFunctions['last.fun'](obj['ADLdiff_H2H_formatted'], userFunctions, func, tables), userFunctions['last.fun'](obj['ADLdiff_H2C_formatted'], userFunctions, func, tables), userFunctions['last.fun'](obj['ADLdiff_H2G_formatted'], userFunctions, func, tables), userFunctions, func, tables));",
                         "derivedFrom": [
                             {
                                 "name": "ADL_H0ADL",
@@ -1500,7 +1500,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7",
-                        "equation": "derived = func['ifelse'](obj['IADL_H0IADL'] == 'Yes', userFunctions['iadl.fun'](undefined, undefined, undefined, userFunctions, func), userFunctions['iadl.fun'](userFunctions['last.fun'](obj['IADLdiff_H1AB_formatted'], userFunctions, func), userFunctions['last.fun'](obj['IADLdiff_H1BB_formatted'], userFunctions, func), userFunctions['last.fun'](obj['IADLdiff_H1EB_formatted'], userFunctions, func), userFunctions, func));",
+                        "equation": "derived = func['ifelse'](obj['IADL_H0IADL'] == 'Yes', userFunctions['iadl.fun'](undefined, undefined, undefined, userFunctions, func, tables), userFunctions['iadl.fun'](userFunctions['last.fun'](obj['IADLdiff_H1AB_formatted'], userFunctions, func, tables), userFunctions['last.fun'](obj['IADLdiff_H1BB_formatted'], userFunctions, func, tables), userFunctions['last.fun'](obj['IADLdiff_H1EB_formatted'], userFunctions, func, tables), userFunctions, func, tables));",
                         "derivedFrom": [
                             {
                                 "name": "IADL_H0IADL",
@@ -3499,7 +3499,7 @@
                     {
                         "fieldType": 1,
                         "name": "BB6_cat5_1_c",
-                        "equation": "derived = obj['BB6_cat5_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'BB6_cat5_1_c' });",
+                        "equation": "derived = obj['BB6_cat5_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'BB6_cat5_1_c' });",
                         "derivedFrom": [
                             "BB6_cat5_1"
                         ],
@@ -3519,7 +3519,7 @@
                     {
                         "fieldType": 1,
                         "name": "BB6_cat5_2_c",
-                        "equation": "derived = obj['BB6_cat5_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'BB6_cat5_2_c' });",
+                        "equation": "derived = obj['BB6_cat5_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'BB6_cat5_2_c' });",
                         "derivedFrom": [
                             "BB6_cat5_2"
                         ],
@@ -3539,7 +3539,7 @@
                     {
                         "fieldType": 1,
                         "name": "BB6_cat5_3_c",
-                        "equation": "derived = obj['BB6_cat5_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'BB6_cat5_3_c' });",
+                        "equation": "derived = obj['BB6_cat5_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'BB6_cat5_3_c' });",
                         "derivedFrom": [
                             "BB6_cat5_3"
                         ],
@@ -3559,7 +3559,7 @@
                     {
                         "fieldType": 1,
                         "name": "BB6_cat5_4_c",
-                        "equation": "derived = obj['BB6_cat5_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'BB6_cat5_4_c' });",
+                        "equation": "derived = obj['BB6_cat5_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'BB6_cat5_4_c' });",
                         "derivedFrom": [
                             "BB6_cat5_4"
                         ],
@@ -3579,7 +3579,7 @@
                     {
                         "fieldType": 1,
                         "name": "BB6_cat5_5_c",
-                        "equation": "derived = obj['BB6_cat5_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'BB6_cat5_5_c' });",
+                        "equation": "derived = obj['BB6_cat5_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'BB6_cat5_5_c' });",
                         "derivedFrom": [
                             "BB6_cat5_5"
                         ],
@@ -3599,7 +3599,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1A_cat2_1_c",
-                        "equation": "derived = obj['J1A_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1A_cat2_1_c' });",
+                        "equation": "derived = obj['J1A_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1A_cat2_1_c' });",
                         "derivedFrom": [
                             "J1A_cat2_1"
                         ],
@@ -3619,7 +3619,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1A_cat2_2_c",
-                        "equation": "derived = obj['J1A_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1A_cat2_2_c' });",
+                        "equation": "derived = obj['J1A_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1A_cat2_2_c' });",
                         "derivedFrom": [
                             "J1A_cat2_2"
                         ],
@@ -3639,7 +3639,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1B_cat2_1_c",
-                        "equation": "derived = obj['J1B_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1B_cat2_1_c' });",
+                        "equation": "derived = obj['J1B_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1B_cat2_1_c' });",
                         "derivedFrom": [
                             "J1B_cat2_1"
                         ],
@@ -3659,7 +3659,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1B_cat2_2_c",
-                        "equation": "derived = obj['J1B_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1B_cat2_2_c' });",
+                        "equation": "derived = obj['J1B_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1B_cat2_2_c' });",
                         "derivedFrom": [
                             "J1B_cat2_2"
                         ],
@@ -3679,7 +3679,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1C_cat2_1_c",
-                        "equation": "derived = obj['J1C_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1C_cat2_1_c' });",
+                        "equation": "derived = obj['J1C_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1C_cat2_1_c' });",
                         "derivedFrom": [
                             "J1C_cat2_1"
                         ],
@@ -3699,7 +3699,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1C_cat2_2_c",
-                        "equation": "derived = obj['J1C_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1C_cat2_2_c' });",
+                        "equation": "derived = obj['J1C_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1C_cat2_2_c' });",
                         "derivedFrom": [
                             "J1C_cat2_2"
                         ],
@@ -3719,7 +3719,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1D_cat2_1_c",
-                        "equation": "derived = obj['J1D_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1D_cat2_1_c' });",
+                        "equation": "derived = obj['J1D_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1D_cat2_1_c' });",
                         "derivedFrom": [
                             "J1D_cat2_1"
                         ],
@@ -3739,7 +3739,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1D_cat2_2_c",
-                        "equation": "derived = obj['J1D_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1D_cat2_2_c' });",
+                        "equation": "derived = obj['J1D_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1D_cat2_2_c' });",
                         "derivedFrom": [
                             "J1D_cat2_2"
                         ],
@@ -3759,7 +3759,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1DE_cat2_1_c",
-                        "equation": "derived = obj['J1DE_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1DE_cat2_1_c' });",
+                        "equation": "derived = obj['J1DE_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1DE_cat2_1_c' });",
                         "derivedFrom": [
                             "J1DE_cat2_1"
                         ],
@@ -3779,7 +3779,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1DE_cat2_2_c",
-                        "equation": "derived = obj['J1DE_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1DE_cat2_2_c' });",
+                        "equation": "derived = obj['J1DE_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1DE_cat2_2_c' });",
                         "derivedFrom": [
                             "J1DE_cat2_2"
                         ],
@@ -3799,7 +3799,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1K_cat2_1_c",
-                        "equation": "derived = obj['J1K_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1K_cat2_1_c' });",
+                        "equation": "derived = obj['J1K_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1K_cat2_1_c' });",
                         "derivedFrom": [
                             "J1K_cat2_1"
                         ],
@@ -3819,7 +3819,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1K_cat2_2_c",
-                        "equation": "derived = obj['J1K_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1K_cat2_2_c' });",
+                        "equation": "derived = obj['J1K_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1K_cat2_2_c' });",
                         "derivedFrom": [
                             "J1K_cat2_2"
                         ],
@@ -3839,7 +3839,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1L_cat2_1_c",
-                        "equation": "derived = obj['J1L_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1L_cat2_1_c' });",
+                        "equation": "derived = obj['J1L_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1L_cat2_1_c' });",
                         "derivedFrom": [
                             "J1L_cat2_1"
                         ],
@@ -3859,7 +3859,7 @@
                     {
                         "fieldType": 1,
                         "name": "J1L_cat2_2_c",
-                        "equation": "derived = obj['J1L_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'J1L_cat2_2_c' });",
+                        "equation": "derived = obj['J1L_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1L_cat2_2_c' });",
                         "derivedFrom": [
                             "J1L_cat2_2"
                         ],
@@ -3879,7 +3879,7 @@
                     {
                         "fieldType": 1,
                         "name": "K2E_cat2_1_c",
-                        "equation": "derived = obj['K2E_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K2E_cat2_1_c' });",
+                        "equation": "derived = obj['K2E_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K2E_cat2_1_c' });",
                         "derivedFrom": [
                             "K2E_cat2_1"
                         ],
@@ -3899,7 +3899,7 @@
                     {
                         "fieldType": 1,
                         "name": "K2E_cat2_2_c",
-                        "equation": "derived = obj['K2E_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K2E_cat2_2_c' });",
+                        "equation": "derived = obj['K2E_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K2E_cat2_2_c' });",
                         "derivedFrom": [
                             "K2E_cat2_2"
                         ],
@@ -3919,7 +3919,7 @@
                     {
                         "fieldType": 1,
                         "name": "K3D_cat2_1_c",
-                        "equation": "derived = obj['K3D_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K3D_cat2_1_c' });",
+                        "equation": "derived = obj['K3D_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K3D_cat2_1_c' });",
                         "derivedFrom": [
                             "K3D_cat2_1"
                         ],
@@ -3939,7 +3939,7 @@
                     {
                         "fieldType": 1,
                         "name": "K3D_cat2_2_c",
-                        "equation": "derived = obj['K3D_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K3D_cat2_2_c' });",
+                        "equation": "derived = obj['K3D_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K3D_cat2_2_c' });",
                         "derivedFrom": [
                             "K3D_cat2_2"
                         ],
@@ -3959,7 +3959,7 @@
                     {
                         "fieldType": 1,
                         "name": "K3E_cat2_1_c",
-                        "equation": "derived = obj['K3E_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K3E_cat2_1_c' });",
+                        "equation": "derived = obj['K3E_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K3E_cat2_1_c' });",
                         "derivedFrom": [
                             "K3E_cat2_1"
                         ],
@@ -3979,7 +3979,7 @@
                     {
                         "fieldType": 1,
                         "name": "K3E_cat2_2_c",
-                        "equation": "derived = obj['K3E_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K3E_cat2_2_c' });",
+                        "equation": "derived = obj['K3E_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K3E_cat2_2_c' });",
                         "derivedFrom": [
                             "K3E_cat2_2"
                         ],
@@ -3999,7 +3999,7 @@
                     {
                         "fieldType": 1,
                         "name": "L1A_cat2_1_c",
-                        "equation": "derived = obj['L1A_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'L1A_cat2_1_c' });",
+                        "equation": "derived = obj['L1A_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'L1A_cat2_1_c' });",
                         "derivedFrom": [
                             "L1A_cat2_1"
                         ],
@@ -4019,7 +4019,7 @@
                     {
                         "fieldType": 1,
                         "name": "L1A_cat2_2_c",
-                        "equation": "derived = obj['L1A_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'L1A_cat2_2_c' });",
+                        "equation": "derived = obj['L1A_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'L1A_cat2_2_c' });",
                         "derivedFrom": [
                             "L1A_cat2_2"
                         ],
@@ -4039,7 +4039,7 @@
                     {
                         "fieldType": 1,
                         "name": "L2C_cat2_1_c",
-                        "equation": "derived = obj['L2C_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'L2C_cat2_1_c' });",
+                        "equation": "derived = obj['L2C_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'L2C_cat2_1_c' });",
                         "derivedFrom": [
                             "L2C_cat2_1"
                         ],
@@ -4059,7 +4059,7 @@
                     {
                         "fieldType": 1,
                         "name": "L2C_cat2_2_c",
-                        "equation": "derived = obj['L2C_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'L2C_cat2_2_c' });",
+                        "equation": "derived = obj['L2C_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'L2C_cat2_2_c' });",
                         "derivedFrom": [
                             "L2C_cat2_2"
                         ],
@@ -4079,7 +4079,7 @@
                     {
                         "fieldType": 1,
                         "name": "L2B_cat2_1_c",
-                        "equation": "derived = obj['L2B_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'L2B_cat2_1_c' });",
+                        "equation": "derived = obj['L2B_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'L2B_cat2_1_c' });",
                         "derivedFrom": [
                             "L2B_cat2_1"
                         ],
@@ -4099,7 +4099,7 @@
                     {
                         "fieldType": 1,
                         "name": "L2B_cat2_2_c",
-                        "equation": "derived = obj['L2B_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'L2B_cat2_2_c' });",
+                        "equation": "derived = obj['L2B_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'L2B_cat2_2_c' });",
                         "derivedFrom": [
                             "L2B_cat2_2"
                         ],
@@ -4119,7 +4119,7 @@
                     {
                         "fieldType": 1,
                         "name": "B2B_cat2_1_c",
-                        "equation": "derived = obj['B2B_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'B2B_cat2_1_c' });",
+                        "equation": "derived = obj['B2B_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'B2B_cat2_1_c' });",
                         "derivedFrom": [
                             "B2B_cat2_1"
                         ],
@@ -4139,7 +4139,7 @@
                     {
                         "fieldType": 1,
                         "name": "B2B_cat2_2_c",
-                        "equation": "derived = obj['B2B_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'B2B_cat2_2_c' });",
+                        "equation": "derived = obj['B2B_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'B2B_cat2_2_c' });",
                         "derivedFrom": [
                             "B2B_cat2_2"
                         ],
@@ -4159,7 +4159,7 @@
                     {
                         "fieldType": 1,
                         "name": "H3_cat2_1_c",
-                        "equation": "derived = obj['H3_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'H3_cat2_1_c' });",
+                        "equation": "derived = obj['H3_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'H3_cat2_1_c' });",
                         "derivedFrom": [
                             "H3_cat2_1"
                         ],
@@ -4179,7 +4179,7 @@
                     {
                         "fieldType": 1,
                         "name": "H3_cat2_2_c",
-                        "equation": "derived = obj['H3_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'H3_cat2_2_c' });",
+                        "equation": "derived = obj['H3_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'H3_cat2_2_c' });",
                         "derivedFrom": [
                             "H3_cat2_2"
                         ],
@@ -4199,7 +4199,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_1_c",
-                        "equation": "derived = obj['IADL_cat7_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_1_c' });",
+                        "equation": "derived = obj['IADL_cat7_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_1_c' });",
                         "derivedFrom": [
                             "IADL_cat7_1"
                         ],
@@ -4219,7 +4219,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_2_c",
-                        "equation": "derived = obj['IADL_cat7_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_2_c' });",
+                        "equation": "derived = obj['IADL_cat7_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_2_c' });",
                         "derivedFrom": [
                             "IADL_cat7_2"
                         ],
@@ -4239,7 +4239,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_3_c",
-                        "equation": "derived = obj['IADL_cat7_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_3_c' });",
+                        "equation": "derived = obj['IADL_cat7_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_3_c' });",
                         "derivedFrom": [
                             "IADL_cat7_3"
                         ],
@@ -4259,7 +4259,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_4_c",
-                        "equation": "derived = obj['IADL_cat7_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_4_c' });",
+                        "equation": "derived = obj['IADL_cat7_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_4_c' });",
                         "derivedFrom": [
                             "IADL_cat7_4"
                         ],
@@ -4279,7 +4279,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_5_c",
-                        "equation": "derived = obj['IADL_cat7_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_5_c' });",
+                        "equation": "derived = obj['IADL_cat7_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_5_c' });",
                         "derivedFrom": [
                             "IADL_cat7_5"
                         ],
@@ -4299,7 +4299,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_6_c",
-                        "equation": "derived = obj['IADL_cat7_6'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_6_c' });",
+                        "equation": "derived = obj['IADL_cat7_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_6_c' });",
                         "derivedFrom": [
                             "IADL_cat7_6"
                         ],
@@ -4319,7 +4319,7 @@
                     {
                         "fieldType": 1,
                         "name": "IADL_cat7_7_c",
-                        "equation": "derived = obj['IADL_cat7_7'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'IADL_cat7_7_c' });",
+                        "equation": "derived = obj['IADL_cat7_7'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'IADL_cat7_7_c' });",
                         "derivedFrom": [
                             "IADL_cat7_7"
                         ],
@@ -4339,7 +4339,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_1_c",
-                        "equation": "derived = obj['ADL_cat7_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_1_c' });",
+                        "equation": "derived = obj['ADL_cat7_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_1_c' });",
                         "derivedFrom": [
                             "ADL_cat7_1"
                         ],
@@ -4359,7 +4359,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_2_c",
-                        "equation": "derived = obj['ADL_cat7_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_2_c' });",
+                        "equation": "derived = obj['ADL_cat7_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_2_c' });",
                         "derivedFrom": [
                             "ADL_cat7_2"
                         ],
@@ -4379,7 +4379,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_3_c",
-                        "equation": "derived = obj['ADL_cat7_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_3_c' });",
+                        "equation": "derived = obj['ADL_cat7_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_3_c' });",
                         "derivedFrom": [
                             "ADL_cat7_3"
                         ],
@@ -4399,7 +4399,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_4_c",
-                        "equation": "derived = obj['ADL_cat7_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_4_c' });",
+                        "equation": "derived = obj['ADL_cat7_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_4_c' });",
                         "derivedFrom": [
                             "ADL_cat7_4"
                         ],
@@ -4419,7 +4419,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_5_c",
-                        "equation": "derived = obj['ADL_cat7_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_5_c' });",
+                        "equation": "derived = obj['ADL_cat7_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_5_c' });",
                         "derivedFrom": [
                             "ADL_cat7_5"
                         ],
@@ -4439,7 +4439,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_6_c",
-                        "equation": "derived = obj['ADL_cat7_6'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_6_c' });",
+                        "equation": "derived = obj['ADL_cat7_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_6_c' });",
                         "derivedFrom": [
                             "ADL_cat7_6"
                         ],
@@ -4459,7 +4459,7 @@
                     {
                         "fieldType": 1,
                         "name": "ADL_cat7_7_c",
-                        "equation": "derived = obj['ADL_cat7_7'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'ADL_cat7_7_c' });",
+                        "equation": "derived = obj['ADL_cat7_7'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_7_c' });",
                         "derivedFrom": [
                             "ADL_cat7_7"
                         ],
@@ -4479,7 +4479,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4A_cat4_1_c",
-                        "equation": "derived = obj['P4A_cat4_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4A_cat4_1_c' });",
+                        "equation": "derived = obj['P4A_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4A_cat4_1_c' });",
                         "derivedFrom": [
                             "P4A_cat4_1"
                         ],
@@ -4499,7 +4499,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4A_cat4_2_c",
-                        "equation": "derived = obj['P4A_cat4_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4A_cat4_2_c' });",
+                        "equation": "derived = obj['P4A_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4A_cat4_2_c' });",
                         "derivedFrom": [
                             "P4A_cat4_2"
                         ],
@@ -4519,7 +4519,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4A_cat4_3_c",
-                        "equation": "derived = obj['P4A_cat4_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4A_cat4_3_c' });",
+                        "equation": "derived = obj['P4A_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4A_cat4_3_c' });",
                         "derivedFrom": [
                             "P4A_cat4_3"
                         ],
@@ -4539,7 +4539,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4A_cat4_4_c",
-                        "equation": "derived = obj['P4A_cat4_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4A_cat4_4_c' });",
+                        "equation": "derived = obj['P4A_cat4_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4A_cat4_4_c' });",
                         "derivedFrom": [
                             "P4A_cat4_4"
                         ],
@@ -4559,7 +4559,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4B_cat4_1_c",
-                        "equation": "derived = obj['P4B_cat4_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4B_cat4_1_c' });",
+                        "equation": "derived = obj['P4B_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4B_cat4_1_c' });",
                         "derivedFrom": [
                             "P4B_cat4_1"
                         ],
@@ -4579,7 +4579,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4B_cat4_2_c",
-                        "equation": "derived = obj['P4B_cat4_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4B_cat4_2_c' });",
+                        "equation": "derived = obj['P4B_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4B_cat4_2_c' });",
                         "derivedFrom": [
                             "P4B_cat4_2"
                         ],
@@ -4599,7 +4599,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4B_cat4_3_c",
-                        "equation": "derived = obj['P4B_cat4_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4B_cat4_3_c' });",
+                        "equation": "derived = obj['P4B_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4B_cat4_3_c' });",
                         "derivedFrom": [
                             "P4B_cat4_3"
                         ],
@@ -4619,7 +4619,7 @@
                     {
                         "fieldType": 1,
                         "name": "P4B_cat4_4_c",
-                        "equation": "derived = obj['P4B_cat4_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'P4B_cat4_4_c' });",
+                        "equation": "derived = obj['P4B_cat4_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'P4B_cat4_4_c' });",
                         "derivedFrom": [
                             "P4B_cat4_4"
                         ],
@@ -4639,7 +4639,7 @@
                     {
                         "fieldType": 1,
                         "name": "Renal_cat4_1_c",
-                        "equation": "derived = obj['Renal_cat4_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Renal_cat4_1_c' });",
+                        "equation": "derived = obj['Renal_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Renal_cat4_1_c' });",
                         "derivedFrom": [
                             "Renal_cat4_1"
                         ],
@@ -4659,7 +4659,7 @@
                     {
                         "fieldType": 1,
                         "name": "Renal_cat4_2_c",
-                        "equation": "derived = obj['Renal_cat4_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Renal_cat4_2_c' });",
+                        "equation": "derived = obj['Renal_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Renal_cat4_2_c' });",
                         "derivedFrom": [
                             "Renal_cat4_2"
                         ],
@@ -4679,7 +4679,7 @@
                     {
                         "fieldType": 1,
                         "name": "Renal_cat4_3_c",
-                        "equation": "derived = obj['Renal_cat4_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Renal_cat4_3_c' });",
+                        "equation": "derived = obj['Renal_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Renal_cat4_3_c' });",
                         "derivedFrom": [
                             "Renal_cat4_3"
                         ],
@@ -4699,7 +4699,7 @@
                     {
                         "fieldType": 1,
                         "name": "Renal_cat4_4_c",
-                        "equation": "derived = obj['Renal_cat4_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Renal_cat4_4_c' });",
+                        "equation": "derived = obj['Renal_cat4_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Renal_cat4_4_c' });",
                         "derivedFrom": [
                             "Renal_cat4_4"
                         ],
@@ -4719,7 +4719,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6_1_c",
-                        "equation": "derived = obj['Oxygen_cat6_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Oxygen_cat6_1_c' });",
+                        "equation": "derived = obj['Oxygen_cat6_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Oxygen_cat6_1_c' });",
                         "derivedFrom": [
                             "Oxygen_cat6_1"
                         ],
@@ -4739,7 +4739,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6_2_c",
-                        "equation": "derived = obj['Oxygen_cat6_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Oxygen_cat6_2_c' });",
+                        "equation": "derived = obj['Oxygen_cat6_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Oxygen_cat6_2_c' });",
                         "derivedFrom": [
                             "Oxygen_cat6_2"
                         ],
@@ -4759,7 +4759,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6_3_c",
-                        "equation": "derived = obj['Oxygen_cat6_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Oxygen_cat6_3_c' });",
+                        "equation": "derived = obj['Oxygen_cat6_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Oxygen_cat6_3_c' });",
                         "derivedFrom": [
                             "Oxygen_cat6_3"
                         ],
@@ -4779,7 +4779,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6_4_c",
-                        "equation": "derived = obj['Oxygen_cat6_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Oxygen_cat6_4_c' });",
+                        "equation": "derived = obj['Oxygen_cat6_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Oxygen_cat6_4_c' });",
                         "derivedFrom": [
                             "Oxygen_cat6_4"
                         ],
@@ -4799,7 +4799,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6_5_c",
-                        "equation": "derived = obj['Oxygen_cat6_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Oxygen_cat6_5_c' });",
+                        "equation": "derived = obj['Oxygen_cat6_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Oxygen_cat6_5_c' });",
                         "derivedFrom": [
                             "Oxygen_cat6_5"
                         ],
@@ -4819,7 +4819,7 @@
                     {
                         "fieldType": 1,
                         "name": "Oxygen_cat6_6_c",
-                        "equation": "derived = obj['Oxygen_cat6_6'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Oxygen_cat6_6_c' });",
+                        "equation": "derived = obj['Oxygen_cat6_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Oxygen_cat6_6_c' });",
                         "derivedFrom": [
                             "Oxygen_cat6_6"
                         ],
@@ -4839,7 +4839,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6_1_c",
-                        "equation": "derived = obj['Cancer_cat6_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Cancer_cat6_1_c' });",
+                        "equation": "derived = obj['Cancer_cat6_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Cancer_cat6_1_c' });",
                         "derivedFrom": [
                             "Cancer_cat6_1"
                         ],
@@ -4859,7 +4859,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6_2_c",
-                        "equation": "derived = obj['Cancer_cat6_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Cancer_cat6_2_c' });",
+                        "equation": "derived = obj['Cancer_cat6_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Cancer_cat6_2_c' });",
                         "derivedFrom": [
                             "Cancer_cat6_2"
                         ],
@@ -4879,7 +4879,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6_3_c",
-                        "equation": "derived = obj['Cancer_cat6_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Cancer_cat6_3_c' });",
+                        "equation": "derived = obj['Cancer_cat6_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Cancer_cat6_3_c' });",
                         "derivedFrom": [
                             "Cancer_cat6_3"
                         ],
@@ -4899,7 +4899,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6_4_c",
-                        "equation": "derived = obj['Cancer_cat6_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Cancer_cat6_4_c' });",
+                        "equation": "derived = obj['Cancer_cat6_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Cancer_cat6_4_c' });",
                         "derivedFrom": [
                             "Cancer_cat6_4"
                         ],
@@ -4919,7 +4919,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6_5_c",
-                        "equation": "derived = obj['Cancer_cat6_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Cancer_cat6_5_c' });",
+                        "equation": "derived = obj['Cancer_cat6_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Cancer_cat6_5_c' });",
                         "derivedFrom": [
                             "Cancer_cat6_5"
                         ],
@@ -4939,7 +4939,7 @@
                     {
                         "fieldType": 1,
                         "name": "Cancer_cat6_6_c",
-                        "equation": "derived = obj['Cancer_cat6_6'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Cancer_cat6_6_c' });",
+                        "equation": "derived = obj['Cancer_cat6_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Cancer_cat6_6_c' });",
                         "derivedFrom": [
                             "Cancer_cat6_6"
                         ],
@@ -4959,7 +4959,7 @@
                     {
                         "fieldType": 1,
                         "name": "A2_cat5_1_c",
-                        "equation": "derived = obj['A2_cat5_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A2_cat5_1_c' });",
+                        "equation": "derived = obj['A2_cat5_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A2_cat5_1_c' });",
                         "derivedFrom": [
                             "A2_cat5_1"
                         ],
@@ -4979,7 +4979,7 @@
                     {
                         "fieldType": 1,
                         "name": "A2_cat5_2_c",
-                        "equation": "derived = obj['A2_cat5_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A2_cat5_2_c' });",
+                        "equation": "derived = obj['A2_cat5_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A2_cat5_2_c' });",
                         "derivedFrom": [
                             "A2_cat5_2"
                         ],
@@ -4999,7 +4999,7 @@
                     {
                         "fieldType": 1,
                         "name": "A2_cat5_3_c",
-                        "equation": "derived = obj['A2_cat5_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A2_cat5_3_c' });",
+                        "equation": "derived = obj['A2_cat5_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A2_cat5_3_c' });",
                         "derivedFrom": [
                             "A2_cat5_3"
                         ],
@@ -5019,7 +5019,7 @@
                     {
                         "fieldType": 1,
                         "name": "A2_cat5_4_c",
-                        "equation": "derived = obj['A2_cat5_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A2_cat5_4_c' });",
+                        "equation": "derived = obj['A2_cat5_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A2_cat5_4_c' });",
                         "derivedFrom": [
                             "A2_cat5_4"
                         ],
@@ -5039,7 +5039,7 @@
                     {
                         "fieldType": 1,
                         "name": "A2_cat5_5_c",
-                        "equation": "derived = obj['A2_cat5_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A2_cat5_5_c' });",
+                        "equation": "derived = obj['A2_cat5_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A2_cat5_5_c' });",
                         "derivedFrom": [
                             "A2_cat5_5"
                         ],
@@ -5059,7 +5059,7 @@
                     {
                         "fieldType": 1,
                         "name": "K8E_cat2_1_c",
-                        "equation": "derived = obj['K8E_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K8E_cat2_1_c' });",
+                        "equation": "derived = obj['K8E_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K8E_cat2_1_c' });",
                         "derivedFrom": [
                             "K8E_cat2_1"
                         ],
@@ -5079,7 +5079,7 @@
                     {
                         "fieldType": 1,
                         "name": "K8E_cat2_2_c",
-                        "equation": "derived = obj['K8E_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'K8E_cat2_2_c' });",
+                        "equation": "derived = obj['K8E_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K8E_cat2_2_c' });",
                         "derivedFrom": [
                             "K8E_cat2_2"
                         ],
@@ -5099,7 +5099,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_1_c",
-                        "equation": "derived = obj['A1_cat7_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_1_c' });",
+                        "equation": "derived = obj['A1_cat7_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_1_c' });",
                         "derivedFrom": [
                             "A1_cat7_1"
                         ],
@@ -5119,7 +5119,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_2_c",
-                        "equation": "derived = obj['A1_cat7_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_2_c' });",
+                        "equation": "derived = obj['A1_cat7_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_2_c' });",
                         "derivedFrom": [
                             "A1_cat7_2"
                         ],
@@ -5139,7 +5139,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_3_c",
-                        "equation": "derived = obj['A1_cat7_3'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_3_c' });",
+                        "equation": "derived = obj['A1_cat7_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_3_c' });",
                         "derivedFrom": [
                             "A1_cat7_3"
                         ],
@@ -5159,7 +5159,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_4_c",
-                        "equation": "derived = obj['A1_cat7_4'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_4_c' });",
+                        "equation": "derived = obj['A1_cat7_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_4_c' });",
                         "derivedFrom": [
                             "A1_cat7_4"
                         ],
@@ -5179,7 +5179,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_5_c",
-                        "equation": "derived = obj['A1_cat7_5'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_5_c' });",
+                        "equation": "derived = obj['A1_cat7_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_5_c' });",
                         "derivedFrom": [
                             "A1_cat7_5"
                         ],
@@ -5199,7 +5199,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_6_c",
-                        "equation": "derived = obj['A1_cat7_6'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_6_c' });",
+                        "equation": "derived = obj['A1_cat7_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_6_c' });",
                         "derivedFrom": [
                             "A1_cat7_6"
                         ],
@@ -5219,7 +5219,7 @@
                     {
                         "fieldType": 1,
                         "name": "A1_cat7_7_c",
-                        "equation": "derived = obj['A1_cat7_7'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'A1_cat7_7_c' });",
+                        "equation": "derived = obj['A1_cat7_7'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'A1_cat7_7_c' });",
                         "derivedFrom": [
                             "A1_cat7_7"
                         ],
@@ -5239,7 +5239,7 @@
                     {
                         "fieldType": 1,
                         "name": "Age_cont_c",
-                        "equation": "derived = obj['Age_cont'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Age_cont_c' });",
+                        "equation": "derived = obj['Age_cont'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Age_cont_c' });",
                         "derivedFrom": [
                             {
                                 "name": "Age_cont",
@@ -5273,7 +5273,7 @@
                     {
                         "fieldType": 1,
                         "name": "Age_rcs1_c",
-                        "equation": "derived = obj['Age_rcs1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Age_rcs1_c' });",
+                        "equation": "derived = obj['Age_rcs1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Age_rcs1_c' });",
                         "derivedFrom": [
                             "Age_rcs1"
                         ],
@@ -5293,7 +5293,7 @@
                     {
                         "fieldType": 1,
                         "name": "Sex_cat2_1_c",
-                        "equation": "derived = obj['Sex_cat2_1'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Sex_cat2_1_c' });",
+                        "equation": "derived = obj['Sex_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Sex_cat2_1_c' });",
                         "derivedFrom": [
                             "Sex_cat2_1"
                         ],
@@ -5313,7 +5313,7 @@
                     {
                         "fieldType": 1,
                         "name": "Sex_cat2_2_c",
-                        "equation": "derived = obj['Sex_cat2_2'] - getValueFromTable(tables['means'], 'Means', { 'Name': 'Sex_cat2_2_c' });",
+                        "equation": "derived = obj['Sex_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'Sex_cat2_2_c' });",
                         "derivedFrom": [
                             "Sex_cat2_2"
                         ],
@@ -5332,27 +5332,27 @@
                     }
                 ],
                 "userFunctions": {
-                    "last.fun": "\n        userFunctions[\"last.fun\"] = (function (x, userFunctions, func) {\n    return func['as.numeric'](func['ifelse'](func['is.na'](x) == 1, undefined, func['substr'](x, func['nchar'](x), func['nchar'](x))));\n})\n    ",
-                    "default(p2oxy_cat3)": "\n        userFunctions[\"default(p2oxy_cat3)\"] = (function (p2oxy_cat3, j1z_cat2, userFunctions, func) {\n    return p2oxy_cat3 == undefined ? 0 : p2oxy_cat3;\n})\n    ",
-                    "default(j1z_cat2)": "\n        userFunctions[\"default(j1z_cat2)\"] = (function (p2oxy_cat3, j1z_cat2, userFunctions, func) {\n    return j1z_cat2 == undefined ? 0 : j1z_cat2;\n})\n    ",
-                    "oxygen_cat6.fun": "\n        userFunctions[\"oxygen_cat6.fun\"] = (function (p2oxy_cat3, j1z_cat2, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 0 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 0, 0, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 0 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 1, 1, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 0 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 2, 2, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 1 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 0, 3, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 1 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 1, 4, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 1 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func) == 2, 5, undefined))))));\n})\n    ",
-                    "default(j1aa_cat2)": "\n        userFunctions[\"default(j1aa_cat2)\"] = (function (j1aa_cat2, p2g_cat3, userFunctions, func) {\n    return j1aa_cat2 == undefined ? 0 : j1aa_cat2;\n})\n    ",
-                    "default(p2g_cat3)": "\n        userFunctions[\"default(p2g_cat3)\"] = (function (j1aa_cat2, p2g_cat3, userFunctions, func) {\n    return p2g_cat3 == undefined ? 0 : p2g_cat3;\n})\n    ",
-                    "renal_cat4.fun": "\n        userFunctions[\"renal_cat4.fun\"] = (function (j1aa_cat2, p2g_cat3, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 0 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 0, 0, func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 1 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 0, 1, func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 1 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 1, 2, func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 1 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func) == 2, 3, undefined))));\n})\n    ",
-                    "default(p2f_cat3)": "\n        userFunctions[\"default(p2f_cat3)\"] = (function (p2f_cat3, j1x_cat2, userFunctions, func) {\n    return p2f_cat3 == undefined ? 0 : p2f_cat3;\n})\n    ",
-                    "default(j1x_cat2)": "\n        userFunctions[\"default(j1x_cat2)\"] = (function (p2f_cat3, j1x_cat2, userFunctions, func) {\n    return j1x_cat2 == undefined ? 0 : j1x_cat2;\n})\n    ",
-                    "cancer_cat6.fun": "\n        userFunctions[\"cancer_cat6.fun\"] = (function (p2f_cat3, j1x_cat2, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func) == 0 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func) == 0, 0, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func) == 0 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func) == 1, 1, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func) == 0 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func) == 2, 2, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func) == 1 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func) == 0, 3, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func) == 1 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func) == 1, 4, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func) == 1 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func) == 2, 5, undefined))))));\n})\n    ",
-                    "default(H2I)": "\n        userFunctions[\"default(H2I)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func) {\n    return H2I == undefined ? 0 : H2I;\n})\n    ",
-                    "default(H2H)": "\n        userFunctions[\"default(H2H)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func) {\n    return H2H == undefined ? 0 : H2H;\n})\n    ",
-                    "default(H2C)": "\n        userFunctions[\"default(H2C)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func) {\n    return H2C == undefined ? 0 : H2C;\n})\n    ",
-                    "default(H2G)": "\n        userFunctions[\"default(H2G)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func) {\n    return H2G == undefined ? 0 : H2G;\n})\n    ",
-                    "adl.fun": "\n        userFunctions[\"adl.fun\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) == 4 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) == 4 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) == 4 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) == 4, 6, func['ifelse'](userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) == 4 || userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) == 4, 5, func['ifelse'](userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) == 3 || userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) == 3, 4, func['ifelse']((userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) >= 3 || userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) >= 3) && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) < 3 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) < 3, 3, func['ifelse']((userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) == 2 || userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) == 2 || userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) == 2 || userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) == 2) && (userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) < 3 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) < 3 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) < 3 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) < 3), 2, func['ifelse']((userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) == 1 || userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) == 1 || userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) == 1 || userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) == 1) && (userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) < 2 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) < 2 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) < 2 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) < 2), 1, func['ifelse'](userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func) == 0 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func) == 0 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func) == 0 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func) == 0, 0, undefined)))))));\n})\n    ",
-                    "default(H1AB)": "\n        userFunctions[\"default(H1AB)\"] = (function (H1AB, H1BB, H1EB, userFunctions, func) {\n    return H1AB == undefined ? 0 : H1AB;\n})\n    ",
-                    "default(H1BB)": "\n        userFunctions[\"default(H1BB)\"] = (function (H1AB, H1BB, H1EB, userFunctions, func) {\n    return H1BB == undefined ? 0 : H1BB;\n})\n    ",
-                    "default(H1EB)": "\n        userFunctions[\"default(H1EB)\"] = (function (H1AB, H1BB, H1EB, userFunctions, func) {\n    return H1EB == undefined ? 0 : H1EB;\n})\n    ",
-                    "iadl.fun": "\n        userFunctions[\"iadl.fun\"] = (function (H1AB, H1BB, H1EB, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2, 6, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 || userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2, 5, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 || userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 2 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) < 2, 4, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1, 3, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 || userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0, 2, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 || userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 1 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0, 1, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func) == 0, 0, undefined)))))));\n})\n    ",
-                    "default(dis)": "\n        userFunctions[\"default(dis)\"] = (function (dis, userFunctions, func) {\n    return dis == undefined ? 0 : dis;\n})\n    ",
-                    "disease.fun": "\n        userFunctions[\"disease.fun\"] = (function (dis, userFunctions, func) {\n    return func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func) == 'Yes', 1, func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func) == 'No', 0, undefined));\n})\n    "
+                    "last.fun": "\n        userFunctions[\"last.fun\"] = (function (x, userFunctions, func, tables) {\n    return func['as.numeric'](func['ifelse'](func['is.na'](x) == 1, undefined, func['substr'](x, func['nchar'](x), func['nchar'](x))));\n})\n    ",
+                    "default(p2oxy_cat3)": "\n        userFunctions[\"default(p2oxy_cat3)\"] = (function (p2oxy_cat3, j1z_cat2, userFunctions, func, tables) {\n    return p2oxy_cat3 == undefined ? 0 : p2oxy_cat3;\n})\n    ",
+                    "default(j1z_cat2)": "\n        userFunctions[\"default(j1z_cat2)\"] = (function (p2oxy_cat3, j1z_cat2, userFunctions, func, tables) {\n    return j1z_cat2 == undefined ? 0 : j1z_cat2;\n})\n    ",
+                    "oxygen_cat6.fun": "\n        userFunctions[\"oxygen_cat6.fun\"] = (function (p2oxy_cat3, j1z_cat2, userFunctions, func, tables) {\n    return func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 0 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 0, 0, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 0 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 1, 1, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 0 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 2, 2, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 1 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 0, 3, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 1 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 1, 4, func['ifelse'](userFunctions['default(j1z_cat2)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 1 && userFunctions['default(p2oxy_cat3)'](p2oxy_cat3, j1z_cat2, userFunctions, func, tables) == 2, 5, undefined))))));\n})\n    ",
+                    "default(j1aa_cat2)": "\n        userFunctions[\"default(j1aa_cat2)\"] = (function (j1aa_cat2, p2g_cat3, userFunctions, func, tables) {\n    return j1aa_cat2 == undefined ? 0 : j1aa_cat2;\n})\n    ",
+                    "default(p2g_cat3)": "\n        userFunctions[\"default(p2g_cat3)\"] = (function (j1aa_cat2, p2g_cat3, userFunctions, func, tables) {\n    return p2g_cat3 == undefined ? 0 : p2g_cat3;\n})\n    ",
+                    "renal_cat4.fun": "\n        userFunctions[\"renal_cat4.fun\"] = (function (j1aa_cat2, p2g_cat3, userFunctions, func, tables) {\n    return func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 0 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 0, 0, func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 1 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 0, 1, func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 1 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 1, 2, func['ifelse'](userFunctions['default(j1aa_cat2)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 1 && userFunctions['default(p2g_cat3)'](j1aa_cat2, p2g_cat3, userFunctions, func, tables) == 2, 3, undefined))));\n})\n    ",
+                    "default(p2f_cat3)": "\n        userFunctions[\"default(p2f_cat3)\"] = (function (p2f_cat3, j1x_cat2, userFunctions, func, tables) {\n    return p2f_cat3 == undefined ? 0 : p2f_cat3;\n})\n    ",
+                    "default(j1x_cat2)": "\n        userFunctions[\"default(j1x_cat2)\"] = (function (p2f_cat3, j1x_cat2, userFunctions, func, tables) {\n    return j1x_cat2 == undefined ? 0 : j1x_cat2;\n})\n    ",
+                    "cancer_cat6.fun": "\n        userFunctions[\"cancer_cat6.fun\"] = (function (p2f_cat3, j1x_cat2, userFunctions, func, tables) {\n    return func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 0 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 0, 0, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 0 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 1, 1, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 0 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 2, 2, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 1 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 0, 3, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 1 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 1, 4, func['ifelse'](userFunctions['default(j1x_cat2)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 1 && userFunctions['default(p2f_cat3)'](p2f_cat3, j1x_cat2, userFunctions, func, tables) == 2, 5, undefined))))));\n})\n    ",
+                    "default(H2I)": "\n        userFunctions[\"default(H2I)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func, tables) {\n    return H2I == undefined ? 0 : H2I;\n})\n    ",
+                    "default(H2H)": "\n        userFunctions[\"default(H2H)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func, tables) {\n    return H2H == undefined ? 0 : H2H;\n})\n    ",
+                    "default(H2C)": "\n        userFunctions[\"default(H2C)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func, tables) {\n    return H2C == undefined ? 0 : H2C;\n})\n    ",
+                    "default(H2G)": "\n        userFunctions[\"default(H2G)\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func, tables) {\n    return H2G == undefined ? 0 : H2G;\n})\n    ",
+                    "adl.fun": "\n        userFunctions[\"adl.fun\"] = (function (H2I, H2H, H2C, H2G, userFunctions, func, tables) {\n    return func['ifelse'](userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 4 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 4 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 4 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 4, 6, func['ifelse'](userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 4 || userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 4, 5, func['ifelse'](userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 3 || userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 3, 4, func['ifelse']((userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) >= 3 || userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) >= 3) && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 3 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 3, 3, func['ifelse']((userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 2 || userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 2 || userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 2 || userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 2) && (userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 3 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 3 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 3 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 3), 2, func['ifelse']((userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 1 || userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 1 || userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 1 || userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 1) && (userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 2 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 2 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 2 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) < 2), 1, func['ifelse'](userFunctions['default(H2I)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 0 && userFunctions['default(H2H)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 0 && userFunctions['default(H2C)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 0 && userFunctions['default(H2G)'](H2I, H2H, H2C, H2G, userFunctions, func, tables) == 0, 0, undefined)))))));\n})\n    ",
+                    "default(H1AB)": "\n        userFunctions[\"default(H1AB)\"] = (function (H1AB, H1BB, H1EB, userFunctions, func, tables) {\n    return H1AB == undefined ? 0 : H1AB;\n})\n    ",
+                    "default(H1BB)": "\n        userFunctions[\"default(H1BB)\"] = (function (H1AB, H1BB, H1EB, userFunctions, func, tables) {\n    return H1BB == undefined ? 0 : H1BB;\n})\n    ",
+                    "default(H1EB)": "\n        userFunctions[\"default(H1EB)\"] = (function (H1AB, H1BB, H1EB, userFunctions, func, tables) {\n    return H1EB == undefined ? 0 : H1EB;\n})\n    ",
+                    "iadl.fun": "\n        userFunctions[\"iadl.fun\"] = (function (H1AB, H1BB, H1EB, userFunctions, func, tables) {\n    return func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2, 6, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 || userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2, 5, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 || userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 2 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) < 2, 4, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1, 3, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 || userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0, 2, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 || userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 || userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 1 && userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0, 1, func['ifelse'](userFunctions['default(H1AB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 && userFunctions['default(H1BB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0 && userFunctions['default(H1EB)'](H1AB, H1BB, H1EB, userFunctions, func, tables) == 0, 0, undefined)))))));\n})\n    ",
+                    "default(dis)": "\n        userFunctions[\"default(dis)\"] = (function (dis, userFunctions, func, tables) {\n    return dis == undefined ? 0 : dis;\n})\n    ",
+                    "disease.fun": "\n        userFunctions[\"disease.fun\"] = (function (dis, userFunctions, func, tables) {\n    return func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func, tables) == 'Yes', 1, func['ifelse'](userFunctions['default(dis)'](dis, userFunctions, func, tables) == 'No', 0, undefined));\n})\n    "
                 },
                 "tables": {
                     "means": [
@@ -5639,9 +5639,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.013782701,
-                        "referencePoint": 79.725,
+                        "referencePoint": 79.7096705937864,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "AGE"
+                        ]
                     },
                     {
                         "name": "Age_rcs2_c",
@@ -5661,17 +5663,19 @@
                         "referencePoint": null,
                         "customFunction": {
                             "knots": [
-                                58,
-                                75,
-                                82,
-                                87,
-                                94
+                                -21.709670593786,
+                                -4.7096705937864,
+                                2.2903294062136,
+                                7.2903294062136,
+                                14.2903294062136
                             ],
                             "firstVariableCovariate": "Age_rcs1_c",
                             "variableNumber": 2
                         },
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "AGE"
+                        ]
                     },
                     {
                         "name": "Age_rcs3_c",
@@ -5691,17 +5695,19 @@
                         "referencePoint": null,
                         "customFunction": {
                             "knots": [
-                                58,
-                                75,
-                                82,
-                                87,
-                                94
+                                -21.709670593786,
+                                -4.7096705937864,
+                                2.2903294062136,
+                                7.2903294062136,
+                                14.2903294062136
                             ],
                             "firstVariableCovariate": "Age_rcs1_c",
                             "variableNumber": 3
                         },
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "AGE"
+                        ]
                     },
                     {
                         "name": "Age_rcs4_c",
@@ -5721,17 +5727,19 @@
                         "referencePoint": null,
                         "customFunction": {
                             "knots": [
-                                58,
-                                75,
-                                82,
-                                87,
-                                94
+                                -21.709670593786,
+                                -4.7096705937864,
+                                2.2903294062136,
+                                7.2903294062136,
+                                14.2903294062136
                             ],
                             "firstVariableCovariate": "Age_rcs1_c",
                             "variableNumber": 4
                         },
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "AGE"
+                        ]
                     },
                     {
                         "name": "Sex_cat2_1_c",
@@ -5748,9 +5756,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.348703798,
-                        "referencePoint": 0.351246514,
+                        "referencePoint": 0.34975301906545,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SEX"
+                        ]
                     },
                     {
                         "name": "BB6_cat5_1_c",
@@ -5767,9 +5777,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.061416564,
-                        "referencePoint": 0.161122475,
+                        "referencePoint": 0.16128960910659,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "EDUCATION"
+                        ]
                     },
                     {
                         "name": "BB6_cat5_2_c",
@@ -5786,9 +5798,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.030170815,
-                        "referencePoint": 0.059884787,
+                        "referencePoint": 0.0599227355166,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "EDUCATION"
+                        ]
                     },
                     {
                         "name": "BB6_cat5_3_c",
@@ -5805,9 +5819,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.013016738,
-                        "referencePoint": 0.150151021,
+                        "referencePoint": 0.15041138913874,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "EDUCATION"
+                        ]
                     },
                     {
                         "name": "BB6_cat5_4_c",
@@ -5824,9 +5840,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.105422761,
-                        "referencePoint": 0.285014419,
+                        "referencePoint": 0.28380099971984,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "EDUCATION"
+                        ]
                     },
                     {
                         "name": "J1A_cat2_1_c",
@@ -5843,9 +5861,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.134119779,
-                        "referencePoint": 0.192285129,
+                        "referencePoint": 0.19254633657235,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "J1B_cat2_1_c",
@@ -5862,9 +5882,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.298871454,
-                        "referencePoint": 0.137334717,
+                        "referencePoint": 0.13675371208658,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "J1C_cat2_1_c",
@@ -5881,9 +5903,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.050621722,
-                        "referencePoint": 0.268181658,
+                        "referencePoint": 0.26774355269172,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "J1D_cat2_1_c",
@@ -5900,9 +5924,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.116110847,
-                        "referencePoint": 0.607087352,
+                        "referencePoint": 0.60783113876642,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "J1DE_cat2_1_c",
@@ -5919,9 +5945,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.120870975,
-                        "referencePoint": 0.236418075,
+                        "referencePoint": 0.23467612321031,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "J1K_cat2_1_c",
@@ -5938,9 +5966,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.646153261,
-                        "referencePoint": 0.012040355,
+                        "referencePoint": 0.0123062858491,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "J1L_cat2_1_c",
@@ -5957,9 +5987,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.264741547,
-                        "referencePoint": 0.048190717,
+                        "referencePoint": 0.04808681932792,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "DISEASE"
+                        ]
                     },
                     {
                         "name": "K2E_cat2_1_c",
@@ -5976,9 +6008,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.309740798,
-                        "referencePoint": 0.013762767,
+                        "referencePoint": 0.01371960659992,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     },
                     {
                         "name": "K3D_cat2_1_c",
@@ -5995,9 +6029,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.120167693,
-                        "referencePoint": 0.270299931,
+                        "referencePoint": 0.27103687757118,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     },
                     {
                         "name": "K3E_cat2_1_c",
@@ -6014,9 +6050,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.28384419,
-                        "referencePoint": 0.263921825,
+                        "referencePoint": 0.26411256432563,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     },
                     {
                         "name": "L1A_cat2_1_c",
@@ -6033,9 +6071,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.446900971,
-                        "referencePoint": 0.07880277,
+                        "referencePoint": 0.07815140299916,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     },
                     {
                         "name": "L2C_cat2_1_c",
@@ -6052,9 +6092,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.216308695,
-                        "referencePoint": 0.015119363,
+                        "referencePoint": 0.01500169569,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     },
                     {
                         "name": "L2B_cat2_1_c",
@@ -6071,9 +6113,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.38320061,
-                        "referencePoint": 0.032981214,
+                        "referencePoint": 0.03272018166001,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     },
                     {
                         "name": "B2B_cat2_1_c",
@@ -6090,9 +6134,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.092461678,
-                        "referencePoint": 0.189991084,
+                        "referencePoint": 0.18861602205872,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "H3_cat2_1_c",
@@ -6109,9 +6155,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.340417381,
-                        "referencePoint": 0.460683872,
+                        "referencePoint": 0.45907489051741,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "IADL_cat7_1_c",
@@ -6128,9 +6176,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.020441044,
-                        "referencePoint": 0.060631441,
+                        "referencePoint": 0.06063123903331,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "IADL_cat7_2_c",
@@ -6147,9 +6197,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.188269503,
-                        "referencePoint": 0.127692066,
+                        "referencePoint": 0.10922602810422,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "IADL_cat7_3_c",
@@ -6166,9 +6218,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.190729007,
-                        "referencePoint": 0.103046483,
+                        "referencePoint": 0.01500390745956,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "IADL_cat7_4_c",
@@ -6185,9 +6239,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.270610679,
-                        "referencePoint": 0.226245856,
+                        "referencePoint": 0.20127766555095,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "IADL_cat7_5_c",
@@ -6204,9 +6260,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.496130512,
-                        "referencePoint": 0.264386794,
+                        "referencePoint": 0.3970170601159,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "IADL_cat7_6_c",
@@ -6223,9 +6281,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.678488749,
-                        "referencePoint": 0.185535949,
+                        "referencePoint": 0.18470118993202,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "ADL_cat7_1_c",
@@ -6242,9 +6302,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.115525155,
-                        "referencePoint": 0.113256259,
+                        "referencePoint": 0.11321016234389,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "ADL_cat7_2_c",
@@ -6261,9 +6323,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.270163171,
-                        "referencePoint": 0.155784726,
+                        "referencePoint": 0.15577566758578,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "ADL_cat7_3_c",
@@ -6280,9 +6344,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.362990098,
-                        "referencePoint": 0.07485542,
+                        "referencePoint": 0.07478730149368,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "ADL_cat7_4_c",
@@ -6299,9 +6365,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.689472089,
-                        "referencePoint": 0.054661966,
+                        "referencePoint": 0.05436603311756,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "ADL_cat7_5_c",
@@ -6318,9 +6386,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.894444535,
-                        "referencePoint": 0.03772855,
+                        "referencePoint": 0.03761703947271,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "ADL_cat7_6_c",
@@ -6337,9 +6407,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 1.284884107,
-                        "referencePoint": 0.012621003,
+                        "referencePoint": 0.01265058464442,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "FUNCTION"
+                        ]
                     },
                     {
                         "name": "P4A_cat4_1_c",
@@ -6356,9 +6428,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.121821282,
-                        "referencePoint": 0.266816799,
+                        "referencePoint": 0.26532903758534,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "INST"
+                        ]
                     },
                     {
                         "name": "P4A_cat4_2_c",
@@ -6375,9 +6449,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.253539405,
-                        "referencePoint": 0.04095779,
+                        "referencePoint": 0.04062946961766,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "INST"
+                        ]
                     },
                     {
                         "name": "P4A_cat4_3_c",
@@ -6394,9 +6470,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.321651338,
-                        "referencePoint": 0.011639236,
+                        "referencePoint": 0.01152995473245,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "INST"
+                        ]
                     },
                     {
                         "name": "P4B_cat4_1_c",
@@ -6413,9 +6491,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.09396142,
-                        "referencePoint": 0.142984196,
+                        "referencePoint": 0.14247187366372,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "INST"
+                        ]
                     },
                     {
                         "name": "P4B_cat4_2_c",
@@ -6432,9 +6512,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.125205092,
-                        "referencePoint": 0.032783659,
+                        "referencePoint": 0.03263171087748,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "INST"
+                        ]
                     },
                     {
                         "name": "P4B_cat4_3_c",
@@ -6451,9 +6533,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.136180044,
-                        "referencePoint": 0.016955951,
+                        "referencePoint": 0.01688317433168,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "INST"
+                        ]
                     },
                     {
                         "name": "Renal_cat4_1_c",
@@ -6470,9 +6554,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.263889897,
-                        "referencePoint": 0.061137723,
+                        "referencePoint": 0.06098069862428,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Renal_cat4_2_c",
@@ -6489,9 +6575,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.347745221,
-                        "referencePoint": 0.0000413,
+                        "referencePoint": 0.00004054910866,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Renal_cat4_3_c",
@@ -6508,9 +6596,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.495525423,
-                        "referencePoint": 0.01472876,
+                        "referencePoint": 0.01463233017296,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Oxygen_cat6_1_c",
@@ -6527,9 +6617,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.200798826,
-                        "referencePoint": 0.000576891,
+                        "referencePoint": 0.00057579734293,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Oxygen_cat6_2_c",
@@ -6546,9 +6638,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.462298377,
-                        "referencePoint": 0.030654118,
+                        "referencePoint": 0.03050177678822,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Oxygen_cat6_3_c",
@@ -6565,9 +6659,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.080049296,
-                        "referencePoint": 0.120837725,
+                        "referencePoint": 0.12086804582787,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Oxygen_cat6_4_c",
@@ -6584,9 +6680,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.101131641,
-                        "referencePoint": 0.000446189,
+                        "referencePoint": 0.00044456568218,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Oxygen_cat6_5_c",
@@ -6603,9 +6701,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.423418277,
-                        "referencePoint": 0.061960995,
+                        "referencePoint": 0.06172901399313,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Cancer_cat6_1_c",
@@ -6622,9 +6722,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 1.165482083,
-                        "referencePoint": 0.0000173,
+                        "referencePoint": 0.00001695689998,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Cancer_cat6_2_c",
@@ -6641,9 +6743,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.708415335,
-                        "referencePoint": 0.000602431,
+                        "referencePoint": 0.00059422875595,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Cancer_cat6_3_c",
@@ -6660,9 +6764,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.778551493,
-                        "referencePoint": 0.130364696,
+                        "referencePoint": 0.12966277886728,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Cancer_cat6_4_c",
@@ -6679,9 +6785,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 1.336168434,
-                        "referencePoint": 0.000313985,
+                        "referencePoint": 0.00031038499536,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "Cancer_cat6_5_c",
@@ -6698,9 +6806,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 1.215139114,
-                        "referencePoint": 0.014945094,
+                        "referencePoint": 0.01475176572937,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "HEALTH"
+                        ]
                     },
                     {
                         "name": "A2_cat5_1_c",
@@ -6717,9 +6827,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.099533067,
-                        "referencePoint": 0.177015533,
+                        "referencePoint": 0.17719370677834,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A2_cat5_2_c",
@@ -6736,9 +6848,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.290809339,
-                        "referencePoint": 0.370591907,
+                        "referencePoint": 0.37385098571197,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A2_cat5_3_c",
@@ -6755,9 +6869,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.124313155,
-                        "referencePoint": 0.052458812,
+                        "referencePoint": 0.05198248278506,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A2_cat5_4_c",
@@ -6774,9 +6890,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.057585648,
-                        "referencePoint": 0.019625576,
+                        "referencePoint": 0.01963019212905,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A1_cat7_1_c",
@@ -6793,9 +6911,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 0.010679492,
-                        "referencePoint": 0.142029471,
+                        "referencePoint": 0.14050266149604,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A1_cat7_2_c",
@@ -6812,9 +6932,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.0104816,
-                        "referencePoint": 0.141354178,
+                        "referencePoint": 0.1402453589702,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A1_cat7_3_c",
@@ -6831,9 +6953,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.022371264,
-                        "referencePoint": 0.141211457,
+                        "referencePoint": 0.1405749126351,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A1_cat7_4_c",
@@ -6850,9 +6974,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.074511641,
-                        "referencePoint": 0.145973065,
+                        "referencePoint": 0.14614857193412,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A1_cat7_5_c",
@@ -6869,9 +6995,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.09710109,
-                        "referencePoint": 0.146764037,
+                        "referencePoint": 0.14823795691473,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "A1_cat7_6_c",
@@ -6888,9 +7016,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": -0.10835343,
-                        "referencePoint": 0.14107099,
+                        "referencePoint": 0.14446615255312,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "ASSESSMENT"
+                        ]
                     },
                     {
                         "name": "K8E_cat2_1_c",
@@ -6907,9 +7037,11 @@
                         },
                         "dataFieldType": 2,
                         "beta": 1.166663692,
-                        "referencePoint": 0.012808793,
+                        "referencePoint": 0.01260856102272,
                         "extensions": {},
-                        "groups": []
+                        "groups": [
+                            "SYMPTOM"
+                        ]
                     }
                 ],
                 "timeMetric": "days",
