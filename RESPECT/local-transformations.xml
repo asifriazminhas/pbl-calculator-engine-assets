@@ -2063,8 +2063,8 @@
                 <Apply function="and">
                     <Apply function="or">
                         <Apply function="equal">
-                            <FieldRef field="L1A_L1A"/>
-                            <Constant dataType="string">Yes</Constant>
+                            <FieldRef field="L1A"/>
+                            <Constant dataType="string">L1A</Constant>
                         </Apply>
                         <Apply function="equal">
                             <FieldRef field="K2Lay_L1A"/>
