@@ -1,0 +1,4765 @@
+{
+    "name": "",
+    "algorithms": [
+        {
+            "algorithm": {
+                "name": "RESPECT-CCC",
+                "derivedFields": [
+                    {
+                        "fieldType": 1,
+                        "name": "AGE",
+                        "equation": "derived = obj['AGE_cont'];",
+                        "derivedFrom": [
+                            {
+                                "name": "AGE_cont",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "SEX_cat2",
+                        "equation": "derived = func['ifelse'](obj['SEX'] == 'F', 0, func['ifelse'](obj['SEX'] == 'M'), 1, undefined);",
+                        "derivedFrom": [
+                            {
+                                "name": "SEX",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5",
+                        "equation": "derived = func['ifelse'](obj['AB7'] >= 1 && obj['AB7'] <= 3, 0, func['ifelse'](obj['AB7'] == 4, 1, func['ifelse'](obj['AB7'] == 5, 2, func['ifelse'](obj['AB7'] >= 6 && obj['AB7'] <= 8, 3, func['ifelse'](func['is.na'](obj['AB7']) || obj['AB7'] == 9, 4, undefined)))));",
+                        "derivedFrom": [
+                            {
+                                "name": "AB7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1U_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1U'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1U",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1F_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1F'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1F",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1H_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1H'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1H",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1Y_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1Y'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1Y",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1AA_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1AA'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1AA",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1V_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1V'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1V",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1R_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1R'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1R",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1DE_cat2",
+                        "equation": "derived = func['ifelse'](func['max'](obj['I1V_cat2'], obj['I1R_cat2']) >= 1, 1, 0);",
+                        "derivedFrom": [
+                            "I1V_cat2",
+                            "I1R_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "P1AA_cat2",
+                        "equation": "derived = userFunctions['special_treatment.func'](obj['P1AA'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "P1AA",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1RR_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1RR'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1RR",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4",
+                        "equation": "derived = userFunctions['disease_and_treatment.func'](obj['I1RR_cat2'], obj['P1AA_cat2'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            "I1RR_cat2",
+                            "P1AA_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1UU_cat2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1UU']), 0, obj['I1UU']);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1UU",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "P1AB_cat2",
+                        "equation": "derived = userFunctions['special_treatment.func'](obj['P1AB'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "P1AB",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4",
+                        "equation": "derived = userFunctions['disease_and_treatment.func'](obj['I1UU_cat2'], obj['P1AB_cat2'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            "I1UU_cat2",
+                            "P1AB_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1JJ_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1JJ'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1JJ",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1KK_cat2",
+                        "equation": "derived = userFunctions['chronic_cond.func'](obj['I1KK'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "I1KK",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1Oxy_cat2",
+                        "equation": "derived = func['ifelse'](func['max'](obj['I1JJ_cat2'], obj['I1KK_cat2']) >= 1, 1, 0);",
+                        "derivedFrom": [
+                            "I1JJ_cat2",
+                            "I1KK_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "P1AG_cat2",
+                        "equation": "derived = userFunctions['special_treatment.func'](obj['P1AG'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "P1AG",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "P1AL_cat2",
+                        "equation": "derived = userFunctions['special_treatment.func'](obj['P1AL'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "P1AL",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "P1Oxy_cat2",
+                        "equation": "derived = func['max'](obj['P1AG_cat2'], obj['P1AL_cat2']);",
+                        "derivedFrom": [
+                            "P1AG_cat2",
+                            "P1AL_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4",
+                        "equation": "derived = userFunctions['disease_and_treatment.func'](obj['I1Oxy_cat2'], obj['P1Oxy_cat2'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            "I1Oxy_cat2",
+                            "P1Oxy_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1O_cat2",
+                        "equation": "derived = userFunctions['signs_symptoms.func'](obj['J1O'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "J1O",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1G_cat2",
+                        "equation": "derived = userFunctions['signs_symptoms.func'](obj['J1G'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "J1G",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1L_cat2",
+                        "equation": "derived = userFunctions['signs_symptoms.func'](obj['J1L'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "J1L",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1D_cat2",
+                        "equation": "derived = userFunctions['signs_symptoms.func'](obj['J1D'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "J1D",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "K3A_cat3",
+                        "equation": "derived = func['ifelse'](obj['K3A'] == 0, 0, func['ifelse'](obj['K3A'] == 1, 1, func['ifelse'](func['is.na'](obj['K3A']) || obj['K3A'] == 9, 2, undefined)));",
+                        "derivedFrom": [
+                            {
+                                "name": "K3A",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J5C_cat2",
+                        "equation": "derived = userFunctions['signs_symptoms.func'](obj['J5C'], userFunctions, func, tables);",
+                        "derivedFrom": [
+                            {
+                                "name": "J5C",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4",
+                        "equation": "derived = func['ifelse'](obj['AA8'] == 1, 0, func['ifelse'](obj['AA8'] == 2, 1, func['ifelse'](obj['AA8'] == 3, 2, func['ifelse'](obj['AA8'] == 5, 3, undefined))));",
+                        "derivedFrom": [
+                            {
+                                "name": "AA8",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7",
+                        "equation": "derived = obj['ADL_hierarchy'];",
+                        "derivedFrom": [
+                            {
+                                "name": "ADL_hierarchy",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "B6_cat2",
+                        "equation": "derived = func['ifelse'](obj['B6'] <= 1 || obj['B6'] == 8, 0, func['ifelse'](obj['B6'] == 2, 1, undefined));",
+                        "derivedFrom": [
+                            {
+                                "name": "B6",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "G9_cat2",
+                        "equation": "derived = func['ifelse'](obj['G9'] >= 0 && obj['G9'] <= 1, 0, func['ifelse'](obj['G9'] == 2, 1, undefined));",
+                        "derivedFrom": [
+                            {
+                                "name": "G9",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "assessment_date_year",
+                        "equation": "derived = func['year'](func['ymd'](obj['ASSESSDATE']));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat8",
+                        "equation": "derived = func['ifelse'](obj['assessment_date_year'] == 2010, 0, func['ifelse'](obj['assessment_date_year'] == 2011, 1, func['ifelse'](obj['assessment_date_year'] == 2012, 2, func['ifelse'](obj['assessment_date_year'] == 2013, 3, func['ifelse'](obj['assessment_date_year'] == 2014, 4, func['ifelse'](obj['assessment_date_year'] == 2015, 5, func['ifelse'](obj['assessment_date_year'] == 2016, 6, func['ifelse'](obj['assessment_date_year'] == 2017, 7, undefined))))))));",
+                        "derivedFrom": [
+                            "assessment_date_year"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "SEX_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['SEX_cat2']), undefined, func['ifelse'](obj['SEX_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "SEX_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AB7_cat5']), undefined, func['ifelse'](obj['AB7_cat5'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "AB7_cat5"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AB7_cat5']), undefined, func['ifelse'](obj['AB7_cat5'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            "AB7_cat5"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AB7_cat5']), undefined, func['ifelse'](obj['AB7_cat5'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            "AB7_cat5"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_4",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AB7_cat5']), undefined, func['ifelse'](obj['AB7_cat5'] == 4, 1, 0));",
+                        "derivedFrom": [
+                            "AB7_cat5"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1U_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1U_cat2']), undefined, func['ifelse'](obj['I1U_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "I1U_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1F_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1F_cat2']), undefined, func['ifelse'](obj['I1F_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "I1F_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1D_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1D_cat2']), undefined, func['ifelse'](obj['I1D_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "I1D_cat2",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1H_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1H_cat2']), undefined, func['ifelse'](obj['I1H_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "I1H_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1Y_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1Y_cat2']), undefined, func['ifelse'](obj['I1Y_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "I1Y_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1AA_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1AA_cat2']), undefined, func['ifelse'](obj['I1AA_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "I1AA_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1DE_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['I1DE_cat2']), undefined, func['ifelse'](obj['I1DE_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "I1DE_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['CANCER_cat4']), undefined, func['ifelse'](obj['CANCER_cat4'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "CANCER_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['CANCER_cat4']), undefined, func['ifelse'](obj['CANCER_cat4'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            "CANCER_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['CANCER_cat4']), undefined, func['ifelse'](obj['CANCER_cat4'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            "CANCER_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['RENAL_cat4']), undefined, func['ifelse'](obj['RENAL_cat4'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "RENAL_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['RENAL_cat4']), undefined, func['ifelse'](obj['RENAL_cat4'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            "RENAL_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['RENAL_cat4']), undefined, func['ifelse'](obj['RENAL_cat4'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            "RENAL_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['OXYGEN_cat4']), undefined, func['ifelse'](obj['OXYGEN_cat4'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "OXYGEN_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['OXYGEN_cat4']), undefined, func['ifelse'](obj['OXYGEN_cat4'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            "OXYGEN_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['OXYGEN_cat4']), undefined, func['ifelse'](obj['OXYGEN_cat4'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            "OXYGEN_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1O_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['J1O_cat2']), undefined, func['ifelse'](obj['J1O_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "J1O_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1G_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['J1G_cat2']), undefined, func['ifelse'](obj['J1G_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "J1G_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1L_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['J1L_cat2']), undefined, func['ifelse'](obj['J1L_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "J1L_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1D_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['J1D_cat2']), undefined, func['ifelse'](obj['J1D_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "J1D_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "K3A_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['K3A_cat2']), undefined, func['ifelse'](obj['K3A_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "K3A_cat2",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "K3A_cat2_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['K3A_cat2']), undefined, func['ifelse'](obj['K3A_cat2'] == 1, 2, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "K3A_cat2",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J5C_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['J5C_cat2']), undefined, func['ifelse'](obj['J5C_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "J5C_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AA8_cat4']), undefined, func['ifelse'](obj['AA8_cat4'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "AA8_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AA8_cat4']), undefined, func['ifelse'](obj['AA8_cat4'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            "AA8_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['AA8_cat4']), undefined, func['ifelse'](obj['AA8_cat4'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            "AA8_cat4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ADL_cat7']), undefined, func['ifelse'](obj['ADL_cat7'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "ADL_cat7"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ADL_cat7']), undefined, func['ifelse'](obj['ADL_cat7'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            "ADL_cat7"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ADL_cat7']), undefined, func['ifelse'](obj['ADL_cat7'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            "ADL_cat7"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_4",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ADL_cat7']), undefined, func['ifelse'](obj['ADL_cat7'] == 4, 1, 0));",
+                        "derivedFrom": [
+                            "ADL_cat7"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_5",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ADL_cat7']), undefined, func['ifelse'](obj['ADL_cat7'] == 5, 1, 0));",
+                        "derivedFrom": [
+                            "ADL_cat7"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_6",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ADL_cat7']), undefined, func['ifelse'](obj['ADL_cat7'] == 6, 1, 0));",
+                        "derivedFrom": [
+                            "ADL_cat7"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "B6_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['B6_cat2']), undefined, func['ifelse'](obj['B6_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "B6_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "G9_cat2_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['G9_cat2']), undefined, func['ifelse'](obj['G9_cat2'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            "G9_cat2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_1",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ASSESSDATE_cat7']), undefined, func['ifelse'](obj['ASSESSDATE_cat7'] == 1, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE_cat7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_2",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ASSESSDATE_cat7']), undefined, func['ifelse'](obj['ASSESSDATE_cat7'] == 2, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE_cat7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_3",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ASSESSDATE_cat7']), undefined, func['ifelse'](obj['ASSESSDATE_cat7'] == 3, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE_cat7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_4",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ASSESSDATE_cat7']), undefined, func['ifelse'](obj['ASSESSDATE_cat7'] == 4, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE_cat7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_5",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ASSESSDATE_cat7']), undefined, func['ifelse'](obj['ASSESSDATE_cat7'] == 5, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE_cat7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_6",
+                        "equation": "derived = func['ifelse'](func['is.na'](obj['ASSESSDATE_cat7']), undefined, func['ifelse'](obj['ASSESSDATE_cat7'] == 6, 1, 0));",
+                        "derivedFrom": [
+                            {
+                                "name": "ASSESSDATE_cat7",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AGE_rcs1",
+                        "equation": "derived = obj['AGE_cont'];",
+                        "derivedFrom": [
+                            {
+                                "name": "AGE_cont",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AGE_rcs1_c",
+                        "equation": "derived = obj['AGE_rcs1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AGE_rcs5_1_c' });",
+                        "derivedFrom": [
+                            "AGE_rcs1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "SEX_cat2_1_c",
+                        "equation": "derived = obj['SEX_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'SEX_cat2_1_c' });",
+                        "derivedFrom": [
+                            "SEX_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_1_c",
+                        "equation": "derived = obj['AB7_cat5_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AB7_cat5_1_c' });",
+                        "derivedFrom": [
+                            "AB7_cat5_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_2_c",
+                        "equation": "derived = obj['AB7_cat5_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AB7_cat5_2_c' });",
+                        "derivedFrom": [
+                            "AB7_cat5_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_3_c",
+                        "equation": "derived = obj['AB7_cat5_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AB7_cat5_3_c' });",
+                        "derivedFrom": [
+                            "AB7_cat5_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AB7_cat5_4_c",
+                        "equation": "derived = obj['AB7_cat5_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AB7_cat5_4_c' });",
+                        "derivedFrom": [
+                            "AB7_cat5_4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1U_cat2_1_c",
+                        "equation": "derived = obj['I1U_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1U_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1U_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1F_cat2_1_c",
+                        "equation": "derived = obj['I1F_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1F_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1F_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1D_cat2_1_c",
+                        "equation": "derived = obj['I1D_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1D_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1D_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1H_cat2_1_c",
+                        "equation": "derived = obj['I1H_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1H_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1H_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1Y_cat2_1_c",
+                        "equation": "derived = obj['I1Y_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1Y_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1Y_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1AA_cat2_1_c",
+                        "equation": "derived = obj['I1AA_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1AA_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1AA_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "I1DE_cat2_1_c",
+                        "equation": "derived = obj['I1DE_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'I1DE_cat2_1_c' });",
+                        "derivedFrom": [
+                            "I1DE_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4_1_c",
+                        "equation": "derived = obj['CANCER_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'CANCER_cat4_1_c' });",
+                        "derivedFrom": [
+                            "CANCER_cat4_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4_2_c",
+                        "equation": "derived = obj['CANCER_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'CANCER_cat4_2_c' });",
+                        "derivedFrom": [
+                            "CANCER_cat4_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "CANCER_cat4_3_c",
+                        "equation": "derived = obj['CANCER_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'CANCER_cat4_3_c' });",
+                        "derivedFrom": [
+                            "CANCER_cat4_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4_1_c",
+                        "equation": "derived = obj['RENAL_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'RENAL_cat4_1_c' });",
+                        "derivedFrom": [
+                            "RENAL_cat4_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4_2_c",
+                        "equation": "derived = obj['RENAL_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'RENAL_cat4_2_c' });",
+                        "derivedFrom": [
+                            "RENAL_cat4_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "RENAL_cat4_3_c",
+                        "equation": "derived = obj['RENAL_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'RENAL_cat4_3_c' });",
+                        "derivedFrom": [
+                            "RENAL_cat4_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4_1_c",
+                        "equation": "derived = obj['OXYGEN_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'OXYGEN_cat4_1_c' });",
+                        "derivedFrom": [
+                            "OXYGEN_cat4_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4_2_c",
+                        "equation": "derived = obj['OXYGEN_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'OXYGEN_cat4_2_c' });",
+                        "derivedFrom": [
+                            "OXYGEN_cat4_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "OXYGEN_cat4_3_c",
+                        "equation": "derived = obj['OXYGEN_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'OXYGEN_cat4_3_c' });",
+                        "derivedFrom": [
+                            "OXYGEN_cat4_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1O_cat2_1_c",
+                        "equation": "derived = obj['J1O_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1O_cat2_1_c' });",
+                        "derivedFrom": [
+                            "J1O_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1G_cat2_1_c",
+                        "equation": "derived = obj['J1G_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1G_cat2_1_c' });",
+                        "derivedFrom": [
+                            "J1G_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1L_cat2_1_c",
+                        "equation": "derived = obj['J1L_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1L_cat2_1_c' });",
+                        "derivedFrom": [
+                            "J1L_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J1D_cat2_1_c",
+                        "equation": "derived = obj['J1D_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J1D_cat2_1_c' });",
+                        "derivedFrom": [
+                            "J1D_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "K3A_cat2_1_c",
+                        "equation": "derived = obj['K3A_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K3A_cat2_1_c' });",
+                        "derivedFrom": [
+                            "K3A_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "K3A_cat2_2_c",
+                        "equation": "derived = obj['K3A_cat2_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'K3A_cat2_2_c' });",
+                        "derivedFrom": [
+                            "K3A_cat2_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "J5C_cat2_1_c",
+                        "equation": "derived = obj['J5C_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'J5C_cat2_1_c' });",
+                        "derivedFrom": [
+                            "J5C_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4_1_c",
+                        "equation": "derived = obj['AA8_cat4_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AA8_cat4_1_c' });",
+                        "derivedFrom": [
+                            "AA8_cat4_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4_2_c",
+                        "equation": "derived = obj['AA8_cat4_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AA8_cat4_2_c' });",
+                        "derivedFrom": [
+                            "AA8_cat4_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8_cat4_3_c",
+                        "equation": "derived = obj['AA8_cat4_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'AA8_cat4_3_c' });",
+                        "derivedFrom": [
+                            "AA8_cat4_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_1_c",
+                        "equation": "derived = obj['ADL_cat7_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_1_c' });",
+                        "derivedFrom": [
+                            "ADL_cat7_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_2_c",
+                        "equation": "derived = obj['ADL_cat7_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_2_c' });",
+                        "derivedFrom": [
+                            "ADL_cat7_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_3_c",
+                        "equation": "derived = obj['ADL_cat7_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_3_c' });",
+                        "derivedFrom": [
+                            "ADL_cat7_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_4_c",
+                        "equation": "derived = obj['ADL_cat7_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_4_c' });",
+                        "derivedFrom": [
+                            "ADL_cat7_4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_5_c",
+                        "equation": "derived = obj['ADL_cat7_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_5_c' });",
+                        "derivedFrom": [
+                            "ADL_cat7_5"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ADL_cat7_6_c",
+                        "equation": "derived = obj['ADL_cat7_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ADL_cat7_6_c' });",
+                        "derivedFrom": [
+                            "ADL_cat7_6"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "B6_cat2_1_c",
+                        "equation": "derived = obj['B6_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'B6_cat2_1_c' });",
+                        "derivedFrom": [
+                            "B6_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "G9_cat2_1_c",
+                        "equation": "derived = obj['G9_cat2_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'G9_cat2_1_c' });",
+                        "derivedFrom": [
+                            "G9_cat2_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_1_c",
+                        "equation": "derived = obj['ASSESSDATE_cat7_1'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ASSESSDATE_cat7_1_c' });",
+                        "derivedFrom": [
+                            "ASSESSDATE_cat7_1"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_2_c",
+                        "equation": "derived = obj['ASSESSDATE_cat7_2'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ASSESSDATE_cat7_2_c' });",
+                        "derivedFrom": [
+                            "ASSESSDATE_cat7_2"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_3_c",
+                        "equation": "derived = obj['ASSESSDATE_cat7_3'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ASSESSDATE_cat7_3_c' });",
+                        "derivedFrom": [
+                            "ASSESSDATE_cat7_3"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_4_c",
+                        "equation": "derived = obj['ASSESSDATE_cat7_4'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ASSESSDATE_cat7_4_c' });",
+                        "derivedFrom": [
+                            "ASSESSDATE_cat7_4"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_5_c",
+                        "equation": "derived = obj['ASSESSDATE_cat7_5'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ASSESSDATE_cat7_5_c' });",
+                        "derivedFrom": [
+                            "ASSESSDATE_cat7_5"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "ASSESSDATE_cat7_6_c",
+                        "equation": "derived = obj['ASSESSDATE_cat7_6'] - func['getValueFromTable'](tables['means'], 'Means', { 'Name': 'ASSESSDATE_cat7_6_c' });",
+                        "derivedFrom": [
+                            "ASSESSDATE_cat7_6"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    }
+                ],
+                "userFunctions": {
+                    "chronic_cond.func": "\n        userFunctions[\"chronic_cond.func\"] = (function (chronic_cond, userFunctions, func, tables) {\n    return func['ifelse'](func['is.na'](chronic_cond), 0, chronic_cond);\n})\n    ",
+                    "disease_and_treatment.func(combined)": "\n        userFunctions[\"disease_and_treatment.func(combined)\"] = (function (disease, treatment, userFunctions, func, tables) {\n    return func['ifelse'](disease == 0 && treatment == 0, 0, func['ifelse'](disease == 0 && treatment == 1, 1, func['ifelse'](disease == 1 && treatment == 0, 2, func['ifelse'](disease == 1 && treatment == 1, 3, undefined))));\n})\n    ",
+                    "disease_and_treatment.func": "\n        userFunctions[\"disease_and_treatment.func\"] = (function (disease, treatment, userFunctions, func, tables) {\n    return userFunctions['disease_and_treatment.func(combined)'](disease, treatment, userFunctions, func, tables);\n})\n    ",
+                    "special_treatment.func": "\n        userFunctions[\"special_treatment.func\"] = (function (special_treat, userFunctions, func, tables) {\n    return func['ifelse'](special_treat == 0, 0, func['ifelse'](special_treat == 1, 1, undefined));\n})\n    ",
+                    "signs_symptoms.func": "\n        userFunctions[\"signs_symptoms.func\"] = (function (sign, userFunctions, func, tables) {\n    return func['ifelse'](sign == 0, 0, func['ifelse'](sign) == 1, 1, undefined);\n})\n    "
+                },
+                "tables": {
+                    "means": [
+                        {
+                            "Name": "AGE_rcs5_1_c",
+                            "Means": "78.2482"
+                        },
+                        {
+                            "Name": "AGE_rcs5_2_c",
+                            "Means": "78.2482"
+                        },
+                        {
+                            "Name": "AGE_rcs5_3_c",
+                            "Means": "78.2482"
+                        },
+                        {
+                            "Name": "AGE_rcs5_4_c",
+                            "Means": "78.2482"
+                        },
+                        {
+                            "Name": "SEX_cat2_1_c",
+                            "Means": "0.46176"
+                        },
+                        {
+                            "Name": "AB7_cat5_1_c",
+                            "Means": "0.10046"
+                        },
+                        {
+                            "Name": "AB7_cat5_2_c",
+                            "Means": "0.02727"
+                        },
+                        {
+                            "Name": "AB7_cat5_3_c",
+                            "Means": "0.07936"
+                        },
+                        {
+                            "Name": "AB7_cat5_4_c",
+                            "Means": "0.67361"
+                        },
+                        {
+                            "Name": "I1U_cat2_1_c",
+                            "Means": "0.21895"
+                        },
+                        {
+                            "Name": "I1F_cat2_1_c",
+                            "Means": "0.09385"
+                        },
+                        {
+                            "Name": "I1D_cat2_1_c",
+                            "Means": "0.07562"
+                        },
+                        {
+                            "Name": "I1H_cat2_1_c",
+                            "Means": "0.40264"
+                        },
+                        {
+                            "Name": "I1Y_cat2_1_c",
+                            "Means": "0.02021"
+                        },
+                        {
+                            "Name": "I1AA_cat2_1_c",
+                            "Means": "0.03018"
+                        },
+                        {
+                            "Name": "I1DE_cat2_1_c",
+                            "Means": "0.26243"
+                        },
+                        {
+                            "Name": "CANCER_cat4_1_c",
+                            "Means": "0.00403"
+                        },
+                        {
+                            "Name": "CANCER_cat4_2_c",
+                            "Means": "0.16741"
+                        },
+                        {
+                            "Name": "CANCER_cat4_3_c",
+                            "Means": "0.00788"
+                        },
+                        {
+                            "Name": "RENAL_cat4_1_c",
+                            "Means": "0.01435"
+                        },
+                        {
+                            "Name": "RENAL_cat4_2_c",
+                            "Means": "0.08141"
+                        },
+                        {
+                            "Name": "RENAL_cat4_3_c",
+                            "Means": "0.016"
+                        },
+                        {
+                            "Name": "OXYGEN_cat4_1_c",
+                            "Means": "0.14568"
+                        },
+                        {
+                            "Name": "OXYGEN_cat4_2_c",
+                            "Means": "0.0862"
+                        },
+                        {
+                            "Name": "OXYGEN_cat4_3_c",
+                            "Means": "0.04958"
+                        },
+                        {
+                            "Name": "J1O_cat2_1_c",
+                            "Means": "0.05956"
+                        },
+                        {
+                            "Name": "J1G_cat2_1_c",
+                            "Means": "0.24648"
+                        },
+                        {
+                            "Name": "J1L_cat2_1_c",
+                            "Means": "0.22994"
+                        },
+                        {
+                            "Name": "J1D_cat2_1_c",
+                            "Means": "0.07434"
+                        },
+                        {
+                            "Name": "K3A_cat3_1_c",
+                            "Means": "0.10547"
+                        },
+                        {
+                            "Name": "K3A_cat3_2_c",
+                            "Means": "0.18176"
+                        },
+                        {
+                            "Name": "J5C_cat2_1_c",
+                            "Means": "0.13444"
+                        },
+                        {
+                            "Name": "AA8_cat4_1_c",
+                            "Means": "0.05737"
+                        },
+                        {
+                            "Name": "AA8_cat4_2_c",
+                            "Means": "0.02458"
+                        },
+                        {
+                            "Name": "AA8_cat4_3_c",
+                            "Means": "0.3186"
+                        },
+                        {
+                            "Name": "ADL_cat7_1_c",
+                            "Means": "0.04075"
+                        },
+                        {
+                            "Name": "ADL_cat7_2_c",
+                            "Means": "0.15195"
+                        },
+                        {
+                            "Name": "ADL_cat7_3_c",
+                            "Means": "0.18339"
+                        },
+                        {
+                            "Name": "ADL_cat7_4_c",
+                            "Means": "0.12764"
+                        },
+                        {
+                            "Name": "ADL_cat7_5_c",
+                            "Means": "0.29737"
+                        },
+                        {
+                            "Name": "ADL_cat7_6_c",
+                            "Means": "0.16453"
+                        },
+                        {
+                            "Name": "B6_cat2_1_c",
+                            "Means": "0.24451"
+                        },
+                        {
+                            "Name": "G9_cat2_1_c",
+                            "Means": "0.44679"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_1_c",
+                            "Means": "0.12865"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_2_c",
+                            "Means": "0.12738"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_3_c",
+                            "Means": "0.12347"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_4_c",
+                            "Means": "0.12238"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_5_c",
+                            "Means": "0.1204"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_6_c",
+                            "Means": "0.12581"
+                        },
+                        {
+                            "Name": "ASSESSDATE_cat8_7_c",
+                            "Means": "0.12723"
+                        }
+                    ]
+                },
+                "baseline": 0,
+                "covariates": [
+                    {
+                        "name": "AGE_rcs1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.0187,
+                        "referencePoint": 78.2482,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AGE_rcs2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.02424,
+                        "referencePoint": null,
+                        "customFunction": {
+                            "knots": [
+                                -22.24824926,
+                                -7.24824926,
+                                1.75175074,
+                                8.75175074,
+                                15.75175074
+                            ],
+                            "firstVariableCovariate": "AGE_rcs1_c",
+                            "variableNumber": 2
+                        },
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AGE_rcs3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.11573,
+                        "referencePoint": null,
+                        "customFunction": {
+                            "knots": [
+                                -22.24824926,
+                                -7.24824926,
+                                1.75175074,
+                                8.75175074,
+                                15.75175074
+                            ],
+                            "firstVariableCovariate": "AGE_rcs1_c",
+                            "variableNumber": 3
+                        },
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AGE_rcs4_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.15623,
+                        "referencePoint": null,
+                        "customFunction": {
+                            "knots": [
+                                -22.24824926,
+                                -7.24824926,
+                                1.75175074,
+                                8.75175074,
+                                15.75175074
+                            ],
+                            "firstVariableCovariate": "AGE_rcs1_c",
+                            "variableNumber": 4
+                        },
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "SEX_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.20842,
+                        "referencePoint": 0.46176,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AB7_cat5_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.04088,
+                        "referencePoint": 0.10046,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AB7_cat5_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.07921,
+                        "referencePoint": 0.02727,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AB7_cat5_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.06192,
+                        "referencePoint": 0.07936,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AB7_cat5_4_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.01258,
+                        "referencePoint": 0.67361,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1U_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.188,
+                        "referencePoint": 0.21895,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1F_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.17023,
+                        "referencePoint": 0.09385,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1D_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.00512,
+                        "referencePoint": 0.07562,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1H_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.12045,
+                        "referencePoint": 0.40264,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1Y_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.55861,
+                        "referencePoint": 0.02021,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1AA_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.25882,
+                        "referencePoint": 0.03018,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "I1DE_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.07592,
+                        "referencePoint": 0.26243,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "CANCER_cat4_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.40162,
+                        "referencePoint": 0.00403,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "CANCER_cat4_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.69535,
+                        "referencePoint": 0.16741,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "CANCER_cat4_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.67778,
+                        "referencePoint": 0.00788,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "RENAL_cat4_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.48258,
+                        "referencePoint": 0.01435,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "RENAL_cat4_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.12386,
+                        "referencePoint": 0.08141,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "RENAL_cat4_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.41941,
+                        "referencePoint": 0.016,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "OXYGEN_cat4_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.27457,
+                        "referencePoint": 0.14568,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "OXYGEN_cat4_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.04426,
+                        "referencePoint": 0.0862,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "OXYGEN_cat4_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.34542,
+                        "referencePoint": 0.04958,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "J1O_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.19463,
+                        "referencePoint": 0.05956,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "J1G_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.13242,
+                        "referencePoint": 0.24648,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "J1L_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.173,
+                        "referencePoint": 0.22994,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "J1D_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.39102,
+                        "referencePoint": 0.07434,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "K3A_cat3_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.26031,
+                        "referencePoint": 0.10547,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "K3A_cat3_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.11379,
+                        "referencePoint": 0.18176,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "J5C_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 1.61121,
+                        "referencePoint": 0.13444,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AA8_cat4_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.42624,
+                        "referencePoint": 0.05737,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AA8_cat4_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.12276,
+                        "referencePoint": 0.02458,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "AA8_cat4_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.13569,
+                        "referencePoint": 0.3186,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ADL_cat7_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.0005722,
+                        "referencePoint": 0.04075,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ADL_cat7_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.12069,
+                        "referencePoint": 0.15195,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ADL_cat7_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.20413,
+                        "referencePoint": 0.18339,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ADL_cat7_4_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.44309,
+                        "referencePoint": 0.12764,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ADL_cat7_5_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.65709,
+                        "referencePoint": 0.29737,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ADL_cat7_6_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.96098,
+                        "referencePoint": 0.16453,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "B6_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.31239,
+                        "referencePoint": 0.24451,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "G9_cat2_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": 0.23373,
+                        "referencePoint": 0.44679,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_1_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.00786,
+                        "referencePoint": 0.12865,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_2_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.02282,
+                        "referencePoint": 0.12738,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_3_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.03513,
+                        "referencePoint": 0.12347,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_4_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.01666,
+                        "referencePoint": 0.12238,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_5_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.07563,
+                        "referencePoint": 0.1204,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_6_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.03074,
+                        "referencePoint": 0.12581,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    },
+                    {
+                        "name": "ASSESSDATE_cat8_7_c",
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        },
+                        "dataFieldType": 2,
+                        "beta": -0.07227,
+                        "referencePoint": 0.12723,
+                        "extensions": {},
+                        "groups": [
+                            null
+                        ]
+                    }
+                ],
+                "timeMetric": "days",
+                "maximumTime": 4022
+            },
+            "predicate": {
+                "equation": "predicateResult = true",
+                "variables": []
+            }
+        }
+    ],
+    "modelFields": [
+        {
+            "name": "AGE",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A_cat3",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "assessment_date_year",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat8",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A_cat2_1",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A_cat2",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A_cat2_2",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_1",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_2",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_3",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_4",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_5",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_6",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A_cat2_1_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "K3A_cat2_2_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_1_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_2_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_3_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_4_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_5_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "ASSESSDATE_cat7_6_c",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        }
+    ]
+}

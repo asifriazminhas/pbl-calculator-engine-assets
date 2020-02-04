@@ -1,0 +1,2658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML>
+    <Header description="RESPECT-CCC">
+        <Extension>
+            <name>ModelName</name>
+            <value>RESPECT-CCC</value>
+        </Extension>
+    </Header>
+    <DataDictionary numberOfFields="172">
+        <DataField name="AGE_rcs1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AGE_rcs2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AGE_rcs3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AGE_rcs4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SEX_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AB7_cat5_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AB7_cat5_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AB7_cat5_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AB7_cat5_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1U_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1F_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1D_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1H_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1Y_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1AA_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="I1DE_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="CANCER_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="CANCER_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="CANCER_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="RENAL_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="RENAL_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="RENAL_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="OXYGEN_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="OXYGEN_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="OXYGEN_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="J1O_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="J1G_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="J1L_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="J1D_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="K3A_cat3_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="K3A_cat3_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="J5C_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AA8_cat4_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AA8_cat4_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AA8_cat4_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ADL_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ADL_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ADL_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ADL_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ADL_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ADL_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="B6_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="G9_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8_7_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
+        </DataField>
+        <DataField name="AGE" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AGE_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SEX_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SEX" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AB7_cat5" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AB7" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1U_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1U" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1F_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1F" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1H_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1H" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1Y_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1Y" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1AA_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1AA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1V_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1V" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1R_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1R" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1DE_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AA_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AA" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1RR_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1RR" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="CANCER_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1UU_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1UU" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AB_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AB" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="RENAL_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1JJ_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1JJ" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1KK_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1KK" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1Oxy_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AG_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AG" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AL_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1AL" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="P1Oxy_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="OXYGEN_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1O_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1O" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1G_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1G" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1L_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1L" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1D_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1D" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A_cat3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J5C_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J5C" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_hierarchy" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="B6_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="B6" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="G9_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="G9" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="assessment_date_year" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SEX_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AB7_cat5_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AB7_cat5_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AB7_cat5_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AB7_cat5_4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1U_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1F_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1D_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1D_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1H_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1Y_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1AA_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="I1DE_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="CANCER_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="CANCER_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="CANCER_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="RENAL_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="RENAL_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="RENAL_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="OXYGEN_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="OXYGEN_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="OXYGEN_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1O_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1G_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1L_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J1D_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A_cat2_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="J5C_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8_cat4_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8_cat4_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8_cat4_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7_4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7_5" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ADL_cat7_6" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="B6_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="G9_cat2_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_5" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_6" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AGE_rcs1" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A_cat2_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="K3A_cat2_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_2_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_3_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_4_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_5_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE_cat7_6_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+    </DataDictionary>
+    <LocalTransformations>
+        <DefineFunction name="chronic_cond.func">
+            <ParameterField name="chronic_cond" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="chronic_cond"/>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <FieldRef field="chronic_cond"/>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="disease_and_treatment.func(combined)">
+            <ParameterField name="disease" dataType="double"/>
+            <ParameterField name="treatment" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="and">
+                    <Apply function="equal">
+                        <FieldRef field="disease"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Apply function="equal">
+                        <FieldRef field="treatment"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="and">
+                        <Apply function="equal">
+                            <FieldRef field="disease"/>
+                            <Constant dataType="double">0</Constant>
+                        </Apply>
+                        <Apply function="equal">
+                            <FieldRef field="treatment"/>
+                            <Constant dataType="double">1</Constant>
+                        </Apply>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Apply function="ifelse">
+                        <Apply function="and">
+                            <Apply function="equal">
+                                <FieldRef field="disease"/>
+                                <Constant dataType="double">1</Constant>
+                            </Apply>
+                            <Apply function="equal">
+                                <FieldRef field="treatment"/>
+                                <Constant dataType="double">0</Constant>
+                            </Apply>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                        <Apply function="ifelse">
+                            <Apply function="and">
+                                <Apply function="equal">
+                                    <FieldRef field="disease"/>
+                                    <Constant dataType="double">1</Constant>
+                                </Apply>
+                                <Apply function="equal">
+                                    <FieldRef field="treatment"/>
+                                    <Constant dataType="double">1</Constant>
+                                </Apply>
+                            </Apply>
+                            <Constant dataType="double">3</Constant>
+                            <Constant dataType="NA">NA</Constant>
+                        </Apply>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="disease_and_treatment.func">
+            <ParameterField name="disease" dataType="double"/>
+            <ParameterField name="treatment" dataType="double"/>
+            <Apply function="disease_and_treatment.func(combined)">
+                <FieldRef field="disease"/>
+                <FieldRef field="treatment"/>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="special_treatment.func">
+            <ParameterField name="special_treat" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="special_treat"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="special_treat"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
+            </Apply>
+        </DefineFunction>
+        <DefineFunction name="signs_symptoms.func">
+            <ParameterField name="sign" dataType="double"/>
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="sign"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="equal">
+                    <Apply function="ifelse">
+                        <FieldRef field="sign"/>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="NA">NA</Constant>
+            </Apply>
+        </DefineFunction>
+        <DerivedField name="AGE" optype="continuous">
+            <FieldRef field="AGE_cont"/>
+        </DerivedField>
+        <DerivedField name="SEX_cat2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="SEX"/>
+                    <Constant dataType="string">F</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="SEX"/>
+                        <Constant dataType="string">M</Constant>
+                    </Apply>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="NA">NA</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="and">
+                    <Apply function="greaterOrEqual">
+                        <FieldRef field="AB7"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Apply function="lessOrEqual">
+                        <FieldRef field="AB7"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AB7"/>
+                        <Constant dataType="double">4</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Apply function="ifelse">
+                        <Apply function="equal">
+                            <FieldRef field="AB7"/>
+                            <Constant dataType="double">5</Constant>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                        <Apply function="ifelse">
+                            <Apply function="and">
+                                <Apply function="greaterOrEqual">
+                                    <FieldRef field="AB7"/>
+                                    <Constant dataType="double">6</Constant>
+                                </Apply>
+                                <Apply function="lessOrEqual">
+                                    <FieldRef field="AB7"/>
+                                    <Constant dataType="double">8</Constant>
+                                </Apply>
+                            </Apply>
+                            <Constant dataType="double">3</Constant>
+                            <Apply function="ifelse">
+                                <Apply function="or">
+                                    <Apply function="is.na">
+                                        <FieldRef field="AB7"/>
+                                    </Apply>
+                                    <Apply function="equal">
+                                        <FieldRef field="AB7"/>
+                                        <Constant dataType="double">9</Constant>
+                                    </Apply>
+                                </Apply>
+                                <Constant dataType="double">4</Constant>
+                                <Constant dataType="NA">NA</Constant>
+                            </Apply>
+                        </Apply>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1U_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1U"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1F_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1F"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1H_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1H"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1Y_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1Y"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1AA_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1AA"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1V_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1V"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1R_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1R"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1DE_cat2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="greaterOrEqual">
+                    <Apply function="max">
+                        <FieldRef field="I1V_cat2"/>
+                        <FieldRef field="I1R_cat2"/>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="P1AA_cat2" optype="continuous">
+            <Apply function="special_treatment.func">
+                <FieldRef field="P1AA"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1RR_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1RR"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4" optype="continuous">
+            <Apply function="disease_and_treatment.func">
+                <FieldRef field="I1RR_cat2"/>
+                <FieldRef field="P1AA_cat2"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1UU_cat2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1UU"/>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <FieldRef field="I1UU"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="P1AB_cat2" optype="continuous">
+            <Apply function="special_treatment.func">
+                <FieldRef field="P1AB"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4" optype="continuous">
+            <Apply function="disease_and_treatment.func">
+                <FieldRef field="I1UU_cat2"/>
+                <FieldRef field="P1AB_cat2"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1JJ_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1JJ"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1KK_cat2" optype="continuous">
+            <Apply function="chronic_cond.func">
+                <FieldRef field="I1KK"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1Oxy_cat2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="greaterOrEqual">
+                    <Apply function="max">
+                        <FieldRef field="I1JJ_cat2"/>
+                        <FieldRef field="I1KK_cat2"/>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">1</Constant>
+                <Constant dataType="double">0</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="P1AG_cat2" optype="continuous">
+            <Apply function="special_treatment.func">
+                <FieldRef field="P1AG"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="P1AL_cat2" optype="continuous">
+            <Apply function="special_treatment.func">
+                <FieldRef field="P1AL"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="P1Oxy_cat2" optype="continuous">
+            <Apply function="max">
+                <FieldRef field="P1AG_cat2"/>
+                <FieldRef field="P1AL_cat2"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4" optype="continuous">
+            <Apply function="disease_and_treatment.func">
+                <FieldRef field="I1Oxy_cat2"/>
+                <FieldRef field="P1Oxy_cat2"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1O_cat2" optype="continuous">
+            <Apply function="signs_symptoms.func">
+                <FieldRef field="J1O"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1G_cat2" optype="continuous">
+            <Apply function="signs_symptoms.func">
+                <FieldRef field="J1G"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1L_cat2" optype="continuous">
+            <Apply function="signs_symptoms.func">
+                <FieldRef field="J1L"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1D_cat2" optype="continuous">
+            <Apply function="signs_symptoms.func">
+                <FieldRef field="J1D"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="K3A_cat3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="K3A"/>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="K3A"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Apply function="ifelse">
+                        <Apply function="or">
+                            <Apply function="is.na">
+                                <FieldRef field="K3A"/>
+                            </Apply>
+                            <Apply function="equal">
+                                <FieldRef field="K3A"/>
+                                <Constant dataType="double">9</Constant>
+                            </Apply>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                        <Constant dataType="NA">NA</Constant>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J5C_cat2" optype="continuous">
+            <Apply function="signs_symptoms.func">
+                <FieldRef field="J5C"/>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="AA8"/>
+                    <Constant dataType="double">1</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AA8"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Apply function="ifelse">
+                        <Apply function="equal">
+                            <FieldRef field="AA8"/>
+                            <Constant dataType="double">3</Constant>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                        <Apply function="ifelse">
+                            <Apply function="equal">
+                                <FieldRef field="AA8"/>
+                                <Constant dataType="double">5</Constant>
+                            </Apply>
+                            <Constant dataType="double">3</Constant>
+                            <Constant dataType="NA">NA</Constant>
+                        </Apply>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7" optype="continuous">
+            <FieldRef field="ADL_hierarchy"/>
+        </DerivedField>
+        <DerivedField name="B6_cat2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="or">
+                    <Apply function="lessOrEqual">
+                        <FieldRef field="B6"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Apply function="equal">
+                        <FieldRef field="B6"/>
+                        <Constant dataType="double">8</Constant>
+                    </Apply>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="B6"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="G9_cat2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="and">
+                    <Apply function="greaterOrEqual">
+                        <FieldRef field="G9"/>
+                        <Constant dataType="double">0</Constant>
+                    </Apply>
+                    <Apply function="lessOrEqual">
+                        <FieldRef field="G9"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="G9"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="NA">NA</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="assessment_date_year" optype="continuous">
+            <Apply function="year">
+                <Apply function="ymd">
+                    <FieldRef field="ASSESSDATE"/>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat8" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="equal">
+                    <FieldRef field="assessment_date_year"/>
+                    <Constant dataType="double">2010</Constant>
+                </Apply>
+                <Constant dataType="double">0</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="assessment_date_year"/>
+                        <Constant dataType="double">2011</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Apply function="ifelse">
+                        <Apply function="equal">
+                            <FieldRef field="assessment_date_year"/>
+                            <Constant dataType="double">2012</Constant>
+                        </Apply>
+                        <Constant dataType="double">2</Constant>
+                        <Apply function="ifelse">
+                            <Apply function="equal">
+                                <FieldRef field="assessment_date_year"/>
+                                <Constant dataType="double">2013</Constant>
+                            </Apply>
+                            <Constant dataType="double">3</Constant>
+                            <Apply function="ifelse">
+                                <Apply function="equal">
+                                    <FieldRef field="assessment_date_year"/>
+                                    <Constant dataType="double">2014</Constant>
+                                </Apply>
+                                <Constant dataType="double">4</Constant>
+                                <Apply function="ifelse">
+                                    <Apply function="equal">
+                                        <FieldRef field="assessment_date_year"/>
+                                        <Constant dataType="double">2015</Constant>
+                                    </Apply>
+                                    <Constant dataType="double">5</Constant>
+                                    <Apply function="ifelse">
+                                        <Apply function="equal">
+                                            <FieldRef field="assessment_date_year"/>
+                                            <Constant dataType="double">2016</Constant>
+                                        </Apply>
+                                        <Constant dataType="double">6</Constant>
+                                        <Apply function="ifelse">
+                                            <Apply function="equal">
+                                                <FieldRef field="assessment_date_year"/>
+                                                <Constant dataType="double">2017</Constant>
+                                            </Apply>
+                                            <Constant dataType="double">7</Constant>
+                                            <Constant dataType="NA">NA</Constant>
+                                        </Apply>
+                                    </Apply>
+                                </Apply>
+                            </Apply>
+                        </Apply>
+                    </Apply>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SEX_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="SEX_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="SEX_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AB7_cat5"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AB7_cat5"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AB7_cat5"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AB7_cat5"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AB7_cat5"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AB7_cat5"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_4" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AB7_cat5"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AB7_cat5"/>
+                        <Constant dataType="double">4</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1U_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1U_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1U_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1F_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1F_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1F_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1D_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1D_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1D_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1H_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1H_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1H_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1Y_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1Y_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1Y_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1AA_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1AA_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1AA_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1DE_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="I1DE_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="I1DE_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CANCER_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CANCER_cat4"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CANCER_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CANCER_cat4"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="CANCER_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="CANCER_cat4"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="RENAL_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="RENAL_cat4"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="RENAL_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="RENAL_cat4"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="RENAL_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="RENAL_cat4"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="OXYGEN_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="OXYGEN_cat4"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="OXYGEN_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="OXYGEN_cat4"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="OXYGEN_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="OXYGEN_cat4"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1O_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="J1O_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="J1O_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1G_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="J1G_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="J1G_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1L_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="J1L_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="J1L_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1D_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="J1D_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="J1D_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="K3A_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="K3A_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="K3A_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="K3A_cat2_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="K3A_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="K3A_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">2</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J5C_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="J5C_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="J5C_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AA8_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AA8_cat4"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AA8_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AA8_cat4"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="AA8_cat4"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="AA8_cat4"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ADL_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ADL_cat7"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ADL_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ADL_cat7"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ADL_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ADL_cat7"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_4" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ADL_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ADL_cat7"/>
+                        <Constant dataType="double">4</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_5" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ADL_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ADL_cat7"/>
+                        <Constant dataType="double">5</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_6" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ADL_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ADL_cat7"/>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="B6_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="B6_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="B6_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="G9_cat2_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="G9_cat2"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="G9_cat2"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_1" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ASSESSDATE_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ASSESSDATE_cat7"/>
+                        <Constant dataType="double">1</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_2" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ASSESSDATE_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ASSESSDATE_cat7"/>
+                        <Constant dataType="double">2</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_3" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ASSESSDATE_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ASSESSDATE_cat7"/>
+                        <Constant dataType="double">3</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_4" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ASSESSDATE_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ASSESSDATE_cat7"/>
+                        <Constant dataType="double">4</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_5" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ASSESSDATE_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ASSESSDATE_cat7"/>
+                        <Constant dataType="double">5</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_6" optype="continuous">
+            <Apply function="ifelse">
+                <Apply function="is.na">
+                    <FieldRef field="ASSESSDATE_cat7"/>
+                </Apply>
+                <Constant dataType="NA">NA</Constant>
+                <Apply function="ifelse">
+                    <Apply function="equal">
+                        <FieldRef field="ASSESSDATE_cat7"/>
+                        <Constant dataType="double">6</Constant>
+                    </Apply>
+                    <Constant dataType="double">1</Constant>
+                    <Constant dataType="double">0</Constant>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AGE_rcs1" optype="continuous">
+            <FieldRef field="AGE_cont"/>
+        </DerivedField>
+        <DerivedField name="AGE_rcs1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AGE_rcs1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AGE_rcs5_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SEX_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="SEX_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="SEX_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AB7_cat5_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AB7_cat5_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AB7_cat5_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AB7_cat5_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AB7_cat5_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AB7_cat5_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AB7_cat5_4_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AB7_cat5_4"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AB7_cat5_4_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1U_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1U_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1U_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1F_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1F_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1F_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1D_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1D_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1D_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1H_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1H_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1H_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1Y_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1Y_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1Y_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1AA_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1AA_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1AA_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="I1DE_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="I1DE_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="I1DE_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CANCER_cat4_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="CANCER_cat4_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CANCER_cat4_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="CANCER_cat4_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="CANCER_cat4_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="CANCER_cat4_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="CANCER_cat4_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="RENAL_cat4_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="RENAL_cat4_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="RENAL_cat4_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="RENAL_cat4_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="RENAL_cat4_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="RENAL_cat4_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="RENAL_cat4_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="OXYGEN_cat4_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="OXYGEN_cat4_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="OXYGEN_cat4_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="OXYGEN_cat4_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="OXYGEN_cat4_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="OXYGEN_cat4_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="OXYGEN_cat4_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1O_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="J1O_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="J1O_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1G_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="J1G_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="J1G_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1L_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="J1L_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="J1L_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J1D_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="J1D_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="J1D_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="K3A_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="K3A_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="K3A_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="K3A_cat2_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="K3A_cat2_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="K3A_cat2_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="J5C_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="J5C_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="J5C_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AA8_cat4_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AA8_cat4_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AA8_cat4_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AA8_cat4_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AA8_cat4_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="AA8_cat4_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="AA8_cat4_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ADL_cat7_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ADL_cat7_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ADL_cat7_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ADL_cat7_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ADL_cat7_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ADL_cat7_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_4_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ADL_cat7_4"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ADL_cat7_4_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_5_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ADL_cat7_5"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ADL_cat7_5_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ADL_cat7_6_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ADL_cat7_6"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ADL_cat7_6_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="B6_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="B6_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="B6_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="G9_cat2_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="G9_cat2_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="G9_cat2_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_1_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ASSESSDATE_cat7_1"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ASSESSDATE_cat7_1_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_2_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ASSESSDATE_cat7_2"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ASSESSDATE_cat7_2_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_3_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ASSESSDATE_cat7_3"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ASSESSDATE_cat7_3_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_4_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ASSESSDATE_cat7_4"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ASSESSDATE_cat7_4_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_5_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ASSESSDATE_cat7_5"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ASSESSDATE_cat7_5_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE_cat7_6_c" optype="continuous">
+            <Apply function="-">
+                <FieldRef field="ASSESSDATE_cat7_6"/>
+                <MapValues outputColumn="Means">
+                    <FieldColumnPair column="Name" constant="ASSESSDATE_cat7_6_c"/>
+                    <TableLocator location="taxonomy" name="means"/>
+                </MapValues>
+            </Apply>
+        </DerivedField>
+    </LocalTransformations>
+    <GeneralRegressionModel baselineHazard="0" modelType="CoxRegression">
+        <ParameterList>
+            <Parameter name="p0" label="AGE_rcs1_c" referencePoint="78.2482"/>
+            <Parameter name="p1" label="AGE_rcs2_c"/>
+            <Parameter name="p2" label="AGE_rcs3_c"/>
+            <Parameter name="p3" label="AGE_rcs4_c"/>
+            <Parameter name="p4" label="SEX_cat2_1_c" referencePoint="0.46176"/>
+            <Parameter name="p5" label="AB7_cat5_1_c" referencePoint="0.10046"/>
+            <Parameter name="p6" label="AB7_cat5_2_c" referencePoint="0.02727"/>
+            <Parameter name="p7" label="AB7_cat5_3_c" referencePoint="0.07936"/>
+            <Parameter name="p8" label="AB7_cat5_4_c" referencePoint="0.67361"/>
+            <Parameter name="p9" label="I1U_cat2_1_c" referencePoint="0.21895"/>
+            <Parameter name="p10" label="I1F_cat2_1_c" referencePoint="0.09385"/>
+            <Parameter name="p11" label="I1D_cat2_1_c" referencePoint="0.07562"/>
+            <Parameter name="p12" label="I1H_cat2_1_c" referencePoint="0.40264"/>
+            <Parameter name="p13" label="I1Y_cat2_1_c" referencePoint="0.02021"/>
+            <Parameter name="p14" label="I1AA_cat2_1_c" referencePoint="0.03018"/>
+            <Parameter name="p15" label="I1DE_cat2_1_c" referencePoint="0.26243"/>
+            <Parameter name="p16" label="CANCER_cat4_1_c" referencePoint="0.00403"/>
+            <Parameter name="p17" label="CANCER_cat4_2_c" referencePoint="0.16741"/>
+            <Parameter name="p18" label="CANCER_cat4_3_c" referencePoint="0.00788"/>
+            <Parameter name="p19" label="RENAL_cat4_1_c" referencePoint="0.01435"/>
+            <Parameter name="p20" label="RENAL_cat4_2_c" referencePoint="0.08141"/>
+            <Parameter name="p21" label="RENAL_cat4_3_c" referencePoint="1.60E-02"/>
+            <Parameter name="p22" label="OXYGEN_cat4_1_c" referencePoint="0.14568"/>
+            <Parameter name="p23" label="OXYGEN_cat4_2_c" referencePoint="0.0862"/>
+            <Parameter name="p24" label="OXYGEN_cat4_3_c" referencePoint="0.04958"/>
+            <Parameter name="p25" label="J1O_cat2_1_c" referencePoint="0.05956"/>
+            <Parameter name="p26" label="J1G_cat2_1_c" referencePoint="0.24648"/>
+            <Parameter name="p27" label="J1L_cat2_1_c" referencePoint="0.22994"/>
+            <Parameter name="p28" label="J1D_cat2_1_c" referencePoint="0.07434"/>
+            <Parameter name="p29" label="K3A_cat3_1_c" referencePoint="0.10547"/>
+            <Parameter name="p30" label="K3A_cat3_2_c" referencePoint="0.18176"/>
+            <Parameter name="p31" label="J5C_cat2_1_c" referencePoint="0.13444"/>
+            <Parameter name="p32" label="AA8_cat4_1_c" referencePoint="0.05737"/>
+            <Parameter name="p33" label="AA8_cat4_2_c" referencePoint="0.02458"/>
+            <Parameter name="p34" label="AA8_cat4_3_c" referencePoint="0.3186"/>
+            <Parameter name="p35" label="ADL_cat7_1_c" referencePoint="0.04075"/>
+            <Parameter name="p36" label="ADL_cat7_2_c" referencePoint="0.15195"/>
+            <Parameter name="p37" label="ADL_cat7_3_c" referencePoint="0.18339"/>
+            <Parameter name="p38" label="ADL_cat7_4_c" referencePoint="0.12764"/>
+            <Parameter name="p39" label="ADL_cat7_5_c" referencePoint="0.29737"/>
+            <Parameter name="p40" label="ADL_cat7_6_c" referencePoint="0.16453"/>
+            <Parameter name="p41" label="B6_cat2_1_c" referencePoint="0.24451"/>
+            <Parameter name="p42" label="G9_cat2_1_c" referencePoint="0.44679"/>
+            <Parameter name="p43" label="ASSESSDATE_cat8_1_c" referencePoint="0.12865"/>
+            <Parameter name="p44" label="ASSESSDATE_cat8_2_c" referencePoint="0.12738"/>
+            <Parameter name="p45" label="ASSESSDATE_cat8_3_c" referencePoint="0.12347"/>
+            <Parameter name="p46" label="ASSESSDATE_cat8_4_c" referencePoint="0.12238"/>
+            <Parameter name="p47" label="ASSESSDATE_cat8_5_c" referencePoint="0.1204"/>
+            <Parameter name="p48" label="ASSESSDATE_cat8_6_c" referencePoint="0.12581"/>
+            <Parameter name="p49" label="ASSESSDATE_cat8_7_c" referencePoint="0.12723"/>
+        </ParameterList>
+        <ParamMatrix>
+            <PCell parameterName="p0" df="" beta="0.0187"/>
+            <PCell parameterName="p1" df="" beta="-0.02424"/>
+            <PCell parameterName="p2" df="" beta="0.11573"/>
+            <PCell parameterName="p3" df="" beta="-0.15623"/>
+            <PCell parameterName="p4" df="" beta="0.20842"/>
+            <PCell parameterName="p5" df="" beta="-0.04088"/>
+            <PCell parameterName="p6" df="" beta="-0.07921"/>
+            <PCell parameterName="p7" df="" beta="-0.06192"/>
+            <PCell parameterName="p8" df="" beta="0.01258"/>
+            <PCell parameterName="p9" df="" beta="-0.188"/>
+            <PCell parameterName="p10" df="" beta="0.17023"/>
+            <PCell parameterName="p11" df="" beta="0.00512"/>
+            <PCell parameterName="p12" df="" beta="-0.12045"/>
+            <PCell parameterName="p13" df="" beta="-0.55861"/>
+            <PCell parameterName="p14" df="" beta="-0.25882"/>
+            <PCell parameterName="p15" df="" beta="-0.07592"/>
+            <PCell parameterName="p16" df="" beta="0.40162"/>
+            <PCell parameterName="p17" df="" beta="0.69535"/>
+            <PCell parameterName="p18" df="" beta="0.67778"/>
+            <PCell parameterName="p19" df="" beta="0.48258"/>
+            <PCell parameterName="p20" df="" beta="0.12386"/>
+            <PCell parameterName="p21" df="" beta="0.41941"/>
+            <PCell parameterName="p22" df="" beta="0.27457"/>
+            <PCell parameterName="p23" df="" beta="0.04426"/>
+            <PCell parameterName="p24" df="" beta="0.34542"/>
+            <PCell parameterName="p25" df="" beta="0.19463"/>
+            <PCell parameterName="p26" df="" beta="0.13242"/>
+            <PCell parameterName="p27" df="" beta="0.173"/>
+            <PCell parameterName="p28" df="" beta="0.39102"/>
+            <PCell parameterName="p29" df="" beta="0.26031"/>
+            <PCell parameterName="p30" df="" beta="0.11379"/>
+            <PCell parameterName="p31" df="" beta="1.61121"/>
+            <PCell parameterName="p32" df="" beta="-0.42624"/>
+            <PCell parameterName="p33" df="" beta="0.12276"/>
+            <PCell parameterName="p34" df="" beta="-0.13569"/>
+            <PCell parameterName="p35" df="" beta="-0.0005722"/>
+            <PCell parameterName="p36" df="" beta="0.12069"/>
+            <PCell parameterName="p37" df="" beta="0.20413"/>
+            <PCell parameterName="p38" df="" beta="0.44309"/>
+            <PCell parameterName="p39" df="" beta="0.65709"/>
+            <PCell parameterName="p40" df="" beta="0.96098"/>
+            <PCell parameterName="p41" df="" beta="0.31239"/>
+            <PCell parameterName="p42" df="" beta="0.23373"/>
+            <PCell parameterName="p43" df="" beta="-0.00786"/>
+            <PCell parameterName="p44" df="" beta="-0.02282"/>
+            <PCell parameterName="p45" df="" beta="-0.03513"/>
+            <PCell parameterName="p46" df="" beta="-0.01666"/>
+            <PCell parameterName="p47" df="" beta="-0.07563"/>
+            <PCell parameterName="p48" df="" beta="-0.03074"/>
+            <PCell parameterName="p49" df="" beta="-0.07227"/>
+        </ParamMatrix>
+        <CovariateList>
+            <Predictor name="AGE_rcs1_c"/>
+            <Predictor name="AGE_rcs2_c"/>
+            <Predictor name="AGE_rcs3_c"/>
+            <Predictor name="AGE_rcs4_c"/>
+            <Predictor name="SEX_cat2_1_c"/>
+            <Predictor name="AB7_cat5_1_c"/>
+            <Predictor name="AB7_cat5_2_c"/>
+            <Predictor name="AB7_cat5_3_c"/>
+            <Predictor name="AB7_cat5_4_c"/>
+            <Predictor name="I1U_cat2_1_c"/>
+            <Predictor name="I1F_cat2_1_c"/>
+            <Predictor name="I1D_cat2_1_c"/>
+            <Predictor name="I1H_cat2_1_c"/>
+            <Predictor name="I1Y_cat2_1_c"/>
+            <Predictor name="I1AA_cat2_1_c"/>
+            <Predictor name="I1DE_cat2_1_c"/>
+            <Predictor name="CANCER_cat4_1_c"/>
+            <Predictor name="CANCER_cat4_2_c"/>
+            <Predictor name="CANCER_cat4_3_c"/>
+            <Predictor name="RENAL_cat4_1_c"/>
+            <Predictor name="RENAL_cat4_2_c"/>
+            <Predictor name="RENAL_cat4_3_c"/>
+            <Predictor name="OXYGEN_cat4_1_c"/>
+            <Predictor name="OXYGEN_cat4_2_c"/>
+            <Predictor name="OXYGEN_cat4_3_c"/>
+            <Predictor name="J1O_cat2_1_c"/>
+            <Predictor name="J1G_cat2_1_c"/>
+            <Predictor name="J1L_cat2_1_c"/>
+            <Predictor name="J1D_cat2_1_c"/>
+            <Predictor name="K3A_cat3_1_c"/>
+            <Predictor name="K3A_cat3_2_c"/>
+            <Predictor name="J5C_cat2_1_c"/>
+            <Predictor name="AA8_cat4_1_c"/>
+            <Predictor name="AA8_cat4_2_c"/>
+            <Predictor name="AA8_cat4_3_c"/>
+            <Predictor name="ADL_cat7_1_c"/>
+            <Predictor name="ADL_cat7_2_c"/>
+            <Predictor name="ADL_cat7_3_c"/>
+            <Predictor name="ADL_cat7_4_c"/>
+            <Predictor name="ADL_cat7_5_c"/>
+            <Predictor name="ADL_cat7_6_c"/>
+            <Predictor name="B6_cat2_1_c"/>
+            <Predictor name="G9_cat2_1_c"/>
+            <Predictor name="ASSESSDATE_cat8_1_c"/>
+            <Predictor name="ASSESSDATE_cat8_2_c"/>
+            <Predictor name="ASSESSDATE_cat8_3_c"/>
+            <Predictor name="ASSESSDATE_cat8_4_c"/>
+            <Predictor name="ASSESSDATE_cat8_5_c"/>
+            <Predictor name="ASSESSDATE_cat8_6_c"/>
+            <Predictor name="ASSESSDATE_cat8_7_c"/>
+        </CovariateList>
+        <Extension>
+            <name>maximumTime</name>
+            <value>4022</value>
+        </Extension>
+        <Extension>
+            <name>timeMetric</name>
+            <value>days</value>
+        </Extension>
+    </GeneralRegressionModel>
+    <MiningSchema>
+        <MiningField name="AGE_rcs1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AGE_rcs2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AGE_rcs3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AGE_rcs4_c" invalidValueTreatment="asIs"/>
+        <MiningField name="SEX_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AB7_cat5_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AB7_cat5_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AB7_cat5_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AB7_cat5_4_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1U_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1F_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1D_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1H_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1Y_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1AA_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="I1DE_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="CANCER_cat4_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="CANCER_cat4_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="CANCER_cat4_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="RENAL_cat4_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="RENAL_cat4_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="RENAL_cat4_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="OXYGEN_cat4_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="OXYGEN_cat4_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="OXYGEN_cat4_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="J1O_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="J1G_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="J1L_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="J1D_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="K3A_cat3_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="K3A_cat3_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="J5C_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AA8_cat4_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AA8_cat4_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="AA8_cat4_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ADL_cat7_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ADL_cat7_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ADL_cat7_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ADL_cat7_4_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ADL_cat7_5_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ADL_cat7_6_c" invalidValueTreatment="asIs"/>
+        <MiningField name="B6_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="G9_cat2_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_1_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_2_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_3_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_4_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_5_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_6_c" invalidValueTreatment="asIs"/>
+        <MiningField name="ASSESSDATE_cat8_7_c" invalidValueTreatment="asIs"/>
+    </MiningSchema>
+    <CustomPMML>
+        <RestrictedCubicSpline>
+            <PCell parameterName="p1, p2, p3" knotLocations="-22.24824926, -7.24824926, 1.75175074, 8.75175074, 15.75175074"/>
+        </RestrictedCubicSpline>
+    </CustomPMML>
+    <Taxonomy name="means">
+        <InlineTable>
+            <row>
+                <index>1</index>
+                <Name>AGE_rcs5_1_c</Name>
+                <Means>78.2482</Means>
+            </row>
+            <row>
+                <index>2</index>
+                <Name>AGE_rcs5_2_c</Name>
+                <Means>78.2482</Means>
+            </row>
+            <row>
+                <index>3</index>
+                <Name>AGE_rcs5_3_c</Name>
+                <Means>78.2482</Means>
+            </row>
+            <row>
+                <index>4</index>
+                <Name>AGE_rcs5_4_c</Name>
+                <Means>78.2482</Means>
+            </row>
+            <row>
+                <index>5</index>
+                <Name>SEX_cat2_1_c</Name>
+                <Means>0.46176</Means>
+            </row>
+            <row>
+                <index>6</index>
+                <Name>AB7_cat5_1_c</Name>
+                <Means>0.10046</Means>
+            </row>
+            <row>
+                <index>7</index>
+                <Name>AB7_cat5_2_c</Name>
+                <Means>0.02727</Means>
+            </row>
+            <row>
+                <index>8</index>
+                <Name>AB7_cat5_3_c</Name>
+                <Means>0.07936</Means>
+            </row>
+            <row>
+                <index>9</index>
+                <Name>AB7_cat5_4_c</Name>
+                <Means>0.67361</Means>
+            </row>
+            <row>
+                <index>10</index>
+                <Name>I1U_cat2_1_c</Name>
+                <Means>0.21895</Means>
+            </row>
+            <row>
+                <index>11</index>
+                <Name>I1F_cat2_1_c</Name>
+                <Means>0.09385</Means>
+            </row>
+            <row>
+                <index>12</index>
+                <Name>I1D_cat2_1_c</Name>
+                <Means>0.07562</Means>
+            </row>
+            <row>
+                <index>13</index>
+                <Name>I1H_cat2_1_c</Name>
+                <Means>0.40264</Means>
+            </row>
+            <row>
+                <index>14</index>
+                <Name>I1Y_cat2_1_c</Name>
+                <Means>0.02021</Means>
+            </row>
+            <row>
+                <index>15</index>
+                <Name>I1AA_cat2_1_c</Name>
+                <Means>0.03018</Means>
+            </row>
+            <row>
+                <index>16</index>
+                <Name>I1DE_cat2_1_c</Name>
+                <Means>0.26243</Means>
+            </row>
+            <row>
+                <index>17</index>
+                <Name>CANCER_cat4_1_c</Name>
+                <Means>0.00403</Means>
+            </row>
+            <row>
+                <index>18</index>
+                <Name>CANCER_cat4_2_c</Name>
+                <Means>0.16741</Means>
+            </row>
+            <row>
+                <index>19</index>
+                <Name>CANCER_cat4_3_c</Name>
+                <Means>0.00788</Means>
+            </row>
+            <row>
+                <index>20</index>
+                <Name>RENAL_cat4_1_c</Name>
+                <Means>0.01435</Means>
+            </row>
+            <row>
+                <index>21</index>
+                <Name>RENAL_cat4_2_c</Name>
+                <Means>0.08141</Means>
+            </row>
+            <row>
+                <index>22</index>
+                <Name>RENAL_cat4_3_c</Name>
+                <Means>0.016</Means>
+            </row>
+            <row>
+                <index>23</index>
+                <Name>OXYGEN_cat4_1_c</Name>
+                <Means>0.14568</Means>
+            </row>
+            <row>
+                <index>24</index>
+                <Name>OXYGEN_cat4_2_c</Name>
+                <Means>0.0862</Means>
+            </row>
+            <row>
+                <index>25</index>
+                <Name>OXYGEN_cat4_3_c</Name>
+                <Means>0.04958</Means>
+            </row>
+            <row>
+                <index>26</index>
+                <Name>J1O_cat2_1_c</Name>
+                <Means>0.05956</Means>
+            </row>
+            <row>
+                <index>27</index>
+                <Name>J1G_cat2_1_c</Name>
+                <Means>0.24648</Means>
+            </row>
+            <row>
+                <index>28</index>
+                <Name>J1L_cat2_1_c</Name>
+                <Means>0.22994</Means>
+            </row>
+            <row>
+                <index>29</index>
+                <Name>J1D_cat2_1_c</Name>
+                <Means>0.07434</Means>
+            </row>
+            <row>
+                <index>30</index>
+                <Name>K3A_cat3_1_c</Name>
+                <Means>0.10547</Means>
+            </row>
+            <row>
+                <index>31</index>
+                <Name>K3A_cat3_2_c</Name>
+                <Means>0.18176</Means>
+            </row>
+            <row>
+                <index>32</index>
+                <Name>J5C_cat2_1_c</Name>
+                <Means>0.13444</Means>
+            </row>
+            <row>
+                <index>33</index>
+                <Name>AA8_cat4_1_c</Name>
+                <Means>0.05737</Means>
+            </row>
+            <row>
+                <index>34</index>
+                <Name>AA8_cat4_2_c</Name>
+                <Means>0.02458</Means>
+            </row>
+            <row>
+                <index>35</index>
+                <Name>AA8_cat4_3_c</Name>
+                <Means>0.3186</Means>
+            </row>
+            <row>
+                <index>36</index>
+                <Name>ADL_cat7_1_c</Name>
+                <Means>0.04075</Means>
+            </row>
+            <row>
+                <index>37</index>
+                <Name>ADL_cat7_2_c</Name>
+                <Means>0.15195</Means>
+            </row>
+            <row>
+                <index>38</index>
+                <Name>ADL_cat7_3_c</Name>
+                <Means>0.18339</Means>
+            </row>
+            <row>
+                <index>39</index>
+                <Name>ADL_cat7_4_c</Name>
+                <Means>0.12764</Means>
+            </row>
+            <row>
+                <index>40</index>
+                <Name>ADL_cat7_5_c</Name>
+                <Means>0.29737</Means>
+            </row>
+            <row>
+                <index>41</index>
+                <Name>ADL_cat7_6_c</Name>
+                <Means>0.16453</Means>
+            </row>
+            <row>
+                <index>42</index>
+                <Name>B6_cat2_1_c</Name>
+                <Means>0.24451</Means>
+            </row>
+            <row>
+                <index>43</index>
+                <Name>G9_cat2_1_c</Name>
+                <Means>0.44679</Means>
+            </row>
+            <row>
+                <index>44</index>
+                <Name>ASSESSDATE_cat8_1_c</Name>
+                <Means>0.12865</Means>
+            </row>
+            <row>
+                <index>45</index>
+                <Name>ASSESSDATE_cat8_2_c</Name>
+                <Means>0.12738</Means>
+            </row>
+            <row>
+                <index>46</index>
+                <Name>ASSESSDATE_cat8_3_c</Name>
+                <Means>0.12347</Means>
+            </row>
+            <row>
+                <index>47</index>
+                <Name>ASSESSDATE_cat8_4_c</Name>
+                <Means>0.12238</Means>
+            </row>
+            <row>
+                <index>48</index>
+                <Name>ASSESSDATE_cat8_5_c</Name>
+                <Means>0.1204</Means>
+            </row>
+            <row>
+                <index>49</index>
+                <Name>ASSESSDATE_cat8_6_c</Name>
+                <Means>0.12581</Means>
+            </row>
+            <row>
+                <index>50</index>
+                <Name>ASSESSDATE_cat8_7_c</Name>
+                <Means>0.12723</Means>
+            </row>
+        </InlineTable>
+    </Taxonomy>
+</PMML>
