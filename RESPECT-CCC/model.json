@@ -7,11 +7,11 @@
                 "derivedFields": [
                     {
                         "fieldType": 1,
-                        "name": "AGE",
-                        "equation": "derived = obj['AGE_cont'];",
+                        "name": "meditech_birth_date_year",
+                        "equation": "derived = func['format'](func['as.Date'](obj['AA3A'], '%d-%m-%Y'), '%Y');",
                         "derivedFrom": [
                             {
-                                "name": "AGE_cont",
+                                "name": "AA3A",
                                 "intervals": [
                                     {
                                         "description": ""
@@ -41,11 +41,64 @@
                     },
                     {
                         "fieldType": 1,
-                        "name": "SEX_cat2",
-                        "equation": "derived = func['ifelse'](obj['SEX'] == 'F', 0, func['ifelse'](obj['SEX'] == 'M'), 1, undefined);",
+                        "name": "current_year",
+                        "equation": "derived = func['format'](func['Sys.Date'](), '%Y');",
+                        "derivedFrom": [],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AGE",
+                        "equation": "derived = func['as.numeric'](obj['currentYear']) - func['as.numeric'](obj['meditech_birth_date_year']);",
                         "derivedFrom": [
                             {
-                                "name": "SEX",
+                                "name": "currentYear",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            },
+                            "meditech_birth_date_year"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "SEX",
+                        "equation": "derived = obj['AA2'];",
+                        "derivedFrom": [
+                            {
+                                "name": "AA2",
                                 "intervals": [
                                     {
                                         "description": ""
@@ -59,6 +112,80 @@
                                 },
                                 "fieldType": 0
                             }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AA8",
+                        "equation": "derived = obj['AA8FUL'];",
+                        "derivedFrom": [
+                            {
+                                "name": "AA8FUL",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "AGE_cont",
+                        "equation": "derived = obj['AGE'];",
+                        "derivedFrom": [
+                            "AGE"
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
+                        "name": "SEX_cat2",
+                        "equation": "derived = func['ifelse'](obj['SEX'] == 'F', 0, func['ifelse'](obj['SEX'] == 'M'), 1, undefined);",
+                        "derivedFrom": [
+                            "SEX"
                         ],
                         "extensions": {},
                         "isRequired": false,
@@ -952,21 +1079,7 @@
                         "name": "AA8_cat4",
                         "equation": "derived = func['ifelse'](obj['AA8'] == 1, 0, func['ifelse'](obj['AA8'] == 2, 1, func['ifelse'](obj['AA8'] == 3, 2, func['ifelse'](obj['AA8'] == 5, 3, undefined))));",
                         "derivedFrom": [
-                            {
-                                "name": "AA8",
-                                "intervals": [
-                                    {
-                                        "description": ""
-                                    }
-                                ],
-                                "isRequired": false,
-                                "isRecommended": false,
-                                "metadata": {
-                                    "label": "",
-                                    "shortLabel": ""
-                                },
-                                "fieldType": 0
-                            }
+                            "AA8"
                         ],
                         "extensions": {},
                         "isRequired": false,
@@ -1086,7 +1199,7 @@
                     {
                         "fieldType": 1,
                         "name": "assessment_date_year",
-                        "equation": "derived = func['year'](func['ymd'](obj['ASSESSDATE']));",
+                        "equation": "derived = func['format'](func['as.Date'](obj['ASSESSDATE'], '%d-%m-%Y'), '%Y');",
                         "derivedFrom": [
                             {
                                 "name": "ASSESSDATE",
@@ -1120,7 +1233,7 @@
                     {
                         "fieldType": 1,
                         "name": "ASSESSDATE_cat8",
-                        "equation": "derived = func['ifelse'](obj['assessment_date_year'] == 2010, 0, func['ifelse'](obj['assessment_date_year'] == 2011, 1, func['ifelse'](obj['assessment_date_year'] == 2012, 2, func['ifelse'](obj['assessment_date_year'] == 2013, 3, func['ifelse'](obj['assessment_date_year'] == 2014, 4, func['ifelse'](obj['assessment_date_year'] == 2015, 5, func['ifelse'](obj['assessment_date_year'] == 2016, 6, func['ifelse'](obj['assessment_date_year'] == 2017, 7, undefined))))))));",
+                        "equation": "derived = func['ifelse'](obj['assessment_date_year'] == '2010', 0, func['ifelse'](obj['assessment_date_year'] == '2011', 1, func['ifelse'](obj['assessment_date_year'] == '2012', 2, func['ifelse'](obj['assessment_date_year'] == '2013', 3, func['ifelse'](obj['assessment_date_year'] == '2014', 4, func['ifelse'](obj['assessment_date_year'] == '2015', 5, func['ifelse'](obj['assessment_date_year'] == '2016', 6, func['ifelse'](obj['assessment_date_year'] == '2017', 7, undefined))))))));",
                         "derivedFrom": [
                             "assessment_date_year"
                         ],
@@ -2168,21 +2281,7 @@
                         "name": "AGE_rcs1",
                         "equation": "derived = obj['AGE_cont'];",
                         "derivedFrom": [
-                            {
-                                "name": "AGE_cont",
-                                "intervals": [
-                                    {
-                                        "description": ""
-                                    }
-                                ],
-                                "isRequired": false,
-                                "isRecommended": false,
-                                "metadata": {
-                                    "label": "",
-                                    "shortLabel": ""
-                                },
-                                "fieldType": 0
-                            }
+                            "AGE_cont"
                         ],
                         "extensions": {},
                         "isRequired": false,
@@ -4426,7 +4525,7 @@
     ],
     "modelFields": [
         {
-            "name": "AGE",
+            "name": "current_year",
             "intervals": [
                 {
                     "description": ""

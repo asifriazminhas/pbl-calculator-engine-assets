@@ -6,7 +6,7 @@
             <value>RESPECT-CCC</value>
         </Extension>
     </Header>
-    <DataDictionary numberOfFields="172">
+    <DataDictionary numberOfFields="178">
         <DataField name="AGE_rcs1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
@@ -157,16 +157,37 @@
         <DataField name="ASSESSDATE_cat8_7_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
+        <DataField name="meditech_birth_date_year" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA3A" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="current_year" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
         <DataField name="AGE" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="currentYear" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="SEX" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="AA8FUL" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="AGE_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="SEX_cat2" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
-        </DataField>
-        <DataField name="SEX" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="AB7_cat5" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -320,9 +341,6 @@
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="AA8_cat4" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
-        </DataField>
-        <DataField name="AA8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="ADL_cat7" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -525,6 +543,37 @@
         </DataField>
     </DataDictionary>
     <LocalTransformations>
+        <DerivedField name="meditech_birth_date_year" optype="continuous">
+            <Apply function="format">
+                <Apply function="as.Date">
+                    <FieldRef field="AA3A"/>
+                    <Constant dataType="string">%d-%m-%Y</Constant>
+                </Apply>
+                <Constant dataType="string">%Y</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="current_year" optype="continuous">
+            <Apply function="format">
+                <Apply function="Sys.Date"/>
+                <Constant dataType="string">%Y</Constant>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="AGE" optype="continuous">
+            <Apply function="-">
+                <Apply function="as.numeric">
+                    <FieldRef field="currentYear"/>
+                </Apply>
+                <Apply function="as.numeric">
+                    <FieldRef field="meditech_birth_date_year"/>
+                </Apply>
+            </Apply>
+        </DerivedField>
+        <DerivedField name="SEX" optype="continuous">
+            <FieldRef field="AA2"/>
+        </DerivedField>
+        <DerivedField name="AA8" optype="continuous">
+            <FieldRef field="AA8FUL"/>
+        </DerivedField>
         <DefineFunction name="chronic_cond.func">
             <ParameterField name="chronic_cond" dataType="double"/>
             <Apply function="ifelse">
@@ -636,8 +685,8 @@
                 <Constant dataType="NA">NA</Constant>
             </Apply>
         </DefineFunction>
-        <DerivedField name="AGE" optype="continuous">
-            <FieldRef field="AGE_cont"/>
+        <DerivedField name="AGE_cont" optype="continuous">
+            <FieldRef field="AGE"/>
         </DerivedField>
         <DerivedField name="SEX_cat2" optype="continuous">
             <Apply function="ifelse">
@@ -975,59 +1024,61 @@
             </Apply>
         </DerivedField>
         <DerivedField name="assessment_date_year" optype="continuous">
-            <Apply function="year">
-                <Apply function="ymd">
+            <Apply function="format">
+                <Apply function="as.Date">
                     <FieldRef field="ASSESSDATE"/>
+                    <Constant dataType="string">%d-%m-%Y</Constant>
                 </Apply>
+                <Constant dataType="string">%Y</Constant>
             </Apply>
         </DerivedField>
         <DerivedField name="ASSESSDATE_cat8" optype="continuous">
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="assessment_date_year"/>
-                    <Constant dataType="double">2010</Constant>
+                    <Constant dataType="string">2010</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="assessment_date_year"/>
-                        <Constant dataType="double">2011</Constant>
+                        <Constant dataType="string">2011</Constant>
                     </Apply>
                     <Constant dataType="double">1</Constant>
                     <Apply function="ifelse">
                         <Apply function="equal">
                             <FieldRef field="assessment_date_year"/>
-                            <Constant dataType="double">2012</Constant>
+                            <Constant dataType="string">2012</Constant>
                         </Apply>
                         <Constant dataType="double">2</Constant>
                         <Apply function="ifelse">
                             <Apply function="equal">
                                 <FieldRef field="assessment_date_year"/>
-                                <Constant dataType="double">2013</Constant>
+                                <Constant dataType="string">2013</Constant>
                             </Apply>
                             <Constant dataType="double">3</Constant>
                             <Apply function="ifelse">
                                 <Apply function="equal">
                                     <FieldRef field="assessment_date_year"/>
-                                    <Constant dataType="double">2014</Constant>
+                                    <Constant dataType="string">2014</Constant>
                                 </Apply>
                                 <Constant dataType="double">4</Constant>
                                 <Apply function="ifelse">
                                     <Apply function="equal">
                                         <FieldRef field="assessment_date_year"/>
-                                        <Constant dataType="double">2015</Constant>
+                                        <Constant dataType="string">2015</Constant>
                                     </Apply>
                                     <Constant dataType="double">5</Constant>
                                     <Apply function="ifelse">
                                         <Apply function="equal">
                                             <FieldRef field="assessment_date_year"/>
-                                            <Constant dataType="double">2016</Constant>
+                                            <Constant dataType="string">2016</Constant>
                                         </Apply>
                                         <Constant dataType="double">6</Constant>
                                         <Apply function="ifelse">
                                             <Apply function="equal">
                                                 <FieldRef field="assessment_date_year"/>
-                                                <Constant dataType="double">2017</Constant>
+                                                <Constant dataType="string">2017</Constant>
                                             </Apply>
                                             <Constant dataType="double">7</Constant>
                                             <Constant dataType="NA">NA</Constant>
