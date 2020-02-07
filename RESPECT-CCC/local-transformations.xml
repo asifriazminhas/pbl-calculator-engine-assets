@@ -285,6 +285,9 @@
         <DerivedField name="AA8" optype="continuous">
             <FieldRef field="AA8FUL"/>
         </DerivedField>
+        <DerivedField name="ASSESSDATE" optype="continuous">
+            <FieldRef field="A3"/>
+        </DerivedField>
         <DefineFunction name="chronic_cond.func">
             <ParameterField name="chronic_cond" dataType="double"/>
             <Apply function="ifelse">

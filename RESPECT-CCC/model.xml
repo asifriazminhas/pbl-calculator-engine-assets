@@ -6,7 +6,7 @@
             <value>RESPECT-CCC</value>
         </Extension>
     </Header>
-    <DataDictionary numberOfFields="178">
+    <DataDictionary numberOfFields="179">
         <DataField name="AGE_rcs1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
@@ -182,6 +182,12 @@
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="AA8FUL" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="ASSESSDATE" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
+            <Interval X-description="" closure="closedClosed"/>
+        </DataField>
+        <DataField name="A3" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="AGE_cont" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -362,9 +368,6 @@
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="assessment_date_year" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
-        </DataField>
-        <DataField name="ASSESSDATE" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="ASSESSDATE_cat8" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -573,6 +576,9 @@
         </DerivedField>
         <DerivedField name="AA8" optype="continuous">
             <FieldRef field="AA8FUL"/>
+        </DerivedField>
+        <DerivedField name="ASSESSDATE" optype="continuous">
+            <FieldRef field="A3"/>
         </DerivedField>
         <DefineFunction name="chronic_cond.func">
             <ParameterField name="chronic_cond" dataType="double"/>

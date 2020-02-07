@@ -162,6 +162,40 @@
                     },
                     {
                         "fieldType": 1,
+                        "name": "ASSESSDATE",
+                        "equation": "derived = obj['A3'];",
+                        "derivedFrom": [
+                            {
+                                "name": "A3",
+                                "intervals": [
+                                    {
+                                        "description": ""
+                                    }
+                                ],
+                                "isRequired": false,
+                                "isRecommended": false,
+                                "metadata": {
+                                    "label": "",
+                                    "shortLabel": ""
+                                },
+                                "fieldType": 0
+                            }
+                        ],
+                        "extensions": {},
+                        "isRequired": false,
+                        "isRecommended": false,
+                        "intervals": [
+                            {
+                                "description": ""
+                            }
+                        ],
+                        "metadata": {
+                            "label": "",
+                            "shortLabel": ""
+                        }
+                    },
+                    {
+                        "fieldType": 1,
                         "name": "AGE_cont",
                         "equation": "derived = obj['AGE'];",
                         "derivedFrom": [
@@ -1201,21 +1235,7 @@
                         "name": "assessment_date_year",
                         "equation": "derived = func['format'](func['as.Date'](obj['ASSESSDATE'], '%d-%m-%Y'), '%Y');",
                         "derivedFrom": [
-                            {
-                                "name": "ASSESSDATE",
-                                "intervals": [
-                                    {
-                                        "description": ""
-                                    }
-                                ],
-                                "isRequired": false,
-                                "isRecommended": false,
-                                "metadata": {
-                                    "label": "",
-                                    "shortLabel": ""
-                                },
-                                "fieldType": 0
-                            }
+                            "ASSESSDATE"
                         ],
                         "extensions": {},
                         "isRequired": false,
@@ -29616,6 +29636,34 @@
             }
         },
         {
+            "name": "ASSESSDATE",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
+            "name": "A3",
+            "intervals": [
+                {
+                    "description": ""
+                }
+            ],
+            "isRequired": false,
+            "isRecommended": false,
+            "metadata": {
+                "label": "",
+                "shortLabel": ""
+            }
+        },
+        {
             "name": "K3A_cat3",
             "intervals": [
                 {
@@ -29645,20 +29693,6 @@
         },
         {
             "name": "assessment_date_year",
-            "intervals": [
-                {
-                    "description": ""
-                }
-            ],
-            "isRequired": false,
-            "isRecommended": false,
-            "metadata": {
-                "label": "",
-                "shortLabel": ""
-            }
-        },
-        {
-            "name": "ASSESSDATE",
             "intervals": [
                 {
                     "description": ""
