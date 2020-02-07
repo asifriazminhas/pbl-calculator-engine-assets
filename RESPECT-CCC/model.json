@@ -60,23 +60,9 @@
                     {
                         "fieldType": 1,
                         "name": "AGE",
-                        "equation": "derived = func['as.numeric'](obj['currentYear']) - func['as.numeric'](obj['meditech_birth_date_year']);",
+                        "equation": "derived = func['as.numeric'](obj['current_year']) - func['as.numeric'](obj['meditech_birth_date_year']);",
                         "derivedFrom": [
-                            {
-                                "name": "currentYear",
-                                "intervals": [
-                                    {
-                                        "description": ""
-                                    }
-                                ],
-                                "isRequired": false,
-                                "isRecommended": false,
-                                "metadata": {
-                                    "label": "",
-                                    "shortLabel": ""
-                                },
-                                "fieldType": 0
-                            },
+                            "current_year",
                             "meditech_birth_date_year"
                         ],
                         "extensions": {},
@@ -217,7 +203,7 @@
                     {
                         "fieldType": 1,
                         "name": "SEX_cat2",
-                        "equation": "derived = func['ifelse'](obj['SEX'] == 'F', 0, func['ifelse'](obj['SEX'] == 'M'), 1, undefined);",
+                        "equation": "derived = func['ifelse'](obj['SEX'] == 0, 0, func['ifelse'](obj['SEX'] == 1), 1, undefined);",
                         "derivedFrom": [
                             "SEX"
                         ],
@@ -29621,20 +29607,6 @@
         }
     ],
     "modelFields": [
-        {
-            "name": "current_year",
-            "intervals": [
-                {
-                    "description": ""
-                }
-            ],
-            "isRequired": false,
-            "isRecommended": false,
-            "metadata": {
-                "label": "",
-                "shortLabel": ""
-            }
-        },
         {
             "name": "ASSESSDATE",
             "intervals": [

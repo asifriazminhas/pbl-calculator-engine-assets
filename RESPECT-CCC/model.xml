@@ -6,7 +6,7 @@
             <value>RESPECT-CCC</value>
         </Extension>
     </Header>
-    <DataDictionary numberOfFields="179">
+    <DataDictionary numberOfFields="178">
         <DataField name="AGE_rcs1_c" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="openOpen" leftMargin="" rightMargin=""/>
         </DataField>
@@ -167,9 +167,6 @@
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="AGE" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
-            <Interval X-description="" closure="closedClosed"/>
-        </DataField>
-        <DataField name="currentYear" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
             <Interval X-description="" closure="closedClosed"/>
         </DataField>
         <DataField name="SEX" displayName="" optype="continuous" dataType="integer" X-shortLabel="" X-required="false" X-recommended="false">
@@ -564,7 +561,7 @@
         <DerivedField name="AGE" optype="continuous">
             <Apply function="-">
                 <Apply function="as.numeric">
-                    <FieldRef field="currentYear"/>
+                    <FieldRef field="current_year"/>
                 </Apply>
                 <Apply function="as.numeric">
                     <FieldRef field="meditech_birth_date_year"/>
@@ -698,13 +695,13 @@
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="SEX"/>
-                    <Constant dataType="string">F</Constant>
+                    <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="SEX"/>
-                        <Constant dataType="string">M</Constant>
+                        <Constant dataType="double">1</Constant>
                     </Apply>
                 </Apply>
                 <Constant dataType="double">1</Constant>

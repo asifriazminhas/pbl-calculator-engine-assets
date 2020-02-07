@@ -272,7 +272,7 @@
         <DerivedField name="AGE" optype="continuous">
             <Apply function="-">
                 <Apply function="as.numeric">
-                    <FieldRef field="currentYear"/>
+                    <FieldRef field="current_year"/>
                 </Apply>
                 <Apply function="as.numeric">
                     <FieldRef field="meditech_birth_date_year"/>
@@ -406,13 +406,13 @@
             <Apply function="ifelse">
                 <Apply function="equal">
                     <FieldRef field="SEX"/>
-                    <Constant dataType="string">F</Constant>
+                    <Constant dataType="double">0</Constant>
                 </Apply>
                 <Constant dataType="double">0</Constant>
                 <Apply function="ifelse">
                     <Apply function="equal">
                         <FieldRef field="SEX"/>
-                        <Constant dataType="string">M</Constant>
+                        <Constant dataType="double">1</Constant>
                     </Apply>
                 </Apply>
                 <Constant dataType="double">1</Constant>
