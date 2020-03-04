@@ -4926,8 +4926,7 @@
                                 "time": 276
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "2": [
@@ -5332,8 +5331,7 @@
                                 "time": 182
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "3": [
@@ -6144,8 +6142,7 @@
                                 "time": 225
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "5": [
@@ -6550,8 +6547,7 @@
                                 "time": 439
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "6": [
@@ -7362,8 +7358,7 @@
                                 "time": 846
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "8": [
@@ -7768,8 +7763,7 @@
                                 "time": 1069
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "9": [
@@ -8174,8 +8168,7 @@
                                 "time": 876
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "10": [
@@ -8580,8 +8573,7 @@
                                 "time": 1415
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "11": [
@@ -9798,8 +9790,7 @@
                                 "time": 1140
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "14": [
@@ -10204,8 +10195,7 @@
                                 "time": 1788
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "15": [
@@ -10610,8 +10600,7 @@
                                 "time": 1934
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "16": [
@@ -11012,12 +11001,10 @@
                                 "time": 2011
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "17": [
@@ -11422,8 +11409,7 @@
                                 "time": 2958
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "18": [
@@ -12234,8 +12220,7 @@
                                 "time": 3022
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "20": [
@@ -13038,16 +13023,13 @@
                                 "time": 2900
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "22": [
@@ -13850,16 +13832,13 @@
                                 "time": 3090
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "24": [
@@ -14256,16 +14235,13 @@
                                 "time": 3072
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "25": [
@@ -16274,28 +16250,22 @@
                                 "time": 2968
                             },
                             {
-                                "survivalPercent": 5,
-                                "time": 0
+                                "survivalPercent": 5
                             },
                             {
-                                "survivalPercent": 4,
-                                "time": 0
+                                "survivalPercent": 4
                             },
                             {
-                                "survivalPercent": 3,
-                                "time": 0
+                                "survivalPercent": 3
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "30": [
@@ -18702,36 +18672,28 @@
                                 "time": 3061
                             },
                             {
-                                "survivalPercent": 7,
-                                "time": 0
+                                "survivalPercent": 7
                             },
                             {
-                                "survivalPercent": 6,
-                                "time": 0
+                                "survivalPercent": 6
                             },
                             {
-                                "survivalPercent": 5,
-                                "time": 0
+                                "survivalPercent": 5
                             },
                             {
-                                "survivalPercent": 4,
-                                "time": 0
+                                "survivalPercent": 4
                             },
                             {
-                                "survivalPercent": 3,
-                                "time": 0
+                                "survivalPercent": 3
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "36": [
@@ -25552,88 +25514,67 @@
                                 "time": 3059
                             },
                             {
-                                "survivalPercent": 20,
-                                "time": 0
+                                "survivalPercent": 20
                             },
                             {
-                                "survivalPercent": 19,
-                                "time": 0
+                                "survivalPercent": 19
                             },
                             {
-                                "survivalPercent": 18,
-                                "time": 0
+                                "survivalPercent": 18
                             },
                             {
-                                "survivalPercent": 17,
-                                "time": 0
+                                "survivalPercent": 17
                             },
                             {
-                                "survivalPercent": 16,
-                                "time": 0
+                                "survivalPercent": 16
                             },
                             {
-                                "survivalPercent": 15,
-                                "time": 0
+                                "survivalPercent": 15
                             },
                             {
-                                "survivalPercent": 14,
-                                "time": 0
+                                "survivalPercent": 14
                             },
                             {
-                                "survivalPercent": 13,
-                                "time": 0
+                                "survivalPercent": 13
                             },
                             {
-                                "survivalPercent": 12,
-                                "time": 0
+                                "survivalPercent": 12
                             },
                             {
-                                "survivalPercent": 11,
-                                "time": 0
+                                "survivalPercent": 11
                             },
                             {
-                                "survivalPercent": 10,
-                                "time": 0
+                                "survivalPercent": 10
                             },
                             {
-                                "survivalPercent": 9,
-                                "time": 0
+                                "survivalPercent": 9
                             },
                             {
-                                "survivalPercent": 8,
-                                "time": 0
+                                "survivalPercent": 8
                             },
                             {
-                                "survivalPercent": 7,
-                                "time": 0
+                                "survivalPercent": 7
                             },
                             {
-                                "survivalPercent": 6,
-                                "time": 0
+                                "survivalPercent": 6
                             },
                             {
-                                "survivalPercent": 5,
-                                "time": 0
+                                "survivalPercent": 5
                             },
                             {
-                                "survivalPercent": 4,
-                                "time": 0
+                                "survivalPercent": 4
                             },
                             {
-                                "survivalPercent": 3,
-                                "time": 0
+                                "survivalPercent": 3
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "53": [
@@ -27180,84 +27121,64 @@
                                 "time": 3086
                             },
                             {
-                                "survivalPercent": 19,
-                                "time": 0
+                                "survivalPercent": 19
                             },
                             {
-                                "survivalPercent": 18,
-                                "time": 0
+                                "survivalPercent": 18
                             },
                             {
-                                "survivalPercent": 17,
-                                "time": 0
+                                "survivalPercent": 17
                             },
                             {
-                                "survivalPercent": 16,
-                                "time": 0
+                                "survivalPercent": 16
                             },
                             {
-                                "survivalPercent": 15,
-                                "time": 0
+                                "survivalPercent": 15
                             },
                             {
-                                "survivalPercent": 14,
-                                "time": 0
+                                "survivalPercent": 14
                             },
                             {
-                                "survivalPercent": 13,
-                                "time": 0
+                                "survivalPercent": 13
                             },
                             {
-                                "survivalPercent": 12,
-                                "time": 0
+                                "survivalPercent": 12
                             },
                             {
-                                "survivalPercent": 11,
-                                "time": 0
+                                "survivalPercent": 11
                             },
                             {
-                                "survivalPercent": 10,
-                                "time": 0
+                                "survivalPercent": 10
                             },
                             {
-                                "survivalPercent": 9,
-                                "time": 0
+                                "survivalPercent": 9
                             },
                             {
-                                "survivalPercent": 8,
-                                "time": 0
+                                "survivalPercent": 8
                             },
                             {
-                                "survivalPercent": 7,
-                                "time": 0
+                                "survivalPercent": 7
                             },
                             {
-                                "survivalPercent": 6,
-                                "time": 0
+                                "survivalPercent": 6
                             },
                             {
-                                "survivalPercent": 5,
-                                "time": 0
+                                "survivalPercent": 5
                             },
                             {
-                                "survivalPercent": 4,
-                                "time": 0
+                                "survivalPercent": 4
                             },
                             {
-                                "survivalPercent": 3,
-                                "time": 0
+                                "survivalPercent": 3
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "57": [
@@ -28338,144 +28259,109 @@
                                 "time": 2766
                             },
                             {
-                                "survivalPercent": 34,
-                                "time": 0
+                                "survivalPercent": 34
                             },
                             {
-                                "survivalPercent": 33,
-                                "time": 0
+                                "survivalPercent": 33
                             },
                             {
-                                "survivalPercent": 32,
-                                "time": 0
+                                "survivalPercent": 32
                             },
                             {
-                                "survivalPercent": 31,
-                                "time": 0
+                                "survivalPercent": 31
                             },
                             {
-                                "survivalPercent": 30,
-                                "time": 0
+                                "survivalPercent": 30
                             },
                             {
-                                "survivalPercent": 29,
-                                "time": 0
+                                "survivalPercent": 29
                             },
                             {
-                                "survivalPercent": 28,
-                                "time": 0
+                                "survivalPercent": 28
                             },
                             {
-                                "survivalPercent": 27,
-                                "time": 0
+                                "survivalPercent": 27
                             },
                             {
-                                "survivalPercent": 26,
-                                "time": 0
+                                "survivalPercent": 26
                             },
                             {
-                                "survivalPercent": 25,
-                                "time": 0
+                                "survivalPercent": 25
                             },
                             {
-                                "survivalPercent": 24,
-                                "time": 0
+                                "survivalPercent": 24
                             },
                             {
-                                "survivalPercent": 23,
-                                "time": 0
+                                "survivalPercent": 23
                             },
                             {
-                                "survivalPercent": 22,
-                                "time": 0
+                                "survivalPercent": 22
                             },
                             {
-                                "survivalPercent": 21,
-                                "time": 0
+                                "survivalPercent": 21
                             },
                             {
-                                "survivalPercent": 20,
-                                "time": 0
+                                "survivalPercent": 20
                             },
                             {
-                                "survivalPercent": 19,
-                                "time": 0
+                                "survivalPercent": 19
                             },
                             {
-                                "survivalPercent": 18,
-                                "time": 0
+                                "survivalPercent": 18
                             },
                             {
-                                "survivalPercent": 17,
-                                "time": 0
+                                "survivalPercent": 17
                             },
                             {
-                                "survivalPercent": 16,
-                                "time": 0
+                                "survivalPercent": 16
                             },
                             {
-                                "survivalPercent": 15,
-                                "time": 0
+                                "survivalPercent": 15
                             },
                             {
-                                "survivalPercent": 14,
-                                "time": 0
+                                "survivalPercent": 14
                             },
                             {
-                                "survivalPercent": 13,
-                                "time": 0
+                                "survivalPercent": 13
                             },
                             {
-                                "survivalPercent": 12,
-                                "time": 0
+                                "survivalPercent": 12
                             },
                             {
-                                "survivalPercent": 11,
-                                "time": 0
+                                "survivalPercent": 11
                             },
                             {
-                                "survivalPercent": 10,
-                                "time": 0
+                                "survivalPercent": 10
                             },
                             {
-                                "survivalPercent": 9,
-                                "time": 0
+                                "survivalPercent": 9
                             },
                             {
-                                "survivalPercent": 8,
-                                "time": 0
+                                "survivalPercent": 8
                             },
                             {
-                                "survivalPercent": 7,
-                                "time": 0
+                                "survivalPercent": 7
                             },
                             {
-                                "survivalPercent": 6,
-                                "time": 0
+                                "survivalPercent": 6
                             },
                             {
-                                "survivalPercent": 5,
-                                "time": 0
+                                "survivalPercent": 5
                             },
                             {
-                                "survivalPercent": 4,
-                                "time": 0
+                                "survivalPercent": 4
                             },
                             {
-                                "survivalPercent": 3,
-                                "time": 0
+                                "survivalPercent": 3
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "60": [
@@ -28808,80 +28694,61 @@
                                 "time": 3096
                             },
                             {
-                                "survivalPercent": 18,
-                                "time": 0
+                                "survivalPercent": 18
                             },
                             {
-                                "survivalPercent": 17,
-                                "time": 0
+                                "survivalPercent": 17
                             },
                             {
-                                "survivalPercent": 16,
-                                "time": 0
+                                "survivalPercent": 16
                             },
                             {
-                                "survivalPercent": 15,
-                                "time": 0
+                                "survivalPercent": 15
                             },
                             {
-                                "survivalPercent": 14,
-                                "time": 0
+                                "survivalPercent": 14
                             },
                             {
-                                "survivalPercent": 13,
-                                "time": 0
+                                "survivalPercent": 13
                             },
                             {
-                                "survivalPercent": 12,
-                                "time": 0
+                                "survivalPercent": 12
                             },
                             {
-                                "survivalPercent": 11,
-                                "time": 0
+                                "survivalPercent": 11
                             },
                             {
-                                "survivalPercent": 10,
-                                "time": 0
+                                "survivalPercent": 10
                             },
                             {
-                                "survivalPercent": 9,
-                                "time": 0
+                                "survivalPercent": 9
                             },
                             {
-                                "survivalPercent": 8,
-                                "time": 0
+                                "survivalPercent": 8
                             },
                             {
-                                "survivalPercent": 7,
-                                "time": 0
+                                "survivalPercent": 7
                             },
                             {
-                                "survivalPercent": 6,
-                                "time": 0
+                                "survivalPercent": 6
                             },
                             {
-                                "survivalPercent": 5,
-                                "time": 0
+                                "survivalPercent": 5
                             },
                             {
-                                "survivalPercent": 4,
-                                "time": 0
+                                "survivalPercent": 4
                             },
                             {
-                                "survivalPercent": 3,
-                                "time": 0
+                                "survivalPercent": 3
                             },
                             {
-                                "survivalPercent": 2,
-                                "time": 0
+                                "survivalPercent": 2
                             },
                             {
-                                "survivalPercent": 1,
-                                "time": 0
+                                "survivalPercent": 1
                             },
                             {
-                                "survivalPercent": 0,
-                                "time": 0
+                                "survivalPercent": 0
                             }
                         ],
                         "61": [
