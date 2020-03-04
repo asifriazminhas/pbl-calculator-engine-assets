@@ -173,11 +173,14 @@ function convertBinsDataCsvToBinsData(binsDataCsvString: string): IBinsData {
 
     binsDataCsv.forEach(binsDataCsvRow => {
         binNumbers.forEach(binNumber => {
+            const time = binsDataCsvRow[String(binNumber)].trim();
+
             binsDataWithoutPercents[binNumber].push({
                 survivalPercent: Number(binsDataCsvRow.Percent),
-                time: isNaN(Number(binsDataCsvRow[String(binNumber)]))
-                    ? undefined
-                    : Number(binsDataCsvRow[String(binNumber)]),
+                time:
+                    time.length === 0
+                        ? undefined
+                        : Number(binsDataCsvRow[String(binNumber)]),
             });
         });
     });
