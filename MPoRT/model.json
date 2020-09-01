@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "MPoRT v1",
     "algorithms": [
         {
             "algorithm": {
@@ -12,7 +12,7 @@
                         "derivedFrom": [
                             {
                                 "name": "age",
-                                "interval": {
+                                "intervals": [{
                                     "lowerMargin": {
                                         "margin": 20,
                                         "isOpen": false
@@ -21,7 +21,7 @@
                                         "margin": 79,
                                         "isOpen": false
                                     }
-                                },
+                                }],
                                 "isRequired": false,
                                 "metadata": {
                                     "label": "Age",
@@ -32,7 +32,6 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -42,7 +41,7 @@
                         "derivedFrom": ["Age_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -52,7 +51,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkm",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -60,7 +59,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -70,7 +69,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkt",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -78,7 +77,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -88,7 +87,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkw",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -96,7 +95,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -106,7 +105,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkr",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -114,7 +113,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -124,7 +123,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkf",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -132,7 +131,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -142,7 +141,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksa",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -150,7 +149,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -160,7 +159,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -168,7 +167,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -185,7 +184,7 @@
                             "drk_drksu2",
                             {
                                 "name": "dany",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -193,7 +192,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -203,7 +202,7 @@
                         "derivedFrom": ["DrinksLastWeek"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -213,14 +212,14 @@
                         "derivedFrom": [
                             {
                                 "name": "db",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "dany",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -235,7 +234,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -246,7 +245,7 @@
                             "Binge",
                             {
                                 "name": "dany",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -332,14 +331,14 @@
                         "derivedFrom": [
                             {
                                 "name": "stpn",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "stpny",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -347,7 +346,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": {
                             "label": "Smoking Quit Time",
                             "shortLabel": ""
@@ -360,35 +359,35 @@
                         "derivedFrom": [
                             {
                                 "name": "smk",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "evd",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "s100",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayf",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayd",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -396,7 +395,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -408,14 +407,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -423,7 +422,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -431,10 +430,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "metadata": {
                             "label": "Light smoker",
                             "shortLabel": ""
@@ -449,14 +448,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -464,7 +463,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -472,10 +471,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "metadata": {
                             "label": "Heavy smoker",
                             "shortLabel": ""
@@ -488,14 +487,14 @@
                         "derivedFrom": [
                             {
                                 "name": "frt",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "frtu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -503,7 +502,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -513,14 +512,14 @@
                         "derivedFrom": [
                             {
                                 "name": "sal",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "salu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -528,7 +527,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -538,14 +537,14 @@
                         "derivedFrom": [
                             {
                                 "name": "pot",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "potu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -553,7 +552,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -563,14 +562,14 @@
                         "derivedFrom": [
                             {
                                 "name": "car",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "caru",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -578,7 +577,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -588,14 +587,14 @@
                         "derivedFrom": [
                             {
                                 "name": "veg",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "vegu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -603,7 +602,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -613,14 +612,14 @@
                         "derivedFrom": [
                             {
                                 "name": "jui",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "juiu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -628,7 +627,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -644,7 +643,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -654,7 +653,7 @@
                         "derivedFrom": ["FruitVeg"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -664,7 +663,7 @@
                         "derivedFrom": ["dpotato"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -674,7 +673,7 @@
                         "derivedFrom": ["dcarrot"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -684,7 +683,7 @@
                         "derivedFrom": ["djuice"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -699,10 +698,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -712,10 +711,10 @@
                         "derivedFrom": ["DietScore"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -725,21 +724,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa1",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa1",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa1",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -747,7 +746,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -757,21 +756,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa2",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa2",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa2",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -779,7 +778,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -789,21 +788,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa3",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa3",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa3",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -811,7 +810,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -821,21 +820,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa4",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa4",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa4",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -843,7 +842,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -853,21 +852,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa5",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa5",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa5",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -875,7 +874,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -885,21 +884,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa6",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa6",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa6",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -907,7 +906,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -917,21 +916,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa7",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa7",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa7",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -939,7 +938,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -949,21 +948,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa8",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa8",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa8",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -971,7 +970,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -981,21 +980,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa9",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa9",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa9",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1003,7 +1002,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1013,21 +1012,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa10",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa10",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa10",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1035,7 +1034,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1045,21 +1044,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa11",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa11",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa11",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1067,7 +1066,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1077,21 +1076,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa12",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa12",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa12",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1099,7 +1098,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1109,21 +1108,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa13",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa13",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa13",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1131,7 +1130,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1141,21 +1140,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa14",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa14",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa14",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1163,7 +1162,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1173,21 +1172,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa15",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa15",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa15",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1195,7 +1194,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1205,21 +1204,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa16",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa16",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa16",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1227,7 +1226,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1237,21 +1236,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa17",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa17",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa17",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1259,7 +1258,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1269,21 +1268,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa18",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa18",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa18",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1291,7 +1290,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1301,21 +1300,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa19",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa19",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa19",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1323,7 +1322,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1333,21 +1332,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa20",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa20",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa20",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1355,7 +1354,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1365,21 +1364,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa21",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa21",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa21",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1387,7 +1386,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1397,21 +1396,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa22",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa22",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa22",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1419,7 +1418,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1429,7 +1428,7 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa0",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1459,10 +1458,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "metadata": { "label": "Activity", "shortLabel": "" }
                     },
                     {
@@ -1472,7 +1471,7 @@
                         "derivedFrom": ["PhysicalActivity"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1482,7 +1481,7 @@
                         "derivedFrom": [
                             {
                                 "name": "dep",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1567,21 +1566,21 @@
                         "derivedFrom": [
                             {
                                 "name": "hs",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "ed",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "hdg",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1589,7 +1588,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1599,7 +1598,7 @@
                         "derivedFrom": ["Edu2"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1654,21 +1653,21 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "imyr",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "CurrentYear",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1676,7 +1675,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1686,7 +1685,7 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1695,7 +1694,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1705,7 +1704,7 @@
                         "derivedFrom": ["Immig2"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1787,21 +1786,21 @@
                         "derivedFrom": [
                             {
                                 "name": "weightlb",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hft",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hin",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1809,7 +1808,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1819,7 +1818,7 @@
                         "derivedFrom": ["BMI_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "BMI Spline", "shortLabel": "" }
                     },
                     {
@@ -1829,7 +1828,7 @@
                         "derivedFrom": [
                             {
                                 "name": "hd",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1861,7 +1860,7 @@
                         "derivedFrom": [
                             {
                                 "name": "stk",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1890,7 +1889,7 @@
                         "derivedFrom": [
                             {
                                 "name": "can",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1919,7 +1918,7 @@
                         "derivedFrom": ["Cancer_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -1929,7 +1928,7 @@
                         "derivedFrom": [
                             {
                                 "name": "diab",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -1958,7 +1957,7 @@
                         "derivedFrom": ["Diabetes_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     }
                 ],
@@ -2036,32 +2035,32 @@
                 "covariates": [
                     {
                         "name": "Age_cont",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": 0.083136809,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE"]
                     },
                     {
                         "name": "Age_spline",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": 0.032863951,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE"]
                     },
                     {
                         "name": "QSLightCont_df",
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "isRequired": false,
                         "metadata": {
                             "label": "Light smoker",
@@ -2071,14 +2070,14 @@
                         "beta": 0.90030781,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["SMOKING"]
                     },
                     {
                         "name": "QSHeavyCont_df",
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy smoker",
@@ -2088,32 +2087,32 @@
                         "beta": 1.039483131,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["SMOKING"]
                     },
                     {
                         "name": "PhysicalActivityLog_cont",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": -0.703145563,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["ACTIVITY"]
                     },
                     {
                         "name": "DietScore_cont",
-                        "interval": {
+                        "intervals":[ {
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "isRequired": false,
                         "metadata": { "label": "Diet", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": -0.034410652,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DIET"]
                     },
                     {
                         "name": "AlcoholHeavy_cat",
@@ -2138,7 +2137,7 @@
                         "beta": 0.05087037,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["ALCOHOL"]
                     },
                     {
                         "name": "AlcoholMod_cat",
@@ -2163,7 +2162,7 @@
                         "beta": -0.192706462,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["ALCOHOL"]
                     },
                     {
                         "name": "DepIndMod_cat",
@@ -2188,7 +2187,7 @@
                         "beta": 0.06906141,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DEPRIVATION"]
                     },
                     {
                         "name": "DepIndHigh_cat",
@@ -2213,7 +2212,7 @@
                         "beta": 0.220101732,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DEPRIVATION"]
                     },
                     {
                         "name": "EduNoGrad_cat",
@@ -2238,7 +2237,7 @@
                         "beta": 0.185703949,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["EDUCATION"]
                     },
                     {
                         "name": "EduHSGrad_cat",
@@ -2263,7 +2262,7 @@
                         "beta": 0.086322687,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["EDUCATION"]
                     },
                     {
                         "name": "Immig0to15_cat",
@@ -2288,7 +2287,7 @@
                         "beta": -0.982657657,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["IMMIGRATION"]
                     },
                     {
                         "name": "Immig16to30_cat",
@@ -2313,7 +2312,7 @@
                         "beta": -0.404318147,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["IMMIGRATION"]
                     },
                     {
                         "name": "Immig31to45_cat",
@@ -2338,7 +2337,7 @@
                         "beta": -0.117087334,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["IMMIGRATION"]
                     },
                     {
                         "name": "HeartDis_cat",
@@ -2363,7 +2362,7 @@
                         "beta": 0.379459368,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "Stroke_cat",
@@ -2385,7 +2384,7 @@
                         "beta": 0.224159491,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "Cancer_cat",
@@ -2407,7 +2406,7 @@
                         "beta": 4.408961435,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "Diabetes_cat",
@@ -2429,44 +2428,45 @@
                         "beta": 1.984995405,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "BMI_spline",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "BMI Spline", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": 0.030376821,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["BMI"]
                     },
                     {
                         "name": "AgeXCancer_int",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
                         "beta": -0.049785079,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE"]
                     },
                     {
                         "name": "AgeXDiabetes_int",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
                         "beta": -0.020973253,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE"]
                     }
                 ],
                 "timeMetric": "years",
-                "maximumTime": 5
+                "maximumTime": 5,
+                "algorithmType": 1 
             },
             "predicate": {
                 "equation": "predicateResult = obj['sex'] === 'male'",
@@ -2484,7 +2484,7 @@
                         "derivedFrom": [
                             {
                                 "name": "age",
-                                "interval": {
+                                "intervals":[ {
                                     "lowerMargin": {
                                         "margin": 20,
                                         "isOpen": false
@@ -2493,7 +2493,7 @@
                                         "margin": 79,
                                         "isOpen": false
                                     }
-                                },
+                                }],
                                 "isRequired": false,
                                 "metadata": {
                                     "label": "Age",
@@ -2504,7 +2504,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2514,7 +2514,7 @@
                         "derivedFrom": ["Age_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2524,7 +2524,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkm",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2532,7 +2532,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2542,7 +2542,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkt",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2550,7 +2550,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2560,7 +2560,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkw",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2568,7 +2568,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2578,7 +2578,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkr",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2586,7 +2586,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2596,7 +2596,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drkf",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2604,7 +2604,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2614,7 +2614,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksa",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2622,7 +2622,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2632,7 +2632,7 @@
                         "derivedFrom": [
                             {
                                 "name": "drk_drksu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2640,7 +2640,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2657,7 +2657,7 @@
                             "drk_drksu2",
                             {
                                 "name": "dany",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2665,7 +2665,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2675,7 +2675,7 @@
                         "derivedFrom": ["DrinksLastWeek"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2685,14 +2685,14 @@
                         "derivedFrom": [
                             {
                                 "name": "db",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "dany",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2707,7 +2707,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2718,7 +2718,7 @@
                             "Binge",
                             {
                                 "name": "dany",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2804,14 +2804,14 @@
                         "derivedFrom": [
                             {
                                 "name": "stpn",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "stpny",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2819,7 +2819,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": {
                             "label": "Smoking Quit Time",
                             "shortLabel": ""
@@ -2832,35 +2832,35 @@
                         "derivedFrom": [
                             {
                                 "name": "smk",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "evd",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "s100",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayf",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "cigdayd",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2868,7 +2868,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2880,14 +2880,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2895,7 +2895,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2903,10 +2903,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "metadata": {
                             "label": "Light smoker",
                             "shortLabel": ""
@@ -2921,14 +2921,14 @@
                             "QuitTime",
                             {
                                 "name": "SmokeDaily",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "DailyCig",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2936,7 +2936,7 @@
                             "Age_cont",
                             {
                                 "name": "AgeDailyQuit",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2944,10 +2944,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "metadata": {
                             "label": "Heavy smoker",
                             "shortLabel": ""
@@ -2960,14 +2960,14 @@
                         "derivedFrom": [
                             {
                                 "name": "frt",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "frtu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -2975,7 +2975,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -2985,14 +2985,14 @@
                         "derivedFrom": [
                             {
                                 "name": "sal",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "salu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3000,7 +3000,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3010,14 +3010,14 @@
                         "derivedFrom": [
                             {
                                 "name": "pot",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "potu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3025,7 +3025,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3035,14 +3035,14 @@
                         "derivedFrom": [
                             {
                                 "name": "car",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "caru",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3050,7 +3050,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3060,14 +3060,14 @@
                         "derivedFrom": [
                             {
                                 "name": "veg",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "vegu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3075,7 +3075,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3085,14 +3085,14 @@
                         "derivedFrom": [
                             {
                                 "name": "jui",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "juiu",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3100,7 +3100,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3116,7 +3116,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3126,7 +3126,7 @@
                         "derivedFrom": ["FruitVeg"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3136,7 +3136,7 @@
                         "derivedFrom": ["dpotato"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3146,7 +3146,7 @@
                         "derivedFrom": ["dcarrot"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3156,7 +3156,7 @@
                         "derivedFrom": ["djuice"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3171,10 +3171,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -3184,10 +3184,10 @@
                         "derivedFrom": ["DietScore"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "metadata": { "label": "Diet", "shortLabel": "" }
                     },
                     {
@@ -3197,21 +3197,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa1",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa1",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa1",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3219,7 +3219,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3229,21 +3229,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa2",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa2",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa2",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3251,7 +3251,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3261,21 +3261,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa3",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa3",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa3",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3283,7 +3283,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3293,21 +3293,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa4",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa4",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa4",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3315,7 +3315,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3325,21 +3325,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa5",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa5",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa5",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3347,7 +3347,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3357,21 +3357,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa6",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa6",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa6",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3379,7 +3379,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3389,21 +3389,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa7",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa7",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa7",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3411,7 +3411,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3421,21 +3421,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa8",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa8",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa8",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3443,7 +3443,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3453,21 +3453,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa9",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa9",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa9",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3475,7 +3475,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3485,21 +3485,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa10",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa10",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa10",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3507,7 +3507,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3517,21 +3517,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa11",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa11",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa11",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3539,7 +3539,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3549,21 +3549,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa12",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa12",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa12",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3571,7 +3571,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3581,21 +3581,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa13",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa13",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa13",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3603,7 +3603,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3613,21 +3613,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa14",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa14",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa14",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3635,7 +3635,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3645,21 +3645,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa15",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa15",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa15",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3667,7 +3667,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3677,21 +3677,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa16",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa16",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa16",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3699,7 +3699,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3709,21 +3709,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa17",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa17",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa17",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3731,7 +3731,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3741,21 +3741,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa18",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa18",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa18",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3763,7 +3763,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3773,21 +3773,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa19",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa19",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa19",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3795,7 +3795,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3805,21 +3805,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa20",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa20",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa20",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3827,7 +3827,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3837,21 +3837,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa21",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa21",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa21",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3859,7 +3859,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3869,21 +3869,21 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa22",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpam_lpa22",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "lpat_lpa22",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3891,7 +3891,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3901,7 +3901,7 @@
                         "derivedFrom": [
                             {
                                 "name": "lpa_lpa0",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -3931,10 +3931,10 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "metadata": { "label": "Activity", "shortLabel": "" }
                     },
                     {
@@ -3944,7 +3944,7 @@
                         "derivedFrom": ["PhysicalActivity"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -3954,7 +3954,7 @@
                         "derivedFrom": [
                             {
                                 "name": "dep",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4039,21 +4039,21 @@
                         "derivedFrom": [
                             {
                                 "name": "hs",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "ed",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "hdg",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4061,7 +4061,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4071,7 +4071,7 @@
                         "derivedFrom": ["Edu2"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4126,21 +4126,21 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "imyr",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "CurrentYear",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4148,7 +4148,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4158,7 +4158,7 @@
                         "derivedFrom": [
                             {
                                 "name": "imm",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4167,7 +4167,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4177,7 +4177,7 @@
                         "derivedFrom": ["Immig2"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4259,21 +4259,21 @@
                         "derivedFrom": [
                             {
                                 "name": "weightlb",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hft",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
                             },
                             {
                                 "name": "heightin_hin",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4281,7 +4281,7 @@
                         ],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4291,7 +4291,7 @@
                         "derivedFrom": ["BMI_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "BMI Spline", "shortLabel": "" }
                     },
                     {
@@ -4301,7 +4301,7 @@
                         "derivedFrom": [
                             {
                                 "name": "hd",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4333,7 +4333,7 @@
                         "derivedFrom": [
                             {
                                 "name": "stk",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4362,7 +4362,7 @@
                         "derivedFrom": [
                             {
                                 "name": "can",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4391,7 +4391,7 @@
                         "derivedFrom": ["Cancer_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     },
                     {
@@ -4401,7 +4401,7 @@
                         "derivedFrom": [
                             {
                                 "name": "diab",
-                                "interval": {},
+                                
                                 "isRequired": false,
                                 "metadata": { "label": "", "shortLabel": "" },
                                 "fieldType": 0
@@ -4430,7 +4430,7 @@
                         "derivedFrom": ["Diabetes_cat", "Age_cont"],
                         "extensions": {},
                         "isRequired": false,
-                        "interval": {},
+                        
                         "metadata": { "label": "", "shortLabel": "" }
                     }
                 ],
@@ -4508,32 +4508,32 @@
                 "covariates": [
                     {
                         "name": "Age_cont",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": 0.089188802,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE"]
                     },
                     {
                         "name": "Age_spline",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": 0.029217937,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE"]
                     },
                     {
                         "name": "QSLightCont_df",
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "isRequired": false,
                         "metadata": {
                             "label": "Light smoker",
@@ -4543,14 +4543,14 @@
                         "beta": 0.806847255,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["SMOKING"]
                     },
                     {
                         "name": "QSHeavyCont_df",
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 1, "isOpen": false }
-                        },
+                        }],
                         "isRequired": false,
                         "metadata": {
                             "label": "Heavy smoker",
@@ -4560,65 +4560,65 @@
                         "beta": 1.180303979,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["SMOKING"]
                     },
                     {
                         "name": "PhysicalActivityLog_cont",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": -0.92835536,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["ACTIVITY"]
                     },
                     {
                         "name": "DietScore_cont",
-                        "interval": {
+                        "intervals": [{
                             "lowerMargin": { "margin": 0, "isOpen": false },
                             "higherMargin": { "margin": 10, "isOpen": false }
-                        },
+                        }],
                         "isRequired": false,
                         "metadata": { "label": "Diet", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": -0.043671199,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DIET"]
                     },
                     {
                         "name": "BMI_spline",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "BMI Spline", "shortLabel": "" },
                         "dataFieldType": 2,
                         "beta": 0.024067379,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["BMI"]
                     },
                     {
                         "name": "AgeXCancer_int",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
                         "beta": -0.052559968,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE", "DISEASE"]
                     },
                     {
                         "name": "AgeXDiabetes_int",
-                        "interval": {},
+                        
                         "isRequired": false,
                         "metadata": { "label": "", "shortLabel": "" },
                         "dataFieldType": 3,
                         "beta": -0.009427044,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["AGE", "DISEASE"]
                     },
                     {
                         "name": "AlcoholHeavy_cat",
@@ -4643,7 +4643,7 @@
                         "beta": 0.079704971,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["ALCOHOL"]
                     },
                     {
                         "name": "AlcoholMod_cat",
@@ -4668,7 +4668,7 @@
                         "beta": -0.20063377,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["ALCOHOL"]
                     },
                     {
                         "name": "DepIndMod_cat",
@@ -4693,7 +4693,7 @@
                         "beta": 0.046587007,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DEPRIVATION"]
                     },
                     {
                         "name": "DepIndHigh_cat",
@@ -4718,7 +4718,7 @@
                         "beta": 0.204884993,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DEPRIVATION"]
                     },
                     {
                         "name": "EduNoGrad_cat",
@@ -4743,7 +4743,7 @@
                         "beta": 0.06313076,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["EDUCATION"]
                     },
                     {
                         "name": "EduHSGrad_cat",
@@ -4768,7 +4768,7 @@
                         "beta": 0.03270859,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["EDUCATION"]
                     },
                     {
                         "name": "Immig0to15_cat",
@@ -4793,7 +4793,7 @@
                         "beta": -0.604221148,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["IMMIGRATION"]
                     },
                     {
                         "name": "Immig16to30_cat",
@@ -4818,7 +4818,7 @@
                         "beta": -0.226038246,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["IMMIGRATION"]
                     },
                     {
                         "name": "Immig31to45_cat",
@@ -4843,7 +4843,7 @@
                         "beta": -0.13250613,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["IMMIGRATION"]
                     },
                     {
                         "name": "HeartDis_cat",
@@ -4868,7 +4868,7 @@
                         "beta": 0.341870655,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "Stroke_cat",
@@ -4890,7 +4890,7 @@
                         "beta": 0.235906455,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "Cancer_cat",
@@ -4912,7 +4912,7 @@
                         "beta": 4.856718986,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     },
                     {
                         "name": "Diabetes_cat",
@@ -4934,16 +4934,18 @@
                         "beta": 1.160180725,
                         "referencePoint": null,
                         "extensions": {},
-                        "groups": []
+                        "groups": ["DISEASE"]
                     }
                 ],
                 "timeMetric": "years",
-                "maximumTime": 5
+                "maximumTime": 5,
+                "algorithmType": 1
             },
             "predicate": {
                 "equation": "predicateResult = obj['sex'] === 'female'",
                 "variables": ["sex"]
             }
         }
-    ]
+    ],
+    "modelFields": []
 }
