@@ -2031,7 +2031,7 @@
                     "Diabetes_cat.fun": "\n        userFunctions[\"Diabetes_cat.fun\"] = (function (diab, userFunctions, func) {\n    return func['ifelse'](diab == 'diab1', 1, func['ifelse'](diab == 'diab2', 0, undefined));\n})\n    "
                 },
                 "tables": {},
-                "baseline": 0.000186451453,
+                "baseline": 0.0001864515,
                 "covariates": [
                     {
                         "name": "Age_cont",
@@ -4504,7 +4504,7 @@
                     "Diabetes_cat.fun": "\n        userFunctions[\"Diabetes_cat.fun\"] = (function (diab, userFunctions, func) {\n    return func['ifelse'](diab == 'diab1', 1, func['ifelse'](diab == 'diab2', 0, undefined));\n})\n    "
                 },
                 "tables": {},
-                "baseline": 0.000119053954,
+                "baseline": 0.000119054,
                 "covariates": [
                     {
                         "name": "Age_cont",
